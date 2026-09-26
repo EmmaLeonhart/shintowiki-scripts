@@ -1,3 +1,42 @@
+## 2026-09-26 — Wikidata edits: the drip is fine; item creation had no route at all
+
+Queued from genealogy: find which of this repo's Wikidata edits are not going through.
+
+**The lockout is not what's stopping anything.** `wikidata_editing_lockout.state` still reads
+`locked: true`, but its date has passed, so `wikidata_edit_allowed.py` returns ALLOWED. The
+09-10 create run and every drip run since then logged it as ALLOWED. The enwiki gate is clear too.
+
+**The direct drip delivers.** It carries 86 files. Every other `.txt` in `modern-quickstatements/` falls into one of these:
+reports (`kokugakuin_id_report`, `*_judgement`, `onkamui_parse_report`, `kana_ambiguous_stragglers`),
+`daily_operations.txt` (a concatenation of registered files), empty legacy files, or old
+hand-run batches that already landed. Checked against live Wikidata: court-rank en labels 42/42,
+court-rank links and sub-rank links all present except the lines that point at `LAST` items (the
+check can't match those), `durability_enrich` 235/236. `p958_by_entry.txt` (106 of 109 sections not
+live) is unregistered on Emma's 2026-08-25 ruling: it waits until there is one pipeline instead of two. It is
+left as she set it.
+
+**What was actually not going through: every item creation.**
+
+- `create-items.yml` has had no schedule since 2026-08-16. Those creates were supposed to go
+  into the hand-run QuickStatements batch, and that route no longer exists. `vsa_libraries.txt`
+  (Nengo, torchhd) has had an open gate since 09-16 and has never run.
+- `ise_jingu_creates.txt` (22 神宮125社 shrines) was registered in `create_items.GATES` but no
+  step ever invoked it. A read-only label search today found no item for any of the 22, or for torchhd.
+- ⛔ **The 09-10 run's state was lost.** The commit step tested `git diff --quiet -- *.state`,
+  and `git diff` doesn't see untracked files. `lost_shrine_creates.state` did not exist
+  before that run, so the step printed "No state change" and discarded it. The next dispatch would
+  have created all three lost shrines again, on top of the duplicates Emma is already merging.
+
+**Fixed:**
+- `lost_shrine_creates.state` is written from the 09-10 run log: Kamo Shrine Q141406052,
+  Kenkō-ji Temple Q141406056, Chikadono Shrine Q141406059.
+- The commit step now runs `git add` first and then checks the index. The pathspec is quoted, so git skips
+  the gitignored `sequential_misc.state`.
+- The Ise batch has its own step.
+- **The daily schedule is back (09:45 UTC).** Emma chose this over a single dispatch or dropping
+  both batches. Tomorrow's run should create Nengo, torchhd and the 22 Ise items, and skip
+  the three lost shrines as already created.
+
 ## 2026-09-23 — the four session crons, recreated; the queue's actionable surface is the pinned tail
 
 `CronList` at session start: no jobs, the expected state. Created: `420f4ec3` work-loop :03,

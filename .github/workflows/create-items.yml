@@ -37,7 +37,16 @@ name: Create Items (gated batches)
 # deliberately. Nothing fires on a timer any more. vsa_libraries_gate's START_DATE
 # was also pushed to 2026-09-16 in the same change, so even a manual dispatch is
 # shut until then.
+#
+# ⭐ SCHEDULE RESTORED 2026-09-26, Emma's call. The hand-run QuickStatements route the
+# 08-16 note relies on no longer exists — she is not logging in again, and a batch
+# only a hand run could deliver is not delivered. vsa_libraries (open since 09-16)
+# and the Ise batch sat undelivered with open gates for exactly that reason. The
+# freeze defect the 08-16 note describes is closed: the guard step below and
+# create_items.py both read the lockout state file and the enwiki gate.
 on:
+  schedule:
+    - cron: "45 9 * * *"
   workflow_dispatch:
 
 permissions:
@@ -124,15 +133,32 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: python create_items.py --batch lost_shrine_creates.txt --apply
 
+      # The 22 神宮125社 shrines with no item (ise_jingu_creates.txt, Emma 2026-08-04:
+      # "just make them"). Registered in create_items.GATES since August but invoked by
+      # no step, so it could never run however the gate read. ise_jingu_gate holds it to
+      # the same lockout + conflict_gate conjunction as the lost-shrine batch.
+      - name: Create the Ise Jingu 125-shrine items
+        if: steps.freeze.outputs.open == 'true'
+        working-directory: modern-quickstatements
+        env:
+          MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python create_items.py --batch ise_jingu_creates.txt --apply
+
+      # `git diff` only sees TRACKED files, and a batch's <batch>.state is untracked
+      # until its first run creates something. So on 2026-09-10 the three lost-shrine
+      # items were created, the state file was written, and this step printed "No state
+      # change" and threw it away — leaving nothing to stop a later dispatch creating
+      # all three again. Stage first, then ask the index.
       - name: Commit the state file
         run: |
-          if git diff --quiet -- modern-quickstatements/*.state; then
+          git add -- 'modern-quickstatements/*.state'   # quoted: git expands it and skips ignored files
+          if git diff --cached --quiet; then
             echo "No state change — gate shut, or nothing new created."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add modern-quickstatements/*.state
           git commit -m "create_items: record created QIDs [skip ci]"
           for i in 1 2 3 4 5; do
             git pull --rebase --autostash && git push && break
