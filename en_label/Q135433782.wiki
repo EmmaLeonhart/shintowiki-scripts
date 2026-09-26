@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q135433782 -->
 <!-- KIND: shrine | JA: 梅北神社 | KANA:  -->
-<!-- ANSWER: -->
+<!-- ANSWER: SKIP: reading cannot be sourced (external access blocked, kana field empty, not found in local files) -->
 <!-- TASK: give this item its English Wikidata label (P1448 is NOT involved; this is the `Len` label).
 Conventions, which are not negotiable -- match the files this folds into:
   shrine: '<Stem> Shrine', e.g. Iino Shrine, Kushikino Shrine.
