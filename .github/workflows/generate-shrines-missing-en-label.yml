@@ -140,20 +140,9 @@ jobs:
       # is committed AND the job still goes red. A 429 from WDQS is the expected
       # reason to land here; it is not a defect in this repo, but it does mean the
       # named file did not regenerate today, and that has to stay visible.
-      - name: Re-fail if any generation step failed
+      # This was the first re-fail step in the repo; the shared helper generalises it.
+      - name: Re-fail if any tolerant step failed
         if: always()
-        run: |
-          failed=""
-          for s in             "shrines_missing_en_label:${{ steps.gen_shrines.outcome }}"             "kana_en_labels:${{ steps.gen_kana.outcome }}"             "identical_name_en_labels:${{ steps.gen_identical.outcome }}"             "temples_missing_en_label:${{ steps.gen_temples.outcome }}"             "temple_en_labels:${{ steps.gen_temple_en.outcome }}"             "temple_identical_name_en_labels:${{ steps.gen_temple_identical.outcome }}"             "dedupe_en_label_files:${{ steps.gen_dedup.outcome }}"             "cjk_ja_backfill:${{ steps.gen_cjk.outcome }}"; do
-            name="${s%%:*}"; outcome="${s##*:}"
-            if [ "$outcome" = "failure" ]; then
-              echo "::error::$name did not regenerate this run (step outcome: failure)"
-              failed="$failed $name"
-            fi
-          done
-          if [ -n "$failed" ]; then
-            echo "Everything that DID succeed was committed by the previous step."
-            echo "Did not regenerate:$failed"
-            exit 1
-          fi
-          echo "All eight generation steps succeeded."
+        env:
+          STEPS_JSON: ${{ toJSON(steps) }}
+        run: python3 shinto_miraheze/refail_failed_steps.py

@@ -73,6 +73,7 @@ jobs:
           fi
 
       - name: Fetch P11250 from wiki
+        id: fetch-p11250-from-wiki
         if: steps.lockout.outputs.locked != 'true'
         working-directory: modern-quickstatements
         run: python fetch_p11250_from_wiki.py
@@ -86,24 +87,28 @@ jobs:
         continue-on-error: true
 
       - name: Fetch P6262 from wiki
+        id: fetch-p6262-from-wiki
         if: steps.lockout.outputs.locked != 'true'
         working-directory: modern-quickstatements
         run: python fetch_p6262_from_wiki.py
         continue-on-error: true
 
       - name: Fetch en-labels from wiki
+        id: fetch-en-labels-from-wiki
         if: steps.lockout.outputs.locked != 'true'
         working-directory: modern-quickstatements
         run: python fetch_en_labels_from_wiki.py
         continue-on-error: true
 
       - name: Fetch category-label-prefix fixes from wiki
+        id: fetch-category-label-prefix-fixes-from
         if: steps.lockout.outputs.locked != 'true'
         working-directory: modern-quickstatements
         run: python fetch_category_label_fixes_from_wiki.py
         continue-on-error: true
 
       - name: Resolve + generate 同上 address fixes
+        id: resolve-generate-address-fixes
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -111,6 +116,7 @@ jobs:
           python generate_doujou_address_fixes.py
 
       - name: Generate address citation backfill (non-同上 imported addresses)
+        id: generate-address-citation-backfill-non
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -118,26 +124,31 @@ jobs:
           python generate_address_citation_backfill.py
 
       - name: Generate shrine ranking QS
+        id: generate-shrine-ranking-qs
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_modern_shrine_ranking_qualifiers.py
 
       - name: Remove Old Japanese official names from Shikinai Ronsha candidates
+        id: remove-old-japanese-official-names-from
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_ronsha_ojp_name_removals.py
 
       - name: Cite Shikinaisha P31 statements to the Kokugakuin database
+        id: cite-shikinaisha-p31-statements-to-the
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_shikinaisha_kokugakuin_refs.py
 
       - name: Remove uncited Japanese addresses where a cited one exists
+        id: remove-uncited-japanese-addresses-where
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_uncited_address_removals.py
 
       - name: Generate P958 QS
+        id: generate-p958-qs
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -152,6 +163,7 @@ jobs:
       # that only the sequential cursor can run in the right order). The append dedups
       # against what is already in that file.
       - name: Correct wrong and missing P958 sections
+        id: correct-wrong-and-missing-p958-sections
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_p958_corrections.py
@@ -164,6 +176,7 @@ jobs:
       # drops out. The registry index is refreshed separately (it is a ~240MB download and
       # the registry republishes monthly); this step reads whatever index is committed.
       - name: Kana from the National Tax Agency registry
+        id: kana-from-the-national-tax-agency
         working-directory: modern-quickstatements
         continue-on-error: true
         # --refresh re-queries WDQS. Locally the target rows are cached (the two queries
@@ -172,6 +185,7 @@ jobs:
         run: python generate_nta_kana.py --refresh
 
       - name: Drip-feed 20 label proposals from the label-generator subtree
+        id: drip-feed-20-label-proposals-from-the
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python select_label_proposals.py
@@ -181,6 +195,7 @@ jobs:
       # kana_english.label_for. Re-runs every build so a corrected reading moves the label.
       # Collapsed `part of` statements — see the ATOMIC_FILES note in direct_daily_edits.py.
       - name: Generate multi-ordinal part-of removals
+        id: generate-multi-ordinal-part-of-removals
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_multi_ordinal_removals.py
@@ -202,91 +217,112 @@ jobs:
       # point of this repo and how it works." A generator that is staged but unscheduled is a
       # defect by design, not an oversight to note.
       - name: Bunrei (分霊) P612 + qualifiers
+        id: bunrei-p612-qualifiers
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_bunrei_quickstatements.py
       - name: P3225 corporate numbers
+        id: p3225-corporate-numbers
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_p3225_quickstatements.py
       - name: Hisousha P119/P547
+        id: hisousha-p119-p547
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_hisousha_quickstatements.py
       - name: Province exclusions
+        id: province-exclusions
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_province_exclusions.py
       - name: List-membership removals (script 2 of the pair)
+        id: list-membership-removals-script-2-of-the
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_list_membership_removals.py
       - name: Miscellaneous edits
+        id: miscellaneous-edits
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_miscellaneous_edits.py
       - name: Sangō (山号) P1448
+        id: sango-p1448
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_sango_quickstatements.py
       - name: Shintai (神体) P825
+        id: shintai-p825
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_shintai_quickstatements.py
       - name: Sōken-den (創建伝) P571
+        id: soken-den-p571
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_souken_den_quickstatements.py
       - name: Kami parent qualifiers
+        id: kami-parent-qualifiers
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_kami_parent_qualifiers.py
       - name: Shinto honorifics (stage 1)
+        id: shinto-honorifics-stage-1
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_shinto_honorifics.py
       - name: Shinto short names (stage 2)
+        id: shinto-short-names-stage-2
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_shinto_short_names.py
       - name: Genbu ids
+        id: genbu-ids
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_genbu_ids.py
       - name: Shinmei ids
+        id: shinmei-ids
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_shinmei_ids.py
       - name: Jinjacho P973
+        id: jinjacho-p973
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_jinjacho_p973.py
       - name: Saijin deity research
+        id: saijin-deity-research
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_saijin_deity_research.py
       - name: Rebuild list membership from the list items
+        id: rebuild-list-membership-from-the-list
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_list_membership_rebuild.py
 
       - name: Generate orphan membership removals
+        id: generate-orphan-membership-removals
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_orphan_membership_removals.py
 
 
       - name: Generate 天神社 English labels from their readings
+        id: generate-english-labels-from-their
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_tenjinsha_en_labels.py
 
       - name: Generate kana-qualifier ADD QuickStatements (カミノヤシロ)
+        id: generate-kana-qualifier-add
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_kana_qualifier_add.py
 
       - name: Generate kana-qualifier REMOVE QuickStatements (SPARQL-gated)
+        id: generate-kana-qualifier-remove
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -299,6 +335,7 @@ jobs:
       # P625, which the create run could not encode. Self-healing: empty once the
       # three coordinates land.
       - name: Generate lost-shrine twin-parity QuickStatements
+        id: generate-lost-shrine-twin-parity
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_lost_shrine_parity.py
@@ -309,6 +346,7 @@ jobs:
       # (docs/script-rationale/katakana_name_in_kana_2026-09.md). Add-first, then a SEPARATE remove
       # that only fires where a fresh SPARQL confirms the add has landed.
       - name: Generate derived-hiragana P1814 ADD QuickStatements
+        id: generate-derived-hiragana-p1814-add
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_katakana_reading_add.py
@@ -317,6 +355,7 @@ jobs:
       # article, where that article states the same address. The sibling backfill
       # works from the 式内社一覧 tables and reaches 139; this reaches 2,728.
       - name: Address citations from the subject's own article
+        id: address-citations-from-the-subject-s-own
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_address_citation_from_article.py
@@ -327,6 +366,7 @@ jobs:
       # one-off survey on 2026-09-11 rather than reported. Weekly: it is a survey,
       # not a generator, and its numbers move slowly.
       - name: Audit model adoption (conformance of existing statements)
+        id: audit-model-adoption-conformance-of
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -335,6 +375,7 @@ jobs:
       # The katakana P1814 values neither pipeline can reach, categorised for a
       # per-category ruling ([[Open questions]], 2026-09-11). Report only.
       - name: Report stuck katakana readings
+        id: report-stuck-katakana-readings
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python report_stuck_katakana_readings.py
@@ -343,6 +384,7 @@ jobs:
       # Emma hit Wikidata's anti-abuse limiter removing 41 by hand from Q11558526
       # and asked for the pipeline to do it. Self-healing: zero lines once clean.
       - name: Generate description removals for named items
+        id: generate-description-removals-for-named
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_description_removals.py
@@ -354,6 +396,7 @@ jobs:
       # exists, holds the ~1,350 where they contradict. Emma's call, 2026-09-10.
       # Add-only, self-healing: the file shrinks as the drip delivers.
       - name: Generate derived P1814 for en-labelled shrines (general case)
+        id: generate-derived-p1814-for-en-labelled
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -363,10 +406,12 @@ jobs:
       # ...and the held tier, routed to the LLM work-queue so a jawiki lead breaks
       # the tie. Bounded per run; the queue is meant to stay non-empty.
       - name: Queue the disputed kana readings for the LLM
+        id: queue-the-disputed-kana-readings-for-the
         continue-on-error: true
         run: python shinto_miraheze/build_kana_disagreement_queue.py --limit 150
 
       - name: Generate katakana P1814 REMOVE QuickStatements (SPARQL-gated)
+        id: generate-katakana-p1814-remove
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -377,6 +422,7 @@ jobs:
       # before its sibling-qualifier half was stopped (2026-09-09). Self-healing:
       # writes 0 lines once all four are whole again.
       - name: Generate ojp-hani official-name restores
+        id: generate-ojp-hani-official-name-restores
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_ojp_name_restores.py
@@ -386,6 +432,7 @@ jobs:
       # built on the old one. Self-healing: it skips any item whose en label has
       # already been corrected on Wikidata, since the old name is then unknown.
       - name: Propagate corrected EN labels into the other languages
+        id: propagate-corrected-en-labels-into-the
         continue-on-error: true
         run: python shinto_miraheze/generate_multilingual_label_fixes.py
 
@@ -394,20 +441,24 @@ jobs:
       # server-side. Regenerated each run so a "de Ōmi…" introduced by any future
       # label pass is caught on the next fire.
       - name: Generate French elision fixes (sanctuaire de X -> d’X)
+        id: generate-french-elision-fixes-sanctuaire
         continue-on-error: true
         run: python shinto_miraheze/generate_french_elision_fixes.py
 
       - name: Generate Reisai (例祭) QS from jawiki (regenerate each run)
+        id: generate-reisai-qs-from-jawiki
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_reisai_quickstatements.py
 
       - name: Saijin (祭神) P825 deities from jawiki (regenerate each run)
+        id: saijin-p825-deities-from-jawiki
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_saijin_quickstatements.py
 
       - name: Honzon (本尊) P825 from jawiki temples (regenerate each run)
+        id: honzon-p825-from-jawiki-temples
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_honzon_quickstatements.py
@@ -420,6 +471,7 @@ jobs:
       # so the batch empties and goes inert once the statements are gone. Left
       # unwired it is a frozen snapshot that never drains and never sees new ones.
       - name: Invalid P825 designation removals (regenerate each run)
+        id: invalid-p825-designation-removals
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_invalid_p825_removals.py
@@ -428,6 +480,7 @@ jobs:
       # qualifiers from the honzon generator above have landed, and that ordering
       # is enforced by its SPARQL, not by step order here.
       - name: Misplaced honzon form removals (regenerate each run)
+        id: misplaced-honzon-form-removals
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_misplaced_form_removals.py
@@ -437,26 +490,31 @@ jobs:
       # qualifier, so a static file would keep re-emitting work already done and
       # would never pick up ronsha created since.
       - name: Ronsha P2868 role qualifiers (regenerate each run)
+        id: ronsha-p2868-role-qualifiers-regenerate
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_ronsha_role_qualifiers.py
 
       - name: Souken (創建) P571 founding dates from jawiki (regenerate each run)
+        id: souken-p571-founding-dates-from-jawiki
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_souken_quickstatements.py
 
       - name: Kofun shapes + periods from jawiki (regenerate each run)
+        id: kofun-shapes-periods-from-jawiki
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_kofun_quickstatements.py
 
       - name: Bunrei qualifier repair (bare P612 -> +P1013 Bunrei, self-healing)
+        id: bunrei-qualifier-repair-bare-p612-p1013
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_bunrei_qualifier_repair.py
 
       - name: Reisai qualifier repair (bare P837 -> +P3831 Reisai, self-healing)
+        id: reisai-qualifier-repair-bare-p837-p3831
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_reisai_qualifier_repair.py
@@ -467,6 +525,7 @@ jobs:
       # and existing person->rank pairs are preloaded from WDQS and skipped, so
       # regeneration shrinks the file as it drains.
       - name: Court rank (P14005) on people from the ja.wp 位階受位者 tree
+        id: court-rank-p14005-on-people-from-the-ja
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_court_rank_quickstatements.py
@@ -496,6 +555,7 @@ jobs:
       # while description_adds.txt went on dripping its 2026-08-25 content. Say the
       # step failed and point at the traceback; the run log already has the answer.
       - name: Description fixes (desc-without-label pairs, weekly Sunday refresh)
+        id: description-fixes-desc-without-label
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -505,6 +565,7 @@ jobs:
           else echo "not Sunday and not forced — keeping description_label_pairs.txt"; fi
 
       - name: Description adds (labeled items missing descriptions, weekly Sunday refresh)
+        id: description-adds-labeled-items-missing
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
@@ -540,6 +601,7 @@ jobs:
       # wiki-cleanup.yml IS gated on it, which means that one silently stops
       # whenever the wiki is locked, as it is now. Do not copy that here.
       - name: "Collect: cloud answers into atomic files"
+        id: collect-cloud-answers-into-atomic-files
         continue-on-error: true
         run: |
           for c in collect_name_in_kana collect_ronsha_rankings collect_beppyo_p612                    collect_label_typo_answers collect_description_enrichment collect_en_labels; do
@@ -554,10 +616,12 @@ jobs:
       # Always exits 0 on purpose: a quiet cloud routine must not stop the
       # pipeline. continue-on-error too, so it cannot break the job either way.
       - name: "Check: cloud-fed stages still have a driver"
+        id: check-cloud-fed-stages-still-have-a
         continue-on-error: true
         run: python3 shinto_miraheze/check_stage_liveness.py
 
       - name: "Build: refill the cloud work queues"
+        id: build-refill-the-cloud-work-queues
         continue-on-error: true
         run: |
           for b in build_name_in_kana_queue build_ronsha_ranking_queue build_beppyo_p612_queue                    build_label_typo_review_queue build_description_enrichment_queue build_en_label_queue; do
@@ -584,6 +648,7 @@ jobs:
       # So this stages ONLY the work-file directories — the thing the step below
       # does not cover, because it only ever looks inside modern-quickstatements.
       - name: "Commit: collected answers + refreshed work queues"
+        id: commit-collected-answers-refreshed-work
         continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
@@ -636,6 +701,7 @@ jobs:
       # modern-quickstatements, because a statement is not a label and does not
       # go through select_label_proposals' 20-a-day drip.
       - name: Religious-building P825 (dedicated to, from the parsed dedication)
+        id: religious-building-p825-dedicated-to
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python generate_religious_building_p825.py
@@ -768,3 +834,16 @@ jobs:
           name: quickstatements-site
           path: modern-quickstatements/_site/
           retention-days: 1
+
+      # MUST be the last step of the job. `continue-on-error` reports a failed step's
+      # CONCLUSION as success; only its OUTCOME, readable here and nowhere else, says it
+      # failed. Everything above has run and committed; this turns the job red if a
+      # tolerant step failed. See shinto_miraheze/refail_failed_steps.py.
+      # Exempt: the four Miraheze fetches. Miraheze 403s the runner and each one falls
+      # back to its committed .txt by design (see the comment on fetch-p11250-from-wiki).
+      - name: Re-fail if any tolerant step failed
+        if: always()
+        env:
+          STEPS_JSON: ${{ toJSON(steps) }}
+          REFAIL_EXEMPT: "fetch-p11250-from-wiki fetch-p6262-from-wiki fetch-en-labels-from-wiki fetch-category-label-prefix-fixes-from"
+        run: python3 shinto_miraheze/refail_failed_steps.py

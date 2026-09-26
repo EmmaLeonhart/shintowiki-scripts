@@ -57,6 +57,7 @@ jobs:
       # rate-limited to 1 req/min during outages. A failed census must not fail
       # the pipeline; last month's committed page simply stays up.
       - name: Build the census page
+        id: build-the-census-page
         working-directory: modern-quickstatements
         run: python generate_ontology_census_page.py
         continue-on-error: true
@@ -76,3 +77,15 @@ jobs:
             echo "push attempt $i failed; retrying"
             sleep $((i * 5))
           done
+
+      # MUST be the last step of the job. `continue-on-error` reports a failed step's
+      # CONCLUSION as success; only its OUTCOME, readable here and nowhere else, says it
+      # failed. Everything above has run and committed; this turns the job red if a
+      # tolerant step failed. See shinto_miraheze/refail_failed_steps.py.
+      # A failed census still leaves last month's page up, as the comment on the build
+      # step says; it now also leaves the run red, so the missed month is visible.
+      - name: Re-fail if any tolerant step failed
+        if: always()
+        env:
+          STEPS_JSON: ${{ toJSON(steps) }}
+        run: python3 shinto_miraheze/refail_failed_steps.py

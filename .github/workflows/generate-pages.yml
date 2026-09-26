@@ -32,6 +32,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      failed-steps: ${{ steps.refail.outputs.failed }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -84,31 +86,37 @@ jobs:
         run: python generate_run_history.py
 
       - name: Generate Shikinaisha orphan table (live SPARQL)
+        id: generate-shikinaisha-orphan-table-live
         working-directory: modern-quickstatements
         run: python generate_shikinaisha_orphan_page.py
         continue-on-error: true
 
       - name: Generate Kokugakuin missing-id table (from committed report)
+        id: generate-kokugakuin-missing-id-table
         working-directory: modern-quickstatements
         run: python generate_kokugakuin_id_page.py
         continue-on-error: true
 
       - name: Generate Kokugakuin multiple-P13677 review table (live)
+        id: generate-kokugakuin-multiple-p13677
         working-directory: modern-quickstatements
         run: python generate_multi_p13677_page.py
         continue-on-error: true
 
       - name: Generate Awa entry-3 explainer (static)
+        id: generate-awa-entry-3-explainer-static
         working-directory: modern-quickstatements
         run: python generate_awa_entry3_page.py
         continue-on-error: true
 
       - name: Generate Izumo 韓国伊太弖 report (from committed doc)
+        id: generate-izumo-report-from-committed-doc
         working-directory: modern-quickstatements
         run: python generate_izumo_karakuni_page.py
         continue-on-error: true
 
       - name: Build kana-review page
+        id: build-kana-review-page
         working-directory: modern-quickstatements
         run: python generate_kana_review_page.py
         continue-on-error: true
@@ -116,6 +124,7 @@ jobs:
       # Emma asked to see a staged batch before it delivers (2026-08-25). This is the one
       # worth showing: the largest, and the only one that REMOVES statements.
       - name: Build membership-removal review page
+        id: build-membership-removal-review-page
         working-directory: modern-quickstatements
         run: python generate_membership_removal_review_page.py
         continue-on-error: true
@@ -130,6 +139,7 @@ jobs:
       # silently emitting a batch with an empty block 1 (the orphan labels, whose
       # leading position is Emma's ordering and load-bearing).
       - name: Refresh the orphan-label query cache (one WDQS request)
+        id: refresh-the-orphan-label-query-cache-one
         run: python3 site/generate_orphan_label_fixes.py --cache _orphan_cache.json
         continue-on-error: true
 
@@ -215,6 +225,21 @@ jobs:
         with:
           path: _site
 
+      # MUST be the last step of the job, and REPORT-ONLY here. `continue-on-error`
+      # reports a failed step's CONCLUSION as success; only its OUTCOME, readable here
+      # and nowhere else, says it failed. Turning `build` red would skip `deploy`, and a
+      # single failed report table must not stop the site publishing, so this step only
+      # records the failed ids and the `refail` job below goes red after deploy.
+      # Exempt: download-qs has an explicit fallback step (the committed files).
+      - name: Record which tolerant steps failed
+        id: refail
+        if: always()
+        env:
+          STEPS_JSON: ${{ toJSON(steps) }}
+          REFAIL_EXEMPT: "download-qs"
+          REFAIL_REPORT_ONLY: "1"
+        run: python3 shinto_miraheze/refail_failed_steps.py
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -225,3 +250,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  # Runs after deploy, so the site is already published. Red if build's record step
+  # named any failed tolerant step (see shinto_miraheze/refail_failed_steps.py).
+  refail:
+    needs: [build, deploy]
+    if: always() && needs.build.outputs.failed-steps != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-fail if any tolerant step failed
+        env:
+          FAILED: ${{ needs.build.outputs.failed-steps }}
+        run: |
+          for s in $FAILED; do echo "::error::$s failed (step outcome: failure, hidden by continue-on-error)"; done
+          exit 1

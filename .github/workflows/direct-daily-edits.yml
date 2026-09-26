@@ -49,6 +49,7 @@ jobs:
         run: pip install requests
 
       - name: Download generated QS files
+        id: download-generated-qs-files
         uses: actions/download-artifact@v5
         with:
           name: quickstatements-files
@@ -61,6 +62,7 @@ jobs:
       # fails CLOSED — that is the intended behaviour, so `continue-on-error`.
       # See docs/script-rationale/bruno_plus_analysis_2026-07.md.
       - name: Check for on-wiki attention to the watched editor
+        id: check-for-on-wiki-attention-to-the
         working-directory: modern-quickstatements
         run: python watch_conflicting_editor.py
         continue-on-error: true
@@ -71,6 +73,7 @@ jobs:
       # Emma 2026-07-10: "we should be preserving the information on them so they
       # could potentially be recreated."
       - name: Archive items damaged by the watched editor
+        id: archive-items-damaged-by-the-watched
         working-directory: modern-quickstatements
         run: python archive_destroyed_items.py
         continue-on-error: true
@@ -101,3 +104,16 @@ jobs:
           MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: python direct_daily_edits.py
+
+      # MUST be the last step of the job. `continue-on-error` reports a failed step's
+      # CONCLUSION as success; only its OUTCOME, readable here and nowhere else, says it
+      # failed. Everything above has run and committed; this turns the job red if a
+      # tolerant step failed. See shinto_miraheze/refail_failed_steps.py.
+      # Exempt: download-generated-qs-files falls back to the committed files, and on a
+      # standalone dispatch there is no same-run artifact to download at all.
+      - name: Re-fail if any tolerant step failed
+        if: always()
+        env:
+          STEPS_JSON: ${{ toJSON(steps) }}
+          REFAIL_EXEMPT: "download-generated-qs-files"
+        run: python3 shinto_miraheze/refail_failed_steps.py

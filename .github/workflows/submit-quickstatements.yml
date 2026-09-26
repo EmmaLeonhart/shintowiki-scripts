@@ -39,6 +39,7 @@ jobs:
         run: pip install requests
 
       - name: Download generated QS files
+        id: download-generated-qs-files
         uses: actions/download-artifact@v5
         with:
           name: quickstatements-files
@@ -97,3 +98,17 @@ jobs:
         if: steps.qs-submit.outcome != 'success'
         run: |
           echo "::notice::Deliberate: the QS path is retired; the nonzero exit routes edits to direct-daily-edits (the only Wikidata editor). Report committed above."
+
+      # MUST be the last step of the job. `continue-on-error` reports a failed step's
+      # CONCLUSION as success; only its OUTCOME, readable here and nowhere else, says it
+      # failed. Everything above has run and committed; this turns the job red if a
+      # tolerant step failed. See shinto_miraheze/refail_failed_steps.py.
+      # Exempt: download-generated-qs-files falls back to the committed files, and on a
+      # standalone dispatch there is no same-run artifact to download at all.
+      # Exempt: qs-submit exits 1 on purpose, so qs-failed routes edits to the direct drip.
+      - name: Re-fail if any tolerant step failed
+        if: always()
+        env:
+          STEPS_JSON: ${{ toJSON(steps) }}
+          REFAIL_EXEMPT: "download-generated-qs-files qs-submit"
+        run: python3 shinto_miraheze/refail_failed_steps.py

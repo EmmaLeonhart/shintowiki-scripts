@@ -486,7 +486,10 @@ jobs:
   # files are generated — not after the orchestrator chain.
   random-wait:
     needs: [window-gate, generate-quickstatements]
-    if: github.event_name == 'schedule'
+    # `!cancelled()`: generate-quickstatements now goes red when a tolerant generator
+    # fails (shinto_miraheze/refail_failed_steps.py). Without this a red generate job
+    # would SKIP the random wait, and the drip would fire at a fixed time instead.
+    if: ${{ !cancelled() && github.event_name == 'schedule' }}
     uses: ./.github/workflows/random-wait.yml
     secrets: inherit
 

@@ -44,26 +44,31 @@ jobs:
         run: pip install requests hanja opencc-python-reimplemented pykakasi wunsen aksharamukha
 
       - name: Run Toki Pona pipeline
+        id: run-toki-pona-pipeline
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python fetch_shrines_tokiponize.py
 
       - name: Run Korean pipeline
+        id: run-korean-pipeline
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python generate_korean_quickstatements.py
 
       - name: Run Chinese pipeline
+        id: run-chinese-pipeline
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python generate_chinese_quickstatements.py
 
       - name: Run Indonesian proposal pipeline (Japanese-only shrines)
+        id: run-indonesian-proposal-pipeline
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python generate_indonesian_proposals.py
 
       - name: Run multilang pipeline
+        id: run-multilang-pipeline
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python generate_multilang_quickstatements.py
@@ -80,6 +85,7 @@ jobs:
       # churches on Wikidata do not appear. That is a known limit, not a bug to
       # fix by re-enabling stage 1.
       - name: Run religious-building multilang pipeline (ja/zh/ko)
+        id: run-religious-building-multilang
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python generate_religious_building_multilang.py
@@ -87,11 +93,13 @@ jobs:
       # Re-derives the English replacements for the stage-1 labels that reached
       # Wikidata before it was paused. Cheap; reads committed JSON, no network.
       - name: Regenerate stage-1 English replacements
+        id: regenerate-stage-1-english-replacements
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python generate_stage1_en_replacements.py
 
       - name: Regenerate docs HTML
+        id: regenerate-docs-html
         working-directory: shinto-label-generator
         continue-on-error: true
         run: python docs/generate_pages.py
@@ -110,3 +118,13 @@ jobs:
               sleep 5
             done
           fi
+
+      # MUST be the last step of the job. `continue-on-error` reports a failed step's
+      # CONCLUSION as success; only its OUTCOME, readable here and nowhere else, says it
+      # failed. Everything above has run and committed; this turns the job red if a
+      # tolerant step failed. See shinto_miraheze/refail_failed_steps.py.
+      - name: Re-fail if any tolerant step failed
+        if: always()
+        env:
+          STEPS_JSON: ${{ toJSON(steps) }}
+        run: python3 shinto_miraheze/refail_failed_steps.py

@@ -80,14 +80,23 @@ def test_a_final_step_re_fails_the_job():
 
 
 def test_the_re_fail_step_checks_every_generator():
+    # Since 2026-09-26 the step is the shared shinto_miraheze/refail_failed_steps.py,
+    # which reads every id'd step's outcome from toJSON(steps). So the check is:
+    # it is that helper, it gets the whole steps context, and no generator is exempt.
     last = _steps()[-1]
-    run = last["run"]
+    assert "refail_failed_steps.py" in last["run"], (
+        "the re-fail step no longer runs the shared helper"
+    )
+    env = last.get("env") or {}
+    assert env.get("STEPS_JSON", "").replace(" ", "") == "${{toJSON(steps)}}", (
+        "the helper must get the whole steps context, or it cannot see the outcomes"
+    )
+    exempt = (env.get("REFAIL_EXEMPT") or "").split()
     for step_id in _GENERATORS:
-        assert f"steps.{step_id}.outcome" in run, (
-            f"the re-fail step never reads steps.{step_id}.outcome, so that "
-            f"generator can fail silently and the job stays green."
+        assert step_id not in exempt, (
+            f"{step_id} is exempted from the re-fail, so it can fail silently and "
+            f"the job stays green."
         )
-    assert "exit 1" in run, "the re-fail step never actually fails the job"
 
 
 def test_the_commit_runs_before_the_re_fail_and_after_the_generators():

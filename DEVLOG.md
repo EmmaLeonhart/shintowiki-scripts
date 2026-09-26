@@ -1,3 +1,48 @@
+## 2026-09-26 (cont.) — the continue-on-error campaign: every tolerant step is re-failed from its outcome
+
+Emma, 2026-09-21: *"We run a campaign to fix it."* Done across the whole tree, not only the
+label generator.
+
+**What the sweep found.** 95 `continue-on-error` steps in 7 workflows. Only
+`generate-shrines-missing-en-label.yml` had a re-fail step, and 87 of the rest had no `id`, so
+their outcome could not be read at all. There were silent failures in recent logs:
+
+- **Today's cleanup-loop (36228048409):** `generate-quickstatements` lost two generators and read
+  green. The Shinmei ids hit a connect timeout on kojiki.kokugakuin.ac.jp, and the kana-qualifier
+  ADD hit a WDQS 504.
+- **Ontology census, 2026-09-01 (33514796275):** a 502, green. That month's page was not rebuilt.
+
+**The shape, generalised rather than copied seven times.** `shinto_miraheze/refail_failed_steps.py`
+reads `toJSON(steps)` and fails on any step whose **outcome** is failure. Every tolerant step now
+has an id (87 added, generated from the step names). Every job with tolerant steps ends in an
+`if: always()` step that runs the helper, placed after the commit and the uploads, so what
+succeeded still lands. The bespoke step in the missing-en-label workflow is replaced by the helper.
+
+**Exempt, each with a reason in the YAML.** A step is exempt only if it has a real fallback or
+exits 1 on purpose. An exempt failure still prints as a warning.
+- `download-qs` / `download-generated-qs-files` fall back to the committed files. On a standalone
+  dispatch there is no same-run artifact to download at all.
+- The four Miraheze `fetch-*-from-wiki` steps fall back to their committed `.txt`.
+- `qs-submit` exits 1 deliberately so that `qs-failed` routes edits to the drip.
+
+**Not exempt, on purpose:** the conflict-watch check in `direct-daily-edits`. It fails closed,
+which means no drip that day, so it should be red.
+
+**Two places where a red job would have blocked work:**
+- **generate-pages:** a red `build` job would skip `deploy`. So there the helper runs in
+  report-only mode, and a separate `refail` job goes red *after* deploy. The site still publishes.
+- **cleanup-loop `random-wait`:** it needs `generate-quickstatements` and its `if:` had no
+  `always()`. A red generate job would have skipped the random wait, and the drip would have
+  fired at a fixed time. It now has `!cancelled()`. Every other downstream job already used
+  `always()`.
+
+**Expect red runs.** The flaky endpoints (WDQS 429/504, kokugakuin) fail often enough that
+cleanup-loop and label-generator will now go red on ordinary days. That is the signal the campaign
+exists to restore, not a new fault.
+
+Pinned by `tests/test_continue_on_error_refail.py`. It sweeps every workflow, so a new tolerant step
+or a new workflow is covered without anyone having to add it. `strip_husk_lines` stays hard-failing, as before.
+
 ## 2026-09-26 — Wikidata edits: the drip is fine; item creation had no route at all
 
 Queued from genealogy: find which of this repo's Wikidata edits are not going through.
