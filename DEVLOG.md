@@ -1,3 +1,15 @@
+## 2026-09-27 (cont. 21) — the drip pipeline analysis is closed; Engishiki review item restored
+
+The analysis item is done. Every group has a ruling; the first prune committed 5,432 landed lines
+and its numbers were reviewed. Out of the drip: founding dates, religious-building P825, both
+description files, the funding-class P31 removal and the Shikinaisha P31 references (paused);
+court rank and kami parents (moved to `handoff/court-rank-people/`); Category:/Template: wiki links
+(stripped). Everything else stays. The drip holds ~85,500 lines, and runs up to 1,000 edits per run
+on every push to main.
+
+The Engishiki list-membership review item was dropped from `queue.md` by mistake in `7356c5d81`
+(a neighbouring item's edit took it too). Restored from `c1eb9a458`, with Emma's ruling unchanged.
+
 ## 2026-09-27 (cont. 20) — the Wikidata drip runs on every push to main
 
 Emma: *"nobody really gives a shit what I'm doing anymore"*, so the anti-conflict and time gating

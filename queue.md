@@ -9,13 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] **CURRENT: analysis of the drip's pipelines, one at a time with Emma.** Explain how each
-  generator works (not just its output), what reads its property, and how much is already landed.
-  Kana and honorifics: kept. Founding dates: paused. Court rank + kami parents: moved to
-  `handoff/court-rank-people/`. Weekly prune of landed lines: shipped (first run 36299480522).
-  ⛔ **Not finished until the first prune run (36299480522) completes and its per-file counts are
-  reviewed with Emma.** Until then no completion figure is final.
-
 - [ ] **Find out why the direct drip lands 0 edits on some days.** 09-24 and 09-26: every write
   failed ("The save has failed." / "You do not have the permissions needed"). 09-25: 497 landed.
   No block, rights change or filter hit on the account. The drip now logs the error `code` +
@@ -25,6 +18,18 @@ from `ATOMIC_FILES`; they are not queue items.
   landed / already there / failed / skipped table with the first failure reason, to the log and the
   run summary. Still missing: persisting it (the drip workflow commits nothing), so completion and
   bad days can be read across runs.
+
+- [ ] **LATER, after the 0-edit-day fix: Engishiki list membership review.** Emma
+  2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
+  editing is too unreliable to verify it does anything productive. Her ruling, in order:
+  1. Stop the REMOVALS (`list_membership_removals`, `orphan_membership_removals`,
+     `multi_ordinal_removals`) and keep adding new memberships (`list_membership_rebuild`), if the
+     adds can run without the removals.
+  2. If they can't be separated: keep it all as it is.
+  3. If it has made no edits lately: remove it altogether.
+  Nothing downstream reads it (the katakana step's P361 hop is a sub-shrine's part-of its parent,
+  and excludes list items). Check first: its recent landed edits, and whether orphan removals ↔
+  rebuild loop (692 overlapping pairs, read from code, unverified).
 
 - [ ] **END OF QUEUE: sort out the wiki-link fetchers.** Emma 2026-09-27: `fetch_p6262_from_wiki.py` /
   `fetch_p11250_from_wiki.py` read their lines from shinto.miraheze.org pages, which CI can't reach.
