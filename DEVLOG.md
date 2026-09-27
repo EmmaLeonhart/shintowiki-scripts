@@ -1,3 +1,17 @@
+## 2026-09-27 (cont. 18) — first prune run: 6,757 landed lines found; run timed out before committing
+
+Run 36299480522 (dispatched, Sunday refresh). The prune found **6,757 fully landed lines** (value +
+qualifiers + references) and removed them: Fandom 3,118 · bunrei 1,974 · Miraheze 944 · reisai 402
+· jinjacho 126 · sonnet labels 35 · beppyo 36 · hobby bunrei 93 · hisousha 17 · typo fixes 8 ·
+shintai 3 · name_in_kana 1. (It counted the wiki files before the category/template strip.)
+
+**But the job hit its 150-minute limit** (06:13 → 08:44) before the commit step, so none of it
+reached main. The time went into the two weekly description generators: **67 + 12 = 79 minutes**, for
+files paused from the drip the same day. Emma: stop running them. Both Sunday steps are removed
+from `generate-quickstatements.yml` (scripts and last output kept), and `test_description_adds_imports`
+now counts the one remaining weekly step. The next Sunday refresh commits `landed_lines.json`; until
+then the daily prune has no list and does nothing.
+
 ## 2026-09-27 (cont. 17) — the two Shikinaisha/funding P31 files paused
 
 Emma: the P31 funding migration fixes *"a data modeling error that I don't like, but mostly some

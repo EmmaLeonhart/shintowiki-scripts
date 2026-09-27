@@ -119,5 +119,7 @@ def test_a_failing_step_no_longer_blames_wdqs():
     assert "usually HTTP 429 from WDQS" not in text, (
         "a step warning attributes its failure to WDQS without checking")
     assert "usually WDQS timeout" not in text
-    assert text.count("do NOT assume WDQS") >= 3, (
-        "the corrected wording is gone from one of the three weekly steps")
+    # Was three weekly steps; the two description generators were stopped on 2026-09-27
+    # (their output is drip-paused and they pushed Sunday runs past the job limit).
+    assert text.count("do NOT assume WDQS") >= 1, (
+        "the corrected wording is gone from the remaining weekly step")

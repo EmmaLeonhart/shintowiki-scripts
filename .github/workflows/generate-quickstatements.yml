@@ -546,25 +546,11 @@ jobs:
       # A deterministic two-line fix, reported as a rate limit for two weekly slots,
       # while description_adds.txt went on dripping its 2026-08-25 content. Say the
       # step failed and point at the traceback; the run log already has the answer.
-      - name: Description fixes (desc-without-label pairs, weekly Sunday refresh)
-        id: description-fixes-desc-without-label
-        working-directory: modern-quickstatements
-        continue-on-error: true
-        run: |
-          if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then \
-            python generate_description_fixes.py \
-              || echo "::warning title=Weekly refresh did not run::generate_description_fixes.py exited non-zero — read the traceback above; do NOT assume WDQS. description_label_pairs.txt was NOT regenerated."; \
-          else echo "not Sunday and not forced — keeping description_label_pairs.txt"; fi
-
-      - name: Description adds (labeled items missing descriptions, weekly Sunday refresh)
-        id: description-adds-labeled-items-missing
-        working-directory: modern-quickstatements
-        continue-on-error: true
-        run: |
-          if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then \
-            python generate_description_adds.py \
-              || echo "::warning title=Weekly refresh did not run::generate_description_adds.py exited non-zero — read the traceback above; do NOT assume WDQS. description_adds.txt was NOT regenerated."; \
-          else echo "not Sunday and not forced — keeping description_adds.txt"; fi
+      # Description fixes + description adds (weekly Sunday refresh): STOPPED 2026-09-27 (Emma).
+      # Their output (description_label_pairs.txt, description_adds.txt) is DRIP-PAUSED, and
+      # together they took 79 minutes on Sunday 09-27, pushing the job past its 150-minute limit
+      # before the commit step (run 36299480522). The scripts and last output stay; unpausing
+      # descriptions means restoring these two steps (git log -S generate_description_adds).
 
       # Emma 2026-09-27, "one weekly prune step". The static files (generator never drops
       # lines that landed) held 7,065 already-landed lines of 35,368, ~7% of each day's
