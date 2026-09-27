@@ -1,3 +1,23 @@
+## 2026-09-27 (cont. 2) — Emma's drip priority order and per-group rulings
+
+Set on the priority page (https://claude.ai/artifact/M56XgkhYdHMg8KbKugUEvP, source
+`docs/drip_priority.html`), saved 05:05 UTC. Every group was asked about separately, top-down.
+
+**Order:** wiki link ids → festivals → bunrei → deities → Engishiki/list structure → kana → English
+labels → official names → other external ids → everything else → addresses → court rank on people
+→ founding dates. Emma then moved **official names near the top**. Festivals, wiki links and bunrei
+are the ones she named as standing out as higher priority.
+
+**Rulings:** every group **kept whole** except kana, where **`derived_name_in_kana.txt` (9,969) is
+paused**: commented out of `ATOMIC_FILES` in both `direct_daily_edits.py` and `submit_daily_batch.py`,
+with `test_staged_readings` loosened to match. The small groups (other ids, everything else,
+addresses) were not asked about. Emma: *"A couple are even not worth the squeeze of removing them."*
+
+**Drip total now:** 122,903 − 9,969 = **112,934 lines ≈ 226 days** at 500/day if every run lands.
+
+**The order is recorded, not wired.** The drip still samples randomly across all files. Making it
+follow the order (weighting or tiers) is a separate change, and it goes to Emma first.
+
 ## 2026-09-27 (cont.) — drip horizon, and the first scarcity trim
 
 Emma asked how long the drip takes if every run lands. **143,030 lines across 78 files at
