@@ -33,6 +33,10 @@ def _patch_common(monkeypatch):
     # lockout is opened at the seam, like the gate above; the lockout has its own tests elsewhere.
     monkeypatch.setattr(dde, "wikidata_editing_allowed", lambda *_a, **_k: (True, "test: lockout opened at the seam"))
     monkeypatch.setattr(dde, "item_is_editable", lambda _qid, _today=None: (True, None))
+    # The sequential-misc line is woven into every run when sequential_misc.txt has lines
+    # (it does in CI, not locally), which added a third edit to two-line tests. These tests
+    # are about exit codes and counts, so the sequential file is held empty here.
+    monkeypatch.setattr(dde, "load_sequential_lines", lambda *_a, **_k: [])
 
 
 # test_the_gate_blocks_main_before_login removed 2026-09-27: the conflict_gate global pause it tested was removed (Emma).
