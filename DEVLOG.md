@@ -1,3 +1,9 @@
+## 2026-09-27 (cont. 32) — blocked runs retry every 15 minutes, up to 12 times
+
+Emma chose "every 15 min, up to 12" after four 5-minute retries in a row were blocked.
+`wikidata-drip.yml`'s retry job sleeps 900s and allows attempts up to 13 (the original + 12). A
+fully blocked stretch costs about 12 minutes of runner time across 3 hours.
+
 ## 2026-09-27 (cont. 31) — the evening's four attempts were all on blocked runners
 
 After `5f894feb9`, the block-stop and fresh-runner retry worked as built. Every runner drawn
