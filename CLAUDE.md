@@ -731,6 +731,15 @@ taxonomy label does not make it a question — it makes it a thing that looks ha
 - Both items had been sitting for three reports and were answered within one exchange of being
   asked properly.
 
+### ⭐ THE WIKI LINK IDS STAY IN THE DRIP — Fandom above all (Emma, 2026-09-26)
+
+Abandoning the wikis does **not** make the links pointless: it makes them more important. Fandom
+has no dormancy policy, so shinto.fandom stays up, and stays linked from Wikidata, forever. That
+makes `p6262_fandom_links.txt` (P6262) one of the most important files in the drip; most of it
+has not landed yet. Miraheze (`p11250_miraheze_links.txt`, P11250) will probably go eventually
+through inactivity, but it is mostly on Wikidata already and stays in the drip too. Her
+priority for the wiki links is *"surprisingly high"*. Do not offer them as trim candidates.
+
 ### ⭐ THE WIKI SIDE IS FORMALLY ABANDONED, AND THE MACHINERY STAYS UP (Emma, 2026-09-17)
 
 > *"we are formally abandoning it but our abandonment means the machinery is still here and still

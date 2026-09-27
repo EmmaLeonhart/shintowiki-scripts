@@ -9,9 +9,10 @@ stay):** `religious_building_p825.txt` (6,417; the dormant 10%), `description_ad
 `description_label_pairs.txt` (5,869). About 20,100 lines, so ≈ 123,000 left ≈ **8 months**, with
 no capped tail.
 
-**Still open:** the wiki link ids (`p6262_fandom_links` 12,779, `p11250_miraheze_links` 6,134) and
-`court_rank_people` (12,380). She wants more information first. A one-shot 23:00 cron (session
-`efbafdc7`) gathers it and asks.
+**Wiki link ids: KEPT** (Emma, same night: Fandom has no dormancy policy and stays linked
+forever, so its links are high priority. Recorded in CLAUDE.md). The 23:00 cron that would have asked
+about them was cancelled. She is working from the full per-group breakdown instead of a shortlist
+I picked for her.
 
 CLAUDE.md's completion-date rule is narrowed to its original error, at her word.
 
