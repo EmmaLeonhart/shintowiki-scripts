@@ -1,3 +1,13 @@
+## 2026-09-27 (cont. 9) — only founding dates and court rank are out
+
+Emma: *"the only thing that we should have removed at this point is … the court ranks and the
+founded dates."* The three 09-26 pauses are reversed: `religious_building_p825`, `description_adds`
+and `description_label_pairs` are back in `ATOMIC_FILES`. Out of the drip now: the four founding-date
+files (paused) and `court_rank_people` (moved to `handoff/court-rank-people/`). Her view on the
+official-name work: all of it is high priority. Mountain names matter a great deal, and she won't
+touch the Old Japanese cleanup without knowing what depends on it. The algorithms here work by one
+part removing something so another part's SPARQL reads something different and adds.
+
 ## 2026-09-27 (cont. 8) — derived kana is back in the drip
 
 After the hub/leaf map showed kana (P1814) is a hub, Emma: *"Bring back the kana."*
