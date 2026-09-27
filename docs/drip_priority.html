@@ -1,0 +1,145 @@
+<title>Drip Priority Order</title>
+<style id="page-style">
+:root{
+  --bg:#f7f6f2;--surface:#ffffff;--ink:#1d1c1a;--muted:#6b6862;--rule:#e2dfd7;
+  --accent:#b8321a;--accent-soft:#f6e3de;--keep:#2f6b4f;--keep-soft:#e1efe7;
+  --bar:#d9d5cb;--bar-fill:#1d1c1a;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;--bg:#151514;--surface:#1f1e1c;--ink:#ecebe6;--muted:#a19d95;--rule:#34322e;
+  --accent:#e8664b;--accent-soft:#3a211b;--keep:#7cc3a0;--keep-soft:#1b2d24;--bar:#34322e;--bar-fill:#ecebe6;}}
+:root[data-theme="dark"]{
+  color-scheme:dark;--bg:#151514;--surface:#1f1e1c;--ink:#ecebe6;--muted:#a19d95;--rule:#34322e;
+  --accent:#e8664b;--accent-soft:#3a211b;--keep:#7cc3a0;--keep-soft:#1b2d24;--bar:#34322e;--bar-fill:#ecebe6;}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:28px 64px;display:grid;gap:20px}
+h1{font:600 26px/1.2 "Shippori Mincho",Georgia,serif;margin:0;text-wrap:balance}
+.lede{color:var(--muted);margin:0;max-width:62ch}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:2;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--rule)}
+.totals{font:13px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);font-variant-numeric:tabular-nums}
+button{font:inherit;cursor:pointer;border-radius:6px}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#save{background:var(--ink);color:var(--bg);border:0;padding:8px 16px;font-weight:600}
+#save:disabled{opacity:.45;cursor:default}
+#status{font-size:13px;color:var(--muted)}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+li.g{background:var(--surface);border:1px solid var(--rule);border-radius:8px;display:grid;
+  grid-template-columns:auto 1fr auto;gap:4px 12px;padding:12px 12px 12px 8px;align-items:start}
+li.g.kept{border-left:3px solid var(--keep)}
+.rank{font:600 15px "IBM Plex Mono",monospace;color:var(--accent);min-width:2.2ch;text-align:right;padding-top:1px}
+.handle{grid-row:span 2;display:flex;flex-direction:column;gap:2px;align-items:center}
+.grip{cursor:grab;color:var(--muted);font-size:18px;line-height:1;padding:2px 4px;user-select:none;touch-action:none}
+.mv{background:none;border:1px solid var(--rule);color:var(--muted);width:28px;height:22px;font-size:11px;line-height:1;padding:0}
+.name{font-weight:600}
+.chip{display:inline-block;font-size:11px;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:1px}
+.chip.keep{background:var(--keep-soft);color:var(--keep)}
+.num{font:13px "IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.num b{font-weight:600}
+.meta{grid-column:2 / 4;display:grid;gap:6px}
+.track{height:6px;background:var(--bar);border-radius:3px;position:relative;overflow:hidden}
+.track span{position:absolute;top:0;bottom:0;background:var(--bar-fill);border-radius:3px}
+.track i{position:absolute;top:0;bottom:0;background:var(--accent)}
+.when{font:12px "IBM Plex Mono",monospace;color:var(--muted);font-variant-numeric:tabular-nums}
+details{font-size:13px;color:var(--muted)}
+summary{cursor:pointer;width:fit-content}
+details ul{margin:6px 0 0;padding-left:18px;font:12px/1.6 "IBM Plex Mono",monospace}
+.ghost{opacity:.4}
+.foot{font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-top:14px;display:grid;gap:6px}
+.foot code{font:12px "IBM Plex Mono",monospace}
+@media (max-width:480px){li.g{grid-template-columns:auto 1fr}.num{grid-column:2;text-align:left}.meta{grid-column:1 / 3}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=Shippori+Mincho:wght@600&display=swap">
+<div class="wrap">
+  <header style="display:grid;gap:8px">
+    <h1>Wikidata drip, in priority order</h1>
+    <p class="lede">Drag the groups (or use the arrows) into the order you want them delivered, then press Save. Each bar shows where that group would finish if the drip worked through them in this order at 500 lines a day, with every run landing.</p>
+  </header>
+  <div class="bar">
+    <span class="totals" id="totals"></span>
+    <span style="display:flex;gap:10px;align-items:center"><span id="status" role="status"></span><button id="save" type="button" disabled>Save order</button></span>
+  </div>
+  <ol id="list"></ol>
+  <div class="foot">
+    <div>Counts are lines staged on 2026-09-26. Most files are regenerated from live Wikidata, so they shrink as edits land.</div>
+    <div>Already paused (not in the list): <code>religious_building_p825</code> 6,417 · <code>description_adds</code> 7,841 · <code>description_label_pairs</code> 5,869.</div>
+  </div>
+</div>
+<script type="application/json" id="state">{"saved":null,"order":["wiki","deity","engi","kana","court","bunrei","en","names","founding","fest","addr","ids","else"],"groups":{"wiki":{"name":"Wiki link ids","kept":true,"files":[["p6262_fandom_links (Fandom)",12779],["p11250_miraheze_links (Miraheze)",6134]]},"deity":{"name":"Deities (P825)","files":[["saijin_deity_research",5081],["saijin_named_as",5059],["saijin_p825",5035],["honzon_p825",885],["shintai_p825",40],["invalid_p825_removals",17]]},"engi":{"name":"Engishiki / list structure","files":[["list_membership_rebuild",4887],["migrate_ritsuryo_funding_remove",3610],["shikinaisha_kokugakuin_refs",2505],["list_membership_removals",2016],["orphan_membership_removals",755],["ronsha_role_qualifiers",477],["province_exclusions",350],["p958_qualifiers + corrections",58],["multi_ordinal_removals",52],["ronsha_ranking_qualifiers",4],["underspecified_remove",3]]},"kana":{"name":"Kana readings (P1814 / qualifiers)","files":[["derived_name_in_kana",9969],["kana_qualifier_add",2204],["nta_kana",1456],["kana_redundant_remove",100],["name_in_kana",28],["katakana_reading_add",4]]},"court":{"name":"Court rank on people","files":[["court_rank_people",12380]]},"bunrei":{"name":"Bunrei (P612)","files":[["bunrei",9978],["beppyo_p612",423],["bunrei_shinwa_otaku",205],["bunrei_ikkojin",129],["bunrei_animism",128],["bunrei_qualifier_repair",119],["bunrei_onkamui",97],["bunrei_nicovideo",77],["bunrei_toranomaki",40]]},"en":{"name":"English labels","files":[["temple_identical_name_en_labels",6730],["identical_name_en_labels",1458],["temple_en_labels",1454],["kana_en_labels",669],["en_labels_sonnet",348],["en_labels",192],["multilingual_label_fixes",130],["label_typo_fixes",79],["tenjinsha_en_labels",42],["category_label_fixes",42],["french_elision_fixes",22],["label_proposals_drip",20],["cjk_ja_backfill",1]]},"names":{"name":"Official names (P1448)","files":[["sango_p1448",6563],["ronsha_ojp_name_removals",2128],["ojp_name_restores",21]]},"founding":{"name":"Founding dates (P571)","files":[["souken_p571",3459],["kofun_imports",971],["souken_den_p571",967],["souken_p571_citations",903]]},"fest":{"name":"Festivals (P837)","files":[["reisai",3257],["reisai_qualifier_repair",3]]},"addr":{"name":"Addresses (P6375)","files":[["address_citation_from_article",2597],["address_citation_backfill",132],["doujou_address_fixes",50],["uncited_address_removals",1]]},"ids":{"name":"Other external ids","files":[["jinjacho_p973",1526],["genbu_ids",1158],["shinmei_ids",74],["p4656_jawiki_references",15],["p3225_corporate_numbers",4]]},"else":{"name":"Everything else","files":[["shinto_honorifics",329],["hisousha_p119_p547",146],["shinto_short_names",107],["kami_parent_qualifiers",94],["description_removals",67],["description_enrichment_en",31],["miscellaneous_edits",26],["lost_shrine_parity",3]]}}}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js" id="sortable-lib"></script>
+<script id="app-js">
+(function(){
+  var RATE=500;
+  var state=JSON.parse(document.getElementById('state').textContent);
+  var order=state.order.slice();
+  var list=document.getElementById('list');
+  var saveBtn=document.getElementById('save');
+  var statusEl=document.getElementById('status');
+  function lines(id){return state.groups[id].files.reduce(function(a,f){return a+f[1]},0)}
+  var TOTAL=order.reduce(function(a,id){return a+lines(id)},0);
+  function fmt(n){return n.toLocaleString('en-US')}
+  function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+  function dirty(){return order.join()!==state.order.join()}
+  function render(){
+    var cum=0;list.innerHTML='';
+    order.forEach(function(id,i){
+      var g=state.groups[id],n=lines(id),start=cum;cum+=n;
+      var li=document.createElement('li');li.className='g'+(g.kept?' kept':'');li.dataset.id=id;
+      var files=g.files.slice().sort(function(a,b){return b[1]-a[1]});
+      li.innerHTML=
+        '<div class="handle"><span class="grip" aria-hidden="true">⋮⋮</span>'+
+        '<button class="mv" data-d="-1" aria-label="Move '+esc(g.name)+' up">▲</button>'+
+        '<button class="mv" data-d="1" aria-label="Move '+esc(g.name)+' down">▼</button></div>'+
+        '<div><span class="rank">'+(i+1)+'</span> <span class="name">'+esc(g.name)+'</span>'+(g.kept?'<span class="chip keep">kept</span>':'')+'</div>'+
+        '<div class="num"><b>'+fmt(n)+'</b> lines · '+(100*n/TOTAL).toFixed(1)+'% · '+Math.round(n/RATE)+' d</div>'+
+        '<div class="meta"><div class="track" title="Where this group sits in the whole queue"><span style="left:0;width:'+(100*start/TOTAL)+'%;opacity:.25"></span><i style="left:'+(100*start/TOTAL)+'%;width:'+Math.max(.6,100*n/TOTAL)+'%"></i></div>'+
+        '<div class="when">done by day '+Math.ceil(cum/RATE)+' of '+Math.ceil(TOTAL/RATE)+'</div>'+
+        '<details><summary>'+files.length+' file'+(files.length>1?'s':'')+'</summary><ul>'+
+        files.map(function(f){return '<li>'+esc(f[0])+' · '+fmt(f[1])+'</li>'}).join('')+'</ul></details></div>';
+      list.appendChild(li);
+    });
+    document.getElementById('totals').textContent=fmt(TOTAL)+' lines · ~'+Math.ceil(TOTAL/RATE)+' days at '+RATE+'/day';
+    saveBtn.disabled=!dirty()||!canSave;
+    if(!statusEl.dataset.busy) statusEl.textContent=dirty()?'Unsaved changes':(state.saved?'Saved '+state.saved.slice(0,16).replace('T',' ')+' UTC':'Not saved yet');
+  }
+  list.addEventListener('click',function(e){
+    var b=e.target.closest('.mv');if(!b)return;
+    var id=b.closest('li').dataset.id,i=order.indexOf(id),j=i+Number(b.dataset.d);
+    if(j<0||j>=order.length)return;
+    order.splice(i,1);order.splice(j,0,id);render();
+    var nb=list.querySelector('li[data-id="'+id+'"] .mv[data-d="'+b.dataset.d+'"]');if(nb)nb.focus();
+  });
+  if(window.Sortable){Sortable.create(list,{handle:'.grip',animation:120,ghostClass:'ghost',onEnd:function(){
+    order=Array.prototype.map.call(list.children,function(li){return li.dataset.id});render();}});}
+  var canSave=false,artifactNs=null;
+  function doc(){
+    var next={saved:new Date().toISOString(),order:order,groups:state.groups};
+    var json=JSON.stringify(next).replace(/</g,'\\u003c');
+    var reset=(document.head.querySelector('style')||{}).textContent||':root{color-scheme:light}body{margin:0}';
+    var t=document.querySelector('title');
+    return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>'+reset+'</style></head><body>'+
+      (t?t.outerHTML:'')+document.getElementById('page-style').outerHTML+
+      document.querySelector('link[href*="fonts.googleapis"]').outerHTML+
+      document.querySelector('.wrap').outerHTML.replace(/<ol id="list">[\s\S]*<\/ol>/,'<ol id="list"></ol>').replace(/<span id="status" role="status">[\s\S]*?<\/span>/,'<span id="status" role="status"></span>')+
+      '<script type="application/json" id="state">'+json+'<\/script>'+
+      document.getElementById('sortable-lib').outerHTML+
+      '<script id="app-js">'+document.getElementById('app-js').textContent+'<\/script></body></html>';
+  }
+  saveBtn.addEventListener('click',function(){
+    if(!artifactNs)return;
+    saveBtn.disabled=true;statusEl.dataset.busy='1';statusEl.textContent='Saving…';
+    artifactNs.publish(doc()).then(function(){statusEl.textContent='Saved';},function(err){
+      delete statusEl.dataset.busy;
+      var c=err&&err.code;
+      if(c==='conflict'){statusEl.textContent='Someone saved first; reloading to their order.';}
+      else if(c==='not_writer'||c==='not_granted'){canSave=false;statusEl.textContent='View only: you can reorder but not save.';}
+      else if(c==='rate_limited'){statusEl.textContent='Saving too often. Wait a moment and press Save again.';saveBtn.disabled=false;}
+      else{statusEl.textContent='Save failed ('+(c||'unknown')+'). Press Save to try again.';saveBtn.disabled=false;}
+    });
+  });
+  render();
+  if(window.claude&&window.claude.use){window.claude.use('artifact').then(function(ns){
+    artifactNs=ns;canSave=!!ns;if(!ns){statusEl.textContent='View only: saving is unavailable here.';}render();});}
+})();
+</script>
