@@ -14,6 +14,12 @@ from `ATOMIC_FILES`; they are not queue items.
   No block, rights change or filter hit on the account. The drip now logs the error `code` +
   `messages` (DEVLOG 2026-09-27). Read them from the next failing cleanup-loop run and fix the cause.
 
+- [ ] **Per-file drip completion report.** Emma, 2026-09-26: the repo cannot say how complete the
+  drip is. `direct_daily_edits.py` should write a per-file tally each run (landed / already present /
+  failed / lines remaining) into the run report, and `_site/runs.html` should show progress per group
+  over time. Evidence to start from: 09-25 had 18 of 497 draws already present (~4%). The wiki link
+  files cannot shrink because their fetch step is blocked, so their landed lines stay and are drawn again.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
