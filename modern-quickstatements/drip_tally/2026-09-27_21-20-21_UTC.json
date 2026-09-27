@@ -1,0 +1,56 @@
+{
+ "timestamp": "2026-09-27T21:20:21Z",
+ "totals": {
+  "succeeded": 0,
+  "failed": 10,
+  "already_absent": 0,
+  "skipped": 0,
+  "selected": 1001
+ },
+ "files": {
+  "derived_name_in_kana.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 4,
+   "skipped": 0
+  },
+  "identical_name_en_labels.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  },
+  "saijin_deity_research.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 2,
+   "skipped": 0
+  },
+  "bunrei.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  },
+  "saijin_named_as.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  },
+  "sango_p1448.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  }
+ },
+ "first_failure": {
+  "derived_name_in_kana.txt": "API error: The save has failed. [failed-save; messages: wikibase-api-failed-save, globalblocking-blockedtext-range, permissionserrors]",
+  "identical_name_en_labels.txt": "API error: You do not have the permissions needed to carry out this action. [permissiondenied; messages: wikibase-api-permissiondenied, globalblocking-blockedte",
+  "saijin_deity_research.txt": "API error: The save has failed. [failed-save; messages: wikibase-api-failed-save, globalblocking-blockedtext-range, permissionserrors]",
+  "bunrei.txt": "API error: The save has failed. [failed-save; messages: wikibase-api-failed-save, globalblocking-blockedtext-range, permissionserrors]",
+  "saijin_named_as.txt": "Qualifier error: The save has failed. [failed-save; messages: wikibase-api-failed-save, globalblocking-blockedtext-range, permissionserrors]",
+  "sango_p1448.txt": "API error: The save has failed. [failed-save; messages: wikibase-api-failed-save, globalblocking-blockedtext-range, permissionserrors]"
+ }
+}
