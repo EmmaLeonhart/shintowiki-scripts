@@ -32,7 +32,9 @@ WIKI_API = "https://shinto.miraheze.org/w/api.php"
 SPARQL_URL = "https://query-main.wikidata.org/sparql"
 PAGE_TITLE = "QuickStatements/P11250"
 OUTPUT_FILE = "p11250_miraheze_links.txt"
-QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:.+"$')
+# Category: and Template: pages are not linked (Emma, 2026-09-27: "Strip both"). They were
+# 63% of the Miraheze lines and 26% of the Fandom ones; only article links are wanted.
+QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:(?!(?:Category|Template):).+"$')
 QS_LABEL_RE = re.compile(r'^(Q\d+)\|Len\|".+"$')
 
 

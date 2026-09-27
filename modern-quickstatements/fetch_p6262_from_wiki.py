@@ -30,7 +30,9 @@ WIKI_API = "https://shinto.miraheze.org/w/api.php"
 SPARQL_URL = "https://query-main.wikidata.org/sparql"
 PAGE_TITLE = "QuickStatements/P6262"
 OUTPUT_FILE = "p6262_fandom_links.txt"
-QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"shinto:.+"$')
+# Category: and Template: pages are not linked (Emma, 2026-09-27: "Strip both"). They were
+# 63% of the Miraheze lines and 26% of the Fandom ones; only article links are wanted.
+QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"shinto:(?!(?:Category|Template):).+"$')
 
 
 def fetch_redirect_qids(qids):
