@@ -1,3 +1,26 @@
+## 2026-09-27 (cont. 4) — how the drip generators work, and how complete each group is
+
+Emma: I had shown her what each file outputs but not how its generator decides, so every pause I
+offered was one she couldn't judge. I also queued the completion analysis she asked for instead
+of doing it. Both are now on the priority page (https://claude.ai/artifact/M56XgkhYdHMg8KbKugUEvP),
+under each group. Three read-only agents wrote the per-file notes (source, selection rule, whether
+the file drops finished lines, pairing); completion comes from counts the generators print in CI.
+
+**Completion, where a generator prints it:** P958 97% · P13723 references 99.8% · honzon 85% ·
+court rank 37% (5,418 existing vs 9,316 new) · sangō 15% · genbu 10%.
+
+**Findings:**
+- ~16,500 lines sit in files that never drop lines already on Wikidata: reisai, bunrei and its
+  hobby-site files, beppyo_p612, shintai, jinjacho_p973, hisousha, and the LLM-fed files. The wiki
+  link files are frozen while Miraheze blocks CI. On 09-25 only 4% of draws were no-ops, so the cost
+  is growing but still small.
+- The suffix-based bunrei files name the network head and never check for an existing P612, so they
+  can conflict with the accurate beppyo_p612 layer.
+- orphan_membership_removals ↔ list_membership_rebuild: possible back-and-forth (queued, unverified).
+- label_proposals_drip switches to its whole 2.78M-line pool on 2027-05-23.
+- Where one file waits on another, it's marked on the page: honzon → form removals, kana qualifiers →
+  kana removals, typo fixes → multilingual fixes (pausing the multilingual file loses fixes for good).
+
 ## 2026-09-27 (cont. 3) — founding dates paused
 
 Emma: *"Pause all of it."* All four founding-date files are commented out of `ATOMIC_FILES` with a
