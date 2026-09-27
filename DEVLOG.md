@@ -1,3 +1,15 @@
+## 2026-09-27 (cont. 16) — the drip doubles to 1,000 edits a day
+
+Emma: *"there is a bit less scrutiny on me now … I think we can double the rate of edits and not run
+into any issues."* She chose 1,000/day in one run in the same window. `_DEFAULT_MAX_EDITS = 1000`,
+with the gap between edits at 15–20s. She picked 10–25s; `test_drip_fits_the_six_hour_ceiling` has
+a 15s floor, so 15–20s keeps the same 17.5s average (~3.4 edits/min, ~4.9h, inside the 350-min job).
+The drip (~104,000 lines) is ≈ **104 days** if every run lands.
+
+Her notes the same hour: deities stay but are the first to go if anything must; kana, bunrei and
+mountain names stay; English labels: unsure. Improving efficiency beyond the category/template strip
+and the prune is hard to do because it's all so tangled.
+
 ## 2026-09-27 (cont. 15) — wiki link namespaces stripped; the drip prints a per-file tally
 
 - **Wiki link ids:** Emma, "Strip both". 3,267 Category: lines out of `p6262_fandom_links.txt` and

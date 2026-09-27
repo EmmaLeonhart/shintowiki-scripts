@@ -69,7 +69,10 @@ UA = WIKIDATA_USER_AGENT
 #
 # A run that still stops short has made every edit it got through; they are
 # individually committed, not transactional.
-_DEFAULT_MAX_EDITS = 500
+# DOUBLED 2026-09-27 (Emma): "I think we can double the rate of edits and not run into
+# any issues" (less scrutiny now), with the gap at [15, 20]s (the test floor is 15s) so 1,000 edits fit
+# the same ~5h window: ~17.5s average = ~4.9h, ~3.4 edits/min.
+_DEFAULT_MAX_EDITS = 1000
 _CAP_EXCEPTIONS = {
     datetime.date(2026, 7, 6): 500,
     datetime.date(2026, 7, 7): 500,
@@ -84,8 +87,8 @@ def edit_day(now=None):
 
 
 MAX_EDITS = _CAP_EXCEPTIONS.get(edit_day(), _DEFAULT_MAX_EDITS)
-MIN_DELAY = 20
-MAX_DELAY = 50
+MIN_DELAY = 15
+MAX_DELAY = 20
 
 # The exact string every HTTP-429 path in this file returns. Kept as a constant so
 # the bail-out test below matches the sentinel and not a substring of an error
