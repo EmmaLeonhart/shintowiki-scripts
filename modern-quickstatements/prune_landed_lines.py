@@ -24,6 +24,7 @@ qualifier or reference keeps its line, so the drip can finish it. For a label li
 compare is KEPT. It removes finished lines, never pending work.
 """
 import argparse
+import datetime
 import io
 import json
 import os
@@ -182,12 +183,44 @@ def refresh():
                 parsed.setdefault(fn, []).append((l, p))
                 needs.setdefault(p["p"], set()).add(p["s"])
     live = fetch_live(needs)
-    state = {}
+    state = {"_refreshed": datetime.date.today().isoformat()}
     for fn, rows in parsed.items():
         state[fn] = sorted({l for l, p in rows if fully_landed(p, live)})
         print(f"{fn}: {len(state[fn])} of {len(rows)} line(s) fully landed", flush=True)
     io.open(STATE, "w", encoding="utf-8", newline="\n").write(
         json.dumps(state, ensure_ascii=False, indent=1) + "\n")
+
+
+REFRESH_EVERY_DAYS = 6
+
+
+def _load_state():
+    try:
+        return json.load(io.open(STATE, encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        return {}
+
+
+def refresh_due(today=None):
+    """Weekly, not every run: wikidata-drip runs on every push, and on 2026-09-27 a
+    refresh in each Sunday run was part of the WDQS load behind three 429 bails.
+    Due when the last completed refresh is REFRESH_EVERY_DAYS old, and not already
+    attempted today (a refresh that 429s is not retried in every later run)."""
+    today = today or datetime.date.today()
+    st = _load_state()
+    if st.get("_attempted") == today.isoformat():
+        return False
+    last = st.get("_refreshed")
+    if not last:
+        return True
+    return (today - datetime.date.fromisoformat(last)).days >= REFRESH_EVERY_DAYS
+
+
+def _mark_attempt(today=None):
+    st = _load_state()
+    st["_attempted"] = (today or datetime.date.today()).isoformat()
+    io.open(STATE, "w", encoding="utf-8", newline="\n").write(
+        json.dumps(st, ensure_ascii=False, indent=1) + "\n")
 
 
 def apply():
@@ -214,8 +247,13 @@ def main():
     args = ap.parse_args()
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
-    if args.refresh:
-        refresh()
+    if args.refresh and refresh_due():
+        try:
+            refresh()
+        except (SystemExit, Exception) as e:          # a 429 bails with SystemExit
+            print(f"::warning::landed-lines refresh did not finish ({e!r}); "
+                  f"pruning with the existing list")
+            _mark_attempt()
     apply()
 
 

@@ -1,3 +1,32 @@
+## 2026-09-27 (cont. 29) — conflict markers committed by CI; prune refresh made weekly and 429-tolerant
+
+**After the first full run, generation went red: three steps bailed on WDQS 429s** (genbu ids,
+address citations, and the prune's `--refresh`). The prune was part of the load: on Sundays it
+refreshed in *every* run, and with a run per push that's many ~120-query refreshes. Fixed in
+`prune_landed_lines.py`:
+- refresh only when the last completed refresh is ≥ 6 days old (`_refreshed` in `landed_lines.json`,
+  stamped 2026-09-27)
+- at most one attempt a day (`_attempted`)
+- a refresh that bails (SystemExit on 429) still applies the existing list
+
+Tests: `test_prune_landed_lines.py`.
+
+**⛔ `e37ded77c` (CI) committed `nta_kana.txt` and `nta_kana_targets.json` with 22 conflict markers
+each.** `generate-quickstatements.yml`'s commit steps run `git pull --rebase --autostash … || true`.
+My restore commit `6d9d67b2f` changed the same files, the autostash pop conflicted, `|| true` hid
+it, and the markers were staged. The drip skipped the marker lines and read both versions mixed.
+Fixes:
+- both autostash pulls now resolve unmerged files to this run's own version (`git checkout --theirs`
+  in a stash pop; checked by simulation in a throwaway repo) and drop the stash
+- `tests/test_no_conflict_markers.py` fails on any marker in generated files
+- the clean 1,456-line `nta_kana.txt` and 17,276-row cache are restored from `6d9d67b2f`
+
+`test_staged_readings::test_zero_overlap_with_the_worklists_today` is red. 21 items are on a
+missing-en-label worklist and also have a label-derived reading. **All 21 have an English label
+live**: the worklist predates this afternoon's drip, which landed those labels. That's a
+staleness, not the circularity the test guards against. Left red, not loosened; the worklist's
+daily regeneration clears it.
+
 ## 2026-09-27 (cont. 28) — first full run on the new setup: 997 landed, 0 failed
 
 wikidata-drip run 36321891824 (drip first, 1,000 cap, 15–20s gap). Tally committed as `16e80e6e7`

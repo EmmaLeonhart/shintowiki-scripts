@@ -71,3 +71,37 @@ def test_every_static_file_is_a_real_drip_file():
     import direct_daily_edits as d
     for fn in P.STATIC_FILES:
         assert fn in d.ATOMIC_FILES, fn
+
+
+def _state(tmp_path, monkeypatch, data):
+    monkeypatch.setattr(P, "STATE", str(tmp_path / "landed_lines.json"))
+    (tmp_path / "landed_lines.json").write_text(json.dumps(data), encoding="utf-8")
+
+
+def test_refresh_is_weekly_not_every_run(tmp_path, monkeypatch):
+    import datetime as dt
+    _state(tmp_path, monkeypatch, {"_refreshed": "2026-09-27"})
+    assert not P.refresh_due(dt.date(2026, 9, 28))
+    assert P.refresh_due(dt.date(2026, 10, 3))
+
+
+def test_a_refresh_already_attempted_today_is_not_retried(tmp_path, monkeypatch):
+    import datetime as dt
+    _state(tmp_path, monkeypatch, {"_refreshed": "2026-09-01", "_attempted": "2026-10-04"})
+    assert not P.refresh_due(dt.date(2026, 10, 4))
+    assert P.refresh_due(dt.date(2026, 10, 5))
+
+
+def test_a_refresh_that_bails_still_prunes_with_the_old_list(tmp_path, monkeypatch):
+    monkeypatch.setattr(P, "HERE", str(tmp_path))
+    _state(tmp_path, monkeypatch, {"reisai.txt": ["b"]})
+    (tmp_path / "reisai.txt").write_text("a\nb\n", encoding="utf-8")
+
+    def _bail():
+        raise SystemExit(2)                     # what a WDQS 429 does
+
+    monkeypatch.setattr(P, "refresh", _bail)
+    monkeypatch.setattr(sys, "argv", ["prune_landed_lines.py", "--refresh"])
+    P.main()
+    assert (tmp_path / "reisai.txt").read_text(encoding="utf-8") == "a\n"
+    assert "_attempted" in json.loads((tmp_path / "landed_lines.json").read_text(encoding="utf-8"))

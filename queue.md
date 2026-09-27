@@ -14,6 +14,10 @@ from `ATOMIC_FILES`; they are not queue items.
   No block, rights change or filter hit on the account. The drip now logs the error `code` +
   `messages` (DEVLOG 2026-09-27). Read them from the next failing cleanup-loop run and fix the cause.
 
+- [ ] **Watch `test_zero_overlap_with_the_worklists_today`.** Red on 2026-09-27 from a stale worklist (all 21
+  overlap items have en labels live). It should clear when `generate-shrines-missing-en-label` next
+  regenerates. If it doesn't, the circularity is real: look at `generate_derived_name_in_kana.py`'s target query.
+
 - [ ] **LATER, after the 0-edit-day fix: Engishiki list membership review.** Emma
   2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
   editing is too unreliable to verify it does anything productive. Her ruling, in order:
