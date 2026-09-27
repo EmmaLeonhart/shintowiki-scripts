@@ -1,3 +1,17 @@
+## 2026-09-27 (cont. 6) — "official names" was two important things presented as one minor one
+
+Emma: grouping by property lumped two distinct operations she cares a lot about under one label,
+and made them look unimportant:
+- **Mountain names (山号, `sango_p1448`).** Mountain names are barely modelled on Wikidata. She
+  considers them *"one of the most important things on Japanese religious buildings that is not
+  modeled."*
+- **Old Japanese name cleanup (`ronsha_ojp_name_removals`, `ojp_name_restores`).** Complicated,
+  intricate work that would break things if removed: the kana-qualifier add and remove steps both
+  work around these removals.
+
+The priority page now shows them as two groups, second and third after the wiki link ids. Court
+rank is off the page (moved to `handoff/court-rank-people/`). Page total: 94,254 lines.
+
 ## 2026-09-27 (cont. 5) — founding dates: Emma's reasoning; court ranks move to the genealogy repo
 
 **Founding dates (paused earlier today), and why.** Emma's reason is not that the dates matter less:
