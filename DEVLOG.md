@@ -1,3 +1,10 @@
+## 2026-09-27 (cont. 10) — religious-building P825 and the description files are out again
+
+Emma: *"none of that generalization to religious buildings applies anymore, and the descriptions
+stuff doesn't apply either."* Confirmed by AskUserQuestion: `religious_building_p825`,
+`description_adds` and `description_label_pairs` are paused again. Out of the drip now: those three,
+the four founding-date files, and court rank (moved). Drip ≈ 104,200 lines ≈ 209 days.
+
 ## 2026-09-27 (cont. 9) — only founding dates and court rank are out
 
 Emma: *"the only thing that we should have removed at this point is … the court ranks and the
