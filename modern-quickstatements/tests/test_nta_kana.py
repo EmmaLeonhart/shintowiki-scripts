@@ -249,3 +249,24 @@ def test_the_shipped_file_holds_no_katakana_and_every_line_is_referenced():
 
 def test_the_file_is_registered_in_the_drip():
     assert "nta_kana.txt" in dde.ATOMIC_FILES
+
+
+def test_a_refresh_that_shrinks_by_a_third_is_treated_as_truncated():
+    """2026-09-27: WDQS returned 5,439 placed targets where the cache held 17,276 an
+    hour earlier; the short CSV parsed cleanly and nta_kana.txt fell 1,456 -> 622."""
+    import generate_nta_kana as g
+    assert g.shrank_too_far(5439, 17276)
+    assert not g.shrank_too_far(17000, 17276)      # a real day's drain
+    assert not g.shrank_too_far(100, 0)            # no cache yet
+
+
+def test_a_truncated_refresh_keeps_the_cache(monkeypatch, tmp_path):
+    import json
+    import generate_nta_kana as g
+    cache = tmp_path / "targets.json"
+    cache.write_text(json.dumps({"placed": [["Q1", "a", "b", "c"]] * 100, "unplaced": []}), encoding="utf-8")
+    monkeypatch.setattr(g, "CACHE", str(cache))
+    monkeypatch.setattr(g, "fetch_rows", lambda q, keys: [("Q2", "x", "y", "z")] * 10 if len(keys) == 3 else [])
+    placed, _ = g.targets(True)
+    assert len(placed) == 100
+    assert len(json.loads(cache.read_text(encoding="utf-8"))["placed"]) == 100

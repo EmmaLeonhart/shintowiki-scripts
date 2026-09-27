@@ -415,6 +415,25 @@ def fetch_rows(query, keys):
     return out
 
 
+MIN_KEEP_FRACTION = 0.7
+
+
+def shrank_too_far(new, old):
+    """A refresh this much smaller than the cache is a truncated result, not a real drop.
+
+    Targets leave only as their labels or readings land, a few hundred a day at most."""
+    return old > 0 and new < MIN_KEEP_FRACTION * old
+
+
+def _cached_counts():
+    try:
+        with io.open(CACHE, encoding="utf-8") as fh:
+            d = json.load(fh)
+        return len(d["placed"]), len(d["unplaced"])
+    except Exception:
+        return None
+
+
 def targets(refresh):
     """(placed, unplaced) target rows, from the cache unless --refresh."""
     if not refresh and os.path.exists(CACHE):
@@ -423,6 +442,15 @@ def targets(refresh):
         return ([tuple(r) for r in d["placed"]], [tuple(r) for r in d["unplaced"]])
     placed = fetch_rows(QUERY, ["ja", "cityja", "prefja"])
     unplaced = fetch_rows(QUERY_NO_P131, ["ja"])
+    prev = _cached_counts()
+    if prev and shrank_too_far(len(placed), prev[0]):
+        # 2026-09-27: a refresh returned 5,439 placed rows where the cache held 17,276 an
+        # hour earlier, with nothing on Wikidata moving that much. A cut-off CSV body parses
+        # cleanly as fewer rows, so the short result was written and nta_kana.txt fell from
+        # 1,456 to 622 (the same shape as 09-21's 1,481 -> 772). Keep the previous cache.
+        print(f"::warning::nta_kana target refresh returned {len(placed)} placed rows vs "
+              f"{prev[0]} cached - treating it as truncated and keeping the cache")
+        return targets(False)
     with io.open(CACHE, "w", encoding="utf-8", newline="\n") as fh:
         json.dump({"placed": placed, "unplaced": unplaced}, fh, ensure_ascii=False)
     return placed, unplaced

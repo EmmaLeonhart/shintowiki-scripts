@@ -1,3 +1,17 @@
+## 2026-09-27 (cont. 26) — nta_kana: truncated WDQS refresh caught; today's good file restored
+
+Cause, measured: the committed target cache went **17,276 → 5,439 placed rows** between the 10:08
+and 11:34 regenerations, with no drip in between. `generate_nta_kana.py` fetches targets as CSV,
+and a cut-off CSV body parses cleanly as fewer rows, so the short set was cached and
+`nta_kana.txt` fell 1,456 → 622. This is the same shape as 09-21 (1,481 → 772).
+
+Fix: `targets(refresh=True)` compares the fresh placed count to the cache. Under 70%
+(`MIN_KEEP_FRACTION`), it warns (`::warning::`) and keeps the cache. Real drains are a few hundred
+a day. Tests in `test_nta_kana.py`: the threshold, and that a truncated refresh keeps the cache.
+Today's good cache and file (`1ee6fa9a8`, 1,456 lines) are restored, and the floor test is green.
+Separately, the exit-code tests now hold the sequential-misc line empty (`af6b09c8e`): in CI it had
+added a third edit to a two-line test.
+
 ## 2026-09-27 (cont. 25) — wikidata-drip.yml startup failure fixed; workflows now linted in CI
 
 `bdb9a0841`'s `wikidata-drip.yml` computed `attempt + 1` inside `${{ }}`. GitHub expressions have no
