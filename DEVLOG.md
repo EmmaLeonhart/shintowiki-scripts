@@ -1,3 +1,12 @@
+## 2026-09-27 (cont. 19) — the prune is committed
+
+Rerun 36307317287 finished in 81 minutes (the description generators are gone) and committed
+`landed_lines.json`: **5,432 fully landed lines**, removed from their files. Fandom 2,373 · bunrei
+1,974 · reisai 402 · Miraheze 364 · jinjacho 126 · beppyo 36 · sonnet labels 35 · hobby bunrei 93 ·
+hisousha 17 · typo fixes 8 · shintai 3 · name_in_kana 1. This is lower than the first run's 6,757
+because many of the landed wiki-link lines were Category:/Template: lines, and those were already
+stripped. From tomorrow, every daily run removes these lines again after regeneration.
+
 ## 2026-09-27 (cont. 18) — first prune run: 6,757 landed lines found; run timed out before committing
 
 Run 36299480522 (dispatched, Sunday refresh). The prune found **6,757 fully landed lines** (value +
