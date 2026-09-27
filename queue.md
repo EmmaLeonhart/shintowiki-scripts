@@ -21,25 +21,10 @@ from `ATOMIC_FILES`; they are not queue items.
   No block, rights change or filter hit on the account. The drip now logs the error `code` +
   `messages` (DEVLOG 2026-09-27). Read them from the next failing cleanup-loop run and fix the cause.
 
-- [ ] **Per-run drip tally.** The analysis half is done (2026-09-27: algorithm notes + generator-printed
-  completion counts on the priority page). Still missing: `direct_daily_edits.py` writing per-file
-  landed / already-present / failed counts each run, so completion is tracked over time and not only
-  from the counts generators happen to print.
-- [ ] **Delete the court-rank generator once the genealogy repo has it.** `generate_court_rank_quickstatements.py` +
-  `court_rank_people.txt` stay in `modern-quickstatements/` until Emma confirms the handoff landed
-  (`handoff/court-rank-people/README.md`).
-
-- [ ] **LATER, well after the current analysis: Engishiki list membership review.** Emma
-  2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
-  editing is too unreliable to verify it does anything productive. Her ruling, in order:
-  1. Stop the REMOVALS (`list_membership_removals`, `orphan_membership_removals`,
-     `multi_ordinal_removals`) and keep adding new memberships (`list_membership_rebuild`), if the
-     adds can run without the removals.
-  2. If they can't be separated: keep it all as it is.
-  3. If it has made no edits lately: remove it altogether.
-  Nothing downstream reads it (the katakana step's P361 hop is a sub-shrine's part-of its parent,
-  and excludes list items). Check first: its recent landed edits, and whether orphan removals ↔
-  rebuild loop (692 overlapping pairs, read from code, unverified).
+- [ ] **Per-run drip tally: keep it over time.** Since 2026-09-27 each drip run prints a per-file
+  landed / already there / failed / skipped table with the first failure reason, to the log and the
+  run summary. Still missing: persisting it (the drip workflow commits nothing), so completion and
+  bad days can be read across runs.
 
 - **Pinned tail (keep last)**
 

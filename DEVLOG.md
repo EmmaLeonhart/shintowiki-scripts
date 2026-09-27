@@ -1,3 +1,15 @@
+## 2026-09-27 (cont. 15) — wiki link namespaces stripped; the drip prints a per-file tally
+
+- **Wiki link ids:** Emma, "Strip both". 3,267 Category: lines out of `p6262_fandom_links.txt` and
+  3,802 Category:/Template: lines out of `p11250_miraheze_links.txt`. Both fetch scripts' line
+  patterns now refuse those two namespaces, so they don't return when the wiki fetch works again.
+- **Drip per-file tally:** `direct_daily_edits.py` records which file each drawn line came from, and
+  prints at the end of every run, to the log and to `$GITHUB_STEP_SUMMARY`: landed / already there /
+  failed / skipped per file, plus the first failure reason (which now carries the error code).
+  "Already there" is kept apart from landed, because on 09-26 all 36 "successes" were skips.
+  Tests: `test_drip_tally.py`. Persisting it across runs is still queued.
+- Dropped the stale queue item to delete the court-rank generator (`handoff/` is permanent).
+
 ## 2026-09-27 (cont. 14) — Emma on the cloud-LLM feeders and English labels from kana
 
 - **Cloud-LLM feeders:** keep. They belong to a different part of the system (the cloud routine that

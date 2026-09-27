@@ -322,8 +322,46 @@ def read_all_lines():
         cap = FILE_DAILY_CAPS.get(filepath)
         if cap is not None and len(file_lines) > cap:
             file_lines = random.sample(file_lines, cap)
+        for l in file_lines:
+            LINE_SOURCE.setdefault(l, filepath)
         lines.extend(file_lines)
     return lines
+
+
+# Which file each drawn line came from, for the per-file tally at the end of a run.
+LINE_SOURCE = {}
+
+
+def tally_outcome(success, msg):
+    """landed / already / failed, for the per-file tally.
+
+    A success whose message says the value was already there changed nothing, so it
+    is counted as `already`, apart from real landings. On 2026-09-26 all 36
+    "successes" were of that kind and the account made zero edits.
+    """
+    if success:
+        return "already" if "already" in (msg or "").lower() else "landed"
+    if msg == CLAIM_ABSENT_MSG:
+        return "already"
+    return "failed"
+
+
+def print_tally(tally, reasons):
+    """Per-file table of the run, to the log and to the GitHub run summary."""
+    rows = sorted(tally.items(), key=lambda kv: -sum(kv[1].values()))
+    out = ["", "=== Per-file tally (landed / already there / failed / skipped) ==="]
+    md = ["| file | landed | already there | failed | skipped | first failure |",
+          "|---|---|---|---|---|---|"]
+    for fn, c in rows:
+        why = reasons.get(fn, "")
+        out.append(f"  {fn}: {c['landed']} / {c['already']} / {c['failed']} / {c['skipped']}"
+                   + (f"   first failure: {why}" if why else ""))
+        md.append(f"| {fn} | {c['landed']} | {c['already']} | {c['failed']} | {c['skipped']} | {why} |")
+    print(chr(10).join(out))
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a", encoding="utf-8") as fh:
+            fh.write("## Drip per-file tally" + chr(10) * 2 + chr(10).join(md) + chr(10))
 
 
 # QS v1 term shorthand: L/D/A + a Wikidata language code, which may carry
@@ -949,7 +987,12 @@ def main():
     skipped = 0
 
     rate_limited = False
+    tally = {}
+    reasons = {}
     for i, line in enumerate(selected, 1):
+        src = LINE_SOURCE.get(line, SEQUENTIAL_FILE if (seq_pos is not None and (i - 1) == seq_pos) else "?")
+        t = tally.setdefault(src, {"landed": 0, "already": 0, "failed": 0, "skipped": 0})
+        outcome = None
         # Is THIS the woven-in sequential-misc line? Its cursor advances only when
         # its own edit reaches its end state (tracked via seq_ran/seq_advance).
         is_seq = seq_pos is not None and (i - 1) == seq_pos
@@ -966,6 +1009,8 @@ def main():
             if not parsed:
                 print(f"[{i}/{len(selected)}] SKIP: Could not parse: {sub}")
                 failed += 1
+                outcome = "failed"
+                reasons.setdefault(src, "could not parse")
                 break
 
             action = "REMOVE" if parsed["is_removal"] else "EDIT"
@@ -978,6 +1023,7 @@ def main():
             if not ok:
                 print(f"  SKIP: {parsed['entity']} — {why}")
                 skipped += 1
+                outcome = "skipped"
                 break
 
             try:
@@ -1021,6 +1067,9 @@ def main():
                     if RATE_LIMIT_MSG in msg:
                         print("  Rate-limited — stopping further edits")
                         rate_limited = True
+                outcome = tally_outcome(success, msg)
+                if outcome == "failed":
+                    reasons.setdefault(src, msg[:160])
                 if is_seq:
                     seq_advance = sequential_should_advance(success, msg)
                 if not success:
@@ -1028,9 +1077,13 @@ def main():
             except Exception as e:
                 print(f"  ERROR: {e}")
                 failed += 1
+                outcome = "failed"
+                reasons.setdefault(src, f"exception: {e}"[:160])
                 break
             if j < len(sublines) - 1:
                 time.sleep(2)  # brief gap between the halves of a pair
+        if outcome:
+            t[outcome] += 1
         if rate_limited:
             break
 
@@ -1042,6 +1095,7 @@ def main():
 
     print(f"\n=== Results: {succeeded} succeeded, {failed} failed, "
           f"{already_absent} already absent ===")
+    print_tally(tally, reasons)
 
     # Advance the sequential-misc cursor iff today's sequential line reached its end
     # state. Held otherwise (error / rate-limit / gate skip / never reached because a
