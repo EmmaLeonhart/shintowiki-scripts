@@ -778,6 +778,7 @@ jobs:
           # province_exclusions_report). Those are REPORTS ABOUT the run; this is an
           # INPUT TO it, and only an input makes the output reproducible.
           git add nta_kana_targets.json 2>/dev/null || true
+          git add saijin_unresolved.json 2>/dev/null || true   # deity names with no item (review list)
           git add landed_lines.json 2>/dev/null || true   # the weekly prune's record (prune_landed_lines.py)
           cd ..
           git diff --cached --quiet && echo "No generated file changes to commit" || {
@@ -810,6 +811,7 @@ jobs:
             # province_exclusions_report). Those are REPORTS ABOUT the run; this is an
             # INPUT TO it, and only an input makes the output reproducible.
             git add nta_kana_targets.json 2>/dev/null || true
+            git add saijin_unresolved.json 2>/dev/null || true   # deity names with no item (review list)
           git add landed_lines.json 2>/dev/null || true   # the weekly prune's record (prune_landed_lines.py)
             cd ..
             git diff --cached --quiet && echo "No changes after rebase" || {

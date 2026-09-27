@@ -1,3 +1,17 @@
+## 2026-09-27 (cont. 33) — deity names with no item: a review list, step 1 of a new feature
+
+Emma: a final feature worth trying is **new Wikidata items for deities** named in shrine 祭神 fields
+that have no item yet. `saijin_p825` handles linked names, and `saijin_deity_research` handles plain
+names that exactly match one deity; everything else was dropped without a record.
+`generate_saijin_deity_research.py` now writes `saijin_unresolved.json` (staged by CI), with shrine
+counts, in three groups:
+- **red_link**: jawiki linked a page that doesn't exist. The strongest signal.
+- **linked_no_item**: the page exists but has no Wikidata item.
+- **plain_no_match**: unlinked text that matches no deity, or more than one.
+
+It edits nothing. Test: `test_saijin_unresolved.py`. Next: size it with Emma once the file lands,
+case by case. Creating any item needs her yes.
+
 ## 2026-09-27 (cont. 32) — blocked runs retry every 15 minutes, up to 12 times
 
 Emma chose "every 15 min, up to 12" after four 5-minute retries in a row were blocked.
