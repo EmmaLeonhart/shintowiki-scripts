@@ -1,3 +1,12 @@
+## 2026-09-27 (cont. 27) — the 24 queued items are created
+
+create-items' first scheduled run since the schedule came back (committed as `7f61f8e85`, 14:57 UTC):
+**Nengo Q141579102, torchhd Q141579104, and all 22 Ise Jingu 125-shrine items (Q141579106 …).**
+121 statement lines OK, 0 FAIL/ERROR. The three lost shrines were skipped as already created (the
+state recorded on 09-26 held). Spot-checked live: Q141579106 屋乃波比伎神 carries P31, P361 (Ise
+Jingu), P1814 and P612 with en/ja labels; Q141579102 Nengo carries P31, P277, P856, P1324. The
+first wikidata-drip run on the new setup (36321891824) landed 500+ edits by 15:07 and is still going.
+
 ## 2026-09-27 (cont. 26) — nta_kana: truncated WDQS refresh caught; today's good file restored
 
 Cause, measured: the committed target cache went **17,276 → 5,439 placed rows** between the 10:08
