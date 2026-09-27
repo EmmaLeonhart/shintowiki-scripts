@@ -9,7 +9,7 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] **Find out why the direct drip lands 0 edits on some days.** 09-24 and 09-26: every write
+- [ ] **Find out why the direct drip lands ~0 edits: 5 of 6 runs since 09-21** (09-16..20 all fine; runner region ruled out; DEVLOG 2026-09-27 cont. 23). 09-24 and 09-26: every write
   failed ("The save has failed." / "You do not have the permissions needed"). 09-25: 497 landed.
   No block, rights change or filter hit on the account. The drip now logs the error `code` +
   `messages` (DEVLOG 2026-09-27). Read them from the next failing cleanup-loop run and fix the cause.

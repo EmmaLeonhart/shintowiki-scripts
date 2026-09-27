@@ -1,3 +1,36 @@
+## 2026-09-27 (cont. 23) — 0-edit days: a pattern since 09-21, not random days
+
+Drip results by run, read from the cleanup-loop logs:
+
+| date | runner region | result |
+|---|---|---|
+| 09-16 | eastus2 | 468 succeeded, 0 failed |
+| 09-17 | centralus | 478 / 0 |
+| 09-19 | centralus | 486 / 0 |
+| 09-20 | northcentralus | 493 / 0 |
+| 09-21 | westus2 | 32 / 464 |
+| 09-22 | centralus | 25 / 474 |
+| 09-23 | eastus | 38 / 459 |
+| 09-24 | westus3 | 25 / 472 |
+| 09-25 | westus2 | **497 / 2** |
+| 09-26 | westcentralus | 36 / 459 |
+
+The "succeeded" on bad days are skips of lines already there (on 09-26 all 36 were, and the
+account's contribution history had 0 edits). **Since 09-21, 5 of 6 runs landed essentially nothing.**
+The failures are the same every time: "The save has failed." on statements, references and
+qualifiers, and "You do not have the permissions needed" on labels and aliases.
+
+What it is **not**, as far as the logs show:
+- **The runner region:** westus2 was bad on 09-21 and good on 09-25; centralus was good on 09-17/19
+  and bad on 09-22.
+- **A drip-code change:** the only change to `direct_daily_edits.py` in 09-19..26 was registering
+  the religious-building P825 file.
+- **The account:** no block, no rights change and no edit-filter hit on Immanuelle, and 09-25 worked
+  with the same credentials.
+
+The cause isn't known yet. The drip now logs Wikibase's error `code` and `messages`, and the first
+run to carry them (36312477153, in progress) will say what the failures are.
+
 ## 2026-09-27 (cont. 22) — the drip's per-file tally is kept across runs
 
 `direct_daily_edits.write_tally_file()` writes each run's tally (per file: landed / already there /
