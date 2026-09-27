@@ -99,10 +99,8 @@ jobs:
       - name: Wikidata freeze guard
         id: freeze
         run: |
-          if ! python3 shinto_miraheze/check_enwiki_mentions.py; then
-            echo "open=false" >> "$GITHUB_OUTPUT"
-            echo "::notice title=Wikidata freeze::ENWIKI-MENTION GATE closed — no item creation."
-          elif ! python3 shinto_miraheze/wikidata_edit_allowed.py; then
+          # The enwiki-mention gate no longer applies (Emma, 2026-09-27: "Remove it").
+          if ! python3 shinto_miraheze/wikidata_edit_allowed.py; then
             echo "open=false" >> "$GITHUB_OUTPUT"
             echo "::notice title=Wikidata freeze::WIKIDATA LOCKOUT in force (wikidata_editing_lockout.state) — no item creation."
           else

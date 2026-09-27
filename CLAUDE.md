@@ -1252,6 +1252,16 @@ them, fall back to running ~50. Nothing else touches Wikidata.
   only REMOVES, and only acts on items where a fresh SPARQL query *confirms the
   add already landed*. Never add+remove in one action — under the random run
   order the remove could fire before the add, losing data.
+- **⭐ 2026-09-27 — THE WIKIDATA DRIP RUNS ON EVERY PUSH TO MAIN, AND TWO GATES ARE OFF IT.**
+  Emma: nobody objects to this editing any more; the gating was too aggressive. So:
+  `wikidata-drip.yml` (push to main + a daily cron + dispatch) runs generate → drip, up to
+  1,000 edits per run, one run at a time. cleanup-loop no longer runs the drip, the random
+  pre-run wait, or the retired QuickStatements submit. **The enwiki-mention gate no longer
+  gates Wikidata** (removed from cleanup-loop's window-gate and create-items.yml; the check
+  and its daily record keep running as machinery). **The conflict_gate global pause is
+  removed** from the drip and the two create gates; the per-item skip (an item another
+  editor touched recently is left alone) stays. The **Wikidata lockout state file still
+  gates every write.** The two bullets below describe the gate as it was before this change.
 - **⛔ ENWIKI-MENTION GATE — no Wikidata editing while "Immanuelle" is named on
   [[Wikipedia:AI noticeboard]] or [[Wikipedia talk:WikiProject Japan]]** (Emma,
   2026-08-06). A **condition, not a date**: `cleanup-loop.yml`'s window-gate runs

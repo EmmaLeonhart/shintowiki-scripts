@@ -951,18 +951,11 @@ def main():
 
     print("=== Direct Wikidata API Edits (QS fallback) ===\n")
 
-    # GATE 1 — global pause. See conflict_gate.py and
-    # docs/script-rationale/bruno_plus_analysis_2026-07.md. Emma 2026-07-10, on ブルーノ・プラス:
-    # "This is maximum caution with this person … I think that this person is an LTA."
-    # A paused run is a SKIP, not a failure: nothing was attempted, so nothing broke.
+    # GATE 1 (the global pause on ブルーノ・プラス activity) was REMOVED 2026-09-27. Emma:
+    # nobody objects to this editing any more and the gating was too aggressive; keep only
+    # the per-item skip (GATE 2, item_is_editable), so an item another editor touched
+    # recently is still left alone. conflict_gate.pause_reason stays for its tests/history.
     today = datetime.datetime.now(datetime.timezone.utc).date()
-    watch = load_conflict_watch()
-    reason = conflict_gate.pause_reason(
-        today, watch["last_edit"], watch["talk_activity"],
-        watch["noticeboard_mention"], watch["project_chat_hold"])
-    if reason:
-        print("SKIPPED: {}".format(reason))
-        return 0
 
     all_lines = read_all_lines()
     if not all_lines:

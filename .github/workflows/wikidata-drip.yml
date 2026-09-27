@@ -1,0 +1,48 @@
+name: Wikidata drip
+
+# Emma, 2026-09-27: "any push to main should trigger the pipeline." Nobody objects to
+# this editing any more, so the old time gating (cleanup-loop's once-per-edit-day check,
+# its random pre-run wait) and the conflict/enwiki gates were too aggressive. The random
+# 15-20s gap BETWEEN edits stays: that noise is still wanted.
+#
+# This is deliberately lean: generate the QuickStatements files, then run the drip.
+# Nothing wiki-side and no retired QuickStatements-API attempt sits in front of the
+# Wikidata edits any more; cleanup-loop no longer runs the drip at all.
+#
+#   push to main   every push (commits with [skip ci], i.e. every bot commit, never trigger)
+#   schedule       once a day as well, so a day with no pushes still edits
+#   dispatch       by hand
+#
+# Each run does up to 1,000 edits (direct_daily_edits.MAX_EDITS; Emma chose "each run up
+# to 1,000"). One run at a time: a push during a run waits and starts after it; GitHub
+# keeps only the newest waiting run, so pushes during a run collapse into one follow-up.
+# The Wikidata lockout state file still gates every write (checked in the drip and in
+# direct_daily_edits.py itself).
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "37 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: wikidata-drip
+  cancel-in-progress: false
+
+jobs:
+  generate-quickstatements:
+    uses: ./.github/workflows/generate-quickstatements.yml
+    secrets: inherit
+
+  # !cancelled(): a generator failing (the job goes red via refail_failed_steps.py) must
+  # not stop the edits. The drip falls back to the committed files if the artifact is absent.
+  direct-daily-edits:
+    needs: [generate-quickstatements]
+    if: ${{ !cancelled() }}
+    uses: ./.github/workflows/direct-daily-edits.yml
+    secrets: inherit

@@ -65,15 +65,10 @@ def is_open(today=None, last_watched_edit=_UNSET):
     if not allowed:
         return False, f"wikidata lockout: {detail}"
 
-    try:
-        if last_watched_edit is _UNSET:
-            last_watched_edit = conflict_gate.fetch_last_watched_edit()
-        if not conflict_gate.should_run(today, last_watched_edit):
-            return False, f"conflict_gate: {conflict_gate.pause_reason(today, last_watched_edit)}"
-    except Exception as e:                       # fail closed, never open
-        return False, f"conflict_gate could not be evaluated ({e}) — refusing"
-
-    return True, "open: wikidata lockout clear and conflict_gate clear"
+    # The conflict_gate global pause was removed 2026-09-27 (Emma: the gating was too
+    # aggressive; only the drip's per-item skip is kept). last_watched_edit is accepted
+    # and ignored so existing callers keep working.
+    return True, "open: wikidata lockout clear"
 
 
 if __name__ == "__main__":

@@ -110,15 +110,14 @@ def test_the_label_generator_blind_spot_is_closed():
     assert exempt == [], f"label-generator pipelines exempted from the re-fail: {exempt}"
 
 
-def test_cleanup_loop_random_wait_survives_a_red_generate_job():
-    with open(os.path.join(_WF_DIR, "cleanup-loop.yml"), encoding="utf-8") as fh:
-        rw = yaml.safe_load(fh)["jobs"]["random-wait"]
-    assert "generate-quickstatements" in rw["needs"]
-    assert "!cancelled()" in str(rw.get("if")), (
-        "random-wait needs generate-quickstatements; without !cancelled() a red generate "
-        "job skips it and the drip loses its randomized timing"
-    )
-
+def test_the_drip_survives_a_red_generate_job():
+    """wikidata-drip.yml (2026-09-27): a generator failing turns its job red, and that
+    must not stop the Wikidata edits. The drip needs generate with !cancelled()."""
+    with open(os.path.join(_WF_DIR, "wikidata-drip.yml"), encoding="utf-8") as fh:
+        drip = yaml.safe_load(fh)["jobs"]["direct-daily-edits"]
+    assert "generate-quickstatements" in drip["needs"]
+    assert "!cancelled()" in str(drip.get("if")), (
+        "without !cancelled() a red generate job would skip the day's edits")
 
 # --- the helper itself -------------------------------------------------------
 

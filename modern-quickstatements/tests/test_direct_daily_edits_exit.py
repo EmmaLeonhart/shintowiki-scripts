@@ -35,20 +35,7 @@ def _patch_common(monkeypatch):
     monkeypatch.setattr(dde, "item_is_editable", lambda _qid, _today=None: (True, None))
 
 
-def test_the_gate_blocks_main_before_login(monkeypatch):
-    """The guard for the vacuity above: with the gate shut, main() never logs in."""
-    _patch_common(monkeypatch)
-    # Re-shut the gate that _patch_common opened.
-    monkeypatch.setattr(dde.conflict_gate, "pause_reason",
-                        lambda *_a, **_k: "paused (test)")
-
-    def _must_not_run():
-        raise AssertionError("main() reached wd_login() while the gate was shut")
-
-    monkeypatch.setattr(dde, "wd_login", _must_not_run)
-    monkeypatch.setattr(dde, "read_all_lines", lambda: ["Q1|P17|Q17"])
-    assert dde.main() == 0
-
+# test_the_gate_blocks_main_before_login removed 2026-09-27: the conflict_gate global pause it tested was removed (Emma).
 
 def test_empty_backlog_returns_0(monkeypatch):
     _patch_common(monkeypatch)

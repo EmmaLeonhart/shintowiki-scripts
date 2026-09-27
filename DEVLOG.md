@@ -1,3 +1,27 @@
+## 2026-09-27 (cont. 20) — the Wikidata drip runs on every push to main
+
+Emma: *"nobody really gives a shit what I'm doing anymore"*, so the anti-conflict and time gating
+are too aggressive, and any push to main should run the pipeline. Her answers:
+- each run up to 1,000 edits
+- one run at a time, the next queued
+- keep only the conflict gate's per-item skip
+- remove the enwiki-mention gate
+
+Built:
+- `wikidata-drip.yml`: push to main + daily 21:37 UTC cron + dispatch. Runs
+  generate-quickstatements → direct-daily-edits (the latter with `!cancelled()`). Concurrency
+  `wikidata-drip`, no cancel. `[skip ci]` bot commits don't trigger it.
+- **cleanup-loop:** random-wait, submit-quickstatements (the retired QS attempt) and
+  direct-daily-edits removed. build-run-history now needs only window-gate. The window-gate's
+  enwiki check is removed.
+- **create-items.yml:** enwiki check removed; the lockout check stays.
+- **conflict_gate global pause removed** from `direct_daily_edits.main` (GATE 1), `ise_jingu_gate`
+  and `lost_shrine_gate`; the three tests pinning it are removed. The per-item skip (GATE 2) stays.
+- The random 15–20s gap between edits stays. The Wikidata lockout state file still gates every write.
+
+⚠ At 1,000 edits per run and a run per push, a busy push day can mean several thousand edits.
+That's Emma's choice ("each run up to 1,000").
+
 ## 2026-09-27 (cont. 19) — the prune is committed
 
 Rerun 36307317287 finished in 81 minutes (the description generators are gone) and committed

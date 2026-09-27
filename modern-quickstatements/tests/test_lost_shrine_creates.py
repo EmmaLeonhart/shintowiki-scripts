@@ -143,17 +143,7 @@ def test_gate_opens_once_the_lockout_lifts_and_conflict_gate_is_clear(monkeypatc
     assert ok
 
 
-def test_gate_fails_closed_when_the_conflict_check_raises(monkeypatch):
-    def boom():
-        raise RuntimeError("network down")
-    monkeypatch.setattr(lost_shrine_gate, "editing_allowed",
-                        lambda: (True, "no lockout"))
-    monkeypatch.setattr(lost_shrine_gate.conflict_gate,
-                        "fetch_last_watched_edit", boom)
-    ok, why = lost_shrine_gate.is_open(today=datetime.date(2026, 9, 30))
-    assert not ok
-    assert "refusing" in why
-
+# test_gate_fails_closed_when_the_conflict_check_raises removed 2026-09-27: the conflict_gate global pause it tested was removed (Emma).
 
 def test_gate_fails_closed_when_the_lockout_check_raises(monkeypatch):
     def boom():
