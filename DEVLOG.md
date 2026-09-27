@@ -1,3 +1,11 @@
+## 2026-09-27 (cont. 17) — the two Shikinaisha/funding P31 files paused
+
+Emma: the P31 funding migration fixes *"a data modeling error that I don't like, but mostly some
+other guy didn't like"*, and the Kokugakuin references on Shikinaisha P31 *"I don't think they are
+worth it."* Confirmed: `migrate_ritsuryo_funding_remove` (3,610) and `shikinaisha_kokugakuin_refs`
+(2,505) are paused. Both are leaves. The 3-line underspecified removal stays (under 100). Drip ≈
+98,000 lines ≈ 98 days at 1,000/day.
+
 ## 2026-09-27 (cont. 16) — the drip doubles to 1,000 edits a day
 
 Emma: *"there is a bit less scrutiny on me now … I think we can double the rate of edits and not run

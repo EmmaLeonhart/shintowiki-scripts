@@ -36,7 +36,7 @@ ATOMIC_FILES = [
     "remove_shikinai_hiteisha.txt",           # Remove P31=Q135026601 (Shikinai Hiteisha)
     "remove_shikinaisha.txt",                 # Remove P31=Q134917286 (Shikinaisha) from Shikinai Ronsha items
     "ronsha_ojp_name_removals.txt",           # Remove Old Japanese (ojp-*) P1448 official names from pure Shikinai Ronsha candidates
-    "shikinaisha_kokugakuin_refs.txt",        # Cite the P31=Q134917286 (Shikinaisha) statements to the Kokugakuin database, like their siblings
+    # DRIP-PAUSED 2026-09-27 (Emma: the Shikinaisha/funding P31 work "genuinely does not matter at this point"): "shikinaisha_kokugakuin_refs.txt",        # Cite the P31=Q134917286 (Shikinaisha) statements to the Kokugakuin database, like their siblings
     "uncited_address_removals.txt",           # Remove uncited Japanese P6375 where the same shrine carries a cited Japanese address
     "engishiki_add_references.txt",           # Add Kokugakuin refs to Engishiki/Ritsuryō P13723
     "p11250_miraheze_links.txt",              # Add P11250 (Miraheze article ID) links
@@ -56,7 +56,7 @@ ATOMIC_FILES = [
     "kana_qualifier_add.txt",                 # Add <kana>カミノヤシロ P1814 qualifier to ojp-hani P1448 official names (bot request 2026-02-26)
     "kana_redundant_remove.txt",              # Remove the redundant raw katakana TOP-LEVEL P1814 after the カミノヤシロ qualifier is confirmed present. The sibling-qualifier half was stopped 2026-09-09: QuickStatements cannot remove a qualifier, so those lines deleted whole official names.
     "ojp_name_restores.txt",                  # Restore of the four ojp-hani P1448 official names those lines destroyed (generate_ojp_name_restores.py); add-only, self-healing
-    "migrate_ritsuryo_funding_remove.txt",    # Remove P31 ritsuryō funding values once P13723 is confirmed
+    # DRIP-PAUSED 2026-09-27 (Emma: the Shikinaisha/funding P31 work "genuinely does not matter at this point"): "migrate_ritsuryo_funding_remove.txt",    # Remove P31 ritsuryō funding values once P13723 is confirmed
     "migrate_ritsuryo_funding_underspecified_remove.txt",  # Remove P31=Kanpei-sha when more specific funding type present
     "recreation_relations.txt",               # Deferred family relations (P22/P25/P40/P3373) between recreated deleted-items; from recreate-deleted-wikidata/match_new_qids.py
     "durability_backlinks.txt",               # Durability: reciprocal backlinks (father→child etc.) onto other items so 2026-created orphan items become structurally needed (audit of 2026-01-01.txt)

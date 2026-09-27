@@ -80,7 +80,8 @@ def test_every_committed_atomic_line_parses():
 @pytest.mark.parametrize("modname", GENERATORS)
 def test_generator_output_is_registered(modname):
     mod = importlib.import_module(modname)
-    assert mod.OUTPUT_FILE in direct_daily_edits.ATOMIC_FILES
+    assert (mod.OUTPUT_FILE in direct_daily_edits.ATOMIC_FILES
+            or mod.OUTPUT_FILE in direct_daily_edits.drip_paused_files())
 
 
 @pytest.mark.parametrize("modname", GENERATORS)

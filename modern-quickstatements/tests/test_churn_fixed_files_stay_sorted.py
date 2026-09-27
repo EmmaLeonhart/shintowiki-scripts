@@ -113,7 +113,7 @@ def test_the_files_are_all_registered_for_the_drip():
     if HERE not in sys.path:
         sys.path.insert(0, HERE)
     import direct_daily_edits as d
-    atomic = set(d.ATOMIC_FILES)
+    atomic = set(d.ATOMIC_FILES) | d.drip_paused_files()
     missing = [f for f in SORTED_FILES if f not in atomic]
     assert not missing, (
         "these are pinned as sorted but no longer reach the drip: %s" % missing)

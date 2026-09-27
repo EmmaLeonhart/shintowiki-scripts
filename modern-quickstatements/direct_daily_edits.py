@@ -148,12 +148,12 @@ ATOMIC_FILES = [
     "katakana_reading_remove.txt",          # Retires those katakana values, ONLY where a fresh SPARQL confirms the derived hiragana has already landed — both scripts derive through the same english_to_kana.kana_for, so the confirmed value is by construction the one the add proposed. Add-first/remove-later in two scripts, never one, so the drip's random order can never leave an item with no reading (generate_katakana_reading_remove.py). Whole-statement removal of a top-level P1814, which QuickStatements expresses correctly — NOT the qualifier removal that destroyed four ojp-hani official names on 2026-09-09.
     "lost_shrine_parity.txt",                 # The three lost-shrine items the 2026-09-10 create-items dispatch made are duplicates of the three Emma made by hand on 2026-09-06, and Emma merges the duplicates herself in her own time, so ours is parity — whichever item survives the merge should be complete: "they should be identical in form". They already match on every label, statement and reference except one — P625, which the create run could not write because parse_qs_value had no globe-coordinate case (now added). This supplies it. Descriptions cannot be equalised: Wikidata refuses a second item the same (label, description) pair in a language, which is what every FAIL in that run was. ADD-only, self-healing (generate_lost_shrine_parity.py).
     "ojp_name_restores.txt",                  # Puts back the four ojp-hani P1448 official names that kana_redundant_remove.txt DELETED — its 5-field lines read as "drop this qualifier" but QuickStatements has no such operation, so each removed the whole statement with its two references, its P1264 and the カミノヤシロ qualifier. Q135040123/Q135070009/Q135194697 (2026-09-07) and Q135195565 (2026-09-08), the four that ran before the shape was stopped on 2026-09-09. Emma that day: "Rebuild them from history." Content copied verbatim from each removing edit's parent revision — a restore, not a reconstruction. ADD-only, one line per qualifier and per reference block so no line can fail on a piece that has already landed; self-healing (generate_ojp_name_restores.py re-asks Wikidata each build and goes empty when all four are whole).
-    "migrate_ritsuryo_funding_remove.txt",
+    # DRIP-PAUSED 2026-09-27 (Emma: the Shikinaisha/funding P31 work "genuinely does not matter at this point"): "migrate_ritsuryo_funding_remove.txt",
     "migrate_ritsuryo_funding_underspecified_remove.txt",
     "recreation_relations.txt",               # Deferred family relations (P22/P25/P40/P3373) between recreated deleted-items; from recreate-deleted-wikidata/match_new_qids.py
     "durability_backlinks.txt",               # Durability reciprocal backlinks for orphaned 2026-created items (audit of 2026-01-01.txt)
     "ronsha_ojp_name_removals.txt",           # Emma 2026-07-09: a Ronsha is a *candidate*, not an Engishiki shrine, so an Old Japanese (ojp-*) P1448 on one is a name copied off the entry it merely claims to be. Remove-only => drip-safe. Guarded to PURE Ronsha (not also Q134917286/Q135038714).
-    "shikinaisha_kokugakuin_refs.txt",        # Emma 2026-07-09: "all P31 Shikinaisha items should get the Kokugakuin university citation thing just like others." Every one of the 2,863 P31=Q134917286 statements was unreferenced while its siblings carried S248=Q135159299 + S13677. Add-only => drip-safe; self-healing (query returns only unreferenced statements).
+    # DRIP-PAUSED 2026-09-27 (Emma: the Shikinaisha/funding P31 work "genuinely does not matter at this point"): "shikinaisha_kokugakuin_refs.txt",        # Emma 2026-07-09: "all P31 Shikinaisha items should get the Kokugakuin university citation thing just like others." Every one of the 2,863 P31=Q134917286 statements was unreferenced while its siblings carried S248=Q135159299 + S13677. Add-only => drip-safe; self-healing (query returns only unreferenced statements).
     "uncited_address_removals.txt",           # Emma 2026-07-09: an uncited Japanese P6375 is import noise when the same shrine also has a cited Japanese address. Remove-only => drip-safe. Refuses any item where an uncited value equals a cited one (QS removes by value, not GUID).
     "reisai.txt",                             # Shrine Reisai (例祭) dates imported from jawiki (P837 day-of-year + P3831=Reisai qualifier + jawiki citation); regenerated in CI by generate_reisai_quickstatements.py
     "bunrei.txt",                             # Shrine bunrei lineage: branch->head-shrine P612 + P1013=Q195793 (Bunrei) qualifier, cited to jinja-kikou.net; derived locally by generate_bunrei_quickstatements.py (name-classification into jinja-kikou's network->head mapping)
@@ -330,6 +330,14 @@ def read_all_lines():
         lines.extend(file_lines)
     return lines
 
+
+
+def drip_paused_files():
+    """Files deliberately paused from the drip: commented ATOMIC_FILES entries carrying a
+    DRIP-PAUSED note (Emma's call each time; CLAUDE.md, dropping work needs her consent).
+    Registration guards accept these and still fail on any file that silently fell out."""
+    src = open(os.path.abspath(__file__), encoding="utf-8").read()
+    return set(re.findall(r'#\s*DRIP-PAUSED[^\n]*?"([^"\n]+\.txt)",', src))
 
 # Which file each drawn line came from, for the per-file tally at the end of a run.
 LINE_SOURCE = {}
