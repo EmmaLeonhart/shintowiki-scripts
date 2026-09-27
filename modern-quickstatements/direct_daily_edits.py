@@ -543,6 +543,26 @@ def item_is_editable(qid, today=None):
     return False, "{} edited it on {}".format(who[0], who[1]) if who else "recently edited"
 
 
+def api_error_text(err):
+    """The API error as `info [code; messages]`, for the run log.
+
+    `info` alone is often just "The save has failed." -- on 2026-09-24 and 09-26
+    every write in the run failed with that text (zero edits in the account's
+    contributions both days) while 09-25 landed 497, and the log could not say why.
+    Wikibase puts the real reason in `code` and the `messages` list (a block, a rate
+    limit, an edit filter), so print those too. `info` stays first, so
+    is_already_present() still matches on it.
+    """
+    if not isinstance(err, dict):
+        return str(err)
+    info = err.get("info", str(err))
+    extra = [err.get("code") or "?"]
+    names = [m.get("name") for m in err.get("messages") or [] if isinstance(m, dict) and m.get("name")]
+    if names:
+        extra.append("messages: " + ", ".join(names))
+    return f"{info} [{'; '.join(extra)}]"
+
+
 def value_to_api_json(parsed_value):
     """Convert a parsed value to the JSON string expected by wbcreateclaim/wbsetqualifier."""
     if parsed_value["type"] in ("entity", "monolingualtext", "time", "globecoordinate"):
@@ -676,7 +696,7 @@ def execute_removal(session, csrf, parsed):
     r.raise_for_status()
     result = r.json()
     if "error" in result:
-        return False, f"API error: {result['error'].get('info', str(result['error']))}"
+        return False, f"API error: {api_error_text(result['error'])}"
     return True, "Removed"
 
 
@@ -700,7 +720,7 @@ def execute_create_claim(session, csrf, entity, prop, parsed_value):
     r.raise_for_status()
     result = r.json()
     if "error" in result:
-        return False, f"API error: {result['error'].get('info', str(result['error']))}", None
+        return False, f"API error: {api_error_text(result['error'])}", None
     guid = result.get("claim", {}).get("id")
     return True, "Created", guid
 
@@ -746,7 +766,7 @@ def execute_set_qualifier(session, csrf, guid, prop, parsed_value):
     r.raise_for_status()
     result = r.json()
     if "error" in result:
-        info = result["error"].get("info", str(result["error"]))
+        info = api_error_text(result["error"])
         if is_already_present(info):
             return True, "Qualifier already present"
         return False, f"Qualifier error: {info}"
@@ -774,7 +794,7 @@ def execute_set_reference(session, csrf, guid, ref_pairs):
     r.raise_for_status()
     result = r.json()
     if "error" in result:
-        info = result["error"].get("info", str(result["error"]))
+        info = api_error_text(result["error"])
         if is_already_present(info):
             return True, "Reference already present"
         return False, f"Reference error: {info}"
@@ -811,7 +831,7 @@ def execute_set_term(session, csrf, entity, kind, lang, value):
     r.raise_for_status()
     result = r.json()
     if "error" in result:
-        return False, f"API error: {result['error'].get('info', str(result['error']))}"
+        return False, f"API error: {api_error_text(result['error'])}"
     return True, f"{action} {lang}={value!r}"
 
 

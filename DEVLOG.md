@@ -1,3 +1,25 @@
+## 2026-09-27 — correction: the drip does NOT deliver every day. Zero edits on 09-24 and 09-26
+
+The 2026-09-26 entry below says "the direct drip delivers". That was read off one good run
+(09-25) and it is wrong for the day either side of it:
+
+| run | date | drip result | real edits in the account's contribs that day |
+|---|---|---|---|
+| 35970891571 | 09-24 | 331 "save has failed", 50 permission errors, 90 more save failures | **0** |
+| 36110401739 | 09-25 | **497 succeeded**, 2 failed | 500+ |
+| 36228048409 | 09-26 | 36 "succeeded", 459 failed | **0** |
+
+All 36 of the 09-26 "successes" were `Skipped (already exists)`. On a bad day **every** write fails:
+statements with "The save has failed.", labels and aliases with "You do not have the permissions
+needed". The account (Immanuelle) has no block, no rights change, and no edit-filter disallow in its
+abuse log. So the cause is not known yet.
+It changes from run to run and nothing on the account changes between runs.
+
+**What was missing is the error detail.** The drip printed only `info`, which for these failures is
+the generic text. `api_error_text()` now logs the error's `code` and Wikibase's `messages` names after
+it (`info` stays first, so `is_already_present()` is unaffected). The next failing run will say
+why. Pinned by `modern-quickstatements/tests/test_api_error_text.py`.
+
 ## 2026-09-26 (cont.) — the continue-on-error campaign: every tolerant step is re-failed from its outcome
 
 Emma, 2026-09-21: *"We run a campaign to fix it."* Done across the whole tree, not only the
