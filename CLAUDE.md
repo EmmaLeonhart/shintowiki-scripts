@@ -628,6 +628,12 @@ and deliberate. Reach for the reason before reaching for a speed-up.
 
 ### ⛔ DO NOT COMPUTE A COMPLETION DATE FOR ANYTHING THE DRIP OWNS (Emma, 2026-09-17)
 
+⭐ **Narrowed 2026-09-26.** Emma: the rule came *"because of a specific error that you generalized
+which isn't that relevant anymore"*. When she asks how long the drip will take, answer it: total
+lines ÷ 500/day, assuming every run lands. What stays banned is the original error, which is
+volunteering a horizon as the argument for dropping work. The drip is now in **scarcity mode**
+(she said so the same day), and trimming unneeded files from `ATOMIC_FILES` is the lever.
+
 I asked whether to give up on temple English labels, evidenced as *"13,288 temples, 45 years at
 1.1/day."* Her answer: ***"Of course not is this even a task ... I think this is just an automated
 thing."***

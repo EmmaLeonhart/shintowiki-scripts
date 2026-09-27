@@ -1,3 +1,20 @@
+## 2026-09-27 (cont.) — drip horizon, and the first scarcity trim
+
+Emma asked how long the drip takes if every run lands. **143,030 lines across 78 files at
+500/day ≈ 290 days.** The two capped description files add a tail of about 3 months. Emma, on why:
+*"we're in more of a scarcity mode for trimming out unnecessary edits"*.
+
+**Paused (commented out of `ATOMIC_FILES` with a DRIP-PAUSED note; the files and their generators
+stay):** `religious_building_p825.txt` (6,417; the dormant 10%), `description_adds.txt` (7,841) and
+`description_label_pairs.txt` (5,869). About 20,100 lines, so ≈ 123,000 left ≈ **8 months**, with
+no capped tail.
+
+**Still open:** the wiki link ids (`p6262_fandom_links` 12,779, `p11250_miraheze_links` 6,134) and
+`court_rank_people` (12,380). She wants more information first. A one-shot 23:00 cron (session
+`efbafdc7`) gathers it and asks.
+
+CLAUDE.md's completion-date rule is narrowed to its original error, at her word.
+
 ## 2026-09-27 — correction: the drip does NOT deliver every day. Zero edits on 09-24 and 09-26
 
 The 2026-09-26 entry below says "the direct drip delivers". That was read off one good run
