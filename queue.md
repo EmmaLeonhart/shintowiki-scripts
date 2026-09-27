@@ -9,6 +9,13 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- [ ] **Run the Wikidata drip on every push to main.** Emma 2026-09-27: nobody objects to her
+  editing any more, so the conflict/time gating is too aggressive. Any push to main should run the
+  pipeline. Keep the random noise between edits and drop the strict time gating. Wiki-side steps
+  and the QuickStatements attempt must not sit in front of the Wikidata edits. Plan: a lean
+  workflow (generate → drip) on push, not cleanup-loop (which cancels in progress). Decide the
+  daily total, the overlap rule and the conflict gate with Emma first.
+
 - [ ] **CURRENT: analysis of the drip's pipelines, one at a time with Emma.** Explain how each
   generator works (not just its output), what reads its property, and how much is already landed.
   Kana and honorifics: kept. Founding dates: paused. Court rank + kami parents: moved to
