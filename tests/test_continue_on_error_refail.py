@@ -110,14 +110,19 @@ def test_the_label_generator_blind_spot_is_closed():
     assert exempt == [], f"label-generator pipelines exempted from the re-fail: {exempt}"
 
 
-def test_the_drip_survives_a_red_generate_job():
-    """wikidata-drip.yml (2026-09-27): a generator failing turns its job red, and that
-    must not stop the Wikidata edits. The drip needs generate with !cancelled()."""
+def test_the_drip_runs_first_and_generation_only_after_it_landed_edits():
+    """wikidata-drip.yml (Emma, 2026-09-27): drip first from the committed files;
+    the 80-minute generation only after a drip that landed edits; a blocked drip
+    retries on a fresh runner."""
     with open(os.path.join(_WF_DIR, "wikidata-drip.yml"), encoding="utf-8") as fh:
-        drip = yaml.safe_load(fh)["jobs"]["direct-daily-edits"]
-    assert "generate-quickstatements" in drip["needs"]
-    assert "!cancelled()" in str(drip.get("if")), (
-        "without !cancelled() a red generate job would skip the day's edits")
+        jobs = yaml.safe_load(fh)["jobs"]
+    assert "needs" not in jobs["direct-daily-edits"], "the drip must not wait on generation"
+    gen = jobs["generate-quickstatements"]
+    assert "direct-daily-edits" in gen["needs"]
+    assert "outputs.landed" in str(gen.get("if")), "generation must be gated on edits landing"
+    retry = jobs["retry-on-fresh-runner"]
+    assert "outputs.blocked == 'true'" in str(retry.get("if"))
+    assert "gh workflow run wikidata-drip.yml" in retry["steps"][-1]["run"]
 
 # --- the helper itself -------------------------------------------------------
 

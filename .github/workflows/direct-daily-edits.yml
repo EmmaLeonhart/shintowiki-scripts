@@ -3,6 +3,13 @@ name: Direct Wikidata API Edits
 on:
   workflow_dispatch:
   workflow_call:
+    outputs:
+      blocked:
+        description: "true when the first edits all failed and the run stopped (fail fast)"
+        value: ${{ jobs.edit.outputs.blocked }}
+      landed:
+        description: "edits that actually landed this run"
+        value: ${{ jobs.edit.outputs.landed }}
 
 permissions:
   contents: write   # to commit drip_tally/*.json (2026-09-27)
@@ -36,6 +43,9 @@ jobs:
     # 350, not 540: see the note above. GitHub's hosted-job ceiling is 6h, so a
     # larger number is unreachable and only hides the cut-off.
     timeout-minutes: 350
+    outputs:
+      blocked: ${{ steps.execute.outputs.blocked }}
+      landed: ${{ steps.execute.outputs.landed }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -98,6 +108,7 @@ jobs:
           fi
 
       - name: Execute edits via Wikidata API
+        id: execute
         if: steps.wikidata_lockout.outputs.open == 'true'
         working-directory: modern-quickstatements
         env:

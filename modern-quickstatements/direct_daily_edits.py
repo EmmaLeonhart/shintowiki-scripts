@@ -90,6 +90,12 @@ MAX_EDITS = _CAP_EXCEPTIONS.get(edit_day(), _DEFAULT_MAX_EDITS)
 MIN_DELAY = 15
 MAX_DELAY = 20
 
+# FAIL FAST (Emma, 2026-09-27). Since 09-21 most runs landed nothing: every write failed
+# for the whole run, while a good run lands ~all. A run whose first FAIL_FAST_N attempted
+# edits ALL fail stops, reports blocked=true, and wikidata-drip.yml retries on a fresh
+# runner. Lines that were already there, and skipped items, count neither way.
+FAIL_FAST_N = 10
+
 # The exact string every HTTP-429 path in this file returns. Kept as a constant so
 # the bail-out test below matches the sentinel and not a substring of an error
 # message that merely contains those digits.
@@ -1009,6 +1015,8 @@ def main():
     skipped = 0
 
     rate_limited = False
+    blocked = False
+    n_landed = n_failed = 0
     tally = {}
     reasons = {}
     for i, line in enumerate(selected, 1):
@@ -1106,6 +1114,14 @@ def main():
                 time.sleep(2)  # brief gap between the halves of a pair
         if outcome:
             t[outcome] += 1
+            n_landed += outcome == "landed"
+            n_failed += outcome == "failed"
+        if n_landed == 0 and n_failed >= FAIL_FAST_N:
+            print(f"BLOCKED: the first {n_failed} attempted edits all failed "
+                  f"(first reason: {next(iter(reasons.values()), '?')}) — stopping this run "
+                  f"so it can be retried on a fresh runner.", flush=True)
+            blocked = True
+            break
         if rate_limited:
             break
 
@@ -1136,6 +1152,15 @@ def main():
         else:
             print(f"Sequential-misc: cursor held at {seq_cursor} "
                   f"(line #{seq_idx} retries next run)")
+
+    # For wikidata-drip.yml: retry on a fresh runner when blocked; regenerate only
+    # after a run that landed edits.
+    gh_out = os.environ.get("GITHUB_OUTPUT")
+    if gh_out:
+        with open(gh_out, "a", encoding="utf-8") as fh:
+            fh.write(f"blocked={'true' if blocked else 'false'}\nlanded={n_landed}\n")
+    if blocked:
+        return 1
 
     # Total failure: attempted edits but NONE landed (the 2026-07-06 outage — an
     # invalidated bot token failing every save — hid behind a green run for days).

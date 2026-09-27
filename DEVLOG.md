@@ -1,3 +1,20 @@
+## 2026-09-27 (cont. 24) — blocked runs fail fast, retry on a fresh runner; drip before generation
+
+Emma's design for the runs where every write fails (5 of 6 since 09-21):
+- **Fail fast:** `direct_daily_edits.py` stops when its first `FAIL_FAST_N = 10` attempted edits
+  all fail. Lines already there and skipped items count neither way. It prints `BLOCKED` with the
+  first reason, writes `blocked=true` / `landed=N` to `$GITHUB_OUTPUT` and exits 1.
+  `direct-daily-edits.yml` exposes both as `workflow_call` outputs.
+- **Retry on a fresh runner:** `wikidata-drip.yml`'s `retry-on-fresh-runner` job waits 5 minutes and
+  dispatches the workflow again with `attempt+1`, up to attempt 4. A new job is a new VM, and
+  usually a new IP.
+- **Drip first:** the drip edits from the committed files. The 80-minute generation runs only when
+  the drip landed > 0 edits. cleanup-loop still regenerates once a day.
+- Tests: three new cases in `test_direct_daily_edits_exit.py` (stops at 10; already-there lines
+  don't count; a good run reports what landed). The workflow-order test is updated.
+
+Found on the way: `979a61ad9` cut `nta_kana.txt` 1,456 → 622 (queued; the floor test is correctly red).
+
 ## 2026-09-27 (cont. 23) — 0-edit days: a pattern since 09-21, not random days
 
 Drip results by run, read from the cleanup-loop logs:

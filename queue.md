@@ -9,6 +9,12 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- [ ] **nta_kana.txt dropped 1,456 → 622 in `979a61ad9`** (the generation inside wikidata-drip run
+  36312477153). This is the same shape as the 09-21 drop (1,481 → 772) the workflow comment
+  records. `test_staged_readings::test_load_parses_the_real_file` is correctly red on it. Find why
+  `generate_nta_kana.py --refresh` accepts a smaller target set (a truncated WDQS result?).
+  Readings go missing until a good regeneration; nothing wrong is sent.
+
 - [ ] **Find out why the direct drip lands ~0 edits: 5 of 6 runs since 09-21** (09-16..20 all fine; runner region ruled out; DEVLOG 2026-09-27 cont. 23). 09-24 and 09-26: every write
   failed ("The save has failed." / "You do not have the permissions needed"). 09-25: 497 landed.
   No block, rights change or filter hit on the account. The drip now logs the error `code` +
