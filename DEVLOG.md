@@ -1,3 +1,15 @@
+## 2026-09-27 (cont. 25) — wikidata-drip.yml startup failure fixed; workflows now linted in CI
+
+`bdb9a0841`'s `wikidata-drip.yml` computed `attempt + 1` inside `${{ }}`. GitHub expressions have no
+arithmetic, so the file was rejected at startup (run 36320895525: "workflow file issue", 0 jobs)
+and the new drip never ran. The YAML parsed and every test passed. Fixed: the arithmetic is done in
+the shell.
+
+Guard: `tests/test_workflows_actionlint.py` runs actionlint (shellcheck off) on every workflow, and
+CI installs `actionlint-py`. Checked both ways: it flags the broken version (`unexpected character
+'+'`) and passes the fix. Three wiki-side workflows are listed as KNOWN: 62 pre-existing findings,
+all one pattern (an array compared with a string), recorded but not fixed here.
+
 ## 2026-09-27 (cont. 24) — blocked runs fail fast, retry on a fresh runner; drip before generation
 
 Emma's design for the runs where every write fails (5 of 6 since 09-21):

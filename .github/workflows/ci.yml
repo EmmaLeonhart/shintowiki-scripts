@@ -56,7 +56,7 @@ jobs:
         # hanja + pykakasi: needed since test_shikinaisha_lists.py imports the
         # shikinaisha-list generator, which pulls the Korean pipeline (same
         # dep list as label-generator-regenerate.yml).
-        run: pip install pytest requests mwclient opencc-python-reimplemented hanja pykakasi wunsen aksharamukha
+        run: pip install pytest requests mwclient opencc-python-reimplemented hanja pykakasi wunsen aksharamukha actionlint-py
 
       - name: Run tests
         # The root tests/ dir was missing from this list, so its 9 tests
