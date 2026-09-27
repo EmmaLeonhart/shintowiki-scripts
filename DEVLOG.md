@@ -1,3 +1,13 @@
+## 2026-09-27 (cont. 11) — kami parents move into the court-rank handoff directory
+
+Emma: the kami-parent job (`kami_parent_qualifiers`, 94 lines on 51 parent kami) also goes to the
+genealogy repo. It lives **inside** `handoff/court-rank-people/`, so the other repo's agent can't miss it,
+with its own `KAMI_PARENTS.md`: the model (a join: a parent's P40 gets the child's other parent as a
+qualifier), the six rules, why it is tangled (it copies whatever genealogy the child records, e.g.
+Futodama as the father of Ame no Uzume, and two fathers for Himetataraisuzuhime), and the full list of the 94
+lines. The README links to it. The generator and output were moved with `git mv`, the CI step was
+removed, the drip entry paused, and `test_wdqs_transport` updated.
+
 ## 2026-09-27 (cont. 10) — religious-building P825 and the description files are out again
 
 Emma: *"none of that generalization to religious buildings applies anymore, and the descriptions

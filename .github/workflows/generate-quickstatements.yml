@@ -261,11 +261,9 @@ jobs:
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_souken_den_quickstatements.py
-      - name: Kami parent qualifiers
-        id: kami-parent-qualifiers
-        working-directory: modern-quickstatements
-        continue-on-error: true
-        run: python generate_kami_parent_qualifiers.py
+      # Kami parent qualifiers: MOVED OUT 2026-09-27 (Emma) to handoff/court-rank-people/
+      # (see KAMI_PARENTS.md there). It edits deities' parent/child statements, which
+      # the people/genealogy repo takes over.
       - name: Shinto honorifics (stage 1)
         id: shinto-honorifics-stage-1
         working-directory: modern-quickstatements

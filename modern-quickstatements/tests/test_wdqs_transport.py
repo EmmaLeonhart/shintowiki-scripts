@@ -102,12 +102,9 @@ MIGRATED = ("generate_invalid_p825_removals.py",
             # file's own change, on the cadence above.
             "generate_bunrei_qualifier_repair.py",
             "generate_reisai_qualifier_repair.py",
-            # ⚠ This one paced itself with a bare `wd_pace()` — READ_INTERVAL,
-            # **0.3s** — for a SPARQL caller, which `wd_pace.py` tells you in its
-            # own docstring not to do, and it fires one query per property pair.
-            # 0.5s in generate_court_rank_quickstatements.py was called out as the
-            # figure from the incident that set the 2.5s floor; this was lower.
-            "generate_kami_parent_qualifiers.py",
+            # generate_kami_parent_qualifiers.py adopted it here (it had paced SPARQL
+            # with a bare 0.3s wd_pace); it moved to handoff/court-rank-people/ on
+            # 2026-09-27.
             "generate_sango_quickstatements.py",
             "generate_shinto_honorifics.py",
             # ── The rest of the subclass, same day, second pass ──────────────

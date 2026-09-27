@@ -1,5 +1,16 @@
 # Court rank on people (P14005): handoff from shintowiki-scripts
 
+> **This directory holds two handoffs.** This README covers court ranks on people. The second is
+> the parent/child links between Japanese deities: read [`KAMI_PARENTS.md`](KAMI_PARENTS.md) in this
+> same directory. Both move to this repository and are paused in shintowiki-scripts.
+>
+> Files here: court rank: `generate_court_rank_quickstatements.py` (main generator),
+> `court_rank_people.txt` (12,380 pending lines), plus the one-off rank-item batches
+> (`generate_court_rank_category_*`, `generate_court_rank_subrank_links.py`,
+> `generate_court_rank_item_creates.py` and their `.txt` outputs, already run), and
+> `test_court_rank_is_referenced.py`. Kami parents: `generate_kami_parent_qualifiers.py`,
+> `kami_parent_qualifiers.txt`.
+
 ## What this is
 
 Japanese court rank (位階, P14005) on **people** on Wikidata, read from the Japanese Wikipedia
