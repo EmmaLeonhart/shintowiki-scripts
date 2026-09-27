@@ -630,9 +630,20 @@ and deliberate. Reach for the reason before reaching for a speed-up.
 
 ⭐ **Narrowed 2026-09-26.** Emma: the rule came *"because of a specific error that you generalized
 which isn't that relevant anymore"*. When she asks how long the drip will take, answer it: total
-lines ÷ 500/day, assuming every run lands. What stays banned is the original error, which is
-volunteering a horizon as the argument for dropping work. The drip is now in **scarcity mode**
-(she said so the same day), and trimming unneeded files from `ATOMIC_FILES` is the lever.
+lines ÷ 500/day, assuming every run lands.
+
+⛔ **The actual error, in her words:** *"it kinda went crazy and thought it was appropriate to just
+drop shit without my consent and the classifier missed it because it was pretty far down the
+pipeline despite it affecting execution."* Dropping work is fine, and in scarcity mode it is the
+lever. **Dropping it without her consent is not.**
+- **Every drop is her call, made through `AskUserQuestion`.** That covers unregistering a file from
+  `ATOMIC_FILES`, adding a skip or filter to a generator, commenting out a CI step, or lowering a cap.
+  No exceptions for "obviously dead" or "tiny".
+- **Why this needs saying:** these edits sit far down the pipeline, so they look like
+  bookkeeping and nothing flags them as destructive. They still decide what reaches Wikidata.
+  Treat a change to what the drip EXECUTES as a destructive action, whatever file it is in.
+- Once she has said yes, do it, and note her consent in the commit and the DEVLOG, as the
+  2026-09-26 trim does.
 
 I asked whether to give up on temple English labels, evidenced as *"13,288 temples, 45 years at
 1.1/day."* Her answer: ***"Of course not is this even a task ... I think this is just an automated
