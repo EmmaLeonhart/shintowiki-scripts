@@ -1,0 +1,21 @@
+{
+ "timestamp": "2026-09-27T21:34:15Z",
+ "totals": {
+  "succeeded": 0,
+  "failed": 1,
+  "already_absent": 0,
+  "skipped": 0,
+  "selected": 1001
+ },
+ "files": {
+  "temple_identical_name_en_labels.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  }
+ },
+ "first_failure": {
+  "temple_identical_name_en_labels.txt": "API error: You do not have the permissions needed to carry out this action. [permissiondenied; messages: wikibase-api-permissiondenied, globalblocking-blockedte"
+ }
+}
