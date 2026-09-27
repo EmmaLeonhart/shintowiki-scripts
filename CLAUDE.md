@@ -345,7 +345,7 @@ repo root:
 | Multilingual shrine-label sub-project | `shinto-label-generator/` |
 | Reference docs (anything beyond the 5 core root docs) | `docs/` |
 | Retired / one-off / superseded scripts | DELETE — don't archive (2026-05-28 audit found nothing in `archive/` had irreplaceable technique; directory removed; git history retains the code) |
-| Handoffs of work moving to another repo (a README the other repo's session reads) | `handoff/<name>/` |
+| Handoffs of work moving to another repo (a README the other repo's session reads). **Permanent**, not a report: never cleared by the one-week expiry (Emma, 2026-09-27) | `handoff/<name>/` |
 | Wiki↔repo per-page content sync | the named dir (`need_translation/`, `git_synced/`, `miraheze_unique/`, `fandom_unique/`, `duplicated_content/`) |
 
 **Rules:**
