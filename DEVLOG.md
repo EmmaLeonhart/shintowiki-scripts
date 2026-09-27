@@ -37,8 +37,8 @@ Fandom lines, 3,267 of 12,779 target Category: pages. Recorded, nothing changed.
 **Hub map corrected.** Emma asked what reads list membership, the funding-class P31 migration and
 address citations. From the code: in all three cases the "readers" were the same family of files
 reading its own input, the ranking script's duplicate-statement report, or local/wiki-side scripts.
-The only true downstream reader is `katakana_reading_add` (4 lines), which follows P361 one hop.
-**All three are effectively leaves.** Her per-hub rulings on whether the data is worth it on its own:
+(Correction, same day: `katakana_reading_add`'s P361 hop is a sub-shrine's part-of its parent shrine and explicitly excludes list items, so list membership has **no** downstream reader.)
+**All three are leaves.** Her per-hub rulings on whether the data is worth it on its own:
 kana readings, only for what they unlock · kana qualifiers on OJP names, worth it on its own · OJP
 cleanup, only for what it unlocks · Ronsha role qualifiers, worth it on its own · honorifics, worth
 it on its own · funding P31 migration, "mostly worth it on its own", but the juice may not be worth

@@ -9,6 +9,11 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- [ ] **CURRENT: analysis of the drip's pipelines, one at a time with Emma.** Explain how each
+  generator works (not just its output), what reads its property, and how much is already landed.
+  Kana and honorifics: kept. Founding dates: paused. Court rank + kami parents: moved to
+  `handoff/court-rank-people/`. Weekly prune of landed lines: shipped (first run 36299480522).
+
 - [ ] **Find out why the direct drip lands 0 edits on some days.** 09-24 and 09-26: every write
   failed ("The save has failed." / "You do not have the permissions needed"). 09-25: 497 landed.
   No block, rights change or filter hit on the account. The drip now logs the error `code` +
@@ -18,13 +23,21 @@ from `ATOMIC_FILES`; they are not queue items.
   completion counts on the priority page). Still missing: `direct_daily_edits.py` writing per-file
   landed / already-present / failed counts each run, so completion is tracked over time and not only
   from the counts generators happen to print.
-- [ ] **Check the orphan-removal ↔ list-rebuild overlap.** 692 of `orphan_membership_removals`' 755
-  pairs are ones `list_membership_rebuild` re-adds (read from the code, not verified live). Find out
-  whether landed re-adds make the orphan query match again.
-
 - [ ] **Delete the court-rank generator once the genealogy repo has it.** `generate_court_rank_quickstatements.py` +
   `court_rank_people.txt` stay in `modern-quickstatements/` until Emma confirms the handoff landed
   (`handoff/court-rank-people/README.md`).
+
+- [ ] **LATER, well after the current analysis: Engishiki list membership review.** Emma
+  2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
+  editing is too unreliable to verify it does anything productive. Her ruling, in order:
+  1. Stop the REMOVALS (`list_membership_removals`, `orphan_membership_removals`,
+     `multi_ordinal_removals`) and keep adding new memberships (`list_membership_rebuild`), if the
+     adds can run without the removals.
+  2. If they can't be separated: keep it all as it is.
+  3. If it has made no edits lately: remove it altogether.
+  Nothing downstream reads it (the katakana step's P361 hop is a sub-shrine's part-of its parent,
+  and excludes list items). Check first: its recent landed edits, and whether orphan removals ↔
+  rebuild loop (692 overlapping pairs, read from code, unverified).
 
 - **Pinned tail (keep last)**
 
