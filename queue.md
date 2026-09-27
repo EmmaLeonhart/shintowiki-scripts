@@ -9,6 +9,12 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- [ ] **New deity items from 祭神 names that have no item** (Emma 2026-09-27, "a final feature").
+  Step 1: `generate_saijin_deity_research.py` writes `saijin_unresolved.json`, the names it couldn't
+  place, split into red link / linked page without an item / plain text, with shrine counts. Step 2:
+  size and review it with Emma (red links are the stronger signal), case by case. Creating items
+  needs her yes and goes through `create_items.py`.
+
 - [ ] **Watch `test_zero_overlap_with_the_worklists_today`.** Red on 2026-09-27 from a stale worklist (all 21
   overlap items have en labels live). It should clear when `generate-shrines-missing-en-label` next
   regenerates. If it doesn't, the circularity is real: look at `generate_derived_name_in_kana.py`'s target query.

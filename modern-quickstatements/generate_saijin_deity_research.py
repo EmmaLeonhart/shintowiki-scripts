@@ -257,8 +257,13 @@ def fetch_batch(titles):
     return out
 
 
+# Link targets whose jawiki page does not exist (red links), filled by resolve_links.
+MISSING_LINKS = set()
+
+
 def resolve_links(titles):
-    """{jawiki title -> wikidata QID} for deity link targets (redirects followed)."""
+    """{jawiki title -> wikidata QID} for deity link targets (redirects followed).
+    Red links (no such page) are also collected in MISSING_LINKS for the residue report."""
     out = {}
     titles = sorted(titles)
     for i in range(0, len(titles), 50):
@@ -277,6 +282,8 @@ def resolve_links(titles):
             final[t] = ft
         by_title = {p["title"]: p.get("pageprops", {}).get("wikibase_item")
                     for p in qy.get("pages", {}).values() if "missing" not in p}
+        missing = {p["title"] for p in qy.get("pages", {}).values() if "missing" in p}
+        MISSING_LINKS.update(t for t, ft in final.items() if ft in missing)
         for t, ft in final.items():
             if by_title.get(ft):
                 out[t] = by_title[ft]
@@ -411,6 +418,38 @@ def build_lines(shrine_deities, resolved, matched, have, have_principal,
     return sorted(set(lines)), sorted(set(named_lines))
 
 
+UNRESOLVED = os.path.join(os.path.dirname(os.path.abspath(__file__)), "saijin_unresolved.json")
+
+
+def unresolved_report(shrine_deities, all_links, all_plain, resolved, matched, missing_links):
+    """Deity names that did not become a statement, by kind, with how many shrines name each.
+
+    Emma 2026-09-27: these are the candidates for NEW deity items. A red link (jawiki thought
+    the deity deserved an article that doesn't exist yet) is the stronger signal than
+    unlinked text. Nothing here is created or edited; it's a list to review."""
+    counts = {}
+    for refs in shrine_deities.values():
+        for key in refs:
+            counts[key] = counts.get(key, 0) + 1
+    out = {"red_link": {}, "linked_no_item": {}, "plain_no_match": {}}
+    for t in all_links:
+        if t in resolved:
+            continue
+        out["red_link" if t in missing_links else "linked_no_item"][t] = counts.get(t, 0)
+    for n in all_plain:
+        if n not in matched:
+            out["plain_no_match"][n] = counts.get(n, 0)
+    return {k: dict(sorted(v.items(), key=lambda kv: (-kv[1], kv[0]))) for k, v in out.items()}
+
+
+def write_unresolved(shrine_deities, all_links, all_plain, resolved, matched):
+    rep = unresolved_report(shrine_deities, all_links, all_plain, resolved, matched, MISSING_LINKS)
+    with open(UNRESOLVED, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(rep, f, ensure_ascii=False, indent=1)
+    print("unresolved deity names: " + ", ".join(f"{k} {len(v)}" for k, v in rep.items())
+          + f" -> {UNRESOLVED}")
+
+
 def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     ap = argparse.ArgumentParser()
@@ -478,6 +517,8 @@ def main():
     print(f"{len(resolved)}/{len(all_links)} link targets resolve to items")
     matched = match_names(all_plain)
     print(f"{len(matched)}/{len(all_plain)} plain names match a unique deity item")
+
+    write_unresolved(shrine_deities, all_links, all_plain, resolved, matched)
 
     lines, named_lines = build_lines(shrine_deities, resolved, matched, have,
                                      have_principal, have_named, have_ja_ref)
