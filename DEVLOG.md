@@ -1,3 +1,17 @@
+## 2026-09-27 (cont. 28) — first full run on the new setup: 997 landed, 0 failed
+
+wikidata-drip run 36321891824 (drip first, 1,000 cap, 15–20s gap). Tally committed as `16e80e6e7`
+(`drip_tally/`):
+- **1,001 drawn: 997 landed, 0 failed, 2 already there, 2 skipped** (per-item freshness).
+- Top files (landed): bunrei 114 · derived_name_in_kana 111 · temple_identical_name_en_labels 82 ·
+  p6262_fandom_links 78 · sango_p1448 75 · saijin_p825 74 · saijin_named_as 56 ·
+  list_membership_rebuild 53 · saijin_deity_research 50 · reisai 49.
+- Only 2 of 1,001 draws were lines already on Wikidata (vs ~7% before the prune).
+- ~300 live edits an hour, 13:50–19:05 UTC. Lines with qualifiers or references cost more than one
+  API edit each.
+- Not blocked, so no error code yet for the ~0-edit runs. The retry job was skipped as designed, and
+  generation ran afterwards because edits landed.
+
 ## 2026-09-27 (cont. 27) — the 24 queued items are created
 
 create-items' first scheduled run since the schedule came back (committed as `7f61f8e85`, 14:57 UTC):
