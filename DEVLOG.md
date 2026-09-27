@@ -1,3 +1,23 @@
+## 2026-09-27 (cont. 5) — founding dates: Emma's reasoning; court ranks move to the genealogy repo
+
+**Founding dates (paused earlier today), and why.** Emma's reason is not that the dates matter less:
+*"When was the founding dates added? … one of the most recently added things to the entire
+workflow"*, added when she felt the work was nearly done, just before the editing pause. Nothing in
+the program reads them, and they are *"the thing that another person is most likely to add"*.
+Whether a date is legendary is irrelevant. That is the test to use for trimming: **how recently a
+file was added, whether anything depends on it, and whether someone else is likely to do it.** Not
+how important the data is in the abstract.
+
+**Court rank on people → the genealogy repo.** Emma considers it extremely important and unlikely to
+be done by anyone else, but it is a property on people, and a people-editing repo is the right home.
+`court_rank_people.txt` is paused from the drip here, and its generation step is removed from
+`generate-quickstatements.yml`. `handoff/court-rank-people/README.md` is the handoff: the data rules
+to carry over, the state (5,418 existing, 9,316 new, 3,064 reference-only), and pinned links to the
+generator and output. That repo applies them under its own rules. The generator stays here until
+Emma confirms the other repo has it.
+
+Drip now ≈ 94,250 lines ≈ **189 days** at 500/day if every run lands.
+
 ## 2026-09-27 (cont. 4) — how the drip generators work, and how complete each group is
 
 Emma: I had shown her what each file outputs but not how its generator decides, so every pause I

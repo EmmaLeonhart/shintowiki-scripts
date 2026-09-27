@@ -22,6 +22,10 @@ from `ATOMIC_FILES`; they are not queue items.
   pairs are ones `list_membership_rebuild` re-adds (read from the code, not verified live). Find out
   whether landed re-adds make the orphan query match again.
 
+- [ ] **Delete the court-rank generator once the genealogy repo has it.** `generate_court_rank_quickstatements.py` +
+  `court_rank_people.txt` stay in `modern-quickstatements/` until Emma confirms the handoff landed
+  (`handoff/court-rank-people/README.md`).
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

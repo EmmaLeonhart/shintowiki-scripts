@@ -519,16 +519,10 @@ jobs:
         continue-on-error: true
         run: python generate_reisai_qualifier_repair.py
 
-      # Wired in 2026-07-28: the wire-in condition was "all 42 ja.wp per-rank
-      # categories resolve once WDQS has indexed the 26 sub-rank items", and a
-      # live rerun that day reported "42 rank categories resolved". Add-only,
-      # and existing person->rank pairs are preloaded from WDQS and skipped, so
-      # regeneration shrinks the file as it drains.
-      - name: Court rank (P14005) on people from the ja.wp 位階受位者 tree
-        id: court-rank-p14005-on-people-from-the-ja
-        working-directory: modern-quickstatements
-        continue-on-error: true
-        run: python generate_court_rank_quickstatements.py
+      # Court rank (P14005) on people: MOVED OUT 2026-09-27 (Emma). It is people, not
+      # shrines, and the genealogy repo takes it over entirely; see
+      # handoff/court-rank-people/README.md. The generator and its last output stay in
+      # modern-quickstatements/ for reference until that repo has it.
 
       # ⚠ MEASURED 2026-08-24 by a forced run, and the premise below was wrong twice.
       # They are NOT "~30-40 min each": forced, they took 80s and 161s. And they have
