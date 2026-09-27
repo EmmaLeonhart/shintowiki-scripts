@@ -1,0 +1,21 @@
+{
+ "timestamp": "2026-09-27T21:27:17Z",
+ "totals": {
+  "succeeded": 0,
+  "failed": 1,
+  "already_absent": 0,
+  "skipped": 0,
+  "selected": 1001
+ },
+ "files": {
+  "derived_name_in_kana.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  }
+ },
+ "first_failure": {
+  "derived_name_in_kana.txt": "API error: The save has failed. [failed-save; messages: wikibase-api-failed-save, globalblocking-blockedtext-range, permissionserrors]"
+ }
+}
