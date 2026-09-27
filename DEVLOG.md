@@ -1,3 +1,29 @@
+## 2026-09-27 (cont. 30) — the 0-edit runs are a GLOBAL IP-RANGE BLOCK on some runners
+
+Run 36343735477 edited from 20:14 with nothing landing. It was cancelled gently, not force-cancelled,
+so its log survived, and the new error-code logging named the cause:
+
+    133 × API error: The save has failed. [failed-save; messages: wikibase-api-failed-save,
+          globalblocking-blockedtext-range, …]
+     29 × You do not have the permissions … [permissiondenied; …]   (labels/aliases)
+     36 × Reference/Qualifier error: the same globalblocking-blockedtext-range
+
+**`globalblocking-blockedtext-range`: the runner's IP is inside a globally blocked range.** Global
+range blocks also apply to logged-in accounts without an IP-block exemption. That explains
+everything since 09-21: a run lands everything or nothing depending on which IP range its GitHub
+runner gets (region alone didn't predict it). The account itself is not blocked.
+
+**Why fail-fast didn't fire:** 9 lines returned `OK: Done` although nothing changed (statement,
+qualifier and reference all already present), and fail-fast only fires when nothing has landed.
+
+Fixed in `direct_daily_edits.py`:
+- `is_block_error()`: the first error carrying `globalblocking` / `blockedtext` / `[blocked` stops the
+  run as `blocked=true` (Emma: "terminate the runner immediately"). wikidata-drip then retries on
+  a fresh runner, which usually gets a new IP.
+- `execute_line` reports `Skipped (already exists)` when it changed nothing, and `Done` only when
+  it created a claim or added a qualifier/reference. The tally and fail-fast now see no-ops correctly.
+- Tests in `test_direct_daily_edits_exit.py`.
+
 ## 2026-09-27 (cont. 29) — conflict markers committed by CI; prune refresh made weekly and 429-tolerant
 
 **After the first full run, generation went red: three steps bailed on WDQS 429s** (genbu ids,

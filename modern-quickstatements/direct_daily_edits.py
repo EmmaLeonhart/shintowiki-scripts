@@ -367,6 +367,19 @@ def write_tally_file(tally, reasons, totals, now=None):
 LINE_SOURCE = {}
 
 
+BLOCK_MARKERS = ("globalblocking", "blockedtext", "autoblockedtext", "[blocked")
+
+
+def is_block_error(msg):
+    """True when a failure says the account or this runner's IP is blocked.
+
+    2026-09-27: the 0-edit runs since 09-21 were `globalblocking-blockedtext-range`,
+    a global block on the IP range the runner landed in. Nothing will land from such a
+    runner, so it stops at the first sign and retries on a fresh one."""
+    m = (msg or "").lower()
+    return any(k in m for k in BLOCK_MARKERS)
+
+
 def tally_outcome(success, msg):
     """landed / already / failed, for the per-file tally.
 
@@ -937,12 +950,17 @@ def execute_line(session, csrf, parsed):
         ok, msg, _ = execute_create_claim(session, csrf, entity, prop, value)
         return ok, msg
 
-    # Find existing claim, or create one
+    # Find existing claim, or create one. `changed` records whether this line actually
+    # edited anything: a line whose statement, qualifiers and reference were all already
+    # there used to report "Done", which counted as a landing (2026-09-27: 9 such no-ops
+    # on a globally blocked runner kept fail-fast from firing for an hour).
+    changed = False
     guid = find_claim(session, entity, prop, value)
     if not guid:
         ok, msg, guid = execute_create_claim(session, csrf, entity, prop, value)
         if not ok:
             return False, msg
+        changed = True
         time.sleep(1)
 
     # Add qualifiers
@@ -950,6 +968,7 @@ def execute_line(session, csrf, parsed):
         ok, msg = execute_set_qualifier(session, csrf, guid, q_prop, q_val)
         if not ok:
             return False, msg
+        changed = changed or msg not in ("Qualifier already present", "Reference already present")
         time.sleep(0.5)
 
     # Add references
@@ -957,8 +976,9 @@ def execute_line(session, csrf, parsed):
         ok, msg = execute_set_reference(session, csrf, guid, parsed["references"])
         if not ok:
             return False, msg
+        changed = changed or msg not in ("Qualifier already present", "Reference already present")
 
-    return True, "Done"
+    return True, ("Done" if changed else "Skipped (already exists)")
 
 
 def main():
@@ -1023,6 +1043,7 @@ def main():
         src = LINE_SOURCE.get(line, SEQUENTIAL_FILE if (seq_pos is not None and (i - 1) == seq_pos) else "?")
         t = tally.setdefault(src, {"landed": 0, "already": 0, "failed": 0, "skipped": 0})
         outcome = None
+        last_fail = ""
         # Is THIS the woven-in sequential-misc line? Its cursor advances only when
         # its own edit reaches its end state (tracked via seq_ran/seq_advance).
         is_seq = seq_pos is not None and (i - 1) == seq_pos
@@ -1099,6 +1120,7 @@ def main():
                         rate_limited = True
                 outcome = tally_outcome(success, msg)
                 if outcome == "failed":
+                    last_fail = msg
                     reasons.setdefault(src, msg[:160])
                 if is_seq:
                     seq_advance = sequential_should_advance(success, msg)
@@ -1116,6 +1138,12 @@ def main():
             t[outcome] += 1
             n_landed += outcome == "landed"
             n_failed += outcome == "failed"
+        if outcome == "failed" and is_block_error(last_fail):
+            # Emma: "if the IP is blocked, it should just terminate the runner immediately."
+            print(f"BLOCKED: this runner is blocked ({last_fail[:200]}) — stopping this run "
+                  f"so it can be retried on a fresh runner.", flush=True)
+            blocked = True
+            break
         if n_landed == 0 and n_failed >= FAIL_FAST_N:
             print(f"BLOCKED: the first {n_failed} attempted edits all failed "
                   f"(first reason: {next(iter(reasons.values()), '?')}) — stopping this run "

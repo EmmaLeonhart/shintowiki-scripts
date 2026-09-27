@@ -119,3 +119,38 @@ def test_a_good_run_reports_what_landed(monkeypatch, tmp_path):
     monkeypatch.setenv("GITHUB_OUTPUT", str(out))
     assert dde.main() == 0
     assert "landed=2" in out.read_text(encoding="utf-8")
+
+
+def test_a_block_error_stops_the_run_at_once(monkeypatch, tmp_path):
+    """2026-09-27: the 0-edit runs were a global IP-range block. The first block error
+    stops the run (Emma: 'terminate the runner immediately')."""
+    _patch_common(monkeypatch)
+    monkeypatch.setattr(dde, "read_all_lines", lambda: [f"Q{i}|P17|Q17" for i in range(1, 30)])
+    monkeypatch.setattr(dde, "wd_login", lambda: ("session", "csrf"))
+    calls = {"n": 0}
+
+    def _exec(*a):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            return (True, "Created")                       # a landing first: fail-fast alone would not fire
+        return (False, "API error: The save has failed. [failed-save; messages: "
+                       "wikibase-api-failed-save, globalblocking-blockedtext-range]")
+
+    monkeypatch.setattr(dde, "execute_line", _exec)
+    out = tmp_path / "gh_output"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(out))
+    assert dde.main() == 1
+    assert calls["n"] == 2
+    assert "blocked=true" in out.read_text(encoding="utf-8")
+
+
+def test_a_line_that_changed_nothing_is_not_done(monkeypatch):
+    """Statement, qualifier and reference all already there: a no-op, not a landing."""
+    monkeypatch.setattr(dde, "find_claim", lambda *a: "GUID")
+    monkeypatch.setattr(dde, "execute_set_qualifier", lambda *a: (True, "Qualifier already present"))
+    monkeypatch.setattr(dde, "execute_set_reference", lambda *a: (True, "Reference already present"))
+    monkeypatch.setattr(dde.time, "sleep", lambda *_: None)
+    parsed = dde.parse_qs_line('Q1|P612|Q2|P1013|Q195793|S854|"http://x"')
+    assert dde.execute_line(None, None, parsed) == (True, "Skipped (already exists)")
+    monkeypatch.setattr(dde, "execute_set_reference", lambda *a: (True, "Reference added"))
+    assert dde.execute_line(None, None, parsed) == (True, "Done")
