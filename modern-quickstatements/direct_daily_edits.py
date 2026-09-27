@@ -359,6 +359,7 @@ def write_tally_file(tally, reasons, totals, now=None):
     path = os.path.join(TALLY_DIR, now.strftime("%Y-%m-%d_%H-%M-%S_UTC") + ".json")
     with open(path, "w", encoding="utf-8", newline="\n") as fh:
         json.dump({"timestamp": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "totals": totals,
+                   "runner_ip": os.environ.get("RUNNER_PUBLIC_IP", ""),
                    "files": tally, "first_failure": reasons}, fh, ensure_ascii=False, indent=1)
         fh.write("\n")
     return path

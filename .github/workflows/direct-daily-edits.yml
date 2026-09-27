@@ -107,6 +107,13 @@ jobs:
             echo "::notice title=Wikidata lockout::LOCKED — skipping all Wikidata writes."
           fi
 
+      # Diagnostic (2026-09-27): some runners sit in globally blocked IP ranges
+      # (globalblocking-blockedtext-range). Record which address each run had, in its tally.
+      - name: Note this runner's public IP
+        id: runner-ip
+        continue-on-error: true
+        run: echo "ip=$(curl -s --max-time 10 https://api.ipify.org || echo unknown)" >> "$GITHUB_OUTPUT"
+
       - name: Execute edits via Wikidata API
         id: execute
         if: steps.wikidata_lockout.outputs.open == 'true'
@@ -114,6 +121,7 @@ jobs:
         env:
           MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          RUNNER_PUBLIC_IP: ${{ steps.runner-ip.outputs.ip }}
         run: python direct_daily_edits.py
 
       # Keep each run's per-file tally (drip_tally/*.json) across runs. [skip ci] and the
@@ -143,5 +151,5 @@ jobs:
         if: always()
         env:
           STEPS_JSON: ${{ toJSON(steps) }}
-          REFAIL_EXEMPT: "download-generated-qs-files"
+          REFAIL_EXEMPT: "download-generated-qs-files runner-ip"
         run: python3 shinto_miraheze/refail_failed_steps.py

@@ -1,3 +1,16 @@
+## 2026-09-27 (cont. 31) — the evening's four attempts were all on blocked runners
+
+After `5f894feb9`, the block-stop and fresh-runner retry worked as built. Every runner drawn
+21:20–21:41 UTC was inside a globally blocked range:
+- attempt 1: 10 drawn, 0 landed (fail-fast); `globalblocking-blockedtext-range`
+- retries 2–4: stopped at their first edit; two more globalblocking errors and one
+  `permissiondenied` on a label line
+
+Each blocked attempt now costs about a minute instead of hours. No edits have landed since 19:05.
+
+Diagnostic added: each drip records its runner's public IP (a tolerant `runner-ip` step, exempt
+from the re-fail) in its tally as `runner_ip`, so blocked and unblocked ranges can be compared.
+
 ## 2026-09-27 (cont. 30) — the 0-edit runs are a GLOBAL IP-RANGE BLOCK on some runners
 
 Run 36343735477 edited from 20:14 with nothing landing. It was cancelled gently, not force-cancelled,
