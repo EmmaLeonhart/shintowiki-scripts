@@ -1,11 +1,11 @@
-"""Throwaway (2026-09-27): how much of each static drip file is already on Wikidata.
+"""How much of each static drip file (generator never drops landed lines) is already on Wikidata.
 
-Read-only. WDQS only, VALUES-batched, 2.5s apart, bail on 429. Deleted after use.
+Read-only. WDQS only, VALUES-batched, 2.5s apart, bail on 429. Run by hand; first run 2026-09-27 (DEVLOG).
 """
 import io, json, os, re, sys, time
 import requests
 
-MQ = os.path.join(os.path.dirname(os.path.abspath(__file__)), "modern-quickstatements")
+MQ = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "modern-quickstatements")
 S = requests.Session()
 S.headers["User-Agent"] = "shintowiki-scripts/1.0 (https://github.com/EmmaLeonhart/shintowiki-scripts)"
 EP = "https://query.wikidata.org/sparql"
