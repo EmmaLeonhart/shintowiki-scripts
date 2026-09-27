@@ -644,6 +644,11 @@ lever. **Dropping it without her consent is not.**
   Treat a change to what the drip EXECUTES as a destructive action, whatever file it is in.
 - Once she has said yes, do it, and note her consent in the commit and the DEVLOG, as the
   2026-09-26 trim does.
+- **Why the bar went up (Emma, 2026-09-26):** the repo used to edit Wikidata very reliably. Over
+  roughly the two months before that date its reliability fell a lot, and in her eyes the cost of a
+  failure rose, because of the long lockout and the perceived increase in scrutiny. A silent
+  drop costs more than it used to, and it is also harder to notice among runs that already fail on
+  some days (09-24 and 09-26 landed zero edits).
 
 I asked whether to give up on temple English labels, evidenced as *"13,288 temples, 45 years at
 1.1/day."* Her answer: ***"Of course not is this even a task ... I think this is just an automated
