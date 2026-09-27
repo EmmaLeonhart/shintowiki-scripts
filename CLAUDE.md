@@ -732,6 +732,15 @@ taxonomy label does not make it a question — it makes it a thing that looks ha
 - Both items had been sitting for three reports and were answered within one exchange of being
   asked properly.
 
+### ⛔ A DRIP FILE UNDER 100 LINES IS NEVER REMOVED (Emma, 2026-09-27)
+
+*"Anything that does under 100 edits is something that should never be removed because removing
+something is dangerous because it's possible something depends on it."* Two reasons: pausing it
+saves almost nothing, and a small file, especially one with high turnover, is often the step
+something else depends on. Don't offer one as a trim candidate. For larger files, trimming needs
+her yes (see the consent rule above), and she decides with the full explanation: how the
+generator works, whether it drops finished lines, and what depends on it.
+
 ### ⭐ THE WIKI LINK IDS STAY IN THE DRIP — Fandom above all (Emma, 2026-09-26)
 
 Abandoning the wikis does **not** make the links pointless: it makes them more important. Fandom
