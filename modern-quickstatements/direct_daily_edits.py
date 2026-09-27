@@ -1118,9 +1118,12 @@ def main():
     print(f"\n=== Results: {succeeded} succeeded, {failed} failed, "
           f"{already_absent} already absent ===")
     print_tally(tally, reasons)
-    write_tally_file(tally, reasons, {"succeeded": succeeded, "failed": failed,
-                                      "already_absent": already_absent, "skipped": skipped,
-                                      "selected": len(selected)})
+    # Only in CI: the workflow commits these, and tests that drive main() with mocked
+    # edits would otherwise leave tally files in the working tree.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        write_tally_file(tally, reasons, {"succeeded": succeeded, "failed": failed,
+                                          "already_absent": already_absent, "skipped": skipped,
+                                          "selected": len(selected)})
 
     # Advance the sequential-misc cursor iff today's sequential line reached its end
     # state. Held otherwise (error / rate-limit / gate skip / never reached because a
