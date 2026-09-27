@@ -103,7 +103,13 @@ def test_a_backfill_is_registered_on_the_only_road_to_wikidata(name):
     """A generated file that no submitter lists is a file whose lines never flow
     — the drift this repo already had to fix once for the temple label files."""
     import direct_daily_edits as d
-    assert name in d.ATOMIC_FILES
+    if name in d.ATOMIC_FILES:
+        return
+    # A deliberate pause (Emma's call, CLAUDE.md: dropping work needs her consent)
+    # is a commented entry carrying a DRIP-PAUSED note. Anything else is drift.
+    src = open(os.path.join(MQ, "direct_daily_edits.py"), encoding="utf-8").read()
+    assert any("DRIP-PAUSED" in l and f'"{name}"' in l for l in src.splitlines()), (
+        f"{name} is neither registered nor deliberately paused")
 
 
 # ---- WDQS speaks xsd:dateTime, not Wikibase time ----------------------------

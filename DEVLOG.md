@@ -1,3 +1,13 @@
+## 2026-09-27 (cont. 3) — founding dates paused
+
+Emma: *"Pause all of it."* All four founding-date files are commented out of `ATOMIC_FILES` with a
+DRIP-PAUSED note: `souken_p571` 3,459, `souken_den_p571` 967, `souken_p571_citations` 903 (also in
+`submit_daily_batch`), and `kofun_imports` 971. All four are add-only, so nothing is left
+half-paired. `test_a_backfill_is_registered_on_the_only_road_to_wikidata` now accepts a DRIP-PAUSED
+entry; anything else still counts as drift.
+
+Drip now ≈ 106,600 lines ≈ **214 days** at 500/day if every run lands.
+
 ## 2026-09-27 (cont. 2) — Emma's drip priority order and per-group rulings
 
 Set on the priority page (https://claude.ai/artifact/M56XgkhYdHMg8KbKugUEvP, source
