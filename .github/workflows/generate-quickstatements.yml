@@ -566,6 +566,23 @@ jobs:
               || echo "::warning title=Weekly refresh did not run::generate_description_adds.py exited non-zero — read the traceback above; do NOT assume WDQS. description_adds.txt was NOT regenerated."; \
           else echo "not Sunday and not forced — keeping description_adds.txt"; fi
 
+      # Emma 2026-09-27, "one weekly prune step". The static files (generator never drops
+      # lines that landed) held 7,065 already-landed lines of 35,368, ~7% of each day's
+      # draw spent on no-ops. Sunday: re-ask WDQS which lines are FULLY landed (value +
+      # every qualifier + every reference) and save them to landed_lines.json. Daily: drop
+      # those lines, no network, which is what keeps the files CI rebuilds from source
+      # (reisai, bunrei, jinjacho, hisousha, shintai) pruned between Sundays.
+      - name: Prune lines already on Wikidata from the static files
+        id: prune-landed-lines
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: |
+          if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then
+            python prune_landed_lines.py --refresh
+          else
+            python prune_landed_lines.py
+          fi
+
       # MUST be the last step before the commit. The husks are items ブルーノ・プラス
       # repurposed (queue.md A5); each one now IS the shrine item a sitelink lookup
       # resolves to, so generators re-emit lines targeting them on every run — A5
@@ -769,6 +786,7 @@ jobs:
           # province_exclusions_report). Those are REPORTS ABOUT the run; this is an
           # INPUT TO it, and only an input makes the output reproducible.
           git add nta_kana_targets.json 2>/dev/null || true
+          git add landed_lines.json 2>/dev/null || true   # the weekly prune's record (prune_landed_lines.py)
           cd ..
           git diff --cached --quiet && echo "No generated file changes to commit" || {
             # Reset index and working tree, pull latest, then re-apply generated files
@@ -800,6 +818,7 @@ jobs:
             # province_exclusions_report). Those are REPORTS ABOUT the run; this is an
             # INPUT TO it, and only an input makes the output reproducible.
             git add nta_kana_targets.json 2>/dev/null || true
+          git add landed_lines.json 2>/dev/null || true   # the weekly prune's record (prune_landed_lines.py)
             cd ..
             git diff --cached --quiet && echo "No changes after rebase" || {
               git commit -m "chore(qs): update generated QuickStatements files [skip ci]"

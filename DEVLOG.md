@@ -1,6 +1,29 @@
+## 2026-09-27 (cont. 13) — weekly prune of already-landed lines from the static files
+
+Emma chose "one weekly prune step". `modern-quickstatements/prune_landed_lines.py` + a
+`generate-quickstatements.yml` step placed before the husk strip:
+- **Sunday (`--refresh`):** WDQS, via `wdqs_transport`, in batches of 300 items. For the 18 static
+  files, it records the lines that are **fully** landed in `landed_lines.json` (committed): a live
+  statement carries the value, every qualifier and every reference. For label lines, the label
+  matches.
+- **Daily (no network):** removes the recorded lines, which keeps the files CI rebuilds from source
+  pruned between Sundays.
+- A value that landed without its qualifier or reference keeps its line. Anything uncomparable
+  (dates, coordinates, removals) is kept.
+- Tests: `tests/test_prune_landed_lines.py`. The throwaway measurement script is deleted;
+  `--refresh` prints the same counts.
+
+**Emma on what the chains are worth:**
+- *Honorifics:* the honorifics are the data she wants. Short names exist only because P1035 demands
+  one (Wikidata flags an error without it). A hub on paper, but what it unlocks is just meeting a
+  requirement.
+- *Kana:* the chain matters most for **moving katakana readings onto the official names as
+  qualifiers**. Generating new hiragana for a shrine matters much less, but the whole kana pipeline
+  stays: *"worth keeping, but a bit iffy at times."*
+
 ## 2026-09-27 (cont. 12) — static drip files measured against Wikidata; hub map corrected
 
-**Measured** (`_measure_static.py`, throwaway: WDQS in batches of 300 items, 2.5s apart; the
+**Measured** (a throwaway script, since replaced by `prune_landed_lines.py --refresh`: WDQS in batches of 300 items, 2.5s apart; the
 pending Miraheze lines were spot-checked by API and are genuinely absent). Static files hold 35,368
 lines; **7,065 (20%) are already on Wikidata** and 28,303 are pending. By file, landed/total:
 Fandom P6262 3,118/12,779 · bunrei 2,180/9,978 · Miraheze P11250 944/6,134 · reisai 412/3,257 ·
