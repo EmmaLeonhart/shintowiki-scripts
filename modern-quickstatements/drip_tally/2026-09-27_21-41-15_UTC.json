@@ -1,0 +1,21 @@
+{
+ "timestamp": "2026-09-27T21:41:15Z",
+ "totals": {
+  "succeeded": 0,
+  "failed": 1,
+  "already_absent": 0,
+  "skipped": 0,
+  "selected": 1001
+ },
+ "files": {
+  "address_citation_from_article.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  }
+ },
+ "first_failure": {
+  "address_citation_from_article.txt": "Reference error: The save has failed. [failed-save; messages: wikibase-api-failed-save, globalblocking-blockedtext-range, permissionserrors]"
+ }
+}
