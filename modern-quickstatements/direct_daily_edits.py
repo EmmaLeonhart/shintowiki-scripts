@@ -339,6 +339,24 @@ def drip_paused_files():
     src = open(os.path.abspath(__file__), encoding="utf-8").read()
     return set(re.findall(r'#\s*DRIP-PAUSED[^\n]*?"([^"\n]+\.txt)",', src))
 
+
+TALLY_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "drip_tally")
+
+
+def write_tally_file(tally, reasons, totals, now=None):
+    """Persist this run's per-file tally as drip_tally/<UTC timestamp>.json.
+
+    The drip workflow commits these, so completion and bad days can be read across
+    runs and not only in logs that expire (queue item, 2026-09-27)."""
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    os.makedirs(TALLY_DIR, exist_ok=True)
+    path = os.path.join(TALLY_DIR, now.strftime("%Y-%m-%d_%H-%M-%S_UTC") + ".json")
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        json.dump({"timestamp": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "totals": totals,
+                   "files": tally, "first_failure": reasons}, fh, ensure_ascii=False, indent=1)
+        fh.write("\n")
+    return path
+
 # Which file each drawn line came from, for the per-file tally at the end of a run.
 LINE_SOURCE = {}
 
@@ -1100,6 +1118,9 @@ def main():
     print(f"\n=== Results: {succeeded} succeeded, {failed} failed, "
           f"{already_absent} already absent ===")
     print_tally(tally, reasons)
+    write_tally_file(tally, reasons, {"succeeded": succeeded, "failed": failed,
+                                      "already_absent": already_absent, "skipped": skipped,
+                                      "selected": len(selected)})
 
     # Advance the sequential-misc cursor iff today's sequential line reached its end
     # state. Held otherwise (error / rate-limit / gate skip / never reached because a

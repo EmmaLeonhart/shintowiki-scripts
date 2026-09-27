@@ -14,11 +14,6 @@ from `ATOMIC_FILES`; they are not queue items.
   No block, rights change or filter hit on the account. The drip now logs the error `code` +
   `messages` (DEVLOG 2026-09-27). Read them from the next failing cleanup-loop run and fix the cause.
 
-- [ ] **Per-run drip tally: keep it over time.** Since 2026-09-27 each drip run prints a per-file
-  landed / already there / failed / skipped table with the first failure reason, to the log and the
-  run summary. Still missing: persisting it (the drip workflow commits nothing), so completion and
-  bad days can be read across runs.
-
 - [ ] **LATER, after the 0-edit-day fix: Engishiki list membership review.** Emma
   2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
   editing is too unreliable to verify it does anything productive. Her ruling, in order:

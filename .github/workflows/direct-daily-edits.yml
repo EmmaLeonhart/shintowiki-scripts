@@ -5,7 +5,7 @@ on:
   workflow_call:
 
 permissions:
-  contents: read
+  contents: write   # to commit drip_tally/*.json (2026-09-27)
 
 env:
   MIRAHEZE_EMAIL: ${{ secrets.MIRAHEZE_EMAIL }}
@@ -104,6 +104,23 @@ jobs:
           MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: python direct_daily_edits.py
+
+      # Keep each run's per-file tally (drip_tally/*.json) across runs. [skip ci] and the
+      # workflow token both mean this push starts no workflow. Only the tally files are
+      # staged; the downloaded .txt files in the tree are left alone.
+      - name: Commit the drip tally
+        if: always() && steps.wikidata_lockout.outputs.open == 'true'
+        run: |
+          git add modern-quickstatements/drip_tally/*.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "no tally to commit"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(drip): per-file tally of this run [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "push rejected (attempt $i); retrying"; sleep $((i * 5))
+          done
+          echo "::error::could not push the drip tally after 5 attempts"; exit 1
 
       # MUST be the last step of the job. `continue-on-error` reports a failed step's
       # CONCLUSION as success; only its OUTCOME, readable here and nowhere else, says it

@@ -1,3 +1,11 @@
+## 2026-09-27 (cont. 22) — the drip's per-file tally is kept across runs
+
+`direct_daily_edits.write_tally_file()` writes each run's tally (per file: landed / already there /
+failed / skipped; first failure reason; run totals) to `modern-quickstatements/drip_tally/<UTC
+timestamp>.json`. A new step in `direct-daily-edits.yml` commits it with `[skip ci]`, staging only
+the tally files. That push uses the workflow token, so it can't trigger another run. The job
+permission is now `contents: write`. Test: `test_drip_tally.py`.
+
 ## 2026-09-27 (cont. 21) — the drip pipeline analysis is closed; Engishiki review item restored
 
 The analysis item is done. Every group has a ruling; the first prune committed 5,432 landed lines

@@ -26,3 +26,15 @@ def test_already_there_is_not_a_landing():
 
 def test_errors_are_failures():
     assert d.tally_outcome(False, "API error: The save has failed. [failed-save]") == "failed"
+
+
+def test_the_tally_is_written_to_a_timestamped_file(tmp_path, monkeypatch):
+    import datetime
+    import json
+    monkeypatch.setattr(d, "TALLY_DIR", str(tmp_path))
+    now = datetime.datetime(2026, 9, 27, 12, 0, 0, tzinfo=datetime.timezone.utc)
+    path = d.write_tally_file({"a.txt": {"landed": 2, "already": 1, "failed": 0, "skipped": 0}},
+                              {}, {"succeeded": 3, "failed": 0}, now=now)
+    assert path.endswith("2026-09-27_12-00-00_UTC.json")
+    data = json.load(open(path, encoding="utf-8"))
+    assert data["files"]["a.txt"]["landed"] == 2 and data["totals"]["succeeded"] == 3
