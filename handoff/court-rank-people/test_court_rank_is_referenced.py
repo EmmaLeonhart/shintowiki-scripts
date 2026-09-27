@@ -28,7 +28,7 @@ import os
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GEN = os.path.join(os.path.dirname(HERE), "generate_court_rank_quickstatements.py")
+GEN = os.path.join(HERE, "generate_court_rank_quickstatements.py")
 
 
 def _source():

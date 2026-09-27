@@ -63,7 +63,8 @@ MIGRATED = ("generate_invalid_p825_removals.py",
             # incident that produced the 2.5s floor) and backed off 5/10/15,
             # weaker than the documented 15/45/135. Safe on the module's
             # GET-only constraint: three short fixed queries, no VALUES clause.
-            "generate_court_rank_quickstatements.py",
+            # generate_court_rank_quickstatements.py adopted it here too; it moved to
+            # handoff/court-rank-people/ on 2026-09-27 (people, not shrines).
             # Adopted 2026-09-15 alongside its own reference fix, same cadence.
             # Its WDQS client was the weakest in the set: no retry at all, no
             # throttle, and a `if r.status == 429` check after a SUCCESSFUL
