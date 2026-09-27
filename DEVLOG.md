@@ -1,3 +1,10 @@
+## 2026-09-27 (cont. 8) — derived kana is back in the drip
+
+After the hub/leaf map showed kana (P1814) is a hub, Emma: *"Bring back the kana."*
+`derived_name_in_kana.txt` (9,969) is uncommented in both `ATOMIC_FILES` lists and
+`test_staged_readings` is restored. The Old Japanese name cleanup was never paused and stays in.
+Drip ≈ 104,200 lines ≈ **209 days** at 500/day if every run lands.
+
 ## 2026-09-27 (cont. 7) — which written properties our own generators read back
 
 Emma's criterion for what matters most: *"which of the properties that we are editing … our

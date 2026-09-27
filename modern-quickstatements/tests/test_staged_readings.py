@@ -51,12 +51,10 @@ def test_the_excluded_files_really_are_label_derived():
     """Pinning the reason, not just the exclusion: both are populated only for
     items that ALREADY carry an en label, which is why today's overlap with a
     missing-en-label worklist is zero."""
-    import submit_daily_batch as s  # noqa: F401 (kept: import must still succeed)
+    import submit_daily_batch as s
     src = io.open(os.path.join(HERE, "submit_daily_batch.py"),
                   encoding="utf-8").read()
-    # Paused from the drip 2026-09-26 (Emma, scarcity trim), so it is a commented
-    # entry now; the reason-comment beside it is what this test pins.
-    assert '"derived_name_in_kana.txt"' in src
+    assert "derived_name_in_kana.txt" in s.ATOMIC_FILES
     for name, phrase in (("derived_name_in_kana.txt", "an en label"),
                          ("katakana_reading_add.txt", "English label")):
         i = src.index(name)
