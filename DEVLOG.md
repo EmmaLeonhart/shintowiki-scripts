@@ -1,3 +1,12 @@
+## 2026-09-27 (cont. 14) — Emma on the cloud-LLM feeders and English labels from kana
+
+- **Cloud-LLM feeders:** keep. They belong to a different part of the system (the cloud routine that
+  answers queued questions a few a day), not the drip-trimming question.
+- **English labels from kana:** *"theoretically amazing … practically just kind of sucky"*. They
+  should be there, but there's more entanglement than she expected (nta_kana → deterministic
+  stages → name-reuse stages → dedupe precedence, with the name-reuse stages going stale on 429).
+  Kept; nothing changed.
+
 ## 2026-09-27 (cont. 13) — weekly prune of already-landed lines from the static files
 
 Emma chose "one weekly prune step". `modern-quickstatements/prune_landed_lines.py` + a

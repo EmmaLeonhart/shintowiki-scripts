@@ -13,6 +13,8 @@ from `ATOMIC_FILES`; they are not queue items.
   generator works (not just its output), what reads its property, and how much is already landed.
   Kana and honorifics: kept. Founding dates: paused. Court rank + kami parents: moved to
   `handoff/court-rank-people/`. Weekly prune of landed lines: shipped (first run 36299480522).
+  ⛔ **Not finished until the first prune run (36299480522) completes and its per-file counts are
+  reviewed with Emma.** Until then no completion figure is final.
 
 - [ ] **Find out why the direct drip lands 0 edits on some days.** 09-24 and 09-26: every write
   failed ("The save has failed." / "You do not have the permissions needed"). 09-25: 497 landed.
