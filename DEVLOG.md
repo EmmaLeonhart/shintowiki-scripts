@@ -1,3 +1,27 @@
+## 2026-09-27 (cont. 12) — static drip files measured against Wikidata; hub map corrected
+
+**Measured** (`_measure_static.py`, throwaway: WDQS in batches of 300 items, 2.5s apart; the
+pending Miraheze lines were spot-checked by API and are genuinely absent). Static files hold 35,368
+lines; **7,065 (20%) are already on Wikidata** and 28,303 are pending. By file, landed/total:
+Fandom P6262 3,118/12,779 · bunrei 2,180/9,978 · Miraheze P11250 944/6,134 · reisai 412/3,257 ·
+jinjacho 126/1,526 · beppyo 50/423 · sonnet labels 35/348 · hobby bunrei 108/676 · hisousha 66/146 ·
+typo fixes 8/79 · shintai 13/40 · name_in_kana 1/28 · ronsha ranking 4/4. About 7% of each day's
+draw goes on lines already there, and the share grows as more lands.
+
+Of the Miraheze link lines, 3,802 of 6,024 target Category: (3,225) or Template: (577) pages; of the
+Fandom lines, 3,267 of 12,779 target Category: pages. Recorded, nothing changed.
+
+**Hub map corrected.** Emma asked what reads list membership, the funding-class P31 migration and
+address citations. From the code: in all three cases the "readers" were the same family of files
+reading its own input, the ranking script's duplicate-statement report, or local/wiki-side scripts.
+The only true downstream reader is `katakana_reading_add` (4 lines), which follows P361 one hop.
+**All three are effectively leaves.** Her per-hub rulings on whether the data is worth it on its own:
+kana readings, only for what they unlock · kana qualifiers on OJP names, worth it on its own · OJP
+cleanup, only for what it unlocks · Ronsha role qualifiers, worth it on its own · honorifics, worth
+it on its own · funding P31 migration, "mostly worth it on its own", but the juice may not be worth
+the squeeze · list membership and address citations, undecided (asked what reads them; answered
+above).
+
 ## 2026-09-27 (cont. 11) — kami parents move into the court-rank handoff directory
 
 Emma: the kami-parent job (`kami_parent_qualifiers`, 94 lines on 51 parent kami) also goes to the
