@@ -1,3 +1,27 @@
+## 2026-09-27 (cont. 7) — which written properties our own generators read back
+
+Emma's criterion for what matters most: *"which of the properties that we are editing … our
+algorithm reads at a different spot"*. Measured mechanically: the SPARQL property references in each
+edit-emitting generator's source, checked against the properties each drip file writes. Audits,
+reports, and "is it a shrine" P31 filters are excluded.
+
+**Hubs (read by other generators):** P1814 kana → the shrine/temple English-label worklists,
+tenjin-sha labels, derived kana, the kana-qualifier add/remove, katakana add · P1448 official names →
+the kana-qualifier add/remove, katakana add, the name-in-kana queue · P460 → P958, orphan removals,
+kana remove, katakana add, the ranking queue · P361/P1545 → the membership removal files, province
+exclusions · P1352 → P958 · P13677/P958 → Kokugakuin refs, P958 · P13723 → province exclusions,
+shakaku, sōja · P6375 → the other address files · P3831 → form removals, reisai repair, saijin
+research · P1035 → short names · P625 → province exclusions.
+
+**Leaves (nothing downstream reads them):** festivals P837, bunrei P612/P1013, deities P825/P1932,
+wiki link ids, Genbu/Shinmei/jinjacho/P3225 ids, P119/P547, P3113, kami-parent qualifiers, short
+names.
+
+So the Old Japanese name cleanup is part of the kana chain (via P1448), not standalone.
+`ronsha_ojp_name_removals` only removes; the Ronsha branch of `kana_redundant_remove` waits for it;
+`ojp_name_restores` is the one rebuild-after-removal piece. The hubs are the chains that stall when
+a drip day lands nothing.
+
 ## 2026-09-27 (cont. 6) — "official names" was two important things presented as one minor one
 
 Emma: grouping by property lumped two distinct operations she cares a lot about under one label,
