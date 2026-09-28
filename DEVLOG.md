@@ -1,3 +1,15 @@
+## 2026-09-28 (cont. 10) — second create attempt also blocked; an image link caught in the deity batch
+
+Re-dispatch 36442565332 also drew a blocked runner and, on the old code, went through every
+refusal. **Nothing created.** It also showed that `deity_creates.txt` held `Image:Okami_10.5pt.png`
+as a "deity name": the link filter dropped `File:`/`ファイル:`/`Category:` but not the older
+`Image:`/`画像:` prefixes. Fixed:
+- `generate_saijin_deity_research._is_deity_link` refuses `Image:` and `画像:`
+- `generate_deity_creates.usable()` refuses any name with a namespace colon
+- the staged block was removed: **191 deity items** remain
+
+Test in `test_deity_work.py`. Dispatched again on current code (fail-fast + fresh-runner retries).
+
 ## 2026-09-28 (cont. 9) — create-items hit a blocked runner; it now fails fast and retries
 
 Today's scheduled create-items never fired, so it was dispatched by hand (36442295830). **Every

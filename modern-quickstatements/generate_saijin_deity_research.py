@@ -92,7 +92,7 @@ _NAME_OK = re.compile(r"^[一-鿿぀-ゟ゠-ヿー々ヶ]{2,}$")
 
 def _is_deity_link(target):
     return bool(target) and not target.startswith(
-        ("File:", "ファイル:", "Category:", "カテゴリ:"))
+        ("File:", "ファイル:", "Image:", "画像:", "Category:", "カテゴリ:"))  # Image:/画像: added 2026-09-28: Image:Okami_10.5pt.png reached the red-link list
 
 
 def link_targets(field_value):

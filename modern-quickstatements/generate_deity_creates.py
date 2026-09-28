@@ -54,7 +54,8 @@ def red_link_names(path=UNRESOLVED):
 
 def usable(name):
     """A label QuickStatements can carry and that looks like a single name."""
-    return bool(name) and '"' not in name and "|" not in name and len(name) <= 60
+    return (bool(name) and '"' not in name and "|" not in name and len(name) <= 60
+            and ":" not in name)       # a namespace prefix (Image:, File:, …) is never a deity name
 
 
 def existing_ja_labels(names):

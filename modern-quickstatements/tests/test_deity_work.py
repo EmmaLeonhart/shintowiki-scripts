@@ -89,3 +89,10 @@ def test_a_blocked_runner_stops_at_the_first_failed_create(monkeypatch, tmp_path
     assert ci.main() == 3
     assert _S.calls == 1
     assert "blocked=true" in out.read_text(encoding="utf-8")
+
+
+def test_namespace_links_are_never_deity_names():
+    assert not g._is_deity_link("Image:Okami_10.5pt.png")
+    assert not g._is_deity_link("画像:Foo.jpg")
+    assert gdc.deity_blocks(["Image:Okami_10.5pt.png", "十城別王"], existing=set()) == [
+        "CREATE", 'LAST|Lja|"十城別王"', f"LAST|P31|{gdc.KAMI}"]
