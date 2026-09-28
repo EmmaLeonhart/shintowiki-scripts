@@ -1,0 +1,22 @@
+{
+ "timestamp": "2026-09-28T04:38:26Z",
+ "totals": {
+  "succeeded": 0,
+  "failed": 1,
+  "already_absent": 0,
+  "skipped": 0,
+  "selected": 1001
+ },
+ "runner_ip": "57.151.128.129",
+ "files": {
+  "saijin_p825.txt": {
+   "landed": 0,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  }
+ },
+ "first_failure": {
+  "saijin_p825.txt": "API error: The save has failed. [failed-save; messages: wikibase-api-failed-save, globalblocking-blockedtext-range, permissionserrors]"
+ }
+}
