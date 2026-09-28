@@ -1,3 +1,19 @@
+## 2026-09-28 (cont. 6) — the recovered retry run: 981 landed
+
+wikidata-drip run 36379644217 (the fresh-runner retry after 57.151.128.129 was blocked), runner IP
+**132.196.31.135** (unblocked), 04:55–10:11 UTC:
+- **1,001 drawn: 981 landed, 14 already there, 3 failed, 3 skipped.**
+- Top files (landed): derived_name_in_kana 124 · bunrei 97 · p6262_fandom_links 96 ·
+  temple_identical_name_en_labels 85 · sango_p1448 78 · saijin_named_as 67 · saijin_p825 49 ·
+  list_membership_rebuild 46.
+- Failures, none of them a block:
+  - a label clash in multilingual_label_fixes: Q134989096 "Kuil Ōminakami" (id) duplicates another
+    item's (label, description) pair
+  - two read timeouts (saijin_named_as, bunrei)
+
+Three full runs so far on the new setup: 997 + 963 + 981 landed. Unblocked IPs: 172.202.117.225,
+132.196.31.135. Blocked: 57.151.128.129.
+
 ## 2026-09-28 (cont. 5) — create-items: a batch not generated yet is a clean skip; state always commits
 
 Found before it fired: today's scheduled create-items would reach the two deity steps before any
