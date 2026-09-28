@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q124496702 -->
 <!-- JA: 大宮神社 | EN_LABEL: Omiya Shrine | BUCKET: a -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AE%AE%E7%A5%9E%E7%A4%BE_%28%E6%9D%BF%E9%87%8E%E7%94%BA%29 -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: おおみやじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): おみやじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): おおみやじんじゃ
