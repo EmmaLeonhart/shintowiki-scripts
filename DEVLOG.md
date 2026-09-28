@@ -1,3 +1,25 @@
+## 2026-09-28 (cont. 12) — all Wikidata editing moves to hand-run QuickStatements; the home page is the batch
+
+Emma: *"We're doing everything with quick statements … we are no longer going to do any kind of
+automated edits"*, and *"No automated edits means no creations at all."* She found a pipeline that
+generates the QuickStatements well, and running them by hand is simply easier.
+
+Done (after an emergency stop that force-cancelled the running drip and removed the session crons):
+- **Automation off:** `wikidata_editing_lockout.state` is locked with no expiry (every write path
+  refuses in code). `wikidata-drip.yml` and `create-items.yml` are dispatch-only, with no push or
+  schedule trigger.
+- **The home page is the batch:** `site/build_qs_home.py` (new `generate-pages.yml` step, after
+  Combine sites) writes `_site/index.html` and `_site/quickstatements-all.txt`: every registered
+  drip line plus `sequential_misc.txt` plus not-yet-created CREATE blocks, randomly shuffled,
+  QuickStatements v1 tab-separated. CREATE blocks, `||` pairs and sequential_misc stay together.
+  The template (`site/_qs_home_page.html`) is adapted from the genealogy repo's batch page,
+  including its iOS-safe Copy all / Select all. First build locally: **83,478 lines, 0 pending
+  creations** (all were created today).
+- **The old home page is `legacy.html`:** `site/generate_pages.py` writes the overview there, and
+  the committed copy was moved.
+- CLAUDE.md gains a top section recording the new regime. Tests: `tests/test_qs_home.py`; one
+  create test opens the lockout gate at the seam.
+
 ## 2026-09-28 (cont. 11) — deity items created: the "deified person" role and 191 red-link deities
 
 create-items attempt 1 (36442944488) hit a blocked runner, stopped at its first refusal, and

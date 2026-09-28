@@ -168,6 +168,12 @@ jobs:
           mkdir -p _site/shinto-label-generator
           cp -r shinto-label-generator/docs/* _site/shinto-label-generator/ 2>/dev/null || true
 
+      # Emma 2026-09-28: the home page IS the QuickStatements batch, every line, randomly
+      # shuffled; nothing edits Wikidata automatically any more. Runs after Combine sites so
+      # it owns index.html; the previous overview is legacy.html.
+      - name: Build the QuickStatements home page
+        run: python3 site/build_qs_home.py
+
       - name: Commit updated _site to repo
         run: |
           git config user.name "github-actions[bot]"

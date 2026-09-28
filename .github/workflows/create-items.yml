@@ -44,9 +44,10 @@ name: Create Items (gated batches)
 # and the Ise batch sat undelivered with open gates for exactly that reason. The
 # freeze defect the 08-16 note describes is closed: the guard step below and
 # create_items.py both read the lockout state file and the enwiki gate.
+# ⛔ OFF since 2026-09-28 (Emma): no automated item creation. Creations are CREATE blocks
+# on the QuickStatements home page, run by hand. No schedule; the lockout state file also
+# refuses every create if this is dispatched.
 on:
-  schedule:
-    - cron: "45 9 * * *"
   workflow_dispatch:
     inputs:
       attempt:

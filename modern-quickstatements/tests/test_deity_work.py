@@ -69,6 +69,10 @@ def test_a_blocked_runner_stops_at_the_first_failed_create(monkeypatch, tmp_path
     monkeypatch.setattr(ci, "_here", str(tmp_path))
     monkeypatch.setitem(ci.GATES, "t_batch.txt", "lockout_gate")
     monkeypatch.setattr(ci, "wikidata_editing_allowed", lambda *a, **k: (True, "open"))
+    # The real lockout is ON since 2026-09-28 (manual QuickStatements only); this test is
+    # about fail-fast, so the batch gate is opened at the seam too.
+    import lockout_gate
+    monkeypatch.setattr(lockout_gate, "editing_allowed", lambda *a, **k: (True, "open"))
 
     class _R:
         def __init__(self, d): self._d = d

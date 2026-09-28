@@ -22,11 +22,10 @@ name: Wikidata drip
 # after it; GitHub keeps only the newest waiting run. The Wikidata lockout state file
 # still gates every write.
 
+# ⛔ OFF since 2026-09-28 (Emma): no automated Wikidata edits. Everything goes through
+# QuickStatements by hand from the site's home page. No push or schedule trigger; the
+# lockout state file also refuses every write if this is dispatched.
 on:
-  push:
-    branches: [main]
-  schedule:
-    - cron: "37 21 * * *"
   workflow_dispatch:
     inputs:
       attempt:

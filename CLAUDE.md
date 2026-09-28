@@ -11,6 +11,25 @@ current by the `cleanvibe-update-check` skill.
 - **Updates source:** <https://cleanvibe.emmaleonhart.com/updates.md>
 
 
+## ⛔⛔ WIKIDATA IS EDITED BY HAND THROUGH QUICKSTATEMENTS — NOTHING IS AUTOMATED (Emma, 2026-09-28)
+
+This **supersedes every automated-editing rule below**: the daily drip, `direct_daily_edits.py`
+as the editor, `wikidata-drip.yml` on every push, create-items, blocked-runner retries.
+
+- **No automated Wikidata edits and no automated item creation.** Emma runs everything herself
+  in QuickStatements. The lockout state file (`shinto_miraheze/wikidata_editing_lockout.state`) is
+  locked with no expiry, and `wikidata-drip.yml` / `create-items.yml` have no push or schedule
+  trigger. **Do not unlock or re-trigger them.**
+- **The site's home page IS the batch:** `site/build_qs_home.py` writes `_site/index.html` (and
+  `quickstatements-all.txt`) from every registered drip file, `sequential_misc.txt`, and every
+  not-yet-created block in the create batches. It's randomly shuffled on each build, QuickStatements
+  v1, tab-separated. CREATE blocks, `||` description-then-label pairs and `sequential_misc` stay
+  together. Modelled on the genealogy repo's batch page. The old overview is `legacy.html`.
+- **The generators keep running** (cleanup-loop → generate-quickstatements, the weekly prune), so
+  the page stays current; only the editing stopped.
+- Adding work still means: extend a `generate_*.py` so the lines land in a registered file. The
+  page picks them up. Creations still go in a create batch registered in `create_items.GATES`.
+
 ## ⛔ NOTHING IS EVER BLOCKED ON EMMA'S ACCOUNT — a blocked operation is a FINISHED one (Emma, 2026-09-18)
 
 Her words, verbatim: *"literally nothing is ever blocked on my account. If anything is blocked on me

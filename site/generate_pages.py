@@ -279,7 +279,7 @@ li { margin: 0.25rem 0; }
 
 def nav_html(active="index"):
     links = [
-        ("index", "index.html", "Overview"),
+        ("index", "legacy.html", "Overview (legacy)"),
         ("backlog", "backlog.html", "Backlog"),
         ("self-audit", "self-audit.html", "Self-audit"),
         ("shikinaisha-orphans", "shikinaisha-orphans.html", "Shikinaisha ⧉"),
@@ -976,7 +976,9 @@ def main():
     index_html = generate_index(stats, qs_count=len(qs_lines),
                                 backlog_counts=backlog_counts,
                                 wd_edits_today=wd_edits_today)
-    with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
+    # The home page is the QuickStatements batch now (site/build_qs_home.py, Emma 2026-09-28);
+    # this overview moved to legacy.html.
+    with open(os.path.join(SITE_DIR, "legacy.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
     print("Generating p11250.html and p11250.txt...", flush=True)

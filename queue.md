@@ -9,10 +9,9 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] **Deity work: check the statements.** Items are created and checked live (role Q141593105, 191 kami;
-  DEVLOG 09-28 cont. 11). After the next generation: deified-person P825 lines (P3831=Q141593105) and
-  shrine → new-deity P825 lines appear in `saijin_deity_research.txt`, and `saijin_unresolved.json`'s
-  red_link count drops to ~0.
+- [ ] **Deity work: check the statements reach the page.** Items are created (role Q141593105, 191 kami).
+  After the next generation, deified-person P825 lines (P3831=Q141593105) and shrine → new-deity P825
+  lines should appear in `saijin_deity_research.txt`, and so on the QuickStatements home page.
 
 - [ ] **LATER: Engishiki list membership review.** Emma
   2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
