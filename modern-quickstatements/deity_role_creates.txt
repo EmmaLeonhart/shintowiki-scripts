@@ -1,0 +1,6 @@
+# The 'deified person' role item (Emma 2026-09-28).
+CREATE
+LAST|Len|"deified person"
+LAST|Lja|"神格化された人物"
+LAST|Den|"person venerated as a deity, e.g. enshrined as a kami"
+LAST|P279|Q5
