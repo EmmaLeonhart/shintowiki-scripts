@@ -1,3 +1,15 @@
+## 2026-09-28 — overnight run on an unblocked runner: 963 landed
+
+wikidata-drip run 36354746518 (push at 22:17 UTC 09-27), runner IP 172.202.117.225, the first tally
+with an IP:
+- **1,001 drawn: 963 landed, 33 already there, 1 failed, 4 skipped.**
+- Top files (landed): derived_name_in_kana 106 · temple_identical_name_en_labels 86 ·
+  p6262_fandom_links 85 · bunrei 81 · sango_p1448 80 · saijin_named_as 61.
+- The one failure was a label clash, not a block: `Q42579102` "Hongaku-ji Temple" would duplicate
+  another item's en (label, description) pair (`modification-failed`).
+- 22:18–03:33 UTC at ~300 live API edits an hour. The evening's blocked runners (21:20–21:41)
+  cost ~1 minute each before this one got through.
+
 ## 2026-09-27 (cont. 33) — deity names with no item: a review list, step 1 of a new feature
 
 Emma: a final feature worth trying is **new Wikidata items for deities** named in shrine 祭神 fields
