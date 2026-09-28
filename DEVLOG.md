@@ -1,3 +1,10 @@
+## 2026-09-28 (cont. 8) — weekly Open-questions sweep: nothing to move
+
+The bot's weekly sweep item (`b94624501`) was worked from the repo copy of `git_synced/Open
+questions.wiki` (last changed 2026-09-21): no open questions, the Wiki-based queue is empty, and
+the Scheduled items section holds only the two settled markers. Nothing to move into `queue.md`;
+item removed.
+
 ## 2026-09-28 (cont. 7) — CI rebase conflicts no longer strand a generation; the overlap test is green
 
 **Generation of run 36379644217 finished red with exit 128.** The "collect answers" step commits,
