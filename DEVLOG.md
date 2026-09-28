@@ -1,3 +1,17 @@
+## 2026-09-28 (cont. 11) — deity items created: the "deified person" role and 191 red-link deities
+
+create-items attempt 1 (36442944488) hit a blocked runner, stopped at its first refusal, and
+re-dispatched itself. **Attempt 2 (36444975978) created everything** (`8005c8005`):
+- **Q141593105 "deified person"** (ja 神格化された人物, P279 human), recorded in `deity_role_creates.state`
+- **191 kami items** (Q141593106 … Q141593331), each with its ja label and P31 kami (Q524158)
+- 194 edits OK, 0 failures
+
+Checked live: Q141593105, Q141593106 十城別王 and Q141593331 麻羅宿爾 carry exactly those.
+
+Next, automatic: the next generation on current code reads the role QID, so deified-person P825
+statements (P3831 = Q141593105) and the shrine → new-deity links (red-link names now match by exact
+label) get generated and dripped.
+
 ## 2026-09-28 (cont. 10) — second create attempt also blocked; an image link caught in the deity batch
 
 Re-dispatch 36442565332 also drew a blocked runner and, on the old code, went through every

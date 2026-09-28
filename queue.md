@@ -9,11 +9,10 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] **Deity work: verify it runs.** Emma 2026-09-28: deified people get P3831 = a new
-  "deified person" item; create items for all 198 red-link deity names (built in `be86eaecc`). After the
-  next generation and create-items run, check: `deity_creates.txt` (how many remain after the
-  existing-label skip), the role QID in `deity_role_creates.state`, the new items live, and
-  deified-person P825 lines in `saijin_deity_research.txt`.
+- [ ] **Deity work: check the statements.** Items are created and checked live (role Q141593105, 191 kami;
+  DEVLOG 09-28 cont. 11). After the next generation: deified-person P825 lines (P3831=Q141593105) and
+  shrine → new-deity P825 lines appear in `saijin_deity_research.txt`, and `saijin_unresolved.json`'s
+  red_link count drops to ~0.
 
 - [ ] **LATER: Engishiki list membership review.** Emma
   2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
