@@ -9,11 +9,11 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] **New deity items from 祭神 names that have no item** (Emma 2026-09-27, "a final feature").
-  Step 1: `generate_saijin_deity_research.py` writes `saijin_unresolved.json`, the names it couldn't
-  place, split into red link / linked page without an item / plain text, with shrine counts. Step 2:
-  size and review it with Emma (red links are the stronger signal), case by case. Creating items
-  needs her yes and goes through `create_items.py`.
+- [ ] **Deity work: verify it runs.** Emma 2026-09-28: deified people get P3831 = a new
+  "deified person" item; create items for all 198 red-link deity names (built in `be86eaecc`). After the
+  next generation and create-items run, check: `deity_creates.txt` (how many remain after the
+  existing-label skip), the role QID in `deity_role_creates.state`, the new items live, and
+  deified-person P825 lines in `saijin_deity_research.txt`.
 
 - [ ] **Watch `test_zero_overlap_with_the_worklists_today`.** Red on 2026-09-27 from a stale worklist (all 21
   overlap items have en labels live). It should clear when `generate-shrines-missing-en-label` next
