@@ -5,14 +5,12 @@ Used by the 2026-09-28 deity batches (deity_creates.txt, deity_role_creates.txt)
 The conflict_gate global pause was removed 2026-09-27 (Emma), so the lockout state
 file is the only standing hold. Fails closed if the lockout cannot be read.
 """
-import os
-import sys
-
-_here = os.path.dirname(os.path.abspath(__file__))
-_root = os.path.dirname(_here)
-for p in (_here, _root):
-    if p not in sys.path:
-        sys.path.insert(0, p)
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
 
 from shinto_miraheze.wikidata_edit_allowed import editing_allowed  # noqa: E402
 

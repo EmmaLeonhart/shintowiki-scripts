@@ -1,3 +1,15 @@
+## 2026-09-28 (cont. 4) — two CI failures from my own changes, fixed
+
+CI on `7cc9aa487` caught two defects I'd introduced. I ran only the modern-quickstatements tests,
+not the root suite.
+- `test_generated_qs_files_survive_the_rebase`: the autostash-conflict fix listed unmerged files with
+  `git diff --name-only`, a pattern that test bans in the commit step (it has a blind spot). Now
+  `git ls-files -u | cut -f2 | sort -u`, which lists the same unmerged entries.
+- `test_every_shinto_miraheze_importer_carries_the_bootstrap`: the new `lockout_gate.py` imported
+  `shinto_miraheze` without the repo's standard walk-up bootstrap. Now it has it.
+
+Root suite 387 passed; the deity tests pass. The only red test left is the known stale-worklist one.
+
 ## 2026-09-28 (cont. 3) — 御食神社: the removal wins over the restore
 
 `test_no_file_undoes_another` caught one triple staged both ways: Q135070009 御食神社 (Mike Shrine),

@@ -700,7 +700,7 @@ jobs:
             # used to swallow that: on 2026-09-27 `e37ded77c` committed nta_kana.txt and
             # nta_kana_targets.json with 22 markers each. Keep this run's own version
             # (--theirs in a stash pop, checked by simulation), then drop the stash.
-            C=$(git diff --name-only --diff-filter=U)
+            C=$(git ls-files -u | cut -f2 | sort -u)
             if [ -n "$C" ]; then echo "::warning::autostash conflicted on: $C; keeping this run's version"; git checkout --theirs -- $C; git reset -q; git stash drop -q || true; fi
             git push origin "HEAD:${GITHUB_REF_NAME}" && echo "pushed." || echo "WARNING: push failed."
           fi
@@ -830,7 +830,7 @@ jobs:
               # transient — and the retry then died on "cannot pull with rebase:
               # You have unstaged changes", losing the whole commit. The tree is
               # never clean here; _site/ and the json reports are still dirty.
-              git push || { git pull --rebase --autostash; C=$(git diff --name-only --diff-filter=U); if [ -n "$C" ]; then echo "::warning::autostash conflicted on: $C; keeping this run's version"; git checkout --theirs -- $C; git reset -q; git stash drop -q || true; fi; git push; }
+              git push || { git pull --rebase --autostash; C=$(git ls-files -u | cut -f2 | sort -u); if [ -n "$C" ]; then echo "::warning::autostash conflicted on: $C; keeping this run's version"; git checkout --theirs -- $C; git reset -q; git stash drop -q || true; fi; git push; }
             }
           }
 
