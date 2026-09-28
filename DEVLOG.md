@@ -1,3 +1,21 @@
+## 2026-09-28 (cont. 7) — CI rebase conflicts no longer strand a generation; the overlap test is green
+
+**Generation of run 36379644217 finished red with exit 128.** The "collect answers" step commits,
+then runs `git pull --rebase --autostash … || true`. The *rebase itself* conflicted (upstream had
+changed the same files), `|| true` hid it, and the repo was left mid-rebase. "Commit generated
+files" then failed on unmerged files, so that run's generated output was never committed (the
+next generation recreates it). This is the sibling of yesterday's autostash-marker bug.
+
+Fix, in both pulls in `generate-quickstatements.yml`: if a rebase is in progress (`git rev-parse
+--git-path rebase-merge|rebase-apply`), check out the run's own version of the conflicted files
+(`--theirs` in a rebase is the commit being replayed; checked by simulation in a throwaway repo),
+`git add`, and `rebase --continue`, or `--abort` if that fails. This runs before the autostash
+resolution, because a finished rebase is what pops the stash.
+
+`test_zero_overlap_with_the_worklists_today` passes now that `7404e046d` refreshed the
+missing-en-label worklist. It was staleness, as the live check showed (21/21 had en labels), not
+circularity. Queue item closed.
+
 ## 2026-09-28 (cont. 6) — the recovered retry run: 981 landed
 
 wikidata-drip run 36379644217 (the fresh-runner retry after 57.151.128.129 was blocked), runner IP

@@ -15,10 +15,6 @@ from `ATOMIC_FILES`; they are not queue items.
   existing-label skip), the role QID in `deity_role_creates.state`, the new items live, and
   deified-person P825 lines in `saijin_deity_research.txt`.
 
-- [ ] **Watch `test_zero_overlap_with_the_worklists_today`.** Red on 2026-09-27 from a stale worklist (all 21
-  overlap items have en labels live). It should clear when `generate-shrines-missing-en-label` next
-  regenerates. If it doesn't, the circularity is real: look at `generate_derived_name_in_kana.py`'s target query.
-
 - [ ] **LATER: Engishiki list membership review.** Emma
   2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
   editing is too unreliable to verify it does anything productive. Her ruling, in order:
