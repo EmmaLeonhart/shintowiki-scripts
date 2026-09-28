@@ -78,15 +78,10 @@ DESTROYED = [
         "refs": [[("P4656", ("str", "https://ja.wikipedia.org/wiki/越前国の式内社一覧"))],
                  [("P248", ("item", "Q135159299")), ("P13677", ("str", "182203"))]],
     },
-    {
-        "qid": "Q135070009", "name": "御食神社", "parent_revid": 2514473910,
-        "quals": [("P1264", ("item", "Q193292")),
-                  ("P1814", ("str", "ミケノ")),
-                  ("P1814", ("str", "ミケツ")),
-                  ("P1814", ("str", "ミケツカミノヤシロ"))],
-        "refs": [[("P4656", ("str", "https://ja.wikipedia.org/wiki/佐渡国の式内社一覧"))],
-                 [("P248", ("item", "Q135159299")), ("P13677", ("str", "182477"))]],
-    },
+    # Q135070009 御食神社 is NOT restored (Emma, 2026-09-28: "The removal wins"). It is a
+    # Shikinai Ronsha, and ronsha_ojp_name_removals.txt removes its ojp-hani name under
+    # the 07-09 ruling; restoring it here staged the same statement both ways, so the
+    # drip would flip it back and forth (caught by test_no_file_undoes_another).
     {
         "qid": "Q135194697", "name": "風速神社", "parent_revid": 2541518816,
         "quals": [("P1264", ("item", "Q193292")),

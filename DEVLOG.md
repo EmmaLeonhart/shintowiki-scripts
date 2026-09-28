@@ -1,3 +1,12 @@
+## 2026-09-28 (cont. 3) — 御食神社: the removal wins over the restore
+
+`test_no_file_undoes_another` caught one triple staged both ways: Q135070009 御食神社 (Mike Shrine),
+`P1448 ojp-hani:"御食神社"`. `ojp_name_restores` re-added it (one of the 4 names deleted by mistake
+on 09-07/08), while `ronsha_ojp_name_removals` removed it: the item is a Shikinai Ronsha (Q135022904),
+and Ronsha don't carry Old Japanese names (Emma 07-09). Emma: *"The removal wins."* 御食神社 is out of
+`generate_ojp_name_restores.DESTROYED` (with a note) and its staged restore lines are dropped. The
+other 3 restores are unchanged. Tests: all pass except the known stale-worklist one.
+
 ## 2026-09-28 (cont. 2) — deity work: deified people get a role; the 198 red-link deities get items
 
 Emma's rulings on the review list (`saijin_unresolved.json`: 198 red links, 1 linked-without-item,
