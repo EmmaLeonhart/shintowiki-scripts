@@ -1,3 +1,11 @@
+## 2026-09-28 (cont.) — the first blocked start that recovered by itself
+
+Run 36376994005 (push) drew runner **57.151.128.129**, the first blocked IP on record: it stopped
+at its first edit (`globalblocking-blockedtext-range`), tally `fe6df9315`. The retry job dispatched
+36379644217 on a fresh runner, which was **unblocked and landed 360 live edits 04:55–06:07 UTC**
+and is still going. Block-stop plus fresh-runner retry did its job with no one watching.
+Unblocked so far: 172.202.117.225 (overnight). Blocked: 57.151.128.129.
+
 ## 2026-09-28 — overnight run on an unblocked runner: 963 landed
 
 wikidata-drip run 36354746518 (push at 22:17 UTC 09-27), runner IP 172.202.117.225, the first tally
