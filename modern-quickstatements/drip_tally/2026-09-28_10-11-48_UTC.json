@@ -1,0 +1,282 @@
+{
+ "timestamp": "2026-09-28T10:11:48Z",
+ "totals": {
+  "succeeded": 995,
+  "failed": 3,
+  "already_absent": 0,
+  "skipped": 3,
+  "selected": 1001
+ },
+ "runner_ip": "132.196.31.135",
+ "files": {
+  "derived_name_in_kana.txt": {
+   "landed": 124,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "ronsha_ojp_name_removals.txt": {
+   "landed": 25,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "sango_p1448.txt": {
+   "landed": 78,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "temple_identical_name_en_labels.txt": {
+   "landed": 85,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "p6262_fandom_links.txt": {
+   "landed": 96,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "saijin_named_as.txt": {
+   "landed": 67,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  },
+  "saijin_deity_research.txt": {
+   "landed": 45,
+   "already": 4,
+   "failed": 0,
+   "skipped": 2
+  },
+  "bunrei.txt": {
+   "landed": 97,
+   "already": 1,
+   "failed": 1,
+   "skipped": 0
+  },
+  "orphan_membership_removals.txt": {
+   "landed": 10,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "temple_en_labels.txt": {
+   "landed": 9,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "p11250_miraheze_links.txt": {
+   "landed": 22,
+   "already": 1,
+   "failed": 0,
+   "skipped": 0
+  },
+  "address_citation_from_article.txt": {
+   "landed": 23,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "kana_qualifier_add.txt": {
+   "landed": 18,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "saijin_p825.txt": {
+   "landed": 49,
+   "already": 5,
+   "failed": 0,
+   "skipped": 0
+  },
+  "multi_ordinal_removals.txt": {
+   "landed": 1,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "list_membership_rebuild.txt": {
+   "landed": 46,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "genbu_ids.txt": {
+   "landed": 18,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "jinjacho_p973.txt": {
+   "landed": 11,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "identical_name_en_labels.txt": {
+   "landed": 25,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "list_membership_removals.txt": {
+   "landed": 23,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "reisai.txt": {
+   "landed": 32,
+   "already": 1,
+   "failed": 0,
+   "skipped": 1
+  },
+  "multilingual_label_fixes.txt": {
+   "landed": 4,
+   "already": 0,
+   "failed": 1,
+   "skipped": 0
+  },
+  "address_citation_backfill.txt": {
+   "landed": 2,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "province_exclusions.txt": {
+   "landed": 4,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "miscellaneous_edits.txt": {
+   "landed": 1,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "name_in_kana.txt": {
+   "landed": 2,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "honzon_p825.txt": {
+   "landed": 10,
+   "already": 1,
+   "failed": 0,
+   "skipped": 0
+  },
+  "nta_kana.txt": {
+   "landed": 13,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "bunrei_toranomaki.txt": {
+   "landed": 1,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "bunrei_qualifier_repair.txt": {
+   "landed": 2,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "bunrei_animism.txt": {
+   "landed": 3,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "p958_qualifiers.txt": {
+   "landed": 2,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "en_labels.txt": {
+   "landed": 2,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "sequential_misc.txt": {
+   "landed": 0,
+   "already": 1,
+   "failed": 0,
+   "skipped": 0
+  },
+  "bunrei_onkamui.txt": {
+   "landed": 2,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "shinto_honorifics.txt": {
+   "landed": 6,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "kana_en_labels.txt": {
+   "landed": 3,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "en_labels_sonnet.txt": {
+   "landed": 3,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "ronsha_role_qualifiers.txt": {
+   "landed": 6,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "beppyo_p612.txt": {
+   "landed": 3,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "hisousha_p119_p547.txt": {
+   "landed": 3,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "bunrei_nicovideo.txt": {
+   "landed": 2,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "tenjinsha_en_labels.txt": {
+   "landed": 1,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  },
+  "kana_redundant_remove.txt": {
+   "landed": 2,
+   "already": 0,
+   "failed": 0,
+   "skipped": 0
+  }
+ },
+ "first_failure": {
+  "multilingual_label_fixes.txt": "API error: Item [[Q134989096|Q134989096]] already has label \"Kuil Ōminakami\" associated with language code id, using the same description text. [modification-fa",
+  "saijin_named_as.txt": "exception: HTTPSConnectionPool(host='www.wikidata.org', port=443): Read timed out. (read timeout=60)",
+  "bunrei.txt": "exception: HTTPSConnectionPool(host='www.wikidata.org', port=443): Read timed out. (read timeout=60)"
+ }
+}
