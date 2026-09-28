@@ -52,3 +52,10 @@ def test_create_items_keys_a_ja_only_block_on_its_ja_label():
 def test_both_deity_batches_are_gated():
     assert ci.GATES["deity_creates.txt"] == "lockout_gate"
     assert ci.GATES["deity_role_creates.txt"] == "lockout_gate"
+
+
+def test_a_batch_not_generated_yet_is_a_clean_skip(monkeypatch, capsys):
+    monkeypatch.setattr(ci, "wikidata_editing_allowed", lambda *a, **k: (True, "open"))
+    monkeypatch.setattr(sys, "argv", ["create_items.py", "--batch", "no_such_batch_yet.txt"])
+    assert ci.main() == 0
+    assert "not generated yet" in capsys.readouterr().out

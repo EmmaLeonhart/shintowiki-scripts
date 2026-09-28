@@ -167,7 +167,9 @@ jobs:
       # items were created, the state file was written, and this step printed "No state
       # change" and threw it away — leaving nothing to stop a later dispatch creating
       # all three again. Stage first, then ask the index.
+      # always(): a failed create step must not skip recording the QIDs it DID create.
       - name: Commit the state file
+        if: always()
         run: |
           git add -- 'modern-quickstatements/*.state'   # quoted: git expands it and skips ignored files
           if git diff --cached --quiet; then

@@ -171,6 +171,12 @@ def main():
 
 
     path = os.path.join(_here, args.batch)
+    # A batch whose generator hasn't run yet is a SKIP, not a crash: a failed step in
+    # create-items.yml skips the state-commit step after it, which is how the 09-10
+    # lost-shrine QIDs were nearly created twice (2026-09-28, deity batches).
+    if not os.path.exists(path):
+        print(f"SKIPPED: {args.batch} not generated yet")
+        return 0
     state_path = os.path.splitext(path)[0] + ".state"
 
     gate_name = GATES.get(args.batch)

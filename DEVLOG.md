@@ -1,3 +1,14 @@
+## 2026-09-28 (cont. 5) — create-items: a batch not generated yet is a clean skip; state always commits
+
+Found before it fired: today's scheduled create-items would reach the two deity steps before any
+generation had written `deity_creates.txt` / `deity_role_creates.txt`. `create_items.py` would crash
+opening them, and a failed step skipped **"Commit the state file"**. That's how the 09-10 lost-shrine
+QIDs went unrecorded. Fixed both ways:
+- `create_items.py` prints `SKIPPED: <batch> not generated yet` and exits 0 when the batch file is
+  absent (test in `test_deity_work.py`)
+- the state-commit step runs `if: always()`, so QIDs a run did create are recorded even if a later
+  step fails
+
 ## 2026-09-28 (cont. 4) — two CI failures from my own changes, fixed
 
 CI on `7cc9aa487` caught two defects I'd introduced. I ran only the modern-quickstatements tests,
