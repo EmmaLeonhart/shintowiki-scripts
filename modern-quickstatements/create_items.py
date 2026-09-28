@@ -220,7 +220,18 @@ def main():
             "data": json.dumps({"labels": {lang: {"language": lang, "value": label}}}),
             "format": "json"}, timeout=30).json()
         if "entity" not in r:
-            print(f"{label}: CREATE FAILED — {r.get('error', {}).get('info')}")
+            err = r.get("error", {})
+            print(f"{label}: CREATE FAILED — {err.get('info')}")
+            # 2026-09-28: a runner inside a globally blocked IP range refuses every create
+            # ("You do not have the permissions…", code permissiondenied). Stop at the first
+            # one so create-items.yml can retry on a fresh runner, as the drip does.
+            if err.get("code") in ("permissiondenied", "blocked") or "blocked" in str(err.get("info", "")).lower():
+                print("BLOCKED: this runner can't create items — stopping so a fresh runner can retry.")
+                out = os.environ.get("GITHUB_OUTPUT")
+                if out:
+                    with open(out, "a", encoding="utf-8") as fh:
+                        fh.write("blocked=true\n")
+                return 3
             continue
         qid = r["entity"]["id"]
         print(f"{label}: created {qid}")

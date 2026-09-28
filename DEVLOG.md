@@ -1,3 +1,19 @@
+## 2026-09-28 (cont. 9) — create-items hit a blocked runner; it now fails fast and retries
+
+Today's scheduled create-items never fired, so it was dispatched by hand (36442295830). **Every
+create failed** with "You do not have the permissions needed" (`permissiondenied`): the same global
+IP-range block, on that runner. The account is fine. **Nothing was created** and no state was
+recorded, so nothing is half-done. Re-dispatched (36442565332) on a fresh runner.
+
+Hardening, to match the drip:
+- `create_items.py` stops at the first `permissiondenied`/blocked create, prints BLOCKED, writes
+  `blocked=true` and exits 3 (test in `test_deity_work.py`)
+- `create-items.yml`: the create steps have ids; the job exposes `blocked`; a `retry-on-fresh-runner`
+  job re-dispatches every 15 minutes up to attempt 13 (with an `attempt` input); `actions: write`
+- the job limit is 120 minutes, not 20: 22 Ise items took ~7 minutes, so 193 need about an hour
+
+Both suites are green (1,544 and 387).
+
 ## 2026-09-28 (cont. 8) — weekly Open-questions sweep: nothing to move
 
 The bot's weekly sweep item (`b94624501`) was worked from the repo copy of `git_synced/Open

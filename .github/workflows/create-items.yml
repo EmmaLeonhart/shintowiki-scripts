@@ -48,9 +48,15 @@ on:
   schedule:
     - cron: "45 9 * * *"
   workflow_dispatch:
+    inputs:
+      attempt:
+        description: "Retry attempt number (set by the retry job; leave empty)"
+        required: false
+        default: "1"
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: create-items
@@ -64,7 +70,11 @@ env:
 jobs:
   create:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # 120, not 20 (2026-09-28): 22 Ise items took ~7 minutes, so the 193-item deity batch
+    # needs about an hour.
+    timeout-minutes: 120
+    outputs:
+      blocked: ${{ steps.c-vsa.outputs.blocked == 'true' || steps.c-lost.outputs.blocked == 'true' || steps.c-ise.outputs.blocked == 'true' || steps.c-role.outputs.blocked == 'true' || steps.c-deity.outputs.blocked == 'true' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -109,6 +119,7 @@ jobs:
           fi
 
       - name: Create items from gated batches
+        id: c-vsa
         if: steps.freeze.outputs.open == 'true'
         working-directory: modern-quickstatements
         env:
@@ -124,6 +135,7 @@ jobs:
       # still in. lost_shrine_gate holds it shut until the lockout state file says
       # otherwise AND the conflict gate is clear.
       - name: Create the lost-shrine items
+        id: c-lost
         if: steps.freeze.outputs.open == 'true'
         working-directory: modern-quickstatements
         env:
@@ -136,6 +148,7 @@ jobs:
       # no step, so it could never run however the gate read. ise_jingu_gate holds it to
       # the same lockout + conflict_gate conjunction as the lost-shrine batch.
       - name: Create the Ise Jingu 125-shrine items
+        id: c-ise
         if: steps.freeze.outputs.open == 'true'
         working-directory: modern-quickstatements
         env:
@@ -147,6 +160,7 @@ jobs:
       # use it; then one kami item per red-link 祭神 name ("All 198"). Both batches are
       # rebuilt by generate_deity_creates.py, which skips names that already have an item.
       - name: Create the "deified person" role item
+        id: c-role
         if: steps.freeze.outputs.open == 'true'
         working-directory: modern-quickstatements
         env:
@@ -155,6 +169,7 @@ jobs:
         run: python create_items.py --batch deity_role_creates.txt --apply
 
       - name: Create the red-link deity items
+        id: c-deity
         if: steps.freeze.outputs.open == 'true'
         working-directory: modern-quickstatements
         env:
@@ -184,3 +199,20 @@ jobs:
             echo "push attempt $i failed; retrying"
             sleep $((i * 5))
           done
+
+  # A blocked runner (globally blocked IP range) stops at its first failed create; try again
+  # on a fresh runner every 15 minutes, up to attempt 13, as wikidata-drip does (Emma 2026-09-27).
+  retry-on-fresh-runner:
+    needs: [create]
+    if: ${{ always() && needs.create.outputs.blocked == 'true' && fromJSON(inputs.attempt || '1') < 13 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait, then re-dispatch create-items on a new runner
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ATTEMPT: ${{ inputs.attempt || '1' }}
+        run: |
+          NEXT=$((ATTEMPT + 1))
+          echo "Blocked on attempt $ATTEMPT; retrying as attempt $NEXT in 15 minutes."
+          sleep 900
+          gh workflow run create-items.yml --repo "$GITHUB_REPOSITORY" --ref main -f attempt="$NEXT"

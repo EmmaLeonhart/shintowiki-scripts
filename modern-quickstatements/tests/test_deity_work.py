@@ -59,3 +59,33 @@ def test_a_batch_not_generated_yet_is_a_clean_skip(monkeypatch, capsys):
     monkeypatch.setattr(sys, "argv", ["create_items.py", "--batch", "no_such_batch_yet.txt"])
     assert ci.main() == 0
     assert "not generated yet" in capsys.readouterr().out
+
+
+def test_a_blocked_runner_stops_at_the_first_failed_create(monkeypatch, tmp_path, capsys):
+    """2026-09-28: every create on a globally blocked runner fails with permissiondenied;
+    stop at the first and report blocked=true so create-items.yml retries on a fresh runner."""
+    batch = tmp_path / "t_batch.txt"
+    batch.write_text('CREATE\nLAST|Lja|"甲神"\nCREATE\nLAST|Lja|"乙神"\n', encoding="utf-8")
+    monkeypatch.setattr(ci, "_here", str(tmp_path))
+    monkeypatch.setitem(ci.GATES, "t_batch.txt", "lockout_gate")
+    monkeypatch.setattr(ci, "wikidata_editing_allowed", lambda *a, **k: (True, "open"))
+
+    class _R:
+        def __init__(self, d): self._d = d
+        def json(self): return self._d
+
+    class _S:
+        headers = {}
+        calls = 0
+        def post(self, *a, **k):
+            _S.calls += 1
+            return _R({"error": {"code": "permissiondenied",
+                                 "info": "You do not have the permissions needed to carry out this action."}})
+
+    monkeypatch.setattr(ci, "wd_login", lambda: (_S(), "csrf"))
+    out = tmp_path / "gh_output"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(out))
+    monkeypatch.setattr(sys, "argv", ["create_items.py", "--batch", "t_batch.txt", "--apply"])
+    assert ci.main() == 3
+    assert _S.calls == 1
+    assert "blocked=true" in out.read_text(encoding="utf-8")
