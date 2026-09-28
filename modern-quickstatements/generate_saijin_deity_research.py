@@ -195,14 +195,17 @@ def clean_named(named):
     return named
 
 
-def qs_line(shrine_qid, deity_qid, principal, named, url):
-    """One QuickStatements line: P825 + optional P3831 role + P1932 name + jawiki ref.
+def qs_line(shrine_qid, deity_qid, principal, named, url, deified_role=None):
+    """One QuickStatements line: P825 + optional P3831 role(s) + P1932 name + jawiki ref.
 
     Matches the established shrine-P825 model — the deity item, the source's exact
     name string (P1932 'object named as'), and, where jawiki marks it, the
-    principal-deity role (P3831).
+    principal-deity role (P3831). A deified PERSON (Emma 2026-09-28) also carries
+    P3831 = the "deified person" item.
     """
     role = f"|P3831|{PRINCIPAL_DEITY_ROLE}" if principal else ""
+    if deified_role:
+        role += f"|P3831|{deified_role}"
     named = clean_named(named)
     named_q = f'|P1932|"{named.replace(chr(34), "")}"' if named else ""
     return (f'{shrine_qid}|P825|{deity_qid}{role}{named_q}'
@@ -328,6 +331,43 @@ def match_names(names):
     return {n: next(iter(q)) for n, q in hits.items() if len(q) == 1}
 
 
+# Deified people (Emma 2026-09-28): plain names like 応神天皇 (558 shrines), 菅原道真
+# (333) and 神功皇后 (246) have items, typed as human or legendary human rather than
+# deity, so the deity gate above drops them. They may match these classes instead,
+# still exactly one item, and their statement carries P3831 = "deified person".
+PERSON_CLASSES = ("Q5", "Q21070568", "Q124710051")   # human, disputed-existence human, legendary human figure
+ROLE_STATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "deity_role_creates.state")
+
+
+def deified_role_qid(path=None):
+    """QID of the "deified person" item once create-items has made it; None until then."""
+    try:
+        with open(path or ROLE_STATE, encoding="utf-8") as fh:
+            return json.load(fh).get("deified person")
+    except (FileNotFoundError, ValueError):
+        return None
+
+
+def match_people(names):
+    """{name -> QID} for names matching EXACTLY ONE human / legendary-person item."""
+    names = sorted(set(names))
+    hits = {}
+    classes = " ".join("wd:" + c for c in PERSON_CLASSES)
+    for i in range(0, len(names), 120):
+        values = " ".join('"%s"@ja' % n.replace('\\', '\\\\').replace('"', '\\"')
+                          for n in names[i:i + 120])
+        query = """SELECT ?name ?item WHERE {
+  VALUES ?name { %s }
+  VALUES ?c { %s }
+  ?item rdfs:label|skos:altLabel ?name .
+  ?item wdt:P31 ?c .
+}""" % (values, classes)
+        for b in _wdqs(query):
+            hits.setdefault(b["name"]["value"], set()).add(b["item"]["value"].rsplit("/", 1)[-1])
+        time.sleep(1.0)
+    return {n: next(iter(q)) for n, q in hits.items() if len(q) == 1}
+
+
 def _pairs(query):
     return {(b["s"]["value"].rsplit("/", 1)[-1], b["d"]["value"].rsplit("/", 1)[-1])
             for b in _wdqs(query)}
@@ -379,7 +419,8 @@ def named_as_line(shrine_qid, deity_qid, named, url, has_ja_ref):
 
 
 def build_lines(shrine_deities, resolved, matched, have, have_principal,
-                have_named=frozenset(), have_ja_ref=frozenset()):
+                have_named=frozenset(), have_ja_ref=frozenset(),
+                deified=frozenset(), deified_role=None):
     """(new_statement_lines, named_as_backfill_lines).
 
     shrine_deities: {(title,qid): {key: {principal, named}}}; key is a jawiki link
@@ -414,7 +455,8 @@ def build_lines(shrine_deities, resolved, matched, have, have_principal,
                     continue
             elif (qid, d) in have:
                 continue
-            lines.append(qs_line(qid, d, e["principal"], e["named"], url))
+            lines.append(qs_line(qid, d, e["principal"], e["named"], url,
+                                 deified_role if d in deified else None))
     return sorted(set(lines)), sorted(set(named_lines))
 
 
@@ -518,10 +560,29 @@ def main():
     matched = match_names(all_plain)
     print(f"{len(matched)}/{len(all_plain)} plain names match a unique deity item")
 
+    # Red links: once their new kami items exist (deity_creates.txt, Emma 2026-09-28),
+    # the linked name matches the new item by exact label, like a plain name.
+    link_rest = sorted(t for t in all_links if t not in resolved)
+    link_matched = match_names(link_rest) if link_rest else {}
+    resolved.update(link_matched)
+    print(f"{len(link_matched)}/{len(link_rest)} unresolved link targets match a deity item by label")
+
+    # Deified people: only once the "deified person" role item exists.
+    role = deified_role_qid()
+    deified = set()
+    if role:
+        people = match_people([n for n in all_plain if n not in matched])
+        matched.update(people)
+        deified = set(people.values())
+        print(f"{len(people)} plain names match exactly one person item (P3831={role})")
+    else:
+        print("deified-person role item not created yet; person matches held back")
+
     write_unresolved(shrine_deities, all_links, all_plain, resolved, matched)
 
     lines, named_lines = build_lines(shrine_deities, resolved, matched, have,
-                                     have_principal, have_named, have_ja_ref)
+                                     have_principal, have_named, have_ja_ref,
+                                     deified, role)
     principal_n = sum(1 for ln in lines if "|P3831|" in ln)
     with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))

@@ -1,3 +1,30 @@
+## 2026-09-28 (cont. 2) — deity work: deified people get a role; the 198 red-link deities get items
+
+Emma's rulings on the review list (`saijin_unresolved.json`: 198 red links, 1 linked-without-item,
+1,566 plain names that don't match a deity):
+- **Deified people are accepted, with P3831 (object has role) = a new "deified person" item.**
+  The top plain names already have items typed as human or legendary human, not deity: 応神天皇
+  Q317997 (558 shrines), 菅原道真 Q382005 (333), 神功皇后 Q232803 (246). She chose a new item over
+  hitogami (Q11376147) and deification (Q11693234).
+- **Items for all 198 red-link names.**
+
+Built:
+- `generate_deity_creates.py` (CI step after saijin research) writes `deity_role_creates.txt` (the
+  "deified person" item: en/ja labels, en description, P279 human) and `deity_creates.txt` (one item
+  per red-link name: ja label, P31 kami Q524158). Any name that already is some item's exact ja
+  label is skipped, because create_items has no duplicate guard.
+- `lockout_gate.py`, a lockout-only gate for both batches (registered in `create_items.GATES`).
+  `create-items.yml` gains two steps: the role item first, then the deities.
+- `create_items.py` can create an item keyed on its ja label when a block has no en label, and
+  no longer rewraps stdout at import.
+- `generate_saijin_deity_research.py`:
+  - unresolved link targets also try an exact deity-label match, so shrines link to the new items
+    once they exist
+  - plain names with no deity match may match exactly one human, disputed-existence human or
+    legendary-human item; those statements carry P3831 = the role item, **only once create-items
+    has recorded it** (`deity_role_creates.state`)
+- Tests: `test_deity_work.py`.
+
 ## 2026-09-28 (cont.) — the first blocked start that recovered by itself
 
 Run 36376994005 (push) drew runner **57.151.128.129**, the first blocked IP on record: it stopped

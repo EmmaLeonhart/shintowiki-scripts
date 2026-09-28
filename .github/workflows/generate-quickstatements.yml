@@ -294,6 +294,14 @@ jobs:
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_saijin_deity_research.py
+      # Emma 2026-09-28: create batches for the red-link deity names and the "deified
+      # person" role item. Reads saijin_unresolved.json from the step above; skips any
+      # name that already has an item. create-items.yml does the creating.
+      - name: Deity create batches (red-link names + deified-person role)
+        id: deity-create-batches
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_deity_creates.py
       - name: Rebuild list membership from the list items
         id: rebuild-list-membership-from-the-list
         working-directory: modern-quickstatements

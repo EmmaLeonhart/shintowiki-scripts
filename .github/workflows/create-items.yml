@@ -143,6 +143,25 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: python create_items.py --batch ise_jingu_creates.txt --apply
 
+      # Emma 2026-09-28. The role item first, so shrine -> deified-person statements can
+      # use it; then one kami item per red-link 祭神 name ("All 198"). Both batches are
+      # rebuilt by generate_deity_creates.py, which skips names that already have an item.
+      - name: Create the "deified person" role item
+        if: steps.freeze.outputs.open == 'true'
+        working-directory: modern-quickstatements
+        env:
+          MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python create_items.py --batch deity_role_creates.txt --apply
+
+      - name: Create the red-link deity items
+        if: steps.freeze.outputs.open == 'true'
+        working-directory: modern-quickstatements
+        env:
+          MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python create_items.py --batch deity_creates.txt --apply
+
       # `git diff` only sees TRACKED files, and a batch's <batch>.state is untracked
       # until its first run creates something. So on 2026-09-10 the three lost-shrine
       # items were created, the state file was written, and this step printed "No state

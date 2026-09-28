@@ -68,7 +68,6 @@ if _uar not in _usys.path:
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT  # noqa: E402
 from shinto_miraheze.wikidata_edit_allowed import editing_allowed as wikidata_editing_allowed  # noqa: E402
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WD_API = "https://www.wikidata.org/w/api.php"
 
@@ -77,6 +76,10 @@ GATES = {
     "vsa_libraries.txt": "vsa_libraries_gate",
     "ise_jingu_creates.txt": "ise_jingu_gate",
     "lost_shrine_creates.txt": "lost_shrine_gate",
+    # Emma 2026-09-28: the "deified person" role item, and one kami item per red-link
+    # 祭神 name ("All 198"). Both built by generate_deity_creates.py.
+    "deity_role_creates.txt": "lockout_gate",
+    "deity_creates.txt": "lockout_gate",
 }
 
 
@@ -101,12 +104,22 @@ def load_blocks(path):
     return blocks
 
 
+def block_label_lang(block):
+    """(lang, label) the item is created with: the English label, else the Japanese one.
+
+    2026-09-28: the red-link deity batch has only ja labels (Emma: create all 198); an en
+    label would need a reading the source doesn't give. Batches with an en label behave
+    exactly as before."""
+    for lang in ("en", "ja"):
+        for line in block:
+            m = re.match(r'^LAST\|L' + lang + r'\|"(.*)"$', line)
+            if m:
+                return lang, m.group(1)
+    return None, None
+
+
 def block_label(block):
-    for line in block:
-        m = re.match(r'^LAST\|Len\|"(.*)"$', line)
-        if m:
-            return m.group(1)
-    return None
+    return block_label_lang(block)[1]
 
 
 def block_p31(block):
@@ -137,6 +150,10 @@ def wd_login():
 
 
 def main():
+    # In main, not at import: rewrapping stdout at import broke pytest's capture for
+    # any test that imports this module after another has (2026-09-28).
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
     ap.add_argument("--batch", required=True)
     ap.add_argument("--apply", action="store_true", help="actually write (default: dry run)")
@@ -179,9 +196,9 @@ def main():
         session.headers.update({"User-Agent": WIKIDATA_USER_AGENT})
 
     for block in blocks:
-        label = block_label(block)
+        lang, label = block_label_lang(block)
         if not label:
-            print("SKIP: block has no LAST|Len label")
+            print("SKIP: block has no LAST|Len or LAST|Lja label")
             continue
         if label in done:
             print(f"{label}: already created as {done[label]} — idempotent skip")
@@ -194,7 +211,7 @@ def main():
         # create the item, then apply its statements to the real QID
         r = session.post(WD_API, data={
             "action": "wbeditentity", "new": "item", "token": csrf,
-            "data": json.dumps({"labels": {"en": {"language": "en", "value": label}}}),
+            "data": json.dumps({"labels": {lang: {"language": lang, "value": label}}}),
             "format": "json"}, timeout=30).json()
         if "entity" not in r:
             print(f"{label}: CREATE FAILED — {r.get('error', {}).get('info')}")
@@ -207,8 +224,8 @@ def main():
 
         import direct_daily_edits as dde
         for line in block:
-            if re.match(r'^LAST\|Len\|', line):
-                continue                      # the label is already set
+            if re.match(r'^LAST\|L' + lang + r'\|', line):
+                continue                      # the creation label is already set
             parsed = dde.parse_qs_line(line.replace("LAST", qid, 1))
             if not parsed:
                 print(f"    SKIP unparseable: {line}")
