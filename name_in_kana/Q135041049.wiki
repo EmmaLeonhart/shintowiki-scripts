@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q135039355 -->
-<!-- JA: 服織神社 | EN_LABEL: Hatorino Shrine | BUCKET: a -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q135041049 -->
+<!-- JA: 神代神社 | EN_LABEL: Kanshirono Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: GUESS: はとりのじんじゃ -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): はとりのじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): はたおりじんじゃ
+  CANDIDATE A (from the English label): かんしろのじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): かんしろじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports

@@ -1,0 +1,17 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q17217272 -->
+<!-- JA: 宗形神社 | EN_LABEL: Munakata Shrine (Kita-ku, Okayama) | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%AE%97%E5%BD%A2%E7%A5%9E%E7%A4%BE_%28%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): むなかたじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): むなかたのじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+宗形神社（むなかたじんじゃ）は、岡山県岡山市北区大窪にある神社。式内社で、旧社格は郷社。
