@@ -3,10 +3,11 @@
 #  The extent that we're not able to is the extent, probably, that I'm going
 #  to be able to make judgement calls."
 #
-# 23 cases.
+# 24 cases.
 
+Q10940723	ja=ウワハル・シタハル	en=Uwaharu and Shitaharu	EXCLUDED by Emma — complicated ontology
 Q10948069	ja=宗像三女神	en=Three Goddesses of Munakata	EXCLUDED by Emma — complicated ontology
-Q1114013	ja=住吉三神	en=Sumiyoshi sanjin	EXCLUDED by Emma — complicated ontology
+Q1114013	ja=住吉三神	en=Sumiyoshi Sanjin	EXCLUDED by Emma — complicated ontology
 Q11326733	ja=ハヤアキツヒコ・ハヤアキツヒメ	en=Hayaakitsuhiko and Hayaakitsuhime	EXCLUDED by Emma — complicated ontology
 Q11455406	ja=家宅六神	en=Katakurokushin	EXCLUDED by Emma — complicated ontology
 Q11574224	ja=甕速日神	en=Mikahayahi-no-Mikoto	ja says 神 (Q140588460); en says a different honorific (Q140588459)

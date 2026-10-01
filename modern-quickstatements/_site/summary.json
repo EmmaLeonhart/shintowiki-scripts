@@ -12,10 +12,10 @@
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
     "total": 16995,
-    "remaining": 20,
-    "completed": 16975,
+    "remaining": 18,
+    "completed": 16977,
     "output_file": "p4656_jawiki_references.txt",
-    "lines": 20
+    "lines": 18
   },
   "hiteisha": {
     "name": "Remove P31 Shikinai Hiteisha",
@@ -122,15 +122,15 @@
       "description": "Kokuhei-sha, Kanpei-sha, and ritual offering types",
       "source_property": "P31",
       "determined_by": "Q135009120",
-      "total": 3614,
+      "total": 3612,
       "remaining": 0,
-      "completed": 3614,
+      "completed": 3612,
       "add_file": "migrate_ritsuryo_funding_add.txt",
       "remove_file": "migrate_ritsuryo_funding_remove.txt",
       "add_lines": 0,
-      "remove_lines": 3610,
+      "remove_lines": 3608,
       "underspec_file": "migrate_ritsuryo_funding_underspecified_remove.txt",
-      "underspec_lines": 3
+      "underspec_lines": 1
     }
   ],
   "property_edits": {
