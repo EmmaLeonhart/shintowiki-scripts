@@ -7,6 +7,10 @@ lost-shrine creates: *"It is finished so it's not blocked lol shouldn't be in th
 that are built, wired and waiting only on the lockout date are recorded in `DEVLOG.md` and readable
 from `ATOMIC_FILES`; they are not queue items.
 
+## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-10-01)
+
+Walk `docs/deferred_verification.md` and actually TEST each Open item (the batched verification we skip in the moment because wiki/CI changes are slow lagging indicators). For each: run its check; if it works, move it to the doc's Verified section with the date + what you observed; if it's broken, fix it and note the fix. Then delete THIS block.
+
 ## stuff to do today
 
 - [ ] **Deity work: check the statements reach the page.** Items are created (role Q141593105, 191 kami).
