@@ -34,84 +34,26 @@ batched verification we skip in the moment.
 
 ## Open (shipped, not yet verified)
 
-- [ ] **The WDQS pacing and backoff changes of 2026-09-20 (`a29bf5cf`, `f66ec730`,
-  `2fbf1f00`) are shipped unverified.** `Generate shrines-missing-en-label list` had failed
-  5 of 6 runs on `RateLimitError: 429`; three documented violations were removed from its
-  path — a sub-floor `THROTTLE = 0.5` in Stage 2, a `10 * attempt` retry in Stage 2, and the
-  same tight retry in steps 1 and 8, which run before and after it and share the endpoint
-  budget. ⛔ **None of the three is claimed to fix the 429s.** A dispatch between the first
-  and second measured that the first alone did not.
-  **Check:** on the next `Generate shrines-missing-en-label list` run, read the **step
-  outcomes, not the conclusions** — `continue-on-error: true` rewrites a step's conclusion
-  to `success` while its outcome stays `failure`, which is how a failed run read green to me
-  on 09-20. `gh run view <id> --json jobs` shows conclusions; the job's own "Re-fail if any
-  generation step failed" step reads outcomes and is the honest signal. If it still 429s,
-  the levers left are a `BATCH` under 150 labels per POST, or a throttle slower than the
-  floor. Also watch the wall clock: an exhausted backoff is now 195s per batch against a
-  `timeout-minutes: 20` job that normally finishes in ~7m.
-  ⚠ Entered here as well as in `queue.md` because of the rule above — a change that ships
-  unverified needs a line in **both**, and the 2026-08-25 item is the precedent for what
-  happens when it only gets the DEVLOG.
+(none — see the 2026-10-02 sweep log entry)
 
 ## Verified (kept briefly, then prune)
 
-* **2026-09-20 — the tenth file is verified, and it is the cleanest of the ten.**
-  `migrate_ritsuryo_funding_remove.txt` was the one file of the 2026-08-24 sort-at-the-writer
-  fix (`8c65d9b6`) with no post-fix build to measure, because the Wikidata lockout kept
-  `submit-quickstatements` and `direct-daily-edits` skipped. The lockout expired 2026-09-01
-  (`wikidata_edit_allowed.py` now prints `ALLOWED — wikidata lockout expired`), those jobs
-  have run since, and there are nine post-fix commits to read. Ran the decisive check on
-  every one of them:
-
-  | era | commits | shape | sorted md5 |
-  |---|---|---|---|
-  | **before** 08-15 → 08-25 | 9 | `+2880/-2880` … `+3950/-3950` | `0a042f48bc5f` on **all nine**, parent and child |
-  | **after** 09-07 → 09-17 | 9 | `+0/-5` … `+0/-499` | **changes every time** |
-
-  Pure reshuffle became pure deletion. Every post-fix commit adds **zero** lines and removes
-  between 5 and 499 — the drip consuming lines that landed and the writer rewriting the
-  remainder in sorted order, which is exactly the intended shape.
-
-  ⚠ Two details worth keeping. `8c65d9b6` itself reads `+3950/-3950` with an unchanged
-  sorted md5 — that is the fix's **one-time** re-sort, not a counterexample. And the sorted
-  md5 stayed `0a042f48bc5f` from 08-15 all the way to `cf156076d`'s parent on 09-07: the
-  file's content did not change at all for three weeks, which is the lockout, not a stall.
-
-  ⚠ The file has **no `generate_*.py`**, which is correct and is why a writer-search finds
-  none: `submit_daily_batch.py` and `direct_daily_edits.py` are its only writers. A survey
-  this session flagged it as an atomic file with no wired generator; that reading was wrong
-  and the doc above already said so.
-
-* **2026-09-05 — the 2026-08-24/25 sort-at-the-writer churn fix holds for 9 of its 10
-  files.** The 08-25 DEVLOG entry deferred this explicitly (*"every `generate` step so far
-  ran before these fixes landed… the next scheduled regeneration is the test"*) but the
-  item was never entered here; found by reading the log rather than this list. What was
-  observed:
-  * `cleanup-loop` (daily, `cron: 23 2 * * *`) ran on all 12 days 08-25 → 09-05: ten
-    successes, failures on 09-02 and 09-05.
-  * In run [`33848078978`](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33848078978)
-    (09-04) the `generate` job's log shows each generator actually **writing** its file —
-    `kana_qualifier_add.txt` "Wrote 4965 lines", `kana_redundant_remove.txt` "Wrote 252
-    lines", `address_citation_backfill.txt` "Wrote 140 reference-backfill lines", plus
-    `ronsha_ojp_name_removals`, `shikinaisha_kokugakuin_refs`, `multi_ordinal_removals`,
-    `orphan_membership_removals`, `tenjinsha_en_labels`.
-  * **Not one of those eight produced a commit in the 11 days since the fix**, against 2–22
-    commits each in 08-01 → 08-24. Generator ran, rewrote the file, output byte-identical:
-    that is the fix working, and the absence of commits is the evidence, not the doubt.
-  * `daily_operations.txt` does still commit daily, which is correct — it is the only one of
-    the ten that legitimately changes. All 8 commits 08-28 → 09-04 are **real** deltas
-    (+51…+157 lines, sorted content differing every time), not the 2,483-line rewrite it
-    produced per build before.
-  * The tenth, `migrate_ritsuryo_funding_remove.txt`, is lockout-gated and stays Open above.
-
-  **The check that made this conclusive** was reading the run log for the generators'
-  "wrote" lines *before* reading anything into the zero commits. `generate-quickstatements.yml`
-  documents its own trap in a comment: a generator that bails on HTTP 429 from WDQS is
-  reported **green** by `continue-on-error: true` while the file silently does not
-  regenerate. Under that failure a not-regenerating file and a deterministic one look
-  identical from the commit history alone.
+* **2026-10-02 — the WDQS pacing and backoff changes of 2026-09-20 (`a29bf5cf`, `f66ec730`,
+  `2fbf1f00`) hold.** `Generate shrines-missing-en-label list` had failed 5 of 6 runs on 429.
+  After them: 09-21 → 10-01, 11 scheduled runs, 10 green. Read the step outcomes, not the
+  conclusions, on 10-01, 09-30 and 09-29: all 8 steps `"outcome": "success"`, no
+  `RateLimitError` in any log, ~3m50s wall clock against the 20-minute timeout. The one red
+  run, 09-24 (`35985318461`), was a real `429 Too Many Requests` from
+  `generate_identical_name_en_labels`. So 429s are rare now, not impossible. The remaining
+  levers (a `BATCH` under 150, a slower throttle) were not needed.
 
 ## Sweep log
+
+* **2026-10-02** — the one Open item (WDQS pacing, 09-20) was tested and closed. Grepped the
+  DEVLOG since 09-20 for unverified-ship language: the only hit is the orphan-removal ↔
+  rebuild loop, which is a suspicion already carried by the Engishiki review item in
+  `queue.md`, not a shipped change, so it is not entered here. Pruned the 09-05 and 09-20
+  Verified entries (past the week expiry; git has them).
 
 * **2026-09-20** — the one Open item was tested and closed, and the list did **not** come
   out empty, because the grep this file mandates found two entries in the same day's DEVLOG

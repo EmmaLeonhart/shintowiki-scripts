@@ -1,3 +1,10 @@
+## 2026-10-02 — monthly verification sweep: WDQS pacing verified
+
+The single Open item in `docs/deferred_verification.md`, the 2026-09-20 WDQS pacing and backoff
+commits, is verified: 10 of 11 `Generate shrines-missing-en-label list` runs green since, with step
+outcomes (not conclusions) all `success` and no 429 in the logs of the last three. One real 429 on
+09-24. The DEVLOG grep found nothing else shipped unverified. Sweep block removed from `queue.md`.
+
 ## 2026-10-01 — 聖神 resolved to the Christian Holy Spirit; pinned to Emma's new kami item
 
 Emma reverted `Q58646537|P14391|"5730"` (Shinmei id on God the Holy Spirit) and made Q141621023
