@@ -4,7 +4,6 @@ Add the correct P958 qualifier manually.
 
 QID	Label	Parent	Ranking	P13677_count	Link_type
 Q17228423	Kōzaki Shrine & Komori Shrine & Arasaki Shrine	parent=Q135039267 (Kamusakino Shrine)	ranking=1	P13677_count=2	via P460	parent_id=181140	no unique match
-Q110915859	Oshaku Shrine	parent=Q135039642 (Hayashino- Shrine)	ranking=0	P13677_count=4	via P460	parent_id=181582	no unique match
 Q11442850	Tenmansha	parent=Q135039728 (Ohomatonotsuno- Shrine)	ranking=3	P13677_count=2	via P460	parent_id=181695	no unique match
 Q65734340	Takehime Shrine	parent=Q135039733 (Takehimeno Shrine)	ranking=1	P13677_count=2	via P460	parent_id=181703	no unique match
 Q135070147	Hekireki Shrine	parent=Q135041120 (Hiyakurakuno Shrine)	ranking=1	P13677_count=2	via P460	parent_id=182970	no unique match
