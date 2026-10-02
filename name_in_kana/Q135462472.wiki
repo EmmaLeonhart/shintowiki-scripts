@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q135433822 -->
-<!-- JA: 十五社神社 | EN_LABEL: Jugosha Shrine | BUCKET: a -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q135462472 -->
+<!-- JA: 十二所神社 | EN_LABEL: Junisho Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: GUESS: じゅうごしゃじんじゃ -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): じゅごしゃじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): じゅうごしゃじんじゃ
+  CANDIDATE A (from the English label): じゅにしょじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): じゅうにしょじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
