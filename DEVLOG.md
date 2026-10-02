@@ -1,3 +1,17 @@
+## 2026-10-01 — 聖神 resolved to the Christian Holy Spirit; pinned to Emma's new kami item
+
+Emma reverted `Q58646537|P14391|"5730"` (Shinmei id on God the Holy Spirit) and made Q141621023
+聖神 Hijiri-no-Kami. Cause of the match: Q58646537 carries 聖神 as a ja alias (Orthodox usage) and
+is typed deity, so it was the unique hit. Her new item makes 聖神 ambiguous, so
+`generate_shinmei_ids.py` now skips it; the stale line was removed from `shinmei_ids.txt`.
+
+Same root, second route: 高ノ木神社 (Q54153257) `|祭神 = [[聖神]]`, and jawiki redirects 聖神 to
+聖霊, so the saijin generator gave the shrine P825 -> Q37302 Holy Spirit (live on Wikidata).
+- `generate_saijin_deity_research.py`: `LINK_OVERRIDES = {"聖神": "Q141621023"}` beats the
+  redirect, so the next regen stages P825 -> Q141621023. The named-as line on Q37302 is removed.
+- `generate_invalid_p825_removals.py`: `MISRESOLVED_ON_SHRINES` removes P825 Q37302/Q58646537
+  from a shrine only once SPARQL shows it already has P825 Q141621023 (add first, remove later).
+
 ## 2026-09-28 (cont. 12) — all Wikidata editing moves to hand-run QuickStatements; the home page is the batch
 
 Emma: *"We're doing everything with quick statements … we are no longer going to do any kind of

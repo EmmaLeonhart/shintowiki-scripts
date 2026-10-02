@@ -263,6 +263,14 @@ def fetch_batch(titles):
 # Link targets whose jawiki page does not exist (red links), filled by resolve_links.
 MISSING_LINKS = set()
 
+# Link titles whose jawiki REDIRECT lands on the wrong referent for a shrine. jawiki
+# redirects 聖神 to 聖霊, so 高ノ木神社's |祭神 = [[聖神]] became P825 -> Q37302, the
+# Christian Holy Spirit (and Shinmei id 5730 matched God the Holy Spirit by its 聖神
+# alias). Emma made the kami item by hand on 2026-10-01; these win over the redirect.
+LINK_OVERRIDES = {
+    "聖神": "Q141621023",   # Hijiri-no-Kami
+}
+
 
 def resolve_links(titles):
     """{jawiki title -> wikidata QID} for deity link targets (redirects followed).
@@ -291,6 +299,10 @@ def resolve_links(titles):
             if by_title.get(ft):
                 out[t] = by_title[ft]
         time.sleep(0.3)
+    for t in titles:
+        if t in LINK_OVERRIDES:
+            out[t] = LINK_OVERRIDES[t]
+            MISSING_LINKS.discard(t)
     return out
 
 

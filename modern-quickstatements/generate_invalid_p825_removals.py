@@ -139,6 +139,27 @@ def holders(root):
                     b["v"]["value"].rsplit("/", 1)[-1]) for b in rows})
 
 
+# Misresolved kami: a SHRINE's P825 pointing at the wrong item because a jawiki
+# redirect sent the name elsewhere. Value -> the correct kami item. Unlike the class
+# rule above this is a REPLACEMENT, so it follows add-first/remove-later: a shrine
+# loses the wrong value only once SPARQL shows it already carries the right one
+# (the add comes from generate_saijin_deity_research.py's LINK_OVERRIDES).
+# 2026-10-01: 高ノ木神社 祭神 [[聖神]] -> jawiki redirect 聖霊 -> Q37302 Holy Spirit.
+MISRESOLVED_ON_SHRINES = {
+    "Q37302": "Q141621023",      # Holy Spirit -> 聖神 Hijiri-no-Kami
+    "Q58646537": "Q141621023",   # God the Holy Spirit -> 聖神 Hijiri-no-Kami
+}
+
+
+def misresolved_holders():
+    pairs = []
+    for wrong, right in sorted(MISRESOLVED_ON_SHRINES.items()):
+        rows = wdqs(f"""SELECT DISTINCT ?s WHERE {{
+          ?s wdt:P31 wd:Q845945 ; wdt:P825 wd:{wrong} ; wdt:P825 wd:{right} }}""")
+        pairs += [(b["s"]["value"].rsplit("/", 1)[-1], wrong) for b in rows]
+    return pairs
+
+
 def build_lines(pairs):
     return sorted({f"-{qid}|P825|{value}" for qid, value in pairs})
 
@@ -155,6 +176,9 @@ def main():
         pairs += found
         vals = sorted({v for _, v in found})
         print(f"{cls}  {why}\n    {len(found)} statement(s), values: {vals}")
+    found = misresolved_holders()
+    pairs += found
+    print(f"misresolved kami on shrines (replacement landed): {len(found)}")
 
     lines = build_lines(pairs)
     print(f"\n{len(lines)} removal line(s)")
