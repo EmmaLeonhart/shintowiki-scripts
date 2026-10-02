@@ -7,7 +7,6 @@ Q17228423	Kōzaki Shrine & Komori Shrine & Arasaki Shrine	parent=Q135039267 (Kam
 Q11442850	Tenmansha	parent=Q135039728 (Ohomatonotsuno- Shrine)	ranking=3	P13677_count=2	via P460	parent_id=181695	no unique match
 Q65734340	Takehime Shrine	parent=Q135039733 (Takehimeno Shrine)	ranking=1	P13677_count=2	via P460	parent_id=181703	no unique match
 Q135070147	Hekireki Shrine	parent=Q135041120 (Hiyakurakuno Shrine)	ranking=1	P13677_count=2	via P460	parent_id=182970	no unique match
-Q18457651	Watazumi Shrine	parent=Q135041548 (Watatsumino Shrine)	ranking=4	P13677_count=4	via P460	parent_id=183377	no unique match
 Q11473738	Okada Kamo Shrine	ranking=not_applicable	P13677_count=2	multiple P13677 without P958
 Q11505112	Himukai-daijingū	ranking=not_applicable	P13677_count=2	multiple P13677 without P958
 Q11613492	Furufu Shrine	ranking=not_applicable	P13677_count=2	multiple P13677 without P958
