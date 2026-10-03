@@ -9,10 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] **Deity work: check the statements reach the page.** Items are created (role Q141593105, 191 kami).
-  After the next generation, deified-person P825 lines (P3831=Q141593105) and shrine → new-deity P825
-  lines should appear in `saijin_deity_research.txt`, and so on the QuickStatements home page.
-
 - [ ] **LATER: Engishiki list membership review.** Emma
   2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
   editing is too unreliable to verify it does anything productive. Her ruling, in order:
@@ -41,6 +37,7 @@ from `ATOMIC_FILES`; they are not queue items.
     in this repo lol."* Do not recreate it from any doc that still says five.
     ✓ Live IDs, session of **2026-09-27**: `6e2ac79f` :03 (now monitors each wikidata-drip run first),
     `3ce10a86` :15, `da0748fb` :42, `bb1c79c5` 08:03 — created after `CronList` reported no jobs.
+    Session of 2026-10-03: `1c5e70e8` :03, `d0bb6e6c` :15, `d9244767` :42, `16cb87b1` 08:03.
     Every recorded set this file has carried has been dead by the time the next session read it.
     Trust `CronList`, not this line.
     ⚠ 2026-09-19: this session read "keep last" as "optional", did the queue work, and reported the

@@ -1,3 +1,9 @@
+## 2026-10-03 — deity statements confirmed on the home page
+
+`saijin_deity_research.txt` (generated 10-03) carries 625 deified-person `P825` lines with
+`P3831=Q141593105` and 161 shrine → new-kami `P825` lines reaching 143 of the 191 created kami;
+all are in `_site/quickstatements-all.txt`. Queue item closed.
+
 ## 2026-10-03 — stale QS lines after Emma's hand-run batches: prune goes daily to 10-10
 
 Emma ran `#temporary_batch_1790801419303` (09-30→10-02) and `…1790966848888` (10-02→10-03) and
