@@ -11,9 +11,9 @@ day's 500 draws were no-ops (`--refresh` prints the same per-file counts).
 
 Two modes, because CI rebuilds several of these files from source EVERY day:
 
-  --refresh   (weekly) ask WDQS which lines are fully landed and save them to
+  --refresh   (daily) ask WDQS which lines are fully landed and save them to
               landed_lines.json. VALUES-batched through wdqs_transport (2.5s floor, bail on 429).
-  (default)   (daily) drop every line listed in landed_lines.json from its file.
+  (default)   (no network) drop every line listed in landed_lines.json from its file.
               No network.
 
 "Fully landed" means the drip would change nothing: a statement with the line's
@@ -43,6 +43,14 @@ STATIC_FILES = [
     "jinjacho_p973.txt", "hisousha_p119_p547.txt", "en_labels_sonnet.txt",
     "label_typo_fixes.txt", "name_in_kana.txt", "ronsha_ranking_qualifiers.txt",
     "p6262_fandom_links.txt", "p11250_miraheze_links.txt",
+    # 2026-10-03: files that held already-landed lines after Emma's hand-run batches but
+    # were never pruned. Pairs whose order matters (list_membership_rebuild, the kana
+    # add/remove pair, sequential_misc) stay OUT: pruning a landed rebuild ahead of its
+    # pending removal would let the removal take it.
+    "category_label_fixes.txt", "en_labels.txt", "description_enrichment_en.txt",
+    "saijin_p825.txt", "saijin_deity_research.txt", "honzon_p825.txt",
+    "multilingual_label_fixes.txt", "shinto_short_names.txt", "shinto_honorifics.txt",
+    "p4656_jawiki_references.txt", "p958_qualifiers.txt", "address_citation_from_article.txt",
 ]
 
 ENTITY = "http://www.wikidata.org/entity/"
@@ -77,7 +85,7 @@ def parse(line):
     s, p, v = parts[0], parts[1], norm(parts[2])
     if v is None:
         return None
-    if re.fullmatch(r"L[a-z-]+", p):
+    if re.fullmatch(r"[LD][a-z-]+", p):
         return {"s": s, "p": p, "v": v, "quals": [], "refs": []}
     if not re.fullmatch(r"P\d+", p):
         return None
@@ -102,7 +110,7 @@ def fully_landed(line, live):
     live[(s, p)] = list of {'v': value, 'quals': set((p, v)), 'refs': set((p, v))}
     live[(s, 'Lxx')] = the label string
     """
-    if line["p"].startswith("L"):
+    if line["p"][0] in "LD":
         return live.get((line["s"], line["p"])) == line["v"]
     for st in live.get((line["s"], line["p"]), []):
         if st["v"] != line["v"]:
@@ -132,9 +140,10 @@ def fetch_live(needs):
         items = sorted(items)
         for i in range(0, len(items), BATCH):
             vals = " ".join("wd:" + q for q in items[i:i + BATCH])
-            if prop.startswith("L"):
+            if prop[0] in "LD":
+                pred = "rdfs:label" if prop[0] == "L" else "schema:description"
                 rows = sparql(f'SELECT ?s ?l WHERE {{ VALUES ?s {{ {vals} }} '
-                                       f'?s rdfs:label ?l FILTER(LANG(?l)="{prop[1:]}") }}')
+                                       f'?s {pred} ?l FILTER(LANG(?l)="{prop[1:]}") }}')
                 for b in rows:
                     live[(_clean(b["s"]["value"]), prop)] = b["l"]["value"]
                 continue
@@ -192,6 +201,8 @@ def refresh():
 
 
 REFRESH_EVERY_DAYS = 6
+# Emma, 2026-10-03: daily for the week after her big hand-run batches, then weekly again.
+DAILY_UNTIL = datetime.date(2026, 10, 10)
 
 
 def _load_state():
@@ -202,8 +213,9 @@ def _load_state():
 
 
 def refresh_due(today=None):
-    """Weekly, not every run: wikidata-drip runs on every push, and on 2026-09-27 a
-    refresh in each Sunday run was part of the WDQS load behind three 429 bails.
+    """Daily through DAILY_UNTIL, then weekly (Emma, 2026-10-03), so her hand-run batches
+    drop off the home page the next day while she is clearing the backlog.
+    Weekly was chosen on 2026-09-27 against WDQS load behind three 429 bails.
     Due when the last completed refresh is REFRESH_EVERY_DAYS old, and not already
     attempted today (a refresh that 429s is not retried in every later run)."""
     today = today or datetime.date.today()
@@ -213,7 +225,8 @@ def refresh_due(today=None):
     last = st.get("_refreshed")
     if not last:
         return True
-    return (today - datetime.date.fromisoformat(last)).days >= REFRESH_EVERY_DAYS
+    every = 1 if today <= DAILY_UNTIL else REFRESH_EVERY_DAYS
+    return (today - datetime.date.fromisoformat(last)).days >= every
 
 
 def _mark_attempt(today=None):

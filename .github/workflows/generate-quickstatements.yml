@@ -571,11 +571,9 @@ jobs:
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
-          if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then
-            python prune_landed_lines.py --refresh
-          else
-            python prune_landed_lines.py
-          fi
+          # Cadence lives in prune_landed_lines.refresh_due(): daily through 2026-10-10,
+          # then every 6 days (Emma, 2026-10-03).
+          python prune_landed_lines.py --refresh
 
       # MUST be the last step before the commit. The husks are items ブルーノ・プラス
       # repurposed (queue.md A5); each one now IS the shrine item a sitelink lookup

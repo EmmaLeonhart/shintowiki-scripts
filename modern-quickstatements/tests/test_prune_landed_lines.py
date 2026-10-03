@@ -78,11 +78,23 @@ def _state(tmp_path, monkeypatch, data):
     (tmp_path / "landed_lines.json").write_text(json.dumps(data), encoding="utf-8")
 
 
-def test_refresh_is_weekly_not_every_run(tmp_path, monkeypatch):
+def test_refresh_is_daily_through_oct_10_then_weekly(tmp_path, monkeypatch):
     import datetime as dt
-    _state(tmp_path, monkeypatch, {"_refreshed": "2026-09-27"})
-    assert not P.refresh_due(dt.date(2026, 9, 28))
-    assert P.refresh_due(dt.date(2026, 10, 3))
+    _state(tmp_path, monkeypatch, {"_refreshed": "2026-10-03"})
+    assert not P.refresh_due(dt.date(2026, 10, 3))
+    assert P.refresh_due(dt.date(2026, 10, 4))
+    _state(tmp_path, monkeypatch, {"_refreshed": "2026-10-10"})
+    assert P.refresh_due(dt.date(2026, 10, 10)) is False
+    assert not P.refresh_due(dt.date(2026, 10, 11))
+    assert not P.refresh_due(dt.date(2026, 10, 15))
+    assert P.refresh_due(dt.date(2026, 10, 16))
+
+
+def test_description_lines_are_comparable():
+    line = P.parse('Q1|Den|"Shinto shrine in Kyoto"')
+    assert line and line["p"] == "Den"
+    assert P.fully_landed(line, {("Q1", "Den"): "Shinto shrine in Kyoto"})
+    assert not P.fully_landed(line, {("Q1", "Den"): "shrine"})
 
 
 def test_a_refresh_already_attempted_today_is_not_retried(tmp_path, monkeypatch):
