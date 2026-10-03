@@ -15,6 +15,11 @@ missed files and description-line support; order-dependent pairs (list_membershi
 add/remove, sequential_misc) left out. A local refresh can't run (WDQS contact address is a CI
 secret), so `generate-quickstatements.yml` was dispatched: run 37152138835.
 
+Result: the refresh completed and pruned **10,583** fully-landed lines; the drip went 63,501 →
+52,975. Re-sampled 30 lines in each of 11 files: 0–1 landed (was 9–15). The run's red mark is the
+tolerant re-fail from `generate_bunrei_quickstatements.py` hitting a WDQS 429, which bails by design;
+bunrei kept its prior lines and was pruned with the rest. Pages rebuild dispatched (37157361555).
+
 ## 2026-10-02 — monthly verification sweep: WDQS pacing verified
 
 The single Open item in `docs/deferred_verification.md`, the 2026-09-20 WDQS pacing and backoff
