@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q135069874 -->
-<!-- JA: 計仙麻大島神社 | EN_LABEL: Keisenasaooshima Shrine | BUCKET: a -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q137721150 -->
+<!-- JA: 五霊神社 | EN_LABEL: Gorei Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: NO_KANA: no lead available; cannot choose between candidates A and B without additional evidence -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): けいせなさおおしまじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): けせまおほしまのじんじゃ
+  CANDIDATE A (from the English label): ごれいじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): ごりょうじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports

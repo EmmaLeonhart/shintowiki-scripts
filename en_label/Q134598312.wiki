@@ -1,6 +1,6 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q11484307 -->
-<!-- KIND: temple | JA: 広厳寺 (山県市) | KANA:  -->
-<!-- ANSWER: SKIP: kana reading not available in repo data; cannot access external sources (jawiki/official sites) to research reading -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q134598312 -->
+<!-- KIND: shrine | JA: 神明大神社 | KANA:  -->
+<!-- ANSWER: -->
 <!-- TASK: give this item its English Wikidata label (P1448 is NOT involved; this is the `Len` label).
 Conventions, which are not negotiable -- match the files this folds into:
   shrine: '<Stem> Shrine', e.g. Iino Shrine, Kushikino Shrine.
