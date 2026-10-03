@@ -1,3 +1,14 @@
+## 2026-10-03 — stale QS lines after Emma's hand-run batches: prune goes daily to 10-10
+
+Emma ran `#temporary_batch_1790801419303` (09-30→10-02) and `…1790966848888` (10-02→10-03) and
+the home page still showed many of those lines. A 30-line sample per file
+(`check_landed_sample.py`) put ~30-50% already-landed in ~20 files. Cause: `prune_landed_lines.py`
+had last re-asked WDQS on 09-27 (Sunday only), and ~12 files holding landed lines were not in its
+`STATIC_FILES` at all. Emma: daily, and back to weekly after Oct 10 (`DAILY_UNTIL`). Added the
+missed files and description-line support; order-dependent pairs (list_membership_rebuild, kana
+add/remove, sequential_misc) left out. A local refresh can't run (WDQS contact address is a CI
+secret), so `generate-quickstatements.yml` was dispatched: run 37152138835.
+
 ## 2026-10-02 — monthly verification sweep: WDQS pacing verified
 
 The single Open item in `docs/deferred_verification.md`, the 2026-09-20 WDQS pacing and backoff
