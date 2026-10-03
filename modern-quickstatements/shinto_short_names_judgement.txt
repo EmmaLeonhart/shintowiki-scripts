@@ -15,9 +15,11 @@ Q11588867	ja=神大市姫	en=Kamuōichihime	carries P1035 but the ja label ends 
 Q116026335	ja=ハヤアキツヒコ	en=Hayaakitsuhiko	carries P1035 but the ja label ends with none of its forms
 Q116026336	ja=ハヤアキツヒメ	en=Hayaakitsuhime	carries P1035 but the ja label ends with none of its forms
 Q11619891	ja=菊理媛神	en=Kikurihime	carries P1035 but the ja label ends with none of its forms
+Q11634943	ja=賀茂別雷命	en=Kamo Wakeikazuchi	carries P1035 but the ja label ends with none of its forms
 Q11666654	ja=飯縄権現	en=Izuna Gongen	carries P1035 but the ja label ends with none of its forms
 Q123511657	ja=ウノチヒコ	en=Unochihiko	carries P1035 but the ja label ends with none of its forms
 Q125400	ja=高皇産霊尊	en=Takamimusubi	carries P1035 but the ja label ends with none of its forms
+Q133260613	ja=アダカヤヌシタキキヒメ	en=Adakayanushitakikihime	carries P1035 but the ja label ends with none of its forms
 Q135431411	ja=駒形大神	en=Komagata Ōkami	carries P1035 but the ja label ends with none of its forms
 Q138340350	ja=蛇王権現	en=Jaō Gongen	carries P1035 but the ja label ends with none of its forms
 Q1474187	ja=海神	en=Ōwatatsumi	carries P1035 but the ja label ends with none of its forms
