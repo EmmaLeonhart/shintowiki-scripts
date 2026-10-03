@@ -106,31 +106,53 @@ def test_fill_leaves_unknown_items_alone():
 
 
 def test_load_parses_the_real_file():
-    """⛔ THE FLOOR IS NOT AN ARBITRARY NUMBER AND MUST NOT BE LOWERED TO GO GREEN.
-
-    On 2026-09-21 this test went red at 772 and the obvious reading — a worklist
-    drains, so the floor is stale — was wrong twice over. Both plausible drainage
-    mechanisms were checked against live Wikidata and both were disproved: of 30
-    dropped items sampled, **0 had gained `P1814`** and **0 had gained an English
-    label**, and all 30 still carried the `P131` the target query needs. They still
-    qualified; they had simply stopped being emitted.
-
-    The generator was not at fault either. Re-run against the committed cache and
-    index it produced 1,481 lines, byte-identical to the file before the drop. What
-    CI committed was a degraded run's output, and the input that produced it was
-    never committed — the workflow stages `*.txt` and `_site/`, never the
-    `nta_kana_targets.json` cache beside them.
-
-    So a low number here means the last CI run wrote an output its own committed
-    inputs do not reproduce. Regenerate and compare before touching this line.
-    """
     staged = staged_readings.load()
-    assert len(staged) > 1000, (
-        "nta_kana.txt carries %d readings. This is a floor on a REGENERATED file, "
-        "not a drain counter — check it against `python generate_nta_kana.py` on "
-        "the committed cache before assuming the floor is stale." % len(staged))
+    assert staged, "nta_kana.txt parsed to nothing"
     assert all(q.startswith("Q") for q in staged)
     assert all(v and '"' not in v for v in staged.values())
+
+
+def test_committed_inputs_reproduce_nta_kana(tmp_path):
+    """⛔ nta_kana.txt must be exactly what its own committed inputs produce.
+
+    This replaced a `> 1000` count floor on 2026-10-03 (Emma's choice). The floor was
+    there to catch a DEGRADED CI run: on 2026-09-21 the file fell to 772 although every
+    dropped item still qualified, and a re-run on the committed cache gave 1,481 lines,
+    byte-identical to the file before the drop.
+
+    A count cannot tell that apart from real drain, and on 2026-10-03 it was real
+    drain: 1,409 -> 650 after Emma's hand-run batches, and of 40 dropped items 24 now
+    carry exactly the staged P1814 and 25 gained an English label. The committed cache
+    regenerated the same 650 lines.
+
+    So the test is the regeneration itself, network blocked: a degraded run that wrote
+    a short file fails here, and a draining one does not.
+    """
+    import subprocess
+    # A subprocess, because the generator rewraps sys.stdout and calls sys.exit.
+    boot = (
+        "import sys, runpy, socket, urllib.request\n"
+        "def no(*a, **k): raise SystemExit('NETWORK CALL ATTEMPTED: the check must be cache-only')\n"
+        "socket.create_connection = no; urllib.request.urlopen = no\n"
+        "sys.path.insert(0, %r)\n"
+        "import wdqs_transport; wdqs_transport.query = no; wdqs_transport.query_csv = no\n"
+        "sys.argv = ['generate_nta_kana.py', '--out', sys.argv[1]]\n"
+        "runpy.run_path(%r, run_name='__main__')\n"
+    ) % (HERE, os.path.join(HERE, "generate_nta_kana.py"))
+    env = dict(os.environ)
+    env.setdefault("WIKIDATA_EMAIL", "offline-check@invalid")
+    env.setdefault("MIRAHEZE_EMAIL", "offline-check@invalid")
+    out = tmp_path / "nta_kana.txt"
+    r = subprocess.run([sys.executable, "-c", boot, str(out)], cwd=HERE, env=env,
+                       capture_output=True, text=True, encoding="utf-8", timeout=600)
+    assert r.returncode == 0, r.stdout[-2000:] + r.stderr[-2000:]
+
+    def lines(path):
+        return sorted(l.strip() for l in io.open(path, encoding="utf-8") if l.strip())
+    regenerated, committed = lines(out), lines(os.path.join(HERE, "nta_kana.txt"))
+    assert regenerated == committed, (
+        "nta_kana.txt (%d lines) is not what its committed cache produces (%d lines): the "
+        "last CI run wrote output its own inputs do not reproduce" % (len(committed), len(regenerated)))
 
 
 # --------------------------------------------------------------------------

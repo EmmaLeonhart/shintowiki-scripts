@@ -1,3 +1,12 @@
+## 2026-10-03 — nta_kana floor replaced by a regeneration check (Emma's choice)
+
+`test_load_parses_the_real_file` failed at 650 against a `> 1000` floor. Unlike 09-21 this was
+real drain: 1,409 → 650 since 09-28, and of 40 dropped items 24 now carry exactly the staged
+`P1814` and 25 gained an English label. The committed cache regenerates the same 650 lines.
+Asked; Emma chose to replace the count with the check the floor stood in for:
+`test_committed_inputs_reproduce_nta_kana` regenerates from the committed cache in a subprocess
+with the network blocked and requires identical lines. Verified it fails on a truncated file.
+
 ## 2026-10-03 — deity statements confirmed on the home page
 
 `saijin_deity_research.txt` (generated 10-03) carries 625 deified-person `P825` lines with
