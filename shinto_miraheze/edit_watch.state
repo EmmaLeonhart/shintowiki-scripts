@@ -1,7 +1,8 @@
 {
-  "last_seen": "2026-10-04T18:05:25Z",
-  "last_check": "2026-10-04T18:06:07.274604+00:00",
-  "done": false,
+  "last_seen": "2026-10-04T18:19:59Z",
+  "last_check": "2026-10-04T18:36:06.910812+00:00",
+  "done": true,
   "require_activity": true,
-  "seen_activity": true
+  "seen_activity": true,
+  "done_at": "2026-10-04T18:36:06.910812+00:00"
 }
