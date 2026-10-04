@@ -10,7 +10,12 @@ State in `edit_watch.state` (JSON): last_seen (newest edit timestamp seen), last
 done. Prints exactly one of:
     SKIP            done already, or a check ran under 5 minutes ago
     STILL_EDITING   a newer edit than last_seen exists (last_seen updated)
+    WAITING         no edit yet since the watch was armed (only when require_activity is set)
     STOPPED         no edit since last_seen; the caller re-runs the pipeline
+
+require_activity (2026-10-04): when armed after the batch was already regenerated, STOPPED
+fires only after at least one new edit has been seen, so an idle account doesn't trigger a
+pointless regeneration.
 """
 import datetime
 import json
@@ -25,7 +30,6 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.ua_for import ua_for  # noqa: E402
 from shinto_miraheze.wd_pace import wd_pace  # noqa: E402
 
 STATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "edit_watch.state")
@@ -45,10 +49,17 @@ def main():
         if (now - last).total_seconds() < 300:
             print("SKIP (checked %s)" % st["last_check"])
             return
+    try:
+        from shinto_miraheze.ua_for import ua_for
+        ua = ua_for(API)
+    except RuntimeError:
+        # The watch runs from local session crons, and this machine has no .ua_contacts.json.
+        # One read-only request per check; the repo URL is the contact.
+        ua = "shintowiki-scripts edit watch (https://github.com/EmmaLeonhart/shintowiki-scripts)"
     wd_pace()
     r = requests.get(API, params=dict(
         action="query", list="usercontribs", ucuser=USER, uclimit=1,
-        ucprop="timestamp", format="json"), headers={"User-Agent": ua_for(API)}, timeout=60)
+        ucprop="timestamp", format="json"), headers={"User-Agent": ua}, timeout=60)
     r.raise_for_status()
     contribs = r.json()["query"]["usercontribs"]
     newest = contribs[0]["timestamp"] if contribs else ""
@@ -56,6 +67,9 @@ def main():
     if newest > st["last_seen"]:
         print("STILL_EDITING newest=%s previous=%s" % (newest, st["last_seen"]))
         st["last_seen"] = newest
+        st["seen_activity"] = True
+    elif st.get("require_activity") and not st.get("seen_activity"):
+        print("WAITING newest=%s (no edit since the watch was armed)" % newest)
     else:
         print("STOPPED newest=%s (no edit since last_seen)" % newest)
         st["done"] = True
