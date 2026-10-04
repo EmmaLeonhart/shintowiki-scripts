@@ -46,11 +46,11 @@
     "legacy_on_p1552": 0
   },
   "p14005": {
-    "items": 4343,
-    "stmts": 5431,
-    "referenced": 2364,
+    "items": 4354,
+    "stmts": 5442,
+    "referenced": 2379,
     "distinct_ranks": 34,
-    "on_humans": 3414,
+    "on_humans": 3425,
     "on_shrines": 923
   },
   "list_membership": {

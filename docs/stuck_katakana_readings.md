@@ -42,8 +42,8 @@ Emma, 2026-09-13, given the choice between relocating these readings onto the oj
 | 2 | name carries a reading, but unconfirmed (no カミノヤシロ) | yes | fragment, head cut off |
 | 2 | removable by the pipeline today | no | two readings in one value |
 | 1 | name carries no reading at all | yes | fragment, middle cut out |
-| 1 | name carries no reading at all | no | fragment, middle cut out |
 | 1 | name carries a confirmed カミノヤシロ reading | yes | whole reading |
+| 1 | name carries no reading at all | no | fragment, middle cut out |
 
 ## The categories in full
 
@@ -470,14 +470,6 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 |---|---|---|---|
 | [Q11379325](https://www.wikidata.org/wiki/Q11379325) | 伊射波神社 | `アハシマノ-イサハノ` | — |
 
-### 1 — name carries no reading at all; hiragana absent; fragment, middle cut out
-
-⛔ **This value is the item's ONLY reading.** Removing it loses the reading entirely — there is no qualifier on the official name and no modern hiragana.
-
-| item | ja label | top-level value | qualifiers on the ojp-hani name |
-|---|---|---|---|
-| [Q10885171](https://www.wikidata.org/wiki/Q10885171) | 伊雑宮 | `アハシマノ-イサハノ` | — |
-
 ### 1 — name carries a confirmed カミノヤシロ reading; hiragana present; whole reading
 
 The ancient reading provably survives on the official name, so the top-level copy is redundant in the way the pipeline's own removals are — it just does not match exactly.
@@ -485,6 +477,14 @@ The ancient reading provably survives on the official name, so the top-level cop
 | item | ja label | top-level value | qualifiers on the ojp-hani name |
 |---|---|---|---|
 | [Q85882705](https://www.wikidata.org/wiki/Q85882705) | 石坐神社 | `イシヰノカミノヤシロ` | `イシヰノカミノヤシロ`, `イハヰノカミノヤシロ`, `イハヰノカミノヤシロカミノヤシロ` |
+
+### 1 — name carries no reading at all; hiragana absent; fragment, middle cut out
+
+⛔ **This value is the item's ONLY reading.** Removing it loses the reading entirely — there is no qualifier on the official name and no modern hiragana.
+
+| item | ja label | top-level value | qualifiers on the ojp-hani name |
+|---|---|---|---|
+| [Q10885171](https://www.wikidata.org/wiki/Q10885171) | 伊雑宮 | `アハシマノ-イサハノ` | — |
 
 ## Ruling
 
@@ -514,5 +514,5 @@ One line per category, written here by Emma; the removal generator is then point
 * **2** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana present; fragment, head cut off → 
 * **2** — removable by the pipeline today; hiragana absent; two readings in one value → 
 * **1** — name carries no reading at all; hiragana present; fragment, middle cut out → 
-* **1** — name carries no reading at all; hiragana absent; fragment, middle cut out → 
 * **1** — name carries a confirmed カミノヤシロ reading; hiragana present; whole reading → 
+* **1** — name carries no reading at all; hiragana absent; fragment, middle cut out → 
