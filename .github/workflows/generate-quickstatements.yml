@@ -76,6 +76,7 @@ jobs:
       # Miraheze request at all (Emma, 2026-10-03: the staged files were missing 38 P6262 and
       # 132 P11250 lines). Add-only; see wiki_link_state_fallback.py.
       - name: Top up P11250 and P6262 from the title map (wiki locked)
+        id: topup-wiki-links
         if: steps.lockout.outputs.locked == 'true'
         working-directory: modern-quickstatements
         run: |
