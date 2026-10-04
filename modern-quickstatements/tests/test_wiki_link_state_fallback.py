@@ -74,3 +74,14 @@ def test_no_staged_link_line_is_oversized():
         with open(path, encoding="utf-8") as f:
             for line in f:
                 assert len(line) < 2000, "%s: %s..." % (name, line[:80])
+
+
+def test_both_fetchers_import():
+    # af5ec2433 split `import wd_pace, SPARQL_INTERVAL` and the P11250 fetcher died on import
+    # in CI behind continue-on-error. Subprocess, because the fetchers re-wrap sys.stdout.
+    import subprocess
+    env = dict(os.environ, MIRAHEZE_EMAIL="x@example.invalid", WIKIDATA_EMAIL="x@example.invalid")
+    for name in ("fetch_p11250_from_wiki", "fetch_p6262_from_wiki"):
+        r = subprocess.run([sys.executable, "-c", "import %s as m; assert callable(m.main)" % name],
+                           cwd=os.path.dirname(HERE), env=env, capture_output=True, text=True)
+        assert r.returncode == 0, r.stderr[-500:]

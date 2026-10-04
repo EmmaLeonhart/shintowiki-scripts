@@ -24,8 +24,8 @@ import re
 import sys
 import time
 import requests
-from shinto_miraheze.wd_pace import wd_pace
-from wiki_link_state_fallback import state_fallback, SPARQL_INTERVAL
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
+from wiki_link_state_fallback import state_fallback
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 

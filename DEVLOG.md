@@ -1,3 +1,11 @@
+## 2026-10-04 — P11250 fetcher import fixed
+
+- `af5ec2433` split `from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL` while adding the
+  fallback import, so `fetch_p11250_from_wiki.py` died on import, both under the lockout and
+  unlocked. The first lockout top-up run (37194495085) showed it, and the step's continue-on-error
+  hid it from the run's overall result. Fixed, and `test_both_fetchers_import` now imports both
+  fetchers in a subprocess (fails on the broken version, passes on the fix).
+
 ## 2026-10-04 — link-file top-up now runs under the wiki lockout
 
 - The fallback from 2026-10-03 never ran: `generate-quickstatements.yml` skips all four Miraheze
