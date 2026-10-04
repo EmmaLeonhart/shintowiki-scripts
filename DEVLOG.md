@@ -1,3 +1,19 @@
+## 2026-10-03 — the 1 MB backslash line that stalled the home-page batch
+
+- Emma spotted "a gigantic thing of slashes" in the batch. It was one line in
+  `p6262_fandom_links.txt`: `Q123999885|P6262|"shinto:List of Kofun in Japan with the Name \…"`,
+  1,048,644 characters, 1,048,574 of them backslashes.
+- **Mechanism:** the title contains a quote mark. The old wiki round trip (`generate_p6262` renders
+  the wiki page, `fetch_p6262_from_wiki` reads it back) re-escaped it on every pass: 2, 6, 14, 62 …
+  backslashes, doubling per commit from 2026-08-24 until the round trip stopped working around 08-29.
+  It has sat frozen since. `prune_landed_lines` can't clear it because it can't parse a quote inside
+  a quoted value.
+- **Removed.** Q123999885 already carries the correct `shinto:List of Kofun in Japan with the Name
+  "Hyō"` on Wikidata, so the line was landed work, not staged work. The fallback now skips any title
+  containing `"`, and a test fails if a staged link line goes over 2,000 characters.
+- Side finding, not acted on: Q123992447 holds `shinto:List of Kofun in Japan with the Name \"Inari\"`
+  on Wikidata, with literal backslashes, from an earlier landing of the same escaping.
+
 ## 2026-10-03 — wiki-link fetchers fall back to the title map when the wiki is unreadable
 
 - **What they did:** `fetch_p6262_from_wiki.py` / `fetch_p11250_from_wiki.py` read

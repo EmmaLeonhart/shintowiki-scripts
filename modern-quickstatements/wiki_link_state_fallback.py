@@ -30,6 +30,11 @@ def lines_from_state(prop, line_re, state_path=STATE):
         state = json.load(f)
     out = []
     for title, qid in sorted(state.items()):
+        if '"' in title:
+            # A quote inside a QuickStatements string can't be expressed. The old wiki round
+            # trip escaped `List of Kofun in Japan with the Name "Hyō"` on every pass until the
+            # line was 1 MB of backslashes and stalled the whole home-page batch.
+            continue
         line = '%s|%s|"shinto:%s"' % (qid, prop, title)
         if line_re.match(line):
             out.append(line)

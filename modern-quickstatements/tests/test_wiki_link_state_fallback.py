@@ -60,3 +60,17 @@ def test_fallback_keeps_file_when_sparql_failed(tmp_path):
     fb.state_fallback("P6262", LINE_RE, str(out), existing_qids=None,
                       fetch_redirect_qids=lambda q: set())
     assert out.read_text(encoding="utf-8") == 'Q1|P6262|"shinto:Ise Grand Shrine"\n'
+
+
+def test_a_title_with_a_quote_is_never_emitted(tmp_path):
+    p = tmp_path / "s.state"
+    p.write_text(json.dumps({'List of Kofun in Japan with the Name "Hyo"': "Q1"}), encoding="utf-8")
+    assert fb.lines_from_state("P6262", LINE_RE, str(p)) == []
+
+
+def test_no_staged_link_line_is_oversized():
+    for name in ("p6262_fandom_links.txt", "p11250_miraheze_links.txt"):
+        path = os.path.join(os.path.dirname(HERE), name)
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                assert len(line) < 2000, "%s: %s..." % (name, line[:80])
