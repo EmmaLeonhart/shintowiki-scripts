@@ -19,9 +19,12 @@ import sys
 
 import requests
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from shinto_miraheze.ua_for import ua_for  # noqa: E402
+from shinto_miraheze.wd_pace import wd_pace  # noqa: E402
+
 STATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "edit_watch.state")
-UA = ("shintowiki-scripts/1.0 (https://github.com/emmaleonhart/shintowiki-scripts) "
-      "read-only usercontribs check")
+API = "https://www.wikidata.org/w/api.php"
 USER = "Immanuelle"
 
 
@@ -37,9 +40,10 @@ def main():
         if (now - last).total_seconds() < 300:
             print("SKIP (checked %s)" % st["last_check"])
             return
-    r = requests.get("https://www.wikidata.org/w/api.php", params=dict(
+    wd_pace()
+    r = requests.get(API, params=dict(
         action="query", list="usercontribs", ucuser=USER, uclimit=1,
-        ucprop="timestamp", format="json"), headers={"User-Agent": UA}, timeout=60)
+        ucprop="timestamp", format="json"), headers={"User-Agent": ua_for(API)}, timeout=60)
     r.raise_for_status()
     contribs = r.json()["query"]["usercontribs"]
     newest = contribs[0]["timestamp"] if contribs else ""
