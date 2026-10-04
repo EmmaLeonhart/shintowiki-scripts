@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q11637049 -->
 <!-- JA: 足羽神社 | EN_LABEL: Asuwa Shrine | BUCKET: a -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E8%B6%B3%E7%BE%BD%E7%A5%9E%E7%A4%BE -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: あすわじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): あすわじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): あすはのじんじゃ
