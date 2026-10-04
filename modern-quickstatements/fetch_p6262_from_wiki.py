@@ -33,6 +33,9 @@ PAGE_TITLE = "QuickStatements/P6262"
 OUTPUT_FILE = "p6262_fandom_links.txt"
 # Category: and Template: pages are not linked (Emma, 2026-09-27: "Strip both"). They were
 # 63% of the Miraheze lines and 26% of the Fandom ones; only article links are wanted.
+# Emma, 2026-10-03: never stage these. Q123999885's title has a quote mark, and the wiki round
+# trip escaped it into a 1 MB line of backslashes. She added its Fandom link by hand.
+BLACKLIST = {"Q123999885"}
 QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"shinto:(?!(?:Category|Template):).+"$')
 
 
@@ -138,7 +141,8 @@ def main():
     p6262_lines = []
     for line in wikitext.split("\n"):
         line = line.strip()
-        if QS_LINE_RE.match(line):
+        m = QS_LINE_RE.match(line)
+        if m and m.group(1) not in BLACKLIST:
             p6262_lines.append(line)
 
     print(f"Found {len(p6262_lines)} P6262 lines on wiki page")
