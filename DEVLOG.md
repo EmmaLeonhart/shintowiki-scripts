@@ -1,3 +1,18 @@
+## 2026-10-03 — list-membership review dropped from the queue; edit watch armed
+
+- **Queue item deleted, pipeline untouched** (Emma's choice). Checked before she ruled: all four
+  files are landing under her hand-run batches (rebuild 5,569 → 3,042 lines since 09-07, list
+  removals 2,183 → 1,183). The adds don't depend on the plain removals (0 shared statements).
+  376 items are staged both in `orphan_membership_removals` and `list_membership_rebuild`, and 122
+  orphan items have left the file and come back. Both generators re-derive from live data and
+  neither excludes the other's targets. Nothing was changed.
+- **Edit watch:** `shinto_miraheze/check_wikidata_user_activity.py` + `edit_watch.state`, driven by
+  session crons (22:10, then every 10 min for an hour, every 30 min for 4h, hourly for a week). Once
+  Emma's account stops editing, it dispatches `generate-quickstatements.yml` and then
+  `generate-pages.yml` so the home-page batch rebuilds.
+- `CLAUDE.md`: the runner block is Miraheze blocking GitHub Actions (the exception was revoked after
+  the Hugging Face incident), not Cloudflare. Fandom is the wiki's long-term endpoint.
+
 ## 2026-10-03 — nta_kana floor replaced by a regeneration check (Emma's choice)
 
 `test_load_parses_the_real_file` failed at 650 against a `> 1000` floor. Unlike 09-21 this was

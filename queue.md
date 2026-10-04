@@ -9,18 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] **LATER: Engishiki list membership review.** Emma
-  2026-09-27: the least important pipeline for its level of complexity. It's marginally good, but
-  editing is too unreliable to verify it does anything productive. Her ruling, in order:
-  1. Stop the REMOVALS (`list_membership_removals`, `orphan_membership_removals`,
-     `multi_ordinal_removals`) and keep adding new memberships (`list_membership_rebuild`), if the
-     adds can run without the removals.
-  2. If they can't be separated: keep it all as it is.
-  3. If it has made no edits lately: remove it altogether.
-  Nothing downstream reads it (the katakana step's P361 hop is a sub-shrine's part-of its parent,
-  and excludes list items). Check first: its recent landed edits, and whether orphan removals ↔
-  rebuild loop (692 overlapping pairs, read from code, unverified).
-
 - [ ] **END OF QUEUE: sort out the wiki-link fetchers.** Emma 2026-09-27: `fetch_p6262_from_wiki.py` /
   `fetch_p11250_from_wiki.py` read their lines from shinto.miraheze.org pages, which CI can't reach.
   That's suspicious spaghetti, and it's unclear where these lines should come from; probably
