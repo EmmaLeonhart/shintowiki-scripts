@@ -1,41 +1,41 @@
 {
   "population": {
-    "shrines": 30342,
+    "shrines": 30344,
     "temples": 27243
   },
   "reisai": {
-    "shrine_items": 1603,
-    "shrine_stmts": 1613,
-    "conforming": 1612,
+    "shrine_items": 1625,
+    "shrine_stmts": 1635,
+    "conforming": 1634,
     "missing_role": 1,
     "with_p793": 101,
-    "referenced": 1581,
-    "global_stmts": 8748,
-    "global_any_role": 1716,
-    "global_reisai_role": 1696
+    "referenced": 1603,
+    "global_stmts": 8773,
+    "global_any_role": 1741,
+    "global_reisai_role": 1721
   },
   "bunrei": {
-    "shrine_items": 6475,
-    "shrine_stmts": 6490,
-    "conforming": 6450,
-    "bare": 40,
-    "global_stmts": 7330,
-    "global_any_p1013": 6450,
-    "global_bunrei": 6450
+    "shrine_items": 6544,
+    "shrine_stmts": 6561,
+    "conforming": 6523,
+    "bare": 38,
+    "global_stmts": 7401,
+    "global_any_p1013": 6523,
+    "global_bunrei": 6523
   },
   "shintai": {
     "stmts": 22,
     "on_shrines": 22
   },
   "p825_shrines": {
-    "items": 12761,
-    "stmts": 19141,
-    "referenced": 9265
+    "items": 12770,
+    "stmts": 19182,
+    "referenced": 9312
   },
   "p825_temples": {
-    "items": 6380,
-    "stmts": 6621,
-    "referenced": 6447
+    "items": 6381,
+    "stmts": 6626,
+    "referenced": 6453
   },
   "p13723": {
     "items": 8187,
@@ -46,42 +46,42 @@
     "legacy_on_p1552": 0
   },
   "p14005": {
-    "items": 4354,
-    "stmts": 5442,
-    "referenced": 2379,
+    "items": 4377,
+    "stmts": 5465,
+    "referenced": 2433,
     "distinct_ranks": 34,
-    "on_humans": 3425,
+    "on_humans": 3448,
     "on_shrines": 923
   },
   "list_membership": {
-    "items": 4388,
-    "stmts": 5099,
-    "with_ordinal": 3877,
-    "items_with_multiple": 527
+    "items": 4371,
+    "stmts": 5080,
+    "with_ordinal": 3852,
+    "items_with_multiple": 525
   },
   "ronsha": {
     "ronsha": 2323,
     "with_p460": 2058,
-    "p460_with_p2868": 1826,
+    "p460_with_p2868": 1834,
     "p460_with_p3831": 14,
     "deprecated_items": 7
   },
   "sango": {
-    "stmts": 3905,
-    "on_temples": 3810,
-    "temple_p1448_all": 12147
+    "stmts": 3972,
+    "on_temples": 3877,
+    "temple_p1448_all": 12214
   },
   "p571": {
-    "shrines": 1175,
+    "shrines": 1177,
     "temples": 3096
   },
   "identifiers": {
-    "p11250": 4724,
-    "p6262": 3508,
+    "p11250": 4740,
+    "p6262": 3543,
     "p13677": 5091
   },
   "en_labels": {
-    "shrines_en": 26548,
-    "temples_en": 16546
+    "shrines_en": 26574,
+    "temples_en": 16613
   }
 }
