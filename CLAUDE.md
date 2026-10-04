@@ -781,11 +781,18 @@ Both halves are load-bearing and they are easy to collapse into each other.
   repo are not a backlog. `FANDOM_SUNSET_DATE` needs no decision — abandonment resolves it.
 - **The machinery stays** means: do **not** delete or disable the syncs, the daily 403 probe,
   `WIKI_REACHABLE`, or the wiki-bound remote-queue categories. They keep trying indefinitely and
-  would resume on their own if Cloudflare ever stopped challenging the runners. Switching them off
+  would resume on their own if the runners were ever let through again. Switching them off
   is not what abandonment meant here, and it would throw away the only thing that would notice.
 - Detection ops that populate review categories (unresolved ILL QIDs, multiple wikidata links,
   double category QIDs) **also keep running**. What was closed on 2026-09-17 is the promise that
   anyone reviews their output — not the ops.
+- **Why the runners can't reach the wiki** (Emma, 2026-10-03): Miraheze blocks GitHub Actions.
+  She asked for an exception and got one, then the block came back after the Hugging Face incident.
+  Nothing on our side fixes it, so don't go looking for a Cloudflare workaround. It comes back only
+  if Miraheze grants the exception again.
+- **Fandom is the endpoint.** In Emma's view the wiki's lasting form is shinto.fandom. It isn't
+  authoritative, but it keeps the page history, and someone may find and use the project there
+  later. That is why the P6262 Fandom links matter more now (see ⭐ THE WIKI LINK IDS STAY IN THE DRIP).
 
 ## Editing pace philosophy
 
