@@ -33,8 +33,8 @@ Emma, 2026-09-13, given the choice between relocating these readings onto the oj
 | 6 | name carries a reading, but unconfirmed (no カミノヤシロ) | no | two readings in one value |
 | 5 | name carries a reading, but unconfirmed (no カミノヤシロ) | yes | fragment, tail cut off |
 | 4 | removable by the pipeline today | yes | fragment, head cut off |
-| 3 | name carries a confirmed カミノヤシロ reading | yes | fragment, head cut off |
 | 3 | removable by the pipeline today | no | fragment, middle cut out |
+| 3 | name carries a confirmed カミノヤシロ reading | yes | fragment, head cut off |
 | 3 | name carries a confirmed カミノヤシロ reading | no | two readings in one value |
 | 3 | name carries a confirmed カミノヤシロ reading | no | whole reading |
 | 2 | removable by the pipeline today | yes | whole reading |
@@ -388,16 +388,6 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q11620954](https://www.wikidata.org/wiki/Q11620954) | 葛木坐火雷神社 | `-ホノイカツチノ` | `-ホノイカツチノカミノヤシロ` |
 | [Q3529714](https://www.wikidata.org/wiki/Q3529714) | 吉野水分神社 | `-ミクマリ` | `-ミクマリカミノヤシロ`, `ヨシノノミコモリノ` |
 
-### 3 — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, head cut off
-
-The ancient reading provably survives on the official name, so the top-level copy is redundant in the way the pipeline's own removals are — it just does not match exactly.
-
-| item | ja label | top-level value | qualifiers on the ojp-hani name |
-|---|---|---|---|
-| [Q11442606](https://www.wikidata.org/wiki/Q11442606) | 天手長男神社 | `-タナカヒメノ` | `-タナカヲノカミノヤシロ` |
-| [Q11657433](https://www.wikidata.org/wiki/Q11657433) | 阿志都彌神社 | `-トミノ` | `アシツミノ`, `アシツミノカミノヤシロ` |
-| [Q72727981](https://www.wikidata.org/wiki/Q72727981) | 長幡部神社 | `-イケノウヘノ` | `イマキアヲサカイナミノイケカミノ`, `イマキアヲサカイナミノイケカミノカミノヤシロ`, `イマキアヲサカノイナミアラミタマノ`, `イマキアヲヤサカイナミノ`, `ナカハタヘノ` |
-
 ### 3 — removable by the pipeline today; hiragana absent; fragment, middle cut out
 
 Nothing to decide: the existing removal generator reaches these. Listed for completeness.
@@ -407,6 +397,16 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q11523074](https://www.wikidata.org/wiki/Q11523074) | 村屋坐弥冨都比売神社 | `ムラヤ-ミフツヒメノ` | `ムラヤ-ミフツヒメノカミノヤシロ` |
 | [Q135039455](https://www.wikidata.org/wiki/Q135039455) | 粟島坐伊射波神社 二座 | `アハシマノ-イサハノ` | `アハシマノ-イサハノカミノヤシロ` |
 | [Q135098881](https://www.wikidata.org/wiki/Q135098881) | 春日戸社坐御子神社 | `カスカヘノ-ミコノ` | `カスカヘノ-ミコノカミノヤシロ` |
+
+### 3 — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, head cut off
+
+The ancient reading provably survives on the official name, so the top-level copy is redundant in the way the pipeline's own removals are — it just does not match exactly.
+
+| item | ja label | top-level value | qualifiers on the ojp-hani name |
+|---|---|---|---|
+| [Q11442606](https://www.wikidata.org/wiki/Q11442606) | 天手長男神社 | `-タナカヒメノ` | `-タナカヲノカミノヤシロ` |
+| [Q11657433](https://www.wikidata.org/wiki/Q11657433) | 阿志都彌神社 | `-トミノ` | `アシツミノ`, `アシツミノカミノヤシロ` |
+| [Q72727981](https://www.wikidata.org/wiki/Q72727981) | 長幡部神社 | `-イケノウヘノ` | `イマキアヲサカイナミノイケカミノ`, `イマキアヲサカイナミノイケカミノカミノヤシロ`, `イマキアヲサカノイナミアラミタマノ`, `イマキアヲヤサカイナミノ`, `ナカハタヘノ` |
 
 ### 3 — name carries a confirmed カミノヤシロ reading; hiragana absent; two readings in one value
 
@@ -505,8 +505,8 @@ One line per category, written here by Emma; the removal generator is then point
 * **6** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana absent; two readings in one value → 
 * **5** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana present; fragment, tail cut off → 
 * **4** — removable by the pipeline today; hiragana present; fragment, head cut off → 
-* **3** — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, head cut off → 
 * **3** — removable by the pipeline today; hiragana absent; fragment, middle cut out → 
+* **3** — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, head cut off → 
 * **3** — name carries a confirmed カミノヤシロ reading; hiragana absent; two readings in one value → 
 * **3** — name carries a confirmed カミノヤシロ reading; hiragana absent; whole reading → 
 * **2** — removable by the pipeline today; hiragana present; whole reading → 
