@@ -1,3 +1,12 @@
+## 2026-10-04 — link-file top-up now runs under the wiki lockout
+
+- The fallback from 2026-10-03 never ran: `generate-quickstatements.yml` skips all four Miraheze
+  fetches while wiki editing is locked, since a locked wiki means zero Miraheze requests.
+- Both fetchers now take `--no-wiki`, which goes straight to `wiki_link_state_fallback` without
+  touching the wiki. A new step runs them that way only when `steps.lockout.outputs.locked == 'true'`.
+  Unlocked, the old steps run unchanged. Expected on the next regeneration: about 38 P6262 and 132
+  P11250 lines added.
+
 ## 2026-10-03 — the 1 MB backslash line that stalled the home-page batch
 
 - Emma spotted "a gigantic thing of slashes" in the batch. It was one line in

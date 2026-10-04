@@ -107,6 +107,12 @@ def fetch_existing_p11250_qids():
 
 
 def main():
+    if "--no-wiki" in sys.argv:
+        # The wiki-editing lockout means zero Miraheze requests: go straight to the
+        # title map the wiki page is rendered from.
+        print("--no-wiki: skipping the wiki page, topping up from duplicate_qids.state")
+        state_fallback("P11250", QS_LINE_RE, OUTPUT_FILE, fetch_existing_p11250_qids(), fetch_redirect_qids)
+        return
     print(f"Fetching [[{PAGE_TITLE}]] from shintowiki...")
     wd_pace(SPARQL_INTERVAL)
     try:
