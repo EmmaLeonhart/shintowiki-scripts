@@ -24,7 +24,8 @@ import re
 import sys
 import time
 import requests
-from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
+from shinto_miraheze.wd_pace import wd_pace
+from wiki_link_state_fallback import state_fallback, SPARQL_INTERVAL
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -108,23 +109,28 @@ def fetch_existing_p11250_qids():
 def main():
     print(f"Fetching [[{PAGE_TITLE}]] from shintowiki...")
     wd_pace(SPARQL_INTERVAL)
-    resp = requests.get(
-        WIKI_API,
-        params={
-            "action": "parse",
-            "page": PAGE_TITLE,
-            "prop": "wikitext",
-            "format": "json",
-        },
-        headers={"User-Agent": ua_for(WIKI_API)},
-        timeout=30,
-    )
-    if resp.status_code == 429:
-        print("WARNING: 429 Too Many Requests — writing empty file")
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            pass
+    try:
+        resp = requests.get(
+            WIKI_API,
+            params={
+                "action": "parse",
+                "page": PAGE_TITLE,
+                "prop": "wikitext",
+                "format": "json",
+            },
+            headers={"User-Agent": ua_for(WIKI_API)},
+            timeout=30,
+        )
+    except requests.RequestException as e:
+        print(f"WARNING: wiki unreachable ({e}) — falling back to duplicate_qids.state")
+        state_fallback("P11250", QS_LINE_RE, OUTPUT_FILE, fetch_existing_p11250_qids(), fetch_redirect_qids)
         return
-    resp.raise_for_status()
+    if resp.status_code != 200:
+        # 403 (Miraheze blocks the Actions runners), 429, anything else: the page is
+        # unreadable, so top up from the title map it is rendered from.
+        print(f"WARNING: wiki returned HTTP {resp.status_code} — falling back to duplicate_qids.state")
+        state_fallback("P11250", QS_LINE_RE, OUTPUT_FILE, fetch_existing_p11250_qids(), fetch_redirect_qids)
+        return
 
     data = resp.json()
     wikitext = data.get("parse", {}).get("wikitext", {}).get("*", "")

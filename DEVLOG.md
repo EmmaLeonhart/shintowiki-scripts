@@ -1,3 +1,19 @@
+## 2026-10-03 — wiki-link fetchers fall back to the title map when the wiki is unreadable
+
+- **What they did:** `fetch_p6262_from_wiki.py` / `fetch_p11250_from_wiki.py` read
+  `[[QuickStatements/P6262]]` / `[[QuickStatements/P11250]]`, and those pages are only a render of
+  `shinto_miraheze/orchestrators/duplicate_qids.state` (title -> QID, committed here). With the
+  runners blocked, a 403 crashed the fetcher (file frozen, nothing new) and a 429 emptied the file.
+- **Measured against live Wikidata first:** the staged files were nearly complete. P6262: 4,133 article
+  titles need a link, 4,095 staged, **38 missing**. P11250: 1,228 needed, 1,096 staged, **132 missing**.
+- **Now:** any failure to read the page (non-200 or request error) runs
+  `wiki_link_state_fallback.state_fallback`. It builds lines from the title map, drops items that
+  already carry the property and redirects (the fetchers' own checks), and **appends** only QIDs the
+  file doesn't hold yet. It removes nothing, so the P11250 label lines stay. When the wiki is readable,
+  the old path runs unchanged. Tests: `tests/test_wiki_link_state_fallback.py`.
+- The title map was last updated 09-04 (the orchestrators can't run either), so it gives the
+  final state of the wiki, which is what the Fandom endpoint wants linked.
+
 ## 2026-10-03 — list-membership review dropped from the queue; edit watch armed
 
 - **Queue item deleted, pipeline untouched** (Emma's choice). Checked before she ruled: all four

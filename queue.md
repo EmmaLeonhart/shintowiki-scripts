@@ -9,12 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] **END OF QUEUE: sort out the wiki-link fetchers.** Emma 2026-09-27: `fetch_p6262_from_wiki.py` /
-  `fetch_p11250_from_wiki.py` read their lines from shinto.miraheze.org pages, which CI can't reach.
-  That's suspicious spaghetti, and it's unclear where these lines should come from; probably
-  Wikidata, not the wiki. Work out what the fetchers actually do and what they should do. (On
-  09-27 their line patterns were changed to refuse Category:/Template: pages.)
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
