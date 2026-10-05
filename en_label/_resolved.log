@@ -47,3 +47,4 @@ Q135425720	SKIP	cannot access research sources (proxy blocks Wikipedia/Wikidata/
 Q135463000	SKIP	KANA reading not available and cannot be reliably sourced in automated routine
 Q134989341	LABEL	Hiroshima Shrine
 Q11484307	SKIP	kana reading not available in repo data; cannot access external sources (jawiki/official sites) to research reading
+Q134989278	SKIP	reading unsourceable - network access blocked, no local kana data
