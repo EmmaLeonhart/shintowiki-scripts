@@ -12,41 +12,41 @@ Emma, 2026-09-13, given the choice between relocating these readings onto the oj
 
 `generate_kana_qualifier_remove.py` removes a top-level katakana reading only when the item's ojp-hani `P1448` name carries a qualifier that is **exactly** that reading plus `カミノヤシロ`. That exactness is deliberate: its docstring records three 論社 whose entry carries a *different* entry's reading, where a loose match would delete a reading that exists nowhere else. The other pipeline (`generate_katakana_reading_add.py`) excludes any item with an ojp-hani `P1448` outright. An item whose qualifier does not exactly match its top-level value is reachable by neither.
 
-**437 top-level katakana statements** on shrines carrying an ojp-hani official name.
+**427 top-level katakana statements** on shrines carrying an ojp-hani official name.
 
 ## Summary
 
 | n | reading preserved? | item has hiragana? | shape |
 |---:|---|---|---|
-| 120 | name carries no reading at all | no | fragment, tail cut off |
+| 115 | name carries no reading at all | no | fragment, tail cut off |
 | 102 | removable by the pipeline today | no | fragment, tail cut off |
-| 43 | removable by the pipeline today | no | fragment, head cut off |
-| 33 | name carries no reading at all | no | fragment, head cut off |
-| 32 | name carries a confirmed カミノヤシロ reading | no | fragment, tail cut off |
+| 44 | removable by the pipeline today | no | fragment, head cut off |
+| 32 | name carries no reading at all | no | fragment, head cut off |
+| 29 | name carries a confirmed カミノヤシロ reading | no | fragment, tail cut off |
 | 20 | name carries a reading, but unconfirmed (no カミノヤシロ) | no | fragment, tail cut off |
 | 15 | name carries no reading at all | yes | fragment, tail cut off |
 | 10 | removable by the pipeline today | yes | fragment, tail cut off |
-| 10 | name carries a confirmed カミノヤシロ reading | no | fragment, head cut off |
+| 9 | name carries a confirmed カミノヤシロ reading | no | fragment, head cut off |
 | 8 | name carries a reading, but unconfirmed (no カミノヤシロ) | no | fragment, head cut off |
 | 6 | name carries a confirmed カミノヤシロ reading | yes | fragment, tail cut off |
 | 6 | name carries a reading, but unconfirmed (no カミノヤシロ) | no | two readings in one value |
 | 5 | name carries a reading, but unconfirmed (no カミノヤシロ) | yes | fragment, tail cut off |
-| 5 | name carries no reading at all | yes | fragment, head cut off |
 | 4 | removable by the pipeline today | yes | fragment, head cut off |
-| 3 | name carries a confirmed カミノヤシロ reading | yes | fragment, head cut off |
+| 4 | name carries a confirmed カミノヤシロ reading | yes | fragment, head cut off |
+| 3 | name carries no reading at all | yes | fragment, head cut off |
+| 3 | removable by the pipeline today | no | two readings in one value |
 | 2 | removable by the pipeline today | yes | whole reading |
-| 2 | name carries no reading at all | no | whole reading |
-| 2 | name carries a confirmed カミノヤシロ reading | no | two readings in one value |
 | 2 | removable by the pipeline today | no | fragment, middle cut out |
+| 2 | name carries no reading at all | no | whole reading |
 | 2 | name carries a confirmed カミノヤシロ reading | no | whole reading |
-| 2 | removable by the pipeline today | no | two readings in one value |
-| 1 | removable by the pipeline today | no | whole reading |
-| 1 | name carries a reading, but unconfirmed (no カミノヤシロ) | yes | fragment, head cut off |
+| 1 | name carries a confirmed カミノヤシロ reading | no | two readings in one value |
 | 1 | name carries a confirmed カミノヤシロ reading | yes | whole reading |
+| 1 | name carries a reading, but unconfirmed (no カミノヤシロ) | yes | fragment, head cut off |
+| 1 | removable by the pipeline today | no | whole reading |
 
 ## The categories in full
 
-### 120 — name carries no reading at all; hiragana absent; fragment, tail cut off
+### 115 — name carries no reading at all; hiragana absent; fragment, tail cut off
 
 ⛔ **This value is the item's ONLY reading.** Removing it loses the reading entirely — there is no qualifier on the official name and no modern hiragana.
 
@@ -71,13 +71,13 @@ Emma, 2026-09-13, given the choice between relocating these readings onto the oj
 | [Q135039026](https://www.wikidata.org/wiki/Q135039026) | （廃絶） | `イフキイカツチ-` | — |
 | [Q135039117](https://www.wikidata.org/wiki/Q135039117) | 若倭彦命神社 | `ワカヤマトヒメノ-` | — |
 | [Q135039208](https://www.wikidata.org/wiki/Q135039208) | 新屋坐天照御魂神社 三座 | `ニヒヤノ-` | — |
-| [Q135039285](https://www.wikidata.org/wiki/Q135039285) | 大海田水代大刀自神社 | `アマタミツ-` | — |
 | [Q135039287](https://www.wikidata.org/wiki/Q135039287) | 相鹿木大御神社 | `アフカコタノ-` | — |
 | [Q135039393](https://www.wikidata.org/wiki/Q135039393) | 大鹿三宅神社 | `オホカノ-` | — |
 | [Q135039612](https://www.wikidata.org/wiki/Q135039612) | 芽原川内神社 | `ハキハラノ-` | — |
 | [Q135039637](https://www.wikidata.org/wiki/Q135039637) | 伊賀牟比売命神社 | `イカムヒメノ-` | — |
 | [Q135039645](https://www.wikidata.org/wiki/Q135039645) | 夜須命神社 | `ヤスノ-` | — |
-| … | *95 more* | | |
+| [Q135039647](https://www.wikidata.org/wiki/Q135039647) | 奈疑知命神社 | `ナキチ-` | — |
+| … | *90 more* | | |
 
 ### 102 — removable by the pipeline today; hiragana absent; fragment, tail cut off
 
@@ -90,7 +90,6 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q11675614](https://www.wikidata.org/wiki/Q11675614) | 鴨都波神社 | `シモツカモノ-` | `シモツカモノ-カミノヤシロ` |
 | [Q123118271](https://www.wikidata.org/wiki/Q123118271) | 天神多久頭魂神社 | `アマノタクツタマノ-` | `アマノタクツタマノ-カミノヤシロ` |
 | [Q134926154](https://www.wikidata.org/wiki/Q134926154) | 優婆夷宝明神社 | `ウハイノ-` | `ウハイノ-カミノヤシロ` |
-| [Q134928901](https://www.wikidata.org/wiki/Q134928901) | 駒形大重神社 | `カツラキ-` | `カツラキ-カミノヤシロ` |
 | [Q135038782](https://www.wikidata.org/wiki/Q135038782) | 河合神社 | `カモノカハアヒニ-` | `カモノカハアヒニ-カミノヤシロ` |
 | [Q135038811](https://www.wikidata.org/wiki/Q135038811) | 綺原坐健伊那大比賣神社 | `カムハラノ-` | `カムハラノ-カミノヤシロ` |
 | [Q135038816](https://www.wikidata.org/wiki/Q135038816) | 和爾坐赤阪比古神社 | `ワニ-` | `ワニ-カミノヤシロ` |
@@ -104,6 +103,7 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q135039260](https://www.wikidata.org/wiki/Q135039260) | 宇流冨志禰神社 | `ウル-` | `ウナネノフシミノ`, `ウル-カミノヤシロ` |
 | [Q135039268](https://www.wikidata.org/wiki/Q135039268) | 榎村神社 | `エ-` | `エ-カミノヤシロ`, `ヱムラノ` |
 | [Q135039281](https://www.wikidata.org/wiki/Q135039281) | 相鹿上神社 | `アフカノ-` | `アフカノ-カミノヤシロ` |
+| [Q135039285](https://www.wikidata.org/wiki/Q135039285) | 大海田水代大刀自神社 | `アマタミツ-` | `アマタミツ-カミノヤシロ` |
 | [Q135039337](https://www.wikidata.org/wiki/Q135039337) | 小丹神社 | `オ-` | `オ-カミノヤシロ`, `ヲニノ`, `ヲニノカミノヤシロ` |
 | [Q135039356](https://www.wikidata.org/wiki/Q135039356) | 横道下神社 | `ヨコミチノ-` | `ヨコミチノ-カミノヤシロ` |
 | [Q135039377](https://www.wikidata.org/wiki/Q135039377) | 鬼太神社 | `キ-` | `オニタノ`, `オニタノカミノヤシロ`, `キ-カミノヤシロ` |
@@ -112,7 +112,7 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q135039641](https://www.wikidata.org/wiki/Q135039641) | 伊波例命神社 | `イハレ-` | `イハレ-カミノヤシロ` |
 | … | *77 more* | | |
 
-### 43 — removable by the pipeline today; hiragana absent; fragment, head cut off
+### 44 — removable by the pipeline today; hiragana absent; fragment, head cut off
 
 Nothing to decide: the existing removal generator reaches these. Listed for completeness.
 
@@ -120,6 +120,7 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 |---|---|---|---|
 | [Q135038965](https://www.wikidata.org/wiki/Q135038965) | 宮前霹靂神社 | `-サクイカツチ` | `-サクイカツチカミノヤシロ`, `ハタタガミ`, `ミヤサキノナルカミノ`, `ミヤサキノナルカミノカミノヤシロ` |
 | [Q135039269](https://www.wikidata.org/wiki/Q135039269) | 清野井庭神社 | `-ヰニハ` | `-ヰニハカミノヤシロ`, `キヨノヰハノ`, `キヨノヰハノカミノヤシロ` |
+| [Q135039308](https://www.wikidata.org/wiki/Q135039308) | 合祀：相鹿上神社 | `-カム` | `-カムカミノヤシロ`, `イソノカミノ`, `イソノカミノカミノヤシロ` |
 | [Q135039327](https://www.wikidata.org/wiki/Q135039327) | 波氐神社 | `-テノ` | `-テノカミノヤシロ` |
 | [Q135039363](https://www.wikidata.org/wiki/Q135039363) | 天一鍬田神社 | `-クハタノ` | `-クハタノカミノヤシロ` |
 | [Q135039379](https://www.wikidata.org/wiki/Q135039379) | 矢椅神社 | `-ヨリ` | `-ヨリカミノヤシロ` |
@@ -142,10 +143,9 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q135040969](https://www.wikidata.org/wiki/Q135040969) | 阿遅須伎神社 | `-アチスキノ` | `-アチスキノカミノヤシロ` |
 | [Q135040973](https://www.wikidata.org/wiki/Q135040973) | 大穴持海代日古神社 | `-アマシロヒコノ` | `-アマシロヒコノカミノヤシロ` |
 | [Q135040977](https://www.wikidata.org/wiki/Q135040977) | 神魂神社 | `-カンタマノ` | `-カンタマノカミノヤシロ` |
-| [Q135040979](https://www.wikidata.org/wiki/Q135040979) | 比古佐和気神社 | `-ヒコサワケノ` | `-ヒコサワケノカミノヤシロ` |
-| … | *18 more* | | |
+| … | *19 more* | | |
 
-### 33 — name carries no reading at all; hiragana absent; fragment, head cut off
+### 32 — name carries no reading at all; hiragana absent; fragment, head cut off
 
 ⛔ **This value is the item's ONLY reading.** Removing it loses the reading entirely — there is no qualifier on the official name and no modern hiragana.
 
@@ -165,7 +165,6 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q135040954](https://www.wikidata.org/wiki/Q135040954) | 神魂伊能知奴志神社 | `-カンタマイノチヌシノ` | — |
 | [Q135040974](https://www.wikidata.org/wiki/Q135040974) | 大穴持海代日女神社 | `-アマシロヒメノ` | — |
 | [Q135040976](https://www.wikidata.org/wiki/Q135040976) | 神魂伊豆乃売神社 | `-カンタマイツノヒメノ` | — |
-| [Q135041013](https://www.wikidata.org/wiki/Q135041013) | 和加布都努志神社 | `-ワカフツヌシノ` | — |
 | [Q135041044](https://www.wikidata.org/wiki/Q135041044) | 韓国伊太弖神社 | `-カラクニ-` | — |
 | [Q135041074](https://www.wikidata.org/wiki/Q135041074) | 神魂子角魂神社 | `-カンタマコツノタマ` | — |
 | [Q135041343](https://www.wikidata.org/wiki/Q135041343) | 天石門別八倉比売神社 | `-ヤクラヒメノ` | — |
@@ -176,9 +175,10 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q135070105](https://www.wikidata.org/wiki/Q135070105) | 佐久多神社 | `-サクタノ` | — |
 | [Q135070303](https://www.wikidata.org/wiki/Q135070303) | 豊玉姫神社 | `-トヨタマヒメノ` | — |
 | [Q135070305](https://www.wikidata.org/wiki/Q135070305) | 猿田比古神社 | `-トヨタマヒメノ` | — |
-| … | *8 more* | | |
+| [Q135070347](https://www.wikidata.org/wiki/Q135070347) | 伊勢天照御祖神社 | `-アマテラスミオヤノ` | — |
+| … | *7 more* | | |
 
-### 32 — name carries a confirmed カミノヤシロ reading; hiragana absent; fragment, tail cut off
+### 29 — name carries a confirmed カミノヤシロ reading; hiragana absent; fragment, tail cut off
 
 The ancient reading provably survives on the official name, so the top-level copy is redundant in the way the pipeline's own removals are — it just does not match exactly.
 
@@ -194,13 +194,11 @@ The ancient reading provably survives on the official name, so the top-level cop
 | [Q135040061](https://www.wikidata.org/wiki/Q135040061) | 石桉比古比賣神社 | `イハアム-` | `イハクラヒメノ`, `イハクラヒメノカミノヤシロ` |
 | [Q135040070](https://www.wikidata.org/wiki/Q135040070) | 苅田彦神社 | `カム-` | `カリタヒコノ`, `カリタヒコノカミノヤシロ` |
 | [Q135040127](https://www.wikidata.org/wiki/Q135040127) | 質覇村峯神社 | `チハムラ-` | `シハムラ`, `シハムラカミノヤシロ` |
-| [Q135040210](https://www.wikidata.org/wiki/Q135040210) | 神傍神社 | `カン-` | `カムソヒノ`, `カムソヒノカミノヤシロ` |
 | [Q135040221](https://www.wikidata.org/wiki/Q135040221) | 高於磐座神社 | `タカウヘノ-` | `タカオイハクラノ`, `タカオイハクラノカミノヤシロ` |
 | [Q135040305](https://www.wikidata.org/wiki/Q135040305) | 椎葉円比咩神社 | `シヒシハノ-` | `シヒノハノマドカ-カミノヤシロ` |
 | [Q135040319](https://www.wikidata.org/wiki/Q135040319) | 荒石比古神社 | `アライソ-` | `アライシ-カミノヤシロ` |
 | [Q135040335](https://www.wikidata.org/wiki/Q135040335) | 奥津比咩神社 | `オキツ-` | `オクツヒメノ`, `オクツヒメノカミノヤシロ` |
 | [Q135040486](https://www.wikidata.org/wiki/Q135040486) | 飯持神社 | `ミケ-` | `イヒモチノ`, `イヒモチノカミノヤシロ` |
-| [Q135040592](https://www.wikidata.org/wiki/Q135040592) | 床尾神社 | `トコ-` | `ユカヲノ`, `ユカヲノカミノヤシロ` |
 | [Q135040596](https://www.wikidata.org/wiki/Q135040596) | 意布伎神社 | `オ-` | `イフキノ`, `イフキノカミノヤシロ` |
 | [Q135040654](https://www.wikidata.org/wiki/Q135040654) | 久刀寸兵主神社 | `クトネ-` | `クトムラ-カミノヤシロ`, `クトワ-カミノヤシロ` |
 | [Q135041128](https://www.wikidata.org/wiki/Q135041128) | 大飯彦命神社 | `オヒイヒコノ-` | `オホイヒヒコノ-カミノヤシロ` |
@@ -209,7 +207,9 @@ The ancient reading provably survives on the official name, so the top-level cop
 | [Q135070297](https://www.wikidata.org/wiki/Q135070297) | 美奴間神社 | `アマツヌマヒコノ-` | `アマノミツセキヒメノ`, `アマノミツセキヒメノカミノヤシロ` |
 | [Q135098830](https://www.wikidata.org/wiki/Q135098830) | 狭井坐大神荒魂神社 五座 | `サイ-` | `サヰ-カミノヤシロ` |
 | [Q135186398](https://www.wikidata.org/wiki/Q135186398) | 根倉神社跡 | `ネ-` | `ヒツクラノ`, `ヒツクラノカミノヤシロ` |
-| … | *7 more* | | |
+| [Q135193734](https://www.wikidata.org/wiki/Q135193734) | 今宮神社 | `ユル-` | `ヨロキノ`, `ヨロキノカミノヤシロ` |
+| [Q135194711](https://www.wikidata.org/wiki/Q135194711) | （参考）高尾磐座神社 | `タカウヘノ-` | `タカオイハクラノ`, `タカオイハクラノカミノヤシロ` |
+| … | *4 more* | | |
 
 ### 20 — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana absent; fragment, tail cut off
 
@@ -275,14 +275,13 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q38278496](https://www.wikidata.org/wiki/Q38278496) | 鏡作坐天照御魂神社 | `カカミツクリ-` | `カカミツクリ-カミノヤシロ` |
 | [Q54153276](https://www.wikidata.org/wiki/Q54153276) | 軽樹村坐神社 | `カロコムラ-` | `カロコムラ-カミノヤシロ` |
 
-### 10 — name carries a confirmed カミノヤシロ reading; hiragana absent; fragment, head cut off
+### 9 — name carries a confirmed カミノヤシロ reading; hiragana absent; fragment, head cut off
 
 The ancient reading provably survives on the official name, so the top-level copy is redundant in the way the pipeline's own removals are — it just does not match exactly.
 
 | item | ja label | top-level value | qualifiers on the ojp-hani name |
 |---|---|---|---|
 | [Q11662605](https://www.wikidata.org/wiki/Q11662605) | 青渭神社 | `-ヌマノ` | `アヲヰノ`, `アヲヰノカミノヤシロ` |
-| [Q135039308](https://www.wikidata.org/wiki/Q135039308) | 合祀：相鹿上神社 | `-カム` | `イソノカミノ`, `イソノカミノカミノヤシロ` |
 | [Q135039379](https://www.wikidata.org/wiki/Q135039379) | 矢椅神社 | `-ハシ` | `-ヨリカミノヤシロ` |
 | [Q135039871](https://www.wikidata.org/wiki/Q135039871) | 阿志都弥神社 | `-トミノ` | `アシツミノ`, `アシツミノカミノヤシロ` |
 | [Q135040042](https://www.wikidata.org/wiki/Q135040042) | 磐椅神社 | `-サキ` | `イハハシノ`, `イハハシノカミノヤシロ` |
@@ -345,16 +344,6 @@ The official name carries *a* reading, but without the `カミノヤシロ` suff
 | [Q11610732](https://www.wikidata.org/wiki/Q11610732) | 耳成山口神社 | `メハラノ-` | `ミミナシマヤクチノ` |
 | [Q20043641](https://www.wikidata.org/wiki/Q20043641) | 鹿島天足別神社 | `イハカミ-` | `カシマアマタリワケノ` |
 
-### 5 — name carries no reading at all; hiragana present; fragment, head cut off
-
-| item | ja label | top-level value | qualifiers on the ojp-hani name |
-|---|---|---|---|
-| [Q11390577](https://www.wikidata.org/wiki/Q11390577) | 八倉比売神社 | `-ヤクラヒメノ` | — |
-| [Q11553360](https://www.wikidata.org/wiki/Q11553360) | 河俣神社 | `-ミアカタ-カモノコトシロヌシノ` | — |
-| [Q11620885](https://www.wikidata.org/wiki/Q11620885) | 葛城一言主神社 | `-ヒトコトヌシノ` | — |
-| [Q22118306](https://www.wikidata.org/wiki/Q22118306) | 葛木水分神社 | `-ミコマノ` | — |
-| [Q22118306](https://www.wikidata.org/wiki/Q22118306) | 葛木水分神社 | `-ミコモリ` | — |
-
 ### 4 — removable by the pipeline today; hiragana present; fragment, head cut off
 
 Nothing to decide: the existing removal generator reaches these. Listed for completeness.
@@ -364,9 +353,9 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q11443184](https://www.wikidata.org/wiki/Q11443184) | 天石立神社 | `-ノイハタチノ` | `-ノイハタチノカミノヤシロ` |
 | [Q11465296](https://www.wikidata.org/wiki/Q11465296) | 尾張大国霊神社 | `-オホクニタマノ` | `-オホクニタマノカミノヤシロ` |
 | [Q11620955](https://www.wikidata.org/wiki/Q11620955) | 葛木御歳神社 | `-ミトシノ` | `-ミトシノカミノヤシロ` |
-| [Q3529714](https://www.wikidata.org/wiki/Q3529714) | 吉野水分神社 | `-ミクマリ` | `-ミクマリカミノヤシロ`, `ヨシノノミコモリノ` |
+| [Q22118306](https://www.wikidata.org/wiki/Q22118306) | 葛木水分神社 | `-ミコマノ` | `-ミコマノカミノヤシロ` |
 
-### 3 — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, head cut off
+### 4 — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, head cut off
 
 The ancient reading provably survives on the official name, so the top-level copy is redundant in the way the pipeline's own removals are — it just does not match exactly.
 
@@ -374,7 +363,26 @@ The ancient reading provably survives on the official name, so the top-level cop
 |---|---|---|---|
 | [Q11442606](https://www.wikidata.org/wiki/Q11442606) | 天手長男神社 | `-タナカヒメノ` | `-タナカヲノカミノヤシロ` |
 | [Q11657433](https://www.wikidata.org/wiki/Q11657433) | 阿志都彌神社 | `-トミノ` | `アシツミノ`, `アシツミノカミノヤシロ` |
+| [Q22118306](https://www.wikidata.org/wiki/Q22118306) | 葛木水分神社 | `-ミコモリ` | `-ミコマノカミノヤシロ` |
 | [Q72727981](https://www.wikidata.org/wiki/Q72727981) | 長幡部神社 | `-イケノウヘノ` | `イマキアヲサカイナミノイケカミノ`, `イマキアヲサカイナミノイケカミノカミノヤシロ`, `イマキアヲサカノイナミアラミタマノ`, `イマキアヲヤサカイナミノ`, `ナカハタヘノ` |
+
+### 3 — name carries no reading at all; hiragana present; fragment, head cut off
+
+| item | ja label | top-level value | qualifiers on the ojp-hani name |
+|---|---|---|---|
+| [Q11390577](https://www.wikidata.org/wiki/Q11390577) | 八倉比売神社 | `-ヤクラヒメノ` | — |
+| [Q11553360](https://www.wikidata.org/wiki/Q11553360) | 河俣神社 | `-ミアカタ-カモノコトシロヌシノ` | — |
+| [Q11620885](https://www.wikidata.org/wiki/Q11620885) | 葛城一言主神社 | `-ヒトコトヌシノ` | — |
+
+### 3 — removable by the pipeline today; hiragana absent; two readings in one value
+
+Nothing to decide: the existing removal generator reaches these. Listed for completeness.
+
+| item | ja label | top-level value | qualifiers on the ojp-hani name |
+|---|---|---|---|
+| [Q135038788](https://www.wikidata.org/wiki/Q135038788) | 大椋神社 | `オホクラノ オホタテノ` | `オホクラノ`, `オホクラノ オホタテノカミノヤシロ`, `オホクラノカミノヤシロ`, `オホタテノ` |
+| [Q135038812](https://www.wikidata.org/wiki/Q135038812) | 相楽神社 | `サカラカノ サカラノ` | `サカラカノ`, `サカラカノ サカラノカミノヤシロ`, `サカラカノカミノヤシロ`, `サカラノ`, `サカラノカミノヤシロ` |
+| [Q135038817](https://www.wikidata.org/wiki/Q135038817) | 穴栗神社 | `アナフキノ フエフキ` | `アナフキノ`, `アナフキノ フエフキカミノヤシロ`, `アナフキノカミノヤシロ`, `フエフキ` |
 
 ### 2 — removable by the pipeline today; hiragana present; whole reading
 
@@ -385,24 +393,6 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 | [Q133753](https://www.wikidata.org/wiki/Q133753) | 鹽竈神社 | `シハヒコノ` | `シハヒコノ`, `シハヒコノカミノヤシロ` |
 | [Q85882705](https://www.wikidata.org/wiki/Q85882705) | 石坐神社 | `イハヰノカミノヤシロ` | `イシヰノカミノヤシロ`, `イハヰノカミノヤシロ`, `イハヰノカミノヤシロカミノヤシロ` |
 
-### 2 — name carries no reading at all; hiragana absent; whole reading
-
-⛔ **This value is the item's ONLY reading.** Removing it loses the reading entirely — there is no qualifier on the official name and no modern hiragana.
-
-| item | ja label | top-level value | qualifiers on the ojp-hani name |
-|---|---|---|---|
-| [Q11432381](https://www.wikidata.org/wiki/Q11432381) | 大依羅神社 | `オホヨサミノ` | — |
-| [Q55533377](https://www.wikidata.org/wiki/Q55533377) | 八剣宮 | `ヤツルキノ` | — |
-
-### 2 — name carries a confirmed カミノヤシロ reading; hiragana absent; two readings in one value
-
-The ancient reading provably survives on the official name, so the top-level copy is redundant in the way the pipeline's own removals are — it just does not match exactly.
-
-| item | ja label | top-level value | qualifiers on the ojp-hani name |
-|---|---|---|---|
-| [Q135038817](https://www.wikidata.org/wiki/Q135038817) | 穴栗神社 | `アナフキノ フエフキ` | `アナフキノ`, `アナフキノカミノヤシロ`, `フエフキ` |
-| [Q59282593](https://www.wikidata.org/wiki/Q59282593) | 和爾下神社 | `ワニシモノ ワニノ` | `ワニシモノ`, `ワニノ`, `ワニノカミノヤシロ` |
-
 ### 2 — removable by the pipeline today; hiragana absent; fragment, middle cut out
 
 Nothing to decide: the existing removal generator reaches these. Listed for completeness.
@@ -411,6 +401,15 @@ Nothing to decide: the existing removal generator reaches these. Listed for comp
 |---|---|---|---|
 | [Q135039455](https://www.wikidata.org/wiki/Q135039455) | 粟島坐伊射波神社 二座 | `アハシマノ-イサハノ` | `アハシマノ-イサハノカミノヤシロ` |
 | [Q135098881](https://www.wikidata.org/wiki/Q135098881) | 春日戸社坐御子神社 | `カスカヘノ-ミコノ` | `カスカヘノ-ミコノカミノヤシロ` |
+
+### 2 — name carries no reading at all; hiragana absent; whole reading
+
+⛔ **This value is the item's ONLY reading.** Removing it loses the reading entirely — there is no qualifier on the official name and no modern hiragana.
+
+| item | ja label | top-level value | qualifiers on the ojp-hani name |
+|---|---|---|---|
+| [Q11432381](https://www.wikidata.org/wiki/Q11432381) | 大依羅神社 | `オホヨサミノ` | — |
+| [Q55533377](https://www.wikidata.org/wiki/Q55533377) | 八剣宮 | `ヤツルキノ` | — |
 
 ### 2 — name carries a confirmed カミノヤシロ reading; hiragana absent; whole reading
 
@@ -421,30 +420,13 @@ The ancient reading provably survives on the official name, so the top-level cop
 | [Q135039791](https://www.wikidata.org/wiki/Q135039791) | 小野神社 二座 | `ヲノノカミノヤシロ` | `ヲノノカミノヤシロ` |
 | [Q135039891](https://www.wikidata.org/wiki/Q135039891) | 大寸神社 | `オホ尓ノ` | `オホネノ`, `オホネノカミノヤシロ` |
 
-### 2 — removable by the pipeline today; hiragana absent; two readings in one value
+### 1 — name carries a confirmed カミノヤシロ reading; hiragana absent; two readings in one value
 
-Nothing to decide: the existing removal generator reaches these. Listed for completeness.
-
-| item | ja label | top-level value | qualifiers on the ojp-hani name |
-|---|---|---|---|
-| [Q135038788](https://www.wikidata.org/wiki/Q135038788) | 大椋神社 | `オホクラノ オホタテノ` | `オホクラノ`, `オホクラノ オホタテノカミノヤシロ`, `オホクラノカミノヤシロ`, `オホタテノ` |
-| [Q135038812](https://www.wikidata.org/wiki/Q135038812) | 相楽神社 | `サカラカノ サカラノ` | `サカラカノ`, `サカラカノ サカラノカミノヤシロ`, `サカラカノカミノヤシロ`, `サカラノ`, `サカラノカミノヤシロ` |
-
-### 1 — removable by the pipeline today; hiragana absent; whole reading
-
-Nothing to decide: the existing removal generator reaches these. Listed for completeness.
+The ancient reading provably survives on the official name, so the top-level copy is redundant in the way the pipeline's own removals are — it just does not match exactly.
 
 | item | ja label | top-level value | qualifiers on the ojp-hani name |
 |---|---|---|---|
-| [Q135039789](https://www.wikidata.org/wiki/Q135039789) | 神田神社 | `カンタノカミノヤシロ` | `カンタノカミノヤシロ`, `カンタノカミノヤシロカミノヤシロ` |
-
-### 1 — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana present; fragment, head cut off
-
-The official name carries *a* reading, but without the `カミノヤシロ` suffix the pipeline has never confirmed it, so whether it covers this value is a judgement call.
-
-| item | ja label | top-level value | qualifiers on the ojp-hani name |
-|---|---|---|---|
-| [Q72728268](https://www.wikidata.org/wiki/Q72728268) | 今城青坂稲実池上神社 | `-イケノウヘノ` | `イマキアヲサカイナミノイケカミノ` |
+| [Q59282593](https://www.wikidata.org/wiki/Q59282593) | 和爾下神社 | `ワニシモノ ワニノ` | `ワニシモノ`, `ワニノ`, `ワニノカミノヤシロ` |
 
 ### 1 — name carries a confirmed カミノヤシロ reading; hiragana present; whole reading
 
@@ -454,32 +436,48 @@ The ancient reading provably survives on the official name, so the top-level cop
 |---|---|---|---|
 | [Q85882705](https://www.wikidata.org/wiki/Q85882705) | 石坐神社 | `イシヰノカミノヤシロ` | `イシヰノカミノヤシロ`, `イハヰノカミノヤシロ`, `イハヰノカミノヤシロカミノヤシロ` |
 
+### 1 — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana present; fragment, head cut off
+
+The official name carries *a* reading, but without the `カミノヤシロ` suffix the pipeline has never confirmed it, so whether it covers this value is a judgement call.
+
+| item | ja label | top-level value | qualifiers on the ojp-hani name |
+|---|---|---|---|
+| [Q72728268](https://www.wikidata.org/wiki/Q72728268) | 今城青坂稲実池上神社 | `-イケノウヘノ` | `イマキアヲサカイナミノイケカミノ` |
+
+### 1 — removable by the pipeline today; hiragana absent; whole reading
+
+Nothing to decide: the existing removal generator reaches these. Listed for completeness.
+
+| item | ja label | top-level value | qualifiers on the ojp-hani name |
+|---|---|---|---|
+| [Q135039789](https://www.wikidata.org/wiki/Q135039789) | 神田神社 | `カンタノカミノヤシロ` | `カンタノカミノヤシロ`, `カンタノカミノヤシロカミノヤシロ` |
+
 ## Ruling
 
 One line per category, written here by Emma; the removal generator is then pointed at whichever categories she clears.
 
-* **120** — name carries no reading at all; hiragana absent; fragment, tail cut off → 
+* **115** — name carries no reading at all; hiragana absent; fragment, tail cut off → 
 * **102** — removable by the pipeline today; hiragana absent; fragment, tail cut off → 
-* **43** — removable by the pipeline today; hiragana absent; fragment, head cut off → 
-* **33** — name carries no reading at all; hiragana absent; fragment, head cut off → 
-* **32** — name carries a confirmed カミノヤシロ reading; hiragana absent; fragment, tail cut off → 
+* **44** — removable by the pipeline today; hiragana absent; fragment, head cut off → 
+* **32** — name carries no reading at all; hiragana absent; fragment, head cut off → 
+* **29** — name carries a confirmed カミノヤシロ reading; hiragana absent; fragment, tail cut off → 
 * **20** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana absent; fragment, tail cut off → 
 * **15** — name carries no reading at all; hiragana present; fragment, tail cut off → 
 * **10** — removable by the pipeline today; hiragana present; fragment, tail cut off → 
-* **10** — name carries a confirmed カミノヤシロ reading; hiragana absent; fragment, head cut off → 
+* **9** — name carries a confirmed カミノヤシロ reading; hiragana absent; fragment, head cut off → 
 * **8** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana absent; fragment, head cut off → 
 * **6** — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, tail cut off → 
 * **6** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana absent; two readings in one value → 
 * **5** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana present; fragment, tail cut off → 
-* **5** — name carries no reading at all; hiragana present; fragment, head cut off → 
 * **4** — removable by the pipeline today; hiragana present; fragment, head cut off → 
-* **3** — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, head cut off → 
+* **4** — name carries a confirmed カミノヤシロ reading; hiragana present; fragment, head cut off → 
+* **3** — name carries no reading at all; hiragana present; fragment, head cut off → 
+* **3** — removable by the pipeline today; hiragana absent; two readings in one value → 
 * **2** — removable by the pipeline today; hiragana present; whole reading → 
-* **2** — name carries no reading at all; hiragana absent; whole reading → 
-* **2** — name carries a confirmed カミノヤシロ reading; hiragana absent; two readings in one value → 
 * **2** — removable by the pipeline today; hiragana absent; fragment, middle cut out → 
+* **2** — name carries no reading at all; hiragana absent; whole reading → 
 * **2** — name carries a confirmed カミノヤシロ reading; hiragana absent; whole reading → 
-* **2** — removable by the pipeline today; hiragana absent; two readings in one value → 
-* **1** — removable by the pipeline today; hiragana absent; whole reading → 
-* **1** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana present; fragment, head cut off → 
+* **1** — name carries a confirmed カミノヤシロ reading; hiragana absent; two readings in one value → 
 * **1** — name carries a confirmed カミノヤシロ reading; hiragana present; whole reading → 
+* **1** — name carries a reading, but unconfirmed (no カミノヤシロ); hiragana present; fragment, head cut off → 
+* **1** — removable by the pipeline today; hiragana absent; whole reading → 
