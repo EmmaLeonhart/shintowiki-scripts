@@ -1,3 +1,10 @@
+## 2026-10-06 — browser QS part 2 complete; the "failures" were my Import click
+
+- Part 2b → batch #289714. The earlier 2b "failures" were not QuickStatements: clicking Import by
+  accessibility ref did not fire the button (no request was even made), and the "Could not finish
+  loading" alert is a hidden element present on every page load, which I misread as the error.
+  Clicking Import by screen coordinates parses normally. The hourly cron prompt now says so.
+
 ## 2026-10-06 — browser QS part 2: first half in (#289712), second half not yet
 
 - Part 2 as one 5,000-line import hung the tab for 10+ minutes. Split in half per the cron's rule:
