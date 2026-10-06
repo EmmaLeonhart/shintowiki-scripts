@@ -1,0 +1,41 @@
+name: QuickStatements daily full batch
+
+# Emma, 2026-10-05: run the entire QuickStatements batch every day at noon through the
+# QuickStatements API (modern-quickstatements/submit_full_batch.py). 19:00 UTC is noon
+# Pacific daylight time; from November it lands at 11:00 PST.
+on:
+  schedule:
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qs-daily-submit
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Submit the full batch
+        env:
+          QS_TOKEN: ${{ secrets.QS_TOKEN }}
+          QS_USERNAME: ${{ secrets.QS_USERNAME }}
+        run: python3 modern-quickstatements/submit_full_batch.py

@@ -1,7 +1,7 @@
 {
-  "locked": true,
+  "locked": false,
   "locked_until": null,
-  "reason": "Emma, 2026-09-28: no automated Wikidata edits or item creations at all. Every edit goes through QuickStatements, run by hand from the site's home page (site/build_qs_home.py). The generators keep running so that list stays current.",
-  "set": "2026-09-28",
+  "reason": "Emma, 2026-10-06: unlocked so Wikidata edits happen, but only through QuickStatements: the whole batch is regenerated and submitted to the QuickStatements API every day at noon (qs-daily-submit.yml -> submit_full_batch.py). Previously locked 2026-09-28 for hand-only QuickStatements.",
+  "set": "2026-10-06",
   "set_by": "Emma"
 }
