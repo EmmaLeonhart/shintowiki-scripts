@@ -1,3 +1,15 @@
+## 2026-10-06 — daily QS submit refused: the account has never submitted a background batch
+
+- Run 37438579633 (dispatched 08:48Z) built 36,119 lines and the QuickStatements API answered:
+  `Problem generating OAuth signature; user '***' needs to have submitted a batch manually at least
+  once before`. Same refusal that retired the API path on 2026-07-04. Batches run in the browser do
+  not count; QS needs one batch submitted with "Run in background" from the web UI by the account in
+  the `QS_USERNAME` secret.
+- Emma's choice (AskUserQuestion): **QS API only**, no bot-drip fallback. No code change gets past
+  this refusal.
+- Hourly watchdog cron `e931d511` (:00) checks each run, counts it as success only if edits land on
+  Wikidata, re-dispatches on this refusal, and fixes any other failure (batch size may be reduced).
+
 ## 2026-10-06 — submit_full_batch.py brought in line with the repo's UA and import tests
 
 - Tests run 37432857114 (on `8f0540c56`) failed three checks on the new script: a hand-built
