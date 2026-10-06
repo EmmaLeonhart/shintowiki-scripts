@@ -1,3 +1,17 @@
+## 2026-10-06 — pipeline rerun, QuickStatements regenerated
+
+- Dispatched `cleanup-loop.yml` from the start (run 37399681518, 01:32Z) for Emma's 2026-10-05
+  queue item. Its generate-quickstatements job succeeded 01:32Z → 02:44Z and committed `eefa3a58d`;
+  generate-pages rebuilt the home-page batch in `c79d6aae6` (02:46Z). The whole run succeeded.
+- Checked by commit timestamps and line counts against a snapshot taken before the dispatch, not by
+  the exit code: 57 of 125 `modern-quickstatements/*.txt` files were rewritten at 02:44:43Z, 68 were
+  untouched. Total lines 78,725 → 74,660. Most rewritten files shrank (e.g. `bunrei.txt` 3,717 →
+  3,035, `p6262_fandom_links.txt` 3,706 → 3,011, `derived_name_in_kana.txt` 4,229 → 3,936), which
+  is what the generators do when lines have landed; a few grew (`shinto_short_names.txt` 538 → 577,
+  `kana_redundant_remove.txt` 253 → 263). `_site/quickstatements-all.txt` is 40,182 lines.
+- I dispatched it without first checking whether Emma was editing from the batch page; the rebuild
+  reshuffles that page. Check her recent edits before dispatching a regeneration next time.
+
 ## 2026-10-04 — P11250 fetcher import fixed
 
 - `af5ec2433` split `from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL` while adding the
