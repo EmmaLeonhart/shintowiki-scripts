@@ -1,3 +1,5 @@
+## 2026-10-06 — browser QS part 3 → batch #289717 (5,000 lines in one go, coordinate Import click)
+
 ## 2026-10-06 — browser QS part 2 complete; the "failures" were my Import click
 
 - Part 2b → batch #289714. The earlier 2b "failures" were not QuickStatements: clicking Import by
