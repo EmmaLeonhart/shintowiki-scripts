@@ -1,3 +1,10 @@
+## 2026-10-06 — browser QS part 2: first half in (#289712), second half not yet
+
+- Part 2 as one 5,000-line import hung the tab for 10+ minutes. Split in half per the cron's rule:
+  2a (lines 1-2,500) became batch #289712; 2b (2,501-5,000) failed at Import three times with the
+  page alert "Could not finish loading", a page-level load failure rather than a parse error (2b has
+  no malformed lines). Left for the next tick. Part 1 (#289711) was at 2,698 done / 2 errors at 18:08Z.
+
 ## 2026-10-06 — QS batches go in through Emma's browser, one 5k chunk an hour
 
 - Emma ordered an hourly cron to run the QuickStatements batch 5,000 lines at a time. The API path
