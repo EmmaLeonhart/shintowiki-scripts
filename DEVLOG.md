@@ -1,3 +1,15 @@
+## 2026-10-06 — the four session crons, recreated
+
+- `CronList` at session start: no jobs. Created `e454a83f` work-loop :03, `7ffa1e27` auto-flush :15,
+  `a6f16584` status-report :42, `1e5163b0` briefing 08:03. Four, not five.
+- The work-loop prompt no longer says to monitor each wikidata-drip run first: the drip has had no
+  push or schedule trigger since 2026-09-28.
+- The working tree held three uncommitted changes this session did not make: the lockout state file
+  set to `locked: false` (reason text dated 2026-10-06, set_by Emma), a new
+  `.github/workflows/qs-daily-submit.yml`, and `modern-quickstatements/submit_full_batch.py`. Pushing
+  them would turn on daily automated Wikidata submission, so all four cron prompts exclude them and
+  they stay uncommitted until Emma pushes them or says to.
+
 ## 2026-10-06 — weekly [[Open questions]] sweep (2026-10-05 marker)
 
 - The repo copy (`git_synced/Open questions.wiki`, last changed 2026-09-21) has nothing open: the
