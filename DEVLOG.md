@@ -1,3 +1,5 @@
+## 2026-10-06 — browser QS part 5 → batch #289721
+
 ## 2026-10-06 — browser QS part 4 → batch #289719
 
 ## 2026-10-06 — browser QS part 3 → batch #289717 (5,000 lines in one go, coordinate Import click)
