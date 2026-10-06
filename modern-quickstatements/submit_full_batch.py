@@ -18,6 +18,14 @@ Env: QS_TOKEN (the QuickStatements API key), QS_USERNAME (the Wikidata username 
 belongs to). Gated on shinto_miraheze/wikidata_editing_lockout.state like every other
 Wikidata write path. `--dry-run` builds the batch and prints its size without submitting.
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.wikidata_edit_allowed import editing_allowed
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import io
 import os
 import sys
@@ -26,14 +34,12 @@ import time
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, "site"))
 
-from shinto_miraheze.wikidata_edit_allowed import editing_allowed  # noqa: E402
 import build_qs_home  # noqa: E402
 
 QS_API = "https://quickstatements.toolforge.org/api.php"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = WIKIDATA_USER_AGENT
 MAX_RETRIES = 3
 RETRY_DELAY = 60
 

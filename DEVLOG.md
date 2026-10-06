@@ -1,3 +1,15 @@
+## 2026-10-06 — submit_full_batch.py brought in line with the repo's UA and import tests
+
+- Tests run 37432857114 (on `8f0540c56`) failed three checks on the new script: a hand-built
+  `EmmaBot` User-Agent (twice) and a `shinto_miraheze` import without the standard bootstrap.
+  It now uses the shared bootstrap and `WIKIDATA_USER_AGENT`, and `qs-daily-submit.yml` passes
+  `WIKIDATA_EMAIL`, without which that UA refuses to build.
+- Local: the bootstrap and UA tests pass except `test_ua_for_still_fails_closed_on_an_unknown_host`,
+  which fails the same way on the unmodified tree (local environment, not in the CI failure list).
+  `--dry-run` builds 36,119 lines, 0 creations. The submission itself was not run.
+- Still red in CI from before: `test_derived_name_in_kana` (items both shipped and held) and the
+  Izumo duplicate description (Q135040933 / Q135040944).
+
 ## 2026-10-06 — the four session crons, recreated
 
 - `CronList` at session start: no jobs. Created `e454a83f` work-loop :03, `7ffa1e27` auto-flush :15,
