@@ -129,7 +129,7 @@ def main(argv=None):
             if ok:
                 created += 1
                 break
-            if "OAuth" in msg or "HTTP 4" in msg:
+            if "OAuth" in msg or "HTTP 4" in msg or "do not match" in msg:
                 if created == 0:
                     return 1            # the account is refused outright; the rest will be too
                 break

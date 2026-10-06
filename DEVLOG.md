@@ -1,3 +1,11 @@
+## 2026-10-06 — QS submit: username accepted, token is not 日巫女's
+
+- Run 37486006943 (first with `QS_USERNAME` = 日巫女, 7 chunks): every chunk answered
+  `User name and token do not match`; 0 of 7 batches created. `QS_TOKEN` needs to be the token from
+  日巫女's QuickStatements user page.
+- That answer is now fatal like the OAuth refusal: the run stops at the first chunk instead of
+  retrying 21 times with 60s waits.
+
 ## 2026-10-06 — QS submit: username fixed, batch sent in chunks
 
 - Emma's 日巫女 account had already run background batches (#289569, 9,002 commands, 10-03), so the
