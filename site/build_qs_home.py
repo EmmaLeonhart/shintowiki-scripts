@@ -118,9 +118,15 @@ def create_units():
     return [[to_v1(l) if l != "CREATE" else l for l in b] for b in units]
 
 
-def build(seed=None):
+def build_units(seed=None):
+    """The shuffled units (each a list of lines that must stay together), before flattening."""
     units = drip_units() + sequential_unit() + create_units()
     random.Random(seed).shuffle(units)
+    return units
+
+
+def build(seed=None):
+    units = build_units(seed)
     lines = [l for u in units for l in u]
     creates = sum(1 for l in lines if l == "CREATE")
     return lines, creates

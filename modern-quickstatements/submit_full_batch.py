@@ -42,6 +42,23 @@ QS_API = "https://quickstatements.toolforge.org/api.php"
 UA = WIKIDATA_USER_AGENT
 MAX_RETRIES = 3
 RETRY_DELAY = 60
+# Emma, 2026-10-06: smaller batches are fine if the whole one will not go up. A 36,119-line
+# "Run in background" from the web UI never became a batch; 9,002 commands had worked on 10-03.
+CHUNK_LINES = 5000
+
+
+def chunk_units(units, size=CHUNK_LINES):
+    """Pack whole units into batches of at most `size` lines. A unit is never split, so
+    CREATE blocks, ||-pairs and sequential_misc stay together; one bigger than `size` goes alone."""
+    chunks, cur = [], []
+    for u in units:
+        if cur and len(cur) + len(u) > size:
+            chunks.append(cur)
+            cur = []
+        cur.extend(u)
+    if cur:
+        chunks.append(cur)
+    return chunks
 
 
 def submit(lines, token, username, batch_name):
@@ -82,8 +99,12 @@ def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     dry = "--dry-run" in argv
 
-    lines, creates = build_qs_home.build()
-    print("batch: {:,} lines, {:,} item creations".format(len(lines), creates))
+    units = build_qs_home.build_units()
+    chunks = chunk_units(units)
+    lines = [l for c in chunks for l in c]
+    creates = sum(1 for l in lines if l == "CREATE")
+    print("batch: {:,} lines, {:,} item creations, {} chunks of <= {:,} lines".format(
+        len(lines), creates, len(chunks), CHUNK_LINES))
     if dry:
         print("dry run: not submitted")
         return 0
@@ -98,18 +119,24 @@ def main(argv=None):
         print("QS_TOKEN and QS_USERNAME must both be set")
         return 1
 
-    name = "shintowiki daily full batch " + time.strftime("%Y-%m-%d", time.gmtime())
-    for attempt in range(1, MAX_RETRIES + 1):
-        ok, msg = submit(lines, token, username, name)
-        print("attempt {}: {}".format(attempt, msg))
-        if ok:
-            return 0
-        if "OAuth" in msg or "HTTP 4" in msg:
-            break                       # retrying will not change these
-        if attempt < MAX_RETRIES:
-            time.sleep(RETRY_DELAY)
-    return 1
-
+    day = time.strftime("%Y-%m-%d", time.gmtime())
+    created = 0
+    for i, chunk in enumerate(chunks, 1):
+        name = "shintowiki daily batch {} part {}/{}".format(day, i, len(chunks))
+        for attempt in range(1, MAX_RETRIES + 1):
+            ok, msg = submit(chunk, token, username, name)
+            print("part {}/{} ({:,} lines) attempt {}: {}".format(i, len(chunks), len(chunk), attempt, msg))
+            if ok:
+                created += 1
+                break
+            if "OAuth" in msg or "HTTP 4" in msg:
+                if created == 0:
+                    return 1            # the account is refused outright; the rest will be too
+                break
+            if attempt < MAX_RETRIES:
+                time.sleep(RETRY_DELAY)
+    print("{} of {} batches created".format(created, len(chunks)))
+    return 0 if created == len(chunks) else 1
 
 if __name__ == "__main__":
     sys.exit(main())

@@ -1,3 +1,13 @@
+## 2026-10-06 — QS submit: username fixed, batch sent in chunks
+
+- Emma's 日巫女 account had already run background batches (#289569, 9,002 commands, 10-03), so the
+  "needs to have submitted a batch manually" refusal was the secret, not the account:
+  `QS_USERNAME` dated from 2026-03-24 while `QS_TOKEN` was set today. Set `QS_USERNAME` = 日巫女 on
+  Emma's instruction.
+- A 36,119-line "Run in background" from her browser never became a batch (`#/batch/undefined`).
+  `submit_full_batch.py` now packs the shuffled units (`build_qs_home.build_units`) into batches of
+  at most 5,000 lines without splitting any unit, and submits each. Dry run: 34,213 lines, 7 chunks.
+
 ## 2026-10-06 — daily QS submit refused: the account has never submitted a background batch
 
 - Run 37438579633 (dispatched 08:48Z) built 36,119 lines and the QuickStatements API answered:
