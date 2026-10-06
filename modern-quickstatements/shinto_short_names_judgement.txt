@@ -50,6 +50,7 @@ Q506610	ja=味耜高彦根神	en=Ajisukitakahikone	carries P1035 but the ja labe
 Q555212	ja=阿加流比売神	en=Akaruhime	carries P1035 but the ja label ends with none of its forms
 Q55522639	ja=鳥鳴海	en=Torinarumi	carries P1035 but the ja label ends with none of its forms
 Q55522907	ja=八島士奴美	en=Yashimajinumi	carries P1035 but the ja label ends with none of its forms
+Q595520	ja=月読尊	en=Tsukuyomi	carries P1035 but the ja label ends with none of its forms
 Q6441847	ja=久延毘古	en=Kuebiko	carries P1035 but the ja label ends with none of its forms
 Q682306	ja=伊奘冉尊	en=Izanami	carries P1035 but the ja label ends with none of its forms
 Q719665	ja=稲荷神	en=Inari	carries P1035 but the ja label ends with none of its forms
