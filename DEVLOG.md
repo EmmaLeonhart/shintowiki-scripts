@@ -1,3 +1,11 @@
+## 2026-10-06 — QS batches go in through Emma's browser, one 5k chunk an hour
+
+- Emma ordered an hourly cron to run the QuickStatements batch 5,000 lines at a time. The API path
+  is still refused (the `QS_TOKEN` secret is not 日巫女's token, and I do not enter tokens), so the
+  cron (`c141f13e`, :27) loads the next `browser_chunks/part_N.txt` into QuickStatements in her
+  Chrome, logged in as 日巫女, and clicks "Run in background". `progress.txt` records each part.
+- Part 1 → batch #289711, Running, 9,515 commands open at 17:07Z.
+
 ## 2026-10-06 — QS submit: username accepted, token is not 日巫女's
 
 - Run 37486006943 (first with `QS_USERNAME` = 日巫女, 7 chunks): every chunk answered
