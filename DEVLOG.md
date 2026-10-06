@@ -1,3 +1,11 @@
+## 2026-10-06 — weekly [[Open questions]] sweep (2026-10-05 marker)
+
+- The repo copy (`git_synced/Open questions.wiki`, last changed 2026-09-21) has nothing open: the
+  Open questions and Wiki-based queue sections are both empty, and the two scheduled markers are
+  settled. Nothing to decompose into `queue.md` and nothing to prune.
+- The live page could not be read from the dev machine (the raw fetch returned the connection-check
+  page, HTTP 403), so the repo copy is the only version this sweep saw. Page left unchanged.
+
 ## 2026-10-06 — pipeline rerun, QuickStatements regenerated
 
 - Dispatched `cleanup-loop.yml` from the start (run 37399681518, 01:32Z) for Emma's 2026-10-05
