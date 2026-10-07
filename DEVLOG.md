@@ -1,3 +1,12 @@
+## 2026-10-07 — ojp name restores no longer fight the Ronsha removals
+
+- `test_no_file_undoes_another` failed: `ojp_name_restores.txt` re-added the Old Japanese official
+  names of Q135194697 風速神社 and (after regeneration) Q135195565 大神社, while
+  `ronsha_ojp_name_removals.txt` removes them because both are pure Shikinai Ronsha. Emma
+  (AskUserQuestion): "Ronsha rule wins". Both entries dropped from `generate_ojp_name_restores.py`,
+  as Q135070009 御食神社 was on 2026-09-28; the file now writes 0 lines. Only 白城神社 remains in it.
+- `test_descriptions_are_not_edited` (the Izumo pair) passes again after the 10-07 regeneration.
+
 ## 2026-10-07 — browser QS round 2 part 2 → #289739 (carries the Genbu fixes)
 
 ## 2026-10-07 — browser QS round 2: 7,267 lines left after round 1, part 1 → #289736

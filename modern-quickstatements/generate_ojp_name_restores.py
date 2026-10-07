@@ -82,22 +82,10 @@ DESTROYED = [
     # Shikinai Ronsha, and ronsha_ojp_name_removals.txt removes its ojp-hani name under
     # the 07-09 ruling; restoring it here staged the same statement both ways, so the
     # drip would flip it back and forth (caught by test_no_file_undoes_another).
-    {
-        "qid": "Q135194697", "name": "風速神社", "parent_revid": 2541518816,
-        "quals": [("P1264", ("item", "Q193292")),
-                  ("P1814", ("str", "カサハヤノ")),
-                  ("P1814", ("str", "カサハヤノカミノヤシロ"))],
-        "refs": [[("P4656", ("str", "https://ja.wikipedia.org/wiki/越前国の式内社一覧"))],
-                 [("P248", ("item", "Q135159299")), ("P13677", ("str", "182265"))]],
-    },
-    {
-        "qid": "Q135195565", "name": "大神社", "parent_revid": 2520963592,
-        "quals": [("P1264", ("item", "Q193292")),
-                  ("P1814", ("str", "オシロノ")),
-                  ("P1814", ("str", "オシロノカミノヤシロ"))],
-        "refs": [[("P4656", ("str", "https://ja.wikipedia.org/wiki/因幡国の式内社一覧"))],
-                 [("P248", ("item", "Q135159299")), ("P13677", ("str", "182728"))]],
-    },
+    # Q135194697 風速神社 is NOT restored either (Emma, 2026-10-07: "Ronsha rule wins"),
+    # for the same reason: it is a pure Shikinai Ronsha, and the same test caught it.
+    # Q135195565 大神社 likewise (same day, same ruling): the ronsha removal file
+    # picked it up on regeneration, and it is also a pure Ronsha.
 ]
 
 
