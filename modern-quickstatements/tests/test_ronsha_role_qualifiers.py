@@ -42,7 +42,9 @@ def test_every_emitted_line_is_the_qualifier_only_shape():
         pytest.skip("output not generated in this checkout")
     with open(OUTPUT, encoding="utf-8") as fh:
         lines = [ln.strip() for ln in fh if ln.strip()]
-    assert lines, "the file exists but is empty — that is a drained batch, not a bug, but check"
+    if not lines:  # Emma 2026-10-07: an empty file is a drained batch; skip, don't fail
+        import pytest
+        pytest.skip("all lines landed (file drained)")
     bad = [ln for ln in lines if not LINE.match(ln)]
     assert not bad, f"{len(bad)} line(s) are not the expected shape, first: {bad[:1]}"
 

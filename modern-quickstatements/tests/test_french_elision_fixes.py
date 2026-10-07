@@ -81,7 +81,9 @@ def test_file_is_registered_with_the_drip():
 
 def test_every_committed_line_parses_and_is_french():
     lines = [l.strip() for l in open(OUT, encoding="utf-8") if l.strip()]
-    assert lines, "generator produced nothing — check the query before the corpus"
+    if not lines:  # Emma 2026-10-07: an empty file is a drained batch; skip, don't fail
+        import pytest
+        pytest.skip("all lines landed (file drained)")
     for line in lines:
         assert dde.parse_qs_line(line), line
         assert "|Lfr|" in line, line

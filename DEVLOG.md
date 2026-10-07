@@ -1,3 +1,13 @@
+## 2026-10-07 — three data tests skip on a drained file instead of failing (Emma's choice)
+
+- After the 10-07 regeneration, `french_elision_fixes.txt` (7 lines) and `ronsha_role_qualifiers.txt`
+  (186) were empty, and `kana_qualifier_add.txt` had no gap-marked reading left. Spot-checked live:
+  the French labels and the P2868 qualifiers are on Wikidata, so these drained by landing.
+- Emma (AskUserQuestion): skip when empty. `test_every_committed_line_parses_and_is_french`,
+  `test_every_emitted_line_is_the_qualifier_only_shape` and
+  `test_a_gap_marked_reading_survives_the_move_intact` now `pytest.skip` on an empty set; every
+  per-line shape check still runs whenever there are lines.
+
 ## 2026-10-07 — derived kana: an item with any disagreeing row is held, never shipped
 
 - `test_no_disagreement_also_appears_in_the_shipped_batch` failed on one item: Q135040614 浅間神社
