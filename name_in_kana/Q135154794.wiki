@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q135069871 -->
-<!-- JA: 御崎神社 | EN_LABEL: Misaki Shrine | BUCKET: a -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q135154794 -->
+<!-- JA: 高房神社 | EN_LABEL: Takafusa Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: GUESS: みさきじんしゃ -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): みさきじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): みさきじんしゃ
+  CANDIDATE A (from the English label): たかふさじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): こうぼうじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
