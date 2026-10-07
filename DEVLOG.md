@@ -1,3 +1,10 @@
+## 2026-10-07 — browser QS part 7 → batch #289724; all of the 2026-10-06 batch is submitted
+
+- All 7 parts of the 34,213-line batch are now queued on QuickStatements as 日巫女
+  (#289711, #289712, #289714, #289717, #289719, #289721, #289722, #289724).
+- The hourly job now regenerates fresh chunks only once every batch in progress.txt is DONE, so
+  lines still waiting in QuickStatements' queue are not submitted a second time.
+
 ## 2026-10-06 — browser QS part 6 → batch #289722
 
 ## 2026-10-06 — browser QS part 5 → batch #289721
