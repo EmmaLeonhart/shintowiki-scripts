@@ -1,3 +1,8 @@
+## 2026-10-07 — browser QS round 2: 7,267 lines left after round 1, part 1 → #289736
+
+- Round 1 (8 batches, about 64,000 commands) all DONE. After cleanup-loop regenerated and pruned
+  the files, the batch is 7,267 lines in 2 chunks; part 2 (2,267 lines) holds the Genbu fixes.
+
 ## 2026-10-07 — the 12 province-mismatched Genbu ids staged for removal (Emma's answer)
 
 - Emma chose "Remove all 12". Appended as value-matched removals to `sequential_misc.txt`, after
