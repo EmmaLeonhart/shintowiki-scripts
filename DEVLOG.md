@@ -1,3 +1,5 @@
+## 2026-10-07 — browser QS round 2 part 2 → #289739 (carries the Genbu fixes)
+
 ## 2026-10-07 — browser QS round 2: 7,267 lines left after round 1, part 1 → #289736
 
 - Round 1 (8 batches, about 64,000 commands) all DONE. After cleanup-loop regenerated and pruned
