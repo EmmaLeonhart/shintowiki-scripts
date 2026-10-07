@@ -1,3 +1,21 @@
+## 2026-10-07 — Q65320's Genbu ID fixed; 12 more province-mismatched Genbu IDs found
+
+- Queue item from inochi-no-michikyo (Emma, 2026-10-06). Live: Q65320 伊和神社 (Harima, 兵庫県宍粟市)
+  had P13930 `data/sinano/iwa_title`; genbu.net confirms that page is 伊和神社 (松本市惣社539) and
+  `data/harima/iwa_title` is 兵庫県宍粟市一宮町須行名. The Matsumoto shrine is Q17220820 "Iwa Shrine
+  (Matsumoto)", which had no P13930. Appended to `sequential_misc.txt` in this order: add the
+  Harima id to Q65320, remove the Sinano id from it, add the Sinano id to Q17220820. The
+  home-page batch builder emits them in that order; they go out with the next browser round.
+- Audit of all 1,207 live P13930 values, province code vs the item's P131* prefecture, using
+  `GENBU_PROV_PREF`: 16 mismatches. 3 are the Izu Islands (`izu/…` on Tokyo items), correct.
+  Q65320 is the one above. The other 12 look like the same name-only match:
+  Q119929452 iwami/iwane (Saitama), Q134989197 nagato/soujya (Kagawa), Q134955809 kai/hirono
+  (Shizuoka), Q134955469 mino/tasiro (Shizuoka), Q134956693 iyo/miyauti (Shizuoka),
+  Q134989110 izumo/mitani (Kagawa), Q135040386 ecyu/tateiwa (Ishikawa), Q135434162
+  oumi/ninomiya (Kagoshima), Q135425299 kai/sibamiya (Gunma), Q135259806 kai/negoya (Tochigi),
+  Q135155669 nagato/inari (Ibaraki), Q11605642 yamato/susano (Tokyo). Removing them is a
+  question for Emma (AskUserQuestion), not staged.
+
 ## 2026-10-07 — browser QS part 7 → batch #289724; all of the 2026-10-06 batch is submitted
 
 - All 7 parts of the 34,213-line batch are now queued on QuickStatements as 日巫女

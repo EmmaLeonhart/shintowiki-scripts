@@ -70,6 +70,11 @@ def test_the_shipped_file_holds_exactly_the_intended_lines():
         'Q135186791|P13677|"181329"|P958|"2"|P3831|Q135159299',
         '-Q135069120|P13677|"180834"',
         'Q135069120|P13677|"180834"|P958|"2"|P3831|Q135159299',
+        # The Genbu ID fix, appended 2026-10-06: Q65320 (Harima) carried the
+        # Sinano page's id. Add-first, then remove, then give the id to its item.
+        'Q65320|P13930|"data/harima/iwa_title"',
+        '-Q65320|P13930|"data/sinano/iwa_title"',
+        'Q17220820|P13930|"data/sinano/iwa_title"',
     ]
 
 

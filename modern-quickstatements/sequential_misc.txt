@@ -135,3 +135,10 @@ Q134925373|P13677|"181621"|P958|"0"
 Q135186791|P13677|"181329"|P958|"2"|P3831|Q135159299
 -Q135069120|P13677|"180834"
 Q135069120|P13677|"180834"|P958|"2"|P3831|Q135159299
+# Genbu ID fix (Emma, 2026-10-06; found by inochi-no-michikyo). Q65320 伊和神社 (Harima,
+# 兵庫県宍粟市) carried data/sinano/iwa_title, the page of 伊和神社 (松本市, 長野県). Add the
+# right Harima id first, then remove the wrong one, then give the Sinano id to its own
+# item Q17220820 "Iwa Shrine (Matsumoto)", which had no P13930.
+Q65320|P13930|"data/harima/iwa_title"
+-Q65320|P13930|"data/sinano/iwa_title"
+Q17220820|P13930|"data/sinano/iwa_title"
