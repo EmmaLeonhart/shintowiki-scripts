@@ -1,3 +1,8 @@
+## 2026-10-07 — the 12 province-mismatched Genbu ids staged for removal (Emma's answer)
+
+- Emma chose "Remove all 12". Appended as value-matched removals to `sequential_misc.txt`, after
+  the Q65320 fix. `generate_genbu_ids.py` can re-add the right id where name + province picks one page.
+
 ## 2026-10-07 — Q65320's Genbu ID fixed; 12 more province-mismatched Genbu IDs found
 
 - Queue item from inochi-no-michikyo (Emma, 2026-10-06). Live: Q65320 伊和神社 (Harima, 兵庫県宍粟市)

@@ -142,3 +142,18 @@ Q135069120|P13677|"180834"|P958|"2"|P3831|Q135159299
 Q65320|P13930|"data/harima/iwa_title"
 -Q65320|P13930|"data/sinano/iwa_title"
 Q17220820|P13930|"data/sinano/iwa_title"
+# 12 Genbu ids whose province does not match the item's prefecture (name-only matches),
+# removed on Emma's answer 2026-10-07. The generator can re-add the right id where
+# name + province picks exactly one page.
+-Q119929452|P13930|"data/iwami/iwane_title"
+-Q134989197|P13930|"data/nagato/soujya_title"
+-Q134955809|P13930|"data/kai/hirono_title"
+-Q134955469|P13930|"data/mino/tasiro_title"
+-Q134956693|P13930|"data/iyo/miyauti_title"
+-Q134989110|P13930|"data/izumo/mitani_title"
+-Q135040386|P13930|"data/ecyu/tateiwa_title"
+-Q135434162|P13930|"data/oumi/ninomiya_title"
+-Q135425299|P13930|"data/kai/sibamiya_title"
+-Q135259806|P13930|"data/kai/negoya_title"
+-Q135155669|P13930|"data/nagato/inari_title"
+-Q11605642|P13930|"data/yamato/susano_title"
