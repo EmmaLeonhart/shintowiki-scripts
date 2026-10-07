@@ -9,8 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] Find out what the round 2 browser QuickStatements errors were (#289736: 62, #289739: 27, about
-  1% against round 1's ~0.1%) and fix the generator if it is a pattern.
 
 - **Pinned tail (keep last)**
 

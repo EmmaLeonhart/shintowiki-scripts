@@ -1,3 +1,19 @@
+## 2026-10-07 — what the round 2 QuickStatements errors were
+
+Read from `api.php?action=get_commands_from_batch&filter=ERROR` for #289736 (62 errors):
+- **29 `remove_statement: Statement not found`** (P1448 ojp-hani, P361, P6375): removals round 1
+  had already done; the 10-07 regeneration ran before those batches finished, so the lines were
+  still staged. End state reached; pruning drops them. Not a generator defect.
+- **25 `No success flag set in API result` on labels**: relabels whose (label, description) pair
+  already exists on another item, e.g. `tenjinsha_en_labels.txt` "Tenjin-sha" → "Tenjin Shrine" on
+  Q70725130 / Q135260048 / Q134887317, "Iidama Shrine" on several Gunma items, and some
+  `Category:` items. This is step 4 of `docs/description_label_policy.md` (iterate if rejected);
+  no new pipeline built for it (closing phase).
+- **~9 `No such entity`**: QIDs in `p11250_miraheze_links.txt` / `p6262_fandom_links.txt` /
+  `daily_operations.txt` that are deleted (Q135069954, Q135289776) or redirected (Q129837100 →
+  Q49319273), plus two P973 adds on deleted items. Refused, so harmless.
+Round 2's ~1% rate against round 1's ~0.1% is the residue effect: round 2 was what was left.
+
 ## 2026-10-07 — three data tests skip on a drained file instead of failing (Emma's choice)
 
 - After the 10-07 regeneration, `french_elision_fixes.txt` (7 lines) and `ronsha_role_qualifiers.txt`
