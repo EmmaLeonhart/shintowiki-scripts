@@ -9,6 +9,13 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- [ ] Fix the 3 failing Tests checks on the staged QuickStatements data (Emma, 2026-10-07):
+  `test_derived_name_in_kana` (items both shipped and held), `test_descriptions_are_not_edited`
+  (Q135040933/Q135040944 same Izumo description), `test_no_file_undoes_another` (a file pair staging
+  one triple both ways). Fix the generators, never the tests; any dropped drip lines go to Emma first.
+- [ ] Find out what the round 2 browser QuickStatements errors were (#289736: 62, #289739: 27, about
+  1% against round 1's ~0.1%) and fix the generator if it is a pattern.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
