@@ -152,6 +152,14 @@ def test_ties_break_deterministically():
     assert first == gen.dominant(gen.collect_mates(list(reversed(rows))), "X神社")
 
 
+def test_an_item_with_any_disagreeing_row_is_held_not_shipped():
+    """Q135040614, 2026-10-07: one row tier 1, another tier 3. It must not ship."""
+    rows = [("Q1", "浅間神社", "Sengen Shrine", "せんげんじんじゃ", "せんげんじんじゃ", 1, ""),
+            ("Q1", "浅間神社", "Asamano Shrine", "あさまのじんじゃ", "せんげんじんじゃ", 3, ""),
+            ("Q2", "X神社", "X Shrine", "えっくすじんじゃ", None, 2, "")]
+    assert gen.build_lines(rows) == ['Q2|P1814|"えっくすじんじゃ"']
+
+
 # ---- the shipped file --------------------------------------------------------
 
 BATCH = os.path.join(MQ, "derived_name_in_kana.txt")

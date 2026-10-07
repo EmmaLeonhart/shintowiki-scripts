@@ -1,3 +1,13 @@
+## 2026-10-07 — derived kana: an item with any disagreeing row is held, never shipped
+
+- `test_no_disagreement_also_appears_in_the_shipped_batch` failed on one item: Q135040614 浅間神社
+  ("Asamano Shrine") came through the query in two rows, one tier 1 (せんげんじんじゃ, matching its
+  name-mates) and one tier 3 (あさまのじんじゃ from the en label). `build_lines` now holds any QID
+  with a tier-3 row; new unit test pins it. The one line is removed from the committed
+  `derived_name_in_kana.txt` so CI is green before the next regeneration (it is tier 3, which the
+  2026-09-10 ruling already holds back).
+- With the ojp-restore fix and the regeneration, all three data checks pass locally. Queue item done.
+
 ## 2026-10-07 — ojp name restores no longer fight the Ronsha removals
 
 - `test_no_file_undoes_another` failed: `ojp_name_restores.txt` re-added the Old Japanese official

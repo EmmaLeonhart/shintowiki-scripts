@@ -308,8 +308,12 @@ def classify(items, mates):
 
 
 def build_lines(rows):
+    # An item can arrive in more than one row (Q135040614 浅間神社, 2026-10-07: one row
+    # tier 1 and one tier 3). If any of its rows disagrees it is held, so it never
+    # gets a reading AND a work-file asking what its reading is.
+    held = {q for q, *_rest, tier, _title in rows if tier == 3}
     return [f"{q}|P1814|{s(kana)}" for q, ja, en, kana, mate, tier, title in rows
-            if tier in SHIP_TIERS]
+            if tier in SHIP_TIERS and q not in held]
 
 
 def publish_to_site(path):
