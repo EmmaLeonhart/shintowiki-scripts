@@ -1,3 +1,10 @@
+## 2026-10-08 — キヒサツミ (Kihisatsumi) translated (rev 3853101)
+
+- First of the Japanese-only need_translation pages. Translated in place (title kept: a move would
+  need Emma's word), every link as ill, Sfn keys kept so the Japanese bibliography still resolves,
+  need-translation and untranslated-character categories replaced by English ones.
+- Background tabs freeze in Chrome; reloading the wiki tab before scripting it wakes it.
+
 ## 2026-10-08 — translation order: untranslated first, retranslation last (Emma)
 
 - Emma: "retranslation should be the fucking last". Queue reordered: untranslated need_translation
