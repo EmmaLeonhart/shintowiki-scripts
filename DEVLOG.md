@@ -1,3 +1,7 @@
+## 2026-10-08 — Kikurihime: pasted Japanese section merged (rev 3853110)
+
+English stub plus the full pasted jawiki article. Merged into one English article (myth, name, worship sections; the Shoki passage kept in the original with a translation), links as ill, Japanese section and its need-translation / duplicated-content categories removed.
+
 ## 2026-10-08 — Ōshikōchi clan translated (rev 3853109)
 
 First of the English-titled pages still carrying Japanese text; this one was entirely Japanese. Links as ill. Remaining Shinto ones, by live CJK count: Kikurihime, Mononobe Shrine (Kashiwazaki), Okuni Shrine (Isesaki), Jichinsai, Tenshō Kōtai Jingūkyō, Inaba Shrine, Ono Shrine (Atsugi), Kotokuji Temple (Koka City), Miwa Shrine (Gifu).
