@@ -1,3 +1,10 @@
+## 2026-10-08 — 建比良鳥命 (Takehiratori) translated (rev 3853102)
+
+- The untranslated page beside the translated Takehi-Nateru (Q11065428 stays open, per CLAUDE.md:
+  translation was the next step, not a merge). Translated in place, links as ill; the two long
+  Nihon Shoki kanbun passages kept in collapsed quotes with English summaries. Now the pair is two
+  English pages for one item, which the duplicate-pair rules can take up.
+
 ## 2026-10-08 — キヒサツミ (Kihisatsumi) translated (rev 3853101)
 
 - First of the Japanese-only need_translation pages. Translated in place (title kept: a move would
