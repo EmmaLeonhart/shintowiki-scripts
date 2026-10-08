@@ -1,0 +1,31 @@
+{{Short description|River in Japan}}
+{{AI-generated |reason= [[Wikipedia:AI noticeboard#Immanuelle]]. |date=July 2026}}
+{{Infobox river
+| image              = Matsuura River from bridge at Sari, Ouchi, Karatsu.jpg
+| map                =
+{{Maplink|zoom=9|frame=yes|plain=yes|frame-align=center|frame-width=250|frame-height=250
+|raw=[ { "type": "ExternalData", "service": "geoline", "properties": { "stroke": "#66F", "stroke-width": 2 }, "query": "SELECT ?id ?geo ?idLabel (?idLabel as ?title)  WHERE { ?id wdt:P403 wd:{{wikidata|label|raw|page={{PAGENAME}}}} . SERVICE wikibase:label { bd:serviceParam wikibase:language 'en'. } }" },
+{ "type": "ExternalData", "service": "geoline", "properties": { "stroke": "#555", "stroke-width": 2 }, "query": "SELECT ?id ?geo ?idLabel (?idLabel as ?title)  WHERE { ?id wdt:P885 wd:{{wikidata|label|raw|page={{PAGENAME}}}} . SERVICE wikibase:label { bd:serviceParam wikibase:language 'en'. } }" },
+{ "type": "ExternalData", "service": "geoline", "properties": { "title": "{{wikidata|label|page={{PAGENAME}}}}", "stroke": "#05F", "stroke-width": 4 }, "ids": "{{wikidata|label|raw|page={{PAGENAME}}}}" } ] }}
+| pushpin_map        = Japan
+| mapframe-zoom      =
+}}
+The '''Matsuura River''' is a [[Classification of rivers in Japan|Class A river]] in Japan.<ref>{{Cite web |title=Rich wetlands that nurture life {{!}} Project Introduction {{!}} CTI Engineering Co., Ltd. |url=https://www.ctie.co.jp/english/project/project650.html |access-date=2023-10-30 |website=www.ctie.co.jp}}</ref><ref>{{Cite web |title=Matsuura River- River water level information - Yahoo! Weather & Disaster |url=https://emergency-weather.yahoo.co.jp/weather/en/river/8909020001/ |access-date=2023-10-30 |website=Yahoo!天気・災害 |language=en}}</ref><ref>{{Cite journal |last=Sato |first=R |date=1990-01-01 |title=The Actual Design of Fishways at Rivers of Japan |url=https://scholarworks.umass.edu/fishpassage_conference_proceedings/12 |journal=Proceedings of the International Symposium on Fishways '90}}</ref> The river flows through the cities of [[Karatsu, Saga|Karatsu]], [[Imari, Saga|Imari]], and [[Takeo, Saga|Takeo]] in [[Saga Prefecture]] in the northern part of [[Kyushu]].<ref>{{Cite journal |last1=Teramura |first1=Jun |last2=Shimatani |first2=Yukihiro |date=January 2021 |title=Advantages of the Open Levee (Kasumi-Tei), a Traditional Japanese River Technology on the Matsuura River, from an Ecosystem-Based Disaster Risk Reduction Perspective |journal=Water |language=en |volume=13 |issue=4 |pages=480 |doi=10.3390/w13040480 |issn=2073-4441 |doi-access=free }}</ref><ref>{{Cite web| title=Traditional and local knowledge of Eco-DRR in and around the Matsuura River | url=https://www.chikyu.ac.jp/rihn/cms_upload/publicity/112/matsuura_en.pdf | archive-url=https://web.archive.org/web/20231030163853/https://www.chikyu.ac.jp/rihn/cms_upload/publicity/112/matsuura_en.pdf | archive-date=2023-10-30}}</ref> It has historically had a lot of flooding risks.<ref>{{Cite web |title=Japan River Restoration Network (JRRN) {{!}} World's WATERFRONT: JAPAN |url=http://www.a-rr.net/jp/en/waterside/domestic/restoration_project/1525.html |access-date=2023-10-30 |website=www.a-rr.net}}</ref>
+
+{{Commons}}
+
+==See also==
+* [[Matsurokoku]]
+* [[Matsura-gun]]
+
+==References==
+{{reflist}}
+
+{{coord|33.4535|129.9807|format=dms|type:river_region:JP|display=title}}
+
+[[Category:Rivers of Japan]]
+
+
+
+
+{{Japan-geo-stub}}

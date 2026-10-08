@@ -1,0 +1,2234 @@
+{
+ "rows": [
+  {
+   "title": "武",
+   "qid": "Q11123750",
+   "ja": "武",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "市",
+   "qid": "Q11059411",
+   "ja": "市 (曖昧さ回避)",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Makimuku",
+   "qid": "Q123165196",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kengoshizuka Kofun",
+   "qid": "Q11571102",
+   "ja": "牽牛子塚古墳",
+   "simple": null,
+   "p11250": [
+    "shinto:Kengoshizuka Kofun"
+   ]
+  },
+  {
+   "title": "Nitta Shrine",
+   "qid": "Q11503755",
+   "ja": "新田神社",
+   "simple": "Nitta Shrine",
+   "p11250": [
+    "shinto:Nitta Shrine"
+   ]
+  },
+  {
+   "title": "Aso clan",
+   "qid": "Q11657653",
+   "ja": "阿蘇氏",
+   "simple": null,
+   "p11250": [
+    "shinto:Aso clan"
+   ]
+  },
+  {
+   "title": "Shinkai (divine rank)",
+   "qid": "Q11591025",
+   "ja": "神階",
+   "simple": null,
+   "p11250": [
+    "shinto:Shinkai (divine rank)"
+   ]
+  },
+  {
+   "title": "帝",
+   "qid": "Q10470304",
+   "ja": "帝",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Xuastvanift",
+   "qid": "Q5691422",
+   "ja": null,
+   "simple": "Huastvanift",
+   "p11250": []
+  },
+  {
+   "title": "Jūzenji",
+   "qid": "Q123524325",
+   "ja": "十禅師",
+   "simple": null,
+   "p11250": [
+    "shinto:Jūzenji"
+   ]
+  },
+  {
+   "title": "Keta shrine",
+   "qid": "Q123295710",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Symbiomycota",
+   "qid": "Q81642012",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "神道",
+   "qid": "Q118986257",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Yaoyorozu no Kami",
+   "qid": "Q118906758",
+   "ja": "八百万の神",
+   "simple": "Yaoyorozu no Kami",
+   "p11250": [
+    "shinto:Yaoyorozu no Kami"
+   ]
+  },
+  {
+   "title": "Pneophyllum cetinaensis",
+   "qid": "Q105468285",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Takakuraji",
+   "qid": "Q11668757",
+   "ja": "高倉下",
+   "simple": null,
+   "p11250": [
+    "shinto:Takakuraji"
+   ]
+  },
+  {
+   "title": "Koxinga Shrine",
+   "qid": "Q8010918",
+   "ja": "延平郡王祠",
+   "simple": null,
+   "p11250": [
+    "shinto:Koxinga Shrine"
+   ]
+  },
+  {
+   "title": "Hokenoyama Kofun",
+   "qid": "Q11337664",
+   "ja": "ホケノ山古墳",
+   "simple": null,
+   "p11250": [
+    "shinto:Hokenoyama Kofun"
+   ]
+  },
+  {
+   "title": "Makimuku Ishizuka Kofun",
+   "qid": "Q11608505",
+   "ja": "纒向石塚古墳",
+   "simple": null,
+   "p11250": [
+    "shinto:Makimuku Ishizuka Kofun"
+   ]
+  },
+  {
+   "title": "Yamato-totohi-momoso-hime",
+   "qid": "Q11387098",
+   "ja": "倭迹迹日百襲姫命",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Yamato clan",
+   "qid": "Q118150436",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Masakaki",
+   "qid": "Q11583274",
+   "ja": "真榊",
+   "simple": "Masakaki",
+   "p11250": [
+    "shinto:Masakaki"
+   ]
+  },
+  {
+   "title": "San Marino Shrine",
+   "qid": "Q21192776",
+   "ja": "サンマリノ神社",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Shinmei shrines",
+   "qid": "Q11590310",
+   "ja": "神明神社",
+   "simple": "Shinmei shrines",
+   "p11250": []
+  },
+  {
+   "title": "Qiuming",
+   "qid": "Q118263433",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kannamesai Festival",
+   "qid": "Q11255045",
+   "ja": "神嘗祭",
+   "simple": null,
+   "p11250": [
+    "shinto:Kannamesai Festival"
+   ]
+  },
+  {
+   "title": "Yamanashi at-large district (House of Representatives)",
+   "qid": "Q11469656",
+   "ja": "山梨県全県区",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Araki Shrine",
+   "qid": "Q122973464",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Rokusho (disambiguation)",
+   "qid": "Q123314450",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Ame-no-ohabari",
+   "qid": "Q10939046",
+   "ja": "天之尾羽張",
+   "simple": null,
+   "p11250": [
+    "shinto:Ame-no-ohabari"
+   ]
+  },
+  {
+   "title": "Kaname-ishi",
+   "qid": "Q11630053",
+   "ja": "要石",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Ōharae",
+   "qid": "Q11261910",
+   "ja": "大祓",
+   "simple": "Ōharae-shiki",
+   "p11250": [
+    "shinto:Ōharae-shiki"
+   ]
+  },
+  {
+   "title": "Kinen-sai",
+   "qid": "Q118906710",
+   "ja": "祈年祭",
+   "simple": "Kinensai",
+   "p11250": [
+    "shinto:Kinensai"
+   ]
+  },
+  {
+   "title": "Himegami",
+   "qid": "Q22070227",
+   "ja": "比売神",
+   "simple": null,
+   "p11250": [
+    "shinto:Himegami"
+   ]
+  },
+  {
+   "title": "Nunakawahime",
+   "qid": "Q11142832",
+   "ja": "沼河比売",
+   "simple": null,
+   "p11250": [
+    "shinto:Nunakawahime"
+   ]
+  },
+  {
+   "title": "Ame-no-Fuyukinu",
+   "qid": "Q48744862",
+   "ja": "天之冬衣神",
+   "simple": null,
+   "p11250": [
+    "shinto:Ame-no-Fuyukinu"
+   ]
+  },
+  {
+   "title": "Omizunu",
+   "qid": "Q48745416",
+   "ja": "淤美豆奴神",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Nitta Kuniteru",
+   "qid": "Q123561044",
+   "ja": "新田邦光",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kunitama",
+   "qid": "Q9692242",
+   "ja": "国魂",
+   "simple": "Kunitama",
+   "p11250": [
+    "shinto:Kunitama"
+   ]
+  },
+  {
+   "title": "Mount Yudono",
+   "qid": "Q3322191",
+   "ja": "湯殿山 (山形県)",
+   "simple": "Mount Yudono",
+   "p11250": []
+  },
+  {
+   "title": "Mount Haguro",
+   "qid": "Q3090765",
+   "ja": "羽黒山 (山形県)",
+   "simple": "Mount Haguro",
+   "p11250": []
+  },
+  {
+   "title": "Oyamakui no Kami",
+   "qid": "Q10935105",
+   "ja": "大山咋神",
+   "simple": "Oyamakui no Kami",
+   "p11250": []
+  },
+  {
+   "title": "Murders of Stanislav Markelov and Anastasia Baburova",
+   "qid": "Q4468588",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Dragon vein",
+   "qid": "Q11679340",
+   "ja": "龍穴",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Jichinsai",
+   "qid": "Q15467069",
+   "ja": "地鎮祭",
+   "simple": "Jichinsai",
+   "p11250": [
+    "shinto:Jichinsai"
+   ]
+  },
+  {
+   "title": "Tagata Shrine",
+   "qid": "Q60581",
+   "ja": "田縣神社",
+   "simple": "Tagata Shrine",
+   "p11250": [
+    "shinto:Tagata Shrine"
+   ]
+  },
+  {
+   "title": "Yasakatome",
+   "qid": "Q9150392",
+   "ja": "八坂刀売神",
+   "simple": "Yasakatome",
+   "p11250": [
+    "shinto:Yasakatome"
+   ]
+  },
+  {
+   "title": "Tainan Shrine",
+   "qid": "Q11411931",
+   "ja": "台南神社",
+   "simple": "Tainan Shrine",
+   "p11250": [
+    "shinto:Tainan Shrine"
+   ]
+  },
+  {
+   "title": "History of religion in China",
+   "qid": "Q10873648",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Nitta Shrine (Ōta)",
+   "qid": "Q22119884",
+   "ja": "新田神社 (大田区)",
+   "simple": null,
+   "p11250": [
+    "shinto:Nitta Shrine (Ōta)"
+   ]
+  },
+  {
+   "title": "Kumano Taisha",
+   "qid": "Q11568887",
+   "ja": "熊野大社",
+   "simple": "Kumano Taisha",
+   "p11250": [
+    "shinto:Kumano Taisha"
+   ]
+  },
+  {
+   "title": "Ōarai Isosaki Shrine",
+   "qid": "Q11437230",
+   "ja": "大洗磯前神社",
+   "simple": "Ōarai Isosaki Shrine",
+   "p11250": [
+    "shinto:Oarai Isosaki Shrine"
+   ]
+  },
+  {
+   "title": "Flins (mythology)",
+   "qid": "Q3297038",
+   "ja": null,
+   "simple": "Flins",
+   "p11250": []
+  },
+  {
+   "title": "Kupala",
+   "qid": "Q2497579",
+   "ja": "クパーラ",
+   "simple": "Kupala",
+   "p11250": []
+  },
+  {
+   "title": "Chislobog",
+   "qid": "Q12170315",
+   "ja": null,
+   "simple": "Chislobog",
+   "p11250": []
+  },
+  {
+   "title": "Battle Organization of Russian Nationalists",
+   "qid": "Q16627275",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kōshiki",
+   "qid": "Q11632191",
+   "ja": "講式",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kamu Ōichihime",
+   "qid": "Q11588867",
+   "ja": "神大市比売",
+   "simple": null,
+   "p11250": [
+    "shinto:Kamuo Ichihime"
+   ]
+  },
+  {
+   "title": "Ikagashikome",
+   "qid": "Q10885176",
+   "ja": "伊香色謎命",
+   "simple": null,
+   "p11250": [
+    "shinto:Ikagashikome"
+   ]
+  },
+  {
+   "title": "Umashiashikabihikoji",
+   "qid": "Q10946168",
+   "ja": "ウマシアシカビヒコヂ",
+   "simple": null,
+   "p11250": [
+    "shinto:Umashi-Ashikabi-Hikoji"
+   ]
+  },
+  {
+   "title": "Mikeirino no Mikoto",
+   "qid": "Q11071195",
+   "ja": "三毛入野命",
+   "simple": null,
+   "p11250": [
+    "shinto:Mikeiri no Mikoto"
+   ]
+  },
+  {
+   "title": "Itsuse no Mikoto",
+   "qid": "Q10881970",
+   "ja": "彦五瀬命",
+   "simple": null,
+   "p11250": [
+    "shinto:Itsuse no Mikoto"
+   ]
+  },
+  {
+   "title": "Ashinazuchi and Tenazuchi",
+   "qid": "Q643763",
+   "ja": "アシナヅチ・テナヅチ",
+   "simple": "Ashinazuchi and Tenazuchi",
+   "p11250": [
+    "shinto:Ashinazuchi and Tenazuchi"
+   ]
+  },
+  {
+   "title": "Tokoyo",
+   "qid": "Q117084791",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Ministry of Religion",
+   "qid": "Q117074650",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Confucian Shinto",
+   "qid": "Q18337053",
+   "ja": "儒家神道",
+   "simple": "Confucian Shinto",
+   "p11250": [
+    "shinto:Confucian Shinto"
+   ]
+  },
+  {
+   "title": "Sayhul",
+   "qid": "Q138936601",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "*Péh₂usōn",
+   "qid": "Q117184271",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "*Seh₂ul and *Meh₁not",
+   "qid": "Q117149647",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "*H₂epom Nepōts",
+   "qid": "Q117150135",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Irai Ningthou",
+   "qid": "Q107493582",
+   "ja": null,
+   "simple": "Irai Ningthou",
+   "p11250": []
+  },
+  {
+   "title": "Jagoi",
+   "qid": "Q117336859",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Chainarol",
+   "qid": "Q107665373",
+   "ja": null,
+   "simple": "Chainarol",
+   "p11250": []
+  },
+  {
+   "title": "Loiyumpa Silyel",
+   "qid": "Q107668359",
+   "ja": null,
+   "simple": "Loiyumpa Silyel",
+   "p11250": []
+  },
+  {
+   "title": "Yengkhom",
+   "qid": "Q107669786",
+   "ja": null,
+   "simple": "Yengkhom",
+   "p11250": []
+  },
+  {
+   "title": "Keithellakpam",
+   "qid": "Q107667913",
+   "ja": null,
+   "simple": "Keithellakpam",
+   "p11250": []
+  },
+  {
+   "title": "Thamanglang",
+   "qid": "Q108086086",
+   "ja": null,
+   "simple": "Thamanglang",
+   "p11250": []
+  },
+  {
+   "title": "Khui Ningomba",
+   "qid": "Q108004128",
+   "ja": null,
+   "simple": "Khui Ningomba",
+   "p11250": []
+  },
+  {
+   "title": "Lourembam",
+   "qid": "Q107668352",
+   "ja": null,
+   "simple": "Lourembam",
+   "p11250": []
+  },
+  {
+   "title": "Khuyoi Tompok",
+   "qid": "Q107342581",
+   "ja": null,
+   "simple": "Khuyoi Tompok",
+   "p11250": []
+  },
+  {
+   "title": "Naophangba",
+   "qid": "Q108086031",
+   "ja": null,
+   "simple": "Naophangba",
+   "p11250": []
+  },
+  {
+   "title": "Naokhamba",
+   "qid": "Q108044724",
+   "ja": null,
+   "simple": "Naokhamba",
+   "p11250": []
+  },
+  {
+   "title": "Taothingmang",
+   "qid": "Q107996092",
+   "ja": null,
+   "simple": "Taothingmang",
+   "p11250": []
+  },
+  {
+   "title": "Ningthou Kangba",
+   "qid": "Q107283731",
+   "ja": null,
+   "simple": "Ningthou Kangba",
+   "p11250": []
+  },
+  {
+   "title": "Tangja Leela Pakhangba",
+   "qid": "Q107328197",
+   "ja": null,
+   "simple": "Tangja Leela Pakhangba",
+   "p11250": []
+  },
+  {
+   "title": "Sameirang",
+   "qid": "Q108086065",
+   "ja": null,
+   "simple": "Sameirang",
+   "p11250": []
+  },
+  {
+   "title": "Pengsiba",
+   "qid": "Q108044725",
+   "ja": null,
+   "simple": "Pengsiba",
+   "p11250": []
+  },
+  {
+   "title": "Ningthourol Lambuba",
+   "qid": "Q107669132",
+   "ja": null,
+   "simple": "Ningthourol Lambuba",
+   "p11250": []
+  },
+  {
+   "title": "Khumanlol",
+   "qid": "Q107668028",
+   "ja": null,
+   "simple": "Khumanlol",
+   "p11250": []
+  },
+  {
+   "title": "Khuman kingdom",
+   "qid": "Q107668026",
+   "ja": null,
+   "simple": "Khuman Leipaak",
+   "p11250": []
+  },
+  {
+   "title": "Maliyapham Palcha",
+   "qid": "Q107283604",
+   "ja": null,
+   "simple": "Maliyapham Palcha",
+   "p11250": []
+  },
+  {
+   "title": "Naorem",
+   "qid": "Q107669036",
+   "ja": null,
+   "simple": "Naorem",
+   "p11250": []
+  },
+  {
+   "title": "Laininghal Naoriya Phulo",
+   "qid": "Q107695058",
+   "ja": null,
+   "simple": "Laininghan Naoriya Phulo",
+   "p11250": []
+  },
+  {
+   "title": "Meitei philosophy",
+   "qid": "Q107668729",
+   "ja": null,
+   "simple": "Meitei philosophy",
+   "p11250": []
+  },
+  {
+   "title": "Ura Konthouba",
+   "qid": "Q108086093",
+   "ja": null,
+   "simple": "Ura Konthouba",
+   "p11250": []
+  },
+  {
+   "title": "Naothingkhong",
+   "qid": "Q108114079",
+   "ja": null,
+   "simple": "Naothingkhong",
+   "p11250": []
+  },
+  {
+   "title": "Tharon",
+   "qid": "Q106545975",
+   "ja": null,
+   "simple": "Tharon",
+   "p11250": []
+  },
+  {
+   "title": "Luwang Ningthou Punshiba",
+   "qid": "Q107283700",
+   "ja": null,
+   "simple": "Luwang Ningthou Punshiba",
+   "p11250": []
+  },
+  {
+   "title": "Meitei festivals",
+   "qid": "Q107668720",
+   "ja": null,
+   "simple": "Meitei festivals",
+   "p11250": []
+  },
+  {
+   "title": "Sana Konung",
+   "qid": "Q107669428",
+   "ja": null,
+   "simple": "Sana Konung",
+   "p11250": []
+  },
+  {
+   "title": "Poireiton Khunthok",
+   "qid": "Q107669314",
+   "ja": null,
+   "simple": "Poireiton Khunthok",
+   "p11250": []
+  },
+  {
+   "title": "Nungpan Ponpi Luwaopa",
+   "qid": "Q107669162",
+   "ja": null,
+   "simple": "Nungpan Ponpi Luwaopa",
+   "p11250": []
+  },
+  {
+   "title": "Pānthoibī Khōnggūl",
+   "qid": "Q107669229",
+   "ja": null,
+   "simple": "Panthoibi Khonggul",
+   "p11250": []
+  },
+  {
+   "title": "Phouoibi Waron",
+   "qid": "Q107669299",
+   "ja": null,
+   "simple": "Phouoibi Waron",
+   "p11250": []
+  },
+  {
+   "title": "Imphal Polo Ground",
+   "qid": "Q107667779",
+   "ja": null,
+   "simple": "Imphal Polo Ground",
+   "p11250": []
+  },
+  {
+   "title": "Manipur Polo International 2014",
+   "qid": "Q110401777",
+   "ja": null,
+   "simple": "Manipur Polo International 2014",
+   "p11250": []
+  },
+  {
+   "title": "Maiba",
+   "qid": "Q107668436",
+   "ja": null,
+   "simple": "Maiba",
+   "p11250": []
+  },
+  {
+   "title": "Apokpa",
+   "qid": "Q107493365",
+   "ja": null,
+   "simple": "Apokpa",
+   "p11250": []
+  },
+  {
+   "title": "Ougri",
+   "qid": "Q107669200",
+   "ja": null,
+   "simple": "Ougri",
+   "p11250": []
+  },
+  {
+   "title": "Leithak Leikharol",
+   "qid": "Q107668191",
+   "ja": null,
+   "simple": "Leithak Leikharol",
+   "p11250": []
+  },
+  {
+   "title": "Haosi Namoinu",
+   "qid": "Q108532643",
+   "ja": null,
+   "simple": "Haosi Namoinu",
+   "p11250": []
+  },
+  {
+   "title": "Khongjomnubi Nonggarol",
+   "qid": "Q107668015",
+   "ja": null,
+   "simple": "Khongjomnubi Nonggarol",
+   "p11250": []
+  },
+  {
+   "title": "Kabok",
+   "qid": "Q107695057",
+   "ja": null,
+   "simple": "Kabok",
+   "p11250": []
+  },
+  {
+   "title": "Tapta",
+   "qid": "Q108559741",
+   "ja": null,
+   "simple": "Tapta",
+   "p11250": []
+  },
+  {
+   "title": "Leima Jagoi",
+   "qid": "Q107668159",
+   "ja": null,
+   "simple": "Leima Jagoi",
+   "p11250": []
+  },
+  {
+   "title": "Koiren Leima",
+   "qid": "Q107316429",
+   "ja": null,
+   "simple": "Koiren Leima",
+   "p11250": []
+  },
+  {
+   "title": "Poireiton",
+   "qid": "Q107325375",
+   "ja": null,
+   "simple": "Poireiton",
+   "p11250": []
+  },
+  {
+   "title": "Atingkok",
+   "qid": "Q117075342",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "List of figures in Meitei mythology",
+   "qid": "Q106235086",
+   "ja": null,
+   "simple": "List of figures in Meitei mythology",
+   "p11250": []
+  },
+  {
+   "title": "Meitei culture",
+   "qid": "Q107668713",
+   "ja": null,
+   "simple": "Meitei culture",
+   "p11250": []
+  },
+  {
+   "title": "Laihui Ensemble",
+   "qid": "Q107668115",
+   "ja": null,
+   "simple": "Laihui Ensemble",
+   "p11250": []
+  },
+  {
+   "title": "Prehistory of Manipur",
+   "qid": "Q107230378",
+   "ja": null,
+   "simple": "Prehistory of Manipur",
+   "p11250": []
+  },
+  {
+   "title": "Nongban",
+   "qid": "Q107669158",
+   "ja": null,
+   "simple": "Nongban",
+   "p11250": []
+  },
+  {
+   "title": "Sandrembi and Chaisra",
+   "qid": "Q107669439",
+   "ja": null,
+   "simple": "Sandrembi Chaisra",
+   "p11250": []
+  },
+  {
+   "title": "Khoirentak tiger",
+   "qid": "Q107527834",
+   "ja": null,
+   "simple": "Khoirentak tiger",
+   "p11250": []
+  },
+  {
+   "title": "Khamba Thoibi Jagoi",
+   "qid": "Q107612872",
+   "ja": null,
+   "simple": "Khamba Thoibi Jagoi",
+   "p11250": []
+  },
+  {
+   "title": "Samaton",
+   "qid": "Q107508959",
+   "ja": null,
+   "simple": "Samaton",
+   "p11250": []
+  },
+  {
+   "title": "Hingchabi",
+   "qid": "Q107526158",
+   "ja": null,
+   "simple": "Hingchabi",
+   "p11250": []
+  },
+  {
+   "title": "Meitei folktales",
+   "qid": "Q107576803",
+   "ja": null,
+   "simple": "Meitei folktales",
+   "p11250": []
+  },
+  {
+   "title": "List of rulers of Moirang",
+   "qid": "Q107668324",
+   "ja": null,
+   "simple": "List of kings of the Moirang dynasty",
+   "p11250": []
+  },
+  {
+   "title": "Keke Moirang",
+   "qid": "Q107388196",
+   "ja": null,
+   "simple": "Ancient Moirang",
+   "p11250": []
+  },
+  {
+   "title": "Trito",
+   "qid": "Q116821285",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "祭",
+   "qid": "Q123184836",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Sengū",
+   "qid": "Q2271023",
+   "ja": "遷宮",
+   "simple": null,
+   "p11250": [
+    "shinto:Sengū"
+   ]
+  },
+  {
+   "title": "Toraijin",
+   "qid": "Q11561926",
+   "ja": "渡来人",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Si Xingjian",
+   "qid": "Q8463911",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Hirayama Seisai",
+   "qid": "Q24874598",
+   "ja": "平山省斎",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Miyazu-hime",
+   "qid": "Q11455216",
+   "ja": "宮簀媛",
+   "simple": null,
+   "p11250": [
+    "shinto:Miyazu-hime"
+   ]
+  },
+  {
+   "title": "Matsuura River",
+   "qid": "Q11531799",
+   "ja": "松浦川",
+   "simple": "Matsuura River",
+   "p11250": []
+  },
+  {
+   "title": "Ji-shu",
+   "qid": "Q696966",
+   "ja": "時宗",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Senge Takatomi",
+   "qid": "Q11405449",
+   "ja": "千家尊福",
+   "simple": "Takatomi Senge",
+   "p11250": [
+    "shinto:Senge Takatomi"
+   ]
+  },
+  {
+   "title": "Pavilion of Harmony",
+   "qid": "Q24835913",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Yosotarashi-hime",
+   "qid": "Q10869205",
+   "ja": "世襲足媛",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Isuzuyori-hime",
+   "qid": "Q10881557",
+   "ja": "五十鈴依媛命",
+   "simple": "Isuzuyori-hime",
+   "p11250": [
+    "shinto:Isuzuyori-hime"
+   ]
+  },
+  {
+   "title": "Takuhadachijihime",
+   "qid": "Q11110848",
+   "ja": "栲幡千千姫命",
+   "simple": null,
+   "p11250": [
+    "shinto:Takuhadachiji-hime"
+   ]
+  },
+  {
+   "title": "Nagasaki Gokoku Shrine",
+   "qid": "Q11652880",
+   "ja": "長崎縣護國神社",
+   "simple": "Nagasaki Gokoku Shrine",
+   "p11250": [
+    "shinto:Nagasaki Gokoku Shrine"
+   ]
+  },
+  {
+   "title": "Furogu Shrine",
+   "qid": "Q11282543",
+   "ja": "風浪宮",
+   "simple": "Furogu Shrine",
+   "p11250": [
+    "shinto:Furogu Shrine"
+   ]
+  },
+  {
+   "title": "Equinoctial hours",
+   "qid": "Q255949",
+   "ja": "定時法",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Tokoyo no kuni",
+   "qid": "Q11060259",
+   "ja": "常世の国",
+   "simple": "Tokoyo",
+   "p11250": [
+    "shinto:Tokoyo no kuni"
+   ]
+  },
+  {
+   "title": "Private equity in the 2020s",
+   "qid": "Q115800637",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Private equity in the 2010s",
+   "qid": "Q115804102",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Zarathustra in Manichaeism",
+   "qid": "Q116788652",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "The Buddha in Manichaeism",
+   "qid": "Q116777521",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "*Trito",
+   "qid": "Q116847035",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Rod of Iron Ministries",
+   "qid": "Q50295315",
+   "ja": "世界平和統一聖殿",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Silent reading",
+   "qid": "Q3831192",
+   "ja": null,
+   "simple": "Silent reading",
+   "p11250": []
+  },
+  {
+   "title": "Tianhuang Emperor (constellation)",
+   "qid": "Q17023714",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "HD 212710",
+   "qid": "Q10940504",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Tianhuang Emperor (disambiguation)",
+   "qid": "Q10940505",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Abdication system",
+   "qid": "Q1040489",
+   "ja": "禅譲",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Huaguang Dadi",
+   "qid": "Q10566601",
+   "ja": "華光大帝",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kong Tek Chun Ong",
+   "qid": "Q10288712",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Lai Yonghai",
+   "qid": "Q57731671",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Dongyue Dadi",
+   "qid": "Q1241488",
+   "ja": "東岳大帝",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Death in vain",
+   "qid": "Q10346054",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "*Manu and *Yemo",
+   "qid": "Q116784092",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Ritual opera",
+   "qid": "Q13928684",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Spring and Autumn Courts",
+   "qid": "Q11088858",
+   "ja": "春秋決獄",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Si (surname 斯)",
+   "qid": "Q10302595",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Miếu",
+   "qid": "Q137709586",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Ci shrine",
+   "qid": "Q30941226",
+   "ja": null,
+   "simple": "Ci shrine",
+   "p11250": []
+  },
+  {
+   "title": "Martyrs' shrines (China)",
+   "qid": "Q6800982",
+   "ja": null,
+   "simple": "Martyrs Shrine",
+   "p11250": []
+  },
+  {
+   "title": "Eight surnames of Zhurong",
+   "qid": "Q19856113",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "The common end of myriad good deeds",
+   "qid": "Q9609095",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Yun (ancient surname)",
+   "qid": "Q10943033",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Tiangong censer",
+   "qid": "Q55696220",
+   "ja": "天公炉",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Miao shrine",
+   "qid": "Q29043583",
+   "ja": null,
+   "simple": "Miao shrine",
+   "p11250": []
+  },
+  {
+   "title": "Eight Great Surnames of Chinese Antiquity",
+   "qid": "Q304317",
+   "ja": "上古八大姓",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "White Emperor",
+   "qid": "Q100975136",
+   "ja": null,
+   "simple": "Baidi (god)",
+   "p11250": []
+  },
+  {
+   "title": "Chidi (god)",
+   "qid": "Q15869982",
+   "ja": null,
+   "simple": "Chidi (god)",
+   "p11250": []
+  },
+  {
+   "title": "Taiwanese folk beliefs",
+   "qid": "Q9585236",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Doorway worship",
+   "qid": "Q11077357",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Unity of Heaven and humanity",
+   "qid": "Q24841804",
+   "ja": null,
+   "simple": "Unity of Heaven and humanity",
+   "p11250": []
+  },
+  {
+   "title": "Sacrifice to Heaven",
+   "qid": "Q11591092",
+   "ja": "祭天",
+   "simple": "Sacrifice to Heaven",
+   "p11250": []
+  },
+  {
+   "title": "Lekkerbekje",
+   "qid": "Q2180951",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Chinese ritual music",
+   "qid": "Q14610280",
+   "ja": null,
+   "simple": "Ritual and music system",
+   "p11250": []
+  },
+  {
+   "title": "Cheng brothers",
+   "qid": "Q48880876",
+   "ja": "二程",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Religious Confucianism",
+   "qid": "Q10889441",
+   "ja": "儒教",
+   "simple": "Religious Confucianism",
+   "p11250": []
+  },
+  {
+   "title": "Three Ritual Classics",
+   "qid": "Q11356847",
+   "ja": "三礼",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Confucian royal ancestral shrine",
+   "qid": "Q10948212",
+   "ja": "宗廟",
+   "simple": "Confucian royal ancestral shrine",
+   "p11250": []
+  },
+  {
+   "title": "Simu Xin Ding",
+   "qid": "Q9596244",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Landrat",
+   "qid": "Q514725",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Shrine Parishioner Registration",
+   "qid": "Q11547793",
+   "ja": "氏子調",
+   "simple": "Shrine Parishioner Registration",
+   "p11250": []
+  },
+  {
+   "title": "Dei of Wa",
+   "qid": "Q11594489",
+   "ja": "禰",
+   "simple": null,
+   "p11250": [
+    "shinto:Dei of Wa"
+   ]
+  },
+  {
+   "title": "Kō of Wa",
+   "qid": "Q28692300",
+   "ja": "興",
+   "simple": null,
+   "p11250": [
+    "shinto:Kō of Wa"
+   ]
+  },
+  {
+   "title": "Yang Wendu",
+   "qid": "Q11118400",
+   "ja": "楊文度",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Sai of Wa",
+   "qid": "Q28692299",
+   "ja": "済",
+   "simple": null,
+   "p11250": [
+    "shinto:Sai of Wa"
+   ]
+  },
+  {
+   "title": "Chin of Wa",
+   "qid": "Q28692298",
+   "ja": "珍",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "San of Wa",
+   "qid": "Q28692297",
+   "ja": "讃",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Bu of Wa",
+   "qid": "Q28692301",
+   "ja": "武 (倭王)",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Cobalt in biology",
+   "qid": "Q112872207",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Molybdenum in biology",
+   "qid": "Q112872198",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Zinc in biology",
+   "qid": "Q112872206",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Hydrogen sulfide chemosynthesis",
+   "qid": "Q113101008",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Susa Shrine",
+   "qid": "Q11664502",
+   "ja": "須佐神社 (出雲市)",
+   "simple": null,
+   "p11250": [
+    "shinto:Susa Shrine"
+   ]
+  },
+  {
+   "title": "Inscribed mirror",
+   "qid": "Q112835927",
+   "ja": "異体字銘帯鏡",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Mirror with linked arcs",
+   "qid": "Q11394579",
+   "ja": "内行花文鏡",
+   "simple": null,
+   "p11250": [
+    "shinto:Flower mirror"
+   ]
+  },
+  {
+   "title": "Toumakoku",
+   "qid": "Q11497452",
+   "ja": "投馬国",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Fumikoku",
+   "qid": "Q11361710",
+   "ja": "不弥国",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Shujukoku",
+   "qid": "Q22123420",
+   "ja": "侏儒国",
+   "simple": null,
+   "p11250": [
+    "shinto:Shujukoku"
+   ]
+  },
+  {
+   "title": "Black tooth country",
+   "qid": "Q11179744",
+   "ja": "黒歯国",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Large flower mirror",
+   "qid": "Q11433747",
+   "ja": "大型内行花文鏡",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Chikushikoku",
+   "qid": "Q97200371",
+   "ja": "竹斯国",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Religious Affairs Bureau (disambiguation)",
+   "qid": "Q112781160",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Itokoku",
+   "qid": "Q10885162",
+   "ja": "伊都国",
+   "simple": null,
+   "p11250": [
+    "shinto:Itokoku"
+   ]
+  },
+  {
+   "title": "Shin'okoku",
+   "qid": "Q6398782",
+   "ja": "秦王国",
+   "simple": null,
+   "p11250": [
+    "shinto:Shin'okoku"
+   ]
+  },
+  {
+   "title": "Matsurokoku",
+   "qid": "Q11519632",
+   "ja": "末ら国",
+   "simple": null,
+   "p11250": [
+    "shinto:Matsurokoku"
+   ]
+  },
+  {
+   "title": "Bureau of Shrines",
+   "qid": "Q11590701",
+   "ja": "神社局",
+   "simple": null,
+   "p11250": [
+    "shinto:Bureau of Shrines"
+   ]
+  },
+  {
+   "title": "Bureau of Religions",
+   "qid": "Q108816985",
+   "ja": "宗教局",
+   "simple": null,
+   "p11250": [
+    "shinto:Bureau of Religions"
+   ]
+  },
+  {
+   "title": "Bureau of Shrines and Temples",
+   "qid": "Q11588366",
+   "ja": "社寺局",
+   "simple": null,
+   "p11250": [
+    "shinto:Bureau of Shrines and Temples"
+   ]
+  },
+  {
+   "title": "Himikoko",
+   "qid": "Q10906043",
+   "ja": "卑弥弓呼",
+   "simple": null,
+   "p11250": [
+    "shinto:Himikoko"
+   ]
+  },
+  {
+   "title": "Kukochihiko",
+   "qid": "Q11571388",
+   "ja": "狗古智卑狗",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kununokuni",
+   "qid": "Q11571391",
+   "ja": "狗奴国",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Shrine Consolidation Policy",
+   "qid": "Q11590700",
+   "ja": "神社合祀",
+   "simple": "Shrine Consolidation Policy",
+   "p11250": [
+    "shinto:Shrine Consolidation Policy"
+   ]
+  },
+  {
+   "title": "Alexievsky cross",
+   "qid": "Q78913526",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Nagakusa Tenjin Shrine",
+   "qid": "Q11653648",
+   "ja": "長草天神社",
+   "simple": null,
+   "p11250": [
+    "shinto:Nagakusa Tenjin Shrine"
+   ]
+  },
+  {
+   "title": "Shirahigetawara Shrine",
+   "qid": "Q22119048",
+   "ja": "白鬚田原神社",
+   "simple": null,
+   "p11250": [
+    "shinto:Shirahigetawara Shrine"
+   ]
+  },
+  {
+   "title": "Chinju no mori",
+   "qid": "Q11651158",
+   "ja": "鎮守の森",
+   "simple": "Chinju no Mori",
+   "p11250": [
+    "shinto:Chinju no Mori"
+   ]
+  },
+  {
+   "title": "Keitai–Kinmei Civil War",
+   "qid": "Q11607004",
+   "ja": "継体・欽明朝の内乱",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Moated settlements",
+   "qid": "Q60995739",
+   "ja": "環濠集落",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Doburoku Matsuri",
+   "qid": "Q23997826",
+   "ja": "どぶろく祭り",
+   "simple": null,
+   "p11250": [
+    "shinto:Doburoku Matsuri"
+   ]
+  },
+  {
+   "title": "Akumochizake",
+   "qid": "Q11567016",
+   "ja": "灰持酒",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Sanbō",
+   "qid": "Q11355480",
+   "ja": "三方 (神道)",
+   "simple": null,
+   "p11250": [
+    "shinto:Sanbo"
+   ]
+  },
+  {
+   "title": "Fukko Shinto",
+   "qid": "Q11489378",
+   "ja": "復古神道",
+   "simple": null,
+   "p11250": [
+    "shinto:Fukko Shinto"
+   ]
+  },
+  {
+   "title": "Futami Okitama Shrine",
+   "qid": "Q64969614",
+   "ja": "二見興玉神社",
+   "simple": null,
+   "p11250": [
+    "shinto:Futami Okitama Shrine"
+   ]
+  },
+  {
+   "title": "Futami-ga-ura, Mie",
+   "qid": "Q11371796",
+   "ja": "二見浦",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Present life",
+   "qid": "Q20183021",
+   "ja": "現世",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kannabi",
+   "qid": "Q11588874",
+   "ja": "神奈備",
+   "simple": "Kannabi",
+   "p11250": [
+    "shinto:Kannabi"
+   ]
+  },
+  {
+   "title": "Institute of Divinities",
+   "qid": "Q11590709",
+   "ja": "神祇院",
+   "simple": "Institute of Divinities",
+   "p11250": []
+  },
+  {
+   "title": "Izborsky Club",
+   "qid": "Q4198339",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Alexei Dzermant",
+   "qid": "Q17043512",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Novgorod cross",
+   "qid": "Q4322514",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Pravoslavie.ru",
+   "qid": "Q4376116",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Center for Religious Studies in the name of Hieromartyr Irenaeus of Lyons",
+   "qid": "Q4504048",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Alexei Gaidukov",
+   "qid": "Q115222053",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kō (lecture)",
+   "qid": "Q11632184",
+   "ja": "講",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Jingū taima",
+   "qid": "Q11589469",
+   "ja": "神宮大麻",
+   "simple": "Jingū taima",
+   "p11250": [
+    "shinto:Jingū taima"
+   ]
+  },
+  {
+   "title": "National Association of Shinto Priests",
+   "qid": "Q11389505",
+   "ja": "全国神職会",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Jingūkyō",
+   "qid": "Q11589489",
+   "ja": "神宮教",
+   "simple": "Jingu-kyo",
+   "p11250": [
+    "shinto:Jingūkyō"
+   ]
+  },
+  {
+   "title": "Interfax-Religion",
+   "qid": "Q21639925",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Shintō Taiseikyō",
+   "qid": "Q111992480",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kōten Kōkyūsho",
+   "qid": "Q11580997",
+   "ja": "皇典講究所",
+   "simple": null,
+   "p11250": [
+    "shinto:Koten Kokyusho"
+   ]
+  },
+  {
+   "title": "Kyōdō Shoku",
+   "qid": "Q11499314",
+   "ja": "教導職",
+   "simple": null,
+   "p11250": [
+    "shinto:Kyodo Shoku"
+   ]
+  },
+  {
+   "title": "Missionary Office",
+   "qid": "Q11452939",
+   "ja": "宣教使",
+   "simple": null,
+   "p11250": [
+    "shinto:Missionary Office"
+   ]
+  },
+  {
+   "title": "Bureau of Shinto Affairs",
+   "qid": "Q11590918",
+   "ja": "神道事務局",
+   "simple": "Bureau of Shinto Affairs",
+   "p11250": [
+    "shinto:Bureau of Shinto Affairs"
+   ]
+  },
+  {
+   "title": "Ministry of Religion (Japan)",
+   "qid": "Q4294653",
+   "ja": "教部省",
+   "simple": null,
+   "p11250": [
+    "shinto:Ministry of Religion (Japan)"
+   ]
+  },
+  {
+   "title": "Taikyo Proclamation",
+   "qid": "Q11435595",
+   "ja": "大教宣布",
+   "simple": "Taikyo Proclamation",
+   "p11250": [
+    "shinto:Taikyo Proclamation"
+   ]
+  },
+  {
+   "title": "Ministry of Divinities",
+   "qid": "Q4294696",
+   "ja": "神祇省",
+   "simple": null,
+   "p11250": [
+    "shinto:Ministry of Divinities"
+   ]
+  },
+  {
+   "title": "Taikyo Institute",
+   "qid": "Q11435598",
+   "ja": "大教院",
+   "simple": "Taikyo Institute",
+   "p11250": [
+    "shinto:Taikyo Institute"
+   ]
+  },
+  {
+   "title": "Saisei Itchi",
+   "qid": "Q11591093",
+   "ja": "祭政一致",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Soul loss",
+   "qid": "Q4374800",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Ritual ceremonies of the Imperial Palace",
+   "qid": "Q11453226",
+   "ja": "宮中祭祀",
+   "simple": null,
+   "p11250": [
+    "shinto:Ritual ceremonies of the Imperial Palace"
+   ]
+  },
+  {
+   "title": "Environmental impact of the Russian occupation of Crimea",
+   "qid": "Q65206217",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Six Paths",
+   "qid": "Q1192450",
+   "ja": "六道",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Magomed Tushayev",
+   "qid": "Q111022451",
+   "ja": "マゴメド・トゥシャエフ",
+   "simple": "Magomed Tushayev",
+   "p11250": []
+  },
+  {
+   "title": "Veles circle",
+   "qid": "Q105847328",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Takehiko Furuta",
+   "qid": "Q11411507",
+   "ja": "古田武彦",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Daijosai",
+   "qid": "Q11433653",
+   "ja": "大嘗祭",
+   "simple": null,
+   "p11250": [
+    "shinto:Daijosai"
+   ]
+  },
+  {
+   "title": "Strength is in truth",
+   "qid": "Q111192008",
+   "ja": null,
+   "simple": "Strength is in truth",
+   "p11250": []
+  },
+  {
+   "title": "Cross-sex relationships involving LGBTQ people",
+   "qid": "Q114000516",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Wood Rat",
+   "qid": "Q1190890",
+   "ja": "甲子",
+   "simple": null,
+   "p11250": [
+    "shinto:Yang Wood Rat"
+   ]
+  },
+  {
+   "title": "Earth Dragon (Chinese Zodiac)",
+   "qid": "Q118701",
+   "ja": "戊辰",
+   "simple": null,
+   "p11250": [
+    "shinto:Yang Earth Dragon"
+   ]
+  },
+  {
+   "title": "Circle of Pagan Tradition",
+   "qid": "Q4241883",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Manolis Pilavov",
+   "qid": "Q11767134",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Yamato no Kuni no Miyatsuko",
+   "qid": "Q11387078",
+   "ja": "倭国造",
+   "simple": "Yamato no Kuni no Miyatsuko",
+   "p11250": [
+    "shinto:Yamato no Kuni no Miyatsuko"
+   ]
+  },
+  {
+   "title": "Wakoku",
+   "qid": "Q10888424",
+   "ja": "倭国",
+   "simple": "Wakoku",
+   "p11250": []
+  },
+  {
+   "title": "Reflexive control",
+   "qid": "Q30893759",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Beppyo shrine",
+   "qid": "Q10898274",
+   "ja": "別表神社",
+   "simple": "Beppyo shrine",
+   "p11250": []
+  },
+  {
+   "title": "Wajinden",
+   "qid": "Q1135798",
+   "ja": "魏志倭人伝",
+   "simple": "Wajinden",
+   "p11250": []
+  },
+  {
+   "title": "Sangharama (Buddhist deity)",
+   "qid": "Q10885799",
+   "ja": "伽藍神",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Buddhist painting",
+   "qid": "Q11129163",
+   "ja": "仏画",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Sect Shinto",
+   "qid": "Q1532150",
+   "ja": "教派神道",
+   "simple": "Sect Shinto",
+   "p11250": [
+    "shinto:Sect Shinto"
+   ]
+  },
+  {
+   "title": "World Elijah Evangelical Mission",
+   "qid": "Q18110408",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Chinjugami",
+   "qid": "Q97479976",
+   "ja": "鎮守神",
+   "simple": null,
+   "p11250": [
+    "shinto:Chinjugami"
+   ]
+  },
+  {
+   "title": "Kannagi (Shinto)",
+   "qid": "Q11264556",
+   "ja": "かんなぎ",
+   "simple": null,
+   "p11250": [
+    "shinto:Kannagi (Shinto)"
+   ]
+  },
+  {
+   "title": "Archegos (Manichaeism)",
+   "qid": "Q111181283",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Miko clothing",
+   "qid": "Q17231335",
+   "ja": "巫女装束",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Wandering miko",
+   "qid": "Q11546650",
+   "ja": "歩き巫女",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Maria Vindevoghel",
+   "qid": "Q64688251",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "LiquidFriesland",
+   "qid": "Q15825967",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Holy Spirit of Blood and Water Church",
+   "qid": "Q19853662",
+   "ja": null,
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Kotobank",
+   "qid": "Q11302260",
+   "ja": "コトバンク",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Silken Painting of Emperor Go-Daigo",
+   "qid": "Q95573285",
+   "ja": "絹本著色後醍醐天皇御像",
+   "simple": null,
+   "p11250": []
+  },
+  {
+   "title": "Shinto texts",
+   "qid": "Q11588760",
+   "ja": "神典",
+   "simple": "Shinto Scripture",
+   "p11250": []
+  },
+  {
+   "title": "Tamayori-hime",
+   "qid": "Q56344982",
+   "ja": "タマヨリビメ",
+   "simple": null,
+   "p11250": []
+  }
+ ],
+ "noitem": [
+  "仏"
+ ]
+}
