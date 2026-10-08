@@ -13,7 +13,7 @@ from `ATOMIC_FILES`; they are not queue items.
   retranslation last). First the Japanese-titled pages with no English at all (キヒサツミ, 建比良鳥命,
   千葉国造, 尾張国造, 師長国造, 大河内味張, …), then the English pages that still carry a pasted
   Japanese section. Every link as {{ill|EN|ja|JA|lt=|lt_ja=}}; check the live revision before saving.
-  Done so far: Tamakushi-hime, Tamayori-hime (mother of Jimmu), Kegare, キヒサツミ, 建比良鳥命, 千葉国造 (as Chiha no Kuni no Miyatsuko).
+  Done so far: Tamakushi-hime, Tamayori-hime (mother of Jimmu), Kegare, キヒサツミ, 建比良鳥命, 千葉国造 (as Chiha no Kuni no Miyatsuko), 尾張国造.
 - [ ] Pick untranslated jawiki shrine articles with no page here and translate them, highest-value first.
 - [ ] LAST: retranslate finished-but-bad pages (the "stinkers"), e.g. Himetataraisuzu-hime (done).
   Where an enwiki article exists, compare with jawiki and synthesise.

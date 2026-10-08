@@ -1,3 +1,7 @@
+## 2026-10-08 — 尾張国造 (Owari no Kuni no Miyatsuko) translated (rev 3853105)
+
+Untranslated `need_translation/` page, translated in place under its Japanese title (no English page exists; a move needs Emma). Every link is `{{ill|EN|ja|JA|lt=…|lt_ja=…}}`; source and translation in `retranslation/尾張国造/`. Next: 師長国造.
+
 ## 2026-10-08 — 千葉国造 translated as Chiha no Kuni no Miyatsuko; Japanese title redirected
 
 - need_translation held both 千葉国造 and Chiha no Kuni no Miyatsuko with byte-identical Japanese
