@@ -1,3 +1,18 @@
+## 2026-10-08 — 38 at-risk Shinto articles imported from enwiki with full history
+
+- The at-risk set is articles Immanuelle CREATED on enwiki that are still live (LLMPROD only removes
+  LLM-created articles, not ones she only edited): XTools lists 296. Wikidata (P11250) plus a title
+  check left 44 Shinto/Japanese-religion ones with no page here; 6 are disambiguation pages and were
+  skipped. The other **38 are now on the shinto wiki**, imported through Special:Import's
+  interwiki source "wikipedia" with full history (`action=import`, `fullhistory=1`), so authorship
+  and dates are preserved; summary "Imported from English Wikipedia with full history: Shinto
+  article at risk of LLMPROD deletion there (Claude-assisted)". Logged in `browser_wiki/edit_log.tsv`.
+- Seven long-history imports returned a server error page or "0 revisions" but had in fact
+  completed after the request timed out (confirmed by page size); Miko clothing needed one retry
+  (122 revisions). An XML-upload route was tried first and abandoned: Special:Import refuses
+  uploads over ~2 MB, and the 50 MB export (and its split parts) were deleted.
+- Their enwiki wikitext is also kept in `enwiki_deletion_restores/imports/`.
+
 ## 2026-10-08 — enwiki LLMPROD deletions, corrected: 63, and every Shinto one is on the shinto wiki
 
 - The first check (entry below) was wrong. The AI-cleanup tracking list only holds articles still
