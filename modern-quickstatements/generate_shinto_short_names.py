@@ -18,7 +18,8 @@ Emma 2026-07-16:
 STAGE 1 is generate_shinto_honorifics.py -> P1035 only.
 STAGE 2 (this file) reads that P1035 back off Wikidata and emits:
 
-    <kami>|P1813|ja:"<label minus the honorific>"|P2440|"<romaji minus the honorific>"
+    <kami>|P1035|<honorific>|P1813|ja:"<label minus the honorific>"|P1813|mul:"<romaji minus the honorific>"
+                                  # the short name QUALIFIES the honorific statement (2026-10-08)
     <kami>|P21|Q24238356          # ONLY where the kami has no P21
     <kami>|P569|novalue           # ONLY where the kami has no P569
 
@@ -88,10 +89,11 @@ def load_targets():
     """Kami that ALREADY carry P1035 — the state stage 1 created."""
     rows = sparql(f"""
     SELECT ?k ?h ?ja ?en (BOUND(?sn) AS ?hasSN) (BOUND(?g) AS ?hasP21) (BOUND(?d) AS ?hasP569) WHERE {{
-      ?k wdt:P31/wdt:P279* wd:{KAMI_CLASS} ; wdt:P1035 ?h .
+      ?k wdt:P31/wdt:P279* wd:{KAMI_CLASS} ; p:P1035 ?st .
+      ?st ps:P1035 ?h .
       ?k rdfs:label ?ja FILTER(LANG(?ja) = "ja")
       OPTIONAL {{ ?k rdfs:label ?en FILTER(LANG(?en) = "en") }}
-      OPTIONAL {{ ?k wdt:P1813 ?sn }}
+      OPTIONAL {{ ?st pq:P1813 ?sn }}
       OPTIONAL {{ ?k p:P21   ?g }}
       OPTIONAL {{ ?k p:P569  ?d }}
     }}""")
@@ -102,11 +104,15 @@ def load_targets():
             "ja": r["ja"]["value"],
             "en": r.get("en", {}).get("value", ""),
             "honorifics": set(),
-            "has_sn": r["hasSN"]["value"] == "true",
+            # honorifics whose P1035 statement already carries a P1813 qualifier
+            "sn_on": set(),
             "has_p21": r["hasP21"]["value"] == "true",
             "has_p569": r["hasP569"]["value"] == "true",
         })
-        rec["honorifics"].add(r["h"]["value"].split("/")[-1])
+        h = r["h"]["value"].split("/")[-1]
+        rec["honorifics"].add(h)
+        if r["hasSN"]["value"] == "true":
+            rec["sn_on"].add(h)
     return out
 
 
@@ -145,15 +151,20 @@ def main():
             judgement.append((qid, k["ja"], k["en"], "stripping leaves no short name"))
             continue
 
-        if not k["has_sn"]:
+        # The short name is a QUALIFIER on the P1035 statement it was stripped from
+        # (Emma, 2026-10-08: "short name is supposed to be a qualifier but is being
+        # applied as a top level statement"). P1813 is monolingual text, so the
+        # Japanese form is ja and the romaji is a second P1813 in mul (Emma, same
+        # day: "regular one is ja and romaji is mul").
+        if best_h not in k["sn_on"]:
             _, en_forms_all = zip(*(forms_for(h) for h in carried)) if carried else ((), ())
             all_en = sorted({e for fs in en_forms_all for e in fs}, key=len, reverse=True)
             idx = {e.lower(): h for h in carried for e in forms_for(h)[1]}
             _, romaji = derive_from_english(k["en"], idx, all_en)
+            line = f'{qid}|P1035|{best_h}|P1813|ja:"{qs_escape(short_ja)}"'
             if romaji:
-                lines.append(f'{qid}|P1813|ja:"{qs_escape(short_ja)}"|P2440|"{qs_escape(romaji)}"')
-            else:
-                lines.append(f'{qid}|P1813|ja:"{qs_escape(short_ja)}"')
+                line += f'|P1813|mul:"{qs_escape(romaji)}"'
+            lines.append(line)
             n_sn += 1
 
         # ADD-ONLY — never clobber a real gender/date (Emma: "only where absent").

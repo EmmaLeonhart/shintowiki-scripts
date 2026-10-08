@@ -286,6 +286,11 @@ jobs:
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_shinto_short_names.py
+      - name: Shinto short names, top-level removals (after the P1035 qualifier landed)
+        id: shinto-short-name-toplevel-removals
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_shinto_short_name_toplevel_removals.py
       - name: Genbu ids
         id: genbu-ids
         working-directory: modern-quickstatements

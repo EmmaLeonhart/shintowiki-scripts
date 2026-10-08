@@ -28,3 +28,38 @@ def test_presence_checks_use_statement_nodes():
         assert re.search(r"\?k p:P21\s+\?g", src), name
         assert not re.search(r"\?k wdt:P569\s+\?d", src), name
         assert not re.search(r"\?k wdt:P21\s+\?g", src), name
+
+
+# --- short name as a qualifier on P1035 (Emma, 2026-10-08) -----------------------
+# "short name is supposed to be a qualifier but is being applied as a top level
+# statement"; chose "Qualifier on P1035"; romaji: "regular one is ja and romaji is mul".
+
+def test_stage2_emits_short_name_as_p1035_qualifier():
+    src = _src("generate_shinto_short_names.py")
+    assert "|P1035|{best_h}|P1813|ja:" in src
+    assert "|P1813|mul:" in src
+    # the old top-level shape must be gone
+    assert "f'{qid}|P1813|ja:" not in src
+    assert "|P2440|" not in src.split('"""', 2)[2]
+    # and the presence check reads the qualifier on the P1035 statement
+    assert "?st pq:P1813 ?sn" in src
+
+
+def test_toplevel_remover_is_confirmed_and_value_matched():
+    src = _src("generate_shinto_short_name_toplevel_removals.py")
+    assert "?st pq:P1813 ?v" in src and "?top ps:P1813 ?v" in src
+    import sys
+    sys.path.insert(0, HERE)
+    import generate_shinto_short_name_toplevel_removals as m
+    lines = m.build_lines([("Q1", "ja", 'Ame"no'), ("Q1", "ja", 'Ame"no')])
+    assert lines == ['-Q1|P1813|ja:"Ame\\"no"']
+    stage1 = re.search(r'^KAMI_CLASS = "(Q\d+)"', _src("generate_shinto_honorifics.py"), re.M)
+    assert stage1 and m.KAMI_CLASS == stage1.group(1)
+
+
+def test_toplevel_remover_is_registered():
+    with open(os.path.join(HERE, "direct_daily_edits.py"), encoding="utf-8") as f:
+        assert '"shinto_short_name_toplevel_removals.txt"' in f.read()
+    wf = os.path.join(os.path.dirname(HERE), ".github", "workflows", "generate-quickstatements.yml")
+    with open(wf, encoding="utf-8") as f:
+        assert "python generate_shinto_short_name_toplevel_removals.py" in f.read()
