@@ -9,9 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] Enwiki deletions: list the enwiki articles Immanuelle created that were recently deleted for AI
-  suspicion (from the CSD/AfD notices on User talk:Immanuelle and its archives). For each, check the
-  shinto wiki: if our page was deleted or redirected because it existed on enwiki, restore it here.
 - [ ] Retranslate the stinkers: rank `need_translation/` and translated pages by leftover CJK and
   machine-translation damage; retranslate the worst from jawiki, one article per commit.
 - [ ] Where an enwiki article exists, compare it with jawiki and synthesise the shinto wiki article

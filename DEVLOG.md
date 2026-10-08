@@ -1,3 +1,15 @@
+## 2026-10-08 — enwiki AI-suspicion deletions: 2 so far, neither ever on the shinto wiki
+
+- Source: `Wikipedia:AI noticeboard/2026-08-24 Immanuelle`, the AI-cleanup tracking list of every
+  enwiki article Immanuelle edited: 1,642 rows, all `status=requested`. Checked each against enwiki:
+  **2 are deleted**, both by expired WP:LLMPROD — *Mangang Luwang Khuman* (2026-09-19) and
+  *Moirang Kangleirol* (2026-09-21). A scan of User talk:Immanuelle, its recent archives and the AI
+  noticeboard archives for LLMPROD/G15 notices found no others (the other hits were other users').
+- On shinto.miraheze (through Emma's browser) neither title exists, has a deletion log entry, or
+  appears in search: both are Meitei topics that were never here. Nothing to restore.
+- The other 1,640 articles are still live but listed for cleanup, so more may go by LLMPROD.
+  Saved the list with deletion data to `shinto_miraheze/enwiki_deletion_restores/enwiki_deleted.json`.
+
 ## 2026-10-08 — local wiki editing channel through Emma's browser
 
 - Emma reopened wiki work for local agentic editing (translation, retranslation, enwiki-deletion
