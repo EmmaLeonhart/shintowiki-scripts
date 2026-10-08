@@ -1,3 +1,7 @@
+## 2026-10-08 — Jichinsai: pasted Japanese section merged (rev 3853113)
+
+English article plus pasted jawiki 地鎮祭. Merged: history, the full order of the Shinto rite, the Izumo yashiki rite, the Buddhist form; English text and the Tsu lawsuit section kept; links as ill.
+
 ## 2026-10-08 — browser QS round 6: 851 lines → #289883 (round 5 #289841 DONE: 1,259 done, 64 errors)
 
 ## 2026-10-08 — Okuni Shrine (Isesaki): Japanese section translated (rev 3853112)
