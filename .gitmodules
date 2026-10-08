@@ -1,0 +1,4 @@
+[submodule "agentic-vectorization"]
+	path = agentic-vectorization
+	url = https://github.com/EmmaLeonhart/commons-png-to-svg-vectorization.git
+	branch = main

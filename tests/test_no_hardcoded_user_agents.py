@@ -33,7 +33,11 @@ ALLOWED = {
     os.path.join("shinto_miraheze", "user_agent.py"),
     os.path.join("shinto_miraheze", "wikidata_user_agent.py"),
 }
-SKIP_DIRS = {".git", "__pycache__", "node_modules", "_site", "venv", ".venv"}
+# agentic-vectorization/ is a git submodule (another repo, added 2026-10-08): its
+# code is not this repo's and is not held to this repo's User-Agent rule. CI never
+# checks it out; a local checkout would otherwise be scanned.
+SKIP_DIRS = {".git", "__pycache__", "node_modules", "_site", "venv", ".venv",
+             "agentic-vectorization"}
 
 # A string literal that both looks like a UA (Name/version) and names one of the personas.
 UA_LITERAL = re.compile(

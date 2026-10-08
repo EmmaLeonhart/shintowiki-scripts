@@ -350,7 +350,7 @@ repo root:
   remote routine reads `remote_queue.json` at the repo root and its prompt
   can't be edited from this repo, and `remote_queue.py` writes the JSON next to
   itself.
-* Dotfiles / launcher: `.gitignore`, `.gitattributes`, `.nojekyll`,
+* Dotfiles / launcher: `.gitignore`, `.gitattributes`, `.gitmodules`, `.nojekyll`,
   `!runClaude.bat`.
 
 **Everything else goes in a purpose-named directory.** Where things live:
@@ -365,6 +365,7 @@ repo root:
 | Reference docs (anything beyond the 5 core root docs) | `docs/` |
 | Retired / one-off / superseded scripts | DELETE — don't archive (2026-05-28 audit found nothing in `archive/` had irreplaceable technique; directory removed; git history retains the code) |
 | Handoffs of work moving to another repo (a README the other repo's session reads). **Permanent**, not a report: never cleared by the one-week expiry (Emma, 2026-09-27) | `handoff/<name>/` |
+| Git submodules (Emma, 2026-10-08). `agentic-vectorization/` tracks `main` of EmmaLeonhart/commons-png-to-svg-vectorization; `bump-agentic-vectorization.yml` moves it to that branch's head daily | `agentic-vectorization/` |
 | Wiki↔repo per-page content sync | the named dir (`need_translation/`, `git_synced/`, `miraheze_unique/`, `fandom_unique/`, `duplicated_content/`) |
 
 **Rules:**
