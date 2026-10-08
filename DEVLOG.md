@@ -1,3 +1,17 @@
+## 2026-10-08 — Himetataraisuzu-hime retranslated (first of the stinkers)
+
+- Emma named it the worst finished translation. The wiki page (61 KB) was Immanuelle's 2022
+  machine translation, still tagged Rough translation / Cleanup, with two infoboxes and garbled
+  prose. Retranslated from the current jawiki article (ヒメタタライスズヒメ, rev 111207795,
+  2026-09-29): one infobox, every jawiki section, the Kiki source passages as notes, the source
+  list kept, `{{translated page|ja|…|version=111207795}}` added, cleanup tags removed. Saved as
+  revs 3853094 and 3853095 (the second swaps `{{doi}}`/`{{hdl}}` for plain links: the wiki has no
+  Template:Hdl). Files in `retranslation/Himetataraisuzu-hime/`.
+- Method that works for long text: inject a file input into a wiki tab, hand it the repo file with
+  the extension's file upload, read it with `File.text()`, and post `action=edit` from the page.
+- Left alone: 6 "Template:Citation/styles.css has no content" errors, a site-wide empty stylesheet
+  pulled in by a shared template, not by this article.
+
 ## 2026-10-08 — 38 at-risk Shinto articles imported from enwiki with full history
 
 - The at-risk set is articles Immanuelle CREATED on enwiki that are still live (LLMPROD only removes
