@@ -2,55 +2,41 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
-Finished work does not live here, even when it has not delivered yet. Emma, 2026-08-25, on the
-lost-shrine creates: *"It is finished so it's not blocked lol shouldn't be in the queue."* Batches
-that are built, wired and waiting only on the lockout date are recorded in `DEVLOG.md` and readable
-from `ATOMIC_FILES`; they are not queue items.
+⛔ **NOT APPROVED YET — do not work any item below until Emma approves this queue in chat**
+(Emma 2026-10-08: *"I'm trying to specifically avoid like you being in a situation where I just forget
+about this and the queue runs on its own and does stuff I don't want."*). When she approves, delete
+this paragraph in the commit that records her approval. Work-loop ticks report "nothing actionable;
+queue awaiting Emma's approval" until then.
 
-## stuff to do today
+This is the home stretch for everything touching Wikidata (Emma, 2026-10-08). New jawiki translations
+and retranslating finished-but-bad pages are out of the queue; they are in `todo.md`.
 
-- [ ] Translate the untranslated `need_translation/` pages (Emma, 2026-10-08: untranslated first,
-  retranslation last). First the Japanese-titled pages with no English at all (キヒサツミ, 建比良鳥命,
-  千葉国造, 尾張国造, 師長国造, 大河内味張, …), then the English pages that still carry a pasted
-  Japanese section. Every link as {{ill|EN|ja|JA|lt=|lt_ja=}}; check the live revision before saving.
-  Done so far: Tamakushi-hime, Tamayori-hime (mother of Jimmu), Kegare, キヒサツミ, 建比良鳥命, 千葉国造 (as Chiha no Kuni no Miyatsuko), 尾張国造, 師長国造, 大河内味張, 斐陀国造, Ōshikōchi clan, Kikurihime, Mononobe Shrine (Kashiwazaki), Okuni Shrine (Isesaki), Jichinsai, Tenshō Kōtai Jingūkyō, Inaba Shrine. Every Japanese-titled Japanese-language page is now done.
-  Next: the English pages that still carry a pasted Japanese section, then upgrading the old-style ills
-  (no lt=/lt_ja=) on the already-English 三野後国造, 伊佐我命, 沼田国造, 知々夫国造, 穂国造, 角鹿国造, 遠淡海国造, 長狭国造.
-- [ ] Pick untranslated jawiki shrine articles with no page here and translate them, highest-value first.
-- [ ] LAST: retranslate finished-but-bad pages (the "stinkers"), e.g. Himetataraisuzu-hime (done).
-  Where an enwiki article exists, compare with jawiki and synthesise.
+## stuff to do
 
+- [ ] Finish translating the `need_translation/` pages: Ono Shrine (Atsugi), Kotokuji Temple (Koka
+  City), Miwa Shrine (Gifu); then put the links on the already-English 三野後国造, 伊佐我命, 沼田国造,
+  知々夫国造, 穂国造, 角鹿国造, 遠淡海国造, 長狭国造 into `{{ill|EN|ja|JA|lt=|lt_ja=}}` form. Before every
+  save: compare the live text (sha1), not just the revid, and check whether the page is in `git_synced/`
+  (if so, build on that copy, keep `[[Category:Git synced pages]]`, and update the file too).
+- [ ] Review every kami item we created (`deity_creates.txt`, `deity_role_creates.txt`, the Inochi deity,
+  and any other create batch) and give each the English label form of batch #289889: the same romanised
+  label in mul, en, en-us, fr and es, plus its ja label. Most have no English label; most look like close
+  epithets of related kami. Done as a generator whose file is registered, so it goes out in the batch.
+- [ ] Before any merging: set the obvious gender on those created kami. Many carry P21 = unknown
+  (Q24238356) where the name says otherwise (…hime / 姫 / 媛 / 売 → female; …hiko / 彦 → male). Only the
+  obvious cases; generator + registered file, as above.
+- [ ] Then merge each created kami into the item that is pretty obviously its real identity, agentically
+  in the browser (Emma 2026-10-08 orders this for these items, which overrides CLAUDE.md's "Emma merges
+  duplicate items" rule for this set). One merge at a time; record each pair in `DEVLOG.md`.
 
+- **Pinned tail (until the final item)**
 
-- [ ] Kami label fan-out (Emma 2026-10-08): a generator that emits a QuickStatements batch giving each kami
-  the same romanised label in mul, en, en-us, fr and es, plus its ja label, the pattern of batch #289889
-  (Yodohime-no-Mikoto / Ohobehime no Mikoto / Takeminakata Okami). Register the file so the batch runs.
+  - [ ] Ensure the session-local crons are running: work-loop :03, auto-flush :15, status-report :42,
+    briefing 08:03 (plus the QuickStatements watchdog and browser-batch crons Emma ordered). Trust
+    `CronList`, not recorded IDs. ⛔ There is no debrief cron.
 
-- **Pinned tail (keep last)**
-
-  - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
-    status-report :42, briefing 08:03. Crons are session-local and expire after 7 days, so a
-    recorded ID is only ever evidence about the session that made it — check `CronList`, do not
-    trust the IDs written here.
-    ⛔ **There is NO debrief cron.** Emma retired it 2026-08-28: *"Debrief shouldn't happen anymore
-    in this repo lol."* Do not recreate it from any doc that still says five.
-    ✓ Live IDs, session of **2026-09-27**: `6e2ac79f` :03 (now monitors each wikidata-drip run first),
-    `3ce10a86` :15, `da0748fb` :42, `bb1c79c5` 08:03 — created after `CronList` reported no jobs.
-    Session of 2026-10-03: `1c5e70e8` :03, `d0bb6e6c` :15, `d9244767` :42, `16cb87b1` 08:03.
-    Session of 2026-10-06: `e454a83f` :03, `7ffa1e27` :15, `a6f16584` :42, `1e5163b0` 08:03.
-    Every recorded set this file has carried has been dead by the time the next session read it.
-    Trust `CronList`, not this line.
-    ⚠ 2026-09-19: this session read "keep last" as "optional", did the queue work, and reported the
-    crons as something to offer rather than doing them. It is not optional — a fresh session has
-    none, so recreating the set IS the item, and the only reason it is pinned last is that a
-    planning burst kills them.
-    ⚠ `durable: true` does nothing — `CronCreate` says so in its own parameter description ("Has no
-    effect — durable persistence is not available"). So the recreate-every-session step is the only
-    mechanism there is, not a workaround for one that keeps failing.
-    ⚠ The 08:03 briefing has **no skill in this repo** — `deep-briefing` lives in the hub and there is
-    no `DAILY.md` here, so its prompt was written from what `DEVLOG.md` 2026-08-27 records of it:
-    skip-check, push, then `AskUserQuestion` as the deliverable.
-  - [ ] Run the status-report action once more independently as an end-of-session summary.
+- [ ] **LAST, after every item above:** end all the cron jobs (`CronDelete` each one in `CronList`), and
+  delete the pinned tail above in the same commit.
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this

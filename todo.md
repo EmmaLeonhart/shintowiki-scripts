@@ -1,55 +1,38 @@
 # Todo
 
-Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work is in [queue.md](queue.md); finished work + history in [DEVLOG.md](DEVLOG.md); how the pipelines/orchestrators work lives in [CLAUDE.md](CLAUDE.md) and `docs/` (e.g. `docs/remote_queue_pipeline.md`). Reference/narrative and completed/dropped items do NOT belong here.
+Long-horizon backlog: genuine, not-yet-done tasks only. Active work is in [queue.md](queue.md);
+finished work and history are in [DEVLOG.md](DEVLOG.md); how things work is in [CLAUDE.md](CLAUDE.md)
+and `docs/`.
 
-## Label-generator horizons (merged 2026-07-04 from the subtree's deleted todo.md)
+Rewritten 2026-10-08 (Emma: the todo "should be completely rehashed at this point, since we edit in a
+pretty different way now").
 
-> Long-term goal: every Shinto shrine, temple, deity, and related entity on
-> Wikidata labeled in all supported languages (reference: Q687168 with every
-> language column filled). Formal expansion roadmap:
-> [`docs/mass-label-expansion-plan.md`](docs/mass-label-expansion-plan.md);
-> the active BFS-driven work is in `queue.md`.
+## How editing works now
 
+- **Wikidata** goes through QuickStatements from Emma's logged-in browser: the generators fill the
+  registered `.txt` files, `site/build_qs_home.py` collects them, and the hourly browser-batch cron
+  submits each round in parts of up to 5,000 lines, then triggers a regeneration. The QS API route
+  (`qs-daily-submit.yml`) still fails on `QS_TOKEN`; only Emma can fix that secret.
+- **The shinto wiki** is edited from Emma's browser as Immanuelle (summaries end "(Claude-assisted)",
+  every edit logged in `shinto_miraheze/browser_wiki/edit_log.tsv`). CI still cannot reach it.
+- Emma is closing out the Wikidata work; `queue.md` holds the last of it.
 
-## Repo / script tasks
+## Translation (moved out of the queue 2026-10-08)
 
-> ⚠ The full-program-audit entry was closed 2026-09-21. `docs/program_audit_2026-06.md` stays as
-> the architecture map — `site/generate_pages.py` publishes it — but it is reference, not a task,
-> so it does not belong here. Its section-8 verdicts were checked and two were corrected in place:
-> the retire list is superseded by the 2026-09-17 machinery-stays-up ruling and must not be
-> executed, and its `BLOCKED-ON-USER-ACTION` line was wrong both as a state and on the facts.
+- Translate untranslated jawiki shrine articles that have no page on the wiki, highest-value first.
+- Retranslate finished-but-bad pages (the "stinkers"); where an enwiki article exists, compare it with
+  jawiki and synthesise. Himetataraisuzu-hime, Tamakushi-hime, Tamayori-hime and Kegare are done.
 
+## Labels (long horizon)
 
-## Wiki content tasks
+- Every Shinto shrine, temple, deity and related entity on Wikidata labelled in all supported
+  languages (reference: Q687168). Roadmap: [`docs/mass-label-expansion-plan.md`](docs/mass-label-expansion-plan.md).
+  This is drip-owned and runs unattended; it has no deadline and none should be computed for it.
 
-> ⚠ Most of this section was closed on 2026-09-17 (see the bottom of this file). [`docs/wiki_content_scripting_plans_2026-05.md`](docs/wiki_content_scripting_plans_2026-05.md) still holds the per-item designs, but its recommended build order names four things that are now won't-do — read it as history, not as a plan.
+## Settled, so not to be re-opened
 
-
-
-## What was closed on 2026-09-17, and by whose word
-
-Emma ruled on four give-up questions. Three closed things out; the fourth is recorded because the
-question itself was wrong.
-
-**Gave up on the uncovered 59 languages.** The 54 covered are the final set. The gate-failing ones
-(`nan`/`hak`/`yue`/`wuu`/`ka`) fail for reasons a romanization table does not fix, and this file
-already said there was no hand-build left to do.
-
-**Closed as won't-do**, with their CI detection left running: the low-confidence ILL residue, the
-7 double-category-QID dab pages, the multiple-`{{wikidata link}}` residual, the 26 interlanguage
-pages with no Wikidata item, and the 9 large kokuzō articles. The ops that FIND these still run
-every cleanup loop and still populate their review categories. What is gone is the promise that
-anyone reviews the output.
-
-**The wiki side is formally abandoned — and the machinery stays up.** Emma: *"we are formally
-abandoning it but our abandonment means the machinery is still here and still indefinitely tries to
-run."* So the syncs, the probes and the wiki-bound queue categories are **not** removed and **not**
-disabled; they keep trying indefinitely and will simply start working again if Cloudflare ever stops
-challenging the runners. What changed is that none of it is pending work any more, and it is not a
-blocker to report. `FANDOM_SUNSET_DATE` needs no decision now — abandonment resolves it.
-
-⛔ **The temple labels were NOT dropped, and asking was the error.** I put "13,288 temples, 45 years
-at 1.1/day" as a give-up candidate. Emma: *"Of course not is this even a task ... I think this is
-just an automated thing."* She is right and CLAUDE.md already says so: the drainer is designed to run
-unattended indefinitely, so its rate is not a deadline and a horizon computed from it is not a
-finding. **Do not re-open this, and do not compute a completion date for anything the drip owns.**
+- 2026-09-17: the uncovered 59 languages were given up (the 54 covered are final); the low-confidence
+  ILL residue, the double-category-QID dab pages, the multiple-`{{wikidata link}}` residual, the 26
+  interlanguage pages with no item and the 9 large kokuzō articles are won't-do, with their detection
+  ops still running. The temple labels were NOT dropped.
+- `docs/program_audit_2026-06.md` is reference, not a task.

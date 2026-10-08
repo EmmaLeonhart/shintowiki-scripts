@@ -1,3 +1,7 @@
+## 2026-10-08 — queue rebuilt for the Wikidata home stretch; todo.md rewritten; queue gated on Emma's approval
+
+Emma: finish the translated pages; then review every kami item we created (English label form of #289889: mul/en/en-us/fr/es + ja), set obvious genders (many have P21 unknown despite "hime" names), then agentically merge each into its real identity in the browser; the last item ends all the crons. New jawiki translations and retranslation are out of the queue (moved to todo.md, which was rewritten for the browser-driven way of editing). The queue carries a NOT APPROVED gate until she approves it in chat; a one-hour cron asks her if she has not.
+
 ## 2026-10-08 — labels for three kami via QuickStatements (#289889); fan-out generator queued
 
 Emma was hitting the anonymous rate limit adding labels in an incognito window. Applied them from the logged-in QuickStatements tab as batch #289889: Q141593257 Yodohime-no-Mikoto / 淀姫命, Q141593133 Ohobehime no Mikoto / オホベヒメノミコト, Q141593123 Takeminakata Okami / 建御名方大神, each in mul, en, en-us, fr, es plus ja. Queued (end of queue.md) a generator that does the same for kami generally.
