@@ -1,3 +1,7 @@
+## 2026-10-08 — Okuni Shrine (Isesaki): Japanese section translated (rev 3853112)
+
+Same shape as Mononobe Shrine (Kashiwazaki): generated property sections kept, jawiki section translated, links as ill. Chosen at the daily briefing (Emma: keep the translation queue).
+
 ## 2026-10-08 — Mononobe Shrine (Kashiwazaki): Japanese section translated (rev 3853111)
 
 Wikidata-generated shikinaisha page plus the pasted jawiki article. The generated property sections and the generated category line are kept exactly; only the Japanese part is translated (deities, history, grounds, festivals, cultural properties, Futada Castle), links as ill. The jawiki `{{神社}}` infobox is dropped (its facts are in the prose and the English infobox already at the top); Japanese categories become English ones.
