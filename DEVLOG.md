@@ -1,3 +1,5 @@
+## 2026-10-08 — Kegare: Japanese content merged (rev 3853100), links as ill
+
 ## 2026-10-08 — browser QS round 3: 1,177 lines → #289821; Import works by script click
 
 - After the 07:03Z regeneration the whole staged batch is 1,177 lines, one chunk, submitted as
