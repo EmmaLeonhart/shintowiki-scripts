@@ -1,810 +1,280 @@
-Q107097521	P1814	"ちょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4210005008633"
-Q129837100	P6262	"shinto:Ishinuki Anakannon Yokoanabos"
-Q56347882	P569	novalue
-Q140355642	P1814	"ぜんぎょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9180305006914"
-Q135328864	P569	novalue
-Q10940767	P569	novalue
-Q135039169	P1814	"おはまのじんじゃ"
-Q135524506	P569	novalue
-Q141629486	P1814	"はちまんじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5200005008261"
-Q65260779	P569	novalue
-Q106836785	P1814	"りゅうとういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6180305007824"
-Q141593155	P569	novalue
-Q135041374	P361	Q11657514	P1545	"43"	P155	Q135041373	P156	Q135041375	S248	Q135159299	S13677	"183217"
-Q135578885	P569	novalue
-Q135444342	Len	"Hōshō-in Temple"
-Q141593109	P569	novalue
-Q135155669	P13930	"data/nagato/inari_title"
-Q135432772	P1814	"れんげじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3340005005437"
-Q134535606	Len	"Hokongo-ji Temple"
-Q85878978	P569	novalue
-Q134736542	Len	"Tōyō-ji Temple"
-Q134535855	Len	"Anju-ji Temple"
-Q138565446	Len	"Shinmei-gū (Kanagawa-ku, Yokohama)"
-Q135195558	P569	novalue
-Q135040338	P1814	"こましじんじゃ"
-Q11352598	P1814	"いちのみやじんじゃ"
-Q141593267	P569	novalue
-Q134955520	P1814	"さんじんじゃ"
-Q135039891	P1814	"おほねのじんじゃ"
-Q135041074	P1814	"かんたまこつのたまじんじゃ"
-Q135038955	P1814	"かつらぎみあがたのじんじゃ"
-Q97210999	P1814	"あみだじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2200005010633"
-Q141593256	P569	novalue
-Q813858	P569	novalue
-Q135040044	P1814	"となじんじゃ"
-Q135040055	P361	Q11395784	S4656	"https://ja.wikipedia.org/wiki/%E5%87%BA%E7%BE%BD%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q135039162	P1814	"いはつたのじんじゃ"
-Q135463092	P1814	"すがじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005004928"
-Q30925511	P1814	"せんげんじんじゃ"
--Q135039027	P361	Q11433427
-Q48760952	P569	novalue
-Q11451521	P1814	"あだたらじんじゃ"
-Q134930516	P1814	"たきひらじんじゃ"
-Q11400330	Len	"Katsute Shrine"
-Q135330068	P569	novalue
-Q65271769	P1814	"けんぎょうあん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9100005008219"
-Q141593114	P569	novalue
--Q110915859	P1814	"サキタマヒメノ-"
-Q134736727	P1814	"さいしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8030005011404"
-Q48762550	P1814	"あんらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7200005004481"
-Q141593230	P569	novalue
-Q11470054	P569	novalue
-Q135186714	P1814	"やぎじんじゃ"
-Q107664337	P361	Q11368516	P1545	"47"	P155	Q135040587	P156	Q135040589	S248	Q135159299	S13677	"182597"
-Q134989155	Len	"Osaki Shrine"
-Q11653677	P1814	"ちょうこくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3480005001075"
-Q135040485	Les	"Santuario Mikeno"
-Q131577439	P6375	ja:"神奈川県鎌倉市十二所285"	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E5%8D%81%E4%BA%8C%E6%89%80%E7%A5%9E%E7%A4%BE_%28%E9%8E%8C%E5%80%89%E5%B8%82%29"
-Q135425299	P13930	"data/kai/sibamiya_title"
-Q65266238	P569	novalue
-Q48755195	P1814	"しょうかくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8021005007905"
-Q134537422	Len	"Tosho-ji Temple"
-Q141593132	P569	novalue
-Q141593144	P569	novalue
-Q134735458	Len	"Hōshō-in Temple"
-Q134886881	P1814	"ゆどのだいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6030005013278"
-Q134736668	Len	"Hōshō-in Temple"
-Q141593328	P569	novalue
-Q11587884	P569	novalue
-Q135040455	P361	Q11636502	S4656	"https://ja.wikipedia.org/wiki/%E8%B6%8A%E5%BE%8C%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q123511661	P569	novalue
-Q141593130	P569	novalue
-Q134956858	P1814	"いいづなじんじゃ"
-Q112953068	P361	Q11668489	S4656	"https://ja.wikipedia.org/wiki/%E9%A7%BF%E6%B2%B3%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q141593204	P569	novalue
-Q141593183	P569	novalue
-Q135069951	P6262	"shinto:Shirohiko Shrine"
-Q135462998	Len	"Kawauchi Shrine"
-Q120336620	P1814	"ほうぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3480005003757"
-Q135041107	P460	Q135070140	P1352	1
-Q134956415	Len	"Watari Shrine"
-Q141593120	P569	novalue
-Q135041190	P1814	"あめいはとわけのじんじゃ"
-Q137194160	P569	novalue
-Q134536707	P1814	"じょうきょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3040005011408"
-Q141627892	P569	novalue
-Q135069192	P1814	"おぎわらじんじゃ"
-Q141593202	P569	novalue
-Q140445993	P569	novalue
-Q135709623	P1814	"ちょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3380005008519"
-Q43595218	P1814	"ぼおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1120005001567"
-Q135041483	P1814	"とよひめのじんじゃ"
-Q140446059	P569	novalue
-Q141593203	P569	novalue
-Q135446168	Len	"Saishin-ji Temple"
-Q11520795	Len	"Hongyō-ji Temple"
-Q135069521	P1814	"はぐろみたじんじゃ"
-Q135040976	P1814	"かんたまいつのひめのじんじゃ"
-Q134887317	Len	"Tenjin Shrine"
-Q135039270	P361	Q11378973	S4656	"https://ja.wikipedia.org/wiki/%E4%BC%8A%E5%8B%A2%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q135445267	Len	"Kakugan-ji Temple"
-Q141593293	P569	novalue
-Q135330271	P569	novalue
-Q106836625	P1814	"しゅせんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2200005000881"
-Q135154026	Len	"Takagi Shrine"
-Q119929452	P13930	"data/iwami/iwane_title"
-Q135446603	Len	"Anju-ji Temple"
-Q10881556	P569	novalue
-Q134987971	Len	"Eisho-ji Temple"
-Q135506340	P569	novalue
-Q141593154	P569	novalue
-Q11455763	Len	"Mitsuzō-in Temple"
-Q10940411	P569	novalue
-Q135040531	P1814	"あまてるたまのじんじゃ"
-Q141593228	P569	novalue
-Q97186293	P1814	"そううんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4180305006737"
-Q11554897	P1814	"いずみじんじゃ"
-Q11501968	P1814	"にいやじんじゃ"
-Q141593241	P569	novalue
-Q134735387	Len	"Konzo-ji Temple"
-Q136091949	P1814	"とうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7180305005703"
-Q141593323	P569	novalue
-Q97674256	Lro	"Templul Ryūen-ji"
-Q135259897	Len	"Fujita Shrine"
-Q135115313	Len	"Kyūsei-ji Temple"
-Q10932870	P569	novalue
-Q135098855	P1814	"みこじんじゃ"
-Q135217276	P1814	"かんのんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7060005004661"
-Q141593123	P569	novalue
-Q141593300	P569	novalue
-Q135040334	P1814	"かむめいつきのじんじゃ"
-Q11596349	P569	novalue
-Q11436783	Lid	"Kuil Ōminakami"
-Q134918557	Lde	"Hōrin-ji-Tempel"
-Q141593136	P569	novalue
-Q134536811	P1814	"しょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2040005006326"
-Q112368210	P569	novalue
-Q141627917	P569	novalue
-Q141593312	P569	novalue
-Q135445311	P1814	"にっこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5110005009335"
-Q11368930	Laz	"Hisaizu məbədi"
-Q9672383	Len	"Category:Aqueducts in Japan"
-Q141593303	P569	novalue
-Q135506351	P569	novalue
-Q140446077	P569	novalue
-Q2983724	P569	novalue
-Q134735511	Len	"Keishō-ji Temple"
-Q135709368	P1814	"れんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8380005003168"
-Q141593178	P569	novalue
-Q38276815	P569	novalue
-Q11455216	P569	novalue
-Q135983567	P1814	"みょうほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6180005012141"
-Q140446143	P569	novalue
-Q135070297	P1814	"びやつかんじんじゃ"
-Q141645800	P1814	"にんちょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5180305002900"
-Q135463000	Len	"Kawauchi Shrine"
-Q141593223	P569	novalue
-Q140446119	P569	novalue
-Q135506329	P569	novalue
-Q134595592	Len	"Ne Shrine"
-Q135432941	P1814	"だいとうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7340005000525"
-Q22119173	P1814	"ぜんりゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6180305000341"
-Q135039871	P1814	"あしつみのじんじゃ"
--Q110915859	P1814	"ハヤシノ-"
-Q141593198	P569	novalue
-Q3270544	P569	novalue
-Q135039647	P1814	"なきちじんじゃ"
-Q86728909	P569	novalue
-Q134982261	Len	"Saisen-ji Temple"
-Q119928790	P1814	"よううんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3012305000134"
-Q10940685	P569	novalue
-Q135041114	P1814	"さひめじんじゃ"
-Q141593131	P569	novalue
-Q134736149	Len	"Seiren-ji Temple"
-Q141593253	P569	novalue
-Q141593252	P569	novalue
-Q135434516	P1814	"いつくしまじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2340005003598"
-Q141593188	P569	novalue
-Q128865671	P1814	"こうみょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9480005002002"
-Q135425879	Len	"Iidama Shrine"
-Q10940674	P569	novalue
-Q135039720	P460	Q11672973	P1352	1
-Q141593240	P569	novalue
-Q65249081	P569	novalue
-Q135193729	P1814	"きたのじんじゃ"
-Q140446076	P569	novalue
-Q11341880	P569	novalue
-Q135041276	P1814	"つまつひめじんじゃ"
-Q106852489	Lpt	"Santuário Yahata Hitomaru"
-Q141593187	P569	novalue
-Q141593199	P569	novalue
-Q134893133	P1814	"すとうじんじゃ"
-Q135417688	Len	"Hōshō-in Temple"
-Q134534355	P1814	"みょうしょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005009638"
-Q141593108	P569	novalue
-Q135115355	Len	"Daiji-in Temple"
-Q11679367	P1814	"りゅうぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1240005000689"
-Q140446057	P569	novalue
-Q135444212	Len	"Son-ji Temple"
-Q135039393	P1814	"おほかのじんじゃ"
-Q11450714	P527	Q137041912	P1545	"3"
-Q123118271	P361	Q11458212	S4656	"https://ja.wikipedia.org/wiki/%E5%AF%BE%E9%A6%AC%E5%B3%B6%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q134735750	Len	"Raiko-ji Temple"
-Q135039746	P361	Q11546334	P1545	"35"	P155	Q72727981	P156	Q135039747	S248	Q135159299	S13677	"181723"
-Q134595413	P1814	"いなおいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005011742"
-Q97170142	P1814	"さいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9200005000561"
-Q4387856	P569	novalue
-Q135039864	P1814	"あめのいはとわけのとのじんじゃ"
-Q134597518	P1814	"たまさきじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3040005010021"
--Q135039995	P361	Q11658590
-Q134535884	Len	"Encho-ji Temple"
-Q135459948	P1814	"さどごこくじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005014497"
-Q135069936	P1814	"しいばえんひめじんじゃ"
-Q10891903	P569	novalue
-Q106241380	P569	novalue
-Q134982563	P1814	"ほうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9080405001123"
-Q135197919	P1814	"たけしまじんじゃ"
-Q134918348	P1814	"しゅうぜんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5080105002012"
-Q135039674	P1814	"ほむすひのじんじゃ"
-Q106241395	P569	novalue
-Q135194710	P1814	"しんめいじんじゃ"
-Q140996229	P1814	"そうおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2180305006251"
-Q135040596	P1814	"いふきのじんじゃ"
-Q141593285	P569	novalue
-Q11391615	P569	novalue
-Q135039928	P361	Q11386164	P1545	"23"	P155	Q11447213	P156	Q135039929	S248	Q135159299	S13677	"181991"
-Q134982227	P1814	"ほうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3080405001112"
-Q11065428	P569	novalue
-Q106567998	Len	"Tōyō-ji Temple"
-Q55533058	Len	"Anju-ji Temple"
-Q135069135	P1814	"くにのとこたちじんじゃ"
-Q134736652	Len	"Hōshō-in Temple"
-Q141627913	P569	novalue
-Q24863211	P569	novalue
-Q86728350	P569	novalue
-Q48745416	P569	novalue
-Q135192779	P1814	"かつぐみじんじゃ"
-Q135260240	P1814	"ゆどのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4060005000176"
-Q141593278	P569	novalue
-Q141492825	P1814	"さいりょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1180005009860"
-Q11568925	P569	novalue
-Q135040251	P361	Q11636413	S4656	"https://ja.wikipedia.org/wiki/%E8%B6%8A%E5%89%8D%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q134918530	Len	"Kyūsei-ji Temple"
-Q135460122	Len	"Matsuo Shrine"
-Q135446069	P1814	"じょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4110005007645"
-Q135115943	P1814	"さいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1050005008198"
-Q135464157	P1814	"とがくしじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005012220"
-Q134735450	P1814	"とくりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2030005003803"
-Q141593200	P569	novalue
-Q135432756	P1814	"ごにゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3340005003688"
-Q135578889	P569	novalue
-Q111370779	P1814	"ぜんのうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2200005006219"
-Q11561324	P569	novalue
-Q135444869	Len	"Saisen-ji Temple"
-Q1073925	P569	novalue
-Q135041343	P1814	"いわとわけやくらひめのじんじゃ"
-Q135199579	P1814	"もとしまじんじゃ"
-Q30931015	P1814	"ほんねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2220005004708"
-Q135578900	P569	novalue
-Q135040055	P361	Q11395784	P1545	"9"	P155	Q11385699	S248	Q135159299	S13677	"182146"
-Q134736799	Len	"Tōyō-ji Temple"
-Q135153812	P1814	"しずじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8050005008539"
-Q134595045	Len	"Mikami Shrine"
-Q135198123	P1814	"たていわじんじゃ"
-Q135446435	P1814	"ふくげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005007774"
-Q135463579	Len	"Hirose Shrine"
-Q135443721	P1814	"こうとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1110005006022"
-Q11662605	P1814	"あおいじんじゃ"
-Q6378698	P569	novalue
-Q141593210	P569	novalue
--Q72727981	P361	Q11546334
-Q112298467	P569	novalue
-Q135444908	Len	"Shōzen-ji Temple"
-Q9590470	Len	"Category:Ancient lakes"
-Q11585202	P569	novalue
-Q140446114	P569	novalue
-Q140446142	P569	novalue
-Q135069951	P11250	"shinto:Shirohiko Shrine"
-Q48749523	P569	novalue
-Q135040749	P1814	"おほわさみのじんじゃ"
-Q135040654	P1814	"くとわじんじゃ"
-Q141593113	P569	novalue
-Q114614568	Len	"Tosho-ji Temple"
-Q11515497	P1814	"さいしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3230005001182"
-Q134735867	Len	"Tateiwa-ji Temple"
-Q141593310	P569	novalue
-Q135193011	P1814	"いなかみじんじゃ"
-Q11572729	P569	novalue
-Q135039928	P361	Q11386164	S4656	"https://ja.wikipedia.org/wiki/%E4%BF%A1%E6%BF%83%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
--Q135039994	P361	Q11658590
-Q141593217	P569	novalue
-Q135445450	P1814	"さいふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005001075"
-Q135041374	P361	Q11657514	S4656	"https://ja.wikipedia.org/wiki/%E9%98%BF%E6%B3%A2%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q135070193	P1814	"たかしまじんじゃ"
-Q11298796	P569	novalue
-Q134879672	P1813	ja:"息長水依"	P2440	"Okitsunagamizunoire"
-Q135270268	P973	"http://www.hyogo-jinjacho.com/data/6322009.html"
-Q135578883	P569	novalue
-Q134536156	P1814	"みょうれんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1040005012085"
-Q141593220	P569	novalue
-Q135707663	P1814	"ちょうりゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3380005009038"
-Q141593140	P569	novalue
-Q135153767	P1814	"きたのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1050005007101"
-Q28683498	P1814	"まんこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8320005000724"
-Q141593225	P569	novalue
-Q135444328	P1814	"まんぷくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005014176"
-Q776371	P569	novalue
-Q11573864	P1814	"ずいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6130005002072"
-Q135039168	P1814	"おほとりゐせのじんじゃ"
-Q135070295	P1814	"しきしまじんじゃ"
-Q134537066	Len	"Tosho-ji Temple"
-Q135259180	P1814	"てんしょうこうたいじんぐう"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2060005002918"
-Q128866264	P1814	"こうえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8310005000345"
-Q38276367	P569	novalue
-Q134736406	Len	"Kinshaku-ji Temple"
-Q141593272	P569	novalue
-Q131274435	Len	"Eisho-ji Temple"
-Q141593231	P569	novalue
-Q140446127	P569	novalue
-Q134917558	P1814	"さいふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2080405005031"
-Q134982460	Len	"Soji-in Temple"
-Q128865870	P1814	"いおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1030005005180"
-Q125364551	P569	novalue
-Q135462881	P1814	"じゅうにしょじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005007649"
-Q134918634	Len	"Keishō-ji Temple"
-Q135434162	P13930	"data/oumi/ninomiya_title"
-Q135156036	Len	"Ōjin Shrine"
-Q140446058	P569	novalue
-Q140446112	P569	novalue
-Q134603329	P1814	"おおくにぬしじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2040005010947"
-Q135444640	P1814	"ちょうあんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3110005014147"
-Q141593233	P569	novalue
-Q120336140	P1814	"こんぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1012405000317"
-Q135505756	P569	novalue
-Q13577821	P569	novalue
-Q135446328	P1814	"さいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005006924"
-Q38266960	P1814	"みょうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5200005000722"
-Q135039117	P1814	"わかやまとひめのじんじゃ"
-Q141593290	P569	novalue
-Q140426892	P1814	"ほうしんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4180005008190"
-Q135330236	P569	novalue
--Q110915859	P1814	"カタスカノ-"
-Q135115511	P1814	"ようぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5050005007782"
-Q141593139	P569	novalue
-Q135505760	P569	novalue
-Q134957445	Len	"Tatsuishi Shrine"
-Q10940642	P569	novalue
-Q134887055	P1814	"ゆどのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8030005013276"
-Q128866303	P1814	"かいれんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6230005005263"
-Q65291167	P1814	"ちょうじゅじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9480005003446"
-Q134955469	P13930	"data/mino/tasiro_title"
-Q22120568	P1814	"みょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7020005001084"
-Q131578100	P837	Q2890	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E9%8E%8C%E5%80%89%E5%B8%82%E5%A4%A7%E8%88%B9%29"
-Q135069590	P1814	"かしまじんじゃ"
-Q135041316	P1814	"はにやまのじんじゃ"
-Q65266248	P569	novalue
-Q120336110	P1814	"みつごんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1011505000350"
-Q135040396	P361	Q11636380	P1545	"32"	P155	Q135040394	P156	Q11659204	S248	Q135159299	S13677	"182417"
-Q135194887	P1814	"あらいしじんじゃ"
-Q462803	P569	novalue
-Q131925939	P837	Q2613	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AE%AE%E7%A5%9E%E7%A4%BE_%28%E5%A4%A7%E5%B3%B6%E7%94%BA%29"
-Q108039939	P569	novalue
-Q141627918	P569	novalue
-Q141593169	P569	novalue
-Q11528011	Len	"Tōzen-ji Temple"
-Q135460437	Ldz	"ཧཙིམན མཾདིར"
-Q141593295	P569	novalue
-Q11603375	P569	novalue
-Q112953068	P361	Q11668489	P1545	"21"	P155	Q135039633	P156	Q135039635	S248	Q135159299	S13677	"181567"
-Q134918078	P1814	"じょうがんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4080005005033"
-Q135578919	P569	novalue
--Q135194697	P1448	ojp-hani:"風速神社"
-Q141593294	P569	novalue
-Q135115729	Len	"Ryozen-ji Temple"
-Q28686804	P1814	"ほうおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2140005014392"
-Q134982498	P1814	"こうぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8080405000753"
-Q134595424	P1814	"いなおいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005011742"
-Q141593134	P569	novalue
-Q70725130	Len	"Tenjin Shrine"
-Q60986812	P1814	"こうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8090005001713"
-Q9386388	P569	novalue
-Q141593166	P569	novalue
-Q13275856	P14391	"10350"
-Q135186713	P1814	"やぎじんじゃ"
-Q141593234	P569	novalue
-Q22070227	P569	novalue
-Q140446056	P569	novalue
-Q135098896	P1814	"ぬのたひめのじんじゃ"
-Q141593305	P569	novalue
-Q135154177	P1814	"いしぶねじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6050005000951"
-Q141593257	P569	novalue
-Q135039661	P1814	"ほつさけのじんじゃ"
-Q135504622	P569	novalue
-Q141645672	P1814	"えんりゅういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3160005000613"
-Q56347860	P569	novalue
-Q110064736	P569	novalue
-Q11383014	P361	Q11658590	S4656	"https://ja.wikipedia.org/wiki/%E9%99%B8%E5%A5%A5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q135708872	P1814	"やくしじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6380005008581"
-Q114019810	P1814	"えんめいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5200005008427"
-Q141593142	P569	novalue
-Q135154249	P1814	"まゆみじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3050005003916"
-Q135578905	P569	novalue
-Q135708139	P1814	"えんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1380005009072"
-Q141593126	P569	novalue
-Q134989197	P13930	"data/nagato/soujya_title"
-Q141593273	P569	novalue
-Q135193733	P1814	"ひよしじんじゃ"
-Q134918565	Len	"Zuirin-ji Temple"
-Q141593255	P569	novalue
-Q141593321	P569	novalue
-Q135461967	P1814	"いずじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005009043"
-Q141593165	P569	novalue
-Q135578879	P569	novalue
-Q141593192	P569	novalue
-Q141593244	P569	novalue
-Q111001272	Len	"Daitoku-in Temple"
-Q1826765	P569	novalue
-Q134534472	P1814	"やくおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1040005009643"
-Q11572681	P569	novalue
-Q135432904	P1814	"しょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6340005004048"
-Q10935105	P569	novalue
-Q128866232	P1814	"じょうえんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6200005008558"
-Q136769726	P569	novalue
-Q134956323	P1814	"つしまじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3080405003612"
-Q135461741	Len	"Hinomae Shrine"
-Q135039655	P1814	"いはくらわけのじんじゃ"
-Q22120573	Len	"Myōren-ji Temple"
-Q135114919	Len	"Soji-in Temple"
-Q134887082	Len	"Fujita Shrine"
-Q135426119	P1814	"いわどじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9070005003693"
-Q141629869	P1814	"おいまつじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5300005004614"
-Q135070143	P1814	"さひめやまじんじゃ"
-Q131577439	P825	Q3275893	P1932	"天神七柱"
-Q11393842	P361	Q11465292	P1545	"81"	P155	Q135039524	P156	Q135039526	S248	Q135159299	S13677	"181421"
-Q141593227	P569	novalue
-Q141593206	P569	novalue
-Q128865637	P1814	"さいふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1480005003420"
-Q135425127	P1814	"ながらじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6070005006708"
-Q54153257	P825	Q37302	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E9%AB%98%E3%83%8E%E6%9C%A8%E7%A5%9E%E7%A4%BE"
-Q10864079	P569	novalue
-Q135425941	Lid	"Kuil Iidama"
-Q135155104	Len	"Hisaki Shrine"
-Q135432898	Len	"Eisho-ji Temple"
-Q10939945	P569	novalue
-Q135460888	P1814	"むなかたしゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005002650"
-Q135155330	Len	"Kabuto Shrine"
-Q97210797	P1814	"かんみょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3011405000382"
-Q141593216	P569	novalue
-Q134844607	P569	novalue
-Q134604606	Len	"Hayao Shrine"
-Q135068851	P1814	"いしだじんじゃ"
-Q135115934	P1814	"さいせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8050005007887"
-Q107664337	P361	Q11368516	S4656	"https://ja.wikipedia.org/wiki/%E4%B8%B9%E5%BE%8C%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q135578867	P569	novalue
-Q135708432	P1814	"かんのんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5380005002916"
-Q462555	P569	novalue
-Q86736058	P569	novalue
-Q135707969	Len	"Fukugen-ji Temple"
-Q141593121	P569	novalue
-Q135039872	P1814	"よろきのじんじゃ"
-Q135069127	P1814	"やまゆきぼうやまくちじんじゃ"
-Q135040696	P460	Q135070073	P1352	1
-Q135445685	P1814	"かんのんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005001024"
-Q11514781	P569	novalue
-Q135069463	P1814	"もとみやじんじゃ"
-Q135193006	P1814	"しんめいじんじゃ"
-Q135115889	P1814	"えいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8050005004835"
-Q136953369	P1814	"せんとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6030005009219"
-Q134918608	P1814	"ゆうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6080405003915"
-Q141593262	P569	novalue
-Q141593122	P569	novalue
-Q134535999	P1814	"せんしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8040005015180"
-Q140446002	P569	novalue
-Q135462871	P1814	"いかづちじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005007536"
-Q135709436	P1814	"ふおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8380005005172"
-Q113613358	P1814	"らいけんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7050005007806"
-Q110120205	P569	novalue
-Q135463509	Len	"Roku-sha Shrine"
-Q11436783	Len	"Ōminakami Shrine"
-Q141593297	P569	novalue
-Q134886271	P1814	"りょうかみさんりょうかみじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2030005015303"
-Q141593107	P569	novalue
--Q135038843	P1814	"-ノイハスヒノ"
-Q135040311	P1814	"おほなもちのかみかたいしのじんじゃ"
-Q134535162	P1814	"えんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005013516"
-Q141593135	P569	novalue
-Q135446084	Len	"Zenmyo-ji Temple"
-Q135039736	P1814	"たけふひこのじんじゃ"
-Q141593158	P569	novalue
-Q135259587	Len	"Fujita Shrine"
-Q54152944	P1814	"じょうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9170005005341"
-Q116294354	P1814	"こうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5280005004848"
-Q55523289	P569	novalue
-Q135708028	P1814	"がっこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6380005009076"
--Q11608777	P361	Q11553385
-Q134735970	Len	"Daitoku-in Temple"
-Q135194886	P1814	"ひよしじんじゃ"
-Q119679168	Lja	"アプリーカのマリア・アウシリアトリーチェ教会"
-Q134989110	P13930	"data/izumo/mitani_title"
-Q134735252	P1814	"さいしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1030005004389"
-Q141593194	P569	novalue
-Q141593127	P569	novalue
-Q135040951	P1814	"おほかみおおきさきのじんじゃ"
-Q141593259	P569	novalue
-Q135217270	P1814	"こうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3060005003865"
-Q9590470	Len	"Category:Ancient lakes"
-Q135039299	P1814	"たけささふえのじんじゃ"
-Q134537385	P1814	"ほんりゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4040005011150"
-Q134846383	P569	novalue
-Q705297	P1814	"にしのみやじんじゃ"
-Q22120275	Len	"Hōshō-in Temple"
-Q135416759	P1814	"こうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1070005004443"
-Q135217930	Len	"Hōshō-in Temple"
-Q137653024	P1814	"ちょうぞんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8180305004241"
-Q97176199	P1814	"しょうがくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3010605000382"
-Q135259796	Lzh-hk	"山神社"
--Q135288221	P361	Q11642130
-Q134537150	P1814	"こんごういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6040005015505"
-Q135070144	P1814	"さひめやまじんじゃ"
-Q48745417	P569	novalue
-Q135155846	Len	"Mayumi Shrine"
-Q135417442	Len	"Daitoku-in Temple"
-Q135271288	P569	novalue
-Q141593195	P569	novalue
-Q65276364	P1814	"じんこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3480005001315"
-Q135154493	P1814	"てごさきじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9050005000759"
-Q141593307	P569	novalue
-Q137424510	P1814	"れんねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6180005011969"
-Q11613393	P1814	"こうとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9120005000875"
-Q141593316	P569	novalue
-Q86730053	P569	novalue
-Q124496462	P1814	"ごくらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9480005004592"
-Q49871432	Len	"Category:Authors"
-Q134919191	Len	"Shinkyo-ji Temple"
-Q10928586	P569	novalue
-Q135195607	P1814	"ひのみさきじんじゃ"
-Q135460714	Len	"Akiba-sha Shrine"
-Q135040974	P1814	"あましろひめのじんじゃ"
--Q17228121	P1814	"エ-"
-Q135578876	P569	novalue
-Q140446141	P569	novalue
-Q141593327	P569	novalue
-Q111959240	P1814	"せいげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4100005006516"
-Q135040127	P1814	"ちはむらじんじゃ"
-Q141593318	P569	novalue
-Q135445403	P1814	"じょうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005008490"
-Q135040259	Ltok	"tomo sewi Kanajamapiko"
--Q17226307	P361	Q11604948
-Q135217830	P1814	"こんじょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8060005006946"
-Q136342769	P1814	"いちおうじじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5260005003827"
-Q135113177	P569	novalue
-Q9150392	P569	novalue
-Q135217512	P1814	"しょうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5060005006057"
-Q135432926	P1814	"てんしょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6340005006944"
-Q141593222	P569	novalue
-Q135328853	P569	novalue
-Q135070289	P1814	"うまおかにったじんじゃ"
-Q141627915	P569	novalue
-Q11092833	P569	novalue
-Q135432760	P1814	"だいせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3340005004034"
-Q135040327	P1814	"すくなひこのかみかたじんじゃ"
-Q17209205	Ltl	"Dambanang Saminaga"
-Q135193008	P1814	"いなしもじんじゃ"
-Q141627914	P569	novalue
-Q134537190	Len	"Daitoku-in Temple"
-Q112298337	P569	novalue
-Q135039653	P1814	"いはのひめのじんじゃ"
-Q135506349	P569	novalue
-Q11446946	P1814	"みょうほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2320005005646"
-Q135040386	P13930	"data/ecyu/tateiwa_title"
-Q134603002	P1814	"くまのじんじゃにちげつじんじゃやさかじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005010752"
-Q135709604	P1814	"ようしんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9380005005188"
-Q135040054	P361	Q11395784	P1545	"4"	P155	Q135040053	P156	Q11577650	S248	Q135159299	S13677	"182141"
-Q141593147	P569	novalue
-Q135217898	Len	"Hōshō-in Temple"
-Q134957927	P1814	"いはなのじんじゃ"
-Q17193127	P569	novalue
-Q11420254	P527	Q11474068	P1545	"7"
-Q141593176	P569	novalue
-Q55528104	P569	novalue
-Q141593205	P569	novalue
-Q11146526	P569	novalue
-Q11383014	P361	Q11658590	P1545	"10"	P155	Q135039984	P156	Q11380543	S248	Q135159299	S13677	"182047"
-Q135433758	P1814	"こだかじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4340005000478"
-Q135040305	P1814	"しひしはのじんじゃ"
-Q137776173	P1814	"まんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3021005003958"
-Q141593218	P569	novalue
-Q141593180	P569	novalue
-Q124496391	P1814	"ゆうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6120905003600"
-Q134919212	P1814	"あんりゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5080105003299"
-Q135709586	Len	"Saisen-ji Temple"
-Q11578590	P837	Q2519	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E7%95%9D%E7%81%AB%E5%B1%B1%E5%8F%A3%E7%A5%9E%E7%A4%BE"
-Q135154661	P1814	"しんぐうじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6050005007880"
-Q141593247	P569	novalue
-Q135432901	P1814	"しんきょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6340005003867"
-Q135459640	P1814	"はちまんわかみやじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005014447"
-Q141324583	P569	novalue
-Q141593275	P569	novalue
-Q135425462	Len	"Iwasaki Shrine"
-Q133097744	P569	novalue
-Q135424982	P1814	"いさすみじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9070005006003"
-Q134862171	P569	novalue
-Q134917647	P1814	"ようしんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2080005005373"
-Q11635090	P1814	"けんりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5180005008438"
-Q135461348	P1814	"さかえじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005002758"
-Q135433639	P1814	"ちんじゅじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7340005000533"
-Q141593214	P569	novalue
-Q11545641	P1814	"しょうかくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4180005009313"
-Q116942835	P1814	"しんえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7350005000805"
-Q135461738	P1814	"ほくらじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005009359"
-Q85879407	Len	"Hōshō-in Temple"
-Q11387080	P569	novalue
-Q141593330	P569	novalue
-Q134736886	Len	"Tōyō-ji Temple"
-Q135039637	P1814	"いかむひめのじんじゃ"
-Q134957969	P1814	"いわたじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8080405005315"
-Q65266228	P569	novalue
--Q135069402	P1814	"ツノサリ-"
-Q135434259	P1814	"きんぽうじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7340005003602"
-Q117474480	Len	"Eigan-ji Temple"
-Q65267282	P1814	"こうぼうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6480005004612"
-Q141593146	P569	novalue
-Q135708559	P1814	"ろくせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4380005003634"
-Q138034152	P569	novalue
-Q97195491	Len	"Encho-ji Temple"
-Q135041138	P1814	"しみはあまいはかつのじんじゃ"
-Q48759713	P569	novalue
-Q135069938	P1814	"しいばえんひめじんじゃ"
-Q9670634	Len	"Category:Battles in Japan"
-Q134987816	Len	"Tosho-ji Temple"
-Q65269923	P569	novalue
-Q134886839	Len	"Shakujii Shrine"
-Q134982527	P1814	"ほうおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8080405003442"
-Q106160485	P569	novalue
-Q135039223	P1814	"おほくにぬしのじんじゃ"
-Q141593248	P569	novalue
-Q141593186	P569	novalue
-Q55533749	P569	novalue
-Q11432381	P1814	"おおよさみじんじゃ"
-Q135446534	Len	"Konzo-ji Temple"
-Q97276933	P1814	"ほんがんじさかいべついん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2120105000022"
-Q135464005	P1814	"てんじんぐう"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2110005012358"
-Q134735561	Len	"Shinkyo-ji Temple"
-Q134918561	P1814	"おんりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6080105002861"
-Q141627916	P569	novalue
-Q135259614	P1814	"しおがまいなりじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4060005000300"
-Q141593148	P569	novalue
-Q135040610	P361	Q11381626	P1545	"7"	P155	Q135040609	P156	Q135040611	S248	Q135159299	S13677	"182621"
-Q11605642	P13930	"data/yamato/susano_title"
-Q141593315	P569	novalue
-Q135069954	Len	"Shirohiko Shrine (Noto Province)"
-Q135068853	P1814	"いしだじんじゃ"
-Q135040747	P1814	"あまひなとりのじんじゃ"
-Q135328861	P569	novalue
-Q141593242	P569	novalue
--Q135039653	P361	Q11380552
-Q11573853	P569	novalue
-Q141593209	P569	novalue
-Q141593138	P569	novalue
-Q141593212	P569	novalue
-Q106836670	P1814	"ほんがんじよしざきべついん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1210005004131"
-Q135041476	P1814	"みせのじんじゃ"
-Q141593304	P569	novalue
-Q134917475	Len	"Tosen-in Temple"
-Q135707899	Len	"Shogen-ji Temple"
-Q135446482	P1814	"ちょうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005012196"
-Q134918119	P1814	"こううんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4080105001279"
-Q11088804	P569	novalue
-Q140996231	P1814	"けいあんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3230005005308"
-Q135040396	P361	Q11636380	S4656	"https://ja.wikipedia.org/wiki/%E8%B6%8A%E4%B8%AD%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q134918156	P1814	"みょうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4080105003077"
-Q135446672	P1814	"ほうこういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005012461"
-Q135039112	P1814	"はくたひこのじんじゃ"
-Q135039270	P361	Q11378973	P1545	"49"	P155	Q17214615	P156	Q17191305	S248	Q135159299	S13677	"181156"
-Q134735660	P1814	"しょうとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3030005005096"
-Q135506344	P569	novalue
-Q135444420	Len	"Eigu-ji Temple"
-Q135460537	Len	"Kotohira-sha Shrine"
-Q135192635	P1814	"やまずみじんじゃ"
-Q141593246	P569	novalue
-Q141645798	P1814	"ちょうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9180005008137"
-Q141593258	P569	novalue
-Q136731213	P569	novalue
-Q135708146	P1814	"ふくげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9380005001641"
-Q11573892	Len	"Zuirin-ji Temple"
-Q141593320	P569	novalue
--Q135041137	P1814	"スカノノアメノタカラワカコノ-"
-Q65272471	P569	novalue
-Q134735716	Len	"Taiun-ji Temple"
-Q106107009	P569	novalue
-Q141593125	P569	novalue
-Q135039677	P1814	"なかおほとしのじんじゃ"
-Q135445952	Len	"Daiji-in Temple"
--Q11433065	P361	Q11361380
-Q91088537	P569	novalue
-Q135039287	P1814	"あふかこたのじんじゃ"
-Q135217262	Len	"Shogen-ji Temple"
-Q48753263	P569	novalue
-Q141593173	P569	novalue
-Q135463134	P1814	"やさかじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005007807"
-Q2680724	P569	novalue
-Q11568940	P825	Q98083023	P1932	"速玉之男神"	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E5%80%89%E6%95%B7%E5%B8%82%E6%9E%97%29"
-Q134982199	Len	"Zentoku-ji Temple"
-Q23997315	Len	"Fufeng"
-Q135217156	P1814	"へんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3060005002891"
-Q1373935	P569	novalue
-Q135039748	P361	Q11546334	P1545	"37"	P155	Q135039747	P156	Q2963366	S248	Q135159299	S13677	"181725"
-Q135270292	P1814	"みやのめじんじゃ"
-Q135444250	P1814	"そうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005005663"
-Q65249018	P569	novalue
-Q137674255	P1814	"しまかつじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2190005003853"
-Q10932738	P569	novalue
-Q135039612	P1814	"はきはらのじんじゃ"
-Q135040054	P361	Q11395784	S4656	"https://ja.wikipedia.org/wiki/%E5%87%BA%E7%BE%BD%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q141593153	P569	novalue
-Q28686064	P1814	"あんこくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3200005006283"
-Q134955809	P13930	"data/kai/hirono_title"
--Q11404276	P361	Q11546334
-Q135259007	Lcdo	"ŭng ciòng sìng siâ"
-Q134535031	Len	"Soji-in Temple"
-Q135040331	P1814	"いはくらじんじゃ"
-Q135708735	Len	"Saisen-ji Temple"
-Q128866093	P1814	"そうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8200005008564"
-Q65256829	P1814	"ほうおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5480005002897"
-Q135443897	Len	"Daiji-in Temple"
-Q135505758	P569	novalue
-Q134735759	Len	"Shoden-in Temple"
-Q134736621	P1814	"じぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8030005002725"
-Q134879672	P569	novalue
-Q86725467	P569	novalue
-Q134603330	P1814	"はこねじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9040005010965"
-Q135417304	Lzh-hant	"華蔵寺"
-Q135193734	P1814	"いまみやじんじゃ"
-Q131274535	P1814	"こんごういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3030005005278"
-Q109927163	P837	Q2846	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E5%85%83%E5%AE%BF%E7%A5%9E%E7%A4%BE"
-Q135288221	P361	Q11642130	P1545	"26"	P155	Q135039601	P156	Q135039602	S248	Q135159299	S13677	"181512"
-Q135444568	P1814	"こうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1110005006914"
-Q28685356	Len	"Eisho-ji Temple"
-Q131925936	P1814	"みたかじんじゃ"
-Q135039853	P1814	"ふせのじんじゃ"
-Q141593182	P569	novalue
-Q705035	P361	Q11604948	P1545	"26"	P155	Q335618	P156	Q135041281
-Q134982355	P1814	"じょうどじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5080405000806"
-Q134595430	P1814	"いなおいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005011742"
-Q135217544	P1814	"さいしょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5060005007138"
-Q141593133	P569	novalue
-Q128866391	P1814	"せいどうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3140005005671"
-Q135040455	P361	Q11636502	P1545	"27"	P155	Q135040454	P156	Q11379707	S248	Q135159299	S13677	"182445"
-Q110796235	P569	novalue
-Q135199776	P1814	"ぎんざんじょじんじゃ"
-Q134604573	P1814	"おおぎじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8040005010454"
-Q1056017	P569	novalue
-Q135425181	Len	"Iidama Shrine"
-Q134926826	P825	Q98083023	P1932	"速玉之男神"	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%B5%9C%E6%B2%BC%29"
-Q11438541	P1814	"だいしょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7190005009128"
-Q11487792	P361	Q11553385	P1545	"64"	P155	Q135039136	P156	Q135039138	S248	Q135159299	S13677	"180939"
-Q123518890	P1814	"みょうれんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6440005000862"
-Q140446121	P569	novalue
-Q8191715	P569	novalue
-Q8191878	P569	novalue
-Q131577439	P825	Q18337308	P1932	"地神五柱"
-Q140446116	P569	novalue
-Q135040221	P1814	"たかおいはくらのじんじゃ"
-Q115010505	Len	"Kyūsei-ji Temple"
-Q135459166	P1814	"じゅうにじんじゃ"
-Q135578874	P569	novalue
-Q135069871	P1814	"みさきじんしゃ"
-Q141593280	P569	novalue
-Q135217600	P1814	"まんぷくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6060005005280"
-Q136764753	P569	novalue
-Q135983568	P1814	"みょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5180005012142"
-Q135445257	P1814	"たくみょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5110005004955"
-Q141593119	P569	novalue
-Q272993	P569	novalue
-Q134956693	P13930	"data/iyo/miyauti_title"
-Q140445994	P569	novalue
-Q11526041	Len	"Tōkō-in Temple"
-Q24872532	P1814	"とうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2012705000404"
-Q135115778	P1814	"ぜしんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7050005006477"
-Q135444844	P1814	"へんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3110005002820"
-Q135330162	P569	novalue
-Q9610964	Lzh-tw	"名神大社"
-Q135260486	Len	"Iwasaki Shrine"
-Q134919060	P1814	"だいじょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8080405005406"
-Q28686480	P1814	"しょうごじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6330005002894"
-Q97182253	Len	"Myogen-ji Temple"
-Q11358323	P569	novalue
-Q140447393	P569	novalue
-Q141593161	P569	novalue
-Q141593163	P569	novalue
 Q141593250	P569	novalue
-Q11129547	P569	novalue
-Q141593129	P569	novalue
-Q71133194	P569	novalue
+Q141593131	P569	novalue
+Q1101132	P569	novalue
+Q135446482	P1814	"ちょうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005012196"
+Q134844607	P569	novalue
+Q135578905	P569	novalue
+Q141593197	P569	novalue
+Q135446435	P1814	"ふくげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005007774"
+Q135707929	P1814	"ちょうとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6380005006247"
+Q141593218	P569	novalue
+Q141593198	P569	novalue
+Q141593122	P569	novalue
+Q134926835	P825	Q382005	P3831	Q141593105	P1932	"菅原道真"	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B3%B6%E7%A5%9E%E7%A4%BE_%28%E9%A4%A8%E6%9E%97%E5%B8%82%29"
+Q2680724	P569	novalue
+Q136807956	P569	novalue
+Q28686480	P1814	"しょうごじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6330005002894"
+Q60673696	P569	novalue
+Q135425299	P13930	"data/kai/sibamiya_title"
+Q135462871	P1814	"いかづちじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005007536"
+Q140445993	P569	novalue
+Q135039108	P361	Q11553385	P1545	"10"	P155	Q11675603	P156	Q135039109	S248	Q135159299	S13677	"180885"
+Q141593133	P569	novalue
+Q135493216	P569	novalue
+Q135445257	P1814	"たくみょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5110005004955"
+Q135708760	P1814	"ふどういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5380005003591"
+Q135493035	P569	novalue
+Q9386388	P569	novalue
+Q128866391	P1814	"せいどうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3140005005671"
+Q136764753	P569	novalue
+Q112944198	P1814	"こうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1021005007845"
+Q134930277	P361	Q11380552	P1545	"17"	P155	Q135039644	P156	Q135039645
+Q135182237	P1814	"ゆうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5190005003834"
+Q135463918	P1814	"いやひこしゃ"
+Q11088804	P569	novalue
+Q38266960	P1814	"みょうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5200005000722"
+Q135462358	P1814	"かわうちじんじゃ"
+Q141593262	P569	novalue
+Q135155132	Lbn	"কাশিমা মন্দির"
+Q135708146	P1814	"ふくげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9380005001641"
+Q107390989	P1814	"こうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1480005003321"
+Q120336140	P1814	"こんぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1012405000317"
+Q134534355	P1814	"みょうしょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005009638"
+Q135444844	P1814	"へんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3110005002820"
+Q134918156	P1814	"みょうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4080105003077"
+Q141593214	P569	novalue
+Q135459166	P1814	"じゅうにじんじゃ"
+Q134603002	P1814	"くまのじんじゃにちげつじんじゃやさかじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005010752"
+Q135432926	P1814	"てんしょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6340005006944"
+Q106836785	P1814	"りゅうとういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6180305007824"
+Q10891903	P569	novalue
+Q97168786	P1814	"あんらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8200005000496"
+Q134597518	P1814	"たまさきじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3040005010021"
+Q136769726	P569	novalue
+Q135041107	P460	Q135070140	P1352	1
+Q141623810	P1814	"はちまんじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9200005008605"
+Q134930580	Leu	"Nasukaminokaneko santutegia"
+Q135433639	P1814	"ちんじゅじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7340005000533"
+Q10949054	P569	novalue
+Q134535073	Lbr	"Templ Jizō-in"
+Q11436783	Lid	"Kuil Ōminakami"
+Q11526041	Len	"Tōkō-in Temple"
+Q141593280	P569	novalue
+Q10935105	P569	novalue
+Q135289776	P11250	"shinto:Amehikake- Shrine (Q135289776)"
+Q10940411	P569	novalue
+Q141593178	P569	novalue
+Q135115889	P1814	"えいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8050005004835"
+Q140446116	P569	novalue
+Q141593258	P569	novalue
+Q30931015	P1814	"ほんねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2220005004708"
+Q128866232	P1814	"じょうえんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6200005008558"
+Q141593273	P569	novalue
 Q134535049	P1814	"しゅうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4040005013023"
-Q141593128	P569	novalue
-Q135070305	P1814	"さるたひこじんじゃ"
-Q65270244	P569	novalue
--Q11442850	P1814	"オホマトノツノ-"
-Q135579677	P569	novalue
-Q9672383	Len	"Category:Aqueducts in Japan"
-Q5966692	P569	novalue
-Q135040750	P1814	"おほのみのじんじゃ"
-Q135578857	P569	novalue
+Q140996231	P1814	"けいあんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3230005005308"
+Q10932738	P569	novalue
+Q140426892	P1814	"ほうしんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4180005008190"
+Q141593306	P569	novalue
+Q1753428	P569	novalue
+Q141593315	P569	novalue
+Q135444344	P1814	"きちじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005004027"
 Q135424927	Len	"Iidama Shrine"
-Q135116054	Len	"Encho-ji Temple"
-Q135444325	P1814	"だいじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005014341"
+Q1373935	P569	novalue
+Q135463579	P1814	"ひろせじんじゃ"
+Q10864079	P569	novalue
+Q2983724	P569	novalue
+Q11635090	P1814	"けんりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5180005008438"
+Q135260240	P1814	"ゆどのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4060005000176"
+Q123518890	P1814	"みょうれんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6440005000862"
+Q97176199	P1814	"しょうがくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3010605000382"
+Q141593231	P569	novalue
+Q141593144	P569	novalue
+Q134886380	P1814	"ながいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3030005013355"
+Q135578864	P569	novalue
+Q11110848	P569	novalue
+Q97311694	P1814	"りっしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6350005000905"
+Q135039994	P361	Q11658590	P1545	"25"	P155	Q135039993	P156	Q135039995	S248	Q135159299	S13677	"182062"
+Q11455216	P569	novalue
+Q135154177	P1814	"いしぶねじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6050005000951"
+Q135270268	P973	"http://www.hyogo-jinjacho.com/data/6322009.html"
+Q135443827	P1814	"じゅうおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3110005006037"
+Q97210797	P1814	"かんみょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3011405000382"
+Q7683716	P569	novalue
+Q135153767	P1814	"きたのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1050005007101"
+Q56347860	P569	novalue
+Q134535162	P1814	"えんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005013516"
+Q141593316	P569	novalue
+Q135462998	P1814	"かわうちじんじゃ"
+Q135425213	P1814	"なんさいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3070005003658"
+Q135434516	P1814	"いつくしまじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2340005003598"
+Q48755228	P1814	"ほうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8260005007791"
+Q134736727	P1814	"さいしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8030005011404"
+Q140446114	P569	novalue
+Q135708028	P1814	"がっこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6380005009076"
+Q135330332	P569	novalue
+Q54152944	P1814	"じょうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9170005005341"
+Q141593199	P569	novalue
+Q135432756	P1814	"ごにゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3340005003688"
+Q141593310	P569	novalue
+Q135041276	P1814	"つまつひめじんじゃ"
+Q135330219	P569	novalue
+Q141593121	P569	novalue
+Q59208937	P1814	"がんねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5200005007882"
+Q141627913	P569	novalue
+Q135039027	P361	Q11433427	P1545	"192"	P155	Q11405029	P156	Q135039028	S248	Q135159299	S13677	"180851"
+Q141593108	P569	novalue
+Q141593195	P569	novalue
+Q135461967	P1814	"いずじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005009043"
+Q134604573	P1814	"おおぎじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8040005010454"
+Q135416764	P1814	"じゅうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1070005004518"
+Q29407944	P1814	"まんだいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9120105001006"
+Q11536449	P569	novalue
+Q9150391	P569	novalue
+Q135069951	Len	"Shirohiko Shrine"
+Q97165412	P1814	"はるさめでら"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3010705000209"
+Q14566271	Len	"Category:Appointed members of the House of Peers"
+Q8191878	P569	novalue
+Q11296639	P569	novalue
+Q135155669	P13930	"data/nagato/inari_title"
+Q138964737	P569	novalue
+Q141593295	P569	novalue
+Q134918561	P1814	"おんりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6080105002861"
+Q135039645	P361	Q11380552	P1545	"18"	P155	Q134930277	P156	Q135039647	S248	Q135159299	S13677	"181586"
+Q135708139	P1814	"えんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1380005009072"
+Q11631810	P361	Q11368560	P1545	"14"	P155	Q11432213	P156	Q135040499
+Q13579836	P569	novalue
+Q136953369	P1814	"せんとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6030005009219"
+Q107391026	P1814	"みょうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1180005008499"
+Q38276368	P569	novalue
+Q134918608	P1814	"ゆうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6080405003915"
+Q135709436	P1814	"ふおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8380005005172"
+Q135506344	P569	novalue
+Q11596349	P569	novalue
+Q38276815	P569	novalue
+Q141593228	P569	novalue
+Q141593321	P569	novalue
+Q17193127	P569	novalue
+Q135155846	P1814	"まゆみじんじゃ"
+Q60995918	P569	novalue
+Q141593128	P569	novalue
+Q135425941	Lid	"Kuil Iidama"
+Q141593161	P569	novalue
+Q8191715	P569	novalue
+Q135039747	P361	Q11546334	S4656	"https://ja.wikipedia.org/wiki/%E6%AD%A6%E8%94%B5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135506347	P569	novalue
+Q141593212	P569	novalue
+Q42579105	Lhe	"מקדש קוג׳י"
+Q11528011	Len	"Tōzen-ji Temple"
+Q135217600	P1814	"まんぷくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6060005005280"
+Q135709604	P1814	"ようしんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9380005005188"
+Q135464028	P1814	"なのかまちじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005012221"
+Q141593109	P569	novalue
+Q135461067	P1814	"しんぼじんじゃ"
+Q135462881	P1814	"じゅうにしょじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005007649"
+Q134917426	P1814	"ちょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1080005005036"
+Q135154026	P1814	"たかぎじんじゃ"
+Q135288221	P361	Q11642130	S4656	"https://ja.wikipedia.org/wiki/%E9%81%A0%E6%B1%9F%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q141593274	P569	novalue
+Q30932323	Lar	"معبد شوريوجي"
+Q65272606	P1814	"ちょうめいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8480005003447"
+Q135425225	Len	"Iidama Shrine"
+Q86728350	P569	novalue
+Q134735450	P1814	"とくりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2030005003803"
+Q134603329	P1814	"おおくにぬしじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2040005010947"
+Q11573853	P569	novalue
+Q141593135	P569	novalue
+Q10928456	P569	novalue
+Q141593200	P569	novalue
+Q137674255	P1814	"しまかつじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2190005003853"
+Q11358323	P569	novalue
+Q141593305	P569	novalue
+Q141593277	P569	novalue
+Q140322721	P1814	"しゅうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7130005009034"
+Q134595592	P1814	"ねじんじゃ"
+Q91088537	P569	novalue
+Q135425879	Len	"Iidama Shrine"
+Q141593220	P569	novalue
+Q141593257	P569	novalue
+Q141593168	P569	novalue
+Q141627917	P569	novalue
+Q135289776	P6262	"shinto:Amehikake- Shrine (Q135289776)"
+Q141593201	P569	novalue
+Q110064530	P569	novalue
+Q141593229	P569	novalue
+Q134926924	P1814	"さないじんじゃ"
+Q135426119	P1814	"いわどじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9070005003693"
+Q11404276	P361	Q11546334	P1545	"22"	P155	Q11485625	P156	Q135098982
+Q72727981	P361	Q11546334	S4656	"https://ja.wikipedia.org/wiki/%E6%AD%A6%E8%94%B5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q134534472	P1814	"やくおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1040005009643"
+Q135460360	P1814	"やはなちじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005010523"
+Q129837100	P6262	"shinto:Ishinuki Anakannon Yokoanabos"
+Q141593156	P569	novalue
+Q141593234	P569	novalue
+Q135506342	P569	novalue
+Q86728307	P569	novalue
+Q141593241	P569	novalue
+Q22120573	Len	"Myōren-ji Temple"
+Q141593139	P569	novalue
+Q141645798	P1814	"ちょうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9180005008137"
+Q141593194	P569	novalue
+Q135446569	P1814	"せんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4110005011671"
+Q135416852	P1814	"ふげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1070005002232"
+Q135445450	P1814	"さいふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005001075"
+Q141593147	P569	novalue
+Q1483957	P569	novalue
+Q135069954	P11250	"shinto:Shirohiko Shrine (Noto Province)"
+Q138034152	P569	novalue
+Q135506329	P569	novalue
+Q128865870	P1814	"いおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1030005005180"
+Q135425500	P1814	"とざわじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5070005003730"
+Q11587884	P569	novalue
+Q135578876	P569	novalue
+Q138565446	Len	"Shinmei-gū (Kanagawa-ku, Yokohama)"
+Q135983567	P1814	"みょうほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6180005012141"
+Q141593300	P569	novalue
+Q135707397	P1814	"すえつぐじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1380005006581"
+Q9590470	Len	"Category:Ancient lakes"
+Q141593169	P569	novalue
+Q141593254	P569	novalue
+Q106160485	P569	novalue
+Q141593246	P569	novalue
+Q135709578	P1814	"れんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8380005003168"
+Q135462417	Lceb	"Templong Suwa"
+Q134957252	P1814	"たかぎじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6080405000739"
+Q10940685	P569	novalue
+Q140446002	P569	novalue
+Q48750893	P569	novalue
+Q135217080	P1814	"しょうじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1060005004411"
+Q141593253	P569	novalue
+Q135463117	P1814	"かわうちじんじゃ"
+Q134919212	P1814	"あんりゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5080105003299"
+Q10939945	P569	novalue
+Q41692649	P1814	"えんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4200005010441"
+Q135444636	P1814	"さいほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005014315"
+Q141593177	P569	novalue
+Q30933385	P1814	"しゃえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9200005000578"
+Q135425019	P1814	"かわとじんじゃ"
+Q134982563	P1814	"ほうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9080405001123"
+Q112298337	P569	novalue
+Q111959240	P1814	"せいげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4100005006516"
+Q141593327	P569	novalue
+Q135434259	P1814	"きんぽうじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7340005003602"
+Q74826207	Lru	"Храм Сукунахиконы"
+Q11561324	P569	novalue
+Q135039648	P361	Q11380552	S4656	"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%B1%86%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q134956323	P1814	"つしまじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3080405003612"
+Q141593182	P569	novalue
+Q135156036	P1814	"おうじんじんじゃ"
+Q141593268	P569	novalue
+Q135259180	P1814	"てんしょうこうたいじんぐう"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2060005002918"
+Q134917707	P1814	"だいつうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2080105002972"
+Q141593225	P569	novalue
+Q135115778	P1814	"ぜしんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7050005006477"
+Q28688328	Len	"Hongaku-ji Temple"
+Q11436783	Len	"Ōminakami Shrine"
+Q141593259	P569	novalue
+Q110796235	P569	novalue
+Q141593324	P569	novalue
 Q140568717	P50	Q140568870	P1545	"1"
 Q140568719	P50	Q140568870	P1545	"1"
 Q22119431	P1814	"つくだにますひとことねこじんじゃ"	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E8%AA%BF%E7%94%B0%E5%9D%90%E4%B8%80%E4%BA%8B%E5%B0%BC%E5%8F%A4%E7%A5%9E%E7%A4%BE"
@@ -837,341 +307,593 @@ Q17220820	P13930	"data/sinano/iwa_title"
 -Q135259806	P13930	"data/kai/negoya_title"
 -Q135155669	P13930	"data/nagato/inari_title"
 -Q11605642	P13930	"data/yamato/susano_title"
-Q134957252	P1814	"たかぎじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6080405000739"
-Q135155753	Len	"Asama-sha Shrine"
--Q135039974	P361	Q11361380
-Q136807956	P569	novalue
-Q19826574	Lzh-hk	"英語版Wikivoyage"
-Q135444344	P1814	"きちじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005004027"
-Q135039167	P1814	"おほとりみはひのじんじゃ"
-Q141593283	P569	novalue
-Q135070209	P1814	"あしつぎじんじゃ"
-Q141593207	P569	novalue
-Q8191705	P569	novalue
-Q30933385	P1814	"しゃえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9200005000578"
--Q134930277	P361	Q11380552
-Q135506342	P569	novalue
-Q135289776	P6262	"shinto:Amehikake- Shrine (Q135289776)"
-Q135709578	P1814	"れんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8380005003168"
-Q140446104	P569	novalue
-Q135578864	P569	novalue
-Q135708248	P1814	"しょうえんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1380005003645"
-Q141593238	P569	novalue
-Q135445532	P1814	"こうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005008392"
-Q8009611	P569	novalue
-Q140446123	P569	novalue
-Q135432830	Len	"Zenmyo-ji Temple"
-Q135444636	P1814	"さいほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005014315"
-Q59282593	P1814	"わにしたじんじゃ"
-Q97168786	P1814	"あんらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8200005000496"
-Q134846348	P569	novalue
-Q141593229	P569	novalue
-Q110307631	P1814	"じょうねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2100005007243"
-Q141593325	P569	novalue
-Q134534883	P1814	"とうえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5040005016520"
-Q60995918	P569	novalue
-Q135194349	P1814	"わぶちじんじゃ"
-Q65292980	P569	novalue
-Q131274518	P1814	"じぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1030005005123"
-Q141593201	P569	novalue
-Q135041044	P1814	"からくにいたてのじんじゃ"
-Q135289776	P11250	"shinto:Amehikake- Shrine (Q135289776)"
-Q114580418	P1814	"にんしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1090005001744"
-Q136705879	P569	novalue
-Q134917611	P1814	"とうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2080005003484"
-Q135039676	P460	Q134930691	P1352	1
-Q135967766	P1814	"こうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7180305003038"
-Q11634939	P569	novalue
-Q119926755	Len	"Monsho-ji Temple"
-Q48745675	P569	novalue
-Q135443878	Len	"Daiei-ji Temple"
-Q135041171	P1814	"あめまひとつののじんじゃ"
-Q9150391	P569	novalue
-Q135040251	P361	Q11636413	P1545	"108"	P155	Q135040250	P156	Q135040252	S248	Q135159299	S13677	"182295"
-Q135493035	P569	novalue
-Q505469	P569	novalue
-Q135444332	Len	"Daishi-ji Temple"
-Q135040070	P1814	"かりたひこのじんじゃ"
-Q141663641	P1448	ja:"大会山"	P3831	Q11058522	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E5%B0%82%E7%A6%8F%E5%AF%BA_%28%E5%B2%90%E9%98%9C%E5%B8%82%29"
-Q141593269	P569	novalue
-Q56350355	P569	novalue
-Q135707389	P1814	"りゅうげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1380005006490"
-Q135039761	P1814	"あめのはやたまひめのじんじゃ"
-Q141593160	P569	novalue
-Q135579611	P569	novalue
-Q135464028	P1814	"なのかまちじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005012221"
-Q135069954	P6262	"shinto:Shirohiko Shrine (Noto Province)"
-Q11621669	P1814	"れんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9260005000903"
-Q10949054	P569	novalue
-Q141593274	P569	novalue
-Q135506347	P569	novalue
-Q134736031	Len	"Shorin-ji Temple"
-Q135070042	P1814	"いぶきじんじゃ"
-Q97311694	P1814	"りっしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6350005000905"
-Q135709616	Len	"Butsuryu-ji Temple"
-Q135260048	Len	"Tenjin Shrine"
-Q135330329	P569	novalue
-Q135041527	P1814	"しまおほくにたまのじんじゃ"
-Q115054911	P1814	"ちょうあんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7230005006616"
-Q135039645	P1814	"やすのじんじゃ"
-Q135070303	P1814	"とよたまひめじんじゃ"
-Q11432580	Len	"Daien-ji Temple"
-Q11574224	P569	novalue
-Q141593235	P569	novalue
-Q136140703	P1814	"にんしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1180005005678"
-Q22127349	P569	novalue
--Q134926924	P1814	"アメツセノ-"
-Q135217377	Lmad	"Wihara Tokuzō-ji"
-Q135443827	P1814	"じゅうおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3110005006037"
-Q22119065	P1814	"しんこうみょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3180305000154"
-Q141593110	P569	novalue
-Q135040900	P1814	"はやつむしわけのじんじゃ"
-Q135416968	P1814	"じょうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2070005007569"
-Q138964737	P569	novalue
-Q22119431	Aen	"Hikida Shrine"
-Q11597837	P569	novalue
-Q135444773	Len	"Myogen-ji Temple"
-Q135182237	P1814	"ゆうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5190005003834"
--Q135040497	P361	Q11368560
-Q135186239	P1814	"おりきどのじんじゃ"
-Q59208993	P1814	"ほだじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7370505000162"
-Q134918666	P1814	"ほうしゃくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3080005000621"
-Q135069885	P1814	"ばんだいじんじゃ"
-Q135503341	P569	novalue
-Q22119431	Aid	"Kuil Hikida"
-Q11655194	Len	"Kaizen-ji Temple"
-Q141623810	P1814	"はちまんじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9200005008605"
--Q11481363	P1814	"アメヤホヨロツ-"
--Q135039648	P361	Q11380552
-Q135039746	P361	Q11546334	S4656	"https://ja.wikipedia.org/wiki/%E6%AD%A6%E8%94%B5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q135155720	Len	"Kabuto Shrine"
-Q141593277	P569	novalue
-Q119928926	P1814	"えいあんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1230005006308"
-Q134598194	P1814	"かわとじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4040005011002"
-Q87853305	P837	Q2919	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E6%B8%AD%E4%BC%8A%E7%A5%9E%E7%A4%BE"
-Q135446008	P1814	"みょうらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2110005011780"
-Q135040954	P1814	"かんたまいのちぬしのじんじゃ"
-Q141627912	P569	novalue
-Q131578100	P825	Q461258	P1932	"日本尊命"
-Q141593208	P569	novalue
-Q135156111	P1814	"かぶとじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9050005008521"
-Q135463918	Len	"Iyahiko-sha Shrine"
-Q107390989	P1814	"こうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1480005003321"
-Q134987731	Len	"Daishi-ji Temple"
-Q134595594	Len	"Kawato Shrine"
-Q135039648	P1814	"かみのじんじゃ"
-Q1781862	P569	novalue
-Q11110848	P569	novalue
-Q10932592	P569	novalue
-Q47393078	P1814	"ほんじゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2180005001453"
-Q135460360	P1814	"やはなちじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005010523"
-Q135040335	P1814	"おくつひめのじんじゃ"
-Q135195308	P1814	"いぶきじんじゃ"
-Q59208937	P1814	"がんねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5200005007882"
-Q141593185	P569	novalue
-Q134736870	P1814	"じゅうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9030005009158"
-Q134891408	P14391	"11122"
-Q141593251	P569	novalue
-Q134917707	P1814	"だいつうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2080105002972"
-Q107391026	P1814	"みょうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1180005008499"
-Q141593322	P569	novalue
-Q135194879	P1814	"やちほこじんじゃ"
-Q70280025	P1814	"いずもいわいじんじゃ"
-Q644201	P569	novalue
-Q141593152	P569	novalue
-Q135444499	Len	"Yōsen-ji Temple"
-Q134926835	P825	Q382005	P1932	"菅原道真"
-Q141593197	P569	novalue
-Q135460283	Len	"Kanayama-sha Shrine"
-Q141593276	P569	novalue
-Q63138474	Len	"Anju-ji Temple"
-Q135464608	Len	"Roku-sha Shrine"
-Q10514059	P569	novalue
-Q135434388	P1814	"みしまじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4340005003605"
-Q134982172	P1814	"しょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3080405000808"
-Q141593288	P569	novalue
-Q135425941	Len	"Iidama Shrine"
-Q140322721	P1814	"しゅうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7130005009034"
-Q135433015	P1814	"こうえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8340005006117"
-Q135444606	Len	"Tōyō-ji Temple"
-Q141593219	P569	novalue
-Q135039925	P361	Q11386164	P1545	"18"	P155	Q135039924	P156	Q135039926	S248	Q135159299	S13677	"181986"
-Q135444404	P1814	"さいせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005014143"
-Q135461067	Len	"Shinbo Shrine"
-Q134917426	P1814	"ちょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1080005005036"
-Q135039925	P361	Q11386164	S4656	"https://ja.wikipedia.org/wiki/%E4%BF%A1%E6%BF%83%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q113657451	P1814	"さいほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2200005000642"
-Q24899653	P569	novalue
-Q135506346	P569	novalue
-Q135069108	P1814	"かすがじんじゃ"
-Q141593254	P569	novalue
--Q135039108	P361	Q11553385
-Q135708398	P1814	"かんのんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3380005009046"
-Q135069951	Len	"Shirohiko Shrine"
-Q135330219	P569	novalue
-Q85883536	P1814	"やくおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9260005008698"
-Q135330332	P569	novalue
-Q28688328	Len	"Hongaku-ji Temple"
-Q135707929	P1814	"ちょうとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6380005006247"
-Q97165412	P1814	"はるさめでら"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3010705000209"
--Q135039747	P361	Q11546334
-Q14566271	Len	"Category:Appointed members of the House of Peers"
-Q134927903	P1814	"うないじんじゃ"
-Q135462358	Len	"Kawauchi Shrine"
-Q11393842	P361	Q11465292	S4656	"https://ja.wikipedia.org/wiki/%E5%B0%BE%E5%BC%B5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q141593150	P569	novalue
-Q10940228	P569	novalue
-Q38276368	P569	novalue
-Q135708023	Len	"Jufuku-ji Temple"
-Q135493216	P569	novalue
--Q110915859	P1814	"カミノ-"
-Q70537095	P569	novalue
-Q141324469	P569	novalue
-Q135446029	P1814	"きちじょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2110005013216"
-Q141593156	P569	novalue
-Q141593268	P569	novalue
-Q135039748	P361	Q11546334	S4656	"https://ja.wikipedia.org/wiki/%E6%AD%A6%E8%94%B5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q141593143	P569	novalue
-Q109594446	P569	novalue
-Q141593168	P569	novalue
-Q134886055	P1814	"やみやじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7030005011702"
--Q11677110	P361	Q11658590
-Q22119431	Afr	"sanctuaire d’Hikida"
-Q135446638	P1814	"ゆいねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005009884"
-Q1101132	P569	novalue
-Q135069244	P1814	"おおしかみやけじんじゃ"
-Q135041358	P1814	"まのじんじゃ"
-Q135708760	P1814	"ふどういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5380005003591"
-Q11672973	P13677	"181679"	P958	"1"
-Q135040610	P361	Q11381626	S4656	"https://ja.wikipedia.org/wiki/%E4%BD%86%E9%A6%AC%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
-Q135069954	P11250	"shinto:Shirohiko Shrine (Noto Province)"
-Q141593311	P569	novalue
-Q135039307	P1814	"ひつくらのじんじゃ"
-Q135040486	P1814	"いひもちのじんじゃ"
-Q11296639	P569	novalue
-Q141593124	P569	novalue
-Q141658693	Len	"Nyoi-ji Temple"
-Q135038775	P1448	ojp-hani:"賀茂波爾神社"	P1814	"カモノハニノカミノヤシロ"
-Q135040766	P1814	"たなかのじんじゃ"
-Q135260467	Len	"Kabuto Shrine"
-Q135463117	Len	"Kawauchi Shrine"
-Q135217355	P1814	"ほうじゅいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4060005002379"
-Q135707397	P1814	"すえつぐじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1380005006581"
-Q11400330	Lid	"Kuil Katsute"
-Q11483206	P837	Q2730	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%B3%89%E5%AF%BA%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE"
-Q118002284	P1814	"れんぷくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5030005010400"
--Q11631810	P361	Q11368560
-Q135432900	Len	"Shojo-ji Temple"
-Q135425019	Len	"Kawato Shrine"
-Q48762394	P1814	"ぎょくりょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3200005010707"
-Q11597268	P1814	"きゅうきょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5010905000155"
-Q11151768	Len	"Yusen-ji Temple"
-Q10928456	P569	novalue
-Q134928007	P1814	"てんちじんじゃ"
-Q135459834	P1814	"きたのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5110005014392"
-Q11357406	Lel	"Ιερό Μιουα"
-Q141593193	P569	novalue
-Q135446111	Len	"Konzo-ji Temple"
--Q135179289	P1814	"-ヤマクチノ"
-Q7683716	P569	novalue
--Q135039645	P361	Q11380552
-Q11536449	P569	novalue
-Q135153897	P1814	"ときわじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3050005000764"
-Q49871432	Len	"Category:Authors"
-Q135417690	Len	"Yusen-ji Temple"
-Q135114976	Len	"Hōshō-in Temple"
-Q30929721	P1814	"みょうほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2310005005515"
-Q140446001	P569	novalue
-Q140446126	P569	novalue
-Q135426020	Len	"Hayao Shrine"
-Q135416852	P1814	"ふげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1070005002232"
-Q141593116	P569	novalue
-Q135038811	P1814	"かむはらのじんじゃ"
+Q9590470	Len	"Category:Ancient lakes"
 Q97009578	P1814	"にゅうらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2010905000422"
-Q13579836	P569	novalue
-Q65272606	P1814	"ちょうめいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8480005003447"
-Q141593226	P569	novalue
-Q135186401	P1814	"つだじんじゃ"
-Q140446125	P569	novalue
-Q134987999	Len	"Joshu-ji Temple"
-Q135069967	P1814	"みかどしゅひこじんじゃ"
-Q11646927	P569	novalue
-Q56347987	Len	"Taibai-ji Temple"
-Q60996386	P569	novalue
-Q48750893	P569	novalue
-Q135446569	P1814	"せんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4110005011671"
-Q41692649	P1814	"えんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4200005010441"
-Q1483957	P569	novalue
-Q134736551	Len	"Zuirin-ji Temple"
-Q135425213	P1814	"なんさいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3070005003658"
-Q110064530	P569	novalue
-Q135327097	P569	novalue
-Q29407944	P1814	"まんだいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9120105001006"
-Q141593243	P569	novalue
-Q134886380	P1814	"ながいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3030005013355"
-Q62076145	Lmin	"Wihara Kyoju-ji"
-Q135708167	P1814	"みょうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9380005006517"
-Q134918845	P1814	"みょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7080405005852"
-Q141593324	P569	novalue
-Q109598469	P569	novalue
-Q135040319	P1814	"あらいそじんじゃ"
-Q17214737	P612	Q135508874	P1013	Q195793	S854	"https://ja.wikipedia.org/wiki/%E5%9B%BD%E6%B4%A5%E5%BE%A1%E7%A5%96%E7%A5%9E%E7%A4%BE"
-Q120336618	P1814	"こんごういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1480005003825"
-Q135217292	P1814	"じょうがんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3060005005655"
-Q135041135	P1814	"たたたけほりねのじんじゃ"
-Q11059454	P569	novalue
-Q141593157	P569	novalue
-Q134535869	P1814	"みょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4040005011869"
-Q135070105	P1814	"さくたじんじゃ"
-Q141593196	P569	novalue
-Q135328851	P569	novalue
-Q141593306	P569	novalue
-Q1753428	P569	novalue
-Q86728307	P569	novalue
-Q135416764	P1814	"じゅうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1070005004518"
-Q48755228	P1814	"ほうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8260005007791"
-Q141593245	P569	novalue
-Q135039870	P1814	"あまつかはのじんじゃ"
-Q18336738	Len	"Kaizen-ji Temple"
-Q134534560	Len	"Rinshō-ji Temple"
-Q134918067	Len	"Soji-in Temple"
-Q135041128	P1814	"おひいひこのじんじゃ"
-Q134982549	P1814	"しょうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6080405000879"
-Q113630426	Lfi	"Sawara Inari-pyhäkkö"
-Q135434020	P1814	"くきはらじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3340005003250"
+Q11400330	Len	"Katsute Shrine"
+Q135578857	P569	novalue
+Q123118271	P361	Q11458212	P1545	"5"	P155	Q135041529	P156	Q135041531	S248	Q135159299	S13677	"183362"
+Q134989155	P1814	"おさきじんじゃ"
+Q55533749	P569	novalue
 Q141621023	P569	novalue
-Q9670634	Len	"Category:Battles in Japan"
-Q28690714	Len	"Myōhō-ji Temple"
-Q141593326	P569	novalue
-Q135492776	P569	novalue
-Q134736870	Lzh-mo	"十輪寺"
-Q135217857	P1814	"りゅうぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3060005002438"
-Q135270424	P973	"https://www.hyogo-jinjacho.com/data/6301007.html"
-Q135179342	P1814	"いわいじんじゃ"
-Q135217080	P1814	"しょうじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1060005004411"
-Q141593177	P569	novalue
-Q135040002	P1814	"かとりいつのじんじゃ"
-Q135459507	P1814	"きたのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5110005014392"
-Q135425225	Len	"Iidama Shrine"
-Q98082969	P569	novalue
-Q135445691	Len	"Zuirin-ji Temple"
-Q141593159	P569	novalue
-Q135039379	P1814	"やぎのじんじゃ"
+Q106241395	P569	novalue
+Q55528104	P569	novalue
+Q135217156	P1814	"へんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3060005002891"
+Q134535869	P1814	"みょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4040005011869"
+Q135330162	P569	novalue
+Q135069954	P6262	"shinto:Shirohiko Shrine (Noto Province)"
 Q141645602	P1814	"ゆいうんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5180005010781"
-Q135289776	Len	"Amehikake- Shrine (Q135289776)"
-Q135417037	Len	"Tōyō-ji Temple"
-Q112944198	P1814	"こうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1021005007845"
-Q60673696	P569	novalue
-Q135039808	P1814	"おいつしまのじんじゃ"
-Q134917575	Len	"Kinshaku-ji Temple"
-Q134534592	P1814	"みょうぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6040005009639"
-Q135259806	P13930	"data/kai/negoya_title"
-Q135445684	Lkm	"ឯនមេឥជិ មំទិរ"
-Q46391442	Len	"Category:Agricultural events"
-Q705035	P361	Q11604948	S4656	"https://ja.wikipedia.org/wiki/%E7%B4%80%E4%BC%8A%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135039645	P361	Q11380552	S4656	"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%B1%86%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135444250	P1814	"そうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005005663"
+Q135217276	P1814	"かんのんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7060005004661"
+Q135506340	P569	novalue
+Q11677110	P361	Q11658590	S4656	"https://ja.wikipedia.org/wiki/%E9%99%B8%E5%A5%A5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q140996229	P1814	"そうおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2180305006251"
+Q134887317	Len	"Tenjin Shrine"
+Q141593150	P569	novalue
+Q141629869	P1814	"おいまつじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5300005004614"
+Q140355642	P1814	"ぜんぎょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9180305006914"
+Q141645800	P1814	"にんちょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5180305002900"
+Q140446104	P569	novalue
+Q11298796	P569	novalue
+Q134736621	P1814	"じぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8030005002725"
+Q10881556	P569	novalue
+Q65256829	P1814	"ほうおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5480005002897"
+Q135040497	P361	Q11368560	P1545	"11"	P155	Q135040496	P156	Q135040498	S248	Q135159299	S13677	"182492"
+Q135460714	P1814	"あきばしゃ"
+Q48762394	P1814	"ぎょくりょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3200005010707"
+Q114019810	P1814	"えんめいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5200005008427"
+Q128865671	P1814	"こうみょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9480005002002"
+Q135506349	P569	novalue
+Q141627915	P569	novalue
+Q135153695	Lzh-sg	"香取神社"
+Q134604606	P1814	"はやおじんじゃ"
+Q11092833	P569	novalue
+Q24872532	P1814	"とうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2012705000404"
+Q141593165	P569	novalue
+Q136140703	P1814	"にんしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1180005005678"
+Q135445311	P1814	"にっこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5110005009335"
+Q135707663	P1814	"ちょうりゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3380005009038"
+Q48745416	P569	novalue
+Q141593325	P569	novalue
+Q134537150	P1814	"こんごういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6040005015505"
+Q11059454	P569	novalue
+Q135115934	P1814	"さいせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8050005007887"
+Q11341880	P569	novalue
+Q141593256	P569	novalue
+Q134918666	P1814	"ほうしゃくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3080005000621"
+Q140446127	P569	novalue
+Q135195212	Lsh	"Isobe hram"
+Q106836625	P1814	"しゅせんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2200005000881"
+Q137776173	P1814	"まんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3021005003958"
+Q86728909	P569	novalue
+Q462555	P569	novalue
+Q505469	P569	novalue
+Q135446638	P1814	"ゆいねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005009884"
 Q134886739	P1814	"おじかじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6030005015225"
-Q135039942	P1814	"たまよりひめのじんじゃ"
-Q135444883	Len	"Tenrin-ji Temple"
-Q135070299	P1814	"なかうちじんじゃ"
-Q135425500	P1814	"とざわじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5070005003730"
+Q141593283	P569	novalue
+Q135039027	P361	Q11433427	S4656	"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%92%8C%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q141593245	P569	novalue
+Q11146526	P569	novalue
+Q86736058	P569	novalue
+Q141593240	P569	novalue
+Q135446008	P1814	"みょうらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2110005011780"
+Q135464157	P1814	"とがくしじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005012220"
+Q135444640	P1814	"ちょうあんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3110005014147"
+Q107664337	P361	Q11368516	S4656	"https://ja.wikipedia.org/wiki/%E4%B8%B9%E5%BE%8C%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135039747	P361	Q11546334	P1545	"36"	P155	Q135039746	P156	Q135039748	S248	Q135159299	S13677	"181724"
+Q11545641	P1814	"しょうかくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4180005009313"
+Q135270424	P973	"https://www.hyogo-jinjacho.com/data/6301007.html"
+Q65260779	P569	novalue
+Q113657451	P1814	"さいほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2200005000642"
+Q65249081	P569	novalue
+Q135506346	P569	novalue
+Q135330068	P569	novalue
+Q22119065	P1814	"しんこうみょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3180305000154"
+Q141593166	P569	novalue
+Q134917647	P1814	"ようしんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2080005005373"
+Q135460537	P1814	"ことひらしゃ"
+Q4387856	P569	novalue
+Q140446143	P569	novalue
+Q17226307	P361	Q11604948	S4656	"https://ja.wikipedia.org/wiki/%E7%B4%80%E4%BC%8A%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q11572729	P569	novalue
+Q11607305	P361	Q11467693	P1545	"8"	P155	Q135038741	P156	Q11415986	S248	Q135159299	S13677	"180577"
+Q135463134	P1814	"やさかじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005007807"
+Q135154249	P1814	"まゆみじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3050005003916"
+Q141593130	P569	novalue
+Q135039974	P361	Q11361380	P1545	"6"	P155	Q11433065	P156	Q119929432	S248	Q135159299	S13677	"182032"
+Q135259614	P1814	"しおがまいなりじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4060005000300"
+Q141593307	P569	novalue
+Q134886839	P1814	"しゃくじいじんじゃ"
+Q128866093	P1814	"そうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8200005008564"
+Q135578900	P569	novalue
+Q141593116	P569	novalue
+Q106107009	P569	novalue
+Q131274518	P1814	"じぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1030005005123"
+Q135217544	P1814	"さいしょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5060005007138"
+Q141593158	P569	novalue
+Q11597837	P569	novalue
+Q135217512	P1814	"しょうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5060005006057"
+Q141593244	P569	novalue
+Q87853305	P837	Q2919	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E6%B8%AD%E4%BC%8A%E7%A5%9E%E7%A4%BE"
+Q140446058	P569	novalue
+Q10940674	P569	novalue
+Q135289776	Len	"Amehikake- Shrine (Q135289776)"
+Q11631810	P361	Q11368560	S4656	"https://ja.wikipedia.org/wiki/%E4%B8%B9%E6%B3%A2%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q813858	P569	novalue
+Q141593217	P569	novalue
+Q272993	P569	novalue
+Q135069954	Len	"Shirohiko Shrine (Noto Province)"
+Q11446946	P1814	"みょうほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2320005005646"
+Q11481363	P1814	"じょぐじんじゃ"
+Q28686804	P1814	"ほうおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2140005014392"
+Q11634939	P569	novalue
+Q141593143	P569	novalue
 Q11088805	P569	novalue
+Q11675142	Lwar	"Santuario Torigoe Hachiman"
+Q134887055	P1814	"ゆどのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8030005013276"
+Q56350355	P569	novalue
+Q106836670	P1814	"ほんがんじよしざきべついん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1210005004131"
+Q11065428	P569	novalue
+Q135459834	P1814	"きたのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5110005014392"
+Q141593206	P569	novalue
+Q22119431	Afr	"sanctuaire d’Hikida"
+Q140447393	P569	novalue
+Q11672973	P13677	"181679"	P958	"1"
+Q135153897	P1814	"ときわじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3050005000764"
+Q141593297	P569	novalue
+Q128866264	P1814	"こうえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8310005000345"
+Q135708559	P1814	"ろくせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4380005003634"
+Q11653536	Ljv	"Wihara Chōfuku-ji"
+Q11450714	P527	Q137041912	P1545	"3"
+Q131274535	P1814	"こんごういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3030005005278"
+Q141593176	P569	novalue
+Q134862171	P569	novalue
+Q3270544	P569	novalue
+Q11677110	P361	Q11658590	P1545	"28"	P155	Q11451153	P156	Q135039996
+Q141324583	P569	novalue
+Q135270292	P1814	"みやのめじんじゃ"
+Q776371	P569	novalue
+Q140446077	P569	novalue
+Q11578590	P837	Q2519	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E7%95%9D%E7%81%AB%E5%B1%B1%E5%8F%A3%E7%A5%9E%E7%A4%BE"
+Q116942835	P1814	"しんえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7350005000805"
+Q141593185	P569	novalue
+Q135069951	P11250	"shinto:Shirohiko Shrine"
+Q141629486	P1814	"はちまんじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5200005008261"
+Q135260467	P1814	"かぶとじんじゃ"
+Q134886881	P1814	"ゆどのだいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6030005013278"
+Q48745417	P569	novalue
+Q135445532	P1814	"こうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005008392"
+Q135709623	P1814	"ちょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3380005008519"
+Q135505756	P569	novalue
+Q120336620	P1814	"ほうぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3480005003757"
+Q135983568	P1814	"みょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5180005012142"
+Q135459640	P1814	"はちまんわかみやじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005014447"
+Q141627914	P569	novalue
+Q24863211	P569	novalue
+Q135260798	Lbn	"কুমানো মন্দির"
+Q141593207	P569	novalue
+Q135039720	P460	Q11672973	P1352	1
+Q135039676	P460	Q134930691	P1352	1
+Q141593157	P569	novalue
+Q134887082	P1814	"ふじたじんじゃ"
+Q135707389	P1814	"りゅうげんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1380005006490"
+Q48760952	P569	novalue
+Q9150392	P569	novalue
+Q135039648	P361	Q11380552	P1545	"20"	P155	Q135039647	P156	Q135039649	S248	Q135159299	S13677	"181588"
+Q133097744	P569	novalue
+Q140446121	P569	novalue
+Q141593203	P569	novalue
+Q141593222	P569	novalue
+Q86725467	P569	novalue
+Q134534883	P1814	"とうえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5040005016520"
+Q1073925	P569	novalue
+Q65291167	P1814	"ちょうじゅじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9480005003446"
+Q135524506	P569	novalue
+Q644201	P569	novalue
+Q141593187	P569	novalue
+Q136342769	P1814	"いちおうじじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5260005003827"
+Q141593242	P569	novalue
+Q141593275	P569	novalue
+Q135328864	P569	novalue
+Q135461738	P1814	"ほくらじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005009359"
+Q85883536	P1814	"やくおうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9260005008698"
+Q28690714	Len	"Myōhō-ji Temple"
+Q135115943	P1814	"さいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1050005008198"
+Q136091949	P1814	"とうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7180305005703"
+Q141593216	P569	novalue
+Q141593255	P569	novalue
+Q131925939	P837	Q2613	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AE%AE%E7%A5%9E%E7%A4%BE_%28%E5%A4%A7%E5%B3%B6%E7%94%BA%29"
+Q141593247	P569	novalue
+Q141593318	P569	novalue
+Q49871432	Len	"Category:Authors"
+Q10514059	P569	novalue
+Q65267282	P1814	"こうぼうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6480005004612"
+Q135217355	P1814	"ほうじゅいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4060005002379"
+Q134957434	Lmad	"Kuil Kamo"
+Q135505758	P569	novalue
+Q11621669	P1814	"れんじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9260005000903"
+Q97170142	P1814	"さいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9200005000561"
+Q140446076	P569	novalue
+Q134536707	P1814	"じょうきょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3040005011408"
+Q135155330	P1814	"かぶとじんじゃ"
+Q141593154	P569	novalue
+Q135708167	P1814	"みょうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9380005006517"
+Q135446029	P1814	"きちじょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2110005013216"
+Q135464608	P1814	"ろくしゃ"
+Q11585202	P569	novalue
+Q11455763	Len	"Mitsuzō-in Temple"
+Q135259587	P1814	"ふじたじんじゃ"
+Q97186293	P1814	"そううんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4180305006737"
+Q134956693	P13930	"data/iyo/miyauti_title"
+Q135330329	P569	novalue
+Q141593119	P569	novalue
+Q135464005	P1814	"てんじんぐう"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2110005012358"
+Q135040766	P1814	"たなかのじんじゃ"
+Q11574224	P569	novalue
+Q135434388	P1814	"みしまじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4340005003605"
+Q140446126	P569	novalue
+Q135260486	P1814	"いわさきじんじゃ"
+Q11679367	P1814	"りゅうぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1240005000689"
+Q11387080	P569	novalue
+Q134918845	P1814	"みょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7080405005852"
+Q141593114	P569	novalue
+Q141593126	P569	novalue
+Q141593142	P569	novalue
+Q135039995	P361	Q11658590	P1545	"26"	P155	Q135039994	P156	Q11451153	S248	Q135159299	S13677	"182063"
+Q135328853	P569	novalue
+Q141593248	P569	novalue
+Q11646927	P569	novalue
+Q65266238	P569	novalue
+Q134957445	P1814	"たついしじんじゃ"
+Q135039653	P361	Q11380552	P1545	"25"	P155	Q130689009	P156	Q135039654	S248	Q135159299	S13677	"181593"
+Q135069871	P1814	"みさきじんしゃ"
+Q135155753	P1814	"あさましゃ"
+Q11603375	P569	novalue
+Q135432760	P1814	"だいせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3340005004034"
+Q49871432	Len	"Category:Authors"
+Q141593110	P569	novalue
+Q55523289	P569	novalue
+Q11433065	P361	Q11361380	S4656	"https://ja.wikipedia.org/wiki/%E4%B8%8B%E9%87%8E%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135040696	P460	Q135070073	P1352	1
+Q11568940	P825	Q98083023	P1932	"速玉之男神"	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E5%80%89%E6%95%B7%E5%B8%82%E6%9E%97%29"
+Q134595430	P1814	"いなおいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005011742"
+Q141645672	P1814	"えんりゅういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3160005000613"
+Q141627918	P569	novalue
+Q141492825	P1814	"さいりょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1180005009860"
+Q141593193	P569	novalue
+Q118002284	P1814	"れんぷくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5030005010400"
+Q1781862	P569	novalue
+Q98082969	P569	novalue
+Q134736870	P1814	"じゅうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9030005009158"
+Q134957927	P1814	"いはなのじんじゃ"
+Q134956858	P1814	"いいづなじんじゃ"
+Q141593125	P569	novalue
+Q22070227	P569	novalue
+Q135446328	P1814	"さいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005006924"
+Q135967766	P1814	"こうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7180305003038"
+Q141593134	P569	novalue
+Q141593312	P569	novalue
+Q71133194	P569	novalue
+Q135038775	P1448	ojp-hani:"賀茂波爾神社"	P1814	"カモノハニノカミノヤシロ"
+Q141593208	P569	novalue
+Q140446123	P569	novalue
+Q141593160	P569	novalue
+Q135425127	P1814	"ながらじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6070005006708"
+Q141593136	P569	novalue
+Q141593285	P569	novalue
+Q11432580	Len	"Daien-ji Temple"
+Q141593196	P569	novalue
+Q11487792	P361	Q11553385	S4656	"https://ja.wikipedia.org/wiki/%E6%B2%B3%E5%86%85%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135578889	P569	novalue
+Q134595594	P1814	"かわとじんじゃ"
+Q119928790	P1814	"よううんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3012305000134"
+Q11613393	P1814	"こうとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9120005000875"
+Q141593219	P569	novalue
+Q135578885	P569	novalue
+Q135156111	P1814	"かぶとじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9050005008521"
+Q135444325	P1814	"だいじょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005014341"
+Q48753263	P569	novalue
+Q134735660	P1814	"しょうとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3030005005096"
+Q141593138	P569	novalue
+Q135578919	P569	novalue
+Q141593235	P569	novalue
+Q65276364	P1814	"じんこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3480005001315"
+Q135460283	P1814	"かなやましゃ"
+Q141593155	P569	novalue
+Q9670634	Len	"Category:Battles in Japan"
+Q135446069	P1814	"じょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4110005007645"
+Q135154661	P1814	"しんぐうじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6050005007880"
+Q10928586	P569	novalue
+Q48745675	P569	novalue
+Q1056017	P569	novalue
+Q28683498	P1814	"まんこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8320005000724"
+Q141593290	P569	novalue
+Q135445403	P1814	"じょうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005008490"
+Q135708872	P1814	"やくしじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6380005008581"
+Q141593252	P569	novalue
+Q135461348	P1814	"さかえじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005002758"
+Q135444568	P1814	"こうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1110005006914"
+Q141593205	P569	novalue
+Q135039108	P361	Q11553385	S4656	"https://ja.wikipedia.org/wiki/%E6%B2%B3%E5%86%85%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q17214737	P612	Q135508874	P1013	Q195793	S854	"https://ja.wikipedia.org/wiki/%E5%9B%BD%E6%B4%A5%E5%BE%A1%E7%A5%96%E7%A5%9E%E7%A4%BE"
+Q128865637	P1814	"さいふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1480005003420"
+Q141593233	P569	novalue
+Q141593183	P569	novalue
+Q134919060	P1814	"だいじょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8080405005406"
+Q107097521	P1814	"ちょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4210005008633"
+Q125364551	P569	novalue
+Q141593330	P569	novalue
+Q6378698	P569	novalue
+Q134535999	P1814	"せんしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8040005015180"
+Q135446672	P1814	"ほうこういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6110005012461"
+Q141593311	P569	novalue
+Q137653024	P1814	"ちょうぞんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8180305004241"
+Q134595045	P1814	"みかみじんじゃ"
+Q134926835	P825	Q382005	P1932	"菅原道真"	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B3%B6%E7%A5%9E%E7%A4%BE_%28%E9%A4%A8%E6%9E%97%E5%B8%82%29"
+Q11442516	Lla	"Templum Tenmyōkoku-ji"
+Q56347882	P569	novalue
+Q135579611	P569	novalue
+Q141593322	P569	novalue
+Q136731213	P569	novalue
+Q106241380	P569	novalue
+Q112298467	P569	novalue
+Q140446059	P569	novalue
+Q124496462	P1814	"ごくらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9480005004592"
+Q135195558	P569	novalue
+Q141593188	P569	novalue
+Q135578874	P569	novalue
+Q135424982	P1814	"いさすみじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9070005006003"
+Q22119173	P1814	"ぜんりゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6180305000341"
+Q48755195	P1814	"しょうかくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8021005007905"
+Q141627916	P569	novalue
+Q38276367	P569	novalue
+Q119928926	P1814	"えいあんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1230005006308"
+-Q705035	P361	Q11604948
+Q135503341	P569	novalue
+Q124496391	P1814	"ゆうせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6120905003600"
+Q135463000	P1814	"かわうちじんじゃ"
+Q5966692	P569	novalue
+Q11573864	P1814	"ずいこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6130005002072"
+Q135217270	P1814	"こうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3060005003865"
+Q135041107	Lth	"ศาลเจ้า คามูตาโนะ"
+Q60996386	P569	novalue
+Q140446057	P569	novalue
+Q11608777	P361	Q11553385	P1545	"5"	P155	Q11438318	P156	Q11383015
+Q110064736	P569	novalue
+Q141593152	P569	novalue
+Q11391615	P569	novalue
+Q135708432	P1814	"かんのんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5380005002916"
+Q135153812	P1814	"しずじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8050005008539"
+Q11438541	P1814	"だいしょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7190005009128"
+Q135113177	P569	novalue
+Q135217857	P1814	"りゅうぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3060005002438"
+Q120336618	P1814	"こんごういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1480005003825"
+Q135330236	P569	novalue
+Q97210999	P1814	"あみだじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2200005010633"
+Q141593226	P569	novalue
+Q134886055	P1814	"やみやじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7030005011702"
+Q135039995	P361	Q11658590	S4656	"https://ja.wikipedia.org/wiki/%E9%99%B8%E5%A5%A5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135328851	P569	novalue
+Q135432941	P1814	"だいとうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7340005000525"
+Q141593113	P569	novalue
+Q135416968	P1814	"じょうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2070005007569"
+Q30929721	P1814	"みょうほうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2310005005515"
+Q135444328	P1814	"まんぷくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005014176"
+Q72727981	P361	Q11546334	P1545	"34"	P155	Q135039745	P156	Q135039746	S248	Q135159299	S13677	"181722"
+Q134735252	P1814	"さいしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1030005004389"
+Q22119431	Aid	"Kuil Hikida"
+Q141593123	P569	novalue
+Q141593120	P569	novalue
+Q140446142	P569	novalue
+Q141593269	P569	novalue
+Q110120205	P569	novalue
+Q140446112	P569	novalue
+Q141593227	P569	novalue
+Q141593272	P569	novalue
+Q135708248	P1814	"しょうえんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1380005003645"
+Q135426020	P1814	"はやおじんじゃ"
+Q135579677	P569	novalue
+Q113613358	P1814	"らいけんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7050005007806"
+Q135578867	P569	novalue
+Q141593251	P569	novalue
+Q141593180	P569	novalue
+Q135039994	P361	Q11658590	S4656	"https://ja.wikipedia.org/wiki/%E9%99%B8%E5%A5%A5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q23997315	Len	"Fufeng"
+Q110307631	P1814	"じょうねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2100005007243"
+Q8191705	P569	novalue
+Q135578883	P569	novalue
+Q48759713	P569	novalue
+Q141593186	P569	novalue
+Q11515497	P1814	"さいしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3230005001182"
+Q134595413	P1814	"いなおいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005011742"
+Q141593129	P569	novalue
+Q141593173	P569	novalue
+Q60986812	P1814	"こうしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8090005001713"
+Q141593210	P569	novalue
+Q134917558	P1814	"さいふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2080405005031"
+Q135069951	P6262	"shinto:Shirohiko Shrine"
+Q135460888	P1814	"むなかたしゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005002650"
+Q17226307	P361	Q11604948	P1545	"18"	P155	Q11597743	P156	Q135041279	S248	Q135159299	S13677	"183151"
+Q141593230	P569	novalue
+Q135463509	P1814	"ろくしゃ"
+Q141593192	P569	novalue
+Q70725130	Len	"Tenjin Shrine"
+Q135708398	P1814	"かんのんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3380005009046"
+Q135155104	P1814	"ひさきじんじゃ"
+Q11597268	P1814	"きゅうきょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5010905000155"
+Q11514781	P569	novalue
+Q140446141	P569	novalue
+Q135327097	P569	novalue
+Q141593124	P569	novalue
+Q135492776	P569	novalue
+Q65292980	P569	novalue
+Q141627892	P569	novalue
+Q135416759	P1814	"こうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1070005004443"
+Q135434020	P1814	"くきはらじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3340005003250"
+Q111370779	P1814	"ぜんのうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2200005006219"
+Q135217292	P1814	"じょうがんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3060005005655"
+Q10940228	P569	novalue
+Q131578100	P837	Q2890	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E9%8E%8C%E5%80%89%E5%B8%82%E5%A4%A7%E8%88%B9%29"
+Q134603330	P1814	"はこねじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9040005010965"
+Q11568925	P569	novalue
+Q134918348	P1814	"しゅうぜんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5080105002012"
+Q108039939	P569	novalue
+Q140446056	P569	novalue
+Q1826765	P569	novalue
+Q135115428	Lcdo	"ùng sṳ̀ iêng"
+Q9672383	Len	"Category:Aqueducts in Japan"
+Q141593127	P569	novalue
+Q134917611	P1814	"とうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2080005003484"
+Q134536156	P1814	"みょうれんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1040005012085"
+Q135433015	P1814	"こうえいじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8340005006117"
+-Q135288221	P361	Q11642130
+Q141593238	P569	novalue
+Q65270244	P569	novalue
+Q46391442	Len	"Category:Agricultural events"
+Q135433758	P1814	"こだかじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4340005000478"
+Q141593323	P569	novalue
+Q134536811	P1814	"しょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2040005006326"
+Q11608777	P361	Q11553385	S4656	"https://ja.wikipedia.org/wiki/%E6%B2%B3%E5%86%85%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135444404	P1814	"さいせんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7110005014143"
+Q462803	P569	novalue
+Q141593202	P569	novalue
+Q141593153	P569	novalue
+Q22120568	P1814	"みょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7020005001084"
+Q10932870	P569	novalue
+Q10940767	P569	novalue
+Q134846348	P569	novalue
+Q141593204	P569	novalue
+Q134982498	P1814	"こうぞういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8080405000753"
+Q22119431	Aen	"Hikida Shrine"
+Q141593159	P569	novalue
+Q140446119	P569	novalue
+Q141324469	P569	novalue
+Q135069402	P1814	"すわじんじゃ"
+Q136705879	P569	novalue
+Q48762550	P1814	"あんらくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7200005004481"
+Q140446125	P569	novalue
+Q134982355	P1814	"じょうどじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5080405000806"
+Q65271769	P1814	"けんぎょうあん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9100005008219"
+Q134886271	P1814	"りょうかみさんりょうかみじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2030005015303"
+Q140446001	P569	novalue
+Q10932592	P569	novalue
+Q11404276	P361	Q11546334	S4656	"https://ja.wikipedia.org/wiki/%E6%AD%A6%E8%94%B5%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q135459507	P1814	"きたのじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5110005014392"
+Q134930277	P361	Q11380552	S4656	"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%B1%86%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q10940642	P569	novalue
+Q135271288	P569	novalue
+Q135461741	P1814	"ひのまえじんじゃ"
+Q134982527	P1814	"ほうおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8080405003442"
+Q112368210	P569	novalue
+Q141593276	P569	novalue
+Q65249018	P569	novalue
+Q65266248	P569	novalue
+Q11607305	P361	Q11467693	S4656	"https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%9F%8E%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q86730053	P569	novalue
+Q134879672	P569	novalue
+Q135463092	P1814	"すがじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005004928"
+Q70537095	P569	novalue
+Q134537385	P1814	"ほんりゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4040005011150"
+Q134595424	P1814	"いなおいじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7040005011742"
+Q135505760	P569	novalue
+Q141593140	P569	novalue
+Q11420254	P527	Q11474068	P1545	"7"
+Q22127349	P569	novalue
+Q11572681	P569	novalue
+Q135709368	P1814	"れんぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8380005003168"
+Q24899653	P569	novalue
+Q135425941	Len	"Iidama Shrine"
+Q9670634	Len	"Category:Battles in Japan"
+Q11653677	P1814	"ちょうこくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3480005001075"
+Q119929452	P13930	"data/iwami/iwane_title"
+Q43595218	P1814	"ぼおんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1120005001567"
+Q135425181	Len	"Iidama Shrine"
+Q141593293	P569	novalue
+Q135445992	Larz	"معبد كودينجي"
+Q141593132	P569	novalue
+Q135445685	P1814	"かんのんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9110005001024"
+Q109594446	P569	novalue
+Q134926826	P825	Q98083023	P1932	"速玉之男神"	S143	Q177837	S4656	"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%B5%9C%E6%B2%BC%29"
+Q141627912	P569	novalue
+Q8009611	P569	novalue
+Q135444482	Laz	"Raishin-ji məbədi"
+Q65272471	P569	novalue
+Q135217830	P1814	"こんじょういん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8060005006946"
+Q134918119	P1814	"こううんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4080105001279"
+Q134846383	P569	novalue
+Q48749523	P569	novalue
+Q123511661	P569	novalue
+Q141593209	P569	novalue
+Q141593328	P569	novalue
+Q141593278	P569	novalue
+Q141593294	P569	novalue
+Q137194160	P569	novalue
+Q134918078	P1814	"じょうがんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4080005005033"
+Q140445994	P569	novalue
+Q141593303	P569	novalue
+Q9672383	Len	"Category:Aqueducts in Japan"
+Q141593267	P569	novalue
+-Q135039270	P361	Q11378973
+Q13577821	P569	novalue
+Q11129547	P569	novalue
+Q28686064	P1814	"あんこくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3200005006283"
+Q47393078	P1814	"ほんじゅうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2180005001453"
+Q135506351	P569	novalue
+Q135459948	P1814	"さどごこくじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8110005014497"
+Q141593163	P569	novalue
+Q135443721	P1814	"こうとくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1110005006022"
+Q137424510	P1814	"れんねんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6180005011969"
+Q135328861	P569	novalue
+Q134534592	P1814	"みょうぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6040005009639"
+Q112953068	P361	Q11668489	P1545	"21"	P155	Q135039633	P156	Q135039635	S248	Q135159299	S13677	"181567"
+Q11470054	P569	novalue
+Q141593288	P569	novalue
+Q135330271	P569	novalue
+Q135039653	P361	Q11380552	S4656	"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%B1%86%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+-Q54153257	P825	Q37302
+Q65266228	P569	novalue
+Q141593326	P569	novalue
+Q135040497	P361	Q11368560	S4656	"https://ja.wikipedia.org/wiki/%E4%B8%B9%E6%B3%A2%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q134955520	P1814	"さんじんじゃ"
+Q135459926	Lmy	"ၐိနမေဣၐ မံဒိရ"
+Q65269923	P569	novalue
+Q141593243	P569	novalue
+Q116294354	P1814	"こうぜんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5280005004848"
+Q97276933	P1814	"ほんがんじさかいべついん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2120105000022"
+Q120336110	P1814	"みつごんいん"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1011505000350"
+Q141593148	P569	novalue
+Q135504622	P569	novalue
+Q109927163	P837	Q2846	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E5%85%83%E5%AE%BF%E7%A5%9E%E7%A4%BE"
+Q115054911	P1814	"ちょうあんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7230005006616"
+Q135115511	P1814	"ようぞうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5050005007782"
+Q141593146	P569	novalue
+Q135432904	P1814	"しょうこうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6340005004048"
+Q135155720	P1814	"かぶとじんじゃ"
+Q141593107	P569	novalue
+Q135425462	P1814	"いわさきじんじゃ"
+Q134957969	P1814	"いわたじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8080405005315"
+Q11520795	Len	"Hongyō-ji Temple"
+Q134956415	P1814	"わたりじんじゃ"
+Q134598194	P1814	"かわとじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4040005011002"
+Q11400330	Lid	"Kuil Katsute"
+Q134982227	P1814	"ほうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3080405001112"
+Q11483206	P837	Q2730	P3831	Q11385469	S4656	"https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%B3%89%E5%AF%BA%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE"
+Q111024098	Lhr	"Kamishiro hram"
+Q135260048	Len	"Tenjin Shrine"
+Q135039974	P361	Q11361380	S4656	"https://ja.wikipedia.org/wiki/%E4%B8%8B%E9%87%8E%E5%9B%BD%E3%81%AE%E5%BC%8F%E5%86%85%E7%A4%BE%E4%B8%80%E8%A6%A7"
+Q59208993	P1814	"ほだじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7370505000162"
+Q141593223	P569	novalue
+Q109598469	P569	novalue
+Q134982549	P1814	"しょうりんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6080405000879"
+Q135154493	P1814	"てごさきじんじゃ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9050005000759"
+Q135432772	P1814	"れんげじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3340005005437"
+Q114580418	P1814	"にんしょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1090005001744"
+Q135578879	P569	novalue
+Q85878978	P569	novalue
+Q135432901	P1814	"しんきょうじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6340005003867"
+Q134982172	P1814	"しょうふくじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3080405000808"
+Q141593304	P569	novalue
+Q128866303	P1814	"かいれんじ"	S854	"https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6230005005263"
+Q141593320	P569	novalue
+Q135259897	P1814	"ふじたじんじゃ"
+Q11433065	P361	Q11361380	P1545	"5"	P155	Q95932360	P156	Q135039974	S248	Q135159299	S13677	"182031"
