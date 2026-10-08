@@ -1,3 +1,7 @@
+## 2026-10-08 — 斐陀国造 (Hida no Kuni no Miyatsuko) translated (rev 3853108)
+
+The last Japanese-language page among the Japanese-titled `need_translation/` files. The other eight Japanese-titled files (三野後国造, 伊佐我命, 沼田国造, …) are already English and need only their ills upgraded to the lt=/lt_ja= format; queued behind the English pages with pasted Japanese sections.
+
 ## 2026-10-08 — browser QS round 5: 899 lines → #289841 (round 4 #289830 DONE: 1,410 done, 49 errors)
 
 ## 2026-10-08 — 大河内味張 (Ōshikōchi no Ajihari) translated (rev 3853107)
