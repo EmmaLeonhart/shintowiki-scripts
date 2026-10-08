@@ -1,3 +1,7 @@
+## 2026-10-08 — Tests red on c4cb41d08 was a stale worklist, not the Inochi change
+
+`test_staged_readings::test_zero_overlap_with_the_worklists_today` failed on three items (Q134955809, Q135433682, Q135434162) listed in `shrines_missing_en_label.json` (built 12:04Z) but holding derived kana readings. All three had gained English labels from today's QuickStatements rounds (Hirono / Minamiu / Ninomiya Shrine), so the worklist was stale. Refreshed it by dispatching generate-shrines-missing-en-label.yml (9a7137bd2; its temple stage-2 step bailed on a WDQS 429 by design and was not retried); Tests re-run on HEAD is green (run 37847626046). No test or code changed.
+
 ## 2026-10-08 — Inochi Shrine (Q141677508): deity create in the batch, labels in two weeks
 
 Emma created the shrine by hand as Q141677508 and asked for the rest to go through the normal batch "as a part of the logic". `generate_inochi_shrine.py` writes `inochi_creates.txt` (registered in create_items.GATES; CREATE 命之命 / "Inochi no Mikoto", P31 Q524158, P21 Q6581097, plus `Q141677508|P825|LAST`; emitted only while the shrine has no P825, because the hand-run batch never records a creation) and `inochi_labels.txt` (ATOMIC_FILES; Len "Inochi Shrine" and Lja "命神社", only from 2026-10-22 and only while different). One SPARQL query per run; workflow step added; `test_inochi_shrine.py`.
