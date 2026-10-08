@@ -1,4 +1,21 @@
-## 2026-10-08 — enwiki AI-suspicion deletions: 2 so far, neither ever on the shinto wiki
+## 2026-10-08 — enwiki LLMPROD deletions, corrected: 63, and every Shinto one is on the shinto wiki
+
+- The first check (entry below) was wrong. The AI-cleanup tracking list only holds articles still
+  alive when it was built, so everything deleted on 4–5 August was missing from it. Emma pointed at
+  XTools: `xtools.wmcloud.org/api/user/pages/en.wikipedia.org/Immanuelle/0/noredirects/deleted`
+  lists 93 deleted mainspace pages Immanuelle created (9 later recreated). **63 were deleted since
+  2026-08-01**: 61 by expired WP:LLMPROD on 2026-08-04/05 and 2 by G8 as redirects to those. Saved
+  to `enwiki_deletion_restores/enwiki_deleted_created.json`.
+- On shinto.miraheze (through Emma's browser): 57 exist as full articles (2–35 KB; many updated
+  08-19 / 09-01). Tashima Shrine redirects to Tashima Shrine (Saga) (35 KB); Sumiyoshi Shrine (Iki)
+  is at Sumiyoshi Shrine (Iki City). Not here: Shukō Shrine and Nitta Hachiman-gū (enwiki
+  redirects only) and the two Meitei articles. Nothing needs restoring.
+- Wikidata cross-check (Emma's suggestion): 37 of the pages carry a `{{wikidata link}}` QID. All 37
+  items have lost their enwiki sitelink, have P11250 pointing at the matching shinto wiki page, link
+  jawiki, and 29 also link Simple English Wikipedia. Of the 22 pages with no QID, Simple English
+  resolves only Take Shrine (Q11430665) and Unity of knowledge and action (Q15933119).
+
+## 2026-10-08 — enwiki AI-suspicion deletions: 2 so far, neither ever on the shinto wiki [WRONG — see the entry above]
 
 - Source: `Wikipedia:AI noticeboard/2026-08-24 Immanuelle`, the AI-cleanup tracking list of every
   enwiki article Immanuelle edited: 1,642 rows, all `status=requested`. Checked each against enwiki:
