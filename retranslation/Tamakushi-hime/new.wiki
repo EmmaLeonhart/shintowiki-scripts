@@ -5,24 +5,24 @@
 | native_name = 玉櫛媛
 | gender    = Female
 | other_names = Mishima-mizokui-hime, Seyadatara-hime, Ikutamayori-hime
-| parents   = {{ill|Mishima-mizokui|ja|三嶋溝抗命|qid=Q135639916}}
-| consort   = {{ill|Kotoshironushi|ja|事代主|simple|Kotoshironushi|qid=Q8009611}} (''Nihon Shoki'')<br>{{ill|Ōmononushi|ja|大物主|qid=Q10936701}} (''Kojiki'')
-| offspring = [[Himetataraisuzu-hime]]<br>[[Isuzuyori-hime]]<br>{{ill|Amenohikatakushihikata|ja|天日方奇日方命}}
+| parents   = {{ill|Mishima-mizokui|ja|三嶋溝抗命|lt=Mishima-mizokui|lt_ja=三嶋溝抗命}}
+| consort   = {{ill|Kotoshironushi|ja|事代主神|lt=Kotoshironushi|lt_ja=事代主神}} (''Nihon Shoki'')<br>{{ill|Ōmononushi|ja|大物主神|lt=Ōmononushi|lt_ja=大物主神}} (''Kojiki'')
+| offspring = {{ill|Himetataraisuzu-hime|ja|媛蹈鞴五十鈴媛命|lt=Himetataraisuzu-hime|lt_ja=媛蹈鞴五十鈴媛命}}<br>{{ill|Isuzuyori-hime|ja|五十鈴依媛命|lt=Isuzuyori-hime|lt_ja=五十鈴依媛命}}<br>{{ill|Amenohikatakushihikata|ja|天日方奇日方命|lt=Amenohikatakushihikata|lt_ja=天日方奇日方命}}
 }}
-'''Tamakushi-hime''' ({{lang|ja|玉櫛媛}}, also written {{lang|ja|玉櫛姫}}) is a woman who appears in [[Japanese mythology]]. She is known as the mother of [[Himetataraisuzu-hime]], consort of [[Emperor Jimmu]] and the first empress. She is also called '''Mishima-mizokui-hime''' ({{lang|ja|三島溝樴姫}}), '''Seyadatara-hime''' ({{lang|ja|勢夜陀多良比売}}) and '''Ikutamayori-hime''' ({{lang|ja|活玉依姫}}).
+'''Tamakushi-hime''' ({{lang|ja|玉櫛媛}}, also written {{lang|ja|玉櫛姫}}) is a woman who appears in {{ill|Japanese mythology|ja|日本神話|lt=Japanese mythology|lt_ja=日本神話}}. She is known as the mother of {{ill|Himetataraisuzu-hime|ja|媛蹈鞴五十鈴媛命|lt=Himetataraisuzu-hime|lt_ja=媛蹈鞴五十鈴媛命}}, consort of {{ill|Emperor Jimmu|ja|神武天皇|lt=Emperor Jimmu|lt_ja=神武天皇}} and the first empress. She is also called '''Mishima-mizokui-hime''' ({{lang|ja|三島溝樴姫}}), '''Seyadatara-hime''' ({{lang|ja|勢夜陀多良比売}}) and '''Ikutamayori-hime''' ({{lang|ja|活玉依姫}}).
 
-She is the daughter of {{ill|Mishima-mizokui|ja|三嶋溝抗命|qid=Q135639916}}.
+She is the daughter of {{ill|Mishima-mizokui|ja|三嶋溝抗命|lt=Mishima-mizokui|lt_ja=三嶋溝抗命}}.
 
 == Records ==
 In the passages below, the names in '''bold''' refer to Tamakushi-hime.
 
 === Age of the Gods and Chigi Hongi ===
-The sixth variant account of the eighth section of the ''[[Nihon Shoki]]'' says, introduced with "it is also said", that [[Kotoshironushi]] turned himself into a ''yahiro kuma-wani'' (a great [[Wani (dragon)|wani]]) and visited '''Mishima-mizokui-hime''' (or, as some say, '''Tamakushi-hime'''), and that the child born to them was Himetataraisuzu-hime, empress of [[Emperor Jimmu]].<ref>{{cite wikisource|year=1896|plaintitle=Nihongi: Chronicles of Japan from the Earliest Times to A.D. 697|wslink=Nihongi: Chronicles of Japan from the Earliest Times to A.D. 697|wspage=61–62|chapter=Book I|publisher=Kegan Paul, Trench, Trübner & Co.|author-first=William George|author-last=Aston}}</ref>
+The sixth variant account of the eighth section of the ''{{ill|Nihon Shoki|ja|日本書紀|lt=Nihon Shoki|lt_ja=日本書紀}}'' says, introduced with "it is also said", that {{ill|Kotoshironushi|ja|事代主神|lt=Kotoshironushi|lt_ja=事代主神}} turned himself into a ''yahiro kuma-wani'' (a great {{ill|Wani (dragon)|ja|和邇|lt=wani|lt_ja=八尋熊鰐}}) and visited '''Mishima-mizokui-hime''' (or, as some say, '''Tamakushi-hime'''), and that the child born to them was Himetataraisuzu-hime, empress of {{ill|Emperor Jimmu|ja|神武天皇|lt=Emperor Jimmu|lt_ja=神武天皇}}.<ref>{{cite wikisource|year=1896|plaintitle=Nihongi: Chronicles of Japan from the Earliest Times to A.D. 697|wslink=Nihongi: Chronicles of Japan from the Earliest Times to A.D. 697|wspage=61–62|chapter=Book I|publisher=Kegan Paul, Trench, Trübner & Co.|author-first=William George|author-last=Aston}}</ref>
 
-According to the "Chigi Hongi" chapter of the ''[[Sendai Kuji Hongi]]'', Tsumi-hayae-kotoshironushi turned himself into a ''yahiro kuma-wani'' and visited '''Ikutamayori-hime''', daughter of Mishima-mizokui, and she bore three children:
-* {{ill|Amenohikatakushihikata|ja|天日方奇日方命}} (also called Atatsukushine no Mikoto). He became chief minister in the time of Emperor Jimmu, and is the ancestor of the [[Miwa clan]] and the [[Kamo clan]].
-* Himetataraisuzu-hime, empress of Emperor Jimmu and mother of [[Emperor Suizei]] and his brothers.
-* [[Isuzuyori-hime]], empress of Emperor Suizei and mother of [[Emperor Annei]].
+According to the "Chigi Hongi" chapter of the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀|lt=Sendai Kuji Hongi|lt_ja=先代旧事本紀}}'', Tsumi-hayae-kotoshironushi turned himself into a ''yahiro kuma-wani'' and visited '''Ikutamayori-hime''', daughter of Mishima-mizokui, and she bore three children:
+* {{ill|Amenohikatakushihikata|ja|天日方奇日方命|lt=Amenohikatakushihikata|lt_ja=天日方奇日方命}} (also called Atatsukushine no Mikoto). He became chief minister in the time of Emperor Jimmu, and is the ancestor of the {{ill|Miwa clan|ja|三輪氏|lt=Miwa clan|lt_ja=三輪氏}} and the {{ill|Kamo clan|ja|賀茂朝臣氏|lt=Kamo clan|lt_ja=賀茂氏}}.
+* Himetataraisuzu-hime, empress of Emperor Jimmu and mother of {{ill|Emperor Suizei|ja|綏靖天皇|lt=Emperor Suizei|lt_ja=綏靖天皇}} and his brothers.
+* {{ill|Isuzuyori-hime|ja|五十鈴依媛命|lt=Isuzuyori-hime|lt_ja=五十鈴依媛命}}, empress of Emperor Suizei and mother of {{ill|Emperor Annei|ja|安寧天皇|lt=Emperor Annei|lt_ja=安寧天皇}}.
 
 === The reigns of Jimmu to Annei, and the Tennō Hongi ===
 According to the Jimmu section of the ''Nihon Shoki'', someone (whose name is not given) told the emperor:
@@ -38,23 +38,23 @@ The "Tennō Hongi" chapter of the ''Sendai Kuji Hongi'' likewise has someone tel
 It also makes Himetataraisuzu-hime and Isuzuyori-hime the daughters of Kotoshironushi.
 
 === Kojiki ===
-According to the Jimmu section of the ''[[Kojiki]]'', when Jimmu was looking for a beautiful woman to make his chief consort, [[Ōkume]] said:
+According to the Jimmu section of the ''{{ill|Kojiki|ja|古事記|lt=Kojiki|lt_ja=古事記}}'', when Jimmu was looking for a beautiful woman to make his chief consort, {{ill|Ōkume|ja|大久米命|lt=Ōkume|lt_ja=大久米命}} said:
 
 : "Here there is a maiden who is called the child of a god. She is called the child of a god for this reason. The daughter of Mishima-mizokui, named '''Seyadatara-hime''', was very beautiful, and Ōmononushi of Miwa saw her and desired her. When the maiden went to relieve herself, he turned into an arrow painted red, floated down the ditch she was using, and struck her genitals (''hoto''). The maiden was startled and jumped up and ran about. She took the arrow back and laid it beside her bed, and it at once became a handsome young man, who married her, and she bore a child. Her name is Hoto-tatara-isusuki-hime no Mikoto, and she is also called Hime-tatara-isukeyori-hime. That is why she is called the child of a god."<ref>{{cite book |last1=Philippi |first1=Donald L. |title=Kojiki |date=2015 |publisher=Princeton University Press |pages=115–117}}</ref>
 
-The child's name was later changed to avoid the word ''hoto'', which became taboo.<ref>{{cite book |author=R. A. B. Ponsonby-Fane |url=https://books.google.com/books?id=UVO4AwAAQBAJ&pg=PT412 |title=Studies In Shinto & Shrines |date=3 June 2014 |publisher=Taylor & Francis |isbn=978-1-136-89301-8 |page=412}}</ref><ref>{{cite web |last1=Kadoya |first1=Atsushi |title=Ōmononushi |url=http://eos.kokugakuin.ac.jp/modules/xwords/entry.php?entryID=126 |accessdate=22 September 2015 |website=Encyclopedia of Shinto |publisher=Kokugakuin University}}</ref> For the full story see [[Himetataraisuzu-hime]].
+The child's name was later changed to avoid the word ''hoto'', which became taboo.<ref>{{cite book |author=R. A. B. Ponsonby-Fane |url=https://books.google.com/books?id=UVO4AwAAQBAJ&pg=PT412 |title=Studies In Shinto & Shrines |date=3 June 2014 |publisher=Taylor & Francis |isbn=978-1-136-89301-8 |page=412}}</ref><ref>{{cite web |last1=Kadoya |first1=Atsushi |title=Ōmononushi |url=http://eos.kokugakuin.ac.jp/modules/xwords/entry.php?entryID=126 |accessdate=22 September 2015 |website=Encyclopedia of Shinto |publisher=Kokugakuin University}}</ref> For the full story see {{ill|Himetataraisuzu-hime|ja|媛蹈鞴五十鈴媛命|lt=Himetataraisuzu-hime|lt_ja=媛蹈鞴五十鈴媛命}}.
 
 == Worship ==
-She is enshrined at [[Shimogamo Shrine]] (Kamo-mioya Shrine), among others.
+She is enshrined at {{ill|Shimogamo Shrine|ja|賀茂御祖神社|lt=Shimogamo Shrine|lt_ja=賀茂御祖神社}} (Kamo-mioya Shrine), among others.
 
 == Family tree ==
 {{Eight generations of Izumo}}
 
 == See also ==
-* [[Tamayori-hime (mother of Jimmu)]]
-* {{ill|Isonokami-ni-imasu Takumushitama Shrine|ja|石園座多久虫玉神社|qid=Q11585337}}
-* {{ill|Mizokui Shrine|ja|溝咋神社|qid=Q11564491}}
-* [[List of Japanese deities]]
+* {{ill|Tamayori-hime (mother of Jimmu)|ja|タマヨリビメ (日向神話)|lt=Tamayori-hime (mother of Jimmu)|lt_ja=タマヨリビメ}}
+* {{ill|Isonokami-ni-imasu Takumushitama Shrine|ja|石園座多久虫玉神社|lt=Isonokami-ni-imasu Takumushitama Shrine|lt_ja=石園座多久虫玉神社}}
+* {{ill|Mizokui Shrine|ja|溝咋神社|lt=Mizokui Shrine|lt_ja=溝咋神社}}
+* {{ill|List of Japanese deities|ja|日本の神の一覧|lt=List of Japanese deities|lt_ja=日本の神の一覧}}
 
 == References ==
 {{Reflist}}

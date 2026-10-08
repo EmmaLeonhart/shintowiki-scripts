@@ -1,3 +1,14 @@
+## 2026-10-08 — translations use Emma's ill format; Tamayori-hime done
+
+- Emma: every link with a Japanese counterpart is `{{ill|ENGLISH|ja|JAPANESE|lt=english display|lt_ja=japanese display}}`,
+  no qid ("that is a latter script"); without that the translation is useless. Japanese targets are
+  taken from the jawiki source's own links. `retranslation/ill_convert.py` rewrites plain links and
+  old-style ills on a page from an English→Japanese map.
+- Tamayori-hime (mother of Jimmu) (need_translation): the English half was garbled machine
+  translation and the jawiki article was pasted below it; retranslated whole from jawiki rev
+  107144101 with every jawiki link (including all the shrine and place links) as an ill. Rev 3853097.
+- Tamakushi-hime and Himetataraisuzu-hime re-saved with the ill format: revs 3853098, 3853099.
+
 ## 2026-10-08 — Tamakushi-hime: Japanese content merged (need_translation page 1)
 
 - The page was the English stub plus the raw jawiki article pasted under "Japanese Wikipedia
