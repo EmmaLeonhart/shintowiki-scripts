@@ -1,3 +1,7 @@
+## 2026-10-08 — kami "date of birth: no value" was re-added every round; fixed
+
+Emma spotted a kami with a column of identical `P569: no value` statements. `generate_shinto_short_names.py` emits `<kami>|P569|novalue` only where the kami has no P569, but checked with `OPTIONAL { ?k wdt:P569 ?d }`. A novalue statement has no `wdt:` triple (WDQS writes it as `?k a wdno:P569`), so every kami that already had one still read as empty and each drip round added another (398 such lines in the file at this point). The checks now use `p:P569` / `p:P21`, which match the statement node whatever its value; same change in `generate_shinto_honorifics.py`. Pinned by `test_kami_novalue_presence.py` (fails on the old query). The in-flight regeneration (run 37825991742, old code) was cancelled before it committed and re-dispatched with the fix. The duplicates already on Wikidata are a separate question for Emma.
+
 ## 2026-10-08 — Tenshō Kōtai Jingūkyō: pasted Japanese section merged (rev 3853114)
 
 Merged the jawiki 天照皇大神宮教 text (leaders, Kingdom of God, founder, membership 490,807 at end-2021, non-cooperation) into the English article; links as ill.

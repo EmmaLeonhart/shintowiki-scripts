@@ -247,8 +247,8 @@ def load_kami():
       ?k rdfs:label ?ja FILTER(LANG(?ja) = "ja")
       OPTIONAL {{ ?k rdfs:label ?en FILTER(LANG(?en) = "en") }}
       OPTIONAL {{ ?k skos:altLabel ?jaAlias FILTER(LANG(?jaAlias) = "ja") }}
-      OPTIONAL {{ ?k wdt:P21  ?g }}
-      OPTIONAL {{ ?k wdt:P569 ?d }}
+      OPTIONAL {{ ?k p:P21  ?g }}
+      OPTIONAL {{ ?k p:P569 ?d }}
     }}""")
     out = {}
     for r in rows:

@@ -92,8 +92,8 @@ def load_targets():
       ?k rdfs:label ?ja FILTER(LANG(?ja) = "ja")
       OPTIONAL {{ ?k rdfs:label ?en FILTER(LANG(?en) = "en") }}
       OPTIONAL {{ ?k wdt:P1813 ?sn }}
-      OPTIONAL {{ ?k wdt:P21   ?g }}
-      OPTIONAL {{ ?k wdt:P569  ?d }}
+      OPTIONAL {{ ?k p:P21   ?g }}
+      OPTIONAL {{ ?k p:P569  ?d }}
     }}""")
     out = {}
     for r in rows:
