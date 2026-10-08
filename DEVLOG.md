@@ -1,3 +1,14 @@
+## 2026-10-08 — 千葉国造 translated as Chiha no Kuni no Miyatsuko; Japanese title redirected
+
+- need_translation held both 千葉国造 and Chiha no Kuni no Miyatsuko with byte-identical Japanese
+  text (the English-titled one also carries Q11405960 and the Qq/qq categories, kept). Translated
+  once into Chiha no Kuni no Miyatsuko (rev 3853103), links as ill; 千葉国造 now redirects to it
+  (rev 3853104). Nothing lost: same text, history kept.
+- Also: the 09:45Z Generate QuickStatements run failed because three generators hit 429 from
+  ja.wikipedia while cleanup-loop's own regeneration ran in parallel; they bailed per the 429 rule
+  and kept their old files. The hourly browser job (cron 692e185a) now skips dispatching a
+  regeneration while cleanup-loop or generate-quickstatements is running.
+
 ## 2026-10-08 — browser QS round 4: 1,037 lines → #289830 (round 3 #289821 DONE: 1,540 done, 56 errors)
 
 ## 2026-10-08 — 建比良鳥命 (Takehiratori) translated (rev 3853102)
