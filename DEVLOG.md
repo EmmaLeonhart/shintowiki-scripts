@@ -1,3 +1,16 @@
+## 2026-10-08 — Tamakushi-hime: Japanese content merged (need_translation page 1)
+
+- The page was the English stub plus the raw jawiki article pasted under "Japanese Wikipedia
+  content", three stacked infoboxes, and the need-translation / duplicated-content / untranslated-
+  character categories. Translated the jawiki records (Nihon Shoki variant, Sendai Kuji Hongi
+  Chigi Hongi children, Tennō Hongi, the Kojiki speech of Ōkume), merged them with the existing
+  English and its Aston/Philippi references, kept one infobox, and dropped the pasted section and
+  the maintenance categories. Followed current jawiki (rev 109546276), which now comments out its
+  "theories" section. Saved as rev 3853096.
+- The repo copy in `need_translation/` was stale (May); the live page had a 2026-09-04 EmmaBot
+  expansion edit only, checked before overwriting. Always compare against the live page, not the
+  synced file.
+
 ## 2026-10-08 — Himetataraisuzu-hime retranslated (first of the stinkers)
 
 - Emma named it the worst finished translation. The wiki page (61 KB) was Immanuelle's 2022
