@@ -13,11 +13,6 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
 
 ## stuff to do
 
-- [ ] Finish translating the `need_translation/` pages: Ono Shrine (Atsugi), Kotokuji Temple (Koka
-  City), Miwa Shrine (Gifu); then put the links on the already-English 三野後国造, 伊佐我命, 沼田国造,
-  知々夫国造, 穂国造, 角鹿国造, 遠淡海国造, 長狭国造 into `{{ill|EN|ja|JA|lt=|lt_ja=}}` form. Before every
-  save: compare the live text (sha1), not just the revid, and check whether the page is in `git_synced/`
-  (if so, build on that copy, keep `[[Category:Git synced pages]]`, and update the file too).
 - [ ] Review every kami item we created (`deity_creates.txt`, `deity_role_creates.txt`, the Inochi deity,
   and any other create batch) and give each the English label form of batch #289889: the same romanised
   label in mul, en, en-us, fr and es, plus its ja label. Most have no English label; most look like close
@@ -29,14 +24,13 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
   in the browser (Emma 2026-10-08 orders this for these items, which overrides CLAUDE.md's "Emma merges
   duplicate items" rule for this set). One merge at a time; record each pair in `DEVLOG.md`.
 
-- **Pinned tail (until the final item)**
+- [ ] Finish translating the `need_translation/` pages: Ono Shrine (Atsugi), Kotokuji Temple (Koka
+  City), Miwa Shrine (Gifu); then put the links on the already-English 三野後国造, 伊佐我命, 沼田国造,
+  知々夫国造, 穂国造, 角鹿国造, 遠淡海国造, 長狭国造 into `{{ill|EN|ja|JA|lt=|lt_ja=}}` form. Before every
+  save: compare the live text (sha1), not just the revid, and check whether the page is in `git_synced/`
+  (if so, build on that copy, keep `[[Category:Git synced pages]]`, and update the file too).
 
-  - [ ] Ensure the session-local crons are running: work-loop :03, auto-flush :15, status-report :42,
-    briefing 08:03 (plus the QuickStatements watchdog and browser-batch crons Emma ordered). Trust
-    `CronList`, not recorded IDs. ⛔ There is no debrief cron.
-
-- [ ] **LAST, after every item above:** end all the cron jobs (`CronDelete` each one in `CronList`), and
-  delete the pinned tail above in the same commit.
+- [ ] **LAST, after every item above:** end all the cron jobs (`CronDelete` each one in `CronList`).
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this

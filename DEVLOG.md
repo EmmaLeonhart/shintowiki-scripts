@@ -1,3 +1,7 @@
+## 2026-10-08 — queue: pinned tail removed, translations moved to its place
+
+Emma: the pinned tail "is not supposed to exist", and finishing the translated pages is not supposed to be first; it takes the pinned tail's place, after the merges and before ending the crons.
+
 ## 2026-10-08 — queue rebuilt for the Wikidata home stretch; todo.md rewritten; queue gated on Emma's approval
 
 Emma: finish the translated pages; then review every kami item we created (English label form of #289889: mul/en/en-us/fr/es + ja), set obvious genders (many have P21 unknown despite "hime" names), then agentically merge each into its real identity in the browser; the last item ends all the crons. New jawiki translations and retranslation are out of the queue (moved to todo.md, which was rewritten for the browser-driven way of editing). The queue carries a NOT APPROVED gate until she approves it in chat; a one-hour cron asks her if she has not.
