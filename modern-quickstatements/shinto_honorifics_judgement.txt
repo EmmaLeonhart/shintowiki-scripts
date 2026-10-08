@@ -3,7 +3,7 @@
 #  The extent that we're not able to is the extent, probably, that I'm going
 #  to be able to make judgement calls."
 #
-# 25 cases.
+# 23 cases.
 
 Q10940723	ja=ウワハル・シタハル	en=Uwaharu and Shitaharu	EXCLUDED by Emma — complicated ontology
 Q10948069	ja=宗像三女神	en=Three Goddesses of Munakata	EXCLUDED by Emma — complicated ontology
@@ -18,7 +18,6 @@ Q140446059	ja=竜田姫命	en=Tatsuta-hime	ja says 命 (Q140588459); en says a d
 Q140446061	ja=大山三所権現	en=Three Deities of Mount Daisen	EXCLUDED by Emma — complicated ontology
 Q140446119	ja=三足比咩命	en=Mitarashi-hime	ja says 命 (Q140588459); en says a different honorific (Q140588570)
 Q141627892	ja=飯長媛命	en=Iinagahime	ja says 命 (Q140588459); en says a different honorific (Q140588570)
-Q2983724	ja=トヨウケビメ	en=Toyōke Ōmikami	ja says ビメ (Q140588570); en says a different honorific (Q140588456)
 Q3090037	ja=猿田彦神	en=Sarutahiko	EXCLUDED by Emma — complicated ontology
 Q30935372	ja=神屋楯比売	en=Kamuyatate hime no mikoto	ja says 比売 (Q140588570); en says a different honorific (Q140588459)
 Q402052	ja=開拓三神	en=Three Pioneer Kami	EXCLUDED by Emma — complicated ontology
@@ -27,6 +26,5 @@ Q48750893	ja=天棚機姫神	en=Tanabatabime-no-Mikoto	ja says 神 (Q140588460);
 Q555212	ja=阿加流比売神	en=Akaruhime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
 Q644201	ja=淤加美神	en=Kuraokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
 Q65249011	ja=八十神	en=Eighty Gods	EXCLUDED by Emma — complicated ontology
-Q8191715	ja=須勢理姫神	en=Suseri-hime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
 Q86728307	ja=武居大伴主神	en=Takei-Otomo-no-Ookami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
 Q98082969	ja=八女姫神	en=Yametsuhime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
