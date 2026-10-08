@@ -1,3 +1,7 @@
+## 2026-10-08 — 大河内味張 (Ōshikōchi no Ajihari) translated (rev 3853107)
+
+Translated in place, links as ill; infobox kept as `{{Infobox kuge}}` with its parameter names, values translated.
+
 ## 2026-10-08 — 師長国造 (Shinaga no Kuni no Miyatsuko) translated (rev 3853106)
 
 Translated in place, family tree included, all links as ill. Next: 大河内味張.
