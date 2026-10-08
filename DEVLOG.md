@@ -1,3 +1,7 @@
+## 2026-10-08 — Tenshō Kōtai Jingūkyō: pasted Japanese section merged (rev 3853114)
+
+Merged the jawiki 天照皇大神宮教 text (leaders, Kingdom of God, founder, membership 490,807 at end-2021, non-cooperation) into the English article; links as ill.
+
 ## 2026-10-08 — Jichinsai: pasted Japanese section merged (rev 3853113)
 
 English article plus pasted jawiki 地鎮祭. Merged: history, the full order of the Shinto rite, the Izumo yashiki rite, the Buddhist form; English text and the Tsu lawsuit section kept; links as ill.
