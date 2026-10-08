@@ -1,3 +1,13 @@
+## 2026-10-08 — local wiki editing channel through Emma's browser
+
+- Emma reopened wiki work for local agentic editing (translation, retranslation, enwiki-deletion
+  restores). From this machine scripts get a Cloudflare 403 from shinto.miraheze, but her Chrome
+  session reaches the API, logged in as Immanuelle. She approved editing and undeleting as Immanuelle
+  that way (AskUserQuestion), enwiki restores first.
+- `shinto_miraheze/browser_wiki/wiki_api.js` is injected into a tab on the wiki and exposes
+  read / edit / undelete / deletedRevisions over the MediaWiki API with her session: 2.5 s throttle,
+  " (Claude-assisted)" appended to every summary. Writes are logged to `edit_log.tsv`.
+
 ## 2026-10-07 — what the round 2 QuickStatements errors were
 
 Read from `api.php?action=get_commands_from_batch&filter=ERROR` for #289736 (62 errors):
