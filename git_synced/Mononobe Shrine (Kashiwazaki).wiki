@@ -1,5 +1,3 @@
-{{Expand Japanese|物部神社 (柏崎市)}}
-
 {{Infobox religious building
 | name = Mononobe Shrine
 | native_name = 物部神社
@@ -22,161 +20,132 @@
 
 {{wikidata link|Q17219569|commons|Category:Mononobe-jinja (Kashiwazaki)|ja|物部神社 (柏崎市)|check_date=2026-05-18}}
 
-{{神社
-|名称   = 物部神社
-|画像   = [[File:Mononobe-jinja (Kashiwazaki) shaden.JPG|280px]]<br />社殿
-|所在地 = {{ill|Niigata Prefecture|Q132705|qid=Q132705}}{{ill|Kashiwazaki, Niigata|Q633983|qid=Q633983}}{{ill|Nishiyama, Niigata|Q7040758|qid=Q7040758}}二田602
-|位置   = {{ウィキ座標2段度分秒|37|27|14.96|N|138|40|30.43|E|region:JP-15_type:landmark|display=inline,title|name=物部神社}}
-|祭神   = 二田天物部命
-|神体   = 
-|社格   = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}（小）<br />{{ill|Echigo Province|Q666514|qid=Q666514}}{{ill|Ichinomiya|Q1656379|qid=Q1656379|lt=二宮}}<br />旧{{ill|UNKNOWN|qid=Q90139226|lt=県社|lt=Ken-sha1=Ken-sha}}
-|創建   = 不詳
-|本殿   = 三間社{{ill|Nagare-zukuri|Q210684|qid=Q210684}}
-|別名   = 二田物部神社・二田神社
-|札所等 = 
-|例祭   = {{ill|April 9|Q2504|qid=Q2504}}・{{ill|September 14|Q2847|qid=Q2847}}
-|神事   = 御弓始祭（{{ill|February 7|Q2322|qid=Q2322}}）<br />栄呂祭（{{ill|March 9|Q2401|qid=Q2401}}）<br />神幸祭（3月初卯日）<br />初穂講祭（{{ill|November 23|Q3021|qid=Q3021}}）
-|地図 = {{Location map|Japan Niigata|label=物部神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
-}}
-[[File:Mononobe-jinja (Kashiwazaki) torii.JPG|thumb|200px|right|鳥居]]
-'''物部神社'''（もののべじんじゃ）は、{{ill|Niigata Prefecture|Q132705|qid=Q132705}}{{ill|Kashiwazaki, Niigata|Q633983|qid=Q633983}}{{ill|西山町|Q11627881|qid=Q11627881|lt=西山町}}二田（ふただ）にある{{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}}。{{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}、{{ill|Echigo Province|Q666514|qid=Q666514}}{{ill|Ichinomiya|Q1656379|qid=Q1656379|lt=二宮}}で、{{ill|Q712534|lt=旧社格}}は{{ill|UNKNOWN|qid=Q90139226|lt=県社|lt=Ken-sha1=Ken-sha}}。社名は「二田物部神社」「二田神社」とも。
+== Overview ==
+[[File:Mononobe-jinja (Kashiwazaki) torii.JPG|thumb|200px|right|Torii]]
+'''Mononobe Shrine''' (もののべじんじゃ) is a {{ill|Shinto shrine|ja|神社|lt=Shinto shrine|lt_ja=神社}} at Futada (ふただ), {{ill|Nishiyama, Niigata|ja|西山町 (新潟県)|lt=Nishiyama|lt_ja=西山町}}, {{ill|Kashiwazaki, Niigata|ja|柏崎市|lt=Kashiwazaki|lt_ja=柏崎市}}, {{ill|Niigata Prefecture|ja|新潟県|lt=Niigata Prefecture|lt_ja=新潟県}}. It is a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha|lt_ja=式内社}} (small) and the {{ill|Ichinomiya|ja|一宮|lt=ninomiya|lt_ja=二宮}} of {{ill|Echigo Province|ja|越後国|lt=Echigo Province|lt_ja=越後国}}; under the {{ill|Modern system of ranked Shinto shrines|ja|近代社格制度|lt=former shrine ranking system|lt_ja=旧社格}} it was a {{ill|Ken-sha|ja|県社|lt=prefectural shrine|lt_ja=県社}}. It is also called Futada Mononobe Shrine and Futada Shrine. The main sanctuary is a three-bay {{ill|Nagare-zukuri|ja|流造|lt=nagare-zukuri|lt_ja=流造}} building, and the shrine's founding date is unknown.
 
-== 祭神 ==
-祭神は次の3柱{{Sfn|物部神社（平）|1986年}}{{Sfn|物部神社（神々）|1985年|p=396-399}}{{Sfn|越佐の神社|2002年|p=46-47}}。
+=== Deities ===
+The shrine has three deities.{{Sfn|Mononobe Shrine (Heibonsha)|1986}}{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}{{Sfn|Essa no Jinja|2002|p=46–47}}
 
-'''主祭神'''
-* '''二田天物部命''' （ふたたのあめのもののべのみこと）
-*: 『{{ill|Kujiki|Q2716751|qid=Q2716751}}』のうち「{{ill|UNKNOWN|lt=天神本紀}}」<ref group="原">『先代旧事本紀』「天神本紀」。 - [{{NDLDC|991097/120}} 『国史大系 第7巻』]（経済雑誌社、1897年-1901年、国立国会図書館デジタルコレクション）120-121コマ参照。</ref>では、{{ill|Nigihayahi|Q10949054|qid=Q10949054}}（饒速日命）の天降りに供奉した「天物部等二十五部人」の筆頭に「二田物部」の記載が見える{{Sfn|越佐の神社|2002年|p=46-47}}。また、「{{ill|UNKNOWN|lt=天孫本紀}}」<ref group="原">『先代旧事本紀』「天孫本紀」。 - [{{NDLDC|991097/145}} 『国史大系 第7巻』]（経済雑誌社、1897年-1901年、国立国会図書館デジタルコレクション）145コマ参照。</ref>では{{ill|Umashimaji|Q10946169|qid=Q10946169}}（宇摩志麻治命）は「天物部」を率いて逆賊の討伐にあたったという{{Sfn|物部神社（神々）|1985年|p=396-399}}。
-*: 『{{ill|Shinsen Shōjiroku|Q1045362|qid=Q1045362}}』（{{ill|Kōnin (era)|Q1373070|qid=Q1373070}}6年（{{ill|815|Q29917|qid=Q29917}}））では右京の未定雑姓に「二田物部」として「神饒速日天降之時従者。二田天物部之後也」の記載が見える{{Sfn|物部神社（神々）|1985年|p=396-399}}{{Sfn|越佐の神社|2002年|p=46-47}}。
-*: 『{{ill|Shintōshū|Q2616931|qid=Q2616931}}』では、{{ill|UNKNOWN|lt=本地仏}}を{{ill|Amitābha|Q236242|qid=Q236242}}とする{{Sfn|中世諸国一宮制|2000年|p=369}}。
+'''Principal deity'''
+* '''Futata no Amenomononobe no Mikoto''' (二田天物部命, ふたたのあめのもののべのみこと)
+*: In the "Tenjin Hongi"<ref group="original">''Sendai Kuji Hongi'', "Tenjin Hongi". – [{{NDLDC|991097/120}} ''Kokushi Taikei'' vol. 7] (Keizai Zasshisha, 1897–1901), National Diet Library Digital Collection, frames 120–121.</ref> of the ''{{ill|Sendai Kuji Hongi|ja|先代旧事本紀|lt=Sendai Kuji Hongi|lt_ja=先代旧事本紀}}'', "Futata Mononobe" heads the list of the "twenty-five groups of Heavenly Mononobe" who attended {{ill|Nigihayahi|ja|饒速日命|lt=Nigihayahi|lt_ja=饒速日命}} when he descended from heaven.{{Sfn|Essa no Jinja|2002|p=46–47}} In the "Tenson Hongi"<ref group="original">''Sendai Kuji Hongi'', "Tenson Hongi". – [{{NDLDC|991097/145}} ''Kokushi Taikei'' vol. 7] (Keizai Zasshisha, 1897–1901), National Diet Library Digital Collection, frame 145.</ref> {{ill|Umashimaji|ja|宇摩志麻治命|lt=Umashimaji|lt_ja=宇摩志麻治命}} leads the "Heavenly Mononobe" to subdue the rebels.{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}
+*: The ''{{ill|Shinsen Shōjiroku|ja|新撰姓氏録|lt=Shinsen Shōjiroku|lt_ja=新撰姓氏録}}'' ({{ill|Kōnin (era)|ja|弘仁|lt=Kōnin|lt_ja=弘仁}} 6, {{ill|815|ja|815年|lt=815|lt_ja=815年}}) lists "Futata Mononobe" among the unclassified families of the Right Capital, as "descendants of Futata no Amenomononobe, attendant of Kamu-Nigihayahi when he descended".{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}{{Sfn|Essa no Jinja|2002|p=46–47}}
+*: The ''{{ill|Shintōshū|ja|神道集|lt=Shintōshū|lt_ja=神道集}}'' gives his {{ill|Honji suijaku|ja|本地垂迹説|lt=honji butsu|lt_ja=本地仏}} as {{ill|Amitābha|ja|阿弥陀如来|lt=Amida|lt_ja=阿弥陀如来}}.{{Sfn|Chūsei Shokoku Ichinomiya-sei|2000|p=369}}
 
-'''配祀神'''
-* 物部稚桜命 （もののべちざくらのみこと） - {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}}40年（{{ill|1907|Q2048|qid=Q2048}}）合祀の若宮神社祭神。
-* {{ill|UNKNOWN|lt=健御名方命}} （たけみなかたのみこと） - 明治40年（1907年）合祀の諏訪神社祭神。
+'''Secondary deities'''
+* Mononobe no Chizakura no Mikoto (物部稚桜命, もののべちざくらのみこと): deity of the Wakamiya Shrine, merged here in {{ill|Meiji era|ja|明治|lt=Meiji|lt_ja=明治}} 40 ({{ill|1907|ja|1907年|lt=1907|lt_ja=1907年}}).
+* {{ill|Takeminakata|ja|タケミナカタ|lt=Takeminakata no Mikoto|lt_ja=健御名方命}} (たけみなかたのみこと): deity of the Suwa Shrine, merged here in Meiji 40 (1907).
 
-『越後野志』では祭神を{{ill|Umashimaji|Q10946169|qid=Q10946169}}（宇摩志麻治命）とするが、『{{ill|Tokusen Jinmyōchō|Q11571092|qid=Q11571092}}』ではこれを付会として二田天物部命を妥当とする{{Sfn|物部神社（神々）|1985年|p=396-399}}。
+The ''Echigo Yashi'' gives the deity as {{ill|Umashimaji|ja|宇摩志麻治命|lt=Umashimaji|lt_ja=宇摩志麻治命}}, but the ''{{ill|Tokusen Jinmyōchō|ja|特選神名牒|lt=Tokusen Jinmyōchō|lt_ja=特選神名牒}}'' calls this a forced connection and holds Futata no Amenomononobe to be correct.{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}
 
-== 歴史 ==
-== 創建・伝承 ==
-社伝（江戸時代の『二田宮伝記』）によれば、祭神・二田天物部命は{{ill|Ame-no-Kaguyama|Q10940849|qid=Q10940849}}（越後国{{ill|Ichinomiya|Q1656379|qid=Q1656379}}の{{ill|Yahiko Shrine|Q195684|qid=Q195684}}祭神）に従って{{ill|Koshi Province (Japan)|Q1351611|qid=Q1351611|lt=高志国}}（越国）に来臨したという{{Sfn|物部神社（神々）|1985年|p=396-399}}。そして石地（現・柏崎市西山町石地）で天香語山命と別れたのち、多岐佐加の二田を献上する者がいたので、その地に居を定めて里を「二田」と称したと伝える{{Sfn|物部神社（神々）|1985年|p=396-399}}。また、二田天物部命は二田の土生田（はにゅうだ）の高陵に葬られたという{{Sfn|物部神社（神々）|1985年|p=396-399}}。
+== History ==
+=== Founding and tradition ===
+According to the shrine's tradition (the Edo-period ''Futada-gū Denki''), the deity Futata no Amenomononobe came to {{ill|Koshi Province|ja|越国|lt=Koshi|lt_ja=高志国}} in attendance on {{ill|Ame-no-Kaguyama|ja|天香山命|lt=Ame-no-Kaguyama|lt_ja=天香語山命}}, the deity of {{ill|Yahiko Shrine|ja|彌彦神社|lt=Yahiko Shrine|lt_ja=彌彦神社}}, the {{ill|Ichinomiya|ja|一宮|lt=ichinomiya|lt_ja=一宮}} of Echigo.{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}} After parting from Ame-no-Kaguyama at Ishiji (now Ishiji, Nishiyama, Kashiwazaki), someone offered him two rice fields (''futa-da'') at Takisaka, so he settled there and named the village "Futada".{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}} He is said to have been buried on the high mound of Hanyūda in Futada.{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}
 
-また社伝では、当社の社地は数回の移転を繰り返したという。それぞれの遷座は次の通り{{Sfn|物部神社（神々）|1985年|p=396-399}}。
-* {{ill|Emperor Sujin|Q333530|qid=Q333530}}年間、12世孫・物部稚桜命が社を石地浜から南大崎へ遷す、着船の丘を「船岡山」とする。
-* {{ill|Empress Suiko|Q298057|qid=Q298057}}年間（{{ill|593|Q33889|qid=Q33889}}-{{ill|628|Q30592|qid=Q30592}}）、亀岡山の中腹へ。
-* {{ill|Jinki (era)|Q1373210|qid=Q1373210}}年間（{{ill|724|Q23549|qid=Q23549}}-{{ill|729|Q23561|qid=Q23561}}）、土生田岡へ。
-* {{ill|Kōnin (era)|Q1373070|qid=Q1373070}}年間（{{ill|810|Q23819|qid=Q23819}}-{{ill|824|Q30353|qid=Q30353}}）、亀岡山の山頂へ。
-* {{ill|Tennin (era)|Q1193599|qid=Q1193599}}元年（{{ill|1108|Q19514|qid=Q19514}}）、亀岡山麓の現社地へ。
-亀岡山の旧跡は{{ill|Meitoku|Q1145032|qid=Q1145032}}年間（{{ill|1390|Q6375|qid=Q6375}}-{{ill|1393|Q6390|qid=Q6390}}）の古図に見え、この図には山頂の奥宮に至るまでに大小多数の堂宇のあった様子が記されている{{Sfn|物部神社（神々）|1985年|p=396-399}}。
+Tradition also says the shrine moved several times:{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}
+* In the reign of {{ill|Emperor Sujin|ja|崇神天皇|lt=Emperor Sujin|lt_ja=崇神天皇}}, his twelfth-generation descendant Mononobe no Chizakura moved the shrine from Ishiji beach to Minami-Ōsaki, and the hill where his boat landed was named Funaoka-yama.
+* In the reign of {{ill|Empress Suiko|ja|推古天皇|lt=Empress Suiko|lt_ja=推古天皇}} (593–628), to the slope of Mount Kameoka.
+* In the {{ill|Jinki|ja|神亀|lt=Jinki|lt_ja=神亀}} era (724–729), to Hanyūda hill.
+* In the {{ill|Kōnin (era)|ja|弘仁|lt=Kōnin|lt_ja=弘仁}} era (810–824), to the summit of Mount Kameoka.
+* In {{ill|Tennin|ja|天仁|lt=Tennin|lt_ja=天仁}} 1 (1108), to the present site at the foot of Mount Kameoka.
+The old site on Mount Kameoka appears on a map of the {{ill|Meitoku|ja|明徳|lt=Meitoku|lt_ja=明徳}} era (1390–1393), which shows many halls large and small on the way up to the inner shrine on the summit.{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}
 
-== 概史 ==
-社伝では、{{ill|Enryaku|Q1373176|qid=Q1373176}}14年（{{ill|795|Q30447|qid=Q30447}}）に{{ill|Sakanoue no Tamuramaro|Q941979|qid=Q941979}}が祈願し、三島郡を神領に定めたという{{Sfn|物部神社（平）|1986年}}。
+=== Outline ===
+Tradition says that in {{ill|Enryaku|ja|延暦|lt=Enryaku|lt_ja=延暦}} 14 (795) {{ill|Sakanoue no Tamuramaro|ja|坂上田村麻呂|lt=Sakanoue no Tamuramaro|lt_ja=坂上田村麻呂}} prayed here and made {{ill|Santō District, Niigata|ja|三島郡 (新潟県)|lt=Santō District|lt_ja=三島郡}} the shrine's domain.{{Sfn|Mononobe Shrine (Heibonsha)|1986}}
 
-{{ill|Enchō|Q1327274|qid=Q1327274|lt=延長}}5年（{{ill|927|Q30470|qid=Q30470}}）成立の『{{ill|Engishiki|Q1342448|qid=Q1342448}}』{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=神名帳}}では、{{ill|Echigo Province|Q666514|qid=Q666514}}{{ill|Santō District, Niigata|Q1155567|qid=Q1155567|lt=三島郡}}に「物部神社」と記載されて{{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}に列している{{Sfn|物部神社（平）|1986年}}。その後、院政期の文書では当社は「二田社」として見え、知行国主が二田社神主の補任権を有していた様子が記されている{{Sfn|中世諸国一宮制|2000年|p=369}}。
+In the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Jinmyōchō|lt_ja=神名帳}} of the ''{{ill|Engishiki|ja|延喜式|lt=Engishiki|lt_ja=延喜式}}'', completed in {{ill|Enchō|ja|延長 (日本)|lt=Enchō|lt_ja=延長}} 5 (927), it is listed as "Mononobe Shrine" in Santō District, Echigo Province, as a Shikinaisha.{{Sfn|Mononobe Shrine (Heibonsha)|1986}} In documents of the ''insei'' period it appears as "Futada-sha", and the proprietor of the province held the right to appoint its chief priest.{{Sfn|Chūsei Shokoku Ichinomiya-sei|2000|p=369}}
 
-その後の動向は不明で、{{ill|Middle Ages|Q12554|qid=Q12554}}に入り『{{ill|Shintōshū|Q2616931|qid=Q2616931}}』に「二宮両田大菩薩申、亦土生国大明神名」と見える{{Sfn|中世諸国一宮制|2000年|p=369}}。この「両田」とは「二田」であり、この記述から当社は{{ill|Echigo Province|Q666514|qid=Q666514}}の{{ill|Ichinomiya|Q1656379|qid=Q1656379|lt=二宮}}であったとされる{{Sfn|中世諸国一宮制|2000年|p=369}}。当社が二宮に列していたことは、16世紀以降の起請文に「弥彦大明神・二田大明神」として、{{ill|Ichinomiya|Q1656379|qid=Q1656379}}の{{ill|Yahiko Shrine|Q195684|qid=Q195684}}（{{ill|Nishikanbara District, Niigata|Q1155139|qid=Q1155139}}{{ill|Yahiko, Niigata|Q1349667|qid=Q1349667}}）と並び称された様子にも見える{{Sfn|中世諸国一宮制|2000年|p=369}}。なお『神道集』の「亦土生国大明神名」の記述に関連して、前述のように当社の祭神は土生田山に葬られたという伝承がある{{Sfn|中世諸国一宮制|2000年|p=369}}。
+Its later course is unknown. In the {{ill|Middle Ages|ja|中世|lt=medieval period|lt_ja=中世}} the ''{{ill|Shintōshū|ja|神道集|lt=Shintōshū|lt_ja=神道集}}'' says "the Ninomiya is called Ryōden Daibosatsu, also Hanyūkoku Daimyōjin".{{Sfn|Chūsei Shokoku Ichinomiya-sei|2000|p=369}} "Ryōden" (両田, "both fields") is "Futada" (二田), and from this the shrine is held to have been the ''ninomiya'' of Echigo.{{Sfn|Chūsei Shokoku Ichinomiya-sei|2000|p=369}} Its rank as ''ninomiya'' is also seen in sworn oaths from the sixteenth century on, which name "Yahiko Daimyōjin and Futada Daimyōjin" together, pairing it with the ''ichinomiya'' {{ill|Yahiko Shrine|ja|彌彦神社|lt=Yahiko Shrine|lt_ja=彌彦神社}} ({{ill|Yahiko, Niigata|ja|弥彦村|lt=Yahiko|lt_ja=弥彦村}}, {{ill|Nishikanbara District, Niigata|ja|西蒲原郡|lt=Nishikanbara District|lt_ja=西蒲原郡}}).{{Sfn|Chūsei Shokoku Ichinomiya-sei|2000|p=369}} The ''Shintōshū''{{'}}s "also Hanyūkoku Daimyōjin" connects with the tradition, mentioned above, that the deity was buried on Hanyūda hill.{{Sfn|Chūsei Shokoku Ichinomiya-sei|2000|p=369}}
 
-{{ill|Daiei (era)|Q1193564|qid=Q1193564}}6年（{{ill|1526|Q6325|qid=Q6325}}）には{{ill|Ashikaga shogunate|Q1154406|qid=Q1154406}}第12代将軍・{{ill|Ashikaga Yoshiharu|Q536313|qid=Q536313}}から三島郡から3,500貫を神領として授けられたが、{{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}}年間（{{ill|1573|Q6678|qid=Q6678}}-{{ill|1592|Q6769|qid=Q6769}}）にこれらの神領は没収された{{Sfn|物部神社（平）|1986年}}。天正10年（{{ill|1582|Q6719|qid=Q6719}}）には当地を治めた{{ill|Uesugi Kagekatsu|Q1376605|qid=Q1376605}}から周辺6村から計1,070石の寄進がなされたが、{{ill|Keichō|Q1328185|qid=Q1328185}}3年（{{ill|1598|Q6800|qid=Q6800}}）に景勝が会津に移ったことに伴い衰退した{{Sfn|物部神社（平）|1986年}}。慶長16年（{{ill|1611|Q6768|qid=Q6768}}）には越後に入った{{ill|Matsudaira Tadateru|Q837867|qid=Q837867}}から50石の寄進を受け、{{ill|Keian|Q1146135|qid=Q1146135}}元年（{{ill|1648|Q6941|qid=Q6941}}）には{{ill|Tokugawa shogunate|Q205662|qid=Q205662}}第3代将軍・{{ill|Tokugawa Iemitsu|Q314481|qid=Q314481}}から朱印地は50石に改められた{{Sfn|物部神社（平）|1986年}}。
+In {{ill|Daiei (era)|ja|大永|lt=Daiei|lt_ja=大永}} 6 (1526) the twelfth shogun of the {{ill|Ashikaga shogunate|ja|室町幕府|lt=Ashikaga shogunate|lt_ja=室町幕府}}, {{ill|Ashikaga Yoshiharu|ja|足利義晴|lt=Ashikaga Yoshiharu|lt_ja=足利義晴}}, granted the shrine 3,500 ''kan'' in Santō District as domain, but this was confiscated in the {{ill|Tenshō (Azuchi–Momoyama period)|ja|天正|lt=Tenshō|lt_ja=天正}} era (1573–1592).{{Sfn|Mononobe Shrine (Heibonsha)|1986}} In Tenshō 10 (1582) {{ill|Uesugi Kagekatsu|ja|上杉景勝|lt=Uesugi Kagekatsu|lt_ja=上杉景勝}}, who ruled the area, donated a total of 1,070 ''koku'' from six surrounding villages, but the shrine declined when Kagekatsu moved to Aizu in {{ill|Keichō|ja|慶長|lt=Keichō|lt_ja=慶長}} 3 (1598).{{Sfn|Mononobe Shrine (Heibonsha)|1986}} In Keichō 16 (1611) it received 50 ''koku'' from {{ill|Matsudaira Tadateru|ja|松平忠輝|lt=Matsudaira Tadateru|lt_ja=松平忠輝}}, newly come to Echigo, and in {{ill|Keian|ja|慶安|lt=Keian|lt_ja=慶安}} 1 (1648) the third shogun of the {{ill|Tokugawa shogunate|ja|江戸幕府|lt=Tokugawa shogunate|lt_ja=江戸幕府}}, {{ill|Tokugawa Iemitsu|ja|徳川家光|lt=Tokugawa Iemitsu|lt_ja=徳川家光}}, fixed its ''shuinchi'' at 50 ''koku''.{{Sfn|Mononobe Shrine (Heibonsha)|1986}}
 
-{{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}}4年（{{ill|1871|Q7746|qid=Q7746}}）に{{ill|Q712534|lt=近代社格制度}}では{{ill|Son-sha|Q134917284|qid=Q134917284}}に列したが、{{ill|Taishō era|Q329174|qid=Q329174}}12年（{{ill|1923|Q2169|qid=Q2169}}）に{{ill|UNKNOWN|qid=Q90139226|lt=県社|lt=Ken-sha1=Ken-sha}}に昇格した{{Sfn|物部神社（神々）|1985年|p=396-399}}。明治40年（{{ill|1907|Q2048|qid=Q2048}}）には若宮神社・諏訪神社を合祀した{{Sfn|物部神社（平）|1986年}}。
+Under the {{ill|Modern system of ranked Shinto shrines|ja|近代社格制度|lt=modern shrine ranking system|lt_ja=近代社格制度}} it was made a {{ill|Son-sha|ja|村社|lt=village shrine|lt_ja=村社}} in Meiji 4 (1871), and was raised to {{ill|Ken-sha|ja|県社|lt=prefectural shrine|lt_ja=県社}} in {{ill|Taishō|ja|大正|lt=Taishō|lt_ja=大正}} 12 (1923).{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}} In Meiji 40 (1907) the Wakamiya Shrine and the Suwa Shrine were merged into it.{{Sfn|Mononobe Shrine (Heibonsha)|1986}}
 
-== 神職 ==
-神職は三嶋家。この三嶋家は、ニギハヤヒの天降りに従った「五物部」のうちの二田物部の末裔であるという{{Sfn|物部神社（神々）|1985年|p=396-399}}。
+=== Priests ===
+The priests are the Mishima family, said to descend from the Futata Mononobe, one of the "five Mononobe" who attended Nigihayahi's descent from heaven.{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}
 
-== 境内 ==
-[[File:Mononobe-jinja (Kashiwazaki) honden.JPG|thumb|200px|right|本殿（県指定文化財）]]
-本殿は三間社{{ill|Nagare-zukuri|Q210684|qid=Q210684}}で、桟瓦葺<ref name="説明板"/>。{{ill|Muromachi period|Q334845|qid=Q334845}}後期の{{ill|15th century|Q7018|qid=Q7018}}後期頃の造営と見られている<ref name="説明板"/>。古くは独立社殿であったが、現在は全面に幣殿が接続しており、向拝は板壁で建て込んでいる<ref name="説明板"/>。{{ill|Tōkamachi|Q858369|qid=Q858369}}の来迎寺愛宕堂（{{ill|1713|Q6873|qid=Q6873}}建立）と虹梁絵様がよく似ることから、向拝はこの時期の改造と見られている<ref name="説明板"/>。この本殿は新潟県指定文化財に指定されている<ref name="説明板"/>。
+== Grounds ==
+[[File:Mononobe-jinja (Kashiwazaki) honden.JPG|thumb|200px|right|Honden (prefectural cultural property)]]
+The {{ill|Honden|ja|本殿|lt=honden|lt_ja=本殿}} is a three-bay {{ill|Nagare-zukuri|ja|流造|lt=nagare-zukuri|lt_ja=流造}} building roofed with pantiles.<ref name="board"/> It is thought to date from the late {{ill|Muromachi period|ja|室町時代|lt=Muromachi period|lt_ja=室町時代}}, around the late fifteenth century.<ref name="board"/> It once stood on its own, but a ''heiden'' is now joined to its front, and the ''kōhai'' (front porch) has been closed in with board walls.<ref name="board"/> Because the decoration of its tie-beams closely resembles that of the Atago-dō of Raikō-ji in {{ill|Tōkamachi|ja|十日町市|lt=Tōkamachi|lt_ja=十日町市}} (built 1713), the porch is thought to have been altered at that time.<ref name="board"/> The honden is designated a cultural property of Niigata Prefecture.<ref name="board"/>
 
-また、境内には天明義民の碑が建てられている{{Sfn|物部神社（平）|1986年}}。
+The grounds also hold a monument to the Tenmei-era ''gimin'' (peasant martyrs).{{Sfn|Mononobe Shrine (Heibonsha)|1986}}
 
-== 祭事 ==
-{{ill|Reisai|Q11385469|qid=Q11385469}}は{{ill|April 9|Q2504|qid=Q2504}}（春）・{{ill|September 14|Q2847|qid=Q2847}}（秋大祭）の年2回。
+== Festivals ==
+The {{ill|Reisai|ja|例祭|lt=Reisai|lt_ja=例祭}} is held twice a year, on 9 April (spring) and 14 September (great autumn festival).
 
-また特殊神事として、次の祭がある{{Sfn|物部神社（神々）|1985年|p=396-399}}。
-* 御弓始祭 （{{ill|February 7|Q2322|qid=Q2322}}）
-*: 祈年祭に先立ち、祭神が国土平定をなしたという故事に倣って山野の獣を射て五穀豊穣を祈願する祭。
-* 栄呂祭（さかえろさい） （{{ill|March 9|Q2401|qid=Q2401}}）
-*: 「栄えろ栄えろ」と氏子の繁栄を祈願して跳躍する祭。刈羽村の見日神社までその声が届けば豊作になるという。
-* 神幸祭 （3月初卯日）
-*: 前夜に宮司宅に獅子頭・猿田彦面を勧請したのち、当日に祭典、村内一巡の祭を行う祭。
-* 初穂講祭 （{{ill|November 23|Q3021|qid=Q3021}}）
-*: 献米を受けて新穀を感謝する祭。
+Special rites include:{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}
+* Oyumi-hajime-sai (御弓始祭, 7 February)
+*: Before the ''kinensai'', following the story that the deity pacified the land, wild animals of the hills are shot at and a good harvest is prayed for.
+* Sakaero-sai (栄呂祭, さかえろさい, 9 March)
+*: Worshippers jump, chanting "sakaero, sakaero" ("prosper, prosper") to pray for the parishioners' prosperity. If the voices reach the Minohi Shrine in Kariwa village, the harvest will be good.
+* Shinkō-sai (神幸祭, first Day of the Hare of the third month)
+*: On the eve, a lion head and a Sarutahiko mask are brought to the chief priest's house; the next day a ceremony is held and the procession goes round the village.
+* Hatsuho-kō-sai (初穂講祭, 23 November)
+*: Rice offerings are received and thanks given for the new grain.
 
-== 文化財 ==
-== 新潟県指定文化財 ==
-* 有形文化財<ref>[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4282.html 柏崎市の文化財（県指定文化財）]（柏崎市ホームページ）。</ref>
-** 本殿（建造物）
-**: 昭和61年3月28日指定。
-** 経櫃 応永十五年銘 2合（工芸品）
-**: 令和6年3月26日指定<ref>令和6年3月26日新潟県報より{{PDFlink|[https://kenpo.pref.niigata.lg.jp/bn/R06_03/0326_t23/t23_20240326i29254.pdf 新潟県告示第348号]}}（新潟県ホームページ）。</ref>。
-** 木造狛犬 2躯（彫刻）
-**: {{ill|Muromachi period|Q334845|qid=Q334845}}の作と見られる{{ill|Komainu|Q20155846|qid=Q20155846}}<ref name="説明板"/>。{{ill|Cercidiphyllum japonicum|Q526549|qid=Q526549|lt=桂}}材製で、阿形は像高62センチメートル、吽形は像高60センチメートル<ref name="説明板">境内説明板。</ref>。咽喉の長さ・胸の張りの小ささ・顔の幅の小ささなどといった室町期の特徴を有しており、材質・構造から当地方での作と見られている<ref name="説明板"/>。昭和48年3月9日指定。
+== Cultural properties ==
+=== Niigata Prefecture designated ===
+* Tangible cultural properties<ref>[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4282.html Cultural properties of Kashiwazaki (prefecture-designated)] (Kashiwazaki City website).</ref>
+** Honden (building)
+**: Designated 28 March 1986.
+** Two sutra chests inscribed Ōei 15 (craft)
+**: Designated 26 March 2024.<ref>Niigata Prefecture Gazette, 26 March 2024, {{PDFlink|[https://kenpo.pref.niigata.lg.jp/bn/R06_03/0326_t23/t23_20240326i29254.pdf Niigata Prefecture Notice no. 348]}} (Niigata Prefecture website).</ref>
+** Pair of wooden {{ill|Komainu|ja|狛犬|lt=komainu|lt_ja=狛犬}} (sculpture)
+**: Komainu thought to be of the {{ill|Muromachi period|ja|室町時代|lt=Muromachi period|lt_ja=室町時代}}.<ref name="board"/> Made of {{ill|Cercidiphyllum japonicum|ja|カツラ|lt=katsura|lt_ja=桂}} wood; the open-mouthed figure is 62 cm tall and the closed-mouthed one 60 cm.<ref name="board">Information board in the shrine grounds.</ref> They have Muromachi features such as a long throat, a shallow chest and a narrow face, and from their material and construction are thought to have been made locally.<ref name="board"/> Designated 9 March 1973.
 
-== 柏崎市指定文化財 ==
-* 有形文化財<ref>[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4275.html 柏崎市の文化財（市指定文化財/建造物・彫刻・工芸品）]、[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4281.html 柏崎市の文化財（市指定文化財/書跡・古文書・絵画）]（柏崎市ホームページ）。</ref>
-** 物部神社の大般若波羅密多経（書跡） - 443巻{{Sfn|越佐の神社|2002年|p=46-47}}。昭和44年9月1日指定。
-** 物部神社の版本五部大乗経（書跡） - 157巻{{Sfn|越佐の神社|2002年|p=46-47}}。昭和44年9月1日指定。
-** 物部神社古絵図（古文書） - 昭和44年9月1日指定。
-** 物部神社太古絵図面（古文書） - 昭和44年9月1日指定。
-** 物部神社々領 徳川将軍家代々朱印状（近世文書） - 昭和44年9月1日指定。
-* 無形文化財<ref>[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4280.html 柏崎市の文化財（市指定文化財/考古・歴史資料・民俗芸能・工芸技術・風俗慣習・有形民俗）]（柏崎市ホームページ）。</ref>
-** 物部神社の太夫舞 - 昭和55年6月12日指定。
-* 史跡<ref>[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4283.html 柏崎市の文化財（市指定文化財/史跡・天然記念物・名勝）]（柏崎市ホームページ）。</ref>
-** 二田城跡 - 昭和44年9月1日指定。
-なお、「物部神社の納経の唐櫃」が昭和44年9月1日に柏崎市指定有形文化財に指定されていた（現在は新潟県指定有形文化財）。
+=== Kashiwazaki City designated ===
+* Tangible cultural properties<ref>[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4275.html Cultural properties of Kashiwazaki (city-designated: buildings, sculpture, crafts)], [https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4281.html (calligraphy, documents, paintings)] (Kashiwazaki City website).</ref>
+** The shrine's ''Daihannya Haramitta-kyō'' (calligraphy): 443 scrolls.{{Sfn|Essa no Jinja|2002|p=46–47}} Designated 1 September 1969.
+** The shrine's printed ''Gobu Daijō-kyō'' (calligraphy): 157 scrolls.{{Sfn|Essa no Jinja|2002|p=46–47}} Designated 1 September 1969.
+** Old map of Mononobe Shrine (document): designated 1 September 1969.
+** Ancient plan of Mononobe Shrine (document): designated 1 September 1969.
+** Vermilion-seal letters of the Tokugawa shoguns for the shrine's lands (early modern documents): designated 1 September 1969.
+* Intangible cultural properties<ref>[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4280.html Cultural properties of Kashiwazaki (city-designated: archaeology, historical materials, folk performing arts)] (Kashiwazaki City website).</ref>
+** The shrine's ''tayū-mai'' dance: designated 12 June 1980.
+* Historic sites<ref>[https://www.city.kashiwazaki.lg.jp/soshikiichiran/kyoikuiinkai/hakubutsukan/1/23/3/4283.html Cultural properties of Kashiwazaki (city-designated: historic sites, natural monuments, places of scenic beauty)] (Kashiwazaki City website).</ref>
+** Futada Castle ruins: designated 1 September 1969.
+The "Chinese chest for the shrine's dedicated sutras" was designated a Kashiwazaki City tangible cultural property on 1 September 1969; it is now a Niigata Prefecture tangible cultural property.
 
-== 二田城 ==
-物部神社背後の滝沢山には「二田城」と称される城跡が残る{{Sfn|物部神社（神々）|1985年|p=396-399}}。この城跡は「二田城跡」として柏崎市の史跡に指定されている。
+=== Futada Castle ===
+On Mount Takizawa behind the shrine are the ruins of a castle called "Futada Castle",{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}} designated a historic site of Kashiwazaki as the "Futada Castle ruins".
 
-この城は、当初は物部神社の神官が「長橋城」として築き神領警備に使用したが、後世に{{ill|UNKNOWN|lt=上杉家}}武将の{{ill|須田長義|Q11664661|qid=Q11664661}}がこの城に移った際に「刈瀬城」と改めたという{{Sfn|物部神社（神々）|1985年|p=396-399}}。そして子・須田長茂が三ツ山城へ移転したというが、いずれも年代は不詳{{Sfn|物部神社（神々）|1985年|p=396-399}}。以上のほか、元井玄蕃頭が城主であるという伝を載せる文書もある{{Sfn|物部神社（神々）|1985年|p=396-399}}。
+The castle was first built by the shrine's priests as "Nagahashi Castle" to guard the shrine lands; later, when {{ill|Suda Nagayoshi|ja|須田長義|lt=Suda Nagayoshi|lt_ja=須田長義}}, a commander of the {{ill|Uesugi clan|ja|上杉氏|lt=Uesugi|lt_ja=上杉家}}, moved there, he renamed it "Kariya Castle".{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}} His son Suda Nagashige is said to have moved to Mitsuyama Castle, but the dates of all of this are unknown.{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}} Other documents give Motoi Genba-no-kami as lord of the castle.{{Sfn|Mononobe Shrine (Nihon no Kamigami)|1985|p=396–399}}
 
-== 現地情報 ==
-'''所在地'''
-* {{ill|Niigata Prefecture|Q132705|qid=Q132705}}{{ill|Kashiwazaki, Niigata|Q633983|qid=Q633983}}西山町二田602
+== Visiting ==
+'''Address'''
+* 602 Futada, Nishiyama-chō, {{ill|Kashiwazaki, Niigata|ja|柏崎市|lt=Kashiwazaki|lt_ja=柏崎市}}, {{ill|Niigata Prefecture|ja|新潟県|lt=Niigata Prefecture|lt_ja=新潟県}}
 
-'''交通アクセス'''
-* 最寄駅：{{ill|East Japan Railway Company|Q499071|qid=Q499071|lt=JR}}{{ill|Echigo Line|Q188250|qid=Q188250}} {{ill|Raihai Station|Q7283837|qid=Q7283837}} （徒歩約16分）
-** 地名「礼拝（らいはい）」は、物部神社の礼拝所があったことに由来する。
+'''Access'''
+* Nearest station: {{ill|Raihai Station|ja|礼拝駅|lt=Raihai Station|lt_ja=礼拝駅}} on the {{ill|East Japan Railway Company|ja|東日本旅客鉄道|lt=JR|lt_ja=JR}} {{ill|Echigo Line|ja|越後線|lt=Echigo Line|lt_ja=越後線}} (about 16 minutes on foot).
+** The place name Raihai ("worship") comes from a worship hall of Mononobe Shrine that stood there.
 
-== 脚注 ==
+== Notes ==
+'''Original texts'''
+{{Reflist|group="original"}}
 
-'''原典'''
-{{Reflist|group="原"}}
-
-'''出典'''
+'''Sources'''
 {{Reflist|2}}
 
-== 参考文献 ==
-* 境内説明板（柏崎市教育委員会設置）
-* {{Cite book|和書|editor=|author=|year=1986|chapter=物部神社|title=日本歴史地名体系 15 新潟県の地名|publisher={{ill|Heibonsha|Q11482108|qid=Q11482108}}|isbn=4582490158|ref={{Harvid|物部神社（平）|1986年}}}}
-* {{Cite book|和書|editor={{ill|Ken'ichi Tanigawa|Q2392596|qid=Q2392596}}編|author=宮栄二|year=1985|chapter=物部神社|title=日本の神々 -神社と聖地- 8 北陸|publisher={{ill|Hakusuisha Publishing|Q4346470|qid=Q4346470}}|isbn=4560022186|ref={{Harvid|物部神社（神々）|1985年}}}}
-* {{Cite book|和書|editor=中世諸国一宮制研究会編|author=|year=2000|chapter=|title=中世諸国一宮制の基礎的研究|publisher=岩田書院|isbn=978-4872941708|ref={{Harvid|中世諸国一宮制|2000年}}}}
-* {{Cite book|和書|editor=|author=花ケ前盛明|year=2002|chapter=物部神社|title=越佐の神社 -式内社六十三-|publisher=新潟日報事業社|isbn=978-4888629430|ref={{Harvid|越佐の神社|2002年}}}}
+== Bibliography ==
+* Information board in the shrine grounds (set up by the Kashiwazaki City Board of Education).
+* {{Cite book|year=1986|chapter=Mononobe Jinja|title=Nihon Rekishi Chimei Taikei 15: Niigata-ken no Chimei|publisher={{ill|Heibonsha|ja|平凡社|lt=Heibonsha|lt_ja=平凡社}}|isbn=4582490158|ref={{Harvid|Mononobe Shrine (Heibonsha)|1986}}}}
+* {{Cite book|editor={{ill|Ken'ichi Tanigawa|ja|谷川健一|lt=Tanigawa Ken'ichi|lt_ja=谷川健一}}|author=Miya Eiji|year=1985|chapter=Mononobe Jinja|title=Nihon no Kamigami: Jinja to Seichi 8, Hokuriku|publisher={{ill|Hakusuisha|ja|白水社|lt=Hakusuisha|lt_ja=白水社}}|isbn=4560022186|ref={{Harvid|Mononobe Shrine (Nihon no Kamigami)|1985}}}}
+* {{Cite book|editor=Chūsei Shokoku Ichinomiya-sei Kenkyūkai|year=2000|title=Chūsei Shokoku Ichinomiya-sei no Kisoteki Kenkyū|publisher=Iwata Shoin|isbn=978-4872941708|ref={{Harvid|Chūsei Shokoku Ichinomiya-sei|2000}}}}
+* {{Cite book|author=Hanagasaki Moriaki|year=2002|chapter=Mononobe Jinja|title=Essa no Jinja: Shikinaisha Rokujūsan|publisher=Niigata Nippō Jigyōsha|isbn=978-4888629430|ref={{Harvid|Essa no Jinja|2002}}}}
 
 {{Commonscat}}
-{{神道 横}}
+
+{{translated page|ja|物部神社 (柏崎市)|comment=Japanese section translated (Claude-assisted)}}
+
 [[Category:Wikidata generated shikinaisha pages|Mononobe Shrine (Kashiwazaki)]][[Category:Shikinaisha|Mononobe Shrine (Kashiwazaki)]][[Category:Shikinaisha|Mononobe Shrine (Kashiwazaki)]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Echigo Province]]
 [[Category:Shinto shrines in Niigata Prefecture]]
-[[Category:柏崎市の歴史]]
-[[Category:Shikinaisha in Echigo Province]]
-[[Category:新潟県の旧県社]]
+[[Category:History of Kashiwazaki]]
+[[Category:Former prefectural shrines in Niigata Prefecture]]
 [[Category:Echigo Province]]
 [[Category:Ni-no-Miya]]
 [[Category:Mononobe clan|社もののへしんしやかしわさき]]
-[[Category:柏崎市の建築物]]
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Pages with 250+ untranslated japanese characters]]
-[[Category:Pages with 300+ untranslated japanese characters]]
-[[Category:Pages with 500+ untranslated japanese characters]]
-[[Category:Pages with 750+ untranslated japanese characters]]
-[[Category:Pages with 1000+ untranslated japanese characters]]
-[[Category:Pages with 1500+ untranslated japanese characters]]
-[[Category:Need translation]]
-[[Category:Need translation]]
-
+[[Category:Buildings and structures in Kashiwazaki]]
 [[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

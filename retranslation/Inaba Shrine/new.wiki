@@ -14,89 +14,7 @@
 | deity = {{ill|Prince Inishikiirihiko|lt=Prince Inishikiirihiko|ja|五十瓊敷入彦命|qid=Q11372194}}
 }}
 
-{{nihongo|'''Inaba Shrine'''|伊奈波神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mino Province]].
-
-== instance of (P31) ==
-
-* {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}
-* {{ill|Kokushi genzaisha|lt=kokushi genzaisha|en|Kokushi genzaisha|fr|Kokushi genzaisha|ja|国史見在社|simple|Kokushi genzaisha|qid=Q118304363}}
-* {{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274}}
-* {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286}}
-* {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287|lt=Shikinai Shōsha}}
-* {{ill|San-no-Miya|qid=Q134917303}}
-** P1001: {{ill|Mino Province|ckb|پارێزگای مینۆ|cs|Mino (provincie)|de|Provinz Mino|es|Provincia de Mino|eu|Mino probintzia|fa|ولایت مینو|fr|Province de Mino|gl|Provincia de Mino|hak|Mî-nùng-koet|id|Provinsi Mino|it|Mino (provincia)|ja|美濃国|ko|미노국|lt|Mino žemė|nl|Mino (provincie)|pt|Província de Mino|ru|Мино (провинция)|simple|Mino Province|sk|Mino (provincia)|sr|Провинција Мино|th|แคว้นมิโนะ|tr|Mino (vilayet)|uk|Провінція Міно|vi|Tỉnh Mino|wuu|美濃国|zh|美濃國|zh_min_nan|Mino-kok|zh_yue|美濃國|qid=Q864156}}
-* {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei-sha}}
-* {{ill|Shikinai Hiteisha|ja|比定社|qid=Q135026601|lt=Shikinai Hiteisha}}
-
-== part of (P361) ==
-
-* {{ill|List of Shikinaisha in Mino Province|ltq=Q11609223|qid=Q11609223}}
-** Series ordinal: 20
-** P155: {{ill|Akanabe Shrine|ltq=Q11617261|qid=Q11617261}}
-** P156: {{ill|Iwa-no-Nishi Shrine|lt=Iwanonishi Shrine|ja|伊波乃西神社|qid=Q11379658}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Gifu|ltq=Q45798|qid=Q45798}}
-* {{ill|Mino Province|ckb|پارێزگای مینۆ|cs|Mino (provincie)|de|Provinz Mino|es|Provincia de Mino|eu|Mino probintzia|fa|ولایت مینو|fr|Province de Mino|gl|Provincia de Mino|hak|Mî-nùng-koet|id|Provinsi Mino|it|Mino (provincia)|ja|美濃国|ko|미노국|lt|Mino žemė|nl|Mino (provincie)|pt|Província de Mino|ru|Мино (провинция)|simple|Mino Province|sk|Mino (provincia)|sr|Провинција Мино|th|แคว้นมิโนะ|tr|Mino (vilayet)|uk|Провінція Міно|vi|Tỉnh Mino|wuu|美濃国|zh|美濃國|zh_min_nan|Mino-kok|zh_yue|美濃國|qid=Q864156|lt=Mino Province}}
-* {{ill|Atsumi district|ltq=Q11409326|qid=Q11409326}}
-
-== coordinate location (P625) ==
-
-* {{coord|35.427227|136.770815}}
-
-== image (P18) ==
-
-* Inabashrine.JPG
-
-== dedicated to (P825) ==
-
-* {{ill|Prince Inishikiirihiko|ltq=Q11372194|qid=Q11372194}}
-
-== described by source (P1343) ==
-
-* {{ill|Kokugakuin University Shrine database (old)|ltq=Q135037878|qid=Q135037878}}
-** P2699: https://web.archive.org/web/20160306025227/http://21coe.kokugakuin.ac.jp/db/jinja/220301.html
-* {{ill|Shoku Nihon Kōki|lt=Shoku Nihon Kōki|cs|Šoku Nihonkóki|de|Shoku Nihon Kōki|en|Shoku Nihon Kōki|es|Shoku Nihon Kōki|ff|Shoku Nihon Kōki|fr|Shoku nihon kōki|ja|続日本後紀|ko|속일본후기|pt|Shoku Nihon Kōki|zh|續日本後紀|zhsource|續日本後紀|qid=Q1041301}}
-
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-
-* 181942
-** P3831: {{ill|Kokugakuin University Shrine database|qid=Q135159299}}
-
-== modern shrine ranking (P13723) ==
-
-* {{ill|Kokuhei Shōsha|qid=Q134917281|lt=Kokuhei Shōsha}}
-** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
-** P1534: {{ill|Shinto Directive|ltq=Q3029647|qid=Q3029647}}
-
-== country (P17) ==
-
-* {{ill|Japan|ab|Иапониа|abstract|Q17|ace|Jeupang|ady|Японие|af|Japan|als|Japan|alt|Јопон|am|ጃፓን|ami|Ripon|an|Chapón|ang|Iapan|anp|जापान|ar|اليابان|arc|ܝܦܢ|ary|الجاپون|arz|اليابان|as|জাপান|ast|Xapón|atj|Japan|av|Япония|avk|Nipona|awa|जापान|ay|Nihun|az|Yaponiya|azb|ژاپون|ba|Япония|ban|Jepang|bar|Japan|bat_smg|Japuonėjė|bbc|Japang|bcl|Hapon|bdr|Gipun|be|Японія|be_x_old|Японія|bew|Jepang|bg|Япония|bh|जापान|bi|Japan|bjn|Japang|blk|ဂျပန်ခမ်းထီ|bm|Japan|bn|জাপান|bo|ཉི་ཧོང་།|bpy|জাপান|br|Japan|bs|Japan|btm|Jepang|bug|ᨍᨛᨄ|bxr|Япон Улас|ca|Japó|cbk_zam|Japón|cdo|Nĭk-buōng|ce|Ипнойчоь|ceb|Hapon|ch|Chapan|chr|ᏣᏩᏂᏏ|chy|Japan|ckb|ژاپۆن|co|Giappone|crh|Japon|cs|Japonsko|csb|Japòńskô|cu|Ꙗпѡнїꙗ|cv|Япони|cy|Japan|da|Japan|dag|Japan|de|Japan|din|Japan|diq|Japonya|dsb|Japańska|dtp|Jepun|dty|जापान|dv|ޖަޕާނު|dz|ཇ་པཱན|ee|Japan|el|Ιαπωνία|eml|Giapòṅ|eo|Japanio|es|Japón|et|Jaapan|eu|Japonia|ext|Japón|fa|ژاپن|ff|Japan|fi|Japani|fiu_vro|Jaapan|fj|Japani|fo|Japan|fr|Japon|frp|Japon|frr|Jaapan|fur|Gjapon|fy|Japan|ga|An tSeapáin|gag|Yaponiya|gan|日本|gcr|Japon|gd|An Iapan|gl|Xapón|glk|ژاپؤن|gn|Hapõ|gom|जपान|gor|Japangi|got|𐌾𐌰𐍀𐌰𐌽|gu|જાપાન|guw|Japan|gv|Yn Çhapaan|ha|Japan|hak|Ngi̍t-pún|haw|Iāpana|he|יפן|hi|जापान|hif|Japan|hr|Japan|hsb|Japanska|ht|Japon|hu|Japán|hy|Ճապոնիա|hyw|Ճափոն|ia|Japon|iba|Jipun|id|Jepang|ie|Japan|ig|Japan|igl|Japan|ik|Nippan|ilo|Hapon|inh|Японехье|io|Japonia|is|Japan|it|Giappone|iu|ᔭᐹᓐ|ja|日本|jam|Japan|jbo|pongu'e|jv|Jepang|ka|იაპონია|kaa|Yaponiya|kab|Yapan|kaj|Ja̱pan|kbd|Япон|kbp|Sapɔŋ|kcg|Ja̱pan|kg|Japan|kge|Jopang|ki|Japan|kk|Жапония|km|ជប៉ុន|kn|ಜಪಾನ್|knc|Japan|ko|일본|koi|Ниппон|krc|Джапония|ks|جاپان|ksh|Japan|ku|Japon|kv|Япония|kw|Nihon|ky|Жапония|la|Iaponia|lad|Japon|lb|Japan|lbe|Япония|lez|Япония|lfn|Nion|lg|Japan|li|Japan|lij|Giappon|lld|Iapan|lmo|Giapon|ln|Zapɔ́|lo|ປະເທດຍີ່ປຸ່ນ|lt|Japonija|ltg|Japoneja|lv|Japāna|mad|Jeppang|mai|जापान|map_bms|Jepang|mdf|Японмастор|mg|Japàna|mhr|Японий|mi|Nipono|min|Japang|mk|Јапонија|ml|ജപ്പാൻ|mn|Япон|mni|ꯖꯄꯥꯟ|mr|जपान|mrj|Япони|ms|Jepun|mt|Ġappun|mwl|Japon|my|ဂျပန်နိုင်ငံ|myv|Япония Мастор|mzn|جاپون|nap|Giappone|nds|Japan|nds_nl|Japan|ne|जापान|new|जापान|nia|Jepang|nl|Japan|nn|Japan|no|Japan|nov|Japan|nqo|ߗ߭ߊߔߐ߲߫|nr|Japane|nrm|Japon|nso|Japane|nv|Binááʼádaałtsʼózí Dineʼé Bikéyah|ny|Japan|oc|Japon|olo|Japounii|om|Jaappaan|or|ଜାପାନ|os|Япон|pa|ਜਪਾਨ|pag|Hapon|pam|Hapon|pap|Hapon|pcd|Japon|pcm|Japan|pdc|Japan|pfl|Japan|pl|Japonia|pms|Giapon|pnb|جاپان|pnt|Ιαπωνία|ps|جاپان|pt|Japão|pwn|Dripun|qu|Hapun|rm|Giapun|rmy|Japan|rn|Yapon|ro|Japonia|roa_rup|Japonia|roa_tara|Giappone|ru|Япония|rue|Японія|rw|Ubuyapani|sa|जपान्|sah|Дьоппуон|sat|ᱡᱟᱯᱟᱱ|sc|Giapone|scn|Giappuni|sco|Japan|sd|جاپان|se|Jáhpan|sg|Zapöo|sh|Japan|shn|မိူင်းၵျႃႇပၢၼ်ႇ|si|ජපානය|simple|Japan|sk|Japonsko|skr|جاپان|sl|Japonska|sm|Iapani|smn|Jaapaan|sn|Japani|so|Jabaan|sq|Japonia|sr|Јапан|srn|Japan|ss|IJapani|st|Japane|stq|Japan|su|Jepang|sv|Japan|sw|Japani|syl|ꠎꠣꠙꠣꠘ|szl|Japůńijo|szy|Zipun|ta|யப்பான்|tay|Gipun|tcy|ಜಪಾನ್|tdd|ᥛᥫᥒᥰ ᥓᥣᥱ ᥙᥣᥢᥱ|te|జపాన్|tet|Japaun|tg|Ҷопон|th|ประเทศญี่ปุ่น|ti|ጃፓን|tig|ጃፓን|tk|Ýaponiýa|tl|Hapon|tly|Japonijə|tn|Japan|to|Siapani|tok|ma Nijon|tpi|Siapan|tr|Japonya|trv|Tanah Tunux|ts|Japani|tt|Япония|tum|Japan|tw|Japan|ty|Tāpōnē|tyv|Япония|udm|Япония|ug|ياپونىيە|uk|Японія|ur|جاپان|uz|Yaponiya|ve|Japan|vec|Japon|vep|Japonii|vi|Nhật Bản|vls|Japan|vo|Yapän|wa|Djapon|war|Hapon|wo|Sapoŋ|wuu|日本|xal|Ниxуудин Нутг|xh|IJapani|xmf|იაპონია|yi|יאפאן|yo|Japan|za|Nyiedbonj|zea|Japan|zgh|ⵏⵉⴱⵓⵏ|zh|日本|zh_classical|日本|zh_min_nan|Ji̍t-pún|zh_yue|日本|zu|IJaphani|qid=Q17}}
-
-== Instagram username (P2003) ==
-
-* inaba_jinja
-
-== Corporate Number (Japan) (P3225) ==
-
-* 7200005000241
-
-== Commons category (P373) ==
-
-* Inaba-jinja
-
-== Google Maps Customer ID (P3749) ==
-
-* 15150178418925258701
-
-== street address (P6375) ==
-
-* {'text': '岐阜県岐阜市伊奈波通り1-1', 'language': 'ja'}
-
-== Freebase ID (P646) ==
-
-* /m/02vq693<ref>Freebase Data Dumps</ref>
+{{nihongo|'''Inaba Shrine'''|伊奈波神社|Inaba-jinja}} is a [[Shinto shrine]] located on Inaba Avenue in [[Gifu, Gifu|Gifu City]], [[Gifu Prefecture]], Japan. It is a [[Shikinaisha]] listed in the [[Engishiki Jinmyōchō]] and the third-ranked shrine (San-no-Miya) of [[Mino Province]], formerly ranked as a Kokuhei Shōsha. The principal enshrined deity is {{ill|Prince Inishikiirihiko|lt=Prince Inishikiirihiko|ja|五十瓊敷入彦命|qid=Q11372194}}, the first son of [[Emperor Suinin]] and the deity credited with developing the region; also enshrined are his wife Nunoshihime-no-Mikoto, his mother [[Hibasu-hime]], his maternal grandfather Hikotatsu-hiko-no-mikoto, and his vassal {{ill|Mononobe no Tokone|ja|物部十千根|qid=Q24885356|lt=Mononobe no Tokone-no-Mikoto}}, collectively venerated as Inaba Ōkami. According to shrine tradition, the shrine was founded in the fourteenth year of [[Emperor Keikou]]'s reign, when [[Takenouchi no Sukune]] enshrined Prince Inishikiirihiko at Mt. Inaba.
 
 {{commons category|Category:Inaba-jinja}}
 [[EN:Inaba Shrine]]
@@ -215,7 +133,6 @@ File:伊奈波神社 (岐阜市)-松尾神社inabajinja037.jpg|Matsuo Shrine
 
 {{translated page|ja|伊奈波神社|comment=Japanese section translated (Claude-assisted)}}
 
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Inaba Shrine]][[Category:Shikinaisha|Inaba Shrine]][[Category:San-no-Miya]]
 [[Category:Shikinaisha in Mino Province]]
 [[Category:Shinto shrines in Gifu]]
@@ -227,3 +144,5 @@ File:伊奈波神社 (岐阜市)-松尾神社inabajinja037.jpg|Matsuo Shrine
 [[Category:Municipality Designated Tangible Folk Cultural Properties]]
 [[Category:Mino Province]]
 [[Category:Japan Heritage]]
+[[Category:Formerly autogenerated pages]]
+[[Category:Git synced pages]]
