@@ -22,6 +22,10 @@ from `ATOMIC_FILES`; they are not queue items.
 
 
 
+- [ ] Kami label fan-out (Emma 2026-10-08): a generator that emits a QuickStatements batch giving each kami
+  the same romanised label in mul, en, en-us, fr and es, plus its ja label, the pattern of batch #289889
+  (Yodohime-no-Mikoto / Ohobehime no Mikoto / Takeminakata Okami). Register the file so the batch runs.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

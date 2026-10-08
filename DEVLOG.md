@@ -1,3 +1,7 @@
+## 2026-10-08 — labels for three kami via QuickStatements (#289889); fan-out generator queued
+
+Emma was hitting the anonymous rate limit adding labels in an incognito window. Applied them from the logged-in QuickStatements tab as batch #289889: Q141593257 Yodohime-no-Mikoto / 淀姫命, Q141593133 Ohobehime no Mikoto / オホベヒメノミコト, Q141593123 Takeminakata Okami / 建御名方大神, each in mul, en, en-us, fr, es plus ja. Queued (end of queue.md) a generator that does the same for kami generally.
+
 ## 2026-10-08 — Tests red on c4cb41d08 was a stale worklist, not the Inochi change
 
 `test_staged_readings::test_zero_overlap_with_the_worklists_today` failed on three items (Q134955809, Q135433682, Q135434162) listed in `shrines_missing_en_label.json` (built 12:04Z) but holding derived kana readings. All three had gained English labels from today's QuickStatements rounds (Hirono / Minamiu / Ninomiya Shrine), so the worklist was stale. Refreshed it by dispatching generate-shrines-missing-en-label.yml (9a7137bd2; its temple stage-2 step bailed on a WDQS 429 by design and was not retried); Tests re-run on HEAD is green (run 37847626046). No test or code changed.
