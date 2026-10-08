@@ -1,3 +1,5 @@
+## 2026-10-08 — browser QS round 6: 851 lines → #289883 (round 5 #289841 DONE: 1,259 done, 64 errors)
+
 ## 2026-10-08 — Okuni Shrine (Isesaki): Japanese section translated (rev 3853112)
 
 Same shape as Mononobe Shrine (Kashiwazaki): generated property sections kept, jawiki section translated, links as ill. Chosen at the daily briefing (Emma: keep the translation queue).
