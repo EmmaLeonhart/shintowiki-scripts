@@ -1,3 +1,7 @@
+## 2026-10-08 — Ōshikōchi clan translated (rev 3853109)
+
+First of the English-titled pages still carrying Japanese text; this one was entirely Japanese. Links as ill. Remaining Shinto ones, by live CJK count: Kikurihime, Mononobe Shrine (Kashiwazaki), Okuni Shrine (Isesaki), Jichinsai, Tenshō Kōtai Jingūkyō, Inaba Shrine, Ono Shrine (Atsugi), Kotokuji Temple (Koka City), Miwa Shrine (Gifu).
+
 ## 2026-10-08 — 斐陀国造 (Hida no Kuni no Miyatsuko) translated (rev 3853108)
 
 The last Japanese-language page among the Japanese-titled `need_translation/` files. The other eight Japanese-titled files (三野後国造, 伊佐我命, 沼田国造, …) are already English and need only their ills upgraded to the lt=/lt_ja= format; queued behind the English pages with pasted Japanese sections.
