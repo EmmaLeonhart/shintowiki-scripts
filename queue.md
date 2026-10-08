@@ -9,6 +9,9 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- [ ] Copy at-risk enwiki articles (Emma, 2026-10-08: "Copy Shinto ones now"): of the 1,640 live
+  articles on enwiki's Immanuelle AI-cleanup list, import the Shinto/Japanese-religion ones that
+  have no page here, with attribution, before LLMPROD takes them.
 - [ ] Retranslate the stinkers: rank `need_translation/` and translated pages by leftover CJK and
   machine-translation damage; retranslate the worst from jawiki, one article per commit.
 - [ ] Where an enwiki article exists, compare it with jawiki and synthesise the shinto wiki article
