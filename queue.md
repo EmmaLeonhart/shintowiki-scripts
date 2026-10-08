@@ -9,6 +9,19 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- [ ] Local wiki editing channel (Emma, 2026-10-08): edits to shinto.miraheze go through Emma's Chrome
+  session (logged in as Immanuelle; scripts get Cloudflare 403, the browser does not). Build a small
+  repo helper that drives the MediaWiki API from the browser tab (read, edit with summary, THROTTLE
+  2.5s), and log every edit to a file in the repo.
+- [ ] Enwiki deletions: list the enwiki articles Immanuelle created that were recently deleted for AI
+  suspicion (from the CSD/AfD notices on User talk:Immanuelle and its archives). For each, check the
+  shinto wiki: if our page was deleted or redirected because it existed on enwiki, restore it here.
+- [ ] Retranslate the stinkers: rank `need_translation/` and translated pages by leftover CJK and
+  machine-translation damage; retranslate the worst from jawiki, one article per commit.
+- [ ] Where an enwiki article exists, compare it with jawiki and synthesise the shinto wiki article
+  from both (sources kept, no copying of enwiki prose beyond what CC BY-SA attribution covers).
+- [ ] Pick untranslated jawiki shrine articles with no page here and translate them, highest-value first.
+
 
 - **Pinned tail (keep last)**
 
