@@ -50,3 +50,4 @@ Q11484307	SKIP	kana reading not available in repo data; cannot access external s
 Q134989278	SKIP	reading unsourceable - network access blocked, no local kana data
 Q135259854	SKIP	reading unsourceable - no jawiki article, no kana available in local data, proxy blocks external lookups
 Q134917498	SKIP	reading unsourceable - no KANA provided, cannot access external resources
+Q134956631	SKIP	Cannot source reading in automated run; KANA empty, requires external research

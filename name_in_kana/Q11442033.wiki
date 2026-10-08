@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q134957927 -->
-<!-- JA: 猪鼻湖神社 | EN_LABEL: Inohanako Shrine | BUCKET: a -->
-<!-- ARTICLE: (none) -->
-<!-- ANSWER: GUESS: いはなのじんじゃ -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q11442033 -->
+<!-- JA: 大麻比古神社 | EN_LABEL: Oomahiko Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%BA%BB%E6%AF%94%E5%8F%A4%E7%A5%9E%E7%A4%BE_%28%E5%BE%B3%E5%B3%B6%E5%B8%82%29 -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): いのはなこじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): ゐはなのじんじゃ
+  CANDIDATE A (from the English label): おおまひこじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): おおあさひこじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
@@ -14,5 +14,4 @@ Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), n
 When ANSWER is filled this file is done. -->
 
 == LEAD ==
-(NO LEAD AVAILABLE — the jawiki article is a redirect, a disambiguation page, empty, or the item has no jawiki sitelink at all, so there is no first sentence to read a reading out of. This will never change on its own.
-The two candidates below are still real evidence: pick between them if you can, from the readings other shrines of this name carry or from the place-name the shrine is named for. Answer NO_KANA only if you genuinely cannot.)
+大麻比古神社（おおまひこじんじゃ）は、徳島県徳島市明神町にある神社である。鳴門市に鎮座する大麻比古神社と同じ表記であるが、読み方が違う。
