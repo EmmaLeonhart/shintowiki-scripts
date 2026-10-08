@@ -1,3 +1,5 @@
+## 2026-10-08 — browser QS round 7: 861 lines → #289887 (first round with the kami P569/short-name fixes)
+
 ## 2026-10-08 — 千葉国造 leaves the git_synced set
 
 Emma chose "Redirect, leave sync set": the live page stays the redirect to Chiha no Kuni no Miyatsuko (rev 3853104) and `git_synced/千葉国造.wiki` is deleted, so the sync cannot push the old Japanese text back over it.
