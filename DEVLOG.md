@@ -1,3 +1,11 @@
+## 2026-10-08 — browser QS round 3: 1,177 lines → #289821; Import works by script click
+
+- After the 07:03Z regeneration the whole staged batch is 1,177 lines, one chunk, submitted as
+  batch #289821 (includes the 139 lines never run in rounds 1–2).
+- The Chrome window was hidden (`document.visibilityState` = hidden), so screenshots and coordinate
+  clicks time out. `button.click()` from javascript_tool fires Import and Run in background fine,
+  so the hourly job no longer needs screenshots.
+
 ## 2026-10-08 — translations use Emma's ill format; Tamayori-hime done
 
 - Emma: every link with a Japanese counterpart is `{{ill|ENGLISH|ja|JAPANESE|lt=english display|lt_ja=japanese display}}`,
