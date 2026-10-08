@@ -1,3 +1,7 @@
+## 2026-10-08 — Inochi Shrine (Q141677508): deity create in the batch, labels in two weeks
+
+Emma created the shrine by hand as Q141677508 and asked for the rest to go through the normal batch "as a part of the logic". `generate_inochi_shrine.py` writes `inochi_creates.txt` (registered in create_items.GATES; CREATE 命之命 / "Inochi no Mikoto", P31 Q524158, P21 Q6581097, plus `Q141677508|P825|LAST`; emitted only while the shrine has no P825, because the hand-run batch never records a creation) and `inochi_labels.txt` (ATOMIC_FILES; Len "Inochi Shrine" and Lja "命神社", only from 2026-10-22 and only while different). One SPARQL query per run; workflow step added; `test_inochi_shrine.py`.
+
 ## 2026-10-08 — browser QS round 7: 861 lines → #289887 (first round with the kami P569/short-name fixes)
 
 ## 2026-10-08 — 千葉国造 leaves the git_synced set

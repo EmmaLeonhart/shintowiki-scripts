@@ -80,6 +80,9 @@ GATES = {
     # 祭神 name ("All 198"). Both built by generate_deity_creates.py.
     "deity_role_creates.txt": "lockout_gate",
     "deity_creates.txt": "lockout_gate",
+    # Emma 2026-10-08: Inochi Shrine's deity 命之命, linked from Q141677508 by P825.
+    # Built by generate_inochi_shrine.py, which empties it once the shrine has a P825.
+    "inochi_creates.txt": "lockout_gate",
 }
 
 
