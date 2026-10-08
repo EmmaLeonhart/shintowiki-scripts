@@ -1,3 +1,9 @@
+## 2026-10-08 — translation order: untranslated first, retranslation last (Emma)
+
+- Emma: "retranslation should be the fucking last". Queue reordered: untranslated need_translation
+  pages first (Japanese-titled pages with no English, then English pages with a pasted Japanese
+  section), then new jawiki translations, and retranslating finished-but-bad pages last.
+
 ## 2026-10-08 — Kegare: Japanese content merged (rev 3853100), links as ill
 
 ## 2026-10-08 — browser QS round 3: 1,177 lines → #289821; Import works by script click

@@ -9,11 +9,15 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] Retranslate the stinkers: rank `need_translation/` and translated pages by leftover CJK and
-  machine-translation damage; retranslate the worst from jawiki, one article per commit.
-- [ ] Where an enwiki article exists, compare it with jawiki and synthesise the shinto wiki article
-  from both (sources kept, no copying of enwiki prose beyond what CC BY-SA attribution covers).
+- [ ] Translate the untranslated `need_translation/` pages (Emma, 2026-10-08: untranslated first,
+  retranslation last). First the Japanese-titled pages with no English at all (キヒサツミ, 建比良鳥命,
+  千葉国造, 尾張国造, 師長国造, 大河内味張, …), then the English pages that still carry a pasted
+  Japanese section. Every link as {{ill|EN|ja|JA|lt=|lt_ja=}}; check the live revision before saving.
+  Done so far: Tamakushi-hime, Tamayori-hime (mother of Jimmu), Kegare.
 - [ ] Pick untranslated jawiki shrine articles with no page here and translate them, highest-value first.
+- [ ] LAST: retranslate finished-but-bad pages (the "stinkers"), e.g. Himetataraisuzu-hime (done).
+  Where an enwiki article exists, compare with jawiki and synthesise.
+
 
 
 - **Pinned tail (keep last)**
