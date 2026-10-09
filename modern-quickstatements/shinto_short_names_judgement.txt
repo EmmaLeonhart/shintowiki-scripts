@@ -9,7 +9,10 @@ Q10936701	ja=大物主神	en=Ōmononushi	carries P1035 but the ja label ends wit
 Q10939046	ja=天之尾羽張	en=Ame no Ohabari	carries P1035 but the ja label ends with none of its forms
 Q10939047	ja=天之常立	en=Ame no Tokotachi	carries P1035 but the ja label ends with none of its forms
 Q10939697	ja=天日鷲神	en=Ame no Hiwashi	carries P1035 but the ja label ends with none of its forms
+Q10940542	ja=天石門別	en=Ame no Iwatowake	carries P1035 but the ja label ends with none of its forms
 Q10940849	ja=天香山	en=Ame no Kaguyama	carries P1035 but the ja label ends with none of its forms
+Q10946168	ja=ウマシアシカビヒコヂ	en=Umashi-Ashikabi-Hikoji	carries P1035 but the ja label ends with none of its forms
+Q109554668	ja=アシナヅチ	en=Ashinazuchi	carries P1035 but the ja label ends with none of its forms
 Q1107286	ja=経津主神	en=Futsunushi	carries P1035 but the ja label ends with none of its forms
 Q11120574	ja=椎根津彦	en=Shiinetsuhiko	carries P1035 but the ja label ends with none of its forms
 Q11142832	ja=沼河比売	en=Nunakawa hime	carries P1035 but the ja label ends with none of its forms
@@ -40,17 +43,16 @@ Q1474187	ja=海神	en=Ōwatatsumi	carries P1035 but the ja label ends with none 
 Q1575740	ja=淡島神	en=Awashimajin	carries P1035 but the ja label ends with none of its forms
 Q167077	ja=金毘羅権現	en=Kompira	carries P1035 but the ja label ends with none of its forms
 Q1704940	ja=天苗加	en=Ame no Naemasu	carries P1035 but the ja label ends with none of its forms
-Q2280323	ja=保食神	en=Ukemochi	carries P1035 but the ja label ends with none of its forms
 Q2329261	ja=トヨタマヒメ	en=Toyotamahime	carries P1035 but the ja label ends with none of its forms
 Q24887893	ja=道俣	en=Chimata	carries P1035 but the ja label ends with none of its forms
 Q24898144	ja=羽黒権現	en=Haguro Gongen	carries P1035 but the ja label ends with none of its forms
-Q2564508	ja=天児屋命	en=Ame no Koyane	carries P1035 but the ja label ends with none of its forms
 Q261637	ja=八幡神	en=Hachiman	carries P1035 but the ja label ends with none of its forms
 Q2716491	ja=火照命	en=Hoderi	carries P1035 but the ja label ends with none of its forms
 Q276944	ja=大国主神	en=Ōkuninushi	carries P1035 but the ja label ends with none of its forms
 Q2842779	ja=天之御中主	en=Ame no Minakanushi	carries P1035 but the ja label ends with none of its forms
 Q2963653	ja=衝立船戸	en=Tsukitatsufunado	carries P1035 but the ja label ends with none of its forms
 Q3028663	ja=年神	en=Toshigami	carries P1035 but the ja label ends with none of its forms
+Q3080728	ja=ウカノミタマ	en=Ukanomitama	carries P1035 but the ja label ends with none of its forms
 Q3082751	ja=玉依姫	en=Tamayorihime	carries P1035 but the ja label ends with none of its forms
 Q30935372	ja=神屋楯比売	en=Kamuyatate hime no mikoto	carries P1035 but the ja label ends with none of its forms
 Q3137449	ja=水神	en=Suijin	carries P1035 but the ja label ends with none of its forms
