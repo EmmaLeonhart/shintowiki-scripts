@@ -1,3 +1,5 @@
+## 2026-10-09 — browser QS round 12: 549 lines → #289904 (regeneration had 4 steps fail: shrine-ranking, genbu-ids, shinmei-ids, kana-qualifier-add; their files kept the previous lines)
+
 ## 2026-10-09 — queue: crons end only when the QuickStatements rounds are clear
 
 Emma: do not end the crons after the translations; the core thing is getting all the QuickStatements rounds actually finished. The last item now ends the crons only once a regeneration produces 0 lines.
