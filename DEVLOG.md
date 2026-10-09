@@ -1,3 +1,5 @@
+## 2026-10-08 — browser QS round 8: 857 lines → #289892 (includes the Inochi no Mikoto create)
+
 ## 2026-10-08 — Emma approved the queue
 
 At the approval check she answered "Yes, approve it"; the NOT APPROVED gate is removed and the work-loop starts on item 1 (kami labels).
