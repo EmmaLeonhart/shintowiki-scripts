@@ -1,3 +1,7 @@
+## 2026-10-09 — round 15 (#289933) stopped; full regeneration instead
+
+Round 15 was built from the 13:09 regeneration, which predates the nta_kana fix, so 284 of its 411 lines were the stale kana lines. It was submitted just before Emma's message ("if round 15 is stale, don't submit it. Just rerun everything and submit the finished one"); she chose to stop it. Stopped from the QuickStatements tab after 15 of 808 commands; 793 never ran. A fresh regeneration with both fixes (run 37964970483) was dispatched; its round is the next one. The batch cron now treats STOP as finished.
+
 ## 2026-10-09 — QS rounds can now reach 0 lines (Emma: "Fix both so it can hit 0")
 
 **nta_kana:** the truncation guard kept the 10-06 cache because each refresh came back at ~6,900 rows vs 10,941 cached. A COUNT on WDQS gave 6,864 live targets, so the drop was real (about 4,000 items gained an en label or P1814). `generate_nta_kana.py` now cross-checks a shrunken refresh with a one-row COUNT query and accepts it when the rows cover the live count (tolerance max(50, 2%)); a cut-off body or a failed count still keeps the cache. Tests added.
