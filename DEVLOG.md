@@ -1,3 +1,7 @@
+## 2026-10-09 — the 3 deleted QIDs are force-ignored; analysis item dropped
+
+Emma: "force ignore all of the three deleted QIDs", not worth analysing. Q135069951, Q135069954 and Q135289776 added to `never_touch_qids.txt`, so no line on them reaches a round. The 113 lines reported earlier were round 16's own 124 minus its 11 category lines, counted from files not yet regenerated, not new residue.
+
 ## 2026-10-09 — the pipeline never touches the 7 category/disambiguation QIDs
 
 Emma: "make it so that the pipeline never touches those QIDs". `modern-quickstatements/never_touch_qids.txt` lists them, and `site/build_qs_home.drip_units` drops every unit with a line on one of them, whatever file it comes from. Test added. After it, the current files hold 113 drip lines (40 list_membership_rebuild, 20 label_proposals_drip, 24 on the 21 labels #289937 is applying, 10 on the merged/deleted items, the rest scattered); none have a Category: value.

@@ -7,3 +7,7 @@ Q14566271    # Category:貴族院勅選議員
 Q9590470     # Category:古代湖
 Q9670634     # Category:日本の戦い
 Q23997315    # 扶風 (disambiguation page)
+# Deleted on Wikidata 2025-12-05; Emma, 2026-10-09: force-ignore them.
+Q135069951
+Q135069954
+Q135289776
