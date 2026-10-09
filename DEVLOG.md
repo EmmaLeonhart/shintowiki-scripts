@@ -1,3 +1,7 @@
+## 2026-10-09 — the 28 rejected labels: 21 applied as blank description then label (#289937), 7 left alone
+
+Emma went over the round-16 label rejects. The 6 categories and the 扶風 disambiguation page: "don't do anything with them", not worth the effort. The 21 temple and shrine lines (15 en, 3 id, on 18 items): blank the description first, then apply the label. Sent from her browser as one 42-line batch, #289937, each blank description directly before its label (`browser_chunks/label_fix_21.txt`). I had started a round-builder filter for these lines; she said no round builder, and it was never committed.
+
 ## 2026-10-09 — round 16 (#289936) DONE: 188 done, 44 errors; merged items now retargeted
 
 The 44 errors are lines that fail every round. 12 sit on 6 items: 3 merged (Q135270424 → Q705297, Q129837100 → Q49319273, Q135270268 → Q135215048) and 3 deleted (Q135069951, Q135069954, Q135289776, deleted 2025-12-05 on an author RfD as "created by accident"). The other 32 (28 distinct) are en/id label adds that Wikidata refuses because another item holds the same label+description pair.
