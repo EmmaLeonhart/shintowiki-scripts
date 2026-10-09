@@ -11,7 +11,7 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
   in the browser (Emma 2026-10-08 orders this for these items, which overrides CLAUDE.md's "Emma merges
   duplicate items" rule for this set). One merge at a time; record each pair in `DEVLOG.md`.
 
-- [ ] Finish translating the `need_translation/` pages: Ono Shrine (Atsugi), Kotokuji Temple (Koka
+- [ ] Finish translating the `need_translation/` pages: Kotokuji Temple (Koka
   City), Miwa Shrine (Gifu); then put the links on the already-English 三野後国造, 伊佐我命, 沼田国造,
   知々夫国造, 穂国造, 角鹿国造, 遠淡海国造, 長狭国造 into `{{ill|EN|ja|JA|lt=|lt_ja=}}` form. Before every
   save: compare the live text (sha1), not just the revid, and check whether the page is in `git_synced/`
