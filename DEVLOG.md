@@ -1,3 +1,7 @@
+## 2026-10-09 — kami merges done and verified (queue item closed)
+
+Emma allowed the progress read. Checked every CONFIDENT + LIKELY row of `kami_merge_candidates.tsv` (36 rows; I had been saying 35) on Wikidata: all 36 created items are now redirects to exactly their planned target, none elsewhere, none missed. The pairs are the table's CONFIDENT/LIKELY rows. UNSURE (8) and unmatched (~140) were left alone. Next queue item: finish the translated pages.
+
 ## 2026-10-09 — browser QS round 11: 634 lines → #289897 (carries the 46 confirmed P21=unknown removals; kana-qualifier-add step failed in its regeneration, its file kept the previous lines)
 
 ## 2026-10-09 — kami merges started (queue item 1)
