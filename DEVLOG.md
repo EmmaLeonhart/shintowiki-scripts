@@ -1,3 +1,7 @@
+## 2026-10-09 — ill upgrade on 8 pages; translations item closed
+
+`retranslation/ill_upgrade.py` rewrote every old-style ill with a ja target into `{{ill|EN|ja|JA|lt=|lt_ja=}}` (English display kept, qid and other languages dropped) on 三野後国造, 伊佐我命, 沼田国造, 知々夫国造, 穂国造, 角鹿国造, 遠淡海国造, 長狭国造: 573 links, none without a ja target, and a check confirmed nothing but the ills changed. Live sha1 matched each base; none in git_synced. Saved as revs 3853122-3853129. With Kotokuji Temple and Miwa Shrine done earlier today, the translations item is finished; the queue now holds only the core job, running the QuickStatements rounds until clear.
+
 ## 2026-10-09 — Miwa Shrine (Gifu) translated (rev 3853121)
 
 English stub plus pasted jawiki 三輪神社 (岐阜市); live sha1 matched the copy, not git_synced. Merged (overview, ranking history, Kinpei-sha, festival, city cultural properties, location, access), links as ill; the existing malformed Commons/Category lines left exactly as they were. Every untranslated page is now done; the remaining part of the item is the ill upgrade on the eight English kokuzō/kami pages.
