@@ -270,3 +270,19 @@ def test_a_truncated_refresh_keeps_the_cache(monkeypatch, tmp_path):
     placed, _ = g.targets(True)
     assert len(placed) == 100
     assert len(json.loads(cache.read_text(encoding="utf-8"))["placed"]) == 100
+
+
+# --- truncation guard vs a real drop (2026-10-09) ------------------------------------
+def test_count_confirms_a_real_drop():
+    """6,908 rows covering ~6,864 live targets is a real drop, not a truncated body."""
+    import generate_nta_kana as g
+    placed = [("Q%d" % i, "", "", "") for i in range(6864)]
+    assert g.confirmed_by_count(placed, 6864)
+    assert g.confirmed_by_count(placed, 6900)          # within tolerance
+
+
+def test_count_rejects_a_truncated_body():
+    import generate_nta_kana as g
+    placed = [("Q%d" % i, "", "", "") for i in range(3000)]
+    assert not g.confirmed_by_count(placed, 6864)       # cut-off body: keep the cache
+    assert not g.confirmed_by_count(placed, None)       # failed count: keep the cache

@@ -78,10 +78,37 @@ def drip_units():
     return units
 
 
+def sequential_cursor(lines):
+    """Index of the first sequential_misc line not yet run, from sequential_misc.state.
+
+    Same rule as direct_daily_edits.load_sequential_cursor: a recorded `next_line` wins when it
+    is still in the file, otherwise the stored index stands."""
+    try:
+        state = json.load(io.open(os.path.join(MQ, "sequential_misc.state"), encoding="utf-8"))
+        cursor = int(state.get("cursor", 0))
+    except Exception:
+        return 0
+    marker = state.get("next_line")
+    if marker and marker in lines:
+        return lines.index(marker)
+    return cursor
+
+
+def sequential_lines():
+    return [l.strip() for l in read(os.path.join(MQ, "sequential_misc.txt"))
+            if l.strip() and not l.lstrip().startswith("#")]
+
+
 def sequential_unit():
-    lines = [to_v1(l) for l in read(os.path.join(MQ, "sequential_misc.txt"))
-             if l.strip() and not l.lstrip().startswith("#")]
-    return [lines] if lines else []
+    """The sequential_misc lines not yet run, as ONE unit in file order.
+
+    2026-10-09: this used to send the whole file every round, so its 32 lines (removals that
+    had long since run) went into every QuickStatements round and the rounds could never reach
+    0 lines. Only lines past the cursor go out now; build_browser_round.py moves the cursor
+    past what a finished round sent."""
+    lines = sequential_lines()
+    lines = lines[sequential_cursor(lines):]
+    return [[to_v1(l) for l in lines]] if lines else []
 
 
 def block_label(block):

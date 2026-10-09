@@ -425,6 +425,39 @@ def shrank_too_far(new, old):
     return old > 0 and new < MIN_KEEP_FRACTION * old
 
 
+# The COUNT twin of QUERY: one small row, so it cannot come back cut off the way a 10,000-row
+# body can. Used to tell a real drop from a truncated refresh.
+COUNT_QUERY = """
+SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE {
+  { ?item wdt:P31 wd:Q845945 } UNION { ?item wdt:P31 wd:Q5393308 }
+  ?item rdfs:label ?ja . FILTER(LANG(?ja)="ja")
+  FILTER NOT EXISTS { ?item rdfs:label ?en . FILTER(LANG(?en)="en") }
+  FILTER NOT EXISTS { ?item wdt:P1814 ?k }
+  ?item wdt:P131 ?city . ?city rdfs:label ?cityja . FILTER(LANG(?cityja)="ja")
+}"""
+
+
+def confirmed_by_count(placed, live_count):
+    """True when the refreshed rows cover the live target count, i.e. the drop is real.
+
+    2026-10-09: every run since 10-06 got ~6,900 rows against 10,941 cached and kept the stale
+    cache, so nta_kana.txt never changed and its 284 (mostly landed) lines went into every
+    QuickStatements round. A COUNT on WDQS gave 6,864 items: about 4,000 targets had really
+    left by gaining an en label or a P1814. A truncated body would cover far fewer items than
+    the count, so this keeps the guard's protection."""
+    items = len({r[0] for r in placed})
+    return live_count is not None and items >= live_count - max(50, live_count // 50)
+
+
+def _live_count():
+    try:
+        rows = wdqs_transport.query_csv(COUNT_QUERY, endpoint=ENDPOINT, timeout=300, post=True)
+        return int(rows[0]["n"])
+    except Exception as e:  # a failed count is not a confirmation
+        print(f"nta_kana: count query failed ({e}); keeping the guard's decision")
+        return None
+
+
 def _cached_counts():
     try:
         with io.open(CACHE, encoding="utf-8") as fh:
@@ -443,7 +476,7 @@ def targets(refresh):
     placed = fetch_rows(QUERY, ["ja", "cityja", "prefja"])
     unplaced = fetch_rows(QUERY_NO_P131, ["ja"])
     prev = _cached_counts()
-    if prev and shrank_too_far(len(placed), prev[0]):
+    if prev and shrank_too_far(len(placed), prev[0]) and not confirmed_by_count(placed, _live_count()):
         # 2026-09-27: a refresh returned 5,439 placed rows where the cache held 17,276 an
         # hour earlier, with nothing on Wikidata moving that much. A cut-off CSV body parses
         # cleanly as fewer rows, so the short result was written and nta_kana.txt fell from
