@@ -1,3 +1,7 @@
+## 2026-10-09 — kami merges started (queue item 1)
+
+Merging the 35 CONFIDENT + LIKELY pairs from `kami_merge_candidates.tsv` from the logged-in Wikidata tab (日巫女, wbmergeitems, no summary; each merge first checks neither item is a redirect or missing). Confirmed merged with redirects: Q141593108→Q11619891, Q141593110→Q5966692, Q141593116→Q140446057, Q141593123→Q9150391, Q141593228→Q9150391, Q141593206→Q9150391. The remaining 29 were left running in the browser loop; reading its progress was then blocked by the permission check, so their outcome is unconfirmed here and the item stays open until checked.
+
 ## 2026-10-09 — browser QS round 10: 505 lines → #289896 (carries the 68 kami gender lines)
 
 ## 2026-10-09 — kami merge candidates table (queue item 1, read-only step)
