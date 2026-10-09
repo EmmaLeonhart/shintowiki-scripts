@@ -148,6 +148,8 @@ ATOMIC_FILES = [
     "shinto_short_name_toplevel_removals.txt",  # REMOVE-ONLY, second half of the short-name move (generate_shinto_short_name_toplevel_removals.py). Removes a kami's old TOP-LEVEL P1813 only where a fresh SPARQL confirms the same value already sits as a P1813 qualifier on one of its P1035 statements. Empty until those land, which is the design. Emma 2026-10-08 chose "Qualifier on P1035".
     "inochi_labels.txt",                     # Emma 2026-10-08: "github actions should in two weeks set Len Inochi Shrine and Lja 命神社" on Q141677508. generate_inochi_shrine.py writes the two label lines only from 2026-10-22 and only while the live label differs; empty before that.
     "kami_label_fanout.txt",                 # Emma 2026-10-08 queue item: every kami we created gets the same romanised label in mul/en/en-us/fr/es (form of batch #289889). generate_kami_label_fanout.py takes the en label, else kami_readings.tsv, and only fills languages with no label.
+    "kami_gender.txt",                       # Emma 2026-10-08 queue item: obvious gender on the kami we created (…hime/姫/媛/比売 → female, …hiko/彦/王 → male) where P21 is unknown or absent. ADD half (generate_kami_gender.py).
+    "kami_gender_unknown_removals.txt",      # REMOVE half: drops P21 = unknown (Q24238356) from those kami only where SPARQL confirms P21 = female/male already landed (generate_kami_gender_unknown_removals.py). Empty until then.
     "address_citation_backfill.txt",
     "label_proposals_drip.txt",
     "kana_qualifier_add.txt",

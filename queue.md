@@ -7,9 +7,6 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
 
 ## stuff to do
 
-- [ ] Before any merging: set the obvious gender on those created kami. Many carry P21 = unknown
-  (Q24238356) where the name says otherwise (…hime / 姫 / 媛 / 売 → female; …hiko / 彦 → male). Only the
-  obvious cases; generator + registered file, as above.
 - [ ] Then merge each created kami into the item that is pretty obviously its real identity, agentically
   in the browser (Emma 2026-10-08 orders this for these items, which overrides CLAUDE.md's "Emma merges
   duplicate items" rule for this set). One merge at a time; record each pair in `DEVLOG.md`.

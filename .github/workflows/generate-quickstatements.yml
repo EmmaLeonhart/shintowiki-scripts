@@ -301,6 +301,16 @@ jobs:
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_kami_label_fanout.py
+      - name: Kami gender (add)
+        id: kami-gender
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_kami_gender.py
+      - name: Kami gender, unknown removals (after the real P21 landed)
+        id: kami-gender-unknown-removals
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_kami_gender_unknown_removals.py
       - name: Genbu ids
         id: genbu-ids
         working-directory: modern-quickstatements
