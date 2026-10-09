@@ -1,3 +1,5 @@
+## 2026-10-09 — browser QS round 16: 124 lines → #289936 (first fully fresh round: nta_kana 0 because every registry-matchable target has landed; kami fan-out 0; sequential_misc 0)
+
 ## 2026-10-09 — round 15 (#289933) stopped; full regeneration instead
 
 Round 15 was built from the 13:09 regeneration, which predates the nta_kana fix, so 284 of its 411 lines were the stale kana lines. It was submitted just before Emma's message ("if round 15 is stale, don't submit it. Just rerun everything and submit the finished one"); she chose to stop it. Stopped from the QuickStatements tab after 15 of 808 commands; 793 never ran. A fresh regeneration with both fixes (run 37964970483) was dispatched; its round is the next one. The batch cron now treats STOP as finished.
