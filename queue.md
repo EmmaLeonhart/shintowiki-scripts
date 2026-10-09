@@ -11,6 +11,12 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
 "you have the tendency to lose track of the difficult items"). If the first item is waiting on something, the work-loop reports that and does not start the next one.
 
 
+- [ ] **Go over the rejected labels one by one** (Emma 2026-10-09: "worth going over individually"). 28 label lines
+  (32 with repeats) that Wikidata refuses every round: `modern-quickstatements/browser_chunks/label_rejects_round16.tsv`.
+  For each: find which item holds the clashing label+description, then decide per line. They still go out each round until then.
+- [ ] **Analyse the deleted items the generators still emit lines for** (Emma 2026-10-09: "I don't even know what's
+  going on with the deleted items"). Q135069951, Q135069954, Q135289776, deleted 2025-12-05 by Saroj on an author
+  RfD, "created by accident"; still get P6262/P11250/Len lines from the wiki-link and label generators. Find why.
 - [ ] **The core job: run the QuickStatements rounds until they are actually finished** (Emma 2026-10-09: "the
   important thing is just getting all the quick statements rounds actually finished"). The crons do NOT end
   after the translations; only once a regeneration produces 0 lines (everything clear) are the crons ended.

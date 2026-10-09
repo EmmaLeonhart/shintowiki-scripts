@@ -1,3 +1,9 @@
+## 2026-10-09 — round 16 (#289936) DONE: 188 done, 44 errors; merged items now retargeted
+
+The 44 errors are lines that fail every round. 12 sit on 6 items: 3 merged (Q135270424 → Q705297, Q129837100 → Q49319273, Q135270268 → Q135215048) and 3 deleted (Q135069951, Q135069954, Q135289776, deleted 2025-12-05 on an author RfD as "created by accident"). The other 32 (28 distinct) are en/id label adds that Wikidata refuses because another item holds the same label+description pair.
+
+Emma chose to retarget the merged ones, analyse the deleted ones as their own item, and go over the label rejects one by one. `build_browser_round.py` now reads `browser_chunks/redirects.json` and moves statement lines (adds and removals) on a merged item onto its target; label/description/alias/sitelink lines on a merged item stay out, because a label line would overwrite the target's own label. `--record <file>` merges new pairs in. Nothing else is filtered. The rejected labels are in `browser_chunks/label_rejects_round16.tsv`; both follow-ups are queued above the core job. Test added (`test_browser_round.py`, 3 passed). Regeneration 37976977429 is running; round 17 is built from it.
+
 ## 2026-10-09 — browser QS round 16: 124 lines → #289936 (first fully fresh round: nta_kana 0 because every registry-matchable target has landed; kami fan-out 0; sequential_misc 0)
 
 ## 2026-10-09 — round 15 (#289933) stopped; full regeneration instead
