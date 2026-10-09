@@ -15,6 +15,8 @@ to land, the work-loop reports "waiting on item 1" and does not start the transl
 - [ ] Then merge each created kami into the item that is pretty obviously its real identity, agentically
   in the browser (Emma 2026-10-08 orders this for these items, which overrides CLAUDE.md's "Emma merges
   duplicate items" rule for this set). One merge at a time; record each pair in `DEVLOG.md`.
+  Pairs: `modern-quickstatements/kami_merge_candidates.tsv`; Emma 2026-10-09 chose CONFIDENT + LIKELY (35
+  pairs); UNSURE and unmatched stay. Start once the gender lines (round 10) have landed.
 
 - [ ] Finish translating the `need_translation/` pages: Kotokuji Temple (Koka
   City), Miwa Shrine (Gifu); then put the links on the already-English 三野後国造, 伊佐我命, 沼田国造,
