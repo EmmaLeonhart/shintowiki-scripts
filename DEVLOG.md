@@ -1,3 +1,7 @@
+## 2026-10-09 — Kotokuji Temple (Koka City) translated (rev 3853120)
+
+Live sha1 matched the need_translation copy; not in git_synced. Translated in full (brass-founder legend, three-capitals metalware dealers, signposts), links as ill.
+
 ## 2026-10-09 — browser QS round 12: 549 lines → #289904 (regeneration had 4 steps fail: shrine-ranking, genbu-ids, shinmei-ids, kana-qualifier-add; their files kept the previous lines)
 
 ## 2026-10-09 — queue: crons end only when the QuickStatements rounds are clear
