@@ -54,3 +54,12 @@ def test_merged_items_are_retargeted(tmp_path, monkeypatch):
         ["Q1\tP31\tQ5", 'Q3\tLen\t"Taken"'],
     ]
     assert bbr.record_redirects({"Q9": "Q90"}) == {"Q2": "Q20", "Q9": "Q90"}
+
+
+def test_never_touch_qids_are_dropped(tmp_path, monkeypatch):
+    """Emma, 2026-10-09: "make it so that the pipeline never touches those QIDs"."""
+    monkeypatch.setattr(build_qs_home, "MQ", str(tmp_path))
+    monkeypatch.setattr(build_qs_home, "atomic_files", lambda: ["a.txt"])
+    (tmp_path / "never_touch_qids.txt").write_text("# c\nQ1    # Category:x\n", encoding="utf-8")
+    (tmp_path / "a.txt").write_text('Q1|Len|"Category:X"\n-Q1|P31|Q5\nQ2|Len|"Y"\n', encoding="utf-8")
+    assert build_qs_home.drip_units() == [['Q2\tLen\t"Y"']]

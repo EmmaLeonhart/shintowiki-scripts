@@ -1,3 +1,7 @@
+## 2026-10-09 — the pipeline never touches the 7 category/disambiguation QIDs
+
+Emma: "make it so that the pipeline never touches those QIDs". `modern-quickstatements/never_touch_qids.txt` lists them, and `site/build_qs_home.drip_units` drops every unit with a line on one of them, whatever file it comes from. Test added. After it, the current files hold 113 drip lines (40 list_membership_rebuild, 20 label_proposals_drip, 24 on the 21 labels #289937 is applying, 10 on the merged/deleted items, the rest scattered); none have a Category: value.
+
 ## 2026-10-09 — the 28 rejected labels: 21 applied as blank description then label (#289937), 7 left alone
 
 Emma went over the round-16 label rejects. The 6 categories and the 扶風 disambiguation page: "don't do anything with them", not worth the effort. The 21 temple and shrine lines (15 en, 3 id, on 18 items): blank the description first, then apply the label. Sent from her browser as one 42-line batch, #289937, each blank description directly before its label (`browser_chunks/label_fix_21.txt`). I had started a round-builder filter for these lines; she said no round builder, and it was never committed.

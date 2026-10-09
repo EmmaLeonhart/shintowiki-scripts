@@ -67,14 +67,25 @@ def read(path):
         return []
 
 
+def never_touch():
+    """QIDs no QuickStatements line may touch (never_touch_qids.txt). Emma, 2026-10-09: the
+    category and disambiguation items whose labels Wikidata refused "just straight up make it so
+    that the pipeline never touches those QIDs"."""
+    return {l.split("#")[0].strip() for l in read(os.path.join(MQ, "never_touch_qids.txt"))} - {""}
+
+
 def drip_units():
+    skip = never_touch()
     units = []
     for fn in atomic_files():
         for raw in read(os.path.join(MQ, fn)):
             if not raw.strip() or raw.lstrip().startswith("#"):
                 continue
             parts = [p for p in COMPOUND.split(raw.split("    #")[0]) if p.strip()]
-            units.append([to_v1(p) for p in parts])
+            unit = [to_v1(p) for p in parts]
+            if any(l.split("\t")[0].lstrip("-") in skip for l in unit):
+                continue
+            units.append(unit)
     return units
 
 

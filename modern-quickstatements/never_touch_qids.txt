@@ -1,0 +1,9 @@
+# QIDs no QuickStatements line may touch; site/build_qs_home.py drops every line on them.
+# Emma, 2026-10-09: categories and disambiguation pages are not worth the effort.
+Q49871432    # Category:作家
+Q9672383     # Category:日本の水道橋
+Q46391442    # Category:農業に関するイベント
+Q14566271    # Category:貴族院勅選議員
+Q9590470     # Category:古代湖
+Q9670634     # Category:日本の戦い
+Q23997315    # 扶風 (disambiguation page)
