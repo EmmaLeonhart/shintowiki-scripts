@@ -2,12 +2,6 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
-⛔ **NOT APPROVED YET — do not work any item below until Emma approves this queue in chat**
-(Emma 2026-10-08: *"I'm trying to specifically avoid like you being in a situation where I just forget
-about this and the queue runs on its own and does stuff I don't want."*). When she approves, delete
-this paragraph in the commit that records her approval. Work-loop ticks report "nothing actionable;
-queue awaiting Emma's approval" until then.
-
 This is the home stretch for everything touching Wikidata (Emma, 2026-10-08). New jawiki translations
 and retranslating finished-but-bad pages are out of the queue; they are in `todo.md`.
 

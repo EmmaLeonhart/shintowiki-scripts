@@ -1,3 +1,7 @@
+## 2026-10-08 — Emma approved the queue
+
+At the approval check she answered "Yes, approve it"; the NOT APPROVED gate is removed and the work-loop starts on item 1 (kami labels).
+
 ## 2026-10-08 — queue: pinned tail removed, translations moved to its place
 
 Emma: the pinned tail "is not supposed to exist", and finishing the translated pages is not supposed to be first; it takes the pinned tail's place, after the merges and before ending the crons.
