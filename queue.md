@@ -7,6 +7,11 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
 
 ## stuff to do
 
+⛔ **Strict order. Do not skip ahead to an easier item while the one above it waits** (Emma, 2026-10-09:
+"you have the tendency to lose track of the difficult items"). While the merges wait for the labels and genders
+to land, the work-loop reports "waiting on item 1" and does not start the translations.
+
+
 - [ ] Then merge each created kami into the item that is pretty obviously its real identity, agentically
   in the browser (Emma 2026-10-08 orders this for these items, which overrides CLAUDE.md's "Emma merges
   duplicate items" rule for this set). One merge at a time; record each pair in `DEVLOG.md`.
