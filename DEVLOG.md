@@ -1,3 +1,5 @@
+## 2026-10-09 — browser QS round 17: 77 lines → #289938 (from the 1 p.m. regeneration 37983978100; 4 steps failed and kept their previous lines: shrine-ranking, genbu-ids, saijin-deity-research, kana-qualifier-add; ~15 lines are #289937's already-landed labels)
+
 ## 2026-10-09 — the 3 deleted QIDs are force-ignored; analysis item dropped
 
 Emma: "force ignore all of the three deleted QIDs", not worth analysing. Q135069951, Q135069954 and Q135289776 added to `never_touch_qids.txt`, so no line on them reaches a round. The 113 lines reported earlier were round 16's own 124 minus its 11 category lines, counted from files not yet regenerated, not new residue.

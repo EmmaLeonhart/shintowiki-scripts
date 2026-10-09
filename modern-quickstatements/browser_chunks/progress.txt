@@ -1,5 +1,2 @@
-# round 15 (2026-10-09): 289933, STOPPED (stale; 15 run)
-part_1 289936 2026-10-09T18:30Z
-round 16 DONE: #289936 188 done, 44 errors (12 on merged/deleted items, 32 label rejects; see DEVLOG)
-label fix (21 rejected labels, blank description then label): #289937 2026-10-09T19:31Z
-#289937 DONE 42/42, 0 errors (19:32Z). Regeneration 37976977429 started 18:58Z, before it: when it ends, dispatch a fresh regeneration and build round 17 from THAT one.
+# round 16 (2026-10-09): 289936, DONE; label fix 289937, DONE
+part_1 289938 2026-10-09T21:11Z
