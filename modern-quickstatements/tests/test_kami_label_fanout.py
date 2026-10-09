@@ -34,3 +34,9 @@ def test_registered():
     assert '"kami_label_fanout.txt"' in open(os.path.join(HERE, "direct_daily_edits.py"), encoding="utf-8").read()
     wf = os.path.join(os.path.dirname(HERE), ".github", "workflows", "generate-quickstatements.yml")
     assert "python generate_kami_label_fanout.py" in open(wf, encoding="utf-8").read()
+
+
+def test_merged_kami_are_excluded():
+    """After the 2026-10-09 merges the redirected items kept getting label lines (all failed)."""
+    q = g.query(["Q1"])
+    assert "MINUS { ?k owl:sameAs ?merged_into }" in q

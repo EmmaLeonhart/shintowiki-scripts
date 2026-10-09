@@ -1,3 +1,7 @@
+## 2026-10-09 — QS errors: merged kami were still getting label lines; fixed
+
+Round 13 (#289908) had 176 errors. Grouped from QuickStatements' get_commands_from_batch: 128 were kami label fan-out lines on the 36 merged items (now redirects, so "No such entity"), because `generate_kami_label_fanout.py` read them from `deity_creates.state`, found no labels and emitted the full set again. Its query now does `MINUS { ?k owl:sameAs ?merged_into }` (checked on WDQS: merged items drop out, live ones stay); test added. The gender generators already require a live ja label, so they skip redirects. The rest: 32 "No success flag" label adds (likely label conflicts), 9 statements on deleted/merged items in other generators, 7 "statement not found" removals (already gone). Round 14 (#289913) was built before this fix and carries those lines once more; the regeneration after it will not.
+
 ## 2026-10-09 — browser QS round 14: 557 lines → #289913 (clean regeneration, no failed steps)
 
 ## 2026-10-09 — ill upgrade on 8 pages; translations item closed

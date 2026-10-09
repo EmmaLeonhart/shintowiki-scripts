@@ -66,6 +66,10 @@ def query(qids):
     langs = ", ".join(f'"{l}"' for l in LANGS)
     return f"""SELECT ?k ?lang ?label WHERE {{
   {{ VALUES ?k {{ {values} }} }} UNION {{ wd:{INOCHI_SHRINE} wdt:P825 ?k }}
+  # A merged kami is a redirect (owl:sameAs its target): it has no labels, so without this it
+  # would get the whole label set again every round and every line would fail "No such entity"
+  # (128 of round 13's 176 errors, 2026-10-09, after the 36 merges).
+  MINUS {{ ?k owl:sameAs ?merged_into }}
   OPTIONAL {{ ?k rdfs:label ?label . BIND(LANG(?label) AS ?lang) FILTER(LANG(?label) IN ({langs})) }}
 }}"""
 
