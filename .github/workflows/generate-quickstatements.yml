@@ -296,6 +296,11 @@ jobs:
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_inochi_shrine.py
+      - name: Kami label fan-out (mul/en/en-us/fr/es on the created kami)
+        id: kami-label-fanout
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_kami_label_fanout.py
       - name: Genbu ids
         id: genbu-ids
         working-directory: modern-quickstatements

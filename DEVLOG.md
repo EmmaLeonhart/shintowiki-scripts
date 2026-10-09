@@ -1,3 +1,7 @@
+## 2026-10-08 — kami label fan-out built (queue item 1)
+
+The kami we created are the 191 in `deity_creates.state` (plus the Inochi deity once it exists). Measured live: 61 have an English (+mul) label, added by hand; 126 have neither; P21 is "unknown" on 161 and absent on 30. Emma chose "You write the readings": `kami_readings.tsv` holds my romanisation of the 126 (Hepburn with macrons, styled like the hand-added labels; non-kami entries such as people, clans and a bridge get their plain romanised name). `generate_kami_label_fanout.py` → `kami_label_fanout.txt` (ATOMIC_FILES + generate workflow) fills mul/en/en-us/fr/es on each item from its en label or its reading, only where that language has no label. Tests in `test_kami_label_fanout.py`. Also re-anchored the four spent scheduled items in `scheduled/scheduled_items.json` onto the final queue item, since the pinned tail they pointed at is gone (test_inject_due_items). Lines go out from the next regeneration.
+
 ## 2026-10-08 — browser QS round 8: 857 lines → #289892 (includes the Inochi no Mikoto create)
 
 ## 2026-10-08 — Emma approved the queue

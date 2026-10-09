@@ -7,10 +7,6 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
 
 ## stuff to do
 
-- [ ] Review every kami item we created (`deity_creates.txt`, `deity_role_creates.txt`, the Inochi deity,
-  and any other create batch) and give each the English label form of batch #289889: the same romanised
-  label in mul, en, en-us, fr and es, plus its ja label. Most have no English label; most look like close
-  epithets of related kami. Done as a generator whose file is registered, so it goes out in the batch.
 - [ ] Before any merging: set the obvious gender on those created kami. Many carry P21 = unknown
   (Q24238356) where the name says otherwise (…hime / 姫 / 媛 / 売 → female; …hiko / 彦 → male). Only the
   obvious cases; generator + registered file, as above.
