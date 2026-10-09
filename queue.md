@@ -23,3 +23,6 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
 <!-- scheduled:p958-corrections-batch-paste -->
 <!-- scheduled:label-generator-continue-on-error -->
 <!-- scheduled:label-generator-continue-on-error-campaign -->
+- [ ] Build the non-QuickStatements pipeline that can edit a QUALIFIER without destroying its statement.
+  Emma, 2026-09-09: *"I later on want there to be a more sophisticated, non-click-statement-based pipeline that fixes this stuff up... This is a long-term thing."* Population: the 332 ojp-hani P1448 official names carrying a redundant raw katakana P1814 beside their カミノヤシロ one. QuickStatements cannot express this — `Help:QuickStatements` lists *"remove a qualifier without removing the statement itself"* under what it cannot do, which is why the old `kana_redundant_remove.txt` lines deleted four whole official names instead (DEVLOG 2026-09-09). So this is the sanctioned exception to CLAUDE.md's one-mechanism rule: SHE asked for it. Do not refuse it on that rule, and do not route ordinary work around the QS pipeline because this exists.
+
