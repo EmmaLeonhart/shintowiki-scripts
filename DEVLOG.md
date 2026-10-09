@@ -1,3 +1,5 @@
+## 2026-10-09 — browser QS round 13: 572 lines → #289908 (regeneration overlapped the scheduled cleanup-loop; 8 steps failed: p3225, province-exclusions, shintai-p825, soken-den-p571, genbu-ids, shinmei-ids, kana-qualifier-add, souken-p571; their files kept the previous lines)
+
 ## 2026-10-09 — Kotokuji Temple (Koka City) translated (rev 3853120)
 
 Live sha1 matched the need_translation copy; not in git_synced. Translated in full (brass-founder legend, three-capitals metalware dealers, signposts), links as ill.
