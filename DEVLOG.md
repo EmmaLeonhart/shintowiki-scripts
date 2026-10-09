@@ -1,3 +1,7 @@
+## 2026-10-09 — browser QS round 9: 1,093 lines → #289895 (carries the kami label fan-out); batch cron moved to every 15 min
+
+Emma: "we should be running the batches just constantly until we are able to complete everything." The regeneration that fed this round had two steps bail on WDQS 429 (shinto short names, soken-den P571); their files keep the previous run's lines.
+
 ## 2026-10-09 — queue is strict order (Emma)
 
 I had started the translations item while the merges waited on the kami labels and genders. Emma: no; skipping ahead makes me "lose track of the difficult items". The queue now says so; the work-loop waits on the merges. Ono Shrine (Atsugi), already saved, stays.
