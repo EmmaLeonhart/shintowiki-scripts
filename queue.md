@@ -11,7 +11,7 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
 "you have the tendency to lose track of the difficult items"). If the first item is waiting on something, the work-loop reports that and does not start the next one.
 
 
-- [ ] Finish translating the `need_translation/` pages: Miwa Shrine (Gifu); then put the links on the already-English 三野後国造, 伊佐我命, 沼田国造,
+- [ ] Finish the `need_translation/` pages: put the links on the already-English 三野後国造, 伊佐我命, 沼田国造,
   知々夫国造, 穂国造, 角鹿国造, 遠淡海国造, 長狭国造 into `{{ill|EN|ja|JA|lt=|lt_ja=}}` form. Before every
   save: compare the live text (sha1), not just the revid, and check whether the page is in `git_synced/`
   (if so, build on that copy, keep `[[Category:Git synced pages]]`, and update the file too).

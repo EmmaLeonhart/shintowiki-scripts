@@ -1,3 +1,7 @@
+## 2026-10-09 — Miwa Shrine (Gifu) translated (rev 3853121)
+
+English stub plus pasted jawiki 三輪神社 (岐阜市); live sha1 matched the copy, not git_synced. Merged (overview, ranking history, Kinpei-sha, festival, city cultural properties, location, access), links as ill; the existing malformed Commons/Category lines left exactly as they were. Every untranslated page is now done; the remaining part of the item is the ill upgrade on the eight English kokuzō/kami pages.
+
 ## 2026-10-09 — browser QS round 13: 572 lines → #289908 (regeneration overlapped the scheduled cleanup-loop; 8 steps failed: p3225, province-exclusions, shintai-p825, soken-den-p571, genbu-ids, shinmei-ids, kana-qualifier-add, souken-p571; their files kept the previous lines)
 
 ## 2026-10-09 — Kotokuji Temple (Koka City) translated (rev 3853120)
