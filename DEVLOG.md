@@ -1,3 +1,7 @@
+## 2026-10-09 — queue: crons end only when the QuickStatements rounds are clear
+
+Emma: do not end the crons after the translations; the core thing is getting all the QuickStatements rounds actually finished. The last item now ends the crons only once a regeneration produces 0 lines.
+
 ## 2026-10-09 — kami merges done and verified (queue item closed)
 
 Emma allowed the progress read. Checked every CONFIDENT + LIKELY row of `kami_merge_candidates.tsv` (36 rows; I had been saying 35) on Wikidata: all 36 created items are now redirects to exactly their planned target, none elsewhere, none missed. The pairs are the table's CONFIDENT/LIKELY rows. UNSURE (8) and unmatched (~140) were left alone. Next queue item: finish the translated pages.

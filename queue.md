@@ -17,7 +17,9 @@ and retranslating finished-but-bad pages are out of the queue; they are in `todo
   save: compare the live text (sha1), not just the revid, and check whether the page is in `git_synced/`
   (if so, build on that copy, keep `[[Category:Git synced pages]]`, and update the file too).
 
-- [ ] **LAST, after every item above:** end all the cron jobs (`CronDelete` each one in `CronList`).
+- [ ] **The core job: run the QuickStatements rounds until they are actually finished** (Emma 2026-10-09: "the
+  important thing is just getting all the quick statements rounds actually finished"). The crons do NOT end
+  after the translations; only once a regeneration produces 0 lines (everything clear) are the crons ended.
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this
