@@ -1,3 +1,7 @@
+## 2026-10-09 — kami merge candidates table (queue item 1, read-only step)
+
+`modern-quickstatements/kami_merge_candidates.tsv`: for the 191 created kami, shrines pointing at each (171 have exactly one, 16 two, 3 three, 1 none), matched against every ja label/alias on existing kami (3,172) with honorifics stripped and variant characters folded, plus a by-hand pass of known variant spellings. 31 CONFIDENT, 4 LIKELY, 8 UNSURE; about 140 have no candidate and are left alone. Four of my by-hand mappings were wrong (Shinatsuhime is not Shinatsuhiko; 隠津島姫 is not Ichikishimahime; 熊野加夫呂杵櫛御食命 and 櫛御食野神 are not Kumanokusubi) and are not in the table. Nothing merged; merges wait for the genders to land and for Emma's yes on the tiering.
+
 ## 2026-10-09 — browser QS round 9: 1,093 lines → #289895 (carries the kami label fan-out); batch cron moved to every 15 min
 
 Emma: "we should be running the batches just constantly until we are able to complete everything." The regeneration that fed this round had two steps bail on WDQS 429 (shinto short names, soken-den P571); their files keep the previous run's lines.

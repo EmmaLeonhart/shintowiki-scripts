@@ -1,0 +1,52 @@
+# Merge candidates for the kami we created (deity_creates.state), queue item "merge each created kami into
+# the item that is pretty obviously its real identity" (Emma 2026-10-08). Built 2026-10-09 from two
+# Wikidata queries: shrines with P825 to each created item (171 have exactly 1, 16 have 2, 3 have 3, 1 has
+# 0) and every ja label/alias on existing kami (3,172). Matching: honorifics stripped, variant characters
+# folded (比売/媛/姫, 日子/彦, 須佐之男/素戔嗚 ...), plus a by-hand pass mapping known variant spellings to
+# their standard form. Tier: CONFIDENT = merge; LIKELY / UNSURE = not merged, for Emma; everything not
+# listed (about 140) has no candidate and is left alone. NOTHING HERE HAS BEEN MERGED YET.
+# created	ja	shrines	tier	target	target label	why
+Q141593108	白山姫命	3	CONFIDENT	Q11619891	白山比咩神	same name, 姫/比咩 variant
+Q141593110	国狭槌命	2	CONFIDENT	Q5966692	国狭槌尊	same name, 命/尊
+Q141593116	奥津日子神	2	CONFIDENT	Q140446057	奥津彦命	same name, 日子/彦
+Q141593123	建御名方大神	2	CONFIDENT	Q9150391	建御名方神	Takeminakata
+Q141593228	建水方神	1	CONFIDENT	Q9150391	建御名方神	Takeminakata, 水方 spelling
+Q141593206	天御名方命	1	LIKELY	Q9150391	建御名方神	天 for 建: probably Takeminakata, not certain
+Q141593135	ヤサカトメノオオカミ	1	CONFIDENT	Q9150392	ヤサカトメノカミ	same name
+Q141593138	一言主尊	1	CONFIDENT	Q10864079	一言主神	same name
+Q141593153	伊曽猛命	1	CONFIDENT	Q10881556	五十猛神	Isotakeru, 伊曽/五十 spelling
+Q141593156	健速須佐之男神	1	CONFIDENT	Q272993	須佐之男命	Susanoo (Takehaya-Susanoo)
+Q141593173	受持乃神	1	CONFIDENT	Q2280323	受持神	Ukemochi
+Q141593176	可美葦芽彦遅神	1	CONFIDENT	Q10946168	宇摩志阿斯訶備比古遅神	Umashiashikabihikoji, Nihon Shoki spelling
+Q141593119	宇麻志葦牙彦舅神	1	CONFIDENT	Q10946168	宇摩志阿斯訶備比古遅神	Umashiashikabihikoji, variant spelling
+Q141593188	埴山毘売命	1	CONFIDENT	Q9285919	埴山姫命	Haniyama-hime
+Q141593193	大屋津姫神	1	CONFIDENT	Q140446001	大屋津媛神	same name, 姫/媛
+Q141593194	大山昨神	1	CONFIDENT	Q10935105	大山咋神	Ōyamakui, 昨/咋 typo
+Q141593197	大己田貴命	1	CONFIDENT	Q276944	大己貴命	Ōnamuchi, stray 田
+Q141593205	天兒家根命	1	CONFIDENT	Q2564508	天児屋命	Amenokoyane
+Q141593207	天忍穂耳神	1	CONFIDENT	Q462555	天忍穂耳命	same name
+Q141593208	天甕津媛命	1	CONFIDENT	Q106160485	天甕津日女命	same name, 媛/日女
+Q141593212	天若日子命	1	CONFIDENT	Q10940674	天若日子	same name
+Q141593214	奥津日女神	1	CONFIDENT	Q140446058	奥津姫命	same name
+Q141593216	奥津比売神	1	CONFIDENT	Q140446058	奥津姫命	same name
+Q141593255	泉津事解之男尊	1	CONFIDENT	Q135505754	泉津事解之男神	same name
+Q141593280	稲倉魂神	1	CONFIDENT	Q3080728	宇迦之御魂神	Ukanomitama, Nihon Shoki spelling
+Q141593288	級長戸辺神	1	CONFIDENT	Q1073925	級長戸辺命	same name
+Q141593290	脚摩乳命	1	CONFIDENT	Q109554668	脚摩乳	same name
+Q141593305	豊石窓命	1	CONFIDENT	Q10940542	豊石窓神	same name
+Q141593324	高皇霊産神	1	CONFIDENT	Q125400	高御産巣日神	Takamimusubi
+Q141593330	鹿葦津姫命	1	CONFIDENT	Q1781862	鹿葦津姫	same name (Konohanasakuya-hime)
+Q141593139	三筒男神	1	CONFIDENT	Q1114013	住吉三神	the three Tsutsunoo = Sumiyoshi sanjin
+Q141593285	筒之男三神	1	CONFIDENT	Q1114013	住吉三神	the three Tsutsunoo = Sumiyoshi sanjin
+Q141593273	白山大明神	1	LIKELY	Q11579578	白山権現	Hakusan Daimyōjin vs Hakusan Gongen
+Q141593158	八王子大明神	1	LIKELY	Q11391615	八王子権現	Daimyōjin vs Gongen
+Q141593253	氷室大神	1	LIKELY	Q134844607	氷室権現	Ōkami vs Gongen
+Q141593231	御子速玉神	1	LIKELY	Q98083023	速玉之男	Kumano Hayatama, probably
+Q141593125	比売命	2	UNSURE	Q22070227	比売神	generic "hime" name; a local consort may be meant
+Q141593238	日売大神	1	UNSURE	Q22070227	比売神	generic "hime" name
+Q141593251	毘売命	1	UNSURE	Q22070227	比売神	generic "hime" name
+Q141593120	家津御子大神	2	UNSURE	Q140445993 / Q272993	家津御子神	two existing items carry this label
+Q141593121	家津御子神	0	UNSURE	Q140445993 / Q272993	家津御子神	two existing items carry this label
+Q141593223	家津御子命大神	1	UNSURE	Q140445993 / Q272993	家津御子神	two existing items carry this label
+Q141593268	熊野大明神	1	UNSURE	Q272993 / Q11568925	熊野大神 / 熊野権現	two candidates
+Q141593310	速玉之男尊	1	UNSURE	Q98083023 / Q11568925	速玉之男神 / 速玉男命	two candidates
