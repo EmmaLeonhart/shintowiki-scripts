@@ -1,2 +1,3 @@
 # round 15 (2026-10-09): 289933, STOPPED (stale; 15 run)
 part_1 289936 2026-10-09T18:30Z
+round 16 DONE: #289936 188 done, 44 errors (12 on merged/deleted items, 32 label rejects; see DEVLOG)
