@@ -51,3 +51,6 @@ Q134989278	SKIP	reading unsourceable - network access blocked, no local kana dat
 Q135259854	SKIP	reading unsourceable - no jawiki article, no kana available in local data, proxy blocks external lookups
 Q134917498	SKIP	reading unsourceable - no KANA provided, cannot access external resources
 Q134956631	SKIP	Cannot source reading in automated run; KANA empty, requires external research
+Q134596953	SKIP	no jawiki article or other reliable source found for reading
+Q134988888	SKIP	no jawiki article or other reliable source found for reading
+Q135445777	SKIP	no jawiki article or other reliable source found for reading
