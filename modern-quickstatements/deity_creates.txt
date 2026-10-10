@@ -1,3 +1,18 @@
 # One new kami item per red-link 祭神 name (Emma 2026-09-28: 'All 198').
 # Regenerated each run; names that already have an item are skipped.
 # Batch for create_items.py (gate: lockout_gate).
+CREATE
+LAST|Lja|"家津御子神"
+LAST|P31|Q524158
+CREATE
+LAST|Lja|"建水方神"
+LAST|P31|Q524158
+CREATE
+LAST|Lja|"御子速玉神"
+LAST|P31|Q524158
+CREATE
+LAST|Lja|"泉津事解之男尊"
+LAST|P31|Q524158
+CREATE
+LAST|Lja|"級長戸辺神"
+LAST|P31|Q524158
