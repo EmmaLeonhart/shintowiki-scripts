@@ -1,87 +1,87 @@
 {
   "population": {
-    "shrines": 30344,
-    "temples": 27243
+    "shrines": 30350,
+    "temples": 27267
   },
   "reisai": {
-    "shrine_items": 1625,
-    "shrine_stmts": 1635,
-    "conforming": 1634,
-    "missing_role": 1,
+    "shrine_items": 3153,
+    "shrine_stmts": 3170,
+    "conforming": 3170,
+    "missing_role": 0,
     "with_p793": 101,
-    "referenced": 1603,
-    "global_stmts": 8773,
-    "global_any_role": 1741,
-    "global_reisai_role": 1721
+    "referenced": 3139,
+    "global_stmts": 10407,
+    "global_any_role": 3357,
+    "global_reisai_role": 3337
   },
   "bunrei": {
-    "shrine_items": 6544,
-    "shrine_stmts": 6561,
-    "conforming": 6523,
-    "bare": 38,
-    "global_stmts": 7401,
-    "global_any_p1013": 6523,
-    "global_bunrei": 6523
+    "shrine_items": 10974,
+    "shrine_stmts": 11031,
+    "conforming": 11031,
+    "bare": 0,
+    "global_stmts": 11871,
+    "global_any_p1013": 11031,
+    "global_bunrei": 11031
   },
   "shintai": {
-    "stmts": 22,
-    "on_shrines": 22
+    "stmts": 43,
+    "on_shrines": 41
   },
   "p825_shrines": {
-    "items": 12770,
-    "stmts": 19182,
-    "referenced": 9312
+    "items": 13046,
+    "stmts": 20986,
+    "referenced": 11412
   },
   "p825_temples": {
-    "items": 6381,
-    "stmts": 6626,
-    "referenced": 6453
+    "items": 6497,
+    "stmts": 6944,
+    "referenced": 6818
   },
   "p13723": {
-    "items": 8187,
-    "stmts": 16993,
-    "with_p459": 16993,
+    "items": 8186,
+    "stmts": 16991,
+    "with_p459": 16991,
     "without_p459": 0,
-    "referenced": 16800,
+    "referenced": 16798,
     "legacy_on_p1552": 0
   },
   "p14005": {
-    "items": 4377,
-    "stmts": 5465,
-    "referenced": 2433,
-    "distinct_ranks": 34,
-    "on_humans": 3448,
+    "items": 4740,
+    "stmts": 5829,
+    "referenced": 3138,
+    "distinct_ranks": 35,
+    "on_humans": 3811,
     "on_shrines": 923
   },
   "list_membership": {
-    "items": 4371,
-    "stmts": 5080,
-    "with_ordinal": 3852,
-    "items_with_multiple": 525
+    "items": 3532,
+    "stmts": 4054,
+    "with_ordinal": 3007,
+    "items_with_multiple": 387
   },
   "ronsha": {
-    "ronsha": 2323,
-    "with_p460": 2058,
-    "p460_with_p2868": 1834,
+    "ronsha": 2322,
+    "with_p460": 2057,
+    "p460_with_p2868": 2047,
     "p460_with_p3831": 14,
     "deprecated_items": 7
   },
   "sango": {
-    "stmts": 3972,
-    "on_temples": 3877,
-    "temple_p1448_all": 12214
+    "stmts": 7755,
+    "on_temples": 7570,
+    "temple_p1448_all": 15906
   },
   "p571": {
     "shrines": 1177,
-    "temples": 3096
+    "temples": 3097
   },
   "identifiers": {
-    "p11250": 4740,
-    "p6262": 3543,
-    "p13677": 5091
+    "p11250": 5773,
+    "p6262": 5768,
+    "p13677": 5090
   },
   "en_labels": {
-    "shrines_en": 26574,
-    "temples_en": 16613
+    "shrines_en": 28039,
+    "temples_en": 21636
   }
 }
