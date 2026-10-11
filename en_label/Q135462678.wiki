@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q135462678 -->
 <!-- KIND: shrine | JA: 蘆ケ崎神社 | KANA:  -->
-<!-- ANSWER: -->
+<!-- ANSWER: SKIP: cannot access jawiki/Kokugakuin to source reading; KANA field empty -->
 <!-- TASK: give this item its English Wikidata label (P1448 is NOT involved; this is the `Len` label).
 Conventions, which are not negotiable -- match the files this folds into:
   shrine: '<Stem> Shrine', e.g. Iino Shrine, Kushikino Shrine.
