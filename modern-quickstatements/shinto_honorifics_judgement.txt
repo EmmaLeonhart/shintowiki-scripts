@@ -18,7 +18,7 @@ Q140446059	ja=竜田姫命	en=Tatsuta-hime	ja says 命 (Q140588459); en says a d
 Q140446061	ja=大山三所権現	en=Three Deities of Mount Daisen	EXCLUDED by Emma — complicated ontology
 Q140446119	ja=三足比咩命	en=Mitarashi-hime	ja says 命 (Q140588459); en says a different honorific (Q140588570)
 Q141627892	ja=飯長媛命	en=Iinagahime	ja says 命 (Q140588459); en says a different honorific (Q140588570)
-Q3090037	ja=猿田彦神	en=Sarutahiko	EXCLUDED by Emma — complicated ontology
+Q3090037	ja=猿田彦	en=Sarutahiko	EXCLUDED by Emma — complicated ontology
 Q30935372	ja=神屋楯比売	en=Kamuyatate hime no mikoto	ja says 比売 (Q140588570); en says a different honorific (Q140588459)
 Q402052	ja=開拓三神	en=Three Pioneer Kami	EXCLUDED by Emma — complicated ontology
 Q4387856	ja=金山彦神	en=Kanayamahiko	ja says 神 (Q140588460); en says a different honorific (Q140588571)

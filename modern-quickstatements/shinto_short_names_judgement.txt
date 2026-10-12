@@ -18,7 +18,7 @@ Q11120574	ja=椎根津彦	en=Shiinetsuhiko	carries P1035 but the ja label ends w
 Q11142832	ja=沼河比売	en=Nunakawa hime	carries P1035 but the ja label ends with none of its forms
 Q11147583	ja=活津彦根命	en=Ikutsuhikone	carries P1035 but the ja label ends with none of its forms
 Q112367505	ja=天伊佐佐比古	en=Ame no Hisasahiko	carries P1035 but the ja label ends with none of its forms
-Q11304722	ja=サタヒコ	en=Satahiko	carries P1035 but the ja label ends with none of its forms
+Q11304722	ja=時量師	en=Tokihakashi	carries P1035 but the ja label ends with none of its forms
 Q11307233	ja=下照姫	en=Shitateruhime	carries P1035 but the ja label ends with none of its forms
 Q11380566	ja=伊豆山権現	en=Izusan Gongen	carries P1035 but the ja label ends with none of its forms
 Q11579578	ja=白山権現	en=Hakusan Gongen	carries P1035 but the ja label ends with none of its forms
@@ -56,7 +56,6 @@ Q3080728	ja=ウカノミタマ	en=Ukanomitama	carries P1035 but the ja label end
 Q3082751	ja=玉依姫	en=Tamayorihime	carries P1035 but the ja label ends with none of its forms
 Q30935372	ja=神屋楯比売	en=Kamuyatate hime no mikoto	carries P1035 but the ja label ends with none of its forms
 Q3137449	ja=水神	en=Suijin	carries P1035 but the ja label ends with none of its forms
-Q3261482	ja=オオゲツヒメ	en=Ōgetsuhime	carries P1035 but the ja label ends with none of its forms
 Q3275901	ja=神皇産霊尊	en=Kamimusubi	carries P1035 but the ja label ends with none of its forms
 Q4132980	ja=金精神	en=Konseijin	carries P1035 but the ja label ends with none of its forms
 Q478504	ja=国之常立神	en=Kuni no Tokotachi	carries P1035 but the ja label ends with none of its forms
@@ -71,6 +70,7 @@ Q682306	ja=伊奘冉尊	en=Izanami	carries P1035 but the ja label ends with none
 Q719665	ja=稲荷神	en=Inari	carries P1035 but the ja label ends with none of its forms
 Q8191715	ja=須勢理姫	en=Suserihime	carries P1035 but the ja label ends with none of its forms
 Q85879124	ja=天比理刀咩命	en=Ame no Hiritome	carries P1035 but the ja label ends with none of its forms
+Q86736058	ja=宇都志日金拆	en=Utsushihikanasaku	carries P1035 but the ja label ends with none of its forms
 Q9285919	ja=ハニヤスビコ・ハニヤスヒメ	en=Haniyasuhiko and Haniyasuhime	carries P1035 but the ja label ends with none of its forms
 Q97184246	ja=天活玉命	en=Ame no Ikutama	carries P1035 but the ja label ends with none of its forms
 Q98083023	ja=速玉之男	en=Hayatamanoo	carries P1035 but the ja label ends with none of its forms

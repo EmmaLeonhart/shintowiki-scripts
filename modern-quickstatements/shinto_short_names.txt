@@ -1,2 +1,8 @@
 Q1073925|P1035|Q140588571|P1813|ja:"シナツ"|P1813|mul:"Shinatsu"
 Q1073925|P569|novalue
+Q11296639|P1035|Q140588570|P1813|ja:"キサガイヒメ・ウムギ"|P1813|mul:"Kisagaihime and Umugi"
+Q11296639|P569|novalue
+Q2280323|P1035|Q140588460|P1813|ja:"保食"|P1813|mul:"Ukemochi"
+Q2280323|P569|novalue
+Q3261482|P1035|Q140588570|P1813|ja:"オオゲツ"|P1813|mul:"Ōgetsu"
+Q3261482|P569|novalue
