@@ -2,6 +2,9 @@
 # Regenerated each run; names that already have an item are skipped.
 # Batch for create_items.py (gate: lockout_gate).
 CREATE
+LAST|Lja|"白山姫命"
+LAST|P31|Q524158
+CREATE
 LAST|Lja|"家津御子神"
 LAST|P31|Q524158
 CREATE
