@@ -1,6 +1,6 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q134957162 -->
-<!-- KIND: shrine | JA: 田澤神社 | KANA:  -->
-<!-- ANSWER: LABEL: Tazawa Shrine -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q134958011 -->
+<!-- KIND: shrine | JA: 静岡天満宮 | KANA:  -->
+<!-- ANSWER: -->
 <!-- TASK: give this item its English Wikidata label (P1448 is NOT involved; this is the `Len` label).
 Conventions, which are not negotiable -- match the files this folds into:
   shrine: '<Stem> Shrine', e.g. Iino Shrine, Kushikino Shrine.
