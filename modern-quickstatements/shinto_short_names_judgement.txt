@@ -14,6 +14,7 @@ Q10940849	ja=天香山	en=Ame no Kaguyama	carries P1035 but the ja label ends wi
 Q10946168	ja=ウマシアシカビヒコヂ	en=Umashi-Ashikabi-Hikoji	carries P1035 but the ja label ends with none of its forms
 Q109554668	ja=アシナヅチ	en=Ashinazuchi	carries P1035 but the ja label ends with none of its forms
 Q1107286	ja=経津主神	en=Futsunushi	carries P1035 but the ja label ends with none of its forms
+Q11073596	ja=オオカムヅミ	en=Ōkamuzumi	carries P1035 but the ja label ends with none of its forms
 Q11120574	ja=椎根津彦	en=Shiinetsuhiko	carries P1035 but the ja label ends with none of its forms
 Q11142832	ja=沼河比売	en=Nunakawa hime	carries P1035 but the ja label ends with none of its forms
 Q11147583	ja=活津彦根命	en=Ikutsuhikone	carries P1035 but the ja label ends with none of its forms
@@ -69,6 +70,7 @@ Q6441847	ja=久延毘古	en=Kuebiko	carries P1035 but the ja label ends with non
 Q682306	ja=伊奘冉尊	en=Izanami	carries P1035 but the ja label ends with none of its forms
 Q719665	ja=稲荷神	en=Inari	carries P1035 but the ja label ends with none of its forms
 Q8191715	ja=須勢理姫	en=Suserihime	carries P1035 but the ja label ends with none of its forms
+Q8191796	ja=ミヅハノメ	en=Mizuhanome	carries P1035 but the ja label ends with none of its forms
 Q85879124	ja=天比理刀咩命	en=Ame no Hiritome	carries P1035 but the ja label ends with none of its forms
 Q86736058	ja=宇都志日金拆	en=Utsushihikanasaku	carries P1035 but the ja label ends with none of its forms
 Q9285919	ja=ハニヤスビコ・ハニヤスヒメ	en=Haniyasuhiko and Haniyasuhime	carries P1035 but the ja label ends with none of its forms
