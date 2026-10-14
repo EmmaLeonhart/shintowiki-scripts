@@ -2,18 +2,18 @@
   "p459": {
     "name": "P459 qualifiers (determination method)",
     "description": "Add P459 (determination method) to existing P13723 statements \u2014 value-specific (Engishiki, Ritsury\u014d, modern, etc.)",
-    "total": 16991,
+    "total": 16990,
     "remaining": 0,
-    "completed": 16991,
+    "completed": 16990,
     "output_file": "modern_shrine_ranking_qualifiers.txt",
     "lines": 0
   },
   "p4656": {
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
-    "total": 16991,
+    "total": 16990,
     "remaining": 4,
-    "completed": 16987,
+    "completed": 16986,
     "output_file": "p4656_jawiki_references.txt",
     "lines": 4
   },
