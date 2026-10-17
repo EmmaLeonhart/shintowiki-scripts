@@ -1,5 +1,5 @@
 {
- "_refreshed": "2026-10-10",
+ "_refreshed": "2026-10-17",
  "reisai.txt": [
   "Q100464312|P837|Q2995|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E4%BB%B2%E7%A5%9E%E7%A4%BE_%28%E6%9D%BE%E5%B4%8E%E7%94%BA%29\"",
   "Q100544140|P837|Q2919|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E6%B8%8B%E5%B7%9D%E7%A5%9E%E7%A4%BE_%28%E5%B0%BE%E5%BC%B5%E6%97%AD%E5%B8%82%29\"",
@@ -1239,7 +1239,6 @@
   "Q11568955|P837|Q2891|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E6%B8%8B%E8%B0%B7%E5%8C%BA%29\"",
   "Q11568957|P837|Q2919|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E7%94%B2%E5%B7%9E%E5%B8%82%29\"",
   "Q11568960|P837|Q2919|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E8%A5%BF%E5%AE%AE%E5%B8%82%29\"",
-  "Q11568961|P837|Q2285|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E9%8E%8C%E5%80%89%E5%B8%82%29\"",
   "Q11568963|P837|Q2524|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_%28%E9%AB%98%E5%B3%B6%E5%B8%82%29\"",
   "Q11569065|P837|Q2506|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E7%86%B1%E6%97%A5%E9%AB%98%E5%BD%A6%E7%A5%9E%E7%A4%BE\"",
   "Q11569554|P837|Q2919|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E7%89%87%E5%9F%9C%E7%A5%9E%E7%A4%BE\"",
@@ -3932,7 +3931,6 @@
   "Q11513679|P612|Q714559|P1013|Q195793|S854|\"http://jinja-kikou.net/bunreibunsya.html\"",
   "Q11513680|P612|Q714559|P1013|Q195793|S854|\"http://jinja-kikou.net/bunreibunsya.html\"",
   "Q11513682|P612|Q714559|P1013|Q195793|S854|\"http://jinja-kikou.net/bunreibunsya.html\"",
-  "Q11514556|P612|Q710786|P1013|Q195793|S854|\"http://jinja-kikou.net/bunreibunsya.html\"",
   "Q11515065|P612|Q715632|P1013|Q195793|S854|\"http://jinja-kikou.net/bunreibunsya.html\"",
   "Q115154465|P612|Q714828|P1013|Q195793|S854|\"http://jinja-kikou.net/bunreibunsya.html\"",
   "Q11516885|P612|Q705949|P1013|Q195793|S854|\"http://jinja-kikou.net/bunreibunsya.html\"",
@@ -14963,19 +14961,13 @@
   "Q92454321|P547|Q1284081|P1480|Q18122778|S4656|\"https://ja.wikipedia.org/wiki/%E9%B3%A5%E8%B0%B7%E5%8F%A3%E5%8F%A4%E5%A2%B3\"",
   "Q966298|P119|Q11462119|S4656|\"https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%A5%A0%E5%85%AC%E5%BE%A1%E5%A2%93%E6%89%80\""
  ],
- "label_typo_fixes.txt": [
-  "Q11400330|Len|\"Katsute Shrine\"",
-  "Q11436783|Len|\"Ōminakami Shrine\"",
-  "Q135424927|Len|\"Iidama Shrine\"",
-  "Q135425181|Len|\"Iidama Shrine\"",
-  "Q135425225|Len|\"Iidama Shrine\"",
-  "Q135425879|Len|\"Iidama Shrine\"",
-  "Q135425941|Len|\"Iidama Shrine\""
- ],
+ "en_labels_sonnet.txt": [],
+ "name_in_kana.txt": [],
  "p6262_fandom_links.txt": [],
  "p11250_miraheze_links.txt": [],
  "category_label_fixes.txt": [],
  "en_labels.txt": [],
+ "description_enrichment_en.txt": [],
  "saijin_p825.txt": [
   "Q10289596|P825|Q455602|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%BB%BA%E5%9B%BD%E7%A5%9E%E5%BB%9F\"",
   "Q104093828|P825|Q179971|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE\"",
@@ -15194,7 +15186,6 @@
   "Q11521150|P825|Q462803|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9C%AD%E5%B9%8C%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11521150|P825|Q8009611|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9C%AD%E5%B9%8C%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11523143|P825|Q1781862|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%91%E5%B1%B1%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE\"",
-  "Q11525975|P825|Q11304722|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11525975|P825|Q24865597|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11525975|P825|Q3080728|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11526304|P825|Q1051960|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%86%A8%E5%A3%AB%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE\"",
@@ -15212,7 +15203,6 @@
   "Q11539924|P825|Q317997|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%A3%AE%E6%B0%B4%E7%84%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
   "Q11544667|P825|Q261637|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%AB%9B%E5%BC%95%E5%85%AB%E5%B9%A1%E5%AE%AE\"",
   "Q11546309|P825|Q317997|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%AD%A6%E8%8A%B8%E5%85%AB%E5%B9%A1%E5%AE%AE\"",
-  "Q11549053|P825|Q11304722|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%B0%B4%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11549053|P825|Q24865597|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%B0%B4%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11549053|P825|Q3080728|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%B0%B4%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11567244|P825|Q179971|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E7%83%8F%E5%B8%BD%E5%AD%90%E5%BD%A2%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
@@ -15567,7 +15557,6 @@
   "Q43594821|P825|Q272993|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%28%E5%8D%97%E4%B8%B9%E5%B8%82%29\"",
   "Q43594821|P825|Q682306|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%28%E5%8D%97%E4%B8%B9%E5%B8%82%29\"",
   "Q43594821|P825|Q813858|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%28%E5%8D%97%E4%B8%B9%E5%B8%82%29\"",
-  "Q45470|P825|Q11304722|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%8A%A9%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q45470|P825|Q24865597|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%8A%A9%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q45470|P825|Q276944|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%8A%A9%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q45470|P825|Q3080728|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%8A%A9%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
@@ -15929,7 +15918,6 @@
   "Q11521150|P825|Q462803|P1932|\"天鈿女命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9C%AD%E5%B9%8C%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11521150|P825|Q8009611|P1932|\"事代主命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9C%AD%E5%B9%8C%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11523143|P825|Q1781862|P1932|\"木花開耶姫\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%91%E5%B1%B1%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE\"",
-  "Q11525975|P825|Q11304722|P1932|\"佐田彦大神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11525975|P825|Q24865597|P1932|\"大宮能売大神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11525975|P825|Q3080728|P1932|\"宇迦御魂大神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11526304|P825|Q1051960|P1932|\"彦火火出見命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%86%A8%E5%A3%AB%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE\"",
@@ -15948,7 +15936,6 @@
   "Q11539924|P825|Q317997|P3831|Q141593105|P1932|\"応神天皇\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%A3%AE%E6%B0%B4%E7%84%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
   "Q11544667|P825|Q261637|P1932|\"八幡大神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%AB%9B%E5%BC%95%E5%85%AB%E5%B9%A1%E5%AE%AE\"",
   "Q11546309|P825|Q317997|P3831|Q141593105|P1932|\"応神天皇\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%AD%A6%E8%8A%B8%E5%85%AB%E5%B9%A1%E5%AE%AE\"",
-  "Q11549053|P825|Q11304722|P1932|\"佐田彦大神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%B0%B4%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11549053|P825|Q24865597|P1932|\"大宮姫大神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%B0%B4%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11549053|P825|Q3080728|P1932|\"倉稲魂大神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%B0%B4%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q11565102|P825|Q382005|P3831|Q141593105|P1932|\"菅原道真\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%BB%9D%E5%AE%AE%E5%A4%A9%E6%BA%80%E5%AE%AE\"",
@@ -16374,7 +16361,6 @@
   "Q43594821|P825|Q272993|P1932|\"素戔嗚尊\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%28%E5%8D%97%E4%B8%B9%E5%B8%82%29\"",
   "Q43594821|P825|Q682306|P1932|\"伊邪那美命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%28%E5%8D%97%E4%B8%B9%E5%B8%82%29\"",
   "Q43594821|P825|Q813858|P1932|\"伊邪那岐命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%28%E5%8D%97%E4%B8%B9%E5%B8%82%29\"",
-  "Q45470|P825|Q11304722|P1932|\"佐田彦命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%8A%A9%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q45470|P825|Q24865597|P1932|\"大宮女命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%8A%A9%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q45470|P825|Q276944|P1932|\"大己貴命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%8A%A9%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
   "Q45470|P825|Q3080728|P1932|\"宇迦御魂命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%8A%A9%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
@@ -16750,11 +16736,12 @@
   "Q96615742|P825|Q11404731|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%85%AB%E5%9D%82%E7%A5%9E%E7%A4%BE_%28%E8%88%B9%E6%A9%8B%E5%B8%82%E5%8D%B0%E5%86%85%29\""
  ],
  "shinto_short_names.txt": [],
+ "shinto_honorifics.txt": [],
  "p4656_jawiki_references.txt": [
   "Q135039545|P13723|Q135160342|S4656|\"https://ja.wikipedia.org/wiki/石作神社_(長久手市)\"",
   "Q135039559|P13723|Q135160342|S4656|\"https://ja.wikipedia.org/wiki/入見神社\"",
   "Q135039560|P13723|Q135160342|S4656|\"https://ja.wikipedia.org/wiki/阿久比神社\"",
   "Q135040049|P13723|Q135160342|S4656|\"https://ja.wikipedia.org/wiki/配志和神社\""
  ],
- "_attempted": "2026-10-16"
+ "address_citation_from_article.txt": []
 }
