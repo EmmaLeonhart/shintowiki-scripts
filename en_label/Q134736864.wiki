@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q134736864 -->
 <!-- KIND: temple | JA: 最法寺 | KANA:  -->
-<!-- ANSWER: -->
+<!-- ANSWER: SKIP: reading not determinable without access to jawiki article or official sources -->
 <!-- TASK: give this item its English Wikidata label (P1448 is NOT involved; this is the `Len` label).
 Conventions, which are not negotiable -- match the files this folds into:
   shrine: '<Stem> Shrine', e.g. Iino Shrine, Kushikino Shrine.
