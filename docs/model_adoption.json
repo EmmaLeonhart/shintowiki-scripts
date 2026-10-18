@@ -1,18 +1,18 @@
 {
   "population": {
-    "shrines": 30350,
-    "temples": 27267
+    "shrines": 30352,
+    "temples": 27269
   },
   "reisai": {
-    "shrine_items": 3153,
-    "shrine_stmts": 3170,
-    "conforming": 3170,
+    "shrine_items": 3152,
+    "shrine_stmts": 3169,
+    "conforming": 3169,
     "missing_role": 0,
     "with_p793": 101,
-    "referenced": 3139,
-    "global_stmts": 10407,
-    "global_any_role": 3357,
-    "global_reisai_role": 3337
+    "referenced": 3138,
+    "global_stmts": 10410,
+    "global_any_role": 3356,
+    "global_reisai_role": 3336
   },
   "bunrei": {
     "shrine_items": 10974,
@@ -28,9 +28,9 @@
     "on_shrines": 41
   },
   "p825_shrines": {
-    "items": 13046,
-    "stmts": 20986,
-    "referenced": 11412
+    "items": 13045,
+    "stmts": 20984,
+    "referenced": 11410
   },
   "p825_temples": {
     "items": 6497,
@@ -38,11 +38,11 @@
     "referenced": 6818
   },
   "p13723": {
-    "items": 8186,
-    "stmts": 16991,
-    "with_p459": 16991,
+    "items": 8185,
+    "stmts": 16990,
+    "with_p459": 16990,
     "without_p459": 0,
-    "referenced": 16798,
+    "referenced": 16797,
     "legacy_on_p1552": 0
   },
   "p14005": {
@@ -73,7 +73,7 @@
   },
   "p571": {
     "shrines": 1177,
-    "temples": 3097
+    "temples": 3099
   },
   "identifiers": {
     "p11250": 5773,
@@ -81,7 +81,7 @@
     "p13677": 5090
   },
   "en_labels": {
-    "shrines_en": 28039,
-    "temples_en": 21636
+    "shrines_en": 28040,
+    "temples_en": 21641
   }
 }
