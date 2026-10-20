@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q11553443 -->
 <!-- JA: 河内神社 | EN_LABEL: Kōchi Shrine (Saeki-ku) | BUCKET: a -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%B2%B3%E5%86%85%E7%A5%9E%E7%A4%BE_%28%E5%BA%83%E5%B3%B6%E5%B8%82%29 -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: こうちじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): こうちじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): かわうちじんじゃ
