@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q135186693 -->
 <!-- JA: 石神社 | EN_LABEL: Ishigami Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: -->
+<!-- ANSWER: GUESS: いしがみじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): いしがみじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): いはのじんじゃ
