@@ -1,5 +1,5 @@
 {
- "_refreshed": "2026-10-17",
+ "_refreshed": "2026-10-24",
  "reisai.txt": [
   "Q100464312|P837|Q2995|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E4%BB%B2%E7%A5%9E%E7%A4%BE_%28%E6%9D%BE%E5%B4%8E%E7%94%BA%29\"",
   "Q100544140|P837|Q2919|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E6%B8%8B%E5%B7%9D%E7%A5%9E%E7%A4%BE_%28%E5%B0%BE%E5%BC%B5%E6%97%AD%E5%B8%82%29\"",
@@ -1837,7 +1837,6 @@
   "Q11669186|P837|Q2962|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E9%AB%98%E5%AE%B6%E7%A5%9E%E7%A4%BE\"",
   "Q116694076|P837|Q2508|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E8%AB%B8%E5%8F%A3%E7%A5%9E%E7%A4%BE\"",
   "Q11669562|P837|Q2544|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E9%AB%98%E5%B2%A1%E9%96%A2%E9%87%8E%E7%A5%9E%E7%A4%BE\"",
-  "Q11669785|P837|Q2509|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E9%AB%98%E5%B4%8E%E7%A5%9E%E7%A4%BE\"",
   "Q11669904|P837|Q2524|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E9%AB%98%E5%BA%A7%E7%A5%9E%E7%A4%BE\"",
   "Q11669906|P837|Q2625|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E9%AB%98%E5%BA%A7%E7%B5%90%E5%BE%A1%E5%AD%90%E7%A5%9E%E7%A4%BE\"",
   "Q11671498|P837|Q2990|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE\"",
@@ -14967,7 +14966,9 @@
  "p11250_miraheze_links.txt": [],
  "category_label_fixes.txt": [],
  "en_labels.txt": [],
- "description_enrichment_en.txt": [],
+ "description_enrichment_en.txt": [
+  "Q135039219|Den|\"Shinto shrine in Kawabe district, Settsu Province, Japan\""
+ ],
  "saijin_p825.txt": [
   "Q10289596|P825|Q455602|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%BB%BA%E5%9B%BD%E7%A5%9E%E5%BB%9F\"",
   "Q104093828|P825|Q179971|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE\"",
@@ -15005,8 +15006,6 @@
   "Q107410086|P825|Q232803|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%A1%8C%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
   "Q107410086|P825|Q272993|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%A1%8C%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
   "Q107410086|P825|Q317997|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%A1%8C%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
-  "Q108699091|P825|Q272993|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%B1%8A%E7%9F%B3%E7%A5%9E%E7%A4%BE\"",
-  "Q108699091|P825|Q461258|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%B1%8A%E7%9F%B3%E7%A5%9E%E7%A4%BE\"",
   "Q109598897|P825|Q382005|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%A6%B4%E5%B2%A1%E5%A4%A9%E6%BA%80%E5%AE%AE\"",
   "Q109599027|P825|Q11483791|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%85%AB%E5%9D%82%E5%A4%A7%E7%A5%9E\"",
   "Q109599027|P825|Q11570247|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E5%85%AB%E5%9D%82%E5%A4%A7%E7%A5%9E\"",
@@ -15696,9 +15695,6 @@
   "Q107410086|P825|Q232803|P3831|Q141593105|P1932|\"気長足姫尊\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%A1%8C%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
   "Q107410086|P825|Q272993|P1932|\"神素盞鳴尊\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%A1%8C%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
   "Q107410086|P825|Q317997|P3831|Q141593105|P1932|\"誉田別尊\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%A1%8C%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE\"",
-  "Q108699091|P825|Q141593219|P1932|\"姫大御神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%B1%8A%E7%9F%B3%E7%A5%9E%E7%A4%BE\"",
-  "Q108699091|P825|Q272993|P1932|\"須佐之男命\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%B1%8A%E7%9F%B3%E7%A5%9E%E7%A4%BE\"",
-  "Q108699091|P825|Q461258|P3831|Q141593105|P1932|\"日本武尊\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E8%B1%8A%E7%9F%B3%E7%A5%9E%E7%A4%BE\"",
   "Q10893844|P825|Q174231|P3831|Q141593105|P1932|\"明治天皇\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E9%96%A2%E6%9D%B1%E7%A5%9E%E5%AE%AE\"",
   "Q10893844|P825|Q455602|P1932|\"天照大神\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E9%96%A2%E6%9D%B1%E7%A5%9E%E5%AE%AE\"",
   "Q109598897|P825|Q382005|P3831|Q141593105|P1932|\"菅原道真\"|S143|Q177837|S4656|\"https://ja.wikipedia.org/wiki/%E6%A6%B4%E5%B2%A1%E5%A4%A9%E6%BA%80%E5%AE%AE\"",
@@ -16743,6 +16739,5 @@
   "Q135039560|P13723|Q135160342|S4656|\"https://ja.wikipedia.org/wiki/阿久比神社\"",
   "Q135040049|P13723|Q135160342|S4656|\"https://ja.wikipedia.org/wiki/配志和神社\""
  ],
- "address_citation_from_article.txt": [],
- "_attempted": "2026-10-23"
+ "address_citation_from_article.txt": []
 }
