@@ -1,6 +1,6 @@
 {
   "locked": true,
-  "locked_until": "2026-10-26",
-  "reason": "daily edit-test FAILED (HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json | probe: 403 text/html; charset=UTF-8 271886b cf-ray=a4f94d4c780519ff-LAX -> cloudflare challenge — our connection, not our UA) — locked until tomorrow's test",
-  "checked": "2026-10-24T13:24:27Z"
+  "locked_until": "2026-10-27",
+  "reason": "daily edit-test FAILED (HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json | probe: 403 text/html; charset=UTF-8 271865b cf-ray=a501ab200ce3e9e5-LAX -> cloudflare challenge — our connection, not our UA) — locked until tomorrow's test",
+  "checked": "2026-10-25T13:46:37Z"
 }
