@@ -1,8 +1,7 @@
-# 3636 empty items (Special:Export dump). QID	lost	label	url
+# 3917 empty items (Special:Export dump). QID	lost	label	url
 Q137124118	32	Gandhara architecture style	https://www.wikidata.org/wiki/Q137124118
 Q124656401	26	Бөтенроссия Саңгыраулар Телевидениесе	https://www.wikidata.org/wiki/Q124656401
 Q110554503	20	Mehrab Nourmohammadi	https://www.wikidata.org/wiki/Q110554503
-Q29230045	20		https://www.wikidata.org/wiki/Q29230045
 Q141532620	16	Item da cancellare	https://www.wikidata.org/wiki/Q141532620
 Q54859923	15		https://www.wikidata.org/wiki/Q54859923
 Q55693681	15	Karsmossen utvidgning	https://www.wikidata.org/wiki/Q55693681
@@ -22,18 +21,14 @@ Q140935194	12		https://www.wikidata.org/wiki/Q140935194
 Q76904190	12	Ar y groesffordd : drama Gymraeg mewn pedair act	https://www.wikidata.org/wiki/Q76904190
 Q116251486	12		https://www.wikidata.org/wiki/Q116251486
 Q89747648	12	Gerardo Mosquera	https://www.wikidata.org/wiki/Q89747648
-Q136670725	12		https://www.wikidata.org/wiki/Q136670725
 Q22936934	11	Gruta ornamentada paleolítica	https://www.wikidata.org/wiki/Q22936934
-Q141521209	11		https://www.wikidata.org/wiki/Q141521209
 Q12220698	11	طاحونة السيد فابر	https://www.wikidata.org/wiki/Q12220698
 Q140500612	11		https://www.wikidata.org/wiki/Q140500612
-Q116251418	11		https://www.wikidata.org/wiki/Q116251418
 Q106504773	10	Tiny Toon Adventures 6	https://www.wikidata.org/wiki/Q106504773
 Q107006452	10	الفا نیوز کال	https://www.wikidata.org/wiki/Q107006452
 Q130777147	10	Nothing Here	https://www.wikidata.org/wiki/Q130777147
 Q22925865	10		https://www.wikidata.org/wiki/Q22925865
 Q141164105	10		https://www.wikidata.org/wiki/Q141164105
-Q136652102	10		https://www.wikidata.org/wiki/Q136652102
 Q106216071	10	Youth Cybersecurity Forum	https://www.wikidata.org/wiki/Q106216071
 Q141600586	10		https://www.wikidata.org/wiki/Q141600586
 Q141214588	10		https://www.wikidata.org/wiki/Q141214588
@@ -41,7 +36,6 @@ Q117001323	10	African Centre for Cities	https://www.wikidata.org/wiki/Q117001323
 Q47004725	10	глухие переднеязычные взрывные согласные	https://www.wikidata.org/wiki/Q47004725
 Q125608750	9		https://www.wikidata.org/wiki/Q125608750
 Q141120384	9	Place du 8 mai 1945	https://www.wikidata.org/wiki/Q141120384
-Q131636689	9		https://www.wikidata.org/wiki/Q131636689
 Q111391273	9	Hotel De	https://www.wikidata.org/wiki/Q111391273
 Q104733504	9	7 Gwardyjska Dywizja Desantowo-Szturmowa (Górska)	https://www.wikidata.org/wiki/Q104733504
 Q97255175	9	Gòssa	https://www.wikidata.org/wiki/Q97255175
@@ -59,8 +53,10 @@ Q111949560	7		https://www.wikidata.org/wiki/Q111949560
 Q140763962	7		https://www.wikidata.org/wiki/Q140763962
 Q140078956	7	Chapel of Saint Joseph (Luhačovice)	https://www.wikidata.org/wiki/Q140078956
 Q139906398	7	Dvornikovi	https://www.wikidata.org/wiki/Q139906398
+Q141810269	7		https://www.wikidata.org/wiki/Q141810269
 Q85522467	7	Día Internacional dos Bancos	https://www.wikidata.org/wiki/Q85522467
 Q140962990	7	Category:Hanjiangwan Bridge	https://www.wikidata.org/wiki/Q140962990
+Q141776584	7	IP-Pr	https://www.wikidata.org/wiki/Q141776584
 Q105980968	7	Wünsdorf, Seestraße 19	https://www.wikidata.org/wiki/Q105980968
 Q140771598	7	Nontask	https://www.wikidata.org/wiki/Q140771598
 Q42752907	6	Irena	https://www.wikidata.org/wiki/Q42752907
@@ -70,6 +66,7 @@ Q83564351	6	Category:IMO 5264510	https://www.wikidata.org/wiki/Q83564351
 Q32305324	6		https://www.wikidata.org/wiki/Q32305324
 Q93941141	6	PSV in het seizoen 2019/20 (vrouwen)	https://www.wikidata.org/wiki/Q93941141
 Q103775985	6	Oleska Zaryckyj	https://www.wikidata.org/wiki/Q103775985
+Q141844690	6		https://www.wikidata.org/wiki/Q141844690
 Q125059391	6	Hovd Mosque	https://www.wikidata.org/wiki/Q125059391
 Q141193384	6	Dick van der Velde (actor)	https://www.wikidata.org/wiki/Q141193384
 Q97233920	6	Bermuudakuunar	https://www.wikidata.org/wiki/Q97233920
@@ -83,7 +80,6 @@ Q109591830	5	Moksh Murgai	https://www.wikidata.org/wiki/Q109591830
 Q61257554	5	Тепенавак	https://www.wikidata.org/wiki/Q61257554
 Q89098865	5	Taur (faraon)	https://www.wikidata.org/wiki/Q89098865
 Q141551262	5		https://www.wikidata.org/wiki/Q141551262
-Q112990146	5		https://www.wikidata.org/wiki/Q112990146
 Q109567026	5	serges Fernandez	https://www.wikidata.org/wiki/Q109567026
 Q63798511	5	Neorenesančná radnica	https://www.wikidata.org/wiki/Q63798511
 Q107136879	5	Ouahiba Chaoui	https://www.wikidata.org/wiki/Q107136879
@@ -91,6 +87,7 @@ Q128417321	5	Kaňon Blanice	https://www.wikidata.org/wiki/Q128417321
 Q123145621	5		https://www.wikidata.org/wiki/Q123145621
 Q123145628	5		https://www.wikidata.org/wiki/Q123145628
 Q124651677	5	Finnsirius (ship, 2023)	https://www.wikidata.org/wiki/Q124651677
+Q141792472	5	JOURNAL of education research and library practice (JERLP)	https://www.wikidata.org/wiki/Q141792472
 Q138961306	5	Albert Plesmanschool, Rotterdam	https://www.wikidata.org/wiki/Q138961306
 Q141699344	5		https://www.wikidata.org/wiki/Q141699344
 Q141451444	5	Oostwijk, Vlaardingen	https://www.wikidata.org/wiki/Q141451444
@@ -100,7 +97,6 @@ Q140427538	5	Cristina Schmidt	https://www.wikidata.org/wiki/Q140427538
 Q97119411	5	Someshwar Mahadeva place	https://www.wikidata.org/wiki/Q97119411
 Q110194166	5	RAMSE	https://www.wikidata.org/wiki/Q110194166
 Q141646259	5		https://www.wikidata.org/wiki/Q141646259
-Q24886604	5		https://www.wikidata.org/wiki/Q24886604
 Q110852699	5	IMOCA 60 Estrella Damm	https://www.wikidata.org/wiki/Q110852699
 Q140605123	5		https://www.wikidata.org/wiki/Q140605123
 Q138795518	5		https://www.wikidata.org/wiki/Q138795518
@@ -109,16 +105,14 @@ Q63459658	4	Niebelungenstraße	https://www.wikidata.org/wiki/Q63459658
 Q118945361	4	Pemain Terbaik Tahunan Chelsea F.C.	https://www.wikidata.org/wiki/Q118945361
 Q141495639	4		https://www.wikidata.org/wiki/Q141495639
 Q128545498	4	Grotte d'Aliou	https://www.wikidata.org/wiki/Q128545498
-Q96360472	4		https://www.wikidata.org/wiki/Q96360472
+Q141806545	4	Category:Mus dumbara	https://www.wikidata.org/wiki/Q141806545
 Q107972615	4	Varvinay	https://www.wikidata.org/wiki/Q107972615
-Q134488470	4		https://www.wikidata.org/wiki/Q134488470
 Q28707034	4	Джерело № 1	https://www.wikidata.org/wiki/Q28707034
 Q88837786	4	Mais Khaskiyyi	https://www.wikidata.org/wiki/Q88837786
 Q123347403	4		https://www.wikidata.org/wiki/Q123347403
 Q140285257	4		https://www.wikidata.org/wiki/Q140285257
 Q138296374	4	Onderzeebootloods, Rotterdam	https://www.wikidata.org/wiki/Q138296374
 Q141451402	4	Centrum, Vlaardingen	https://www.wikidata.org/wiki/Q141451402
-Q141764951	4		https://www.wikidata.org/wiki/Q141764951
 Q3499667	4	стола	https://www.wikidata.org/wiki/Q3499667
 Q141776151	4	Govinda’s Soho	https://www.wikidata.org/wiki/Q141776151
 Q141580960	4		https://www.wikidata.org/wiki/Q141580960
@@ -126,7 +120,6 @@ Q65236295	4	Gemeinde in Liechtenstein	https://www.wikidata.org/wiki/Q65236295
 Q140446804	4		https://www.wikidata.org/wiki/Q140446804
 Q112786431	4	галасавы банк Vocaloid	https://www.wikidata.org/wiki/Q112786431
 Q56222836	3	تصنيف:تاريخ منطقة قشتالة وليون	https://www.wikidata.org/wiki/Q56222836
-Q136652787	3		https://www.wikidata.org/wiki/Q136652787
 Q31651451	3		https://www.wikidata.org/wiki/Q31651451
 Q133567486	3	Shoot Her Down! (EP)	https://www.wikidata.org/wiki/Q133567486
 Q94125192	3	Gua Inyiak Lasun	https://www.wikidata.org/wiki/Q94125192
@@ -134,6 +127,7 @@ Q108175309	3	list of Mayans M.C. episodes	https://www.wikidata.org/wiki/Q1081753
 Q140033364	3		https://www.wikidata.org/wiki/Q140033364
 Q99268594	3	Santiago Yancuitlalpan	https://www.wikidata.org/wiki/Q99268594
 Q141595983	3		https://www.wikidata.org/wiki/Q141595983
+Q141858385	3	Marie Amanda Samuelsen	https://www.wikidata.org/wiki/Q141858385
 Q32763669	3	Категорія:Шаблони, засновані на модулі Citation/CS1	https://www.wikidata.org/wiki/Q32763669
 Q131547573	3	민지운	https://www.wikidata.org/wiki/Q131547573
 Q118726249	3	Marvdasht	https://www.wikidata.org/wiki/Q118726249
@@ -149,8 +143,11 @@ Q131188593	3	키다리스튜디오	https://www.wikidata.org/wiki/Q131188593
 Q139025502	3		https://www.wikidata.org/wiki/Q139025502
 Q11774155	3	Dan-gun tul	https://www.wikidata.org/wiki/Q11774155
 Q15822738	3	Kanun	https://www.wikidata.org/wiki/Q15822738
+Q138607179	3	Գրիգոր Բաբախանյան	https://www.wikidata.org/wiki/Q138607179
 Q140505555	3	Egilsstaðir	https://www.wikidata.org/wiki/Q140505555
+Q141046543	3		https://www.wikidata.org/wiki/Q141046543
 Q135542511	3	서울로보틱스	https://www.wikidata.org/wiki/Q135542511
+Q140688555	3		https://www.wikidata.org/wiki/Q140688555
 Q141451415	3	Westwijk, Vlaardingen	https://www.wikidata.org/wiki/Q141451415
 Q141613124	3		https://www.wikidata.org/wiki/Q141613124
 Q139502566	3		https://www.wikidata.org/wiki/Q139502566
@@ -167,10 +164,8 @@ Q28725641	2	Suku Lage	https://www.wikidata.org/wiki/Q28725641
 Q139717734	2		https://www.wikidata.org/wiki/Q139717734
 Q31802395	2	محمود طالبی	https://www.wikidata.org/wiki/Q31802395
 Q107292035	2	Tallsjöbergen	https://www.wikidata.org/wiki/Q107292035
-Q132530423	2		https://www.wikidata.org/wiki/Q132530423
 Q140085966	2	magnetically controlled shape memory alloy linear actuator	https://www.wikidata.org/wiki/Q140085966
 Q96385882	2	Kia Awyu	https://www.wikidata.org/wiki/Q96385882
-Q132200378	2		https://www.wikidata.org/wiki/Q132200378
 Q140680413	2		https://www.wikidata.org/wiki/Q140680413
 Q20515351	2	Վիլանովա դե լա Ագուդա	https://www.wikidata.org/wiki/Q20515351
 Q141256647	2		https://www.wikidata.org/wiki/Q141256647
@@ -192,20 +187,18 @@ Q101558193	2	Tsung-Han S Hsieh	https://www.wikidata.org/wiki/Q101558193
 Q115530656	2	黒津敏行	https://www.wikidata.org/wiki/Q115530656
 Q141737638	2	Ralph Lewis	https://www.wikidata.org/wiki/Q141737638
 Q141737999	2	Abdul Khaleque	https://www.wikidata.org/wiki/Q141737999
-Q136955793	1		https://www.wikidata.org/wiki/Q136955793
 Q123550400	1	Pierre Nguyên	https://www.wikidata.org/wiki/Q123550400
-Q28488337	1		https://www.wikidata.org/wiki/Q28488337
 Q6222615	1		https://www.wikidata.org/wiki/Q6222615
 Q22348531	1	1940s in fashion	https://www.wikidata.org/wiki/Q22348531
+Q15884201	1	Zender-ontvanger	https://www.wikidata.org/wiki/Q15884201
+Q7469314	1		https://www.wikidata.org/wiki/Q7469314
 Q21994209	1	Вароны	https://www.wikidata.org/wiki/Q21994209
 Q15318935	1		https://www.wikidata.org/wiki/Q15318935
 Q117319099	1	SBS GOLF 2	https://www.wikidata.org/wiki/Q117319099
 Q28968506	1	Mq’invari Q’oruldashi	https://www.wikidata.org/wiki/Q28968506
 Q60942437	1	Catégorie:Lobbyiste par nationalité	https://www.wikidata.org/wiki/Q60942437
-Q22879186	1		https://www.wikidata.org/wiki/Q22879186
 Q61028589	1	تصنيف:بيلاروس في القرن 20	https://www.wikidata.org/wiki/Q61028589
 Q65687060	1	تصنيف:العلاقات الأسترالية الملاوية	https://www.wikidata.org/wiki/Q65687060
-Q22894120	1		https://www.wikidata.org/wiki/Q22894120
 Q25385220	1	liste des communes de Zélande	https://www.wikidata.org/wiki/Q25385220
 Q25385229	1	liste des communes de la province de l'Overijssel	https://www.wikidata.org/wiki/Q25385229
 Q65687982	1	تصنيف:العلاقات البريطانية الملاوية	https://www.wikidata.org/wiki/Q65687982
@@ -224,41 +217,33 @@ Q65688449	1	تصنيف:العلاقات الملاوية الموزمبيقية	
 Q61025900	1	تصنيف:أشخاص من مقاطعة هينيبين (منيسوتا)	https://www.wikidata.org/wiki/Q61025900
 Q65687179	1	تصنيف:علاقات بيلاروس الثنائية	https://www.wikidata.org/wiki/Q65687179
 Q65688843	1	تصنيف:المثلية في ملاوي	https://www.wikidata.org/wiki/Q65688843
-Q32425012	1		https://www.wikidata.org/wiki/Q32425012
+Q61185850	1		https://www.wikidata.org/wiki/Q61185850
 Q68173194	1	تصنيف:علاقات ملاوي الثنائية	https://www.wikidata.org/wiki/Q68173194
 Q97402199	1	Catégorie:Docteur honoris causa de l'université Toulouse-I-Capitole	https://www.wikidata.org/wiki/Q97402199
+Q26028444	1		https://www.wikidata.org/wiki/Q26028444
 Q110184750	1	Up (שיר של אינה)	https://www.wikidata.org/wiki/Q110184750
 Q61316216	1		https://www.wikidata.org/wiki/Q61316216
 Q86359305	1	Категорія:Старшини (СРСР)	https://www.wikidata.org/wiki/Q86359305
 Q139385819	1		https://www.wikidata.org/wiki/Q139385819
-Q26028444	1	Modelo:Ministerios de España	https://www.wikidata.org/wiki/Q26028444
 Q33115991	1	Category:大學校友	https://www.wikidata.org/wiki/Q33115991
 Q56353344	1	nonacog gamma	https://www.wikidata.org/wiki/Q56353344
-Q116232362	1		https://www.wikidata.org/wiki/Q116232362
 Q28746364	1	phone standard VoIP	https://www.wikidata.org/wiki/Q28746364
 Q64668732	1		https://www.wikidata.org/wiki/Q64668732
 Q141533485	1		https://www.wikidata.org/wiki/Q141533485
-Q113835553	1		https://www.wikidata.org/wiki/Q113835553
-Q131515889	1		https://www.wikidata.org/wiki/Q131515889
+Q32704192	1		https://www.wikidata.org/wiki/Q32704192
 Q55405077	1	साँचा:ज्ञानसन्दूक झरने	https://www.wikidata.org/wiki/Q55405077
-Q86199252	1		https://www.wikidata.org/wiki/Q86199252
 Q111180231	1	Wettermann	https://www.wikidata.org/wiki/Q111180231
-Q125247507	1		https://www.wikidata.org/wiki/Q125247507
 Q125661640	1	plateau de jeu	https://www.wikidata.org/wiki/Q125661640
-Q132291905	1		https://www.wikidata.org/wiki/Q132291905
 Q140085953	1	inchworm linear motor of magnetically controlled shape memory alloy	https://www.wikidata.org/wiki/Q140085953
-Q23994896	1	MBC Sports+ 2	https://www.wikidata.org/wiki/Q23994896
-Q32736436	1		https://www.wikidata.org/wiki/Q32736436
 Q94606964	1	ويكيبيديا:الميدان/أرشيف/تقنية	https://www.wikidata.org/wiki/Q94606964
 Q97352549	1	乡	https://www.wikidata.org/wiki/Q97352549
 Q98215440	1	2. Deutsche Volleyball-Bundesliga Süd 2003/04	https://www.wikidata.org/wiki/Q98215440
 Q115820012	1	Nothin' But a Good Time	https://www.wikidata.org/wiki/Q115820012
 Q116786127	1	Eski-Hamam	https://www.wikidata.org/wiki/Q116786127
 Q124250379	1	list of World Heritage Sites in Dominican Republic	https://www.wikidata.org/wiki/Q124250379
-Q126871742	1		https://www.wikidata.org/wiki/Q126871742
+Q134697920	1		https://www.wikidata.org/wiki/Q134697920
 Q137845643	1	Janoșik	https://www.wikidata.org/wiki/Q137845643
 Q141535097	1	Yoga and Vedic Astrology: Sister Sciences of Spiritual Healing (Essentials of Vedic Astrology Book 1)	https://www.wikidata.org/wiki/Q141535097
-Q141777193	1	Its Sarkari Naukri	https://www.wikidata.org/wiki/Q141777193
 Q34367910	1	Kategoria:Będzin	https://www.wikidata.org/wiki/Q34367910
 Q59753778	1	Gastauer	https://www.wikidata.org/wiki/Q59753778
 Q61354714	1	Auratus	https://www.wikidata.org/wiki/Q61354714
@@ -278,10 +263,12 @@ Q141281243	1		https://www.wikidata.org/wiki/Q141281243
 Q141524059	1		https://www.wikidata.org/wiki/Q141524059
 Q141542533	1		https://www.wikidata.org/wiki/Q141542533
 Q141699678	1	Rob Watt	https://www.wikidata.org/wiki/Q141699678
+Q141852591	1		https://www.wikidata.org/wiki/Q141852591
 Q19454255	1	الشماريخ في علم التاريخ	https://www.wikidata.org/wiki/Q19454255
 Q20498205	1	Christianae Fidei Religio	https://www.wikidata.org/wiki/Q20498205
 Q30584237	1	Table of Wikimedia projects	https://www.wikidata.org/wiki/Q30584237
 Q65291292	1	ஊதியூர்	https://www.wikidata.org/wiki/Q65291292
+Q109826679	1		https://www.wikidata.org/wiki/Q109826679
 Q110721508	1	Hồng Đăng	https://www.wikidata.org/wiki/Q110721508
 Q110732585	1	Petting, Germany	https://www.wikidata.org/wiki/Q110732585
 Q121289630	1	Militärorden	https://www.wikidata.org/wiki/Q121289630
@@ -309,7 +296,7 @@ Q131850506	1	Grabovac	https://www.wikidata.org/wiki/Q131850506
 Q131914010	1	Nijhawan	https://www.wikidata.org/wiki/Q131914010
 Q139715219	1	Ascha	https://www.wikidata.org/wiki/Q139715219
 Q140285697	1	Platinum Award	https://www.wikidata.org/wiki/Q140285697
-Q141539890	1	berniece julien	https://www.wikidata.org/wiki/Q141539890
+Q48210199	1		https://www.wikidata.org/wiki/Q48210199
 Q124057836	1	Bizkaia-Durango in 2015	https://www.wikidata.org/wiki/Q124057836
 Q124058102	1	Dimension Data in 2018	https://www.wikidata.org/wiki/Q124058102
 Q124058332	1	Health Mate-Cyclelive Team in 2019	https://www.wikidata.org/wiki/Q124058332
@@ -323,13 +310,11 @@ Q124069093	1	Team Virtu Women in 2018	https://www.wikidata.org/wiki/Q124069093
 Q124069096	1	Team VéloCONCEPT Women in 2017	https://www.wikidata.org/wiki/Q124069096
 Q124497087	1	ASC2NT	https://www.wikidata.org/wiki/Q124497087
 Q126009217	1	Sarah Awaritakpor	https://www.wikidata.org/wiki/Q126009217
-Q131983476	0	Hoysala script	https://www.wikidata.org/wiki/Q131983476
-Q141776002	0	Priya Life Science	https://www.wikidata.org/wiki/Q141776002
-Q120729297	0	Category:Kenyan exiles	https://www.wikidata.org/wiki/Q120729297
-Q141775145	0	Bertrand Charpilloz	https://www.wikidata.org/wiki/Q141775145
+Q141840380	0	Anne Guéguen	https://www.wikidata.org/wiki/Q141840380
 Q135920568	0	BingoPlus	https://www.wikidata.org/wiki/Q135920568
-Q131994422	0	Chalukya script	https://www.wikidata.org/wiki/Q131994422
-Q25858204	0	4A busz	https://www.wikidata.org/wiki/Q25858204
+Q141858582	0	The Neglected Tradition: Towards a New History of South African Art (1930-1988)	https://www.wikidata.org/wiki/Q141858582
+Q141804119	0		https://www.wikidata.org/wiki/Q141804119
+Q141843646	0	Naré	https://www.wikidata.org/wiki/Q141843646
 Q20611237	0	Çê, Amêdî	https://www.wikidata.org/wiki/Q20611237
 Q135652259	0	Yaplu-k by Semafor	https://www.wikidata.org/wiki/Q135652259
 Q141559493	0	Lino GmbH	https://www.wikidata.org/wiki/Q141559493
@@ -337,6 +322,7 @@ Q97286531	0	TOGG Sedan	https://www.wikidata.org/wiki/Q97286531
 Q98270250	0	The Nuclear Power Plants Authority	https://www.wikidata.org/wiki/Q98270250
 Q107126045	0	Institut de recerques envers la Cultura (IREC)	https://www.wikidata.org/wiki/Q107126045
 Q136548412	0	Xataka Android	https://www.wikidata.org/wiki/Q136548412
+Q137800152	0		https://www.wikidata.org/wiki/Q137800152
 Q139753502	0		https://www.wikidata.org/wiki/Q139753502
 Q141323076	0	The western breach	https://www.wikidata.org/wiki/Q141323076
 Q110121345	0	Imelrhesse	https://www.wikidata.org/wiki/Q110121345
@@ -345,18 +331,17 @@ Q117309188	0	Dengonomics	https://www.wikidata.org/wiki/Q117309188
 Q124172827	0	Badgasse (Steyr)	https://www.wikidata.org/wiki/Q124172827
 Q127947373	0	Mission Populaire Libre (Krefeld)	https://www.wikidata.org/wiki/Q127947373
 Q139737482	0		https://www.wikidata.org/wiki/Q139737482
-Q140301791	0	Wabingen	https://www.wikidata.org/wiki/Q140301791
 Q141224029	0		https://www.wikidata.org/wiki/Q141224029
 Q141419574	0		https://www.wikidata.org/wiki/Q141419574
 Q141575076	0	.nzip file extension	https://www.wikidata.org/wiki/Q141575076
-Q141663174	0	Provincial Mental Health Hospital named after Dr Józef Bednarz in Świecie	https://www.wikidata.org/wiki/Q141663174
 Q48928054	0	Xingye (era)	https://www.wikidata.org/wiki/Q48928054
 Q127698834	0	Genkou	https://www.wikidata.org/wiki/Q127698834
 Q131983483	0	Kōchi script	https://www.wikidata.org/wiki/Q131983483
 Q136528097	0	Tajiks of bamyan	https://www.wikidata.org/wiki/Q136528097
-Q141602034	0	Shanghai Huangzhou Industry Co., Ltd.	https://www.wikidata.org/wiki/Q141602034
+Q141343193	0	Sayah	https://www.wikidata.org/wiki/Q141343193
 Q141603583	0	IE School of Arts & Humanities	https://www.wikidata.org/wiki/Q141603583
-Q14902293	0		https://www.wikidata.org/wiki/Q14902293
+Q141786624	0	POST Family Resort	https://www.wikidata.org/wiki/Q141786624
+Q141859002	0	House of the Sundial	https://www.wikidata.org/wiki/Q141859002
 Q27478414	0	Harvard Business School Working Paper	https://www.wikidata.org/wiki/Q27478414
 Q103842855	0	临江仙·夜登小阁，忆洛中旧游	https://www.wikidata.org/wiki/Q103842855
 Q112065625	0	Chamaegerinae	https://www.wikidata.org/wiki/Q112065625
@@ -365,12 +350,11 @@ Q140547013	0	Haw Chin Teck	https://www.wikidata.org/wiki/Q140547013
 Q141249151	0		https://www.wikidata.org/wiki/Q141249151
 Q141528057	0	Kinyomo clan	https://www.wikidata.org/wiki/Q141528057
 Q141594603	0	Maaroof Ai	https://www.wikidata.org/wiki/Q141594603
+Q141679648	0	Luan Tessarolo	https://www.wikidata.org/wiki/Q141679648
 Q141703203	0	Hadil Ossama	https://www.wikidata.org/wiki/Q141703203
-Q141714904	0	Parsa Aftabi	https://www.wikidata.org/wiki/Q141714904
 Q141725144	0		https://www.wikidata.org/wiki/Q141725144
+Q141858340	0	Homage to Pretoria Sibiya	https://www.wikidata.org/wiki/Q141858340
 Q4133506	0	Гапшиминско-бутринский язык	https://www.wikidata.org/wiki/Q4133506
-Q16520317	0	Harica	https://www.wikidata.org/wiki/Q16520317
-Q25416774	0		https://www.wikidata.org/wiki/Q25416774
 Q97058839	0	نوای اساتید	https://www.wikidata.org/wiki/Q97058839
 Q118957682	0	TAI Anka-3	https://www.wikidata.org/wiki/Q118957682
 Q131983495	0	Pacumol alphabet	https://www.wikidata.org/wiki/Q131983495
@@ -392,8 +376,8 @@ Q141606772	0	Julian Szummer-Gołębski	https://www.wikidata.org/wiki/Q141606772
 Q141640958	0	Heel Treffend	https://www.wikidata.org/wiki/Q141640958
 Q141642608	0	Sytech	https://www.wikidata.org/wiki/Q141642608
 Q141645776	0	Nevide Cicek	https://www.wikidata.org/wiki/Q141645776
-Q141679648	0	Luan Tessarolo	https://www.wikidata.org/wiki/Q141679648
-Q141733423	0	Appalga	https://www.wikidata.org/wiki/Q141733423
+Q141797978	0	NOX LUX	https://www.wikidata.org/wiki/Q141797978
+Q141851118	0	Lucky Sibiya solo exhibition, 1971	https://www.wikidata.org/wiki/Q141851118
 Q38254053	0	Operational Amplifiers	https://www.wikidata.org/wiki/Q38254053
 Q81410947	0	Maharashtra shahid jawan	https://www.wikidata.org/wiki/Q81410947
 Q96280016	0	clip	https://www.wikidata.org/wiki/Q96280016
@@ -408,13 +392,18 @@ Q140172522	0	simple lenses	https://www.wikidata.org/wiki/Q140172522
 Q140181552	0	cylindrical lenses	https://www.wikidata.org/wiki/Q140181552
 Q140571054	0		https://www.wikidata.org/wiki/Q140571054
 Q141418456	0		https://www.wikidata.org/wiki/Q141418456
+Q141627950	0	Jacob Stegenga	https://www.wikidata.org/wiki/Q141627950
 Q141639960	0	Gabriele Münter: Painting Straight Up – Musée d'Art Moderne de Paris	https://www.wikidata.org/wiki/Q141639960
 Q141645412	0		https://www.wikidata.org/wiki/Q141645412
 Q141647222	0	The Ethiopian Cloak – Der Äthiopische Mantel – Il mantello etiope	https://www.wikidata.org/wiki/Q141647222
+Q141672494	0	Norwegian Society for the Conservation of Nature in Oslo and Akershus	https://www.wikidata.org/wiki/Q141672494
 Q141706921	0		https://www.wikidata.org/wiki/Q141706921
-Q141715739	0	SOMA Agency	https://www.wikidata.org/wiki/Q141715739
 Q141775805	0	Thierburg manor	https://www.wikidata.org/wiki/Q141775805
-Q141777254	0	Coup de balai	https://www.wikidata.org/wiki/Q141777254
+Q141777981	0	Hakan Kerim Karademir	https://www.wikidata.org/wiki/Q141777981
+Q141843601	0	Table of Voices (promocional version)	https://www.wikidata.org/wiki/Q141843601
+Q141852858	0	Lophopteryx camelina nucleopolyhedrovirus	https://www.wikidata.org/wiki/Q141852858
+Q141858996	0	Otu-Ibiaku	https://www.wikidata.org/wiki/Q141858996
+Q141859014	0	Eastern Idaho District Fair Historic District	https://www.wikidata.org/wiki/Q141859014
 Q31502235	0	చంద్రగిరి మండలం	https://www.wikidata.org/wiki/Q31502235
 Q32128518	0	Hok-kiàn-oē	https://www.wikidata.org/wiki/Q32128518
 Q83613140	0	UA銀河戲院	https://www.wikidata.org/wiki/Q83613140
@@ -450,10 +439,9 @@ Q131994443	0	Smar script	https://www.wikidata.org/wiki/Q131994443
 Q131994444	0	Tani script	https://www.wikidata.org/wiki/Q131994444
 Q134552135	0	Chander Buri O Magic Man	https://www.wikidata.org/wiki/Q134552135
 Q134563725	0	Xenosexuality	https://www.wikidata.org/wiki/Q134563725
-Q136707224	0		https://www.wikidata.org/wiki/Q136707224
+Q138576650	0	Bianca Velloso	https://www.wikidata.org/wiki/Q138576650
 Q138611560	0	AIG Tower	https://www.wikidata.org/wiki/Q138611560
 Q138826946	0	Category:Physalinae	https://www.wikidata.org/wiki/Q138826946
-Q139991808	0		https://www.wikidata.org/wiki/Q139991808
 Q140153255	0	High-frequency transistor	https://www.wikidata.org/wiki/Q140153255
 Q140171802	0	short focal length lens	https://www.wikidata.org/wiki/Q140171802
 Q140181347	0	dielectric film	https://www.wikidata.org/wiki/Q140181347
@@ -476,7 +464,6 @@ Q141282297	0	Category:nci:Philosophy	https://www.wikidata.org/wiki/Q141282297
 Q141528237	0	abanyuma	https://www.wikidata.org/wiki/Q141528237
 Q141533923	0	Russell A. Petty Jr	https://www.wikidata.org/wiki/Q141533923
 Q141544610	0	Octopus Tax	https://www.wikidata.org/wiki/Q141544610
-Q141555951	0	YBK -  южнокорейский бренд уходовой косметики класса clean beauty	https://www.wikidata.org/wiki/Q141555951
 Q141613136	0	Rhodococcus mengyinensis	https://www.wikidata.org/wiki/Q141613136
 Q141640236	0	Aiko Iki	https://www.wikidata.org/wiki/Q141640236
 Q141646188	0	Fomes fomentarius subsp. nigricans	https://www.wikidata.org/wiki/Q141646188
@@ -486,16 +473,13 @@ Q141657583	0	Polyporus tenuissimus	https://www.wikidata.org/wiki/Q141657583
 Q141663347	0	Tonkin creeper	https://www.wikidata.org/wiki/Q141663347
 Q141663763	0	Mayumi Shiraishi	https://www.wikidata.org/wiki/Q141663763
 Q141663779	0	Natsuka Kurita	https://www.wikidata.org/wiki/Q141663779
-Q141672494	0	Norwegian Society for the Conservation of Nature in Oslo and Akershus	https://www.wikidata.org/wiki/Q141672494
 Q141687852	0	samantel	https://www.wikidata.org/wiki/Q141687852
 Q141689608	0	Loann LV	https://www.wikidata.org/wiki/Q141689608
 Q141733258	0	Jacob Eriksen	https://www.wikidata.org/wiki/Q141733258
-Q141733413	0	Tie (edge)	https://www.wikidata.org/wiki/Q141733413
-Q141737600	0	CountApp.pt	https://www.wikidata.org/wiki/Q141737600
 Q141755801	0	Sangam Beck	https://www.wikidata.org/wiki/Q141755801
+Q141817299	0	Ovine adenovirus C	https://www.wikidata.org/wiki/Q141817299
 Q18198504	0	美國獨立之路	https://www.wikidata.org/wiki/Q18198504
 Q19749682	0	भोजपुरीया क्षेत्र	https://www.wikidata.org/wiki/Q19749682
-Q24841511	0		https://www.wikidata.org/wiki/Q24841511
 Q25609668	0	январь	https://www.wikidata.org/wiki/Q25609668
 Q31382014	0	மனோன்மணியம் திருக்கோவில் , புதுக்கோட்டை	https://www.wikidata.org/wiki/Q31382014
 Q31822948	0	Эмирали ТӀигьиржалви	https://www.wikidata.org/wiki/Q31822948
@@ -522,12 +506,12 @@ Q127700302	0	Onde-onde	https://www.wikidata.org/wiki/Q127700302
 Q130357007	0	ہیری سنگھ	https://www.wikidata.org/wiki/Q130357007
 Q131145518	0	Maen Arthur Rock, Pont-rhyd-y-groes	https://www.wikidata.org/wiki/Q131145518
 Q134406549	0	Horvati Elementary School	https://www.wikidata.org/wiki/Q134406549
-Q134626128	0		https://www.wikidata.org/wiki/Q134626128
 Q134954819	0	Liwa University	https://www.wikidata.org/wiki/Q134954819
 Q136501361	0	عيون التواريخ	https://www.wikidata.org/wiki/Q136501361
 Q136527861	0	Bítovská zátoka	https://www.wikidata.org/wiki/Q136527861
 Q137584955	0		https://www.wikidata.org/wiki/Q137584955
 Q137587915	0		https://www.wikidata.org/wiki/Q137587915
+Q137603247	0		https://www.wikidata.org/wiki/Q137603247
 Q137798748	0	মডিউল:বাংলা ইউনিক্স সময়তারিখ	https://www.wikidata.org/wiki/Q137798748
 Q138646453	0	Військовий інститут Київського національного університету імені Тараса Шевченка	https://www.wikidata.org/wiki/Q138646453
 Q138847740	0	분류:정리가 필요한 글/2026년 4월	https://www.wikidata.org/wiki/Q138847740
@@ -607,9 +591,9 @@ Q140571074	0	Cheluchi Onyemelukwe	https://www.wikidata.org/wiki/Q140571074
 Q141039792	0	تاقین تاجیکی	https://www.wikidata.org/wiki/Q141039792
 Q141175628	0	Silvina Verónica Román	https://www.wikidata.org/wiki/Q141175628
 Q141207935	0		https://www.wikidata.org/wiki/Q141207935
-Q141343193	0	Sayah	https://www.wikidata.org/wiki/Q141343193
 Q141372778	0		https://www.wikidata.org/wiki/Q141372778
 Q141502244	0	2026 World Athletics Road Running Championships	https://www.wikidata.org/wiki/Q141502244
+Q141557473	0	Shrek 6	https://www.wikidata.org/wiki/Q141557473
 Q141581334	0	Bashbit	https://www.wikidata.org/wiki/Q141581334
 Q141589665	0	Sea of Sinbad	https://www.wikidata.org/wiki/Q141589665
 Q141593341	0	Maison de la Culture de Bobigny	https://www.wikidata.org/wiki/Q141593341
@@ -617,7 +601,6 @@ Q141663822	0	Sakina Yamauchi	https://www.wikidata.org/wiki/Q141663822
 Q141723900	0	Lage Land	https://www.wikidata.org/wiki/Q141723900
 Q141723906	0	Oosterflank	https://www.wikidata.org/wiki/Q141723906
 Q141732630	0	Jet View	https://www.wikidata.org/wiki/Q141732630
-Q141734878	0	Ken Perusco	https://www.wikidata.org/wiki/Q141734878
 Q141740114	0		https://www.wikidata.org/wiki/Q141740114
 Q141741446	0		https://www.wikidata.org/wiki/Q141741446
 Q141745427	0	LAFA	https://www.wikidata.org/wiki/Q141745427
@@ -648,11 +631,13 @@ Q64079608	0	Antarctic continental shelves	https://www.wikidata.org/wiki/Q6407960
 Q65277683	0	ابو القاسم گرگانی	https://www.wikidata.org/wiki/Q65277683
 Q65314237	0	Agency of Statistics (Kosovo)	https://www.wikidata.org/wiki/Q65314237
 Q65407440	0	者减钟	https://www.wikidata.org/wiki/Q65407440
+Q83613130	0		https://www.wikidata.org/wiki/Q83613130
 Q84205472	0	Quanzhou Municipal People's Government	https://www.wikidata.org/wiki/Q84205472
 Q85135031	0	COAR	https://www.wikidata.org/wiki/Q85135031
 Q96373041	0	Banana, Coconut, and Twinkie	https://www.wikidata.org/wiki/Q96373041
 Q96402473	0	Roman Empire Standards	https://www.wikidata.org/wiki/Q96402473
 Q97192703	0	Taka	https://www.wikidata.org/wiki/Q97192703
+Q97263274	0	Numrug National Park	https://www.wikidata.org/wiki/Q97263274
 Q101140046	0	قصص خيالية لمؤلفته شذى الروسان- القصة الخامسة	https://www.wikidata.org/wiki/Q101140046
 Q102812625	0	Sudbury Water Tower	https://www.wikidata.org/wiki/Q102812625
 Q104621648	0	Pecsi Rabb Joska	https://www.wikidata.org/wiki/Q104621648
@@ -688,7 +673,6 @@ Q131143913	0	Natalia Nushdina	https://www.wikidata.org/wiki/Q131143913
 Q131579730	0	Moldaviska helgonens synaxis	https://www.wikidata.org/wiki/Q131579730
 Q131994446	0	Uttar Licchavi alphabet	https://www.wikidata.org/wiki/Q131994446
 Q135350270	0	Prince of Castelbuono	https://www.wikidata.org/wiki/Q135350270
-Q136501753	0		https://www.wikidata.org/wiki/Q136501753
 Q137272505	0	منہالہ خان خاناں	https://www.wikidata.org/wiki/Q137272505
 Q137835918	0	M VIIZ	https://www.wikidata.org/wiki/Q137835918
 Q138296907	0	2026 Davis Cup World Group I	https://www.wikidata.org/wiki/Q138296907
@@ -698,6 +682,7 @@ Q138793925	0		https://www.wikidata.org/wiki/Q138793925
 Q138850331	0		https://www.wikidata.org/wiki/Q138850331
 Q139497423	0	Piotr Załuski (reżyser)	https://www.wikidata.org/wiki/Q139497423
 Q139830267	0	沙優七羽	https://www.wikidata.org/wiki/Q139830267
+Q139962502	0	Alejandro Gallo	https://www.wikidata.org/wiki/Q139962502
 Q139963290	0		https://www.wikidata.org/wiki/Q139963290
 Q139964454	0	(double wikidata item)	https://www.wikidata.org/wiki/Q139964454
 Q140042959	0	Brij Ratna Das	https://www.wikidata.org/wiki/Q140042959
@@ -726,12 +711,12 @@ Q140959605	0		https://www.wikidata.org/wiki/Q140959605
 Q141060993	0		https://www.wikidata.org/wiki/Q141060993
 Q141290699	0	韓国の民族主義	https://www.wikidata.org/wiki/Q141290699
 Q141304074	0		https://www.wikidata.org/wiki/Q141304074
+Q141305540	0		https://www.wikidata.org/wiki/Q141305540
 Q141320481	0	國粹主義	https://www.wikidata.org/wiki/Q141320481
 Q141457231	0		https://www.wikidata.org/wiki/Q141457231
 Q141536038	0	Del Giorgio	https://www.wikidata.org/wiki/Q141536038
 Q141546761	0	Zemo Bagina	https://www.wikidata.org/wiki/Q141546761
 Q141550075	0	Wasfy Pyramid	https://www.wikidata.org/wiki/Q141550075
-Q141557473	0	Shrek The Sixth	https://www.wikidata.org/wiki/Q141557473
 Q141573326	0	Jumat Gombrong	https://www.wikidata.org/wiki/Q141573326
 Q141591027	0	International Montessori School Sotogrande	https://www.wikidata.org/wiki/Q141591027
 Q141655106	0		https://www.wikidata.org/wiki/Q141655106
@@ -745,8 +730,12 @@ Q141735958	0	Magic Knight Rayearth	https://www.wikidata.org/wiki/Q141735958
 Q141745420	0		https://www.wikidata.org/wiki/Q141745420
 Q141749873	0		https://www.wikidata.org/wiki/Q141749873
 Q141755822	0	MR1 Hotel	https://www.wikidata.org/wiki/Q141755822
-Q141763773	0	SAVIS	https://www.wikidata.org/wiki/Q141763773
-Q10831941	0	Basic Earnings Power	https://www.wikidata.org/wiki/Q10831941
+Q141800231	0	Café de la Montaña Marquetalia	https://www.wikidata.org/wiki/Q141800231
+Q141800571	0		https://www.wikidata.org/wiki/Q141800571
+Q141807568	0	2002 Binjai incident	https://www.wikidata.org/wiki/Q141807568
+Q141817169	0	Sartip Habin	https://www.wikidata.org/wiki/Q141817169
+Q141822108	0	Margarete Steffin Adult Education Center Berlin-Lichtenberg	https://www.wikidata.org/wiki/Q141822108
+Q141832210	0	Saabia	https://www.wikidata.org/wiki/Q141832210
 Q12969003	0	Paese (commune)	https://www.wikidata.org/wiki/Q12969003
 Q15708171	0	காயகற்பம்	https://www.wikidata.org/wiki/Q15708171
 Q16086881	0	Лукавица	https://www.wikidata.org/wiki/Q16086881
@@ -756,14 +745,10 @@ Q19674583	0	Самалет	https://www.wikidata.org/wiki/Q19674583
 Q19697526	0	Meteoroid	https://www.wikidata.org/wiki/Q19697526
 Q20586126	0	อสุภ	https://www.wikidata.org/wiki/Q20586126
 Q20651694	0	내이션	https://www.wikidata.org/wiki/Q20651694
-Q25520583	0		https://www.wikidata.org/wiki/Q25520583
-Q25527751	0		https://www.wikidata.org/wiki/Q25527751
 Q25543932	0	პანამა. ისტორია და კულტურა	https://www.wikidata.org/wiki/Q25543932
-Q25572600	0		https://www.wikidata.org/wiki/Q25572600
 Q25612279	0	Ширинбех, буя	https://www.wikidata.org/wiki/Q25612279
 Q25630463	0	سەعید خانی کوردستانی	https://www.wikidata.org/wiki/Q25630463
 Q25630696	0	وەک تۆ	https://www.wikidata.org/wiki/Q25630696
-Q25675379	0		https://www.wikidata.org/wiki/Q25675379
 Q25682724	0	Wanle Weyn	https://www.wikidata.org/wiki/Q25682724
 Q25700865	0	ᠭ	https://www.wikidata.org/wiki/Q25700865
 Q31198652	0	Robinzonas ir jo laukinės vergės	https://www.wikidata.org/wiki/Q31198652
@@ -852,6 +837,7 @@ Q96581725	0	Uka Uka	https://www.wikidata.org/wiki/Q96581725
 Q97216898	0	Skląstinė sklendė	https://www.wikidata.org/wiki/Q97216898
 Q97250490	0	खेळ विषयावरील चित्रपट	https://www.wikidata.org/wiki/Q97250490
 Q97263163	0	አፍሪካ"	https://www.wikidata.org/wiki/Q97263163
+Q97264100	0		https://www.wikidata.org/wiki/Q97264100
 Q97264679	0	Puertè Acèh	https://www.wikidata.org/wiki/Q97264679
 Q97264687	0	Pulo Kyushu	https://www.wikidata.org/wiki/Q97264687
 Q97289880	0	Ministarstvo za demografiju, obitelj, mlade i socijalnu politiku	https://www.wikidata.org/wiki/Q97289880
@@ -876,12 +862,8 @@ Q107996084	0	Robozuna	https://www.wikidata.org/wiki/Q107996084
 Q108003091	0	剝光豬 (中國象棋)	https://www.wikidata.org/wiki/Q108003091
 Q109344017	0	奥吉吉亞岛	https://www.wikidata.org/wiki/Q109344017
 Q109389636	0	Kavak, Yeşilhisar	https://www.wikidata.org/wiki/Q109389636
-Q109430569	0		https://www.wikidata.org/wiki/Q109430569
 Q109452396	0	2022 FIFA Dünya Kupası elemeleri - OFC İkinci Tur	https://www.wikidata.org/wiki/Q109452396
-Q109569145	0		https://www.wikidata.org/wiki/Q109569145
 Q109653533	0	MivzakLive News	https://www.wikidata.org/wiki/Q109653533
-Q110101270	0		https://www.wikidata.org/wiki/Q110101270
-Q110103802	0		https://www.wikidata.org/wiki/Q110103802
 Q110104529	0	Yamazaki University of Animal Health Technology	https://www.wikidata.org/wiki/Q110104529
 Q111010331	0	Poetin erkènt volksrippeblieke Donetsk en Loehansk	https://www.wikidata.org/wiki/Q111010331
 Q111805022	0	ლ]]პ]	https://www.wikidata.org/wiki/Q111805022
@@ -898,8 +880,6 @@ Q113191286	0	Pakistanske poslovice	https://www.wikidata.org/wiki/Q113191286
 Q113367513	0	Mistrovství Evropy v malém fotbale 2022	https://www.wikidata.org/wiki/Q113367513
 Q115608701	0	acanthor	https://www.wikidata.org/wiki/Q115608701
 Q115799943	0	Acaxee	https://www.wikidata.org/wiki/Q115799943
-Q115800385	0		https://www.wikidata.org/wiki/Q115800385
-Q117101778	0		https://www.wikidata.org/wiki/Q117101778
 Q117185286	0	Değirmenderesi	https://www.wikidata.org/wiki/Q117185286
 Q117185320	0	Mesciçele (Bolu)	https://www.wikidata.org/wiki/Q117185320
 Q117193440	0	Bahçeköy (Tavas)	https://www.wikidata.org/wiki/Q117193440
@@ -1033,16 +1013,24 @@ Q141664131	0	The Polar Opposites	https://www.wikidata.org/wiki/Q141664131
 Q141680168	0	gvibegodswill	https://www.wikidata.org/wiki/Q141680168
 Q141689711	0	Lina Òdena	https://www.wikidata.org/wiki/Q141689711
 Q141710651	0		https://www.wikidata.org/wiki/Q141710651
-Q141714340	0	Hynz Academy	https://www.wikidata.org/wiki/Q141714340
+Q141718534	0	Máximo Errázuriz Ward	https://www.wikidata.org/wiki/Q141718534
+Q141727689	0	Ramón Vergara Montero	https://www.wikidata.org/wiki/Q141727689
 Q141744902	0	Ryan Myher	https://www.wikidata.org/wiki/Q141744902
 Q141755884	0	NHKのおかあさんといっしょ	https://www.wikidata.org/wiki/Q141755884
 Q141756653	0	Yakacık Cemetery	https://www.wikidata.org/wiki/Q141756653
-Q141776012	0		https://www.wikidata.org/wiki/Q141776012
+Q141793267	0	worldcoinsinfo.com	https://www.wikidata.org/wiki/Q141793267
+Q141800927	0	2027年のMoto2	https://www.wikidata.org/wiki/Q141800927
+Q141801077	0	2027年のMoto3	https://www.wikidata.org/wiki/Q141801077
+Q141806818	0	DASH Cycle to Work	https://www.wikidata.org/wiki/Q141806818
+Q141807551	0	Canton Deido	https://www.wikidata.org/wiki/Q141807551
+Q141830793	0	Pranger upvc windows	https://www.wikidata.org/wiki/Q141830793
+Q141832780	0	Wuniche	https://www.wikidata.org/wiki/Q141832780
+Q141833253	0	Kataali	https://www.wikidata.org/wiki/Q141833253
+Q141842146	0		https://www.wikidata.org/wiki/Q141842146
+Q141855964	0		https://www.wikidata.org/wiki/Q141855964
 Q11000371	0	Gušteran repan	https://www.wikidata.org/wiki/Q11000371
 Q11797792	0	Olejek neroli	https://www.wikidata.org/wiki/Q11797792
 Q12743706	0	vot de blam	https://www.wikidata.org/wiki/Q12743706
-Q12826865	0		https://www.wikidata.org/wiki/Q12826865
-Q12909454	0		https://www.wikidata.org/wiki/Q12909454
 Q12977808	0	சங்குதுறை கடற்கரை	https://www.wikidata.org/wiki/Q12977808
 Q13181733	0	तिमालजात्रा	https://www.wikidata.org/wiki/Q13181733
 Q13186937	0	सिठी	https://www.wikidata.org/wiki/Q13186937
@@ -1053,6 +1041,7 @@ Q16343864	0	మొగల్తూరు సంస్థానం	https://www.wik
 Q16367486	0	გრადუსთა ბადე	https://www.wikidata.org/wiki/Q16367486
 Q16376362	0	ტეხასის ნავთობი	https://www.wikidata.org/wiki/Q16376362
 Q19675744	0	У калядны ціхі вечар	https://www.wikidata.org/wiki/Q19675744
+Q19676272	0	Над Кроманню	https://www.wikidata.org/wiki/Q19676272
 Q19705385	0	Електронни компоненти	https://www.wikidata.org/wiki/Q19705385
 Q19705914	0	Косъм	https://www.wikidata.org/wiki/Q19705914
 Q19712425	0	सहिद	https://www.wikidata.org/wiki/Q19712425
@@ -1189,8 +1178,10 @@ Q65404048	0	دەریای کاسپیەن	https://www.wikidata.org/wiki/Q65404048
 Q65407794	0	Хөгнө тарна байгалийн цогцолбор	https://www.wikidata.org/wiki/Q65407794
 Q65407976	0	තමන්නා	https://www.wikidata.org/wiki/Q65407976
 Q65408961	0	Kira	https://www.wikidata.org/wiki/Q65408961
+Q65427446	0	គ្រឹង	https://www.wikidata.org/wiki/Q65427446
 Q65447145	0	ມີສເຕີທົວລິຊຶມໂວຣ໌ວ	https://www.wikidata.org/wiki/Q65447145
 Q65447492	0	ປະເທດແອງໂກລາ	https://www.wikidata.org/wiki/Q65447492
+Q65448274	0		https://www.wikidata.org/wiki/Q65448274
 Q65454436	0	Motsana wa Moshaweng	https://www.wikidata.org/wiki/Q65454436
 Q66217651	0	"Nino Kala" Church	https://www.wikidata.org/wiki/Q66217651
 Q71535672	0	Kapuran	https://www.wikidata.org/wiki/Q71535672
@@ -1218,7 +1209,6 @@ Q97258367	0	ڈسکہ	https://www.wikidata.org/wiki/Q97258367
 Q97261374	0	بەردی نەیزەک	https://www.wikidata.org/wiki/Q97261374
 Q97261700	0	هەڵگری تۆپ	https://www.wikidata.org/wiki/Q97261700
 Q97262104	0	Nipun ranga mudalige	https://www.wikidata.org/wiki/Q97262104
-Q97263274	0	Нөмрөгийн ДЦГ	https://www.wikidata.org/wiki/Q97263274
 Q97263657	0	دهستان نمارستاق	https://www.wikidata.org/wiki/Q97263657
 Q97288648	0	Franjevačka crkva i samostan Gospe Sinjske u Sinju	https://www.wikidata.org/wiki/Q97288648
 Q97327828	0	Parencyma	https://www.wikidata.org/wiki/Q97327828
@@ -1322,6 +1312,7 @@ Q115802209	0	Trusted Information Security Assessment Exchange	https://www.wikida
 Q116021384	0	Dehydration responsive element	https://www.wikidata.org/wiki/Q116021384
 Q117338143	0	Sayyid Ash-Shuhada Mosque	https://www.wikidata.org/wiki/Q117338143
 Q118115133	0	তাজকিরাতুল ওয়াকিয়াত	https://www.wikidata.org/wiki/Q118115133
+Q118947428	0		https://www.wikidata.org/wiki/Q118947428
 Q118947525	0	Göbeği açık gömlek	https://www.wikidata.org/wiki/Q118947525
 Q118948088	0	Güneş geometrisi	https://www.wikidata.org/wiki/Q118948088
 Q118955951	0	Bilgisayar bilimleri felsefesi	https://www.wikidata.org/wiki/Q118955951
@@ -1396,6 +1387,7 @@ Q131860631	0	Aeroflot Flight Sh-4	https://www.wikidata.org/wiki/Q131860631
 Q131933451	0	Supamop	https://www.wikidata.org/wiki/Q131933451
 Q132528737	0	Mount Qomolangma Cultural Tourism Festival	https://www.wikidata.org/wiki/Q132528737
 Q132528743	0	Yalong Cultural Tourism Festival	https://www.wikidata.org/wiki/Q132528743
+Q132777669	0	Залізничний ринок	https://www.wikidata.org/wiki/Q132777669
 Q132778546	0	Разиграєв Олег Володимирович	https://www.wikidata.org/wiki/Q132778546
 Q132779420	0	Drivmansjett	https://www.wikidata.org/wiki/Q132779420
 Q132798104	0	Zepu Glacier	https://www.wikidata.org/wiki/Q132798104
@@ -1438,7 +1430,6 @@ Q137294562	0		https://www.wikidata.org/wiki/Q137294562
 Q137372941	0	Stanisławowo (rejon święciański)	https://www.wikidata.org/wiki/Q137372941
 Q137386778	0	Ndjobi	https://www.wikidata.org/wiki/Q137386778
 Q137512954	0	ⴰⵍⴱⵓⴹ:ⵉⵙⵎⴰⵡⵏ ⵉⵎⵎⵔⵡⴰⵙⵏ	https://www.wikidata.org/wiki/Q137512954
-Q137603247	0	Kosenivka	https://www.wikidata.org/wiki/Q137603247
 Q137668667	0	Категорія:Пожежі у Швейцарії	https://www.wikidata.org/wiki/Q137668667
 Q137718771	0	Шаблон:Фігурне катання на зимових Олімпійських іграх 2026	https://www.wikidata.org/wiki/Q137718771
 Q137728154	0	Category:Li Jingzhai	https://www.wikidata.org/wiki/Q137728154
@@ -1464,9 +1455,11 @@ Q139619360	0	Category:Sulphur mines	https://www.wikidata.org/wiki/Q139619360
 Q139677158	0	Regular Show: The Lost Tapes	https://www.wikidata.org/wiki/Q139677158
 Q139801249	0	ပြည်ထောင်စုအတိုင်ပင်ခံကောင်စီ	https://www.wikidata.org/wiki/Q139801249
 Q139826237	0	Arthur Gurney	https://www.wikidata.org/wiki/Q139826237
+Q139827589	0	2026 Copa Libertadores final	https://www.wikidata.org/wiki/Q139827589
 Q139853959	0	Emirate of Brakna	https://www.wikidata.org/wiki/Q139853959
 Q139856129	0	Prayer of recollection	https://www.wikidata.org/wiki/Q139856129
 Q139856181	0	Infused contemplation	https://www.wikidata.org/wiki/Q139856181
+Q139962682	0	Bitrise	https://www.wikidata.org/wiki/Q139962682
 Q139967281	0	Panasonic Lumix S5II	https://www.wikidata.org/wiki/Q139967281
 Q139997178	0	Sidoarjo Regency Regional House of Representatives	https://www.wikidata.org/wiki/Q139997178
 Q140043016	0	令和8年台風第5号	https://www.wikidata.org/wiki/Q140043016
@@ -1516,6 +1509,7 @@ Q141181508	0	2026 ICF Canoe Sprint World Championships	https://www.wikidata.org/
 Q141201641	0	Category:国別の人物関連のテンプレート	https://www.wikidata.org/wiki/Q141201641
 Q141247214	0	Mal:Tyrkias tropp i volleyball-VM 2025 for kvinner	https://www.wikidata.org/wiki/Q141247214
 Q141287181	0	Little Birdie	https://www.wikidata.org/wiki/Q141287181
+Q141309487	0	Alejandro Rengifo	https://www.wikidata.org/wiki/Q141309487
 Q141345674	0	Category:Asteroidea	https://www.wikidata.org/wiki/Q141345674
 Q141347285	0		https://www.wikidata.org/wiki/Q141347285
 Q141384625	0	Asad Bin Hafiz	https://www.wikidata.org/wiki/Q141384625
@@ -1530,8 +1524,10 @@ Q141501569	0	Leidrad	https://www.wikidata.org/wiki/Q141501569
 Q141529852	0	Yun-Xia Li	https://www.wikidata.org/wiki/Q141529852
 Q141538790	0	ŋⴄonge clan	https://www.wikidata.org/wiki/Q141538790
 Q141538809	0	Mmamba  kakoboza clan	https://www.wikidata.org/wiki/Q141538809
+Q141539614	0	Instituto Nobel da Noruega	https://www.wikidata.org/wiki/Q141539614
 Q141541567	0	Scheda doppia da cancellare.	https://www.wikidata.org/wiki/Q141541567
 Q141542292	0	MediStory	https://www.wikidata.org/wiki/Q141542292
+Q141544681	0	Adam Penn	https://www.wikidata.org/wiki/Q141544681
 Q141550032	0		https://www.wikidata.org/wiki/Q141550032
 Q141551774	0		https://www.wikidata.org/wiki/Q141551774
 Q141551850	0	وزارت دادگستری در ایران	https://www.wikidata.org/wiki/Q141551850
@@ -1558,7 +1554,6 @@ Q141613017	0		https://www.wikidata.org/wiki/Q141613017
 Q141622126	0	Précieux Aziagnon	https://www.wikidata.org/wiki/Q141622126
 Q141622554	0		https://www.wikidata.org/wiki/Q141622554
 Q141624074	0	: Norendranath Sen	https://www.wikidata.org/wiki/Q141624074
-Q141627950	0	Jacob Stegenga	https://www.wikidata.org/wiki/Q141627950
 Q141630277	0		https://www.wikidata.org/wiki/Q141630277
 Q141644551	0	Cunt	https://www.wikidata.org/wiki/Q141644551
 Q141648768	0		https://www.wikidata.org/wiki/Q141648768
@@ -1571,6 +1566,7 @@ Q141662352	0	Programa Mentis	https://www.wikidata.org/wiki/Q141662352
 Q141673661	0	juda malayalam	https://www.wikidata.org/wiki/Q141673661
 Q141675769	0	Saurauia vanderwerffii	https://www.wikidata.org/wiki/Q141675769
 Q141677043	0	rki.wikipedia.org	https://www.wikidata.org/wiki/Q141677043
+Q141677854	0	Vahid Alizadeh Razzazi	https://www.wikidata.org/wiki/Q141677854
 Q141679189	0	Dil (Malayalam movie)	https://www.wikidata.org/wiki/Q141679189
 Q141679919	0	Elchi Studios	https://www.wikidata.org/wiki/Q141679919
 Q141682844	0	Mathilde von Virnebourg	https://www.wikidata.org/wiki/Q141682844
@@ -1579,28 +1575,53 @@ Q141693097	0	Matale Church of Uganda.	https://www.wikidata.org/wiki/Q141693097
 Q141711419	0	Studio-École	https://www.wikidata.org/wiki/Q141711419
 Q141713755	0	The Wingfeather Saga	https://www.wikidata.org/wiki/Q141713755
 Q141717151	0	Ruby Jain	https://www.wikidata.org/wiki/Q141717151
+Q141718381	0	Pedro Silva Fernández	https://www.wikidata.org/wiki/Q141718381
 Q141724537	0	Gianpiero Fachin	https://www.wikidata.org/wiki/Q141724537
 Q141737114	0	Bill Terezakis	https://www.wikidata.org/wiki/Q141737114
 Q141737707	0	Category:Rock bands	https://www.wikidata.org/wiki/Q141737707
 Q141740889	0		https://www.wikidata.org/wiki/Q141740889
 Q141741336	0	Category:20th-century American women rabbis	https://www.wikidata.org/wiki/Q141741336
-Q141747883	0	furanosteroid	https://www.wikidata.org/wiki/Q141747883
 Q141751913	0	Efa Mbioto Mbiete	https://www.wikidata.org/wiki/Q141751913
 Q141751924	0	Itak Ikot Akpan Ndem	https://www.wikidata.org/wiki/Q141751924
 Q141757614	0	Coupling	https://www.wikidata.org/wiki/Q141757614
 Q141762995	0	McLaren Ultimate Vision Gran Turismo	https://www.wikidata.org/wiki/Q141762995
 Q141763051	0	Chevrolet Corvette CX.R Vision Gran Turismo	https://www.wikidata.org/wiki/Q141763051
 Q141763071	0	Italdesign EXENEO Vision Gran Turismo	https://www.wikidata.org/wiki/Q141763071
-Q141774555	0	Xiamen Weifeishi Industrial & Trading Co., Ltd.	https://www.wikidata.org/wiki/Q141774555
-Q141777062	0		https://www.wikidata.org/wiki/Q141777062
-Q141777127	0		https://www.wikidata.org/wiki/Q141777127
+Q141775846	0	Colin Campbell (sociologist)	https://www.wikidata.org/wiki/Q141775846
+Q141779855	0		https://www.wikidata.org/wiki/Q141779855
+Q141782384	0	Salvo Cine	https://www.wikidata.org/wiki/Q141782384
+Q141794889	0	Governo Niculescu	https://www.wikidata.org/wiki/Q141794889
+Q141797889	0	HEP GmbH	https://www.wikidata.org/wiki/Q141797889
+Q141798191	0	DFV Asesores Empresariales	https://www.wikidata.org/wiki/Q141798191
+Q141800527	0	Category:前1020年代	https://www.wikidata.org/wiki/Q141800527
+Q141800530	0	Category:前1030年代	https://www.wikidata.org/wiki/Q141800530
+Q141803944	0	Category:Mammals of Tajikistan	https://www.wikidata.org/wiki/Q141803944
+Q141805608	0	apamin	https://www.wikidata.org/wiki/Q141805608
+Q141806412	0		https://www.wikidata.org/wiki/Q141806412
+Q141810831	0	Category:Subdivisions of Aube	https://www.wikidata.org/wiki/Q141810831
+Q141810955	0	Tin Xuyên Việt	https://www.wikidata.org/wiki/Q141810955
+Q141814213	0	egg product	https://www.wikidata.org/wiki/Q141814213
+Q141819691	0	2019 Kenya Population and Housing Census	https://www.wikidata.org/wiki/Q141819691
+Q141822136	0	Unidad del Pueblo Canario	https://www.wikidata.org/wiki/Q141822136
+Q141832853	0	Ŋuntiyuwa	https://www.wikidata.org/wiki/Q141832853
+Q141832879	0	Nindoo	https://www.wikidata.org/wiki/Q141832879
+Q141841682	0	Hollow	https://www.wikidata.org/wiki/Q141841682
+Q141847354	0	การประกวดเพลงจูเนียร์ยูโรวิชันปี 2027	https://www.wikidata.org/wiki/Q141847354
+Q141854926	0	BMW 3 Series (G50)	https://www.wikidata.org/wiki/Q141854926
+Q6072113	0	Percha (náutica)	https://www.wikidata.org/wiki/Q6072113
 Q6781220	0	عودہ ابو تایہ	https://www.wikidata.org/wiki/Q6781220
 Q9351317	0	Szereg łączeniowy	https://www.wikidata.org/wiki/Q9351317
+Q9362472	0	Trójkąt szyjny	https://www.wikidata.org/wiki/Q9362472
+Q12560152	0	Рибера-д'Эбре	https://www.wikidata.org/wiki/Q12560152
 Q12565576	0	Технологиялық жұмыссыздық	https://www.wikidata.org/wiki/Q12565576
+Q12664587	0	Marksizmo-leninizmo institutas prie TSKP CK	https://www.wikidata.org/wiki/Q12664587
 Q12824929	0	Kluj universiteti	https://www.wikidata.org/wiki/Q12824929
+Q12832439	0	Zahar bezlari	https://www.wikidata.org/wiki/Q12832439
 Q13085501	0	Mreža poligona	https://www.wikidata.org/wiki/Q13085501
 Q13174922	0	Экспрессия	https://www.wikidata.org/wiki/Q13174922
 Q13201401	0	Карнайгул	https://www.wikidata.org/wiki/Q13201401
+Q13201706	0	Мурғи марҷон	https://www.wikidata.org/wiki/Q13201706
+Q13202206	0	Хокканак	https://www.wikidata.org/wiki/Q13202206
 Q15689611	0	ఆకురాలు కాలం	https://www.wikidata.org/wiki/Q15689611
 Q15692532	0	కివీ పండు	https://www.wikidata.org/wiki/Q15692532
 Q15705917	0	నేపాల్ దేశంలో పండగలు	https://www.wikidata.org/wiki/Q15705917
@@ -1632,6 +1653,7 @@ Q19738263	0	ස්පාඤ්ඤ ජාතික පාපන්දු කණ�
 Q19809771	0	மாங்கனித் திருவிழா	https://www.wikidata.org/wiki/Q19809771
 Q19812719	0	विशाखा उत्सव	https://www.wikidata.org/wiki/Q19812719
 Q19815640	0	वि.घ. देशपांडे	https://www.wikidata.org/wiki/Q19815640
+Q20484308	0	Пештера	https://www.wikidata.org/wiki/Q20484308
 Q20497060	0	Владетели на Прованс	https://www.wikidata.org/wiki/Q20497060
 Q20497176	0	Първа война на Папската държава с Кастро	https://www.wikidata.org/wiki/Q20497176
 Q20498672	0	Албертини	https://www.wikidata.org/wiki/Q20498672
@@ -1708,6 +1730,7 @@ Q25637885	0	රතන සූත්‍රය	https://www.wikidata.org/wiki/Q25637
 Q25639795	0	Teotl	https://www.wikidata.org/wiki/Q25639795
 Q25654541	0	قاضي اسد عابد	https://www.wikidata.org/wiki/Q25654541
 Q25663553	0	გოართოიანაფილი ომაფეშ პრემიერ-მინისტრი	https://www.wikidata.org/wiki/Q25663553
+Q25663697	0	Soqıci	https://www.wikidata.org/wiki/Q25663697
 Q25664362	0	رخص	https://www.wikidata.org/wiki/Q25664362
 Q25664974	0	سلکی سر	https://www.wikidata.org/wiki/Q25664974
 Q25666206	0	جوانه گندم	https://www.wikidata.org/wiki/Q25666206
@@ -1725,6 +1748,8 @@ Q25693702	0	Gagauz istoriyası	https://www.wikidata.org/wiki/Q25693702
 Q25695448	0	سامسا	https://www.wikidata.org/wiki/Q25695448
 Q25695490	0	مۇسەللەس	https://www.wikidata.org/wiki/Q25695490
 Q25696403	0	ئەسىر	https://www.wikidata.org/wiki/Q25696403
+Q25702085	0	Umurenge wa Rutunga	https://www.wikidata.org/wiki/Q25702085
+Q25702100	0	Umurenge wa Mimuli	https://www.wikidata.org/wiki/Q25702100
 Q25702851	0	Coneschtoga Wagge	https://www.wikidata.org/wiki/Q25702851
 Q25705111	0	Лаа	https://www.wikidata.org/wiki/Q25705111
 Q25705180	0	Аңгылал	https://www.wikidata.org/wiki/Q25705180
@@ -1744,7 +1769,6 @@ Q31194594	0	Ішкі туризм	https://www.wikidata.org/wiki/Q31194594
 Q31197342	0	טופס טיולים	https://www.wikidata.org/wiki/Q31197342
 Q31199684	0	Vandens talpykla	https://www.wikidata.org/wiki/Q31199684
 Q31200229	0	Sarajevo u Austro-Ugarskoj	https://www.wikidata.org/wiki/Q31200229
-Q31302588	0	شداد بن اوس	https://www.wikidata.org/wiki/Q31302588
 Q31324580	0	รายชื่อจำนวน	https://www.wikidata.org/wiki/Q31324580
 Q31366482	0	मैंबाबु	https://www.wikidata.org/wiki/Q31366482
 Q31441161	0	மாஃபா பாண்டியராஜன்	https://www.wikidata.org/wiki/Q31441161
@@ -1756,7 +1780,6 @@ Q31703144	0	നൗറുവെൻ ഭാഷ	https://www.wikidata.org/wiki/Q31703
 Q31738500	0	वसुधा सरदार	https://www.wikidata.org/wiki/Q31738500
 Q31738920	0	मनपूर	https://www.wikidata.org/wiki/Q31738920
 Q31739776	0	महिला अत्याचार	https://www.wikidata.org/wiki/Q31739776
-Q31769074	0	صعصعه بن صوحان	https://www.wikidata.org/wiki/Q31769074
 Q31790748	0	ਬਾਇਓਮੈਟ੍ਰਿਕ ਤਕਨੀਕ	https://www.wikidata.org/wiki/Q31790748
 Q31795585	0	Католик шашин	https://www.wikidata.org/wiki/Q31795585
 Q31802507	0	Groate kaardebol	https://www.wikidata.org/wiki/Q31802507
@@ -1829,6 +1852,7 @@ Q61082610	0	Mișcare de rotație	https://www.wikidata.org/wiki/Q61082610
 Q61083680	0	Kedominanan genetik	https://www.wikidata.org/wiki/Q61083680
 Q61088787	0	Praja Mangkunegaran	https://www.wikidata.org/wiki/Q61088787
 Q61088800	0	Perpustakaan Negara Albania	https://www.wikidata.org/wiki/Q61088800
+Q61103281	0	Bruce Lee, the Man and the Legend	https://www.wikidata.org/wiki/Q61103281
 Q61111243	0	Barisan Nasional	https://www.wikidata.org/wiki/Q61111243
 Q61118440	0	شاہراہ قراقرم	https://www.wikidata.org/wiki/Q61118440
 Q61119310	0	ﮐُﮍﯼ	https://www.wikidata.org/wiki/Q61119310
@@ -1991,9 +2015,15 @@ Q65446274	0	Dindeno	https://www.wikidata.org/wiki/Q65446274
 Q65447074	0	ພະລັງງານແບບຍືນຍົງ	https://www.wikidata.org/wiki/Q65447074
 Q65447429	0	ນິນໂ ມະຣິນະ	https://www.wikidata.org/wiki/Q65447429
 Q65447475	0	ປະເທດສະວີເດນ	https://www.wikidata.org/wiki/Q65447475
+Q65450574	0	Umurenge wa Kibirizi	https://www.wikidata.org/wiki/Q65450574
+Q65450582	0	Umurenge wa Mugombwa	https://www.wikidata.org/wiki/Q65450582
+Q65450584	0	Umurenge wa Ndera	https://www.wikidata.org/wiki/Q65450584
+Q65450587	0	Umurenge wa Nyagihanga	https://www.wikidata.org/wiki/Q65450587
+Q65450591	0	Umurenge wa Shyogwe	https://www.wikidata.org/wiki/Q65450591
 Q65450861	0	Dulahu	https://www.wikidata.org/wiki/Q65450861
 Q65452092	0	Sahutu	https://www.wikidata.org/wiki/Q65452092
 Q65452101	0	Salasa	https://www.wikidata.org/wiki/Q65452101
+Q65452209	0	Qedani Mahlangu	https://www.wikidata.org/wiki/Q65452209
 Q65452232	0	UMkhosi woSelwa	https://www.wikidata.org/wiki/Q65452232
 Q65454114	0	Hamisi	https://www.wikidata.org/wiki/Q65454114
 Q65454168	0	Hulalo(penanggalan)	https://www.wikidata.org/wiki/Q65454168
@@ -2013,7 +2043,6 @@ Q85995870	0	Võru linnavolinike loend 1919	https://www.wikidata.org/wiki/Q859958
 Q85995937	0	Viljandi linnavolinike loend 1919	https://www.wikidata.org/wiki/Q85995937
 Q85997642	0	तमिळची तंगपांडियन	https://www.wikidata.org/wiki/Q85997642
 Q86004686	0	ایوب نیشنل پارک	https://www.wikidata.org/wiki/Q86004686
-Q86006683	0	حبیب بن زید	https://www.wikidata.org/wiki/Q86006683
 Q86008081	0	Hoàng Thắng	https://www.wikidata.org/wiki/Q86008081
 Q86010755	0	Nhân vật phụ trong Resident Evil	https://www.wikidata.org/wiki/Q86010755
 Q86011749	0	Snowtown	https://www.wikidata.org/wiki/Q86011749
@@ -2036,6 +2065,7 @@ Q97224077	0	پوهنه ادبی مکتب	https://www.wikidata.org/wiki/Q97224077
 Q97225631	0	वृप्रचिट्टी	https://www.wikidata.org/wiki/Q97225631
 Q97227570	0	Wehrmachti jalaväediviisi koosseis	https://www.wikidata.org/wiki/Q97227570
 Q97229836	0	विक्रम और बेताल	https://www.wikidata.org/wiki/Q97229836
+Q97232379	0	Гарди гул	https://www.wikidata.org/wiki/Q97232379
 Q97233842	0	Ablatsioon	https://www.wikidata.org/wiki/Q97233842
 Q97234747	0	Strahwalde	https://www.wikidata.org/wiki/Q97234747
 Q97235711	0	Blue Angels	https://www.wikidata.org/wiki/Q97235711
@@ -2057,7 +2087,6 @@ Q97258422	0	စူဠဒုက္ခက္ခန္ဓသုတ်	https://www.w
 Q97259281	0	ဗြဟ္မနိမန္တနိကသုတ်	https://www.wikidata.org/wiki/Q97259281
 Q97259648	0	မြိုဟူသောဝေါဟာရ	https://www.wikidata.org/wiki/Q97259648
 Q97260117	0	အနုမာနသုတ်	https://www.wikidata.org/wiki/Q97260117
-Q97261256	0	Yenimahalle, Aldûş	https://www.wikidata.org/wiki/Q97261256
 Q97261511	0	زانستگا	https://www.wikidata.org/wiki/Q97261511
 Q97261584	0	ಚಾರಿತ್ರಿಕ ಭಾಷಾವಿಜ್ಞಾನ	https://www.wikidata.org/wiki/Q97261584
 Q97262457	0	İmperator	https://www.wikidata.org/wiki/Q97262457
@@ -2072,6 +2101,10 @@ Q97269318	0	Piérres du Niton	https://www.wikidata.org/wiki/Q97269318
 Q97269804	0	बोगोटा	https://www.wikidata.org/wiki/Q97269804
 Q97270442	0	Umchazamhlaba	https://www.wikidata.org/wiki/Q97270442
 Q97270755	0	މުހައްމަދު އަޖުފާން	https://www.wikidata.org/wiki/Q97270755
+Q97270987	0	Umurenge wa Kamegeli	https://www.wikidata.org/wiki/Q97270987
+Q97270995	0	Umurenge wa Kigoma	https://www.wikidata.org/wiki/Q97270995
+Q97271009	0	Umurenge wa Nyakabanda	https://www.wikidata.org/wiki/Q97271009
+Q97271026	0	Umurenge wa Nyarugunga	https://www.wikidata.org/wiki/Q97271026
 Q97271886	0	Pupudak baras	https://www.wikidata.org/wiki/Q97271886
 Q97272643	0	Sido	https://www.wikidata.org/wiki/Q97272643
 Q97272766	0	Chiyowoyelo	https://www.wikidata.org/wiki/Q97272766
@@ -2160,6 +2193,7 @@ Q109385815	0	भारत-हंगरी संबंध	https://www.wikidata.o
 Q109388327	0	चारबाग़ उद्यान	https://www.wikidata.org/wiki/Q109388327
 Q109388331	0	एनिमेटर	https://www.wikidata.org/wiki/Q109388331
 Q109388579	0	भारत का दूतावास, कीव	https://www.wikidata.org/wiki/Q109388579
+Q109390351	0	Çavdarhisar Meslek Yüksekokulu	https://www.wikidata.org/wiki/Q109390351
 Q109393044	0	Lenfangioma	https://www.wikidata.org/wiki/Q109393044
 Q109414927	0	伊朗選區	https://www.wikidata.org/wiki/Q109414927
 Q109429531	0	Pháp lam	https://www.wikidata.org/wiki/Q109429531
@@ -2496,7 +2530,6 @@ Q139916733	0	ورثينغتون_(كنتاكي)	https://www.wikidata.org/wiki/Q13
 Q139961743	0	Velvex	https://www.wikidata.org/wiki/Q139961743
 Q139968320	0	Rząd Andrisa Kulbergsa	https://www.wikidata.org/wiki/Q139968320
 Q139969436	0	Lemborexant	https://www.wikidata.org/wiki/Q139969436
-Q139969663	0	OPPO Find X8	https://www.wikidata.org/wiki/Q139969663
 Q139969946	0	Samsung Wallet	https://www.wikidata.org/wiki/Q139969946
 Q139969954	0	Farmacoeconomia	https://www.wikidata.org/wiki/Q139969954
 Q139969965	0	Agague	https://www.wikidata.org/wiki/Q139969965
@@ -2603,11 +2636,10 @@ Q141539293	0	BUSY BOY	https://www.wikidata.org/wiki/Q141539293
 Q141539444	0	HOSSAM SAID	https://www.wikidata.org/wiki/Q141539444
 Q141540025	0	Adrienne Carter (actress)	https://www.wikidata.org/wiki/Q141540025
 Q141541246	0	Ergenekon Cephesi	https://www.wikidata.org/wiki/Q141541246
-Q141541382	0	saintbynature	https://www.wikidata.org/wiki/Q141541382
 Q141544622	0	Todd Kubrak	https://www.wikidata.org/wiki/Q141544622
-Q141544681	0	Adam Penn	https://www.wikidata.org/wiki/Q141544681
 Q141544770	0	Kristen Reidel	https://www.wikidata.org/wiki/Q141544770
 Q141544778	0	Reilly Smith	https://www.wikidata.org/wiki/Q141544778
+Q141545072	0	Tanveer Ahamed Sindhanur	https://www.wikidata.org/wiki/Q141545072
 Q141545759	0	protectmydata.com	https://www.wikidata.org/wiki/Q141545759
 Q141550253	0	Arnav Rathour	https://www.wikidata.org/wiki/Q141550253
 Q141551201	0	العلاقات_بين_روسيا_وإقليم_كردستان	https://www.wikidata.org/wiki/Q141551201
@@ -2633,7 +2665,6 @@ Q141567786	0	Scoil Iognaid	https://www.wikidata.org/wiki/Q141567786
 Q141574135	0	Olamifrosh	https://www.wikidata.org/wiki/Q141574135
 Q141581495	0	Jose Miguel García	https://www.wikidata.org/wiki/Q141581495
 Q141583060	0	Quartal: Податки ФОП	https://www.wikidata.org/wiki/Q141583060
-Q141583283	0	Zemo Sakeni	https://www.wikidata.org/wiki/Q141583283
 Q141585749	0	WhisperChat	https://www.wikidata.org/wiki/Q141585749
 Q141591400	0	exposition Alice Neel. Un regard engagé	https://www.wikidata.org/wiki/Q141591400
 Q141591578	0	Exposition le spectacle de la marchandise, 1860-1914	https://www.wikidata.org/wiki/Q141591578
@@ -2641,6 +2672,7 @@ Q141592623	0	Auto Francês	https://www.wikidata.org/wiki/Q141592623
 Q141592680	0	Shanghai Writers’ Association	https://www.wikidata.org/wiki/Q141592680
 Q141594039	0	Ammar Almaaytah	https://www.wikidata.org/wiki/Q141594039
 Q141595842	0	Tuhua dialects	https://www.wikidata.org/wiki/Q141595842
+Q141596745	0	Md Soeb Akhtar	https://www.wikidata.org/wiki/Q141596745
 Q141600295	0	Indu Bhushan Goswami	https://www.wikidata.org/wiki/Q141600295
 Q141600795	0	jina-embeddings-v3: Multilingual Embeddings With Task LoRA	https://www.wikidata.org/wiki/Q141600795
 Q141601019	0	Daniel Kran	https://www.wikidata.org/wiki/Q141601019
@@ -2656,20 +2688,23 @@ Q141631854	0	Dominika Staniewicz	https://www.wikidata.org/wiki/Q141631854
 Q141640902	0	Nicole Veleva	https://www.wikidata.org/wiki/Q141640902
 Q141648116	0	Category:1986 Asian Winter Games	https://www.wikidata.org/wiki/Q141648116
 Q141658530	0	EscapeUp	https://www.wikidata.org/wiki/Q141658530
+Q141659552	0	Federico Errázuriz Echaurren cabinet ministers	https://www.wikidata.org/wiki/Q141659552
+Q141660088	0	Saunders Rhys Whalen	https://www.wikidata.org/wiki/Q141660088
 Q141660705	0	Preachers on the FM	https://www.wikidata.org/wiki/Q141660705
 Q141665179	0	Subhash Singh	https://www.wikidata.org/wiki/Q141665179
+Q141666639	0	วิกิพีเดีย:Wikipedia Asian Month 2026/Participants	https://www.wikidata.org/wiki/Q141666639
 Q141668473	0	Carretera Perdida	https://www.wikidata.org/wiki/Q141668473
 Q141668684	0	MCKLEY DIZI	https://www.wikidata.org/wiki/Q141668684
 Q141669115	0	psoola	https://www.wikidata.org/wiki/Q141669115
-Q141677854	0	Vahid Alizadeh Razzazi	https://www.wikidata.org/wiki/Q141677854
 Q141677863	0	NZUME BRUNO	https://www.wikidata.org/wiki/Q141677863
 Q141678490	0	Maddhapara College	https://www.wikidata.org/wiki/Q141678490
-Q141679385	0	Airton	https://www.wikidata.org/wiki/Q141679385
 Q141680514	0	La Chaleur	https://www.wikidata.org/wiki/Q141680514
 Q141681204	0	MuntasirTaus	https://www.wikidata.org/wiki/Q141681204
 Q141681585	0	مهندس / شمسان راجح سعد المالكي متخصص في سلامة الطيران ومكافحة الحرائق ومستشار سلامة ومدرب اطفاء وإنقاذ ومكافحة الحرائق. خبير وكاتب مقالات في مجله السلامه العربيه  المعهد العربي للسلامم	https://www.wikidata.org/wiki/Q141681585
 Q141681687	0		https://www.wikidata.org/wiki/Q141681687
+Q141685034	0	Pedro Montt cabinet ministers	https://www.wikidata.org/wiki/Q141685034
 Q141686766	0	Elevo Foundation	https://www.wikidata.org/wiki/Q141686766
+Q141687266	0	Toluwani Adelowotan	https://www.wikidata.org/wiki/Q141687266
 Q141687861	0	Natasha Johl	https://www.wikidata.org/wiki/Q141687861
 Q141688146	0	זן (שיר)	https://www.wikidata.org/wiki/Q141688146
 Q141708135	0	Paul Hashim et al. v. Malia M. Cohen et al.	https://www.wikidata.org/wiki/Q141708135
@@ -2686,15 +2721,31 @@ Q141735135	0	Pat Murphy	https://www.wikidata.org/wiki/Q141735135
 Q141735281	0	Distribució de les espècies	https://www.wikidata.org/wiki/Q141735281
 Q141735420	0	Saç tozu	https://www.wikidata.org/wiki/Q141735420
 Q141735969	0	Mazyar Nazarbeigi	https://www.wikidata.org/wiki/Q141735969
-Q141737643	0	Rachel Cole	https://www.wikidata.org/wiki/Q141737643
 Q141737768	0	Esopo	https://www.wikidata.org/wiki/Q141737768
+Q141745977	0	suverenita	https://www.wikidata.org/wiki/Q141745977
 Q141753775	0		https://www.wikidata.org/wiki/Q141753775
 Q141753816	0		https://www.wikidata.org/wiki/Q141753816
+Q141759487	0	Gregorio Schepeler	https://www.wikidata.org/wiki/Q141759487
 Q141761568	0	chấm.	https://www.wikidata.org/wiki/Q141761568
-Q141764048	0	NINZIZA DON	https://www.wikidata.org/wiki/Q141764048
 Q141774832	0	Dragon-Child and Sun-Child	https://www.wikidata.org/wiki/Q141774832
-Q141775846	0	Colin Campbell (sociologist)	https://www.wikidata.org/wiki/Q141775846
-Q141776293	0	tangible personal property	https://www.wikidata.org/wiki/Q141776293
+Q141777859	0	Captivity (animal)	https://www.wikidata.org/wiki/Q141777859
+Q141778605	0	Gora in San Giovanni Valdarno	https://www.wikidata.org/wiki/Q141778605
+Q141778641	0	Tehsuan Glover	https://www.wikidata.org/wiki/Q141778641
+Q141783858	0	Republik Zarvonia	https://www.wikidata.org/wiki/Q141783858
+Q141788007	0	Anexo:Temporada 2025-26 del Rayo Vallecano de Madrid	https://www.wikidata.org/wiki/Q141788007
+Q141795066	0	Vasyl Moroz	https://www.wikidata.org/wiki/Q141795066
+Q141798221	0	Masoom Minawala	https://www.wikidata.org/wiki/Q141798221
+Q141801538	0	strůjce	https://www.wikidata.org/wiki/Q141801538
+Q141804151	0	David E Graham	https://www.wikidata.org/wiki/Q141804151
+Q141808003	0	מערך אופק	https://www.wikidata.org/wiki/Q141808003
+Q141809975	0	Kathryn Ramey	https://www.wikidata.org/wiki/Q141809975
+Q141816249	0	Dev Studio Simulator	https://www.wikidata.org/wiki/Q141816249
+Q141817781	0	Sixxlord	https://www.wikidata.org/wiki/Q141817781
+Q141823376	0	High Scale/Jon and Grinch and Mom and Dad;s Night Out	https://www.wikidata.org/wiki/Q141823376
+Q141833221	0	Azinpaga	https://www.wikidata.org/wiki/Q141833221
+Q141838329	0	കാങ് ദാ റി എയർപോർട്ട്	https://www.wikidata.org/wiki/Q141838329
+Q141843021	0	Dekalog Yayınları	https://www.wikidata.org/wiki/Q141843021
+Q141852587	0		https://www.wikidata.org/wiki/Q141852587
 Q55412470	0	Amoebic meningoencephalitis	https://www.wikidata.org/wiki/Q55412470
 Q55412498	0	self-aggressive behaviour	https://www.wikidata.org/wiki/Q55412498
 Q55412560	0	molar wear	https://www.wikidata.org/wiki/Q55412560
@@ -2874,7 +2925,6 @@ Q139882407	0	Q4102597	https://www.wikidata.org/wiki/Q139882407
 Q139882408	0	Yenmiama	https://www.wikidata.org/wiki/Q139882408
 Q139882409	0	Yentangu	https://www.wikidata.org/wiki/Q139882409
 Q139883875	0	priority intelligence requirement	https://www.wikidata.org/wiki/Q139883875
-Q139891481	0	Comité '1900 Nederlandsche Vrouwen 1911'	https://www.wikidata.org/wiki/Q139891481
 Q139900370	0	Arakanese reference templates	https://www.wikidata.org/wiki/Q139900370
 Q139912978	0	Essential Elements of Friendly Information	https://www.wikidata.org/wiki/Q139912978
 Q139912979	0	commander’s critical information requirement	https://www.wikidata.org/wiki/Q139912979
@@ -2983,7 +3033,6 @@ Q141538998	0	Nnyonyi nnyange clan	https://www.wikidata.org/wiki/Q141538998
 Q141539034	0	Виталий Витальевич Петрович	https://www.wikidata.org/wiki/Q141539034
 Q141539091	0	Gabriel Bankman-Fried	https://www.wikidata.org/wiki/Q141539091
 Q141540034	0	BS Honey	https://www.wikidata.org/wiki/Q141540034
-Q141541471	0	اطلاع گرایی مضاعف	https://www.wikidata.org/wiki/Q141541471
 Q141541580	0	Madonna Assunta	https://www.wikidata.org/wiki/Q141541580
 Q141541829	0	ragazzo piu brutto di genova	https://www.wikidata.org/wiki/Q141541829
 Q141541914	0	Πλατανόδασος Κατερίνης	https://www.wikidata.org/wiki/Q141541914
@@ -2996,13 +3045,11 @@ Q141542494	0	Electreon Wireless	https://www.wikidata.org/wiki/Q141542494
 Q141542582	0	Y Diliau	https://www.wikidata.org/wiki/Q141542582
 Q141542812	0	Provincial Museum of Natural Sciences of Villa Escolar	https://www.wikidata.org/wiki/Q141542812
 Q141543407	0	DIE FILMAGENTUR	https://www.wikidata.org/wiki/Q141543407
-Q141543416	0	Equalizent ST GmbH	https://www.wikidata.org/wiki/Q141543416
 Q141543424	0	European Heritage Awards Archive	https://www.wikidata.org/wiki/Q141543424
 Q141543425	0	Europeana Local Austria	https://www.wikidata.org/wiki/Q141543425
 Q141543429	0	Persenbeug-Gottsdorf Local History Museum	https://www.wikidata.org/wiki/Q141543429
 Q141543472	0	Teesdorf Local History Museum	https://www.wikidata.org/wiki/Q141543472
 Q141543478	0	polynomial variable	https://www.wikidata.org/wiki/Q141543478
-Q141543500	0	Kulturgut Digital	https://www.wikidata.org/wiki/Q141543500
 Q141543501	0	Raagavan Kumar	https://www.wikidata.org/wiki/Q141543501
 Q141543529	0	Art Gallery Waldviertel	https://www.wikidata.org/wiki/Q141543529
 Q141543532	0	Künstlerhaus Archive	https://www.wikidata.org/wiki/Q141543532
@@ -3018,10 +3065,8 @@ Q141544706	0	Asha Michelle Wilson	https://www.wikidata.org/wiki/Q141544706
 Q141544719	0	Bahnhof Niederntudorf	https://www.wikidata.org/wiki/Q141544719
 Q141544746	0	DNN Learning	https://www.wikidata.org/wiki/Q141544746
 Q141544772	0	Tessa Blake	https://www.wikidata.org/wiki/Q141544772
-Q141545072	0	Tanveer Ahamed Sindhanur	https://www.wikidata.org/wiki/Q141545072
 Q141545286	0	Gerson Fogaça	https://www.wikidata.org/wiki/Q141545286
 Q141545509	0	Mario Murakami	https://www.wikidata.org/wiki/Q141545509
-Q141545583	0	Alchemist Game Studios	https://www.wikidata.org/wiki/Q141545583
 Q141546833	0	欣晨工業有限公司	https://www.wikidata.org/wiki/Q141546833
 Q141546854	0	Hsin-Chan Industrial Co., Ltd.	https://www.wikidata.org/wiki/Q141546854
 Q141547004	0	Sjöslingan	https://www.wikidata.org/wiki/Q141547004
@@ -3068,7 +3113,6 @@ Q141561629	0	طرق جماع	https://www.wikidata.org/wiki/Q141561629
 Q141561702	0	Johnny Francis Grant	https://www.wikidata.org/wiki/Q141561702
 Q141561957	0	دار الحديث السامرية	https://www.wikidata.org/wiki/Q141561957
 Q141563534	0	الشيخ عبدالله محمد آل مشاري	https://www.wikidata.org/wiki/Q141563534
-Q141564524	0	oyetunde pelumi	https://www.wikidata.org/wiki/Q141564524
 Q141564645	0	Lida Çiteli	https://www.wikidata.org/wiki/Q141564645
 Q141565136	0	Mediolanum Investigazioni S.r.l.	https://www.wikidata.org/wiki/Q141565136
 Q141566030	0	Prosodic Development During the Early School-Age Years	https://www.wikidata.org/wiki/Q141566030
@@ -3086,28 +3130,17 @@ Q141572297	0	Alaine Huntington	https://www.wikidata.org/wiki/Q141572297
 Q141572356	0	ಕೋಶನ್ ಪೇಪರ್ ಸೆವೆನ್ತ್ ಸ್ಟ್ಯಾಂಡರ್ಡ್	https://www.wikidata.org/wiki/Q141572356
 Q141572569	0	בית הכנסת בז'אטץ	https://www.wikidata.org/wiki/Q141572569
 Q141572572	0	Baton Health®	https://www.wikidata.org/wiki/Q141572572
-Q141574739	0	Space'M Online	https://www.wikidata.org/wiki/Q141574739
 Q141574991	0	Logo Chéries-Chéris	https://www.wikidata.org/wiki/Q141574991
 Q141575447	0	Embrace Relief Foundation	https://www.wikidata.org/wiki/Q141575447
 Q141575511	0	Cem A.	https://www.wikidata.org/wiki/Q141575511
 Q141575583	0	شرکت حمل و نقل آنی بار	https://www.wikidata.org/wiki/Q141575583
-Q141575590	0	Eveari	https://www.wikidata.org/wiki/Q141575590
 Q141575783	0	Drop eyes	https://www.wikidata.org/wiki/Q141575783
 Q141575808	0	Drop eyes	https://www.wikidata.org/wiki/Q141575808
 Q141575926	0	Savikalpa Samadhi	https://www.wikidata.org/wiki/Q141575926
-Q141576052	0	Elin Sophie van Luijk	https://www.wikidata.org/wiki/Q141576052
-Q141576451	0		https://www.wikidata.org/wiki/Q141576451
-Q141576479	0		https://www.wikidata.org/wiki/Q141576479
 Q141578275	0	Rinoplastia	https://www.wikidata.org/wiki/Q141578275
-Q141578483	0	National Public Service Trust	https://www.wikidata.org/wiki/Q141578483
 Q141578508	0	petatas	https://www.wikidata.org/wiki/Q141578508
-Q141578524	0	Guillaume Bureau Hypnopraticien	https://www.wikidata.org/wiki/Q141578524
 Q141579406	0	Eyvro Eyewear	https://www.wikidata.org/wiki/Q141579406
 Q141579442	0		https://www.wikidata.org/wiki/Q141579442
-Q141579868	0	U+1FAEA	https://www.wikidata.org/wiki/Q141579868
-Q141580298	0	La Dame de la Quina	https://www.wikidata.org/wiki/Q141580298
-Q141580449	0	Mohammed Shayaan	https://www.wikidata.org/wiki/Q141580449
-Q141580526	0	Rayhan Patwary	https://www.wikidata.org/wiki/Q141580526
 Q141581015	0	Faruk Şeyhanlı	https://www.wikidata.org/wiki/Q141581015
 Q141581036	0	Agustin austiniano	https://www.wikidata.org/wiki/Q141581036
 Q141581202	0	Karamanoğlu Erhan bey	https://www.wikidata.org/wiki/Q141581202
@@ -3144,7 +3177,6 @@ Q141593716	0	Etimbuk Ekong	https://www.wikidata.org/wiki/Q141593716
 Q141593754	0	Namaq Mens Tailor	https://www.wikidata.org/wiki/Q141593754
 Q141593780	0	Tvarka	https://www.wikidata.org/wiki/Q141593780
 Q141593924	0	Aleksandr Inchijian	https://www.wikidata.org/wiki/Q141593924
-Q141593942	0	Tinashe MO	https://www.wikidata.org/wiki/Q141593942
 Q141594473	0	Selena Miranda	https://www.wikidata.org/wiki/Q141594473
 Q141594509	0	Rotion.eu	https://www.wikidata.org/wiki/Q141594509
 Q141594518	0	Kris-K	https://www.wikidata.org/wiki/Q141594518
@@ -3157,7 +3189,6 @@ Q141595885	0	Optisync	https://www.wikidata.org/wiki/Q141595885
 Q141596554	0	Pdum	https://www.wikidata.org/wiki/Q141596554
 Q141596657	0	Md Soeb Akhtar	https://www.wikidata.org/wiki/Q141596657
 Q141596705	0	Mutélios	https://www.wikidata.org/wiki/Q141596705
-Q141596745	0	Md Soeb Akhtar	https://www.wikidata.org/wiki/Q141596745
 Q141596756	0	Commedia dell'arte	https://www.wikidata.org/wiki/Q141596756
 Q141596941	0	Ocha	https://www.wikidata.org/wiki/Q141596941
 Q141598323	0	Air Quality at "An der Karlsaue 7, 34121 Kassel Germany, 3rd story back side of building"	https://www.wikidata.org/wiki/Q141598323
@@ -3182,6 +3213,7 @@ Q141604480	0	Le Pittoresque	https://www.wikidata.org/wiki/Q141604480
 Q141608304	0	Grisefireparten	https://www.wikidata.org/wiki/Q141608304
 Q141608332	0	জৈন্তিয়া (দ্ব্যর্থতা নিরসন)	https://www.wikidata.org/wiki/Q141608332
 Q141608465	0	Thomas Lanier Williams I	https://www.wikidata.org/wiki/Q141608465
+Q141609426	0	Cinematographc Art &Documentation	https://www.wikidata.org/wiki/Q141609426
 Q141609465	0	Vítězslav Bělovský	https://www.wikidata.org/wiki/Q141609465
 Q141609742	0	Sven Steffes-Holländer	https://www.wikidata.org/wiki/Q141609742
 Q141609753	0	Dr. Michael J. Becker	https://www.wikidata.org/wiki/Q141609753
@@ -3268,7 +3300,6 @@ Q141645519	0	Mirette	https://www.wikidata.org/wiki/Q141645519
 Q141645793	0	নিরব ইসলাম	https://www.wikidata.org/wiki/Q141645793
 Q141646291	0	Simone Secce	https://www.wikidata.org/wiki/Q141646291
 Q141646682	0	"Doug Weller"	https://www.wikidata.org/wiki/Q141646682
-Q141647561	0	3D-Fuel	https://www.wikidata.org/wiki/Q141647561
 Q141647589	0	José Martínez Velasco	https://www.wikidata.org/wiki/Q141647589
 Q141647801	0	Rijksmonumentnummer 25809	https://www.wikidata.org/wiki/Q141647801
 Q141647842	0		https://www.wikidata.org/wiki/Q141647842
@@ -3292,8 +3323,6 @@ Q141658936	0	Im : Grand Prêtre Imhotep	https://www.wikidata.org/wiki/Q141658936
 Q141659241	0	Georges Henner	https://www.wikidata.org/wiki/Q141659241
 Q141659348	0	Boyyana	https://www.wikidata.org/wiki/Q141659348
 Q141659538	0	Fabricio Rosa	https://www.wikidata.org/wiki/Q141659538
-Q141659742	0	Natalie Bisaillon	https://www.wikidata.org/wiki/Q141659742
-Q141660088	0	Saunders Rhys Whalen	https://www.wikidata.org/wiki/Q141660088
 Q141660680	0	Dawson Stewart	https://www.wikidata.org/wiki/Q141660680
 Q141661102	0	Nicholas Mitsakos	https://www.wikidata.org/wiki/Q141661102
 Q141661117	0	Kim Tolbert	https://www.wikidata.org/wiki/Q141661117
@@ -3329,7 +3358,6 @@ Q141671081	0	фотограф	https://www.wikidata.org/wiki/Q141671081
 Q141671258	0	Q20263437039	https://www.wikidata.org/wiki/Q141671258
 Q141671391	0	Mousam Gogoi	https://www.wikidata.org/wiki/Q141671391
 Q141671400	0	Bornali Kalita	https://www.wikidata.org/wiki/Q141671400
-Q141671711	0	ODMC	https://www.wikidata.org/wiki/Q141671711
 Q141671786	0	spatiotemporal immune zonation of the human kidney	https://www.wikidata.org/wiki/Q141671786
 Q141671825	0	남광우	https://www.wikidata.org/wiki/Q141671825
 Q141671975	0	নোয়াখালী  (দ্ব্যর্থতা নিরসন)	https://www.wikidata.org/wiki/Q141671975
@@ -3342,7 +3370,6 @@ Q141673803	0		https://www.wikidata.org/wiki/Q141673803
 Q141673928	0	Community-Based Ocean Literacy: Four Examples of Ocean Optimism from Mi'kma'ki/Atlantic Canada	https://www.wikidata.org/wiki/Q141673928
 Q141674023	0	Zora Medikal Kozmetik Ticaret Limited Şirketi	https://www.wikidata.org/wiki/Q141674023
 Q141674677	0	Mikołaj Ratajczak	https://www.wikidata.org/wiki/Q141674677
-Q141676904	0	AINSOF	https://www.wikidata.org/wiki/Q141676904
 Q141677544	0	Al-Salhin El-Obeidi	https://www.wikidata.org/wiki/Q141677544
 Q141677570	0	Brian Rosenstein	https://www.wikidata.org/wiki/Q141677570
 Q141677778	0	Magazine Brockmann	https://www.wikidata.org/wiki/Q141677778
@@ -3411,7 +3438,6 @@ Q141686835	0	Hayin Dakaki (Village)	https://www.wikidata.org/wiki/Q141686835
 Q141686957	0	Katoge	https://www.wikidata.org/wiki/Q141686957
 Q141687004	0	Dan saďi	https://www.wikidata.org/wiki/Q141687004
 Q141687209	0	Jérôme  Bolo	https://www.wikidata.org/wiki/Q141687209
-Q141687266	0	Toluwani Adelowotan	https://www.wikidata.org/wiki/Q141687266
 Q141687836	0	سامانتل	https://www.wikidata.org/wiki/Q141687836
 Q141688027	0	humain	https://www.wikidata.org/wiki/Q141688027
 Q141688101	0	Gildas  Kuete	https://www.wikidata.org/wiki/Q141688101
@@ -3425,7 +3451,6 @@ Q141691685	0	Victor S. E. Davis	https://www.wikidata.org/wiki/Q141691685
 Q141692237	0	Mona Tateyama	https://www.wikidata.org/wiki/Q141692237
 Q141693021	0	Cihangir Köse	https://www.wikidata.org/wiki/Q141693021
 Q141693304	0	Tee Sheet Software	https://www.wikidata.org/wiki/Q141693304
-Q141693321	0	Noteefy Alternatives	https://www.wikidata.org/wiki/Q141693321
 Q141693601	0	Peter-Christoph Runge	https://www.wikidata.org/wiki/Q141693601
 Q141693624	0	Yawo Agbagno	https://www.wikidata.org/wiki/Q141693624
 Q141693872	0	Joselyo Mais Saúde	https://www.wikidata.org/wiki/Q141693872
@@ -3440,20 +3465,17 @@ Q141696922	0	Kaufhaus Wilhelm	https://www.wikidata.org/wiki/Q141696922
 Q141696930	0	Manólis Triantafyllídis	https://www.wikidata.org/wiki/Q141696930
 Q141696948	0	Antonio Raimondo	https://www.wikidata.org/wiki/Q141696948
 Q141697269	0	لبحير	https://www.wikidata.org/wiki/Q141697269
-Q141697573	0	Priminime	https://www.wikidata.org/wiki/Q141697573
 Q141698307	0	Piharo Creek	https://www.wikidata.org/wiki/Q141698307
 Q141698434	0	Mitchie Rivera	https://www.wikidata.org/wiki/Q141698434
 Q141698594	0	Post Ex	https://www.wikidata.org/wiki/Q141698594
 Q141699674	0	Kimberly Begg	https://www.wikidata.org/wiki/Q141699674
 Q141700152	0	Gary Sabourin	https://www.wikidata.org/wiki/Q141700152
 Q141700401	0	Lais Nunes	https://www.wikidata.org/wiki/Q141700401
-Q141700519	0	Juan D Anyelica	https://www.wikidata.org/wiki/Q141700519
 Q141701759	0	Federal government college malali.kaduna	https://www.wikidata.org/wiki/Q141701759
 Q141702126	0	Federal government girls school,zaria Kaduna	https://www.wikidata.org/wiki/Q141702126
 Q141702687	0	David Banville	https://www.wikidata.org/wiki/Q141702687
 Q141703759	0		https://www.wikidata.org/wiki/Q141703759
 Q141704237	0	Asian Startup News	https://www.wikidata.org/wiki/Q141704237
-Q141708053	0	Flocci Technologies	https://www.wikidata.org/wiki/Q141708053
 Q141709825	0	Lasting excellence	https://www.wikidata.org/wiki/Q141709825
 Q141709832	0	Olatunji	https://www.wikidata.org/wiki/Q141709832
 Q141710899	0	Antonio Del Aguila	https://www.wikidata.org/wiki/Q141710899
@@ -3470,7 +3492,6 @@ Q141715042	0	Wendelle Stevens	https://www.wikidata.org/wiki/Q141715042
 Q141715162	0	Leo Moss	https://www.wikidata.org/wiki/Q141715162
 Q141715219	0	Serge Dinkota	https://www.wikidata.org/wiki/Q141715219
 Q141715252	0	Cid Costa	https://www.wikidata.org/wiki/Q141715252
-Q141715456	0	Babila Clovis	https://www.wikidata.org/wiki/Q141715456
 Q141715857	0	Santana Hopper	https://www.wikidata.org/wiki/Q141715857
 Q141717273	0	Risandro Zarouvían	https://www.wikidata.org/wiki/Q141717273
 Q141717570	0	Winanto Adi	https://www.wikidata.org/wiki/Q141717570
@@ -3500,23 +3521,16 @@ Q141726935	0	Sławomir Kowalewski	https://www.wikidata.org/wiki/Q141726935
 Q141727180	0	L. Vinoth Kumar	https://www.wikidata.org/wiki/Q141727180
 Q141727294	0	Magyar Koncessziós Infrastruktúra Fejlesztő Zrt	https://www.wikidata.org/wiki/Q141727294
 Q141728253	0	Mandur ibn al-Hasan	https://www.wikidata.org/wiki/Q141728253
-Q141732647	0	Yasmin Hachem	https://www.wikidata.org/wiki/Q141732647
 Q141732846	0	Kingbelco	https://www.wikidata.org/wiki/Q141732846
 Q141732901	0	Mattress Store	https://www.wikidata.org/wiki/Q141732901
 Q141733539	0	Manzelle, Maura	https://www.wikidata.org/wiki/Q141733539
-Q141733905	0	Ankit Sajwan	https://www.wikidata.org/wiki/Q141733905
 Q141734020	0	Gidan Sambo Muhti Zaria	https://www.wikidata.org/wiki/Q141734020
 Q141734064	0	Muhti	https://www.wikidata.org/wiki/Q141734064
 Q141734085	0	Sambo Muhti	https://www.wikidata.org/wiki/Q141734085
 Q141734460	0	Auwal	https://www.wikidata.org/wiki/Q141734460
 Q141734552	0	Pierre Boulez // diptyques	https://www.wikidata.org/wiki/Q141734552
-Q141734816	0	Rimon Ahmed Digital Marketing Specialist & Founder of Boost Fixer	https://www.wikidata.org/wiki/Q141734816
-Q141734903	0	Mehdi Khalaji	https://www.wikidata.org/wiki/Q141734903
 Q141735090	0	Lacy.ai	https://www.wikidata.org/wiki/Q141735090
-Q141735317	0	Anes Meliqi	https://www.wikidata.org/wiki/Q141735317
-Q141735342	0	Helen Freedman	https://www.wikidata.org/wiki/Q141735342
 Q141735564	0	Sulaiman	https://www.wikidata.org/wiki/Q141735564
-Q141735585	0	Vicky Farfus	https://www.wikidata.org/wiki/Q141735585
 Q141735627	0	Dr samira Balarabe kubau	https://www.wikidata.org/wiki/Q141735627
 Q141735727	0	pikodoritos	https://www.wikidata.org/wiki/Q141735727
 Q141735964	0	مازیار نظربیگی	https://www.wikidata.org/wiki/Q141735964
@@ -3531,7 +3545,6 @@ Q141738099	0	سفارت ایران در سئول	https://www.wikidata.org/wiki/Q
 Q141738769	0	VYZPRO	https://www.wikidata.org/wiki/Q141738769
 Q141739311	0	Peace Brigades International (PBI)	https://www.wikidata.org/wiki/Q141739311
 Q141739317	0	Stefano Moraschini	https://www.wikidata.org/wiki/Q141739317
-Q141739611	0	Leela Works	https://www.wikidata.org/wiki/Q141739611
 Q141740403	0	Ronald Oundo	https://www.wikidata.org/wiki/Q141740403
 Q141740408	0	Polyák János	https://www.wikidata.org/wiki/Q141740408
 Q141740555	0	Sree Ashis Dey	https://www.wikidata.org/wiki/Q141740555
@@ -3543,22 +3556,13 @@ Q141744230	0	LDRV Group	https://www.wikidata.org/wiki/Q141744230
 Q141744351	0	las obras de feliza	https://www.wikidata.org/wiki/Q141744351
 Q141744444	0	UNITÉCNICA	https://www.wikidata.org/wiki/Q141744444
 Q141744680	0	ForGrass Kunstgras	https://www.wikidata.org/wiki/Q141744680
-Q141745891	0	bussiness	https://www.wikidata.org/wiki/Q141745891
-Q141745977	0	suverenita	https://www.wikidata.org/wiki/Q141745977
 Q141746439	0	probe	https://www.wikidata.org/wiki/Q141746439
 Q141746475	0	江海镇	https://www.wikidata.org/wiki/Q141746475
 Q141746647	0	lexi lana	https://www.wikidata.org/wiki/Q141746647
-Q141747043	0	Acharya Shubham	https://www.wikidata.org/wiki/Q141747043
 Q141747428	0	Peraturan Presiden Nomor 93 Tahun 2021	https://www.wikidata.org/wiki/Q141747428
-Q141747538	0	Anikó Meksz	https://www.wikidata.org/wiki/Q141747538
 Q141747865	0	Peleș National Museum	https://www.wikidata.org/wiki/Q141747865
 Q141747892	0	Hasan Mohammad Al-Amawi	https://www.wikidata.org/wiki/Q141747892
-Q141748373	0	Ugo Colizza	https://www.wikidata.org/wiki/Q141748373
 Q141749681	0	Jindřich Dědek	https://www.wikidata.org/wiki/Q141749681
-Q141749906	0	Anami Schrijvers	https://www.wikidata.org/wiki/Q141749906
-Q141749913	0	Anami Schrijvers	https://www.wikidata.org/wiki/Q141749913
-Q141750668	0	Soma Anzai	https://www.wikidata.org/wiki/Q141750668
-Q141750760	0	Ibanang Ediene	https://www.wikidata.org/wiki/Q141750760
 Q141751240	0	Alcaldía Municipal de CurilloAlcaldía Municipal de Cunday	https://www.wikidata.org/wiki/Q141751240
 Q141751244	0	Maria da Silva Sauro	https://www.wikidata.org/wiki/Q141751244
 Q141751942	0	Nkuot Etok	https://www.wikidata.org/wiki/Q141751942
@@ -3566,7 +3570,6 @@ Q141752185	0	Collapsar todos eliminar information destruir todos los datos	https
 Q141752200	0	destruir toda información de wikipedia	https://www.wikidata.org/wiki/Q141752200
 Q141752236	0	welche Art der Demokratie besteht in Deutschland	https://www.wikidata.org/wiki/Q141752236
 Q141752250	0	beschreibe mir die Demokratie in Deutschland	https://www.wikidata.org/wiki/Q141752250
-Q141752486	0	Sanvo Fine Chemicals	https://www.wikidata.org/wiki/Q141752486
 Q141752878	0	Скандалы и исчезновения	https://www.wikidata.org/wiki/Q141752878
 Q141752887	0	срыв	https://www.wikidata.org/wiki/Q141752887
 Q141753357	0		https://www.wikidata.org/wiki/Q141753357
@@ -3576,8 +3579,6 @@ Q141753972	0	منصة نخبة الجامعات العربية	https://www.wikid
 Q141754008	0	المرصد العربي (AURO) المرصد العربي لتصنيفات الجامعات	https://www.wikidata.org/wiki/Q141754008
 Q141754012	0	مؤشر الحضور العالمي للجامعات (GUPI) الإصدار الرسمي الموحد	https://www.wikidata.org/wiki/Q141754012
 Q141754595	0	Voltim Global	https://www.wikidata.org/wiki/Q141754595
-Q141754746	0	Prabha Dhakal	https://www.wikidata.org/wiki/Q141754746
-Q141755678	0	Burns & Dolphin	https://www.wikidata.org/wiki/Q141755678
 Q141755839	0	kami	https://www.wikidata.org/wiki/Q141755839
 Q141756188	0	OAU Mountain	https://www.wikidata.org/wiki/Q141756188
 Q141756273	0	Løkka lever	https://www.wikidata.org/wiki/Q141756273
@@ -3603,9 +3604,6 @@ Q141762149	0	Gardawa	https://www.wikidata.org/wiki/Q141762149
 Q141762207	0	Mai Kwama	https://www.wikidata.org/wiki/Q141762207
 Q141762278	0	Unguwar Malam Haji	https://www.wikidata.org/wiki/Q141762278
 Q141762300	0	Ruwan Ango	https://www.wikidata.org/wiki/Q141762300
-Q141762504	0	Tajnes	https://www.wikidata.org/wiki/Q141762504
-Q141762616	0	Charlie Thurston	https://www.wikidata.org/wiki/Q141762616
-Q141762652	0	Muhammad Farid Anfasa	https://www.wikidata.org/wiki/Q141762652
 Q141762720	0	Yasimina khadra	https://www.wikidata.org/wiki/Q141762720
 Q141762902	0	Asma Rizwan Rao	https://www.wikidata.org/wiki/Q141762902
 Q141763031	0	Volkswagen GTI Supersport Vision Gran Turismo	https://www.wikidata.org/wiki/Q141763031
@@ -3613,25 +3611,308 @@ Q141763035	0	Adventures of The TV Universe!	https://www.wikidata.org/wiki/Q14176
 Q141763037	0	Xiaomi Vision Gran Turismo	https://www.wikidata.org/wiki/Q141763037
 Q141763042	0	Škoda Vision Gran Turismo	https://www.wikidata.org/wiki/Q141763042
 Q141763313	0	František Štanpach	https://www.wikidata.org/wiki/Q141763313
-Q141763415	0	Anthony Agbatot	https://www.wikidata.org/wiki/Q141763415
 Q141763743	0	necropoli Pisciarelli	https://www.wikidata.org/wiki/Q141763743
 Q141764943	0	Balaheydar Karimov	https://www.wikidata.org/wiki/Q141764943
 Q141765186	0	Vignobles Chatonnet - chateau haut-chaigneau - Lalande de Pomerol	https://www.wikidata.org/wiki/Q141765186
-Q141768098	0	Léo de Nodrest	https://www.wikidata.org/wiki/Q141768098
 Q141768889	0	Diallo Alseny	https://www.wikidata.org/wiki/Q141768889
 Q141771158	0		https://www.wikidata.org/wiki/Q141771158
 Q141772846	0	Dzielnica II	https://www.wikidata.org/wiki/Q141772846
-Q141774405	0	francisco reyes aceves periodista	https://www.wikidata.org/wiki/Q141774405
-Q141774411	0	francisco reyes aceves periodista	https://www.wikidata.org/wiki/Q141774411
 Q141774485	0	Ace Machado	https://www.wikidata.org/wiki/Q141774485
-Q141774510	0	Jasmine Simonian	https://www.wikidata.org/wiki/Q141774510
 Q141775880	0	Hanish Gupta	https://www.wikidata.org/wiki/Q141775880
-Q141775904	0	Kahrsvietnam	https://www.wikidata.org/wiki/Q141775904
 Q141775977	0		https://www.wikidata.org/wiki/Q141775977
 Q141776105	0	Fat Matt’s Rib Shack	https://www.wikidata.org/wiki/Q141776105
-Q141776172	0	Kawanthissa	https://www.wikidata.org/wiki/Q141776172
 Q141776189	0	Tamirul Millat Trust	https://www.wikidata.org/wiki/Q141776189
 Q141776251	0	Institut Supérieur Industriel et Commercial de Garoua	https://www.wikidata.org/wiki/Q141776251
 Q141776500	0	Kevin Entricken	https://www.wikidata.org/wiki/Q141776500
-Q141776708	0	VideoForce.ai	https://www.wikidata.org/wiki/Q141776708
 Q141776804	0	Colorful Runway! Pretty Cure The Stage	https://www.wikidata.org/wiki/Q141776804
+Q141777272	0	Djabadouli	https://www.wikidata.org/wiki/Q141777272
+Q141777361	0	Grotto Psychological Solutions, PC	https://www.wikidata.org/wiki/Q141777361
+Q141777411	0	Farcco Tecnologia	https://www.wikidata.org/wiki/Q141777411
+Q141777551	0	Jaydai	https://www.wikidata.org/wiki/Q141777551
+Q141777703	0	Abhijeet Shrivastava	https://www.wikidata.org/wiki/Q141777703
+Q141777713	0	Maatram	https://www.wikidata.org/wiki/Q141777713
+Q141779455	0	Djävulens Krig	https://www.wikidata.org/wiki/Q141779455
+Q141779528	0	Little Explorers Montessori Plus School	https://www.wikidata.org/wiki/Q141779528
+Q141783247	0	정연일	https://www.wikidata.org/wiki/Q141783247
+Q141783325	0	UCIMED	https://www.wikidata.org/wiki/Q141783325
+Q141783660	0	Thomas Giguère-Caron	https://www.wikidata.org/wiki/Q141783660
+Q141784592	0	신효원	https://www.wikidata.org/wiki/Q141784592
+Q141785626	0	Ivan Cevic	https://www.wikidata.org/wiki/Q141785626
+Q141785681	0	abaut wikidata GREECIA	https://www.wikidata.org/wiki/Q141785681
+Q141786821	0	Lionbeat	https://www.wikidata.org/wiki/Q141786821
+Q141786993	0	Sayid Ahmed Alnaimi	https://www.wikidata.org/wiki/Q141786993
+Q141787342	0	Nombre d'habitants dans la commune de Chabottes pendant la guerre de 1914-1918	https://www.wikidata.org/wiki/Q141787342
+Q141787665	0	VisiMatrix	https://www.wikidata.org/wiki/Q141787665
+Q141788225	0	Merceyopsis cataractae	https://www.wikidata.org/wiki/Q141788225
+Q141790511	0	SpiritX	https://www.wikidata.org/wiki/Q141790511
+Q141791881	0	Safaraz Ali mbe	https://www.wikidata.org/wiki/Q141791881
+Q141792118	0	Yusuf Tokmuç	https://www.wikidata.org/wiki/Q141792118
+Q141792225	0	Harvesting (1974)	https://www.wikidata.org/wiki/Q141792225
+Q141792244	0	Motherhood	https://www.wikidata.org/wiki/Q141792244
+Q141792808	0	Anjali Mahto	https://www.wikidata.org/wiki/Q141792808
+Q141792876	0	Cockle bonnet	https://www.wikidata.org/wiki/Q141792876
+Q141792881	0	Khima B.K.	https://www.wikidata.org/wiki/Q141792881
+Q141792947	0	Self London	https://www.wikidata.org/wiki/Q141792947
+Q141793054	0	The Skincare Bible	https://www.wikidata.org/wiki/Q141793054
+Q141793398	0	Graduate Ventures	https://www.wikidata.org/wiki/Q141793398
+Q141793424	0	Graduate Ventures	https://www.wikidata.org/wiki/Q141793424
+Q141793511	0	Juden Rothenbuhler	https://www.wikidata.org/wiki/Q141793511
+Q141793586	0	Mutare Teachers College	https://www.wikidata.org/wiki/Q141793586
+Q141793963	0	pull-out basket	https://www.wikidata.org/wiki/Q141793963
+Q141794327	0	CCRAZY ENTERTAINMENT	https://www.wikidata.org/wiki/Q141794327
+Q141794359	0	Mupfure Industrial Training College	https://www.wikidata.org/wiki/Q141794359
+Q141794616	0	DTO Publicidade	https://www.wikidata.org/wiki/Q141794616
+Q141794656	0	DTO Publicidade	https://www.wikidata.org/wiki/Q141794656
+Q141794658	0	fleischer	https://www.wikidata.org/wiki/Q141794658
+Q141794713	0	Ultiwrite	https://www.wikidata.org/wiki/Q141794713
+Q141794718	0	Vers l'économie de marché : des théories à la réalité	https://www.wikidata.org/wiki/Q141794718
+Q141794721	0	Guide culturel et d'@ffaires pour l'Europe de l'Est	https://www.wikidata.org/wiki/Q141794721
+Q141794725	0	Le rôle central des noms de domaine : stratégie web	https://www.wikidata.org/wiki/Q141794725
+Q141794784	0	Sur l'histoire de Rabat	https://www.wikidata.org/wiki/Q141794784
+Q141795020	0	velaair	https://www.wikidata.org/wiki/Q141795020
+Q141795065	0	Vasyl Moroz	https://www.wikidata.org/wiki/Q141795065
+Q141795089	0	Rochelle Marashi Psychotherapist	https://www.wikidata.org/wiki/Q141795089
+Q141795278	0	Método R.E.N.D.A. de Investimentos	https://www.wikidata.org/wiki/Q141795278
+Q141796565	0	AISight	https://www.wikidata.org/wiki/Q141796565
+Q141797162	0	Yandy HEJOAKA	https://www.wikidata.org/wiki/Q141797162
+Q141797833	0	One Growth Media	https://www.wikidata.org/wiki/Q141797833
+Q141798938	0	Hasan Aboumelhem	https://www.wikidata.org/wiki/Q141798938
+Q141799006	0	HasanAboumelhem	https://www.wikidata.org/wiki/Q141799006
+Q141800074	0	Ono Teknoloji	https://www.wikidata.org/wiki/Q141800074
+Q141800252	0	Chase Pulumbarit	https://www.wikidata.org/wiki/Q141800252
+Q141800393	0	Colectivo arroz y papá	https://www.wikidata.org/wiki/Q141800393
+Q141800459	0	Latin Fashion Week ®	https://www.wikidata.org/wiki/Q141800459
+Q141800582	0	株式会社保育総合研究所	https://www.wikidata.org/wiki/Q141800582
+Q141800596	0	Mettlespark	https://www.wikidata.org/wiki/Q141800596
+Q141800698	0		https://www.wikidata.org/wiki/Q141800698
+Q141800801	0	Streblotrichum convolutum	https://www.wikidata.org/wiki/Q141800801
+Q141800866	0	Shreevidya Biswas	https://www.wikidata.org/wiki/Q141800866
+Q141801337	0	Ikot Akwa Ebom	https://www.wikidata.org/wiki/Q141801337
+Q141801440	0	Davide Damiani	https://www.wikidata.org/wiki/Q141801440
+Q141801486	0	H. V. KRISHNA & Co.	https://www.wikidata.org/wiki/Q141801486
+Q141802625	0	Bosco Youth Agricultural Centre	https://www.wikidata.org/wiki/Q141802625
+Q141803418	0	Charmaine Chanakira	https://www.wikidata.org/wiki/Q141803418
+Q141803745	0	Fountains_in_Lamezia_Terme	https://www.wikidata.org/wiki/Q141803745
+Q141803844	0	The Sunman (Lucky Sibiya)	https://www.wikidata.org/wiki/Q141803844
+Q141803850	0	Nikki Giovanni	https://www.wikidata.org/wiki/Q141803850
+Q141803902	0	Open_air_restaurant_and_café_areas_in_Upper_Bavaria	https://www.wikidata.org/wiki/Q141803902
+Q141803912	0	Nikki Grimes	https://www.wikidata.org/wiki/Q141803912
+Q141803922	0	Kekina'muek: Learning about the Mi'kmaq of Nova Scotia	https://www.wikidata.org/wiki/Q141803922
+Q141803953	0	Lus Maria Umpierre	https://www.wikidata.org/wiki/Q141803953
+Q141804120	0	St Andrew’s Hospital Bromley by Bow London	https://www.wikidata.org/wiki/Q141804120
+Q141804799	0	Reparata in Prison	https://www.wikidata.org/wiki/Q141804799
+Q141805137	0	Advisia	https://www.wikidata.org/wiki/Q141805137
+Q141805700	0	Kade Reed	https://www.wikidata.org/wiki/Q141805700
+Q141805959	0	An appraisal of some educational problems of the Marshall Islands Intermediate School	https://www.wikidata.org/wiki/Q141805959
+Q141805972	0	关于上海经济发展战略的汇报提纲	https://www.wikidata.org/wiki/Q141805972
+Q141806034	0	Logical Body Care 整体守山	https://www.wikidata.org/wiki/Q141806034
+Q141806404	0	Zámecký park Clumec nad Cidlinou	https://www.wikidata.org/wiki/Q141806404
+Q141806411	0	ÚP-82	https://www.wikidata.org/wiki/Q141806411
+Q141806697	0	Realo (rappeur)	https://www.wikidata.org/wiki/Q141806697
+Q141806804	0	Syntrichiadelphus	https://www.wikidata.org/wiki/Q141806804
+Q141806999	0	Adin Yeton Bloukounon Goubalan Ministre de l’Agriculture, de l’Élevage et de la Pêche	https://www.wikidata.org/wiki/Q141806999
+Q141807770	0	Inderbir Singh's Human Embryology By V Subhadra Devi	https://www.wikidata.org/wiki/Q141807770
+Q141807793	0	anglický stafordsirsky terier	https://www.wikidata.org/wiki/Q141807793
+Q141807866	0	مائده کاظمی	https://www.wikidata.org/wiki/Q141807866
+Q141808030	0	Santiago Rueda Fajardo	https://www.wikidata.org/wiki/Q141808030
+Q141808194	0	Bakir Bayakhunov	https://www.wikidata.org/wiki/Q141808194
+Q141808254	0	Dr. Vanderbal Marinho	https://www.wikidata.org/wiki/Q141808254
+Q141808565	0	خراريف: حكايات من الماضي البعيد	https://www.wikidata.org/wiki/Q141808565
+Q141808588	0	شمر الجرباء: رحلتها إلى العراق ومواقفها ضد الحكمين العثماني والبريطاني: دراسة تاريخية	https://www.wikidata.org/wiki/Q141808588
+Q141808605	0		https://www.wikidata.org/wiki/Q141808605
+Q141809867	0	многоточие фото участников	https://www.wikidata.org/wiki/Q141809867
+Q141810067	0	Centro Budista Djampel Pawo	https://www.wikidata.org/wiki/Q141810067
+Q141810221	0	Musée du squelette	https://www.wikidata.org/wiki/Q141810221
+Q141810329	0	عشيرة الجغايفة: سكان الشرقاط	https://www.wikidata.org/wiki/Q141810329
+Q141810455	0	ma	https://www.wikidata.org/wiki/Q141810455
+Q141810467	0	chatgpt-[(W-OTS)]	https://www.wikidata.org/wiki/Q141810467
+Q141810656	0	Benjamin Metcalf	https://www.wikidata.org/wiki/Q141810656
+Q141810706	0	Makar Semyonich	https://www.wikidata.org/wiki/Q141810706
+Q141812518	0	Veritas Hospitality Advisors	https://www.wikidata.org/wiki/Q141812518
+Q141812561	0	Rémi Poirier	https://www.wikidata.org/wiki/Q141812561
+Q141812566	0	Moses Roesler	https://www.wikidata.org/wiki/Q141812566
+Q141814064	0	经学历史	https://www.wikidata.org/wiki/Q141814064
+Q141814832	0	ملامح الانقلاب الإسلامي في خلافة عمر بن عبد العزيز	https://www.wikidata.org/wiki/Q141814832
+Q141814836	0	• 하시드 하우스 (Chassid house)	https://www.wikidata.org/wiki/Q141814836
+Q141814874	0	মহিউদ্দিন আহাম্মদ	https://www.wikidata.org/wiki/Q141814874
+Q141816966	0	Alex Bascug	https://www.wikidata.org/wiki/Q141816966
+Q141817100	0	ECI Partners	https://www.wikidata.org/wiki/Q141817100
+Q141817569	0	Rejissor	https://www.wikidata.org/wiki/Q141817569
+Q141817750	0	complexe scolaire les Anges	https://www.wikidata.org/wiki/Q141817750
+Q141817760	0	Vodacom Butembo	https://www.wikidata.org/wiki/Q141817760
+Q141817773	0	Boulangerie Maseka butembo	https://www.wikidata.org/wiki/Q141817773
+Q141817783	0	COMPLEXE SCOLAIRE MUSEKE	https://www.wikidata.org/wiki/Q141817783
+Q141817814	0	7Sage	https://www.wikidata.org/wiki/Q141817814
+Q141817818	0		https://www.wikidata.org/wiki/Q141817818
+Q141817847	0	Ecole Primaire  Katsya	https://www.wikidata.org/wiki/Q141817847
+Q141818159	0	Lycée PAIDA	https://www.wikidata.org/wiki/Q141818159
+Q141818267	0	深圳市杭通科技有限公司	https://www.wikidata.org/wiki/Q141818267
+Q141818285	0	Georg C. F. Greve	https://www.wikidata.org/wiki/Q141818285
+Q141818390	0	Hamid Benamra	https://www.wikidata.org/wiki/Q141818390
+Q141818392	0	Paschal Ekere	https://www.wikidata.org/wiki/Q141818392
+Q141818449	0	Template:TennisWTATour2026	https://www.wikidata.org/wiki/Q141818449
+Q141818707	0	Sambaquí	https://www.wikidata.org/wiki/Q141818707
+Q141819356	0	Kašpar Bedřich Bees z Chrostiny	https://www.wikidata.org/wiki/Q141819356
+Q141819376	0	Safder Machilakath	https://www.wikidata.org/wiki/Q141819376
+Q141819400	0	Hoàng Anh Quân	https://www.wikidata.org/wiki/Q141819400
+Q141819571	0	Maurice Landers III	https://www.wikidata.org/wiki/Q141819571
+Q141820767	0	ONE LAST ADVENTURE - AKT 1	https://www.wikidata.org/wiki/Q141820767
+Q141821085	0	HIA	https://www.wikidata.org/wiki/Q141821085
+Q141821314	0	Workers.Direct	https://www.wikidata.org/wiki/Q141821314
+Q141822093	0	Javier Quiñones Navarro	https://www.wikidata.org/wiki/Q141822093
+Q141822563	0	Irma Isern	https://www.wikidata.org/wiki/Q141822563
+Q141823513	0	The Garfield and Dr. Seuss, Sonic Generations, The ZhuZhus’ Cindy-Lou Who and Frankie Show	https://www.wikidata.org/wiki/Q141823513
+Q141823821	0	Jochen Tiffe-Schultz	https://www.wikidata.org/wiki/Q141823821
+Q141824992	0	Arkont Studio	https://www.wikidata.org/wiki/Q141824992
+Q141825922	0	الساعه	https://www.wikidata.org/wiki/Q141825922
+Q141830272	0	Prasanna Pattnaik	https://www.wikidata.org/wiki/Q141830272
+Q141830648	0	Studien für Allegorien; Studie für eine Kartusche	https://www.wikidata.org/wiki/Q141830648
+Q141830761	0	LodgeRev	https://www.wikidata.org/wiki/Q141830761
+Q141830783	0	Fosbiz Cloud	https://www.wikidata.org/wiki/Q141830783
+Q141831068	0	ananda marga academy	https://www.wikidata.org/wiki/Q141831068
+Q141832463	0	Allama Fareed Qureshi	https://www.wikidata.org/wiki/Q141832463
+Q141832597	0	جنسارعلی عبدرحمن 1068	https://www.wikidata.org/wiki/Q141832597
+Q141832769	0	fanjima	https://www.wikidata.org/wiki/Q141832769
+Q141832796	0	Kulikulidoo	https://www.wikidata.org/wiki/Q141832796
+Q141834560	0	youseef talaat harb يوسف طلعت حرب يوسف-طلعت-حرب youseeftalaatharb youseef-talaat-harb	https://www.wikidata.org/wiki/Q141834560
+Q141835544	0	Ikot Udom Obot	https://www.wikidata.org/wiki/Q141835544
+Q141835716	0	Мусин Ильяс Даниярович	https://www.wikidata.org/wiki/Q141835716
+Q141835755	0	Larelle Did It	https://www.wikidata.org/wiki/Q141835755
+Q141837478	0	The genus Halimeda	https://www.wikidata.org/wiki/Q141837478
+Q141837480	0	Description of the ship and appliances used for scientific exploration	https://www.wikidata.org/wiki/Q141837480
+Q141837482	0	Die Sipunculiden und Echiuriden der Siboga-Expedition, nebst Zusammenstellung der überdies aus dem Indischen Archipel bekannten Arten	https://www.wikidata.org/wiki/Q141837482
+Q141837483	0	The Porifera of the Siboga expedition I, The genus Placospongia	https://www.wikidata.org/wiki/Q141837483
+Q141837484	0	Hydrographic results of the Siboga-expedition	https://www.wikidata.org/wiki/Q141837484
+Q141837486	0	Die Tunicaten der Siboga-Expedition. I. Abteilung. Die socialen und holosomen Ascidien	https://www.wikidata.org/wiki/Q141837486
+Q141837488	0	Die Tunicaten der Siboga-Expedition. I. Abteilung. Die socialen und holosomen Ascidien. Supplement	https://www.wikidata.org/wiki/Q141837488
+Q141837489	0	Die Gorgoniden der Siboga-Expedition II Die Primnoidae	https://www.wikidata.org/wiki/Q141837489
+Q141837491	0	Studien über die Enteropneusten der Siboga-Expedition : nebst Beobachtungen an verwandten Arten	https://www.wikidata.org/wiki/Q141837491
+Q141837493	0	Die Nematomorpha der Siboga-Expedition	https://www.wikidata.org/wiki/Q141837493
+Q141837495	0	The Cirripedia of the Siboga-Expedition. A. Cirripedia pedunculata	https://www.wikidata.org/wiki/Q141837495
+Q141837496	0	The Prosobranchia of the Siboga Expedition. Part I	https://www.wikidata.org/wiki/Q141837496
+Q141837497	0	Die Appendicularien der Siboga-Expedition : nebst Beiträgen zur Kenntnis der Anatomie dieser Gruppe	https://www.wikidata.org/wiki/Q141837497
+Q141837499	0	The Prosobranchia of the Siboga Expedition. Part II	https://www.wikidata.org/wiki/Q141837499
+Q141837501	0	Die Tunicaten der Siboga-Expedition. II. Abt., Die Merosomen Ascidien (Krikobranchia excl. Clavelinidae)	https://www.wikidata.org/wiki/Q141837501
+Q141837502	0	The Prosobranchia of the Siboga Expedition. Part III	https://www.wikidata.org/wiki/Q141837502
+Q141837503	0	Die Gorgoniden der Siboga-Expedition III The Muriceidæ	https://www.wikidata.org/wiki/Q141837503
+Q141837505	0	Die Gorgoniden der Siboga-Expedition IV The Plexauridæ	https://www.wikidata.org/wiki/Q141837505
+Q141837506	0	Die Thaliaceen (einschliesslich Pyrosomen) der Siboga-Expedition	https://www.wikidata.org/wiki/Q141837506
+Q141837508	0	Die Gorgoniden der Siboga-Expedition V The Isidæ	https://www.wikidata.org/wiki/Q141837508
+Q141837509	0	Die Gorgoniden der Siboga-Expedition VI The Gorgonellidæ	https://www.wikidata.org/wiki/Q141837509
+Q141837510	0	The Actiniaria of the Siboga expedition. Pt. I, Ceriantharia	https://www.wikidata.org/wiki/Q141837510
+Q141837512	0	Die Gorgoniden der Siboga-Expedition VII The Gorgonidæ	https://www.wikidata.org/wiki/Q141837512
+Q141837514	0	The Decapoda of the Siboga expedition Part I Family Penaeidae	https://www.wikidata.org/wiki/Q141837514
+Q141837515	0	The Codiaceae of the Siboga expedition : including a monograph of Flabellarieae and Udoteae	https://www.wikidata.org/wiki/Q141837515
+Q141837518	0	Die Gorgoniden der Siboga-Expedition VIII The Scleraxonia	https://www.wikidata.org/wiki/Q141837518
+Q141837521	0	The Prosobranchia of the Siboga Expedition. Part IV	https://www.wikidata.org/wiki/Q141837521
+Q141837523	0	The Porifera of the Siboga expedition II, The genus Spirastrella	https://www.wikidata.org/wiki/Q141837523
+Q141837526	0	The Decapoda of the Siboga Expedition. Part II. Family Alpheidae	https://www.wikidata.org/wiki/Q141837526
+Q141837528	0	Polychaeta errantia of the Siboga Expedition. Part I. Amphinomidae	https://www.wikidata.org/wiki/Q141837528
+Q141837530	0	Les Lamellibranches de l'expédition du Siboga [II] Partie systématique I: Pectinidés	https://www.wikidata.org/wiki/Q141837530
+Q141837532	0	The Prosobranchia of the Siboga Expedition. Part V	https://www.wikidata.org/wiki/Q141837532
+Q141837535	0	The Prosobranchia of the Siboga Expedition. Part VI	https://www.wikidata.org/wiki/Q141837535
+Q141837537	0	The Cirripedia of the Siboga-Expedition. B. Cirripedia sessilia	https://www.wikidata.org/wiki/Q141837537
+Q141837538	0	Liste des algues du Siboga I Myxophyceae, Chlorophyceae, Phaeophyceae. avec le concours de Th. Reinbold	https://www.wikidata.org/wiki/Q141837538
+Q141837541	0	The Decapoda of the Siboga Expedition. Part I. Family Penaeidae. Supplement	https://www.wikidata.org/wiki/Q141837541
+Q141837543	0	Les hydroïdes de l'expédition du Siboga. I. Plumulariidae	https://www.wikidata.org/wiki/Q141837543
+Q141837546	0	Die Decapoda brachyura der Siboga-Expedition I, Dromiacea	https://www.wikidata.org/wiki/Q141837546
+Q141837549	0	The Antipatharia of the Siboga expedition	https://www.wikidata.org/wiki/Q141837549
+Q141837551	0	The Decapoda of the Siboga Expedition. Part II. Family Alpheidae. Supplement	https://www.wikidata.org/wiki/Q141837551
+Q141837553	0	The Polyzoa of the Siboga Expedition. Part I. Entoprocta, Ctenostomata and Cyclostomata	https://www.wikidata.org/wiki/Q141837553
+Q141837557	0	The Decapoda of the Siboga expedition Part III Families Eryonidae, Palinuridae, Scyllaridae and Nephropsidae	https://www.wikidata.org/wiki/Q141837557
+Q141837560	0	The Pennatulacea of the Siboga expedition : with a general survey of the order	https://www.wikidata.org/wiki/Q141837560
+Q141837562	0	Die Decapoda brachyura der Siboga-Expedition II, Oxystomata, Dorippidae	https://www.wikidata.org/wiki/Q141837562
+Q141837564	0	Meeresgrundproben der Siboga-Expedition	https://www.wikidata.org/wiki/Q141837564
+Q141837568	0	Polychaeta errantia of the Siboga Expedition. Part II. Aphroditidae and Chrysopetalidae	https://www.wikidata.org/wiki/Q141837568
+Q141837570	0	Die Decapoda brachyura der Siboga-Expedition IV, Hymenosomidae, Retroplumidae, Ocypodidae, Grapsidae and Gecarcinidae	https://www.wikidata.org/wiki/Q141837570
+Q141837572	0	Die Decapoda brachyura der Siboga-Expedition V, Goneplacidae and Pinnotheridae	https://www.wikidata.org/wiki/Q141837572
+Q141837574	0	Die Decapoda brachyura der Siboga-Expedition III, Oxystomata: Calappidae, Leucosiidae, Raninidae	https://www.wikidata.org/wiki/Q141837574
+Q141837576	0	The Decapoda of the Siboga expedition Part IV Families Pasiphæidae, Stylodactylidae, Hoplophoridae, Nematocarcinidae, Thalassocaridae, Pandalidae, Psalidopodidae, Gnathophyllidae, Processidae, Glyphocrangonidae and Crangonidae	https://www.wikidata.org/wiki/Q141837576
+Q141837578	0	Die Asteriden der Siboga-Expedition. Die Gattung Luidia und ihre Stammesgeschichte	https://www.wikidata.org/wiki/Q141837578
+Q141837579	0	Liste des algues du Siboga. II. Rhodophyceae. 1re partie: Protoflorideae, Nemalionales, Cryptonemiales	https://www.wikidata.org/wiki/Q141837579
+Q141837583	0	The Madreporaria of the Siboga Expedition. Part II. Madreporaria fungida	https://www.wikidata.org/wiki/Q141837583
+Q141837586	0	The Madreporaria of the Siboga Expedition. Part III. Eupsammidae	https://www.wikidata.org/wiki/Q141837586
+Q141837588	0	The Decapoda of the Siboga expedition Part V On a collection of Macrurous Decapod Crustacea of the Siboga expedition, chiefly Penaeidae and Alpheidae	https://www.wikidata.org/wiki/Q141837588
+Q141837590	0	Liste des algues du Siboga. III. Rhodophyceae. 2de partie: Ceramiales	https://www.wikidata.org/wiki/Q141837590
+Q141837593	0	Die Isopoden der Siboga-Expedition. II, Isopoda genuina : I: Epicaridea	https://www.wikidata.org/wiki/Q141837593
+Q141837595	0	The Madreporaria of the Siboga Expedition. Part IV. Fungia patella	https://www.wikidata.org/wiki/Q141837595
+Q141837598	0	Die Cetaceen der Siboga-Expedition : Vorkommen und Fang der Cetaceen im indo-australischen Archipel	https://www.wikidata.org/wiki/Q141837598
+Q141837601	0	Hermann Immongault	https://www.wikidata.org/wiki/Q141837601
+Q141837602	0	Polychaeta errantia of the Siboga Expedition. Part III. Nereidae and Hesionidae	https://www.wikidata.org/wiki/Q141837602
+Q141837605	0	Geologische Ergebnisse der Siboga-Expedition	https://www.wikidata.org/wiki/Q141837605
+Q141837607	0	Die Rhizocephalen der Siboga-Expedition	https://www.wikidata.org/wiki/Q141837607
+Q141837609	0	The Decapoda of the Siboga expedition Part VI, The Axiidae collected by the Siboga-expedition	https://www.wikidata.org/wiki/Q141837609
+Q141837612	0	Les hydroïdes de l'expédition du Siboga. II. Synthecidæ et Sertularidæ	https://www.wikidata.org/wiki/Q141837612
+Q141837615	0	The Stomatopoda of the Siboga expedition	https://www.wikidata.org/wiki/Q141837615
+Q141837617	0	The Polyzoa of the Siboga Expedition. Part II. Cheilostomata Anasca	https://www.wikidata.org/wiki/Q141837617
+Q141837619	0	The Hexactinellida of the Siboga expedition	https://www.wikidata.org/wiki/Q141837619
+Q141837622	0	The Foraminifera of the Siboga expedition. Pt. I, Families Tinoporidae, Rotaliidae, Nummulitidae, Amphisteginidae	https://www.wikidata.org/wiki/Q141837622
+Q141837626	0	Liste des algues du Siboga. IV. Rhodophyceae. 3e partie: Gigartinales et Rhodymeniales et tableau de la distribution des Chlorophycées, Phaeophycées et Rhodophycées de l'archipel malaisien	https://www.wikidata.org/wiki/Q141837626
+Q141837627	0	The Decapoda of the Siboga expedition Part VII The Thalassinidae and Callianassidae collected by the Siboga-expedition with some remarks on the Laomediidae	https://www.wikidata.org/wiki/Q141837627
+Q141837629	0	The Foraminifera of the Siboga expedition. Part II, Families Astrorhizidae, Rhizamminidae, Reophacidae, Anomalinidae, Peneroplidae : with an introd. on the life-cycle of the Foraminifera	https://www.wikidata.org/wiki/Q141837629
+Q141837631	0	The Porifera of the Siboga expedition III, Calcarea	https://www.wikidata.org/wiki/Q141837631
+Q141837634	0	Die Decapoda brachyura der Siboga-Expedition VI, Oxyrrhyncha: Parthenopidae	https://www.wikidata.org/wiki/Q141837634
+Q141837635	0	Les Amphipodes de l'expédition du Siboga. Les amphipodes de l'expédition du Siboga. 1re partie, Les Amphipodes hyperides (à l'exception des Thaumatopsidae et des Oxycephalidae)	https://www.wikidata.org/wiki/Q141837635
+Q141837640	0	The Alcyonacea of the Siboga expedition : with an addendum to the Gorgonacea	https://www.wikidata.org/wiki/Q141837640
+Q141837642	0	Die Rhizocephalen der Siboga-Expedition : supplement	https://www.wikidata.org/wiki/Q141837642
+Q141837643	0	Les amphipodes de l'expédition du Siboga. 2ème partie, Les Amphipodes gammarides. I. Les Amphipodes fouisseurs: Phoxocephalidae, Oedicerotidae	https://www.wikidata.org/wiki/Q141837643
+Q141837645	0	Les Lamellibranches de l'expédition du Siboga [III] Systematic part II: Pelecypoda (exclusive of the Pectinidae)	https://www.wikidata.org/wiki/Q141837645
+Q141837647	0	The Decapoda of the Siboga expedition VIII, Galatheidea : Chirostylidae	https://www.wikidata.org/wiki/Q141837647
+Q141837649	0	The Polyzoa of the Siboga Expedition. Part III. Cheilostomata Ascophora I. Family Reteporidae	https://www.wikidata.org/wiki/Q141837649
+Q141837650	0	Les amphipodes de l'expédition du Siboga. 2ème partie, Les Amphipodes gammarides. II. Les Amphipodes de la mer profonde. 2	https://www.wikidata.org/wiki/Q141837650
+Q141837653	0	The Copepoda of the Siboga expedition Pt. II, Commensal and parasitic Copepoda	https://www.wikidata.org/wiki/Q141837653
+Q141837656	0	Die Gorgoniden der Siboga-Expedition Supplement I, Revision der Plexauridae	https://www.wikidata.org/wiki/Q141837656
+Q141837659	0	Les amphipodes de l'expédition du Siboga. Deuxième partie. Les amphipodes gammarides. II. Les amphipodes de la mer profonde. 3. Addendum et partie générale. III. Les amphipodes littoraux. 1	https://www.wikidata.org/wiki/Q141837659
+Q141837661	0	Die Polystilifera der Siboga-Expedition	https://www.wikidata.org/wiki/Q141837661
+Q141837662	0	وریا ماملێ	https://www.wikidata.org/wiki/Q141837662
+Q141837663	0	The Brachiopoda of the Siboga expedition	https://www.wikidata.org/wiki/Q141837663
+Q141837665	0	Die Gorgoniden der Siboga-Expedition Supplement II, Revision der Scleraxonia : mit Ausschluss der Melitodidae und Coralliidae	https://www.wikidata.org/wiki/Q141837665
+Q141837667	0	Die Decapoda brachyura der Siboga-Expedition VII, Brachygnatha: Portunidae	https://www.wikidata.org/wiki/Q141837667
+Q141837670	0	Les amphipodes de l'expédition du Siboga. Deuxième partie. Les amphipodes gammarides. III. Les amphipodes littoraux. 2	https://www.wikidata.org/wiki/Q141837670
+Q141837672	0	Polychètes sédentaires de l'expédition du "Siboga"	https://www.wikidata.org/wiki/Q141837672
+Q141837674	0	Cephalopoda. 1re partie: Le genre Sepioteuthis Blainville, 1824	https://www.wikidata.org/wiki/Q141837674
+Q141837676	0	Cephalopoda. 2e partie: II. Révision des espèces indo-malaises du genre Sepia Linné 1758; III. Révision du genre Sepiella (Gray) Steenstrup, 1880	https://www.wikidata.org/wiki/Q141837676
+Q141837679	0	Die Isopoden der Siboga-Expedition. IV, Isopoda genuina : III: Gnathiidae, Anthuridea, Valvifera, Asellota, Phreatocoidea	https://www.wikidata.org/wiki/Q141837679
+Q141837680	0	Solenogastren der Siboga-Expedition	https://www.wikidata.org/wiki/Q141837680
+Q141837682	0	Siboglinum Caullery 1914 : type nouveau d'invertébrés, d'affinités à préciser	https://www.wikidata.org/wiki/Q141837682
+Q141837684	0	Polychètes sédentaires de l'expédition du Siboga	https://www.wikidata.org/wiki/Q141837684
+Q141837685	0	Shawnim Mamle	https://www.wikidata.org/wiki/Q141837685
+Q141837688	0	The Decapoda of the Siboga expedition Part IX, The Hippolytidae and Rhynchocinetidae : collected by the Siboga and Snellius expeditions with remarks on other species	https://www.wikidata.org/wiki/Q141837688
+Q141837690	0	The Decapoda of the Siboga Expedition. Part X. The Palaemonidae collected by the Siboga and Snellius expeditions with remarks on other species. I. Subfamily Palaemoninae	https://www.wikidata.org/wiki/Q141837690
+Q141837695	0	The Decapoda of the Siboga Expedition. Part XI. The Palaemonidae collected by the Siboga and Snellius expeditions with remarks on other species. II. Subfamily Pontoniinae	https://www.wikidata.org/wiki/Q141837695
+Q141837697	0	Cephalopoda. 3e partie: IV. Céphalopodes à l'éxclusion des genres Sepia, Sepiella et Sepioteuthis	https://www.wikidata.org/wiki/Q141837697
+Q141837698	0	The Polyzoa of the Siboga Expedition. Part IV. Cheilostomata Ascophora II	https://www.wikidata.org/wiki/Q141837698
+Q141837702	0	Die Decapoda brachyura der Siboga-Expedition Part VIII, Majidae	https://www.wikidata.org/wiki/Q141837702
+Q141837761	0	George Christian Waza	https://www.wikidata.org/wiki/Q141837761
+Q141837777	0	Axel Jesson Ayenoue	https://www.wikidata.org/wiki/Q141837777
+Q141837792	0	Lambert Mouvinde Millot	https://www.wikidata.org/wiki/Q141837792
+Q141837820	0	Emmanuel Eyeghe Nze	https://www.wikidata.org/wiki/Q141837820
+Q141837835	0	José Luiz Pompe	https://www.wikidata.org/wiki/Q141837835
+Q141837844	0	Camelia Ntoutoume épouse Leclercq	https://www.wikidata.org/wiki/Q141837844
+Q141837863	0	Olivier Mouckocko	https://www.wikidata.org/wiki/Q141837863
+Q141837877	0	Raissa Nana épouse Ghogho	https://www.wikidata.org/wiki/Q141837877
+Q141837911	0	Stephen Olouna Mouba	https://www.wikidata.org/wiki/Q141837911
+Q141837935	0	Malcom Emery Djenno Ngomand	https://www.wikidata.org/wiki/Q141837935
+Q141838351	0	The Troubadours Robert Briffault	https://www.wikidata.org/wiki/Q141838351
+Q141838533	0	L'nuta'ql: Mi'kmaq Music Showcase	https://www.wikidata.org/wiki/Q141838533
+Q141839450	0	Ikot Etok	https://www.wikidata.org/wiki/Q141839450
+Q141840671	0	مراسلون	https://www.wikidata.org/wiki/Q141840671
+Q141841183	0	Noah Watson	https://www.wikidata.org/wiki/Q141841183
+Q141841398	0	Naim Hasan	https://www.wikidata.org/wiki/Q141841398
+Q141842211	0	To be a Kurd	https://www.wikidata.org/wiki/Q141842211
+Q141842214	0	Hero of the Kurdistan Republic	https://www.wikidata.org/wiki/Q141842214
+Q141843915	0	Rice Canyon	https://www.wikidata.org/wiki/Q141843915
+Q141843977	0	Maria Sappho	https://www.wikidata.org/wiki/Q141843977
+Q141844214	0		https://www.wikidata.org/wiki/Q141844214
+Q141845404	0	langestraat 112 ostende Langestraat 112 ostende	https://www.wikidata.org/wiki/Q141845404
+Q141845774	0	Azizul Hakim Methun	https://www.wikidata.org/wiki/Q141845774
+Q141846285	0	Social Ramallo	https://www.wikidata.org/wiki/Q141846285
+Q141848916	0	Al-Hasa Expedition (1871)	https://www.wikidata.org/wiki/Q141848916
+Q141849870	0	Chen Kordova	https://www.wikidata.org/wiki/Q141849870
+Q141850021	0	Kyler Kasper	https://www.wikidata.org/wiki/Q141850021
+Q141850265	0	Gérald Heffernan	https://www.wikidata.org/wiki/Q141850265
+Q141850852	0	Bikash Dihingia	https://www.wikidata.org/wiki/Q141850852
+Q141855941	0	OreatePress	https://www.wikidata.org/wiki/Q141855941
+Q141858294	0	시몬스	https://www.wikidata.org/wiki/Q141858294
+Q141858593	0		https://www.wikidata.org/wiki/Q141858593
+Q141858765	0	Tomek Heydinger	https://www.wikidata.org/wiki/Q141858765
