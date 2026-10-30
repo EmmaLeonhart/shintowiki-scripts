@@ -3612,6 +3612,8 @@ Q135039584|P13723|Q135160342|S4656|"https://ja.wikipedia.org/wiki/津毛利神�
 Q135039602|P13723|Q134917287|S4656|"https://ja.wikipedia.org/wiki/邑勢神社"
 Q135039602|P13723|Q135160342|S4656|"https://ja.wikipedia.org/wiki/邑勢神社"
 Q135040049|P13723|Q135160342|S4656|"https://ja.wikipedia.org/wiki/配志和神社"
+Q135236151|P13723|Q1107129|S4656|"https://ja.wikipedia.org/wiki/総社大神宮"
+Q135236151|P13723|Q90139226|S4656|"https://ja.wikipedia.org/wiki/総社大神宮"
 Q135069951|P11250|"shinto:Shirohiko Shrine"
 Q135069954|P11250|"shinto:Shirohiko Shrine (Noto Province)"
 Q135289776|P11250|"shinto:Amehikake- Shrine (Q135289776)"
