@@ -5,6 +5,10 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 This is the home stretch for everything touching Wikidata (Emma, 2026-10-08). New jawiki translations
 and retranslating finished-but-bad pages are out of the queue; they are in `todo.md`.
 
+## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-11-01)
+
+Walk `docs/deferred_verification.md` and actually TEST each Open item (the batched verification we skip in the moment because wiki/CI changes are slow lagging indicators). For each: run its check; if it works, move it to the doc's Verified section with the date + what you observed; if it's broken, fix it and note the fix. Then delete THIS block.
+
 ## stuff to do
 
 ⛔ **Strict order. Do not skip ahead to an easier item while the one above it waits** (Emma, 2026-10-09:
