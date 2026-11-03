@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q134989130 -->
 <!-- KIND: shrine | JA: 長行神社 | KANA:  -->
-<!-- ANSWER: -->
+<!-- ANSWER: SKIP: reading unsourceable (no kana in source data, network access to Wikidata/jawiki blocked by proxy) -->
 <!-- TASK: give this item its English Wikidata label (P1448 is NOT involved; this is the `Len` label).
 Conventions, which are not negotiable -- match the files this folds into:
   shrine: '<Stem> Shrine', e.g. Iino Shrine, Kushikino Shrine.
