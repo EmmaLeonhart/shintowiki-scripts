@@ -1,7 +1,7 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q142029605 -->
-<!-- JA: 松尾神社 | EN_LABEL: (none) | BUCKET: b -->
-<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%B0%BE%E7%A5%9E%E7%A4%BE_%28%E5%B1%B1%E7%9C%8C%E5%B8%82%E8%97%A4%E5%80%89%29 -->
-<!-- ANSWER: KANA: まつおじんじゃ -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q142029582 -->
+<!-- JA: 白鬚神社 | EN_LABEL: (none) | BUCKET: b -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E7%99%BD%E9%AC%9A%E7%A5%9E%E7%A4%BE_%28%E5%B2%90%E9%98%9C%E5%B8%82%E8%8A%A5%E8%A6%8B%E9%95%B7%E5%B1%B1%29 -->
+<!-- ANSWER: -->
 <!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading
   GUESS: <hiragana>       the lead states no reading; this is derived (below)
@@ -12,4 +12,4 @@ Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), n
 When ANSWER is filled this file is done. -->
 
 == LEAD ==
-松尾神社（まつおじんじゃ）は、岐阜県山県市藤倉（旧・山県郡伊自良村藤倉に鎮座する神社（松尾神社）。
+白鬚神社（しらひげじんじゃ）は、岐阜県岐阜市芥見長山にある神社。
