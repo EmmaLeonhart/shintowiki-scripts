@@ -1,7 +1,7 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q141957753 -->
-<!-- JA: 大東神社 | EN_LABEL: (none) | BUCKET: b -->
-<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%B1%E7%A5%9E%E7%A4%BE_%28%E9%9D%92%E6%A2%85%E5%B8%82%29 -->
-<!-- ANSWER: KANA: だいとうじんじゃ -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q142076941 -->
+<!-- JA: 姫宮神社 | EN_LABEL: (none) | BUCKET: b -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A7%AB%E5%AE%AE%E7%A5%9E%E7%A4%BE_%28%E7%9F%A5%E5%A4%AB%E6%9D%91%29 -->
+<!-- ANSWER: -->
 <!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading
   GUESS: <hiragana>       the lead states no reading; this is derived (below)
@@ -12,5 +12,4 @@ Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), n
 When ANSWER is filled this file is done. -->
 
 == LEAD ==
-大東神社（だいとうじんじゃ）は、東京都青梅市に位置する神社。
-祭神は天照大御神を始め、天津神国津神八百万の神々。全物故同志御霊。各家々の御先祖御霊。
+姫宮神社（ひめみやじんじゃ）は島根県隠岐郡知夫村古海に所在する神社。古海（うるみ）地区で執り行われる村指定無形民俗文化財「蘇民将来符」の主な場となる。
