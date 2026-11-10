@@ -74,3 +74,5 @@ Q134989130	SKIP	reading unsourceable (no kana in source data, network access to 
 Q135434258	LABEL	Okusu Shrine
 Q135460857	SKIP	reading unsourceable - searches only find 佐久奈度神社 (different kanji), cannot confirm same shrine
 Q134955544	SKIP	reading not verifiable without access to jawiki article, official site, or Kokugakuin database
+Q135116080	SKIP	reading unsourceable (no jawiki article, web search found no specific information, Wikidata blocked)
+Q135463554	LABEL	Minamiikazawa Shrine
