@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q134596945 -->
 <!-- JA: 吾妻神社 | EN_LABEL: Azuma Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: -->
+<!-- ANSWER: GUESS: あずまじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): あずまじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): あづまじんじゃ
