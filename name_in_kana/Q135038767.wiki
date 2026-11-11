@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q135038767 -->
 <!-- JA: 深川神社 | EN_LABEL: Fukakahano Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: -->
+<!-- ANSWER: GUESS: ふかかはのじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): ふかかはのじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): ふかがわじんじゃ
