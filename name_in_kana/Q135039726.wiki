@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q135039726 -->
 <!-- JA: 杉山神社 | EN_LABEL: Sukiyamano Shrine | BUCKET: a -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%9D%89%E5%B1%B1%E7%A5%9E%E7%A4%BE -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: すぎやまじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): すきやまのじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): すぎやまじんじゃ
