@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q135040614 -->
 <!-- JA: 浅間神社 | EN_LABEL: Asamano Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: -->
+<!-- ANSWER: GUESS: あさまのじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): あさまのじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): せんげんじんじゃ
