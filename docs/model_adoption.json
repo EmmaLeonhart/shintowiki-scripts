@@ -1,16 +1,16 @@
 {
   "population": {
-    "shrines": 30761,
-    "temples": 27688
+    "shrines": 30763,
+    "temples": 27705
   },
   "reisai": {
-    "shrine_items": 3154,
-    "shrine_stmts": 3171,
-    "conforming": 3171,
+    "shrine_items": 3155,
+    "shrine_stmts": 3172,
+    "conforming": 3172,
     "missing_role": 0,
     "with_p793": 101,
-    "referenced": 3140,
-    "global_stmts": 10466,
+    "referenced": 3141,
+    "global_stmts": 10476,
     "global_any_role": 3358,
     "global_reisai_role": 3336
   },
@@ -28,14 +28,14 @@
     "on_shrines": 41
   },
   "p825_shrines": {
-    "items": 13052,
-    "stmts": 20966,
-    "referenced": 11391
+    "items": 13053,
+    "stmts": 20972,
+    "referenced": 11397
   },
   "p825_temples": {
-    "items": 6522,
-    "stmts": 6971,
-    "referenced": 6845
+    "items": 6523,
+    "stmts": 6972,
+    "referenced": 6846
   },
   "p13723": {
     "items": 8185,
@@ -68,12 +68,12 @@
   },
   "sango": {
     "stmts": 7755,
-    "on_temples": 7595,
-    "temple_p1448_all": 15934
+    "on_temples": 7605,
+    "temple_p1448_all": 15946
   },
   "p571": {
     "shrines": 1177,
-    "temples": 3128
+    "temples": 3133
   },
   "identifiers": {
     "p11250": 5773,
@@ -81,7 +81,7 @@
     "p13677": 5090
   },
   "en_labels": {
-    "shrines_en": 28051,
-    "temples_en": 21752
+    "shrines_en": 28052,
+    "temples_en": 21774
   }
 }

@@ -1,6 +1,6 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q135417340 -->
-<!-- KIND: temple | JA: 大本山武尊教両部武尊山神宮武尊山南宮寺 | KANA:  -->
-<!-- ANSWER: SKIP: complex multi-part name, no kana available, reading unsourceable without access to official sources -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q134957905 -->
+<!-- KIND: shrine | JA: 分器稲荷神社 | KANA:  -->
+<!-- ANSWER: -->
 <!-- TASK: give this item its English Wikidata label (P1448 is NOT involved; this is the `Len` label).
 Conventions, which are not negotiable -- match the files this folds into:
   shrine: '<Stem> Shrine', e.g. Iino Shrine, Kushikino Shrine.
