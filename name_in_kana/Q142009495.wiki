@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q142009495 -->
 <!-- JA: 中切神社 | EN_LABEL: (none) | BUCKET: b -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%88%87%E7%A5%9E%E7%A4%BE -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: なかぎりじんじゃ -->
 <!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading
   GUESS: <hiragana>       the lead states no reading; this is derived (below)
