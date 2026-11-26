@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q11352601 -->
 <!-- JA: 一宮神社 | EN_LABEL: Ikkyuu Shrine | BUCKET: a -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E4%B8%80%E5%AE%AE%E7%A5%9E%E7%A4%BE_%28%E7%A6%8F%E7%9F%A5%E5%B1%B1%E5%B8%82%29 -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: いっきゅうじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): いっきゅうじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): いちのみやじんじゃ
