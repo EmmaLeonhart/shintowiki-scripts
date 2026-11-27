@@ -1,6 +1,6 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q134887352 -->
-<!-- KIND: shrine | JA: 三社大神社 | KANA:  -->
-<!-- ANSWER: SKIP: no KANA provided and no external access to research reading -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q75961766 -->
+<!-- KIND: temple | JA: 白山寺 (須賀川市) | KANA:  -->
+<!-- ANSWER: -->
 <!-- TASK: give this item its English Wikidata label (P1448 is NOT involved; this is the `Len` label).
 Conventions, which are not negotiable -- match the files this folds into:
   shrine: '<Stem> Shrine', e.g. Iino Shrine, Kushikino Shrine.
